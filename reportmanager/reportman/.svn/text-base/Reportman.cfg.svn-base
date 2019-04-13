@@ -1,0 +1,38 @@
+-$A8
+-$B-
+-$C+
+-$D+
+-$E-
+-$F-
+-$G+
+-$H+
+-$I+
+-$J-
+-$K-
+-$L+
+-$M-
+-$N+
+-$O-
+-$P+
+-$Q+
+-$R+
+-$S-
+-$T-
+-$U-
+-$V+
+-$W-
+-$X+
+-$YD
+-$Z1
+-cg
+-vn
+-AWinTypes=Borland.Vcl.Windows;WinProcs=Borland.Vcl.Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+-H+
+-W+
+-M
+-$M4096,1048576
+-K$00400000
+-U"c:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\2.0;c:\windows\microsoft.net\framework\v1.1.4322;c:\archivos de programa\borland\bds\2.0\bin;h:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\2.0;h:\windows\microsoft.net\framework\v1.1.4322;c:\prog\toni\cvsroot\reportman\reportman;k:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\2.0;k:\windows\microsoft.net\framework\v1.1.4322;C:\prog\toni\cvsroot\reportman\reportman;h:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\3.0;h:\archivos de programa\borland\bds\3.0\bin;k:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\3.0"
+-O"c:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\2.0;c:\windows\microsoft.net\framework\v1.1.4322;c:\archivos de programa\borland\bds\2.0\bin;h:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\2.0;h:\windows\microsoft.net\framework\v1.1.4322;c:\prog\toni\cvsroot\reportman\reportman;k:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\2.0;k:\windows\microsoft.net\framework\v1.1.4322;C:\prog\toni\cvsroot\reportman\reportman;h:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\3.0;h:\archivos de programa\borland\bds\3.0\bin;k:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\3.0"
+-I"c:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\2.0;c:\windows\microsoft.net\framework\v1.1.4322;c:\archivos de programa\borland\bds\2.0\bin;h:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\2.0;h:\windows\microsoft.net\framework\v1.1.4322;c:\prog\toni\cvsroot\reportman\reportman;k:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\2.0;k:\windows\microsoft.net\framework\v1.1.4322;C:\prog\toni\cvsroot\reportman\reportman;h:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\3.0;h:\archivos de programa\borland\bds\3.0\bin;k:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\3.0"
+-R"c:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\2.0;c:\windows\microsoft.net\framework\v1.1.4322;c:\archivos de programa\borland\bds\2.0\bin;h:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\2.0;h:\windows\microsoft.net\framework\v1.1.4322;c:\prog\toni\cvsroot\reportman\reportman;k:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\2.0;k:\windows\microsoft.net\framework\v1.1.4322;C:\prog\toni\cvsroot\reportman\reportman;h:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\3.0;h:\archivos de programa\borland\bds\3.0\bin;k:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\3.0"

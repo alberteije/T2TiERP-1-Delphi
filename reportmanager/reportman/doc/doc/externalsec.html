@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Report files sharing sections</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Advanced report design</h2>
+<h3>Report files sharing sections</h3>
+<p></p>
+<p>Usually the reports of a project have the same page header or the same report 
+  header. For example if you are designing several reports related to a enterprise, 
+  may be interesting to include the logo and the name of the enterprise. Then 
+  you cut and paste this header in about 100 reports. As a generic application, 
+  when you sell it the new customer wants to change the position of the logo and 
+  center the enterprise name, will you change the 100 reports?</p>
+<p>The answer to this problem is to store this page header in a external file 
+  and especify all the reports to load the page header from this file, so changing 
+  this file you are changing the 100 reports at once.</p>
+<p>Each section in Report Manager have <b>External path</b> property, when the 
+  report is loaded, each section with this property assigned will try to load 
+  the section from the specified file, the external path can be an expression 
+  by preceding the string by the @ symbol.</p>
+<p>When working with external sections you are responsible for writing and reading 
+  them . <b>The first time</b> you want to include a internal section you assign 
+  the External path property, then <b>right click the External Path property and 
+  select save option of the popup menu</b>.</p>
+<p>Next time you open the report it will try to load the section from the file 
+  or field. If you want to use this <b>external section in another report you 
+  assign External Path property and select load option of the popup menu</b>.</p>
+<p><img src="images/extsection.jpg" width="394" height="327"></p>
+<p>External section can be stored in a database table, click in 'External database' 
+  property and Report Designer will show a dialog where you can enter data about 
+  where the section is stored:</p>
+<ul>
+  <li>A valid connection available for this report</li>
+  <li>A database table inside this database</li>
+  <li>A field where the report will be stored (must be of binary type)</li>
+  <li>A search field field name to locate the record</li>
+  <li>The search value that will be used to locate the record</li>
+</ul>
+<p><img src="images/extsection2.jpg" width="396" height="240"></p>
+<p>You can dropdown the combo boxes to see the available tables for the connection, 
+  fields and values, if you enter a new value the designer will ask you if you 
+  want to create a new record in the table to store the section.</p>
+<p><img src="images/extsection3.jpg" width="396" height="240"></p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Page header and page footer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Basic report design</h2>
+<h3><b>Page Header and page footer</b></h3>
+<p>Page header and footer are sections that will print on each page, headers at 
+  the top of page and footer at the bottom of page, you can add more than one 
+  page headers or footers, it will print in the natural order.</p>
+<p>You can also assign a print condition to this sections so if you have more 
+  than one page header you can switch between them by placing an exclusive condition 
+  for example, note that print condition of page footer is evaluated at the same 
+  time that page header, that is at page printing begin because the space for 
+  the footer must be reserved then.</p>
+<p>You click the add button of the tree to add a header or footer section (if 
+  you have more than one subreport you must select the correct subreport first):</p>
+<p><img src="images/pageheader.jpg" width="568" height="361"></p>
+<p>In this sample we will place a simple label to the report page header,set the 
+  height to 1 cm. and change the size of the font:</p>
+<p><img src="images/pageheader2.jpg" width="568" height="361"></p>
+<p>Preview the report and you will see the placed label in each page.</p>
+<p>Now follow this steps:</p>
+<ul>
+  <li>Add a page footer section</li>
+  <li>Place a expression in the new section</li>
+  <li>Select the new component and go to the expression property in the object 
+    inspector</li>
+  <li>Click the button beside the expression property</li>
+  <li>Select Functions Category and Page function</li>
+  <li>Replace existing expression with the word page</li>
+</ul>
+<p><img src="images/pageheader3.jpg" width="468" height="254"></p>
+<p> This component will show page number, you can add a label beside it:</p>
+<p><img src="images/pageheader4.jpg" width="568" height="361"></p>
+<p>Preview the report, you will see page number at the bottom of each page.</p>
+</body>
+</html>

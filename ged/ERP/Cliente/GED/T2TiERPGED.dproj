@@ -1,0 +1,186 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{05CFE474-85AA-442A-90A3-DA6E6249D1C6}</ProjectGuid>
+			<MainSource>T2TiERPGED.dpr</MainSource>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<ProjectVersion>12.0</ProjectVersion>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_DependencyCheckOutputName>T2TiERPGED.exe</DCC_DependencyCheckOutputName>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_Platform>x86</DCC_Platform>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="T2TiERPGED.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="..\Comum\Tela\UBase.pas">
+				<Form>FBase</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\UDataModule.pas">
+				<Form>FDataModule</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\UFiltro.pas">
+				<Form>FFiltro</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\ULogin.pas">
+				<Form>FLogin</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\ULookup.pas">
+				<Form>FLookup</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\UTela.pas">
+				<Form>FTela</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\UTelaCadastro.pas">
+				<Form>FTelaCadastro</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Controller\Controller.pas"/>
+			<DCCReference Include="..\..\Comum\Atributos.pas"/>
+			<DCCReference Include="..\..\Comum\Biblioteca.pas"/>
+			<DCCReference Include="..\..\Comum\Constantes.pas"/>
+			<DCCReference Include="Tela\UMenu.pas">
+				<Form>FMenu</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\SessaoUsuario.pas"/>
+			<DCCReference Include="..\Comum\Tipos.pas"/>
+			<DCCReference Include="..\..\Comum\VO\JSonVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\UsuarioVO.pas"/>
+			<DCCReference Include="Tela\UGedTipoDocumento.pas">
+				<Form>FGedTipoDocumento</Form>
+			</DCCReference>
+			<DCCReference Include="Lib\CAPICOM_TLB.pas"/>
+			<DCCReference Include="..\Comum\NotificationService.pas"/>
+			<DCCReference Include="..\Comum\Conversor.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FuncaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PapelFuncaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PapelVO.pas"/>
+			<DCCReference Include="..\Comum\Controller\FuncaoController.pas"/>
+			<DCCReference Include="..\Comum\Controller\PapelController.pas"/>
+			<DCCReference Include="..\Comum\Controller\PapelFuncaoController.pas"/>
+			<DCCReference Include="..\Comum\Controller\UsuarioController.pas"/>
+			<DCCReference Include="..\Comum\Controller\ColaboradorController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ColaboradorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ContabilContaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\SindicatoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PessoaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\EnderecoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ContatoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PessoaFisicaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PessoaJuridicaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TipoAdmissaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\SituacaoColaboradorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\SituacaoForCliVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TipoColaboradorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\NivelFormacaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\CargoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\SetorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\EmpresaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\UfVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PaisVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ContadorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FpasVO.pas"/>
+			<DCCReference Include="Controller\GedTipoDocumentoController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\GedTipoDocumentoVO.pas"/>
+			<DCCReference Include="Controller\GedDocumentoController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\GedDocumentoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\GedVersaoDocumentoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\EmpresaSessaoVO.pas"/>
+			<DCCReference Include="Tela\UGedDocumento.pas">
+				<Form>FDataModule</Form>
+				<DesignClass>TFGedDocumento</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\..\Comum\VO\ViewSessaoEmpresaVO.pas"/>
+			<DCCReference Include="..\Comum\Controller\EmpresaController.pas"/>
+			<DCCReference Include="..\Comum\Controller\ViewSessaoEmpresaController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\AdministrativoFormularioVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PlanoContaRefSpedVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PlanoContaVO.pas"/>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">T2TiERPGED.dpr</Source>
+					</Source>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1046</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\synapse.bpl">Synapse TCP/IP / Serial library (http://www.synapse.ararat.cz)</Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\PCN2.bpl">Projeto Cooperar (http://br.groups.yahoo.com/group/projeto_cooperar_nfe/)</Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\ACBrCapicom.bpl">ACBr Automação Comercial Brasil  ACBrComum   (http://acbr.sf.ne)</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

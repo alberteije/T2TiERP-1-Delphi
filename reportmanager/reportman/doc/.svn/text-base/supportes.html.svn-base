@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>Soporte de Report Manager y otros</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<table width="100%" border="0">
+  <tr> 
+    <td> <p align="center"><a href="support.html">English</a></p></td>
+    <td> <div align="center"><b>Espa&ntilde;ol</b></div></td>
+    <td rowspan="2"> <h1 align="center">Report Manager</h1></td>
+    <td rowspan="2"><strong>Sponsors</strong></td>
+  </tr>
+  <tr> 
+    <td> <div align="center"><a href="support.html"><img src="doc/images/english_flag.jpg" width="32" height="17" border="0"></a></div></td>
+    <td> <div align="center"><img src="doc/images/spanish_flag.jpg" width="26" height="17" border="0"></div></td>
+  </tr>
+  <tr> 
+    <td colspan="2" valign="top"> <table border="0">
+        <tr> 
+          <td colspan="2"> <p><a href="indexes.html">Descripci&oacute;n</a></p></td>
+        </tr>
+        <tr> 
+          <td nowrap><a href="contribes.html">Comprar</a></td>
+          <td><img src="doc/images/newsmalles.jpg" width="43" height="12"></td>
+        </tr>
+        <tr> 
+          <td nowrap><a href="webserveres.html">Servidor Web</a></td>
+          <td><img src="doc/images/newsmalles.jpg" width="43" height="12"></td>
+        </tr>
+        <tr> 
+          <td colspan="2"><a href="screenshotses.html">Pantallas</a></td>
+        </tr>
+        <tr> 
+          <td colspan="2"> <p><a href="downloades.html">Descarga</a></p></td>
+        </tr>
+        <tr> 
+          <td> <p><a href="docnet/index.html">Biblioteca punto net</a></p></td>
+          <td><img src="doc/images/newsmalles.jpg" width="43" height="12"></td>
+        </tr>
+        <tr> 
+          <td colspan="2" nowrap><a href="doc/index.html" target="_blank">Documentaci&oacute;n(ingl&eacute;s)</a></td>
+        </tr>
+        <tr> 
+          <td colspan="2"><b>Soporte</b></td>
+        </tr>
+        <tr> 
+          <td colspan="2"> <p><a href="companyes.html">Empresa</a></p></td>
+        </tr>
+        <tr> 
+          <td colspan="2" nowrap><a href="linkses.html">Otros enlaces</a></td>
+        </tr>
+        <tr> 
+          <td colspan="2"><a href="http://sourceforge.net" target="_blank"><img src="http://sourceforge.net/sflogo.php?group_id=51737&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo"></a></td>
+        </tr>
+        <tr> 
+          <td colspan="2"><a href="http://www.delphi-jedi.org" target="_blank"><img src="doc/images/jedinow.gif" width="116" height="31" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td colspan="2">
+		  <a href="http://tp.codegear.com/btprefer.aspx?partner_id=880&product_id=0" target=_BLANK><img src="doc/images/ctplogo1_med.gif" border=0 alt="CodeGear - Donde los desarrolladores importan"></a>
+		  </td>
+        </tr>
+      </table></td>
+    <td> <h2>Soporte</h2>
+      <p>Si desea soporte comercial puede <a href="http://reportman.sourceforge.net/contribes.html">contratar 
+        los servicios del autor</a></p>
+      <h3>Servicios de soporte por horas</h3>
+      <table border="1">
+        <tr> 
+          <td bgcolor="#FFFFCC"><b>Producto</b></td>
+          <td bgcolor="#FFFFCC"><b>Descripci&oacute;n</b></td>
+        </tr>
+        <tr> 
+          <td><a href="http://reportman.sourceforge.net" target="_blank">Report 
+            Manager</a></td>
+          <td>Soporte, nuevas funcionalidades, versiones personalizadas</td>
+        </tr>
+      </table>
+      <h3>Contacte</h3>
+      Vea <a href="authores.html">la p&aacute;gina del autor</a> para informaci&oacute;n 
+      de contacto. 
+      <h3>Precios</h3>
+      <table border="1">
+        <tr> 
+          <td bgcolor="#FFFFCC"><b>Producto</b></td>
+          <td bgcolor="#FFFFCC"><b>Precio</b></td>
+        </tr>
+        <tr> 
+          <td>Soporte</td>
+          <td>49,50 Euros/hora</td>
+        </tr>
+        <tr> 
+          <td>Formaci&oacute;n</td>
+          <td><a href="mailto:toni@reportman.es?Subject=Soporte">Pregunte</a></td>
+        </tr>
+      </table>
+      <p><a href="http://reportman.sourceforge.net/contribes.html">Para contratar 
+        servicios dir&iacute;jase a la p&aacute;gina de compra</a>.</p>
+<p><strong>Comunidad de soporte</strong></p>
+      <p>Si desea obtener soporte gratu&iacute;to puede suscribirse al <a href="http://groups.yahoo.com/group/reportman/" target="_blank">grupo 
+        reportman de yahoo groups</a>, all&iacute; encontrar&aacute; otros usuarios 
+        de Report Manager.</p>
+      <p>Tambi&eacute;n existe un canal irc en el servidor <strong>irc.irc-hispano.org 
+        </strong>canal <strong>#reportman</strong>.</p></td>
+    <td valign="top"><script type="text/javascript"><!--
+google_ad_client = "pub-6747268227242502";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "FFFFFF";
+google_color_link = "0000FF";
+google_color_bg = "FFFFFF";
+google_color_text = "000000";
+google_color_url = "008000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</td>
+  </tr>
+</table>
+</body>
+</html>

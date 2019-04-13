@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Units documentation - rpruler.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpruler.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>CLX ruler drawing</b>, and a component for drawing 
+  rulers.</p>
+<h4>Types</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRprulertype</td>
+    <td>Enumeration (rHorizontal,rVertical)</td>
+  </tr>
+  <tr>
+    <td>TRprulermetric</td>
+    <td>Enumeration (rCms,rInchess)</td>
+  </tr>
+</table>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpRuler</td>
+    <td>TCustomControl</td>
+    <td>Draws a ruler in it's surface, you can select units and orientation</td>
+  </tr>
+</table>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>function PaintRuler (metrics:TRprulermetric; RType:TRpRulerType; Color:TColor; 
+      Width,Height:integer):TBitmap; </td>
+    <td>Draws a ruler inside a bitmap</td>
+  </tr>
+</table>
+</body>
+</html>

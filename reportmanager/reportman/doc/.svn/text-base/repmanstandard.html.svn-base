@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Report Manager Standard Edition</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Report Manager Standard Edition</h2>
+<h4>Product description</h4>
+<table border="0">
+  <tr>
+    <td><img src="doc/images/repmanstd.jpg" width="89" height="92"></td>
+    <td><img src="doc/images/repmanstd2.jpg" width="101" height="88"></td>
+  </tr>
+</table>
+<p>Report Manager Standard edition has this <b>additional features</b>.</p>
+<table border="1">
+  <tr> 
+    <td><b>Boxed CD-ROM</b></td>
+  </tr>
+  <tr> 
+    <td>Additional <b>report samples</b> using <a href="http://firebird.sourceforge.net" target="_blank">Firebird 
+      SQL database</a></td>
+  </tr>
+  <tr> 
+    <td><b>Full Documentation</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <p><b>Borland Database Engine</b> (Windows) Installation with database drivers</p>
+      <ul>
+        <li>Foxpro, DBase</li>
+        <li>Paradox</li>
+        <li>Plain text files</li>
+        <li>IBM DB2 driver</li>
+        <li>Informix driver</li>
+        <li>Interbase and Firebird SQL driver</li>
+        <li>Native Microsoft Access driver</li>
+        <li>Native Microsoft SQL driver</li>
+        <li>Oracle driver</li>
+        <li>Sybase driver</li>
+        <li>Odbc bridge (any Odbc enabled database: Visual FoxPro, SQL Server, 
+          MySQL, PostgreSQL...)</li>
+      </ul>
+    </td>
+  </tr>
+  <tr> 
+    <td><a href="http://firebird.sourceforge.net" target="_blank">Firebird SQL</a> 
+      Database</td>
+  </tr>
+  <tr> 
+    <td>All the needed files to install Report Manager in Linux and Microsoft 
+      Windows</td>
+  </tr>
+</table>
+</body>
+</html>

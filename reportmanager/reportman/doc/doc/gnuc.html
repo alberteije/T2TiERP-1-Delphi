@@ -1,0 +1,279 @@
+<html>
+<head>
+<title>Using Report Manager from GNU C</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Basic report design</h2>
+<h3><b>Using Report Manager from GNU C and others with the dynamic link library</b></h3>
+<p>This is a guide for using Report Manager from GNU C, this guide can be used 
+  also for <b>any other language capable of using dynamic link libraries</b>, 
+  that is for example Borland C++ command line compiler, Borland Delphi...., you 
+  can also use the engine with command line tools and <a href="otherlang.html">other 
+  languages</a>.</p>
+<p>In Microsoft Windows the functions are inside Reportman.ocx library, you can 
+  see delphi pascal definitions in rpreportmanapi.pas file, so for use the shared 
+  library with Delphi (is much better to use the native components) you can add 
+  the file to your project and use the functions. The C definitions are in rpreportmanapi.h 
+  file, you must link to libreportmanapi.so. It supports C and C++.</p>
+<p>The libraries are:</p>
+<table width="100%" border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><strong>Microsoft Windows</strong></td>
+    <td bgcolor="#FFFFCC"><strong>Linux</strong></td>
+  </tr>
+  <tr> 
+    <td>Reportman.ocx</td>
+    <td>libreportmanapi.so (no qt dependence no X-Server need)</td>
+  </tr>
+  <tr> 
+    <td>Reportman.lib (import library for Borland C++)</td>
+    <td>libreportmanapiqt.so (qt dependence, X-Server need)</td>
+  </tr>
+  <tr> 
+    <td>Reportman.a (import library for GCC)</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Reportman.def (function definition file for dlltool)</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>The <b>calling convention of all exported funtions is stdcall</b> because it's 
+  safer than the standard cdecl.</p>
+<p>The header files and declaration files are the following:</p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Library</td>
+    <td bgcolor="#FFFFCC">Pascal interface</td>
+    <td bgcolor="#FFFFCC">Visual Basic interface module</td>
+    <td bgcolor="#FFFFCC">C Header file</td>
+  </tr>
+  <tr> 
+    <td>Reportman.ocx</td>
+    <td>rpreportmanapi.pas</td>
+    <td>rpreportmanapi.bas</td>
+    <td>rpreportman.h</td>
+  </tr>
+  <tr> 
+    <td>reportmanapi.so</td>
+    <td>rpreportmanapi.pas</td>
+    <td>&nbsp;</td>
+    <td>rpreportmanapi.h</td>
+  </tr>
+  <tr> 
+    <td>reportmanapiqt.so</td>
+    <td>rpreportmanapiqt.pas</td>
+    <td>&nbsp;</td>
+    <td>rpreportmanapiqt.h</td>
+  </tr>
+</table>
+<p>In Linux it you want preview functionallity you must use reportmanapiqt.h, 
+  and link to libreportmanapiqt.so library, this library needs a X-Server running 
+  and needs also all the other libraries used by Report Manager designer, see 
+  <a href="deploy.html">deploy documentation</a> for more information.</p>
+<p>Note the libraries that ususally uses the designer and the database libraries 
+  must be in library path, and you should use the same launch script (repmand.sh) 
+  to start your compiled applications.</p>
+<p>Library functionality is about returning a handle to a report and process this 
+  report passing the handle to next report engine function calls:</p>
+<p>int rp_new();<br>
+  int rp_open(char *filename);<br>
+  int rp_execute(int hreport,char *outputfilename,int metafile,int compressed);<br>
+  <br>
+  int rp_close(int hreport);<br>
+  char *rp_lasterror(void);<br>
+  int rp_print(int hreport,char *title,int showprogress,int showprintdialog);<br>
+  int rp_previewremote(char *hostname,int port,char *user,char *password, char 
+  *aliasname,char *reportname,char *title);<br>
+  int rp_getremoteparams(int hreport,char *hostname,int port,char *user,char *password, 
+  char *aliasname,char *reportname);<br>
+  int rp_executeremote(char *hostname,int port,char *user,char *password, char 
+  *aliasname,char *reportname,char *outputfilename,int metafile, int compressed);<br>
+  int rp_printremote(char *hostname,int port,char *user,char *password, char *aliasname,char 
+  *reportname,char *title,int showprogress, int showprintdialog)<br>
+  int rp_previewremote_report(int hreport,char *hostname,int port,char *user,char 
+  *password, char *aliasname,char *reportname,char *title);<br>
+  int rp_executeremote_report(int hreport,char *hostname,int port,char *user,char 
+  *password, char *aliasname,char *reportname,char *outputfilename,int metafile, 
+  int compressed);<br>
+  int rp_printremote_report(int hreport,char *hostname,int port,char *user,char 
+  *password, char *aliasname,char *reportname,char *title,int showprogress, int 
+  showprintdialog)<br>
+  int rp_preview(int hreport,char *title);<br>
+  int rp_setparamvalue(int hreport,char *paramname, int paramtype,void *paramvalue);<br>
+  int rp_getparamcount(int hreport:integer;int *paramcount);<br>
+  int rp_getparamname(int hreport,int index,char *abuffer);<br>
+  int rp_setadoconnectionstring(int hreport,char *conname,char *constring);<br>
+  int rp_bitmap(int hreport,char *outputfilename,int ask,int mono,int vertres,int 
+  horzres);<br>
+</p>
+<p>
+<strong>Only available in Microsoft Windows</strong><br>
+int rp_setparamvaluevar(int hreport,char *paramname, OleVariant paramvalue);<br>
+int rp_setadoconnectionstring(int hreport,char *conname,char *constring);<br>
+char* rp_getprinters(void);<br>
+char* rp_getdefaultprinter(void);<br>
+int rp_setdefaultprinter(char *device);
+
+</p>
+<p> All the functions returns 0 if fail, the rp_lasterror function returns the 
+  error message for the last library call so the call of a report engine function 
+  clears the rp_lasterror returned value, you should call rp_lasterror after checking 
+  if the function is successfull, for example:</p>
+<p>
+#include "rpreportmanapi.h"<br>
+int hreport;<br>
+char reportmanfile[]=&quot;sample4.rep&quot;;<br>
+hreport=rp_open(reportmanfile);<br>
+  if (hreport==0)<br>
+  { <br>
+  printf(&quot;Error loading: &quot;);<br>
+  printf(rp_lasterror());<br>
+  printf(&quot;\n&quot;);<br>
+  }</p>
+<p><strong>Parameter types and expected value types for rp_setparamvalue function</strong></p>
+<p>In Windows you can use rp_setparamvaluevar instead if you have access to OleVariant 
+  types. </p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">ParamType</td>
+    <td bgcolor="#FFFFCC">ParamValue</td>
+  </tr>
+  <tr> 
+    <td>1</td>
+    <td>NULL/Ignored</td>
+  </tr>
+  <tr> 
+    <td>3</td>
+    <td>int *</td>
+  </tr>
+  <tr> 
+    <td>5</td>
+    <td>double *</td>
+  </tr>
+  <tr> 
+    <td>6</td>
+    <td>Currency *</td>
+  </tr>
+  <tr> 
+    <td>7</td>
+    <td>Date *</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>WideChar *</td>
+  </tr>
+  <tr> 
+    <td>11</td>
+    <td>Boolean *</td>
+  </tr>
+  <tr> 
+    <td>14</td>
+    <td>int64 *</td>
+  </tr>
+  <tr> 
+    <td>256</td>
+    <td>char *</td>
+  </tr>
+</table>
+<p><strong>Parameter values for metafile parameter in rp_execute function</strong></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Value</td>
+    <td bgcolor="#FFFFCC">Meaning</td>
+  </tr>
+  <tr> 
+    <td>0</td>
+    <td>PDF output (compressed or uncompressed)</td>
+  </tr>
+  <tr> 
+    <td>1</td>
+    <td>Metafile</td>
+  </tr>
+  <tr> 
+    <td>2</td>
+    <td>CSV output</td>
+  </tr>
+  <tr> 
+    <td>3</td>
+    <td>HTML output</td>
+  </tr>
+  <tr> 
+    <td>4</td>
+    <td>SVG output</td>
+  </tr>
+  <tr> 
+    <td>5</td>
+    <td>Bitmap output</td>
+  </tr>
+  <tr> 
+    <td>6</td>
+    <td>Plain text</td>
+  </tr>
+  <tr> 
+    <td>7</td>
+    <td>Custom text</td>
+  </tr>
+  <tr> 
+    <td>8</td>
+    <td>Excel multiple sheet</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Excel, one sheet</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>HTML output one file only </td>
+  </tr>
+</table>
+<p><strong>Compiling</strong></p>
+<p>To compile the program you use:</p>
+<p><b>GNU C for Linux</b></p>
+<p> g++ -o test test.cc libreportmanapi.so</p>
+<p>or if you want preview and print functionallity and you have X Server running:</p>
+<p>Change the include file for rpreportmanapiqt.h and execute</p>
+<p>g++ -o test test.cc libreportmanapiqt.so</p>
+<p><b> GNU C for Microsoft Windows</b></p>
+<p>g++ -o test test.cc Reportman.a</p>
+<p>Where Reportman.a is the import library for Reportman.ocx.</p>
+<p>You can create the import library with GNU dlltool:</p>
+<p>dlltool --dllname Reportman.ocx --def Reportman.def --output-lib Reportman.a 
+  -k</p>
+<p><strong>In Borland C++ for Microsoft Windows</strong></p>
+<p>bcpp test.cc Reportman.lib</p>
+<p>Where Reportman.lib is the import library for Reportman.ocx.</p>
+<p>You can create the import library:</p>
+<p>implib Reportman.lib Reportman.ocx</p>
+<p><strong>With a Visual C++Builder project</strong></p>
+<p>You can create the import library as above then add to your project the Reportman.lib 
+  file so the compiler includes it in the link stage.</p>
+<p><strong>With Visual Basic</strong></p>
+<p>Add the module rpreportmanapi.bas to your proyect, then you can call the functions, 
+  for example:</p>
+<p>Dim ares As Long<br>
+  Dim Avar As Variant</p>
+<p>rhan = rp_open(&quot;samplevb.rep&quot;)<br>
+  If rhan = 0 Then<br>
+  Text1.Text = rp_lasterror<br>
+  Else<br>
+  Avar = &quot;TESTING PARAM&quot;<br>
+  ares = rp_setparamvaluevar(rhan, &quot;PARAMETER1&quot;, Avar)<br>
+  If ares = 0 Then<br>
+  Text1.Text = rp_lasterror<br>
+  Else<br>
+  ares = rp_preview(rhan, &quot;Hello from VB&quot;)<br>
+  End If<br>
+  rp_close (rhan)<br>
+  End If<br>
+</p>
+<p><strong>With Delphi</strong></p>
+<p>Include the rpreportmanapiqt.pas unit in your uses clause, then use the functions.</p>
+<p><b>Known problems</b></p>
+<p>In some linux distros you must define the CLX_USE_LIBQT=true enviroment variable 
+  to use the libreportmanapiqt.so library. Make sure all the libraries Report 
+  Manager engine needs are in the library path.</p>
+</body>
+</html>

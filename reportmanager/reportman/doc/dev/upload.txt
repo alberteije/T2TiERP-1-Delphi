@@ -1,0 +1,21 @@
+To upload the web page:
+
+1.zip the web to a doc.zip file
+2.Copy the file to sourceforge:
+
+scp doc.zip tonim@reportman.sourceforge.net:/home/groups/r/re/reportman/htdocs/ 
+
+You can use also putty command line tool pscp
+
+Note: It will ask the password.
+
+3.Enter in sourceforge shell using ssh putty for example
+
+telnet shell.sourceforge.net
+Username:tonim
+Password:*********
+
+4. Enter to the correct directory and unzip the file
+cd /home/groups/r/re/htdocs
+unzip doc.zip
+

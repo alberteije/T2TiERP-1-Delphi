@@ -1,0 +1,58 @@
+package rppackdesign;
+
+{$R *.res}
+{$R 'rpmdesigner.dcr'}
+{$R 'rpruler.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Report Manager Designer Component Package'}
+{$IMPLICITBUILD OFF}
+
+requires
+  designide,
+  visualdbclx;
+
+contains
+  rpmdesigner in 'rpmdesigner.pas',
+  rpmdfdinfo in 'rpmdfdinfo.pas' {FRpDatainfoconfig},
+  rpmdfdesign in 'rpmdfdesign.pas' {FDesignFrame: TFrame},
+  rpmdfdrawint in 'rpmdfdrawint.pas',
+  rpmdfgrid in 'rpmdfgrid.pas' {FRpGridOptions},
+  rpmdflabelint in 'rpmdflabelint.pas',
+  rpmdfmain in 'rpmdfmain.pas' {FRpMainF},
+  rpmdfsampledata in 'rpmdfsampledata.pas' {FRpShowSampledata},
+  rpmdfsectionint in 'rpmdfsectionint.pas',
+  rpmdfstruc in 'rpmdfstruc.pas' {FRpStructure: TFrame},
+  rpmdobinsint in 'rpmdobinsint.pas',
+  rpmdobjinsp in 'rpmdobjinsp.pas' {FRpObjInsp: TFrame},
+  rpfparams in 'rpfparams.pas' {FRpParams},
+  rpmdfbarcodeint in 'rpmdfbarcodeint.pas',
+  rpmdfchartint in 'rpmdfchartint.pas',
+  rpmdfextsec in 'rpmdfextsec.pas' {FRpExtSection},
+  rpmdfconnection in 'rpmdfconnection.pas' {FRpConnection: TFrame},
+  rpmdfdatasets in 'rpmdfdatasets.pas' {FRpDatasets: TFrame},
+  rpmdfdatatext in 'rpmdfdatatext.pas' {FRpDataText},
+  rpmdsysinfoqt in 'rpmdsysinfoqt.pas' {FRpSysInfo},
+  rpmregdesign in 'rpmregdesign.pas',
+  rpruler in 'rpruler.pas';
+
+end.

@@ -1,0 +1,614 @@
+<html>
+<head>
+<title>Expression evaluator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Advanced report design</h2>
+<h3>Expression evaluator</h3>
+
+<p>The expression evaluator is a <b>powerful tool</b> included in Report Manager 
+  engine. It allows to evaluate complex expressions <b>accessing dataset fields</b>, 
+  convert field types, interactuate with the report to <b>know the available free 
+  space</b> in the current page, the current data group...</p>
+<p>The Report Manager expression evaluator is like a scripting language but without 
+  iteration operators.</p>
+<p>There are lot of report component properties that are expressions: print condition, 
+  skip page condition,...</p>
+<p>To design advanced reports you should understand how the evaluator interactuates 
+  with the engine:</p>
+<ul>
+  <li>Before the print process, the expression evaluator is initialized, <b>the 
+    engine add useful functions you can use</b>: <i>Page, Free_space, CurrentGroup</i>...</li>
+  <li>After the datasets of the report are open (this is done before print anything), 
+    the evaluator can access dataset fields with the syntax: <i>ALIASNAME.FIELD</i> 
+    (if the fields contain spaces use the clausors: <i>[ALIASNAME.CITY NAME]</i>)</li>
+  <li>Any component with a <b>Identifier property</b> assigned is also added to 
+    the evaluator name space, you can reference them using the syntax M.IDENTIFIER, 
+    or IDENTIFIER, <b>also report parameters are included in the evaluator name 
+    space</b>.</li>
+  <li>The engine evaluates expressions in components in a natural way, that is 
+    <i>Print Condition</i> of a section is evaluated before printing this section, 
+    if a expression contains a reference to an Identifier (another report component), 
+    it will use the last value of the component value (last evaluated expression 
+    property)</li>
+  <li>The exception of the rule are <b>aggregate values</b>, if you assign <i>Aggregate 
+    property</i> of a report component, the expression will be evaluated once 
+    for each record of the main dataset assigned to the subreport containing the 
+    report component, then the aggregate operation is done (<i>sum, stddev</i>...)</li>
+</ul>
+<p><b>Evaluator syntax</b></p>
+<p>The evaluator syntax is similar to pascal syntax, with a few exceptions:</p>
+<ul>
+  <li>To create a variable assign a value to it: (newvariable:=0), but better 
+    if you create the variable adding a report parameter.</li>
+  <li>All variables can be of any type, if an operator does not allow the combination 
+    of diferent types it will raise an exception (error), that is like using variant 
+    type in <i>object pascal</i> language or like <i>basic</i> language</li>
+  <li>Sentence separator operator (;) has more precedence than assignment operator 
+    so you should use parentesis: (variable1:=2);(variable2:=4);</li>
+  <li>Because the evaluator is expression based and not program based, when using 
+    the sentence separator, the result of the expression will be the last evaluated 
+    expression, for the sample above the result will be 4.</li>
+  <li>It allows the use of the conditional IIF operator, that is use/evaluate 
+    one expression if the condition is true or other expression if false</li>
+  <li>Variables are accessed as M.VARIABLENAME or VARIABLENAME, dataset fields 
+    are accessed as ALIASNAME.FIELDNAME, or also FIELDNAME, but last syntax is 
+    not recommended because can cause confusion with variable names, it's not 
+    recomended to use an ALIAS with name 'M' .<br>
+  </li>
+</ul>
+<p><b>Suported data types</b></p>
+<table border="1">
+  <tr>
+    <td bgcolor="#FFFFCC"><b>Data type</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+    <td bgcolor="#FFFFCC"><b>Samples</b></td>
+  </tr>
+  <tr>
+    <td height="22">Integer</td>
+    <td height="22">Integer types, up to 64 bits of precision</td>
+    <td height="22">123 2345 -24345 0</td>
+  </tr>
+  <tr>
+    <td>Double</td>
+    <td>Double precision types</td>
+    <td>12.34 -12.34345 -1.3e-10</td>
+  </tr>
+  <tr>
+    <td>Currency</td>
+    <td>Currency types, with a low range but without lossing precision (four decimals 
+      allowed) </td>
+    <td>12.4534 </td>
+  </tr>
+  <tr>
+    <td>String</td>
+    <td>String types (ansi), place two ' to represent one '</td>
+    <td>'Sample' 'It''s a sample' 'A sample with a line feed at end'+#10</td>
+  </tr>
+  <tr>
+    <td>WideString</td>
+    <td>String types of multiple bytes, usually from fields, but also in expressions, 
+      the expression evaluator can work with WideStrings, but literals enclosed 
+      with ' sign can not contain WideStrig values, if you need a widestring literal 
+      use the format: 'this is the infinite widechar'+#8734</td>
+    <td>ADATA.AWIDESTRINGFIELD</td>
+  </tr>
+  <tr>
+    <td>Boolean</td>
+    <td>Boolean data type</td>
+    <td>False True (A AND B)</td>
+  </tr>
+  <tr>
+    <td>TDatetime</td>
+    <td>Date and time datatype, this is a double precision number where each unit 
+      is a day, so 1/24 is an hour, you can operate as a double so you can sum 
+      days, hours...</td>
+    <td>Now-1/24 Date+30</td>
+  </tr>
+  <tr>
+    <td>Null</td>
+    <td>Null value no value assigned</td>
+    <td>NULL</td>
+  </tr>
+  <tr>
+    <td>Binary</td>
+    <td>Althoug there is no operator suport to binary values, you can evaluate 
+      fields to pass content to report components, for example images or large 
+      texts </td>
+    <td>ADATASET.ABINARYFIELD</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><b>Evaluator operators</b></p>
+<p>This table is ordered by operator precedence</p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Operator</b></td>
+    <td bgcolor="#FFFFCC"><b>Type</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td>( )</td>
+    <td>Parenthesis</td>
+    <td>Expressions enclosed by parenthesis are always evaluated first. Parenethesis 
+      are also used to pass paraeters to functions</td>
+  </tr>
+  <tr> 
+    <td>IIF(condition,expr1,expr2)</td>
+    <td>Conditional</td>
+    <td>This is a special operator, if condition evaluates to true, the evaluates 
+      expr1 else evaluates expr2</td>
+  </tr>
+  <tr> 
+    <td>- + NOT</td>
+    <td>Unary</td>
+    <td>When this symbols operate to only one operator (NOT always does this) 
+    </td>
+  </tr>
+  <tr> 
+    <td>* /</td>
+    <td>Arithmetic</td>
+    <td>Multiply and divide operators</td>
+  </tr>
+  <tr> 
+    <td>+ -</td>
+    <td>Arithmetic</td>
+    <td>Sum and Dif operators</td>
+  </tr>
+  <tr> 
+    <td>&gt;= &lt;= &gt; &lt;</td>
+    <td>Comparison</td>
+    <td>Greater or equal, minor or equal, greater and minor.</td>
+  </tr>
+  <tr> 
+    <td>&lt;&gt; &gt;&lt;</td>
+    <td>Comparison</td>
+    <td>The two operators have the same meaning: not equal</td>
+  </tr>
+  <tr> 
+    <td>= ==</td>
+    <td>Comparison</td>
+    <td>The two operators have the same meaning: equal</td>
+  </tr>
+  <tr> 
+    <td>;</td>
+    <td>Separator</td>
+    <td>Sentence or expression separator, the result will be the last evaluated 
+      expression </td>
+  </tr>
+  <tr> 
+    <td>AND</td>
+    <td>Logical</td>
+    <td>The AND operator works with two boolean expressions</td>
+  </tr>
+  <tr> 
+    <td>OR</td>
+    <td>Logical</td>
+    <td>The OR operator works with two boolean expressions</td>
+  </tr>
+  <tr>
+    <td>:=</td>
+    <td>Assignment</td>
+    <td>This is the operator to assign values to variables, always place the variable 
+      in the left side</td>
+  </tr>
+</table>
+<p><b>Evaluator standard functions and constants</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Function or constant</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td>True</td>
+    <td>Boolean constant</td>
+  </tr>
+  <tr> 
+    <td>False</td>
+    <td>Boolean constant</td>
+  </tr>
+  <tr> 
+    <td>Today</td>
+    <td>Returns the current date</td>
+  </tr>
+  <tr> 
+    <td>Time</td>
+    <td>Returns the current time</td>
+  </tr>
+  <tr> 
+    <td>Now</td>
+    <td>Returns the current date and time</td>
+  </tr>
+  <tr> 
+    <td>Null</td>
+    <td>Null value constant</td>
+  </tr>
+  <tr> 
+    <td> function EvalText (expr:string):variant </td>
+    <td>Evaluates a expression, you can have expressions inside database fields 
+      and evaluate them using this useful function</td>
+  </tr>
+  <tr> 
+    <td> function Uppercase (s:string) :string</td>
+    <td>Returns the string in upper case</td>
+  </tr>
+  <tr> 
+    <td>function Lowercase (s:string) :string</td>
+    <td>Returns the string in lower case</td>
+  </tr>
+  <tr> 
+    <td> function FloatToDateTime (n:Double):TDateTime</td>
+    <td>Converts a double value to a TDatetime value</td>
+  </tr>
+  <tr> 
+    <td> function Sin (ang:Double):double</td>
+    <td>Returns the sinus of the angle in radians</td>
+  </tr>
+  <tr> 
+    <td> function Round (num:double,r:double):double </td>
+    <td>Round the num number to r scale, so you can round to 5 cents assigning 
+      0.05 to r parameter</td>
+  </tr>
+  <tr> 
+    <td> function Int (num:double):integer </td>
+    <td>Converts a double to an integer unsing the standard Int function, that 
+      is the smaller more closer integer value</td>
+  </tr>
+  <tr> 
+    <td> function Str (num:variant):string</td>
+    <td>Converts the parameter to string, the parameter can be any value that 
+      can be represented by a string (numbers, dates, times...)</td>
+  </tr>
+  <tr> 
+    <td> function Val (s:string):double </td>
+    <td>Converts a string to a number</td>
+  </tr>
+  <tr> 
+    <td> function Trim (s:string):string </td>
+    <td>Removes leading and trailing spaces from the string</td>
+  </tr>
+  <tr> 
+    <td> function Left (s:string; count:integer):string</td>
+    <td>Returns first count characters of the string, </td>
+  </tr>
+  <tr> 
+    <td> function Right (s:string; count:integer) :string</td>
+    <td>Retutns the right part of a string</td>
+  </tr>
+  <tr> 
+    <td> function Substr(cadena:string; index:integer; count:integer) :string    </td>
+    <td>Returns a substring begining at index and copying count characters</td>
+  </tr>
+  <tr> 
+    <td> function Pos (substr:string,str:string):integer</td>
+    <td>Search a substrin inside a string and returns the index wher is found 
+      or 0 if not found</td>
+  </tr>
+  <tr> 
+    <td>function Sqrt (num:double):double</td>
+    <td>Returns the square of the number</td>
+  </tr>
+  <tr> 
+    <td> function HourMinSec(h:Double; idenH:string; idenM:string; idenS:string) 
+      :string</td>
+    <td>Returns a formated string in format hh:mm:ss but separators are get from 
+      identifiers. Use the most flexible function FormatStr instead</td>
+  </tr>
+  <tr> 
+    <td> function Mod (d1:integer,d2:integer) :integer</td>
+    <td>Returns the moduleof the integer division</td>
+  </tr>
+  <tr> 
+    <td> function Monthname (d:datetime) :string</td>
+    <td>Returns the monthname of a date, you can use FormatStr also</td>
+  </tr>
+  <tr> 
+    <td> function Month (d:datetime) :integer</td>
+    <td>Returns the month number of a given date</td>
+  </tr>
+  <tr> 
+    <td> function Year (d:datetime) :integer</td>
+    <td>Returns the year of a given date</td>
+  </tr>
+  <tr> 
+    <td> function Day (d:datetime) :integer</td>
+    <td>Returns the day of a given date</td>
+  </tr>
+  <tr> 
+    <td> function Formatstr (format:string,v:variant):string</td>
+    <td>Powerful formating function, accepts all data types, and formats acording 
+      to the data type, for example for a DateTime value you can use the format 
+      string: 'dd/mm/yyyy hh:nn:ss', for a number: '###,###0.00', where the , 
+      says the use of thousand separator, the 0 are required format positions 
+      and # are not required format positions, this function is used in display 
+      format property for expressions</td>
+  </tr>
+  <tr> 
+    <td>FormatNum(mask:String; number:double)</td>
+    <td><p>Formats a number with a mask, this function is used in display format 
+        property for expressions. The mask is similar to the one used in FormatStr 
+        but allow the use of repeatable thousand separator amd other options:</p>
+      <p>A hidden decimal separator can be specified (indicates the position for 
+        the separation of integer and decimal part) as :, also you can include 
+        this pairs of chars indicating:</p>
+      <p>LX Where X is the character used to fill needed numers on the left, the 
+        default is 0</p>
+      <p>TX Where X is the character used as thousand separator.</p>
+      <p>Some samples:</p>
+      <table border="1">
+        <tr bgcolor="#FFFFCC"> 
+          <td>Mask</td>
+          <td>Sample</td>
+          <td>Result</td>
+          <td>Description</td>
+        </tr>
+        <tr> 
+          <td>##,##,##,##,##0.00</td>
+          <td>123123456.789</td>
+          <td>1,23,23,456.79</td>
+          <td>Indian formatting</td>
+        </tr>
+        <tr> 
+          <td>T'000,000,000,000.00</td>
+          <td>123123456.789</td>
+          <td>000123'123'456.79</td>
+          <td>Changing thousand separator, see thousand separator is not used 
+            when padding length</td>
+        </tr>
+        <tr> 
+          <td>LI000000000000.00</td>
+          <td>1231234.789</td>
+          <td>IIIII1231234.79</td>
+          <td>Left padding with a character (usually a blank space)</td>
+        </tr>
+      </table>
+      <p><br>
+      </p></td>
+  </tr>
+  <tr> 
+    <td> function NumToText (n:double,f:boolean):string</td>
+    <td>Returns the natural language representation of a number, f says if female 
+      words required (' una peseta'-'un euro'), for example for 1200 the result 
+      will be 'one thousand and two hundred'. The language is selected from the 
+      active report language. The implementation for this function is: English, 
+      Spanish, Catalan.</td>
+  </tr>
+  <tr> 
+    <td>function ReplaceStr(S,OldPattern, NewPattern:Sring):String</td>
+    <td>Search OldPattern inside S replacing it if found with NewPattern</td>
+  </tr>
+  <tr> 
+    <td>function FileExists (s:String):boolean</td>
+    <td>Return true if the file exists</td>
+  </tr>
+  <tr> 
+    <td>function ChtToChs (expr:string):String</td>
+    <td>Translates traditional Chinesse to simplified chinesse (available only 
+      on Win32)</td>
+  </tr>
+  <tr> 
+    <td>function ChtToChs (expr:string):String</td>
+    <td>Translates simplified chinesse to traditional chinesse (available only 
+      on Win32)</td>
+  </tr>
+  <tr> 
+    <td>function IsInteger (avalue:string):boolean</td>
+    <td>Returns true if the string is a valid integer</td>
+  </tr>
+  <tr> 
+    <td>function IsNumeric (avalue:string):boolean</td>
+    <td>Returns true if the string is a valid number</td>
+  </tr>
+  <tr> 
+    <td>function IsValidDateTime(avalue:string):boolean</td>
+    <td>Returns true if the string is a valid date/time</td>
+  </tr>
+  <tr>
+    <td>function CheckExpression(expression,message):boolean</td>
+    <td>If the expression is false raises an exception with the provided message</td>
+  </tr>
+  <tr>
+    <td>function StringToBin:binary</td>
+    <td>Convers a string to a binary type. An expression returning a binary type can be used in the image expression for example. </td>
+  </tr>
+  <tr>
+    <td>function Decode64(value:string):string </td>
+    <td>Decodes a base64 string to the original string representation, you can convert the result to binary if the original string represens an image for example. </td>
+  </tr>
+</table>
+<p><b>Evaluator functions and variables available while executing a report</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Function or constant</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td> function GraphicClear (Gr:string):Boolean</td>
+    <td>Clears the values of a Chart report component, you can place this expression 
+      in beforeprint property of a section for example. The parameter is the identifier 
+      property of the Chart component</td>
+  </tr>
+  <tr> 
+    <td> function GraphicNew (Gr:string; V:Single; C:Boolean; Etiq:string; Caption:string) 
+      :Boolean </td>
+    <td>Inserts a new value in the Chart, the first parameter is the identifier 
+      of the Chart component. V is the value to insert, C says if there is a serie 
+      change, Etiq is the text of the value and Caption is the text of the serie</td>
+  </tr>
+  <tr> 
+    <td>function GraphicBounds (Gr:string; autol,autoh:boolean; low,high:double;log:boolean; 
+      logbase:double; inverted:boolean):Boolean;<br></td>
+    <td>Establish upper and lower bound for a chart, the axis can be inverted 
+      and also a logaritthmic scale can be used. Set autol (automatic lower bound) 
+      to false and set a value to the low parameter, idem for autoh (automatic 
+      higher bound)</td>
+  </tr>
+  <tr> 
+    <td> function GraphicSerieColor(Gr:string, Color:Integer):Boolean;<br></td>
+    <td>Set the current chart serie color</td>
+  </tr>
+  <tr> 
+    <td> function GraphicColor(Gr:string, Color:Integer):Boolean;<br></td>
+    <td>Set the color for the last value added to the chart</td>
+  </tr>
+  <tr> 
+    <td>Identifer </td>
+    <td>Any identifier property assigned to a report component usually (TRpExpressions 
+      and TRpCharts) will create a variable in the expression evaluator, so you 
+      can calculate totals and then use the calculated value in other report components</td>
+  </tr>
+  <tr> 
+    <td>Page </td>
+    <td>Returns the physical page number</td>
+  </tr>
+  <tr> 
+    <td>PageNum</td>
+    <td>Returns the logical page number, you can alter this variable or initialize 
+      it setting Init.PageNum property in a group section</td>
+  </tr>
+  <tr> 
+    <td>Free_space , Free_space_inch, Free_space_cms</td>
+    <td>Returns the available space in the page, in twips (1440 twips = 1 inches), 
+      inches or centimeters</td>
+  </tr>
+  <tr> 
+    <td>function Eof (alias:string):Boolean</td>
+    <td>Returns true if the alias is at the end of the recordset</td>
+  </tr>
+  <tr> 
+    <td>Parameters</td>
+    <td>All the report parameters are available in the expression evaluator</td>
+  </tr>
+  <tr> 
+    <td><a href="drawfunctions.html">Draw functions</a></td>
+    <td>See draw functions page for details</td>
+  </tr>
+  <tr> 
+    <td>PAGECOUNT</td>
+    <td><p>This is a special expression, can not be combined or included inside 
+        another expression, when two pass report option is enabled, the engine 
+        will sustitute any PAGECOUNT expression with the integer page count value 
+        of the report, but you can still use the display format property to customize 
+        the final output. PAGECOUNT can not be used inside expressions because:</p>
+      <ul>
+        <li>Before the report processing is ended, the engine does not know total 
+          number of pages.</li>
+        <li>ANY expression can change section sizes or any other components conditioning 
+          the length (in pages) of a report.</li>
+      </ul></td>
+  </tr>
+  <tr> 
+    <td>FREE_SPACE_TWIPS, FREE_SPACE_INCH, FREE_SPACE_CMS</td>
+    <td>Returns the available free space (vertical) in current page, in the selected 
+      unit. </td>
+  </tr>
+  <tr> 
+    <td>CURRENTGROUP</td>
+    <td>Returns the actual processing group, it returns 0 if the engine is printing 
+      details (so the next data section will be a detail), it returns a negative 
+      number if the engine is printing group headers (the number indicates what 
+      group header is processing) and a positive number when processing group 
+      footers.</td>
+  </tr>
+  <tr> 
+    <td>FIRSTSECTION</td>
+    <td>Returns true if evaluated inside the first <b>non repeatable data section</b> 
+      printed in the current page, that is if a page header or a group header 
+      with page repeat is printed they don't count for the first section printed.</td>
+  </tr>
+  <tr> 
+    <td><p>PAGEHEIGHT, PAGEWIDTH</p></td>
+    <td>Returns the page witdh and page height in twips ((1440 twips = 1 inches)</td>
+  </tr>
+  <tr> 
+    <td> function GetValueFromSQL (connectionname:String; sql:String):Variant<br></td>
+    <td>This function uses the sql parameter to execute, and open a sql query 
+      using a connection name, it will return the first column value of the first 
+      row, or NULL if the opened dataset is empty.</td>
+  </tr>
+  <tr> 
+    <td>M.LANGUAGE</td>
+    <td>Allow the change of the report language at runtime</td>
+  </tr>
+  <tr>
+    <td>PARAMINFO(paramname:string; index:integer)</td>
+    <td><p>Allow obtaining information about a report parameter, useful for multiple 
+        selection or list values </p>
+      <table border="1">
+        <tr bgcolor="#FFFFCC"> 
+          <td><strong>Index</strong></td>
+          <td><strong>Meaning</strong></td>
+        </tr>
+        <tr> 
+          <td>0</td>
+          <td>Value as string</td>
+        </tr>
+        <tr> 
+          <td>1</td>
+          <td>Selected values on multiple selection</td>
+        </tr>
+        <tr> 
+          <td>2</td>
+          <td>Selected indexes on multiple selection</td>
+        </tr>
+        <tr> 
+          <td>3</td>
+          <td>Selected items on multiple selection</td>
+        </tr>
+        <tr> 
+          <td>4</td>
+          <td>Full list of items</td>
+        </tr>
+        <tr> 
+          <td>5</td>
+          <td>Full list of values</td>
+        </tr>
+        <tr> 
+          <td>6</td>
+          <td>Datasets linked to the parameter</td>
+        </tr>
+        <tr> 
+          <td>7</td>
+          <td>Parameter description</td>
+        </tr>
+        <tr> 
+          <td>8</td>
+          <td>Parameter hint</td>
+        </tr>
+        <tr> 
+          <td>9</td>
+          <td>Parameter error message</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Parameter validation expression</td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<p><b>Building expressions</b></p>
+<p>When you are editing a report, in the expression properties appears a button, 
+  clicking this button a expresion builder helper is shown.</p>
+<p>There you can find information about available functions, variables and database 
+  fields, and you can syntax check expressions.</p>
+<p><img src="images/expreeval.jpg" width="495" height="397"></p>
+<p><b>Using the expression evaluator in Delphi/Kylix/Builder</b></p>
+<p>The report evaluator is included in components package. You can use it to evaluate 
+  expressions, functions, accessing to database fields etc..</p>
+<p>All you need is to drop a TRpEvaluator component, the use is very simple:</p>
+<p><code>procedure TForm1.Button1Click(Sender: TObject);<br>
+  begin<br>
+  RpEvaluator1.Expression:='2+2';<br>
+  RpEvaluator1.Evaluate;<br>
+  ShowMessage(String(RpEvaluator1.EvalResult));<br>
+  end;</code></p>
+<p>If you need access to dataset fields drop a TRpAlias, edit the list to add 
+  a alias and assign a dataset to the alias, then assign the TRpAlias to the RpAlias 
+  property of TRpEvaluator, now you can include dataset fields in expressions 
+  as ALIAS.FIELDNAME.</p>
+</body>
+</html>

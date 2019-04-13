@@ -1,0 +1,185 @@
+program MiniRetaguarda;
+
+uses
+  Forms,
+  Windows,
+  Dialogs,
+  UDataModule in 'Tela\UDataModule.pas' {FDataModule: TDataModule},
+  UMenu in 'Tela\UMenu.pas' {FMenu},
+  ULookup in 'Tela\ULookup.pas' {FLookup},
+  UFiltro in 'Tela\UFiltro.pas' {FFiltro},
+  BancoController in 'Controller\BancoController.pas',
+  Atributos in 'Infra\Atributos.pas',
+  Biblioteca in 'Infra\Biblioteca.pas',
+  Constantes in 'Infra\Constantes.pas',
+  VendaDetalheVO in 'VO\VendaDetalheVO.pas',
+  AgenciaVO in 'VO\AgenciaVO.pas',
+  BancoVO in 'VO\BancoVO.pas',
+  CargoVO in 'VO\CargoVO.pas',
+  CepVO in 'VO\CepVO.pas',
+  CfopVO in 'VO\CfopVO.pas',
+  ChequeEmitidoVO in 'VO\ChequeEmitidoVO.pas',
+  ChequeVO in 'VO\ChequeVO.pas',
+  ColaboradorVO in 'VO\ColaboradorVO.pas',
+  ContaCaixaVO in 'VO\ContaCaixaVO.pas',
+  ContadorVO in 'VO\ContadorVO.pas',
+  ContasPagarReceberVO in 'VO\ContasPagarReceberVO.pas',
+  ContasParcelasVO in 'VO\ContasParcelasVO.pas',
+  CstBIcmsVO in 'VO\CstBIcmsVO.pas',
+  CstPisCofinsVO in 'VO\CstPisCofinsVO.pas',
+  EmpresaVO in 'VO\EmpresaVO.pas',
+  FechamentoCaixaBancoVO in 'VO\FechamentoCaixaBancoVO.pas',
+  FichaTecnicaVO in 'VO\FichaTecnicaVO.pas',
+  ImpostoIcmsVO in 'VO\ImpostoIcmsVO.pas',
+  MeiosPagamentoVO in 'VO\MeiosPagamentoVO.pas',
+  NcmVO in 'VO\NcmVO.pas',
+  NotaFiscalCabecalhoVO in 'VO\NotaFiscalCabecalhoVO.pas',
+  NotaFiscalDetalheVO in 'VO\NotaFiscalDetalheVO.pas',
+  PapelFuncaoVO in 'VO\PapelFuncaoVO.pas',
+  PapelVO in 'VO\PapelVO.pas',
+  PedidoCompraDetalheVO in 'VO\PedidoCompraDetalheVO.pas',
+  PedidoCompraVO in 'VO\PedidoCompraVO.pas',
+  PessoaEnderecoVO in 'VO\PessoaEnderecoVO.pas',
+  PlanoContasVO in 'VO\PlanoContasVO.pas',
+  ProdutoPromocaoVO in 'VO\ProdutoPromocaoVO.pas',
+  ProdutoVO in 'VO\ProdutoVO.pas',
+  SetorVO in 'VO\SetorVO.pas',
+  SituacaoPessoaVO in 'VO\SituacaoPessoaVO.pas',
+  TalonarioChequeVO in 'VO\TalonarioChequeVO.pas',
+  TipoDocumentoVO in 'VO\TipoDocumentoVO.pas',
+  TipoEnderecoVO in 'VO\TipoEnderecoVO.pas',
+  UnidadeProdutoVO in 'VO\UnidadeProdutoVO.pas',
+  UsuarioVO in 'VO\UsuarioVO.pas',
+  VendaCabecalhoVO in 'VO\VendaCabecalhoVO.pas',
+  T2TiORM in 'Infra\T2TiORM.pas',
+  ConexaoBD in 'Infra\ConexaoBD.pas',
+  CepController in 'Controller\CepController.pas',
+  UCep in 'Tela\UCep.pas' {FCep},
+  UBanco in 'Tela\UBanco.pas' {FBanco},
+  UTipoEndereco in 'Tela\UTipoEndereco.pas' {FTipoEndereco},
+  TipoEnderecoController in 'Controller\TipoEnderecoController.pas',
+  UAgencia in 'Tela\UAgencia.pas' {FAgencia},
+  AgenciaController in 'Controller\AgenciaController.pas',
+  UContaCaixa in 'Tela\UContaCaixa.pas' {FContaCaixa},
+  ContaCaixaController in 'Controller\ContaCaixaController.pas',
+  CfopController in 'Controller\CfopController.pas',
+  UCfop in 'Tela\UCfop.pas' {FCfop},
+  UTalonarioCheque in 'Tela\UTalonarioCheque.pas' {FTalonarioCheque},
+  TalonarioChequeController in 'Controller\TalonarioChequeController.pas',
+  ChequeController in 'Controller\ChequeController.pas',
+  USituacaoPessoa in 'Tela\USituacaoPessoa.pas' {FSituacaoPessoa},
+  SituacaoPessoaController in 'Controller\SituacaoPessoaController.pas',
+  SetorController in 'Controller\SetorController.pas',
+  USetor in 'Tela\USetor.pas' {FSetor},
+  CargoController in 'Controller\CargoController.pas',
+  UCargo in 'Tela\UCargo.pas' {FCargo},
+  UTipoDocumento in 'Tela\UTipoDocumento.pas' {FTipoDocumento},
+  TipoDocumentoController in 'Controller\TipoDocumentoController.pas',
+  UMeiosPagamento in 'Tela\UMeiosPagamento.pas' {FMeiosPagamento},
+  MeiosPagamentoController in 'Controller\MeiosPagamentoController.pas',
+  UPlanoContas in 'Tela\UPlanoContas.pas' {FPlanoContas},
+  PlanoContasController in 'Controller\PlanoContasController.pas',
+  UUnidadeProduto in 'Tela\UUnidadeProduto.pas' {FUnidadeProduto},
+  UnidadeProdutoController in 'Controller\UnidadeProdutoController.pas',
+  UPessoa in 'Tela\UPessoa.pas' {FPessoa},
+  PessoaEnderecoController in 'Controller\PessoaEnderecoController.pas',
+  ULancamentoReceber in 'Tela\ULancamentoReceber.pas' {FLancamentoReceber},
+  ParcelaReceberController in 'Controller\ParcelaReceberController.pas',
+  LancamentoReceberController in 'Controller\LancamentoReceberController.pas',
+  EmpresaController in 'Controller\EmpresaController.pas',
+  UParcelaRecebimento in 'Tela\UParcelaRecebimento.pas' {FParcelaRecebimento},
+  ParcelaRecebimentoController in 'Controller\ParcelaRecebimentoController.pas',
+  LancamentoPagarController in 'Controller\LancamentoPagarController.pas',
+  ParcelaPagarController in 'Controller\ParcelaPagarController.pas',
+  ParcelaPagamentoController in 'Controller\ParcelaPagamentoController.pas',
+  ULancamentoPagar in 'Tela\ULancamentoPagar.pas' {FLancamentoPagar},
+  UParcelaPagamento in 'Tela\UParcelaPagamento.pas' {FParcelaPagamento},
+  UImportaContaCaixa in 'Tela\UImportaContaCaixa.pas' {FImportaContaCaixa},
+  UMovimentoCaixaBanco in 'Tela\UMovimentoCaixaBanco.pas' {FMovimentoCaixaBanco},
+  MovimentoCaixaBancoController in 'Controller\MovimentoCaixaBancoController.pas',
+  MovimentoCaixaBancoVO in 'VO\MovimentoCaixaBancoVO.pas',
+  FechamentoCaixaBancoController in 'Controller\FechamentoCaixaBancoController.pas',
+  UPedidoCompra in 'Tela\UPedidoCompra.pas' {FPedidoCompra},
+  PedidoCompraController in 'Controller\PedidoCompraController.pas',
+  PedidoCompraDetalheController in 'Controller\PedidoCompraDetalheController.pas',
+  ProdutoController in 'Controller\ProdutoController.pas',
+  UPDVCarga in 'Tela\UPDVCarga.pas' {FPDVCarga},
+  ImpostoIcmsController in 'Controller\ImpostoIcmsController.pas',
+  UBase in 'Tela\UBase.pas' {FBase},
+  UsuarioController in 'Controller\UsuarioController.pas',
+  ULogin in 'Tela\ULogin.pas' {FLogin},
+  UTela in 'Tela\UTela.pas' {FTela},
+  UColaborador in 'Tela\UColaborador.pas' {FColaborador},
+  Controller in 'Controller\Controller.pas',
+  Tipos in 'Infra\Tipos.pas',
+  SessaoUsuario in 'Infra\SessaoUsuario.pas',
+  NotaFiscalController in 'Controller\NotaFiscalController.pas',
+  NfeCabecalhoController in 'Controller\NfeCabecalhoController.pas',
+  NfeDetalheController in 'Controller\NfeDetalheController.pas',
+  NfeCabecalhoVO in 'VO\NfeCabecalhoVO.pas',
+  NfeDetalheVO in 'VO\NfeDetalheVO.pas',
+  UNFe in 'Tela\UNFe.pas' {FNFe},
+  UProduto in 'Tela\UProduto.pas' {FProduto},
+  NotaFiscalDetalheController in 'Controller\NotaFiscalDetalheController.pas',
+  PessoaVO in 'VO\PessoaVO.pas',
+  PessoaController in 'Controller\PessoaController.pas',
+  UNFeItem in 'UNFeItem.pas',
+  UNFeItemUtil in 'Infra\UNFeItemUtil.pas',
+  UNFeDestinatarioUtil in 'Infra\UNFeDestinatarioUtil.pas',
+  UDestinatarioUtil in 'Infra\UDestinatarioUtil.pas',
+  ProdutoPromocaoController in 'Controller\ProdutoPromocaoController.pas',
+  FichaTecnicaController in 'Controller\FichaTecnicaController.pas',
+  EcfTurnoController in 'Controller\EcfTurnoController.pas',
+  EcfResolucaoController in 'Controller\EcfResolucaoController.pas',
+  EcfImpressoraController in 'Controller\EcfImpressoraController.pas',
+  EcfConfiguracaoController in 'Controller\EcfConfiguracaoController.pas',
+  EcfTurnoVO in 'VO\EcfTurnoVO.pas',
+  EcfResolucaoVO in 'VO\EcfResolucaoVO.pas',
+  EcfImpressoraVO in 'VO\EcfImpressoraVO.pas',
+  EcfConfiguracaoVO in 'VO\EcfConfiguracaoVO.pas',
+  CargaFuncionarioController in 'Controller\CargaFuncionarioController.pas',
+  CargaFuncionarioVO in 'VO\CargaFuncionarioVO.pas',
+  ContadorController in 'Controller\ContadorController.pas',
+  EcfPosicaoComponentesController in 'Controller\EcfPosicaoComponentesController.pas',
+  EcfPosicaoComponentesVO in 'VO\EcfPosicaoComponentesVO.pas',
+  NFeConfiguracaoController in 'Controller\NFeConfiguracaoController.pas',
+  NFeConfiguracaoVO in 'VO\NFeConfiguracaoVO.pas',
+  UConfigConexao in 'Tela\UConfigConexao.pas' {FConfigConexao},
+  UNcm in 'Tela\UNcm.pas' {FNCM},
+  NcmController in 'Controller\NcmController.pas',
+  UImpostoIcms in 'Tela\UImpostoIcms.pas' {FImpostoIcms},
+  UContador in 'Tela\UContador.pas' {FContador},
+  UEmpresa in 'Tela\UEmpresa.pas' {FEmpresa},
+  ExportaTabelasController in 'Controller\ExportaTabelasController.pas';
+
+{$R *.res}
+
+var
+  Instancia: THandle;
+begin
+
+
+  Instancia:= CreateMutex(nil, false, 'MINIRETAGUARDA');
+
+  if WaitForSingleObject(Instancia, 0) = wait_Timeout then
+  begin
+    MessageDlg('Você não pode executar outra cópia do aplicativo', mtInformation, [mbOK], 0);
+    exit;
+  end else
+  begin
+    Application.Initialize;
+    Application.MainFormOnTaskbar := True;
+    Application.Title := 'Mini Retaguarda';
+    Application.CreateForm(TFDataModule, FDataModule);
+  Application.CreateForm(TFMenu, FMenu);
+  Application.CreateForm(TFContador, FContador);
+  Application.CreateForm(TFEmpresa, FEmpresa);
+  Application.Run;
+  end;
+
+end.
+
+
+
+
+

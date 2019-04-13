@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Report grid</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Basic report design</h2>
+<h3><b>Report grid</b></h3>
+<p>Report grid is a very useful tool when designing reports, it allows to easily 
+  align components.</p>
+<p>The grid options are stored for each report, you can access them selecting 
+  grid option item in display menu.</p>
+<p><img src="images/gridoptions.jpg" width="280" height="234"></p>
+<p>If the grid is not enabled, it has no effect, but it can be still visible.</p>
+<p>If you select draw lines property, a grid of lines will draw instead points 
+  (the default).</p>
+<p>You can alter the grid color by clicking the shape.</p>
+<p>This is a sample setting grid lines and gray color:</p>
+<p><img src="images/gridoptions2.jpg" width="610" height="401"></p>
+<p>&nbsp;</p>
+</body>
+</html>

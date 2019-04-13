@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Using Report Manager from PHP</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Basic report design</h2>
+<h3><b>Using Report Manager from javascript</b></h3>
+<p>This is a sample was provided by pirate no beard [jorr@comtekadvanced.com], 
+  at Yahoo reportman group:</p>
+<p>&gt;&gt;&gt; Quoted</p>
+<p>Here's a javascript class I wrote to facilitate launching reports as PDFs from 
+  pages on our intranet. It's very simple but works for me so I thought I would 
+  share it. Note that the class automatically opens reports from the report group 
+  &quot;RMREPORTS&quot;, uses the &quot;guest&quot; account and refers to a copy 
+  of repwebserver.dll in the directory /cgi-bin. That can be modified easily enough 
+  by changing the lines in the &quot;Properties&quot; section.</p>
+<p>Sample usage:<br>
+  --<br>
+  var oReport = new RMReport(&quot;REPORT_NAME&quot;); oReport.AddParameter(&quot;PARAMNAME1&quot;,&quot;value1&quot;);<br>
+  oReport.AddParameter(&quot;PARAMNAME2&quot;,&quot;value2&quot;);<br>
+  oReport.Launch();<br>
+  --</p>
+<p>Actual code:<br>
+  --</p>
+<p>// Defines object &quot;RMReport&quot; and methods // for creating and linking 
+  to reports in // Report Manager.</p>
+<p>function RMReport(name)<br>
+  {<br>
+  // properties</p>
+<p> this.parameterNames = new Array();<br>
+  this.parameterValues = new Array();<br>
+  this.baseUrl = &quot;/cgi-bin/repwebserver.dll/execute.pdf?<br>
+  reportname=&quot; + name + &quot;&amp;aliasname=RMREPORTS&amp;username=guest&quot;;</p>
+<p> this.Url = iUrl;<br>
+  this.AddParameter = iAddParameter;<br>
+  this.Launch = iLaunch;</p>
+<p> // functions</p>
+<p> // build the Url for the report.<br>
+  function iUrl()<br>
+  {<br>
+  var url = this.baseUrl;<br>
+  for(var i=0;i&lt;this.parameterNames.length;i++)<br>
+  url+= &quot;&amp;Param&quot; + this.parameterNames[i] <br>
+  + &quot;=&quot; + this.parameterValues[i];<br>
+  return url;<br>
+  }</p>
+<p> // add a parameter to the report.<br>
+  function iAddParameter(name,value)<br>
+  {<br>
+  this.parameterNames[this.parameterNames.length]=<br>
+  name;<br>
+  this.parameterValues[this.parameterValues.length]=<br>
+  escape(value);<br>
+  }</p>
+<p> // launch the report in a new window.<br>
+  function iLaunch()<br>
+  {<br>
+  window.open(this.Url());<br>
+  }<br>
+  }</p>
+<p>--</p>
+<p>&nbsp; </p>
+</body>
+</html>

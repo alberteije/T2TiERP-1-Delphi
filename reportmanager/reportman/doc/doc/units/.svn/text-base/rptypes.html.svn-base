@@ -1,0 +1,251 @@
+<html>
+<head>
+<title>Units documentation - rptypes.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rptypes.pas</h3>
+<h4>Description</h4>
+<p>This unit implements base types and non-visual utility functions, near all 
+  units of the engine uses this unit because defines most base types.</p>
+<h4>Types</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpParamtype</td>
+    <td> 
+      <p>Enumeration (rpParamString,rpParamInteger,rpParamDouble,rpParamDate, 
+        rpParamTime,rpParamDateTime,rpParamCurrency,rpParamBool, rpParamExpre,rpParamUnknown)</p>
+      <p>Possible parameter types</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TRpType1Font</td>
+    <td> 
+      <p>Enumeration (poHelvetica,poCourier,poTimesRoman,poSymbol,poZapfDingbats)</p>
+      <p>Possible Type1 Fonts, defined in Adobe PDF document specification</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TRpBrushStyle</td>
+    <td> 
+      <p>Enumeration (rpbsSolid, rpbsClear, rpbsHorizontal, rpbsVertical, rpbsFDiagonal, 
+        rpbsBDiagonal, rpbsCross, rpbsDiagCross, rpbsDense1, rpbsDense2, rpbsDense3, 
+        rpbsDense4, rpbsDense5, rpbsDense6, rpbsDense7)</p>
+      <p>Brush fill styles, not all drivers implement all styles</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TRpTwips</td>
+    <td>Integer, this is the measurement unit for positioning and sizing report 
+      elements, that is 1 inch have 1440 units</td>
+  </tr>
+  <tr> 
+    <td>TRpImageDrawStyle</td>
+    <td> 
+      <p>Enumeration (rpDrawCrop,rpDrawStretch,rpDrawFull,rpDrawTile)</p>
+      <p>Methods for drawing a picture inside a surface</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TRpAggregate</td>
+    <td> 
+      <p>Enumeration (rpAgNone,rpAgGroup,rpAgPage,rpAgGeneral)</p>
+      <p>Type of aggregate for report expressions</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TRpAggregateType</td>
+    <td> 
+      <p>Enumeration (rpagSum,rpagMin,rpagMax,rpagAvg,rpagStdDev)</p>
+      <p>Operation performed to do the aggregation</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TRpReportChanged</td>
+    <td> 
+      <p>Enumeration (rpReportStart,rpDataChange,rpGroupChange,rpPageChange,rpInvalidateValue,rpSubReportStart)</p>
+      <p>Used to notify report components the change in the report or subreport 
+        state </p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TRpShapeType</td>
+    <td> 
+      <p>Enumeration (rpsRectangle, rpsSquare, rpsRoundRect, rpsRoundSquare, rpsEllipse, 
+        rpsCircle,rpsHorzLine,rpsVertLine,rpsOblique1,rpsOblique2)</p>
+      <p>Shape and line types</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TRpPrinterFontsOption</td>
+    <td> 
+      <p>Enumeration (rppfontsdefault,rppfontsalways,rppfontsnever)</p>
+      <p>Device font selection option</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TRpPageSize</td>
+    <td> 
+      <p>Enumeration (rpPageSizeDefault,rpPageSizeCustom,rpPageSizeUser)</p>
+      <p>Page size selectoin option,</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TPageSizeQt</td>
+    <td>Record used to store information about page selection when using the Qt 
+      driver </td>
+  </tr>
+  <tr> 
+    <td>TRpPrinterSelect</td>
+    <td> 
+      <p>Enumeration (pRpDefaultPrinter,pRpReportPrinter, pRpTicketPrinter,pRpGraphicprinter, 
+        pRpCharacterprinter,pRpReportPrinter2, pRpTicketPrinter2,pRpUserPrinter1,pRpUserPrinter2, 
+        pRpUserPrinter3,pRpUserPrinter4,pRpUserPrinter5, pRpUserPrinter6,pRpUserPrinter7,pRpUserPrinter8, 
+        pRpUserPrinter9)</p>
+      <p>Printer selection, each printer can have a system printer assigned, so 
+        changing printer configuration for pRpTicketPrinter results in output 
+        in a different printer for all reports defined to print in pRpTicketPrinter</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TRpColor</td>
+    <td>Color information for components, this is really an integer, containing 
+      RGB values</td>
+  </tr>
+  <tr> 
+    <td>TRpPreviewStyle</td>
+    <td> 
+      <p>Enumeration (spWide,spNormal,spEntirePage,spCustom)</p>
+      <p>Defines how the preview will show related to his window the first time 
+        is shown</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TRpPreviewWindowStyle</td>
+    <td> 
+      <p>Enumeration (spwNormal,spwMaximized)</p>
+      <p>The preview window initial state</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TPrinterRawOp</td>
+    <td> 
+      <p>Enumeration (rawopcutpaper,rawopopendrawer)</p>
+      <p>Special operations to perform after a document has been print.</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TBitmapResizeEvent</td>
+    <td> 
+      <p>procedure (awidth,aheight:integer;var scale:double) of object;</p>
+      <p>Event to trigger when a bitmap is resized to a scale (not used now)</p>
+    </td>
+  </tr>
+  <tr>
+    <td>TRpWString</td>
+    <td>Record containing a widestring</td>
+  </tr>
+</table>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpParamObject</td>
+    <td>TObject</td>
+    <td>Binary type parameter</td>
+  </tr>
+  <tr> 
+    <td>TRpReportException</td>
+    <td>Exception</td>
+    <td>A exception containing the component that caused the exception and also 
+      the property</td>
+  </tr>
+  <tr> 
+    <td>TRpWideStrings</td>
+    <td>TObject</td>
+    <td>This is like TStrings but for WideStrings, used by internationalization 
+      of labels</td>
+  </tr>
+</table>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>function StreamCompare(Stream1:TStream; Stream2:TStream):Boolean; </td>
+    <td>Compare two streams, returns true if they are equal</td>
+  </tr>
+  <tr> 
+    <td>procedure WriteWideString(Writer:TWriter; Value:WideString);</td>
+    <td>WideString component streaming</td>
+  </tr>
+  <tr> 
+    <td>function ReadWideString(Reader:TReader):WideString; </td>
+    <td>WideString component streaming</td>
+  </tr>
+  <tr> 
+    <td>procedure Generatenewname(Component:TComponent);</td>
+    <td>Generates a new name for a component</td>
+  </tr>
+  <tr> 
+    <td>function FormatVariant(displayformat:string;Value:Variant; paramtype:TRpParamType):widestring; 
+    </td>
+    <td>With a displayformat returns a formated string based on the variant and 
+      parameter type</td>
+  </tr>
+  <tr> 
+    <td>function CopyFileTo(const Source, Destination: string): Boolean;</td>
+    <td>Copy file function</td>
+  </tr>
+  <tr> 
+    <td>function GetPrinterConfigName (printerindex:TRpPrinterSelect):string; 
+    </td>
+    <td>Returns the name for a selected printer index</td>
+  </tr>
+  <tr> 
+    <td>function GetPrinterOffset (printerindex:TRpPrinterSelect):TPoint;</td>
+    <td>Returns the offset of the printer (defined by the user)</td>
+  </tr>
+  <tr> 
+    <td>function GetDeviceFontsOption (printerindex:TRpPrinterSelect):boolean; 
+    </td>
+    <td>Returns the device font option for the printer index</td>
+  </tr>
+  <tr> 
+    <td>function GetPrinterRawOp (printerindex:TRpPrinterSelect; rawop:TPrinterRawOp):string; 
+    </td>
+    <td>Returns the string to perform a device raw operation</td>
+  </tr>
+  <tr> 
+    <td>procedure FillTreeDir (adirectory:String; alist:TStringList);</td>
+    <td>Returns the reports in a directory and recurse directories, building a 
+      string list in tree structure</td>
+  </tr>
+  <tr> 
+    <td>function WideStringToDOS (astring:WideString):WideString;</td>
+    <td>Converts a WideString to OEM character set</td>
+  </tr>
+  <tr> 
+    <td>function NumberToText (FNumero:currency; female:boolean;idiom:integer):String; 
+    </td>
+    <td>Returns the full text representation of a number</td>
+  </tr>
+  <tr>
+    <td>function IsWindowsNT:Boolean;</td>
+    <td>Return true if the running system is a NT system</td>
+  </tr>
+</table>
+</body>
+</html>

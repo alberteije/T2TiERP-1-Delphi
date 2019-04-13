@@ -1,0 +1,104 @@
+object Form1: TForm1
+  Left = 192
+  Top = 114
+  Width = 696
+  Height = 480
+  VertScrollBar.Range = 325
+  HorzScrollBar.Range = 681
+  ActiveControl = Button1
+  Caption = 'Form1'
+  Color = clBackground
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object Button1: TButton
+    Left = 40
+    Top = 260
+    Width = 85
+    Height = 49
+    Caption = 'Button1'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 172
+    Top = 264
+    Width = 81
+    Height = 61
+    Caption = 'Button2'
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Memo1: TMemo
+    Left = 376
+    Top = 12
+    Width = 305
+    Height = 249
+    Lines.Strings = (
+      'Memo1')
+    ScrollBars = ssBoth
+    TabOrder = 2
+    WordWrap = False
+  end
+  object SQLConnection1: TSQLConnection
+    ConnectionName = 'IFACTUREMP'
+    DriverName = 'Interbase'
+    GetDriverFunc = 'getSQLDriverINTERBASE'
+    LibraryName = 'dbexpint.dll'
+    LoadParamsOnConnect = True
+    Params.Strings = (
+      'DriverName=Interbase'
+      
+        'Database=artemis:c:\archivos de programa\techni-web\gestion\dato' +
+        's\empre005.gdb'
+      'RoleName='
+      'User_Name=sysdba'
+      'Password=tw2000'
+      'ServerCharSet=WIN1252'
+      'SQLDialect=1'
+      'BlobSize=-1'
+      'CommitRetain=False'
+      'WaitOnLocks=True'
+      'ErrorResourceFile='
+      'LocaleCode=0000'
+      'Interbase TransIsolation=ReadCommited'
+      'Trim Char=False')
+    VendorLib = 'GDS32.DLL'
+    Left = 288
+    Top = 256
+  end
+  object QReports: TSQLQuery
+    MaxBlobSize = -1
+    Params = <>
+    SQL.Strings = (
+      'SELECT REPORT_NAME,REPORT_GROUP FROM REPMAN_REPORTS')
+    SQLConnection = SQLConnection1
+    Left = 300
+    Top = 292
+  end
+  object QGroups: TSQLQuery
+    MaxBlobSize = -1
+    Params = <>
+    SQL.Strings = (
+      'SELECT GROUP_CODE,GROUP_NAME,PARENT_GROUP FROM REPMAN_GROUPS')
+    SQLConnection = SQLConnection1
+    Left = 288
+    Top = 332
+  end
+  object QReport: TSQLQuery
+    MaxBlobSize = -1
+    Params = <
+      item
+        DataType = ftString
+        Name = 'REPORTNAME'
+        ParamType = ptUnknown
+      end>
+    SQL.Strings = (
+      'SELECT REPORT FROM REPMAN_REPORTS WHERE'
+      'REPORT_NAME=:REPORTNAME')
+    SQLConnection = SQLConnection1
+    Left = 312
+    Top = 372
+  end
+end

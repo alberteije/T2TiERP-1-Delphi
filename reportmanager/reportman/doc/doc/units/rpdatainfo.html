@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Units documentation - rpdatainfo.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpdatainfo.pas</h3>
+<h4>Description</h4>
+<p>This unit implements all database and dataset access to all supported drivers, 
+  if you want to <b>add a database driver you only need to modify this file</b>, 
+  but to do correctly it uses rpconf.inc compiler configuration so you can enable 
+  or disable database drivers you don't use in your applications, it has a little 
+  ugly code because the compiler defines.</p>
+<h4>Types</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpDatasetType</td>
+    <td>Enumeration (rpdquery,rpdtable), applicable only to Borland Database Engine 
+      datasets </td>
+  </tr>
+</table>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpConnAdmin</td>
+    <td>TObject</td>
+    <td>Helper to load configuration from DBExpress configuration files, used 
+      by DBExpress, IBX, IBO...</td>
+  </tr>
+  <tr> 
+    <td>TRpDatabaseInfoItem</td>
+    <td>TCollectionItem</td>
+    <td>Item with all the information required to perform a connection to a database</td>
+  </tr>
+  <tr> 
+    <td>TRpDatabaseInfoList</td>
+    <td>TCollection</td>
+    <td>Collection of database info items, TRpReport has the property databaseinfo, 
+      this enables a report to connect to multiple databases.</td>
+  </tr>
+  <tr> 
+    <td>TRpDataInfoItem</td>
+    <td>TCollectionItem</td>
+    <td>Item with all the information required to open a dataset, and relations 
+      to other datasets, each item has the DatabaseAlias property that refers 
+      to a TRpDatabaseInfoItem to open the dataset using the correct connection</td>
+  </tr>
+  <tr>
+    <td>TRpDataInfoList</td>
+    <td>TCollection</td>
+    <td>Collection of dataset info items, TRpReport has the property datainfo, 
+      this enables a report to open multiple datasets</td>
+  </tr>
+</table>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>procedure GetRpDatabaseDrivers(alist:TStrings);</td>
+    <td>Fills a string list with the names of supported database drivers</td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Compiler Options</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Installation</h2>
+<h3>Compilation options</h3>
+<p>Before compiling Report Manager engine with Delphi/Builder/Kylix you can customize 
+  the engine.</p>
+<p>The compiler defines allow you to <b>disable engine capabilities to reduce 
+  executable size</b>, other way to reduce the executable size is compile with 
+  runtime packages.</p>
+<table border="1">
+  <tr bgcolor="#00FFFF"> 
+    <td colspan="2"><b>Compiler Defines</b></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Name</b></td>
+    <td bgcolor="#FFFFCC"><b>Includes</b></td>
+  </tr>
+  <tr> 
+    <td>USESQLEXPRESS</td>
+    <td>Allow the use of all DBExpress drivers</td>
+  </tr>
+  <tr> 
+    <td>USEIBX</td>
+    <td>Allow the use of Interbase Express Native access</td>
+  </tr>
+  <tr> 
+    <td>USEADO</td>
+    <td>Allow the use of Microsoft Data Access Objects including ODBC compatible 
+      drivers</td>
+  </tr>
+  <tr> 
+    <td>USEBDE</td>
+    <td>Allow the use of Borland Database Engine and also the SQL Links technology</td>
+  </tr>
+  <tr> 
+    <td>USEIBO</td>
+    <td>Allow the use of Jason Wharton's Interbase Objects</td>
+  </tr>
+  <tr>
+    <td>INDY10</td>
+    <td>Use indy components in version 10, experimental</td>
+  </tr>
+</table>
+<p>To enable or disable this defines you must modify rpconf.inc file, for example 
+  to allow all database drivers but Interbase Objects the first lines of rpconf.inc: 
+</p>
+<p><code>// Database drivers to be used<br>
+  {$DEFINE USESQLEXPRESS}<br>
+  {$DEFINE USEIBX}<br>
+  {$DEFINE USEADO}<br>
+  {$DEFINE USEBDE}<br>
+  //{$DEFINE USEIBO}</code></p>
+<p><code>To enable a engine capability you must have the correct libraries, for 
+  example to enable IBObjects you must have his units in the library path</code>.</p>
+<p>Some Defines are automatically disabled (later in the same file) after version 
+  checking so if you define USESQLEXPRESS but Delphi 5 compiler version is found 
+  the define will be disabled.</p>
+</body>
+</html>

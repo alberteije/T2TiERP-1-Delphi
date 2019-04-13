@@ -1,0 +1,94 @@
+package rppack;
+
+{$R *.res}
+{$R 'rpeval.dcr'}
+{$R 'rpalias.dcr'}
+{$R 'rplastsav.dcr'}
+{$R 'rppdfreport.dcr'}
+{$R 'rptranslator.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Report manager designer (non visual)'}
+{$IMPLICITBUILD OFF}
+
+
+contains
+  rptypeval in 'rptypeval.pas',
+  rpmdconsts in 'rpmdconsts.pas',
+  rpeval in 'rpeval.pas',
+  rpevalfunc in 'rpevalfunc.pas',
+  rpparser in 'rpparser.pas',
+  rpalias in 'rpalias.pas',
+  rplastsav in 'rplastsav.pas',
+  rptypes in 'rptypes.pas',
+  rpdatainfo in 'rpdatainfo.pas',
+  rpparams in 'rpparams.pas',
+  rpxmlstream in 'rpxmlstream.pas',
+  rpbarcodecons in 'rpbarcodecons.pas',
+  rpzlibadler in 'rpzlibadler.pas',
+  rpzlibinfblock in 'rpzlibinfblock.pas',
+  rpzlibinfcodes in 'rpzlibinfcodes.pas',
+  rpzlibinffast in 'rpzlibinffast.pas',
+  rpzlibinftrees in 'rpzlibinftrees.pas',
+  rpzlibinfutil in 'rpzlibinfutil.pas',
+  rpmzlib in 'rpmzlib.pas',
+  rpzlibtrees in 'rpzlibtrees.pas',
+  rpzlibzdeflate in 'rpzlibzdeflate.pas',
+  rpzlibzinflate in 'rpzlibzinflate.pas',
+  rpzlibzlib in 'rpzlibzlib.pas',
+  rpzlibzutil in 'rpzlibzutil.pas',
+  rpmetafile in 'rpmetafile.pas',
+  rpmunits in 'rpmunits.pas',
+  rpdrawitem in 'rpdrawitem.pas',
+  rplabelitem in 'rplabelitem.pas',
+  rpprintitem in 'rpprintitem.pas',
+  rpreport in 'rpreport.pas',
+  rpsection in 'rpsection.pas',
+  rpsecutil in 'rpsecutil.pas',
+  rpsubreport in 'rpsubreport.pas',
+  rpwriter in 'rpwriter.pas',
+  rpdataset in 'rpdataset.pas',
+  rphtmldriver in 'rphtmldriver.pas',
+  rppdfdriver in 'rppdfdriver.pas',
+  rppdffile in 'rppdffile.pas',
+  rppdfreport in 'rppdfreport.pas',
+  rpcompobase in 'rpcompobase.pas',
+  rpmdchart in 'rpmdchart.pas',
+  rpmdbarcode in 'rpmdbarcode.pas',
+  rptranslator in 'rptranslator.pas',
+  rpmdshfolder in 'rpmdshfolder.pas',
+  rpmdrepclient in 'rpmdrepclient.pas' {modclient: TDataModule},
+  rpmdprotocol in 'rpmdprotocol.pas',
+  rptextdriver in 'rptextdriver.pas',
+  rpsvgdriver in 'rpsvgdriver.pas',
+  rpcsvdriver in 'rpcsvdriver.pas',
+  rpbasereport in 'rpbasereport.pas',
+  rpdatatext in 'rpdatatext.pas',
+  rpmreg in 'rpmreg.pas',
+  rpmdcharttypes in 'rpmdcharttypes.pas',
+  rpinfoprovid in 'rpinfoprovid.pas',
+  rpinfoprovft in 'rpinfoprovft.pas',
+  rpfreetype2 in 'rpfreetype2.pas';
+
+{%File 'zconf.inc'}
+
+end.

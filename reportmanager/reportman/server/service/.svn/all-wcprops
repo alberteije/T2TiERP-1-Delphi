@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service
+END
+repserviceinstall.dpr
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/repserviceinstall.dpr
+END
+repserverservice.dpr
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/repserverservice.dpr
+END
+repserviceinstall.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/repserviceinstall.exe.manifest
+END
+repserviceinstall.res
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/repserviceinstall.res
+END
+repserverservice.res
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/repserverservice.res
+END
+repserviceinstall.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/repserviceinstall.cfg
+END
+repserverservice.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/repserverservice.cfg
+END
+uinstall.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/uinstall.dfm
+END
+uinstall.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/uinstall.ddp
+END
+urepservice.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/urepservice.dfm
+END
+urepservice.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/urepservice.ddp
+END
+repserviceinstall.dproj.local
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/repserviceinstall.dproj.local
+END
+repserverservice.dproj.local
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/repserverservice.dproj.local
+END
+repserviceinstall.dof
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/repserviceinstall.dof
+END
+repserverservice.dof
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/repserverservice.dof
+END
+repserviceinstall.dproj
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/repserviceinstall.dproj
+END
+repserverservice.dproj
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/repserverservice.dproj
+END
+uinstall.pas
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/uinstall.pas
+END
+urepservice.pas
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/server/service/urepservice.pas
+END

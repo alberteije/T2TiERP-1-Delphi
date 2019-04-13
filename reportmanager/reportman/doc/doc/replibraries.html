@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Report Libraries</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Basic report design</h2>
+<h3><b>Report Libraries</b></h3>
+<p>Report Manager supports report libraries, you can store reports inside database 
+  tables, so they are centraliced in a single place.</p>
+<p>You can configure available libraries at Report Manager designer, go to File 
+  Menu, Libraries and configuration:</p>
+<p><img src="images/replib1.jpg" width="635" height="430"></p>
+<p>It's recommended you create the library from this dialog, after testing the 
+  database connection, a library consists in two tables, the reports table and 
+  the groups table. In the report table the reports and report descriptions are 
+  stored, the groups table is needed to store the tree structure of the library. 
+  You can browse the library after the creation.</p>
+<p><img src="images/replib2.jpg" width="397" height="376"></p>
+<p>You can create new folders and new reports.</p>
+<p>Use the save to library and open from library options and file menu to manage 
+  the reports inside the library.</p>
+<p>Delphi/Bulider/Kylix components support also report libraries from the IDE, 
+  you can even test your reports without compiling your application. Use a TRpAlias 
+  to setup database connections and check report library access, then link your 
+  PDF/CLX/VCLReport to the TRpAlias, select a connection name and a report name.</p>
+<p><strong>Report Library with PosgreSQL</strong></p>
+<p>You can create report libraries with PosgreSQL, but you need to create a domain 
+  BLOB in your database to identify the binary datatype:</p>
+<p>CREATE DOMAIN BLOB AS bytea</p>
+<p><strong>Creating the library yourself</strong></p>
+<p>Report Manager executes a SQL standard sentences to create report libraries, 
+  if you experience problems you can create the libraries manually.</p>
+<p>For example using postgresql:</p>
+<p>CREATE TABLE public.repman_reports (<br>
+  report_name varchar(50) NOT NULL, <br>
+  report bytea, //not use domain blob <br>
+  report_group int4, <br>
+  user_flag int4, <br>
+  CONSTRAINT repman_reports_pkey PRIMARY KEY (report_name)<br>
+  ) WITH OIDS;<br>
+</p>
+</body>
+</html>

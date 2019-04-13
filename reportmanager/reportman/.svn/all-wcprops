@@ -1,0 +1,3077 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman
+END
+rpmdftreevcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdftreevcl.pas
+END
+rpmdfsearch.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfsearch.pas
+END
+rpmdfstrucvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfstrucvcl.pas
+END
+rpeditalias.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpeditalias.pas
+END
+rpnetdriver.resx
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpnetdriver.resx
+END
+rppdffile.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppdffile.pas
+END
+rpmdfwizardvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfwizardvcl.dfm
+END
+rpexpredlgvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpexpredlgvcl.pas
+END
+rppackdesigntime_del.res
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesigntime_del.res
+END
+rpparams.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpparams.pas
+END
+rppackdesignvcl_del2005.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesignvcl_del2005.cfg
+END
+rppackvcl_builder6.res
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvcl_builder6.res
+END
+rpdatainfo.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdatainfo.pas
+END
+rpgraphicStrings.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpgraphicStrings.pas
+END
+rppackdesigntime_builder6.res
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesigntime_builder6.res
+END
+rpsendmail.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpsendmail.pas
+END
+rpparser.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpparser.pas
+END
+rpmdsysinfo.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdsysinfo.dfm
+END
+rpdbbrowservcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdbbrowservcl.pas
+END
+rppackdesignvcl_del2005.dproj
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesignvcl_del2005.dproj
+END
+rpmdfgridvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfgridvcl.ddp
+END
+rpmdfaboutvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfaboutvcl.pas
+END
+rpmdcharttypes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdcharttypes.pas
+END
+rppackdesignvcl_builder6.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesignvcl_builder6.cpp
+END
+rpcompobase.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpcompobase.pas
+END
+rpmdfsampledata.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfsampledata.xfm
+END
+rppack.kof
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack.kof
+END
+rpmdfhelpform.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfhelpform.xfm
+END
+rppackdesign.res
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesign.res
+END
+rpmdesigneditors.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdesigneditors.pas
+END
+rppackdesign_del.dof
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesign_del.dof
+END
+rpmdfgrid.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfgrid.xfm
+END
+rppackvcl_del2005.bdsproj.local
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvcl_del2005.bdsproj.local
+END
+rpmdshfolder.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdshfolder.pas
+END
+rpgraphutilsvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpgraphutilsvcl.pas
+END
+rppreview.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppreview.xfm
+END
+rpfparams.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfparams.pas
+END
+rppackvcl_del.dof
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvcl_del.dof
+END
+rppagesetup.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppagesetup.pas
+END
+rpmdfselectfields.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfselectfields.pas
+END
+rpfmainmetaview.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfmainmetaview.xfm
+END
+rpmdfdesign.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdesign.xfm
+END
+rppackv.res
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackv.res
+END
+rpmdftree.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdftree.ddp
+END
+rpmdfextsecvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfextsecvcl.ddp
+END
+rprfparams.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rprfparams.xfm
+END
+rpmdchart.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdchart.pas
+END
+rptypeval.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rptypeval.pas
+END
+rpmdfabout.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfabout.ddp
+END
+rppackdesigntime_del.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesigntime_del.cfg
+END
+rppackdesign_del.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesign_del.dpk
+END
+rpmdfsampledatavcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfsampledatavcl.ddp
+END
+rppack_del2005.dproj.local
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del2005.dproj.local
+END
+rpmdfmain.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfmain.ddp
+END
+rpdbdatetimepicker.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdbdatetimepicker.pas
+END
+rpdllutil.dcu
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdllutil.dcu
+END
+rppackvcl_del2005.dproj.local
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvcl_del2005.dproj.local
+END
+rppackvcl_del.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvcl_del.dpk
+END
+rpmdprintconfig.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdprintconfig.pas
+END
+zconf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/zconf.inc
+END
+rpmdfgridvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfgridvcl.dfm
+END
+rpfreetype2.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfreetype2.pas
+END
+rppack_del2007.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del2007.dpk
+END
+rpzlibinffast.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpzlibinffast.pas
+END
+rpeditaliasclx.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpeditaliasclx.xfm
+END
+rppack_builder6.res
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_builder6.res
+END
+rppack.conf
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack.conf
+END
+ReportMan.bdsproj
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/ReportMan.bdsproj
+END
+rppack_builder2007.cbproj
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_builder2007.cbproj
+END
+rpmdrepclient.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdrepclient.ddp
+END
+rpmdfdinfovcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdinfovcl.pas
+END
+rppreviewmetaclx.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppreviewmetaclx.pas
+END
+prexpredlg.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/prexpredlg.dcr
+END
+rpmdesigner.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdesigner.dcr
+END
+rpregv.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpregv.pas
+END
+rpgdidriver.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpgdidriver.ddp
+END
+rpvpreview.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpvpreview.pas
+END
+rpreportutil.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpreportutil.pas
+END
+rpmdobjinsp.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdobjinsp.ddp
+END
+rpmdfextsecvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfextsecvcl.dfm
+END
+rppack_del4.dof
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del4.dof
+END
+rppackvb.res
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvb.res
+END
+rpmdclitreevcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdclitreevcl.pas
+END
+rppackv.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackv.cfg
+END
+rphtmldriver.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rphtmldriver.pas
+END
+rppackvcl_del2005.res
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvcl_del2005.res
+END
+compileb2007.bat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/compileb2007.bat
+END
+rpmdflabelintvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdflabelintvcl.pas
+END
+rpmdfsampledatavcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfsampledatavcl.dfm
+END
+rppackv_del.res
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackv_del.res
+END
+rpdbbrowser.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdbbrowser.xfm
+END
+rpsection.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpsection.pas
+END
+rpmdfbarcodeintvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfbarcodeintvcl.pas
+END
+rpgraphicex.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpgraphicex.pas
+END
+rpfaxsend.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfaxsend.ddp
+END
+rpgdifonts.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpgdifonts.pas
+END
+rppack_del4.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del4.dpk
+END
+rpgraphutils.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpgraphutils.pas
+END
+rppack.res
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack.res
+END
+rpsubreport.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpsubreport.pas
+END
+rpcalcul.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpcalcul.dfm
+END
+LICENSE.RTF
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/LICENSE.RTF
+END
+rpmdrepclient.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdrepclient.dfm
+END
+rpexpredlg.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpexpredlg.dcr
+END
+rpexceldriver.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpexceldriver.ddp
+END
+rppack_builder4.bpk
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_builder4.bpk
+END
+rpgdidriver.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpgdidriver.dfm
+END
+rpmdfchartint.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfchartint.pas
+END
+rppackv_builder6.res
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackv_builder6.res
+END
+rpmdfextsec.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfextsec.ddp
+END
+rppackdesignvcl_del.res
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesignvcl_del.res
+END
+rpmdclitree.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdclitree.pas
+END
+rpmdfdinfo.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdinfo.ddp
+END
+rpdatatext.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdatatext.pas
+END
+rpmddatawiz.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmddatawiz.pas
+END
+rpmdfsearchvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfsearchvcl.dfm
+END
+doclean.bat
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/doclean.bat
+END
+rppackvcl_del2005.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvcl_del2005.cfg
+END
+rpprintdia.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpprintdia.ddp
+END
+rpfmetaview.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfmetaview.xfm
+END
+rpexpredlg.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpexpredlg.ddp
+END
+rplabelitem.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rplabelitem.pas
+END
+rpmdfdrawint.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdrawint.pas
+END
+rprfvparams.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rprfvparams.pas
+END
+rpfmainmetaviewvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfmainmetaviewvcl.pas
+END
+rpnetdriver.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpnetdriver.pas
+END
+rptypes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rptypes.pas
+END
+rppackv_del.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackv_del.cfg
+END
+rpmdsysinfoqt.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdsysinfoqt.ddp
+END
+rpdllutilqt.dcu
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdllutilqt.dcu
+END
+rpstringhash.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpstringhash.pas
+END
+rpfaxsend.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfaxsend.dfm
+END
+rpdrawitem.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdrawitem.pas
+END
+rptranslator.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rptranslator.dcr
+END
+rpzlibzdeflate.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpzlibzdeflate.pas
+END
+rpvclreport.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpvclreport.pas
+END
+rpfmetaviewvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfmetaviewvcl.ddp
+END
+rpmdprotocol.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdprotocol.pas
+END
+rpmdesignervcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdesignervcl.pas
+END
+rpdeltwainfunc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdeltwainfunc.pas
+END
+rpsendmailvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpsendmailvcl.dfm
+END
+rpmdfopenlibvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfopenlibvcl.pas
+END
+rppdfdriver.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppdfdriver.pas
+END
+rpmdfconnection.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfconnection.pas
+END
+rppack_del2005.bdsproj
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del2005.bdsproj
+END
+rppack.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack.cfg
+END
+D7ComboBoxStringsGetPatch.pas
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/D7ComboBoxStringsGetPatch.pas
+END
+rpmdexpexcel.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdexpexcel.pas
+END
+rpmdfdatatextvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdatatextvcl.ddp
+END
+rpexceldriver.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpexceldriver.dfm
+END
+Reportman.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/Reportman.dpk
+END
+rpmdfdatatext.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdatatext.pas
+END
+rppack_builder4.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_builder4.cpp
+END
+rpclxreport.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpclxreport.dcr
+END
+rpsecutil.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpsecutil.pas
+END
+rpmdfsectionintvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfsectionintvcl.pas
+END
+rppack_del5.dof
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del5.dof
+END
+rppackdesignvcl_del.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesignvcl_del.cfg
+END
+rpruler.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpruler.dcr
+END
+rpquerywiz.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpquerywiz.dfm
+END
+rppreviewcontrol.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppreviewcontrol.pas
+END
+rpqtdriver.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpqtdriver.ddp
+END
+rpeval.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpeval.pas
+END
+rpzlibzutil.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpzlibzutil.pas
+END
+rpmreg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmreg.pas
+END
+rpdatetimepicker.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdatetimepicker.pas
+END
+rpmdfdatasets.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdatasets.pas
+END
+GNUmakefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/GNUmakefile
+END
+rppack_del2009.dproj
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del2009.dproj
+END
+rppackdesign_builder6.res
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesign_builder6.res
+END
+rpmdobinsintvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdobinsintvcl.pas
+END
+rpmdobjinspvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdobjinspvcl.ddp
+END
+rpfmetaviewvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfmetaviewvcl.dfm
+END
+rpcolumnar.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpcolumnar.pas
+END
+rppack_del5.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del5.dpk
+END
+rppagesetupvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppagesetupvcl.ddp
+END
+rpinfoprovgdi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpinfoprovgdi.pas
+END
+rpmdfopenlib.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfopenlib.xfm
+END
+rpeditconn.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpeditconn.ddp
+END
+rpdbxconfig.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdbxconfig.ddp
+END
+rpmdfdatatextvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdatatextvcl.dfm
+END
+rpmdfstruc.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfstruc.xfm
+END
+rpexpredlgvcl.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpexpredlgvcl.dcr
+END
+rpmdfdrawintvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdrawintvcl.pas
+END
+rpmdfmainvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfmainvcl.ddp
+END
+rpmaskeditclx.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmaskeditclx.pas
+END
+rpprintitem.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpprintitem.pas
+END
+rpmdftreevcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdftreevcl.ddp
+END
+rpmdfstrucvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfstrucvcl.ddp
+END
+rppreviewmeta.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppreviewmeta.pas
+END
+rpnetpreview.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpnetpreview.pas
+END
+rpzlibzinflate.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpzlibzinflate.pas
+END
+rppack_builder2006.res
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_builder2006.res
+END
+rpexpredlgvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpexpredlgvcl.ddp
+END
+rpreportmanapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpreportmanapi.h
+END
+rpreportmanapiqt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpreportmanapiqt.pas
+END
+rppackvcl_builder6.bpk
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvcl_builder6.bpk
+END
+rppack_del2009.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del2009.dpk
+END
+rppackdesigntime_builder6.bpk
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesigntime_builder6.bpk
+END
+rpmdobjinspvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdobjinspvcl.dfm
+END
+rpmdflabelint.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdflabelint.pas
+END
+rpdbbrowservcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdbbrowservcl.ddp
+END
+rppagesetupvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppagesetupvcl.dfm
+END
+ReportManDesign.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/ReportManDesign.dpk
+END
+rpmdfaboutvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfaboutvcl.ddp
+END
+rpmdfsampledata.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfsampledata.pas
+END
+rpmdfhelpform.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfhelpform.pas
+END
+rpmdfmainvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfmainvcl.dfm
+END
+rpmdfdatasetsvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdatasetsvcl.pas
+END
+rpgraphutilsvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpgraphutilsvcl.ddp
+END
+rpmdfgrid.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfgrid.pas
+END
+rpfparams.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfparams.ddp
+END
+rpmdftreevcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdftreevcl.dfm
+END
+rppack_del2005.res
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del2005.res
+END
+rpinfoprovid.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpinfoprovid.pas
+END
+rpmdfstrucvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfstrucvcl.dfm
+END
+rpzlibzlib.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpzlibzlib.pas
+END
+rppreview.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppreview.pas
+END
+rppagesetup.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppagesetup.ddp
+END
+rpeditalias.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpeditalias.dfm
+END
+rpwebmetaclient.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpwebmetaclient.pas
+END
+rpmregdesign.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmregdesign.pas
+END
+rppackvcl_del2007.res
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvcl_del2007.res
+END
+rpzlibinfutil.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpzlibinfutil.pas
+END
+rpgraphicconfiguration.inc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpgraphicconfiguration.inc
+END
+rppackdesignvcl_del2005.dproj.local
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesignvcl_del2005.dproj.local
+END
+rpfmainmetaview.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfmainmetaview.pas
+END
+rpmdftree.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdftree.xfm
+END
+rpmdfdesign.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdesign.pas
+END
+rpexpredlgvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpexpredlgvcl.dfm
+END
+rppackdesignvcl_del2005.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesignvcl_del2005.dpk
+END
+rpmregdesigntime.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmregdesigntime.pas
+END
+rppackdesignvcl_del2007.dproj
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesignvcl_del2007.dproj
+END
+rpmdfabout.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfabout.xfm
+END
+rprfparams.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rprfparams.pas
+END
+rpreportman.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpreportman.h
+END
+rpmzlib.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmzlib.pas
+END
+rppackvcl_builder6.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvcl_builder6.cpp
+END
+rpdbbrowservcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdbbrowservcl.dfm
+END
+rppackdesigntime_builder6.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesigntime_builder6.cpp
+END
+rpnetreport.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpnetreport.pas
+END
+docleandcu.bat
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/docleandcu.bat
+END
+rpmdfmain.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfmain.xfm
+END
+rpmdprintconfig.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdprintconfig.ddp
+END
+rpmdfaboutvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfaboutvcl.dfm
+END
+rpvpreview.dcu
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpvpreview.dcu
+END
+rppackdesigntime_del.dof
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesigntime_del.dof
+END
+release.bat
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/release.bat
+END
+rppack_builder6.bpk
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_builder6.bpk
+END
+rppdfreport.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppdfreport.pas
+END
+rpeditaliasclx.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpeditaliasclx.pas
+END
+rpeditconnvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpeditconnvcl.pas
+END
+rpdbxconfigvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdbxconfigvcl.pas
+END
+rpgraphutilsvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpgraphutilsvcl.dfm
+END
+LICENSE.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/LICENSE.TXT
+END
+rpmdrepclient.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdrepclient.xfm
+END
+rpmdfdinfovcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdinfovcl.ddp
+END
+rpmdfselectfields.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfselectfields.dfm
+END
+rppack_del2005.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del2005.cfg
+END
+rpmetafile.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmetafile.pas
+END
+rpmregdesignvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmregdesignvcl.pas
+END
+rppackvb.bpf
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvb.bpf
+END
+rpvpreview.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpvpreview.ddp
+END
+rpmdobjinsp.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdobjinsp.xfm
+END
+rppackvb.bpk
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvb.bpk
+END
+rpmdclitreevcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdclitreevcl.ddp
+END
+rppack_builder2007.res
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_builder2007.res
+END
+rppackdesigntime_del.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesigntime_del.dpk
+END
+rpxmlstream.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpxmlstream.pas
+END
+rpwriter.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpwriter.pas
+END
+rpdataset.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdataset.pas
+END
+rppreviewcontrolclx.pas
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppreviewcontrolclx.pas
+END
+rppackv.dof
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackv.dof
+END
+rpdbbrowser.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdbbrowser.pas
+END
+rpmdexpdbf.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdexpdbf.pas
+END
+rpmdfconnectionvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfconnectionvcl.pas
+END
+rprulervcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rprulervcl.pas
+END
+rpcompilerep.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpcompilerep.pas
+END
+rptwaincomp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rptwaincomp.pas
+END
+rppackdesign.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesign.dpk
+END
+rpgraphutils.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpgraphutils.ddp
+END
+rpmdfsectionint.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfsectionint.pas
+END
+rpzlibinfblock.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpzlibinfblock.pas
+END
+rppack_del.res
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del.res
+END
+rppack_builder6.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_builder6.cpp
+END
+rpnetpreview.FRpNetPreview.resources
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpnetpreview.FRpNetPreview.resources
+END
+rpmdfdinfovcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdinfovcl.dfm
+END
+ReportManDesign.bdsproj
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/ReportManDesign.bdsproj
+END
+rppackv_builder6.bpk
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackv_builder6.bpk
+END
+rpmdfextsec.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfextsec.xfm
+END
+rpvpreview.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpvpreview.dfm
+END
+rpmdconsts.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdconsts.pas
+END
+rpmdclitree.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdclitree.ddp
+END
+rpmdfdinfo.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdinfo.xfm
+END
+rppackv.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackv.dpk
+END
+rpmdclitreevcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdclitreevcl.dfm
+END
+rpzlibtrees.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpzlibtrees.pas
+END
+rppack_del2005.dproj
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del2005.dproj
+END
+rpvclreport.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpvclreport.dcr
+END
+rpmdobinsint.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdobinsint.pas
+END
+rpcsvdriver.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpcsvdriver.pas
+END
+rpmdesignervcl.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdesignervcl.dcr
+END
+rpmdprotocol.dcu
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdprotocol.dcu
+END
+rplastsav.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rplastsav.pas
+END
+rpprintdia.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpprintdia.xfm
+END
+rpexpredlg.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpexpredlg.xfm
+END
+rprfvparams.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rprfvparams.ddp
+END
+rpfmainmetaviewvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfmainmetaviewvcl.ddp
+END
+rppackb.res
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackb.res
+END
+rpmdsysinfoqt.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdsysinfoqt.xfm
+END
+rpfmetaview.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfmetaview.pas
+END
+rpfpcutils.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfpcutils.pas
+END
+rppack2007.groupproj
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack2007.groupproj
+END
+rpcomparable.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpcomparable.pas
+END
+rpdeltwainfunc.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdeltwainfunc.ddp
+END
+rpmdprintconfigvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdprintconfigvcl.pas
+END
+rpmdfopenlibvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfopenlibvcl.ddp
+END
+rpmdfconnection.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfconnection.ddp
+END
+rppack_builder2006.bdsproj
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_builder2006.bdsproj
+END
+rpgraphiccolor.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpgraphiccolor.pas
+END
+rpeval.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpeval.dcr
+END
+rppackv_del.dof
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackv_del.dof
+END
+rppack_del.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del.cfg
+END
+rpmdbarcode.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdbarcode.pas
+END
+rpmdfdatatext.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdatatext.ddp
+END
+rpfparamsvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfparamsvcl.pas
+END
+rppackv_builder6.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackv_builder6.cpp
+END
+rppack_del2009.dproj.local
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del2009.dproj.local
+END
+rppack.dof
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack.dof
+END
+rpmdfdesignvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdesignvcl.pas
+END
+rpqtdriver.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpqtdriver.xfm
+END
+rpmddatawiz.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmddatawiz.dfm
+END
+rppackvcl_del2005.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvcl_del2005.dpk
+END
+rppack_builder2007.cbproj.local
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_builder2007.cbproj.local
+END
+rppackv_del.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackv_del.dpk
+END
+rpmdfdatasets.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdatasets.ddp
+END
+rprfvparams.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rprfvparams.dfm
+END
+rpfmainmetaviewvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfmainmetaviewvcl.dfm
+END
+rppackdesignvcl_del.dof
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesignvcl_del.dof
+END
+rpmdfwizardvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfwizardvcl.pas
+END
+rppackdesign_builder6.bpk
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesign_builder6.bpk
+END
+rpmaskeditclx.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmaskeditclx.dcr
+END
+rppackvcl_del2005.bdsproj
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvcl_del2005.bdsproj
+END
+rppackdesign_del.res
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesign_del.res
+END
+rpmdrepclient.dti
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdrepclient.dti
+END
+rpbasereport.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpbasereport.pas
+END
+rpdeltwainfunc.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdeltwainfunc.dfm
+END
+rpmdfopenlibvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfopenlibvcl.dfm
+END
+rppack.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack.dpk
+END
+rpeditconn.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpeditconn.xfm
+END
+rpdbxconfig.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdbxconfig.xfm
+END
+rpmdsysinfo.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdsysinfo.pas
+END
+rppackvcl_del.res
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvcl_del.res
+END
+rppackdesignvcl_builder6.res
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesignvcl_builder6.res
+END
+rpmdfopenlib.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfopenlib.pas
+END
+rppack_del2007.res
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del2007.res
+END
+rpmdexpexcel.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdexpexcel.dfm
+END
+rpmdfstruc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfstruc.pas
+END
+rpalias.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpalias.pas
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/Makefile
+END
+rppackdesignvcl_del.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesignvcl_del.dpk
+END
+rpactivexreport.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpactivexreport.pas
+END
+rpmdfsearch.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfsearch.xfm
+END
+rppackdesignvcl_del2007.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesignvcl_del2007.dpk
+END
+rpmdfchartintvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfchartintvcl.pas
+END
+rpreportmanapiqt.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpreportmanapiqt.h
+END
+rpzlibinfcodes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpzlibinfcodes.pas
+END
+rpregvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpregvcl.pas
+END
+rppackdesignvcl_del2005.bdsproj
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesignvcl_del2005.bdsproj
+END
+rptextdriver.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rptextdriver.pas
+END
+rpmaskedit.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmaskedit.pas
+END
+rppackdesign_builder6.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesign_builder6.cpp
+END
+rppackv.conf
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackv.conf
+END
+rpwebmetaclient.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpwebmetaclient.dcr
+END
+rppackdesign_del.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesign_del.cfg
+END
+rpreport.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpreport.pas
+END
+rpmdfgridvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfgridvcl.pas
+END
+rpbarcodecons.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpbarcodecons.pas
+END
+rppackvcl_del.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvcl_del.cfg
+END
+rpclientdataset.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpclientdataset.pas
+END
+rpmdfsampledata.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfsampledata.ddp
+END
+rpmdfhelpform.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfhelpform.ddp
+END
+rpmdfdatasetsvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdatasetsvcl.ddp
+END
+rppack_del4.res
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del4.res
+END
+rpdeltwain.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdeltwain.inc
+END
+rpfparams.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfparams.xfm
+END
+rpmdfgrid.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfgrid.ddp
+END
+rpreportmanapi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpreportmanapi.pas
+END
+rpmregnet.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmregnet.pas
+END
+rppagesetup.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppagesetup.xfm
+END
+rppreview.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppreview.ddp
+END
+rpnetdriver.FRpNetProgress.resources
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpnetdriver.FRpNetProgress.resources
+END
+rpfmainmetaview.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfmainmetaview.ddp
+END
+rppack_del2005.bdsproj.local
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del2005.bdsproj.local
+END
+rpmdfdesign.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdesign.ddp
+END
+rpmdftree.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdftree.pas
+END
+rpmdfextsecvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfextsecvcl.pas
+END
+rppdfreport.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppdfreport.dcr
+END
+rppack_builder2006.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_builder2006.cpp
+END
+rprfparams.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rprfparams.ddp
+END
+rpmdfabout.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfabout.pas
+END
+rpevalfunc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpevalfunc.pas
+END
+rpdeltwain.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdeltwain.pas
+END
+rpmdfsampledatavcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfsampledatavcl.pas
+END
+rpmdprintconfig.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdprintconfig.xfm
+END
+rpconf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpconf.inc
+END
+rpmdfmain.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfmain.pas
+END
+rpzlib77.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpzlib77.pas
+END
+rpmdfdatasetsvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdatasetsvcl.dfm
+END
+rpeditconnvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpeditconnvcl.ddp
+END
+rpdbxconfigvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdbxconfigvcl.ddp
+END
+rpzlibinftrees.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpzlibinftrees.pas
+END
+rppack_del4.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del4.cfg
+END
+rpcalcul.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpcalcul.pas
+END
+rpmdrepclient.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdrepclient.pas
+END
+rpdllutil.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdllutil.pas
+END
+rppackdesign.conf
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesign.conf
+END
+rpgdidriver.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpgdidriver.pas
+END
+rprulervcl.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rprulervcl.dcr
+END
+rpmdobjinsp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdobjinsp.pas
+END
+rpnetpreview.resx
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpnetpreview.resx
+END
+rppack_del2007.dproj.2007
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del2007.dproj.2007
+END
+rpmdfsearchvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfsearchvcl.pas
+END
+rpdbbrowser.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdbbrowser.ddp
+END
+rpmdesigner.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdesigner.pas
+END
+rpmdfconnectionvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfconnectionvcl.ddp
+END
+rpreportmanapi.bas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpreportmanapi.bas
+END
+reportman_d6.bpg
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/reportman_d6.bpg
+END
+rpfaxsend.pas
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfaxsend.pas
+END
+rpgraphutils.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpgraphutils.xfm
+END
+rpeditconnvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpeditconnvcl.dfm
+END
+rpdbxconfigvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdbxconfigvcl.dfm
+END
+rphashtable.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rphashtable.pas
+END
+rppack_del5.res
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del5.res
+END
+rppack_del2007.dproj.local
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del2007.dproj.local
+END
+rpgraphiccompression.pas
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpgraphiccompression.pas
+END
+rpsendmailvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpsendmailvcl.pas
+END
+rplastsav.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rplastsav.dcr
+END
+rppackvcl_del2007.dproj.local
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvcl_del2007.dproj.local
+END
+rppack_del2005.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del2005.dpk
+END
+rppacknet.bdsproj
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppacknet.bdsproj
+END
+rppackvcl_del2007.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvcl_del2007.dpk
+END
+rpexceldriver.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpexceldriver.pas
+END
+rppack_builder4.res
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_builder4.res
+END
+rpmdclitree.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdclitree.xfm
+END
+Reportman.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/Reportman.cfg
+END
+rpmdfextsec.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfextsec.pas
+END
+rpmdfdinfo.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdinfo.pas
+END
+rppack_builder2007.dproj
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_builder2007.dproj
+END
+rppack_builder2007.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_builder2007.cpp
+END
+rpquerywiz.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpquerywiz.pas
+END
+rpdbgridvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdbgridvcl.pas
+END
+rpmdfbarcodeint.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfbarcodeint.pas
+END
+rppackb.bpf
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackb.bpf
+END
+rpzlibadler.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpzlibadler.pas
+END
+rpGifImage.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpGifImage.pas
+END
+rppackb.bpk
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackb.bpk
+END
+rpprintdia.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpprintdia.pas
+END
+rpexpredlg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpexpredlg.pas
+END
+rpsvgdriver.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpsvgdriver.pas
+END
+rpfmetaview.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfmetaview.ddp
+END
+rpmdexpdbf.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdexpdbf.dfm
+END
+rpmdfconnectionvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfconnectionvcl.dfm
+END
+rpmdsysinfoqt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdsysinfoqt.pas
+END
+rppack_del2009.res
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del2009.res
+END
+rpmdprintconfigvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdprintconfigvcl.ddp
+END
+rpfmetaviewvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfmetaviewvcl.pas
+END
+rpmdfconnection.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfconnection.xfm
+END
+rppack_del5.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del5.cfg
+END
+rppackdesign.kof
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesign.kof
+END
+rppack_del2007.dproj
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del2007.dproj
+END
+rpmdfdatatextvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdatatextvcl.pas
+END
+rpmdfdatatext.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdatatext.xfm
+END
+rpdllutilqt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdllutilqt.pas
+END
+rpmunits.pas
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmunits.pas
+END
+rpfparamsvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfparamsvcl.ddp
+END
+rppack_del.dof
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del.dof
+END
+rppack_builder2007.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_builder2007.dpk
+END
+rpdeltwainutils.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdeltwainutils.pas
+END
+rptranslator.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rptranslator.pas
+END
+rpmdfdesignvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdesignvcl.ddp
+END
+rpinfoprovft.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpinfoprovft.pas
+END
+rpqtdriver.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpqtdriver.pas
+END
+rppackv.kof
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackv.kof
+END
+rpmdfdatasets.xfm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdatasets.xfm
+END
+rppackdesignvcl_del2005.res
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesignvcl_del2005.res
+END
+rpalias.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpalias.dcr
+END
+rppacknet.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppacknet.dpk
+END
+rpmdfwizardvcl.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfwizardvcl.ddp
+END
+rptwain.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rptwain.pas
+END
+rpclxreport.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpclxreport.pas
+END
+rpactivexreport.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpactivexreport.dcr
+END
+rpactivexreport.dcu
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpactivexreport.dcu
+END
+rpruler.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpruler.pas
+END
+rpmdobjinspvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdobjinspvcl.pas
+END
+rpmdprintconfigvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdprintconfigvcl.dfm
+END
+rppack_del.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppack_del.dpk
+END
+rpmdsysinfo.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdsysinfo.ddp
+END
+rppagesetupvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppagesetupvcl.pas
+END
+rppackdesignvcl_builder6.bpk
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesignvcl_builder6.bpk
+END
+rpeditconn.pas
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpeditconn.pas
+END
+rpdbxconfig.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpdbxconfig.pas
+END
+rpmdfopenlib.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfopenlib.ddp
+END
+rpvgraphutils.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpvgraphutils.pas
+END
+rppackvcl_del2007.dproj
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackvcl_del2007.dproj
+END
+ReportManDesign.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/ReportManDesign.cfg
+END
+rpmdfstruc.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfstruc.ddp
+END
+rpmdfmainvcl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfmainvcl.pas
+END
+rppackdesignvcl_del2005.bdsproj.local
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rppackdesignvcl_del2005.bdsproj.local
+END
+rpfparamsvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpfparamsvcl.dfm
+END
+rpmaskedit.dcr
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmaskedit.dcr
+END
+rpmdfdesignvcl.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/rpmdfdesignvcl.dfm
+END

@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>RepManWebServer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<h3 align="center"> ReportManagerParamsLabel</h3>
+<form method="get" name="fparams" id="fparams" action="./execute.pdf">
+  <p> 
+   <input type="hidden" name="reportname" value="ReportTitleLocation">
+  </p>
+  <p>ReportHiddenLocation </p>
+  <p>ReportsParamsTableLocation</p>
+  <p>
+    <input type="submit" value="RepManExecuteLabel">
+  </p>
+</form>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

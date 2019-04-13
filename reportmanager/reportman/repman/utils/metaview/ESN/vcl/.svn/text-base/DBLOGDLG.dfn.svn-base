@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file original="C:\Archivos de programa\CodeGear\RAD Studio\5.0\lib\DBLOGDLG.dfm" source-language="es-ES" target-language="es-ES" datatype="delphiform" tool="ETM v10.0" ts="C:\Archivos de programa\CodeGear\RAD Studio\5.0\lib\DBLOGDLG.dfm">
+    <header>
+      <prop-group name="ITEHeaderProp">
+        <prop prop-type="Version">9.0</prop>
+        <prop prop-type="SelfDateTime">39753.7947222222</prop>
+        <prop prop-type="OrigDateTime">39320.79375</prop>
+        <prop prop-type="XlatDateTime">39320.79375</prop>
+        <prop prop-type="Translated">0</prop>
+        <prop prop-type="UnTranslated">83</prop>
+      </prop-group>
+    </header>
+    <body>
+      <trans-unit id="O:LoginDialog.Left" resname="O:LoginDialog.Left">
+        <source>307</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">0</prop><prop prop-type="Type">TLoginDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.Top" resname="O:LoginDialog.Top">
+        <source>131</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">1</prop><prop prop-type="Type">TLoginDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.ActiveControl" resname="O:LoginDialog.ActiveControl">
+        <source>Password</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">2</prop><prop prop-type="Type">TLoginDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.BorderStyle" resname="O:LoginDialog.BorderStyle">
+        <source>bsDialog</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">3</prop><prop prop-type="Type">TLoginDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.Caption" resname="O:LoginDialog.Caption">
+        <source>'Database Login'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">4</prop><prop prop-type="Type">TLoginDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.ClientHeight" resname="O:LoginDialog.ClientHeight">
+        <source>147</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">5</prop><prop prop-type="Type">TLoginDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.ClientWidth" resname="O:LoginDialog.ClientWidth">
+        <source>273</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">6</prop><prop prop-type="Type">TLoginDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.Color" resname="O:LoginDialog.Color">
+        <source>clBtnFace</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">7</prop><prop prop-type="Type">TLoginDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.ParentFont" resname="O:LoginDialog.ParentFont">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">8</prop><prop prop-type="Type">TLoginDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.OldCreateOrder" resname="O:LoginDialog.OldCreateOrder">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">9</prop><prop prop-type="Type">TLoginDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.Position" resname="O:LoginDialog.Position">
+        <source>poScreenCenter</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">10</prop><prop prop-type="Type">TLoginDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.OnShow" resname="O:LoginDialog.OnShow">
+        <source>FormShow</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">11</prop><prop prop-type="Type">TLoginDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.PixelsPerInch" resname="O:LoginDialog.PixelsPerInch">
+        <source>96</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">12</prop><prop prop-type="Type">TLoginDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.TextHeight" resname="O:LoginDialog.TextHeight">
+        <source>13</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">13</prop><prop prop-type="Type">TLoginDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:OKButton.Left" resname="O:LoginDialog.O:OKButton.Left">
+        <source>109</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">14</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:OKButton.Top" resname="O:LoginDialog.O:OKButton.Top">
+        <source>114</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">15</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:OKButton.Width" resname="O:LoginDialog.O:OKButton.Width">
+        <source>75</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">16</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:OKButton.Height" resname="O:LoginDialog.O:OKButton.Height">
+        <source>25</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">17</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:OKButton.Caption" resname="O:LoginDialog.O:OKButton.Caption">
+        <source>'&amp;OK'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">18</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:OKButton.Default" resname="O:LoginDialog.O:OKButton.Default">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">19</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:OKButton.ModalResult" resname="O:LoginDialog.O:OKButton.ModalResult">
+        <source>1</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">20</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:OKButton.TabOrder" resname="O:LoginDialog.O:OKButton.TabOrder">
+        <source>0</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">21</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:CancelButton.Left" resname="O:LoginDialog.O:CancelButton.Left">
+        <source>190</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">22</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:CancelButton.Top" resname="O:LoginDialog.O:CancelButton.Top">
+        <source>114</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">23</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:CancelButton.Width" resname="O:LoginDialog.O:CancelButton.Width">
+        <source>75</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">24</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:CancelButton.Height" resname="O:LoginDialog.O:CancelButton.Height">
+        <source>25</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">25</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:CancelButton.Cancel" resname="O:LoginDialog.O:CancelButton.Cancel">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">26</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:CancelButton.Caption" resname="O:LoginDialog.O:CancelButton.Caption">
+        <source>'Cancel'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">27</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:CancelButton.ModalResult" resname="O:LoginDialog.O:CancelButton.ModalResult">
+        <source>2</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">28</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:CancelButton.TabOrder" resname="O:LoginDialog.O:CancelButton.TabOrder">
+        <source>1</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">29</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.Left" resname="O:LoginDialog.O:Panel.Left">
+        <source>8</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">30</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.Top" resname="O:LoginDialog.O:Panel.Top">
+        <source>7</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">31</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.Width" resname="O:LoginDialog.O:Panel.Width">
+        <source>257</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">32</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.Height" resname="O:LoginDialog.O:Panel.Height">
+        <source>98</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">33</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.BevelInner" resname="O:LoginDialog.O:Panel.BevelInner">
+        <source>bvRaised</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">34</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.BevelOuter" resname="O:LoginDialog.O:Panel.BevelOuter">
+        <source>bvLowered</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">35</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.TabOrder" resname="O:LoginDialog.O:Panel.TabOrder">
+        <source>2</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947415625</prop><prop prop-type="Status">0</prop><prop prop-type="Order">36</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Label3.Left" resname="O:LoginDialog.O:Panel.O:Label3.Left">
+        <source>10</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">37</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Label3.Top" resname="O:LoginDialog.O:Panel.O:Label3.Top">
+        <source>6</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">38</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Label3.Width" resname="O:LoginDialog.O:Panel.O:Label3.Width">
+        <source>49</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">39</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Label3.Height" resname="O:LoginDialog.O:Panel.O:Label3.Height">
+        <source>13</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">40</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Label3.Caption" resname="O:LoginDialog.O:Panel.O:Label3.Caption">
+        <source>'Database:'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">41</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:DatabaseName.Left" resname="O:LoginDialog.O:Panel.O:DatabaseName.Left">
+        <source>91</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">42</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:DatabaseName.Top" resname="O:LoginDialog.O:Panel.O:DatabaseName.Top">
+        <source>6</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">43</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:DatabaseName.Width" resname="O:LoginDialog.O:Panel.O:DatabaseName.Width">
+        <source>3</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">44</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:DatabaseName.Height" resname="O:LoginDialog.O:Panel.O:DatabaseName.Height">
+        <source>13</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">45</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Bevel.Left" resname="O:LoginDialog.O:Panel.O:Bevel.Left">
+        <source>1</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">46</prop><prop prop-type="Type">TBevel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Bevel.Top" resname="O:LoginDialog.O:Panel.O:Bevel.Top">
+        <source>24</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">47</prop><prop prop-type="Type">TBevel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Bevel.Width" resname="O:LoginDialog.O:Panel.O:Bevel.Width">
+        <source>254</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">48</prop><prop prop-type="Type">TBevel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Bevel.Height" resname="O:LoginDialog.O:Panel.O:Bevel.Height">
+        <source>9</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">49</prop><prop prop-type="Type">TBevel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Bevel.Shape" resname="O:LoginDialog.O:Panel.O:Bevel.Shape">
+        <source>bsTopLine</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">50</prop><prop prop-type="Type">TBevel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.Left" resname="O:LoginDialog.O:Panel.O:Panel1.Left">
+        <source>2</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">51</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.Top" resname="O:LoginDialog.O:Panel.O:Panel1.Top">
+        <source>31</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">52</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.Width" resname="O:LoginDialog.O:Panel.O:Panel1.Width">
+        <source>253</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">53</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.Height" resname="O:LoginDialog.O:Panel.O:Panel1.Height">
+        <source>65</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">54</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.Align" resname="O:LoginDialog.O:Panel.O:Panel1.Align">
+        <source>alBottom</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">55</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.BevelOuter" resname="O:LoginDialog.O:Panel.O:Panel1.BevelOuter">
+        <source>bvNone</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">56</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.TabOrder" resname="O:LoginDialog.O:Panel.O:Panel1.TabOrder">
+        <source>0</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">57</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Label1.Left" resname="O:LoginDialog.O:Panel.O:Panel1.O:Label1.Left">
+        <source>8</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">58</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Label1.Top" resname="O:LoginDialog.O:Panel.O:Panel1.O:Label1.Top">
+        <source>8</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">59</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Label1.Width" resname="O:LoginDialog.O:Panel.O:Panel1.O:Label1.Width">
+        <source>56</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">60</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Label1.Height" resname="O:LoginDialog.O:Panel.O:Panel1.O:Label1.Height">
+        <source>13</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">61</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Label1.Caption" resname="O:LoginDialog.O:Panel.O:Panel1.O:Label1.Caption">
+        <source>'&amp;User Name:'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">62</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Label1.FocusControl" resname="O:LoginDialog.O:Panel.O:Panel1.O:Label1.FocusControl">
+        <source>UserName</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">63</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Label2.Left" resname="O:LoginDialog.O:Panel.O:Panel1.O:Label2.Left">
+        <source>8</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">64</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Label2.Top" resname="O:LoginDialog.O:Panel.O:Panel1.O:Label2.Top">
+        <source>36</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">65</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Label2.Width" resname="O:LoginDialog.O:Panel.O:Panel1.O:Label2.Width">
+        <source>49</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">66</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Label2.Height" resname="O:LoginDialog.O:Panel.O:Panel1.O:Label2.Height">
+        <source>13</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">67</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Label2.Caption" resname="O:LoginDialog.O:Panel.O:Panel1.O:Label2.Caption">
+        <source>'&amp;Password:'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">68</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Label2.FocusControl" resname="O:LoginDialog.O:Panel.O:Panel1.O:Label2.FocusControl">
+        <source>Password</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">69</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:UserName.Left" resname="O:LoginDialog.O:Panel.O:Panel1.O:UserName.Left">
+        <source>86</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">70</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:UserName.Top" resname="O:LoginDialog.O:Panel.O:Panel1.O:UserName.Top">
+        <source>5</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">71</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:UserName.Width" resname="O:LoginDialog.O:Panel.O:Panel1.O:UserName.Width">
+        <source>153</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">72</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:UserName.Height" resname="O:LoginDialog.O:Panel.O:Panel1.O:UserName.Height">
+        <source>21</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">73</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:UserName.MaxLength" resname="O:LoginDialog.O:Panel.O:Panel1.O:UserName.MaxLength">
+        <source>31</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">74</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:UserName.TabOrder" resname="O:LoginDialog.O:Panel.O:Panel1.O:UserName.TabOrder">
+        <source>0</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">75</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Password.Left" resname="O:LoginDialog.O:Panel.O:Panel1.O:Password.Left">
+        <source>86</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">76</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Password.Top" resname="O:LoginDialog.O:Panel.O:Panel1.O:Password.Top">
+        <source>33</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">77</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Password.Width" resname="O:LoginDialog.O:Panel.O:Panel1.O:Password.Width">
+        <source>153</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">78</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Password.Height" resname="O:LoginDialog.O:Panel.O:Panel1.O:Password.Height">
+        <source>21</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">79</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Password.MaxLength" resname="O:LoginDialog.O:Panel.O:Panel1.O:Password.MaxLength">
+        <source>31</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">80</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Password.PasswordChar" resname="O:LoginDialog.O:Panel.O:Panel1.O:Password.PasswordChar">
+        <source>'*'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">81</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:LoginDialog.O:Panel.O:Panel1.O:Password.TabOrder" resname="O:LoginDialog.O:Panel.O:Panel1.O:Password.TabOrder">
+        <source>1</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947417477</prop><prop prop-type="Status">0</prop><prop prop-type="Order">82</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

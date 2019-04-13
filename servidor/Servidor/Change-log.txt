@@ -1,0 +1,165 @@
+{*******************************************************************************
+Title: T2Ti ERP
+Description: Tela principal do PAF-ECF - Caixa.
+
+The MIT License
+
+Copyright: Copyright (C) 2010 T2Ti.COM
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+       The author may be contacted at:
+           fabio_thz@yahoo.com.br</p>
+
+@author Fábio Thomaz
+@version 1.0
+*******************************************************************************}
+
+{******************************************************************************
+|* T2TiERP.exe
+|*
+|* PROPÓSITO: Registro de Alterações
+******************************************************************************}
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+
+Versão 1.0.0.10 - Beta  22/09/2011
+-----------------------------
+[+] Incluído método "TT2TiORM.ValorIDObjeto" no ORM para facilitar a captura de um valor no ID de um objeto;
+[+] Incluído método "TT2TiORM.PopulaObjetosRelacionados" para popular objetos relacionados ao VO que 
+    deve ser passado via parâmetro;
+[*] Alterado método "TT2TiORM.Consultar<T>" no ORM, chamando o método "PopulaObjetosRelacionados" 
+    antes de retornar o objeto para a lista de resultado;
+[+] Incluída propriedades no "TPessoaVO": "InscricaoEstadual: TObjectList", "PessoaFisica: TPessoaFisicaVO" e 
+    "PessoaJuridica: TPessoaJuridicaVO";
+[*] Alterado Controller "TPessoaController" para adequação a novo VO que agora contem objetos filhos vinculados;
+[+] Adicionado dois contrutores no "TJsonVO" para facilitar a conversão de objetos JSON em TObject;
+[+] Incluído método "ToJSON: TJSONValue" no "TJsonVO" para facilitar a conversão de objetos em TJSonValue;
+[+] Incluído método "ToJSONString" no "TJsonVO" para facilitar a conversão de objetos em strings JSON;
+[+] Incluído novo método "VOFromDBXReader" na unit "JsonVO.pas" para popular um objeto de um DBXReader;
+[*] Realizada alterações nos atributos de mapeamento de classes;
+
+
+Versão 1.0.0.9 - Beta  16/09/2011
+-----------------------------
+[+] Inclusão da unit "EstadoCivilController.pas";
+[+] Inclusão da unit "PessoaController.pas";
+[+] Inclusão da unit "EstadoCivilVO.pas";
+[+] Inclusão da unit "InscricaoEstadualVO.pas";
+[+] Inclusão da unit "PessoaVO.pas";
+[+] Inclusão da unit "PessoaFisicaVO.pas";
+[+] Inclusão da unit "PessoaJuridicaVO.pas";
+[*] Altedara unit "Atributos.pas" motificando forma de trabalhar com a constante "TLocalDispay";
+[*] Altedara unit "Atributos.pas" adicionando outros atributos para mapeamento de objetos;
+[*] Alterados VOs para adequação a nova forma de trabalhar com a constante "TLocalDispay";
+[*] Alterada unit "Biblioteca.pas" para adequação a nova forma de trabalhar com a constante "TLocalDispay";
+[*] Alterada unit "Constantes.pas" adicionando um identificador de formulário para o Estado Civil;
+[*] Alterada unit "JSonVO.pas" incluindo um método "Clone" para conar um objeto;
+
+
+Versão 1.0.0.8 - Beta  10/09/2011
+-----------------------------
+[*] Alterações na unit "Atributos.pas":
+    1 - Reordenação dos contrutores da classe TColumn;
+    2 - Criado um contrutor com todos os parâmetros disponíveis;
+    3 - Incluído atributos para mapear formulários e componentes do sistema no intuito 
+        de utilizar para o         controle de acessos ao sistema;
+    4 - Inclusão de um método "Clone" na classe TColumn para realizar uma cópia do atributo;
+
+[*] Alterações na unit "JSonVO.pas":
+    1 - Alteração no método "FromDBXReader" tratando o tipo de dados "Date", populando o campo no VO   
+        apenas se o campo no Reader for maior que "0".
+    2 - Incluído métodos na classe "TGenericVO" para facilitar a captura de informações do 
+        atributo TColumn da classe, caso ela tenha este atributo.
+
+Versão 1.0.0.7 - Beta  03/09/2011
+-----------------------------
+[+] Incluído script "Update0001.sql" para os bancos de dados Firebird e MySQL
+    em suas pastas dentro de "branches\ERP\BancoDados\";
+[+] Incluído método "FormataFiltro" no ORM para tratar caracteres especiais;
+[*] Alterada funções "StringReplace" no ORM por "FormataFiltro";
+[*] Alterato tipo de resultado do método "UpdateBanco" da unit "BancoController.pas"
+    alterando de "TJSONArray" para "Boolean";
+[*] Alterado métodos da classe "TBancoController" se adequar a alterações na 
+    assinatura do método e tratar proplemas com vazamento de memória;
+
+
+Versão 1.0.0.6 - Beta  20/08/2011
+-----------------------------
+[+] Incluído dois novos métdos genéricos "Consultar" na unit T2TIORM.pas;
+[*] Alterado método "Banco" da unit "BancoController.pas", adaptando para o método genérico de consulta;
+[*] Alterado método "Usuario" da unit "UsuarioController.pas", adaptando para o método genérico de consulta;
+
+
+Versão 1.0.0.5 - Beta  20/08/2011
+-----------------------------
+[*] Alterações nos métodos "Inserir" e "Alterar" do ORM para possibilitar utilização de campos
+    TDateTime nos VO's;
+[*] Alteração no método "TUsuarioController.Usuario" na classe "UsuarioController" para testar 
+    se existe uma data no cadastro do usuário antes de popular o valor no VO;
+[*] Alterado o tipo de dados do vo "UsuarioVO", alterando o tipo do campo DataCadastro para TDateTime.
+
+
+Versão 1.0.0.4 - Beta  06/08/2011
+-----------------------------
+[*] Alterações realizadas para compatibilidade com o banco de dados Postgres
+    Conforme tópico http://www.t2ti.com/ead/mod/forum/discuss.php?d=2807 
+    de Carlos Alberto Fitl
+[*] Alterada unit "UsuarioController.pas" no método "TUsuarioController.Usuario"
+    para tratar erros com datas nulas do banco de dados conforme post 
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2819 de Marcos V. Ribeiro
+
+
+Versão 1.0.0.3 - Beta  25/07/2011
+-----------------------------
+[+] Nova estrutura adicionada de pastas e diversas melhorias.
+
+
+Versão 1.0.0.2 - Beta  13/06/2011
+-----------------------------
+[*] Alterado arquivo "ServerContainer.pas", incluído no método "RegistrarClasses" a classe "TUnidadeProdutoController"
+    e alterado evento "DSHTTPServiceAuthenticationManagerHTTPAuthenticate" para que nas requisições dos clientes o sistema
+	não fique buscando as informações no banco de dados, e sim na lista de sessões em cache;
+[*] Alterado arquivo "SessaoUsuario.pas", alterando método "GetSessao", inicializando o resultado com um valor nulo;
+[+] Incluído arquivo "UnidadeProdutoController.pas";
+
+Versão 1.0.0.1 - Beta  11/06/2011
+-----------------------------
+[*] Alterado arquivo "UsuarioController.pas", alterando médoto "Usuario", colocando um SQL stático para consulta;
+[*] Alterado arquivo "ServerContainer.pas" incluindo registro das classes TPapelController e TColaboradorController no método "RegistrarClasses";
+[*] Alterado arquivo "T2TiORM.pas" incluiindo uma verificação se o campo é Transiente nos métodos Inserir e Alterar;
+[+] Incluindo arquivo "ColaboradorController.pas";
+[+] Incluindo arquivo "PapelController.pas";
+
+
+Versão 1.0 - Beta  05/06/2011
+-----------------------------
+[+] Lançamento da 1a versão Beta, e disponibilizada no SVN
+
+	Uma contribuição do colega Fábio Thomaz
+    
+    Conforme post http://www.t2ti.com/ead/mod/forum/discuss.php?d=2476#p19495

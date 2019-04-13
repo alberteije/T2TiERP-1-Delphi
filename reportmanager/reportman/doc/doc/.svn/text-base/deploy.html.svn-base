@@ -1,0 +1,324 @@
+<html>
+<head>
+<title>Deploying Report Manager</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Installation</h2>
+<h3><b>Deployment of Report Manager Designer</b></h3>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Windows</b></td>
+    <td bgcolor="#FFFFCC"><b>Linux</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+    <td bgcolor="#FFFFCC"><b>Location/Option</b></td>
+  </tr>
+  <tr> 
+    <td>repmandxp.exe</td>
+    <td>repmand</td>
+    <td>Report Manager Main executable</td>
+    <td>AppDir/Required</td>
+  </tr>
+  <tr> 
+    <td>reportmanres.*</td>
+    <td>reportmanres.*</td>
+    <td>Engine resource strings for multiple languages</td>
+    <td>AppDir/Optional</td>
+  </tr>
+  <tr> 
+    <td>repmandxp.*</td>
+    <td>&nbsp;</td>
+    <td>Internal resource translations for repmandxp.exe</td>
+    <td>AppDir/Optional</td>
+  </tr>
+  <tr> 
+    <td>metaprintxp.exe</td>
+    <td>metaprint (Required)</td>
+    <td> <p>Metafile print command line tool.</p></td>
+    <td>AppDir/Optional</td>
+  </tr>
+  <tr> 
+    <td>reportserverappxp.exe</td>
+    <td>reportserverapp</td>
+    <td>TCP Report Server X/Win application</td>
+    <td>AppDir/Optional</td>
+  </tr>
+  <tr> 
+    <td>reportservercon.exe</td>
+    <td>reportservercon</td>
+    <td>TCP Report Server console application</td>
+    <td>AppDir/Optional</td>
+  </tr>
+  <tr> 
+    <td>repserverconfigxp.exe</td>
+    <td>repserverconfig.exe</td>
+    <td>TCP Report Server configuration client</td>
+    <td>AppDir/Optional</td>
+  </tr>
+  <tr> 
+    <td>repserverservice.exe</td>
+    <td>&nbsp;</td>
+    <td>Service application for Windows NT Systems and upper</td>
+    <td>AppDir/Optional</td>
+  </tr>
+  <tr> 
+    <td>repserviceinstall.exe</td>
+    <td>&nbsp;</td>
+    <td>Service installation utility for Windows NT Systems and upper</td>
+    <td>AppDir/Optional</td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td>libborqtintf-6.9-qt2.3.so</td>
+    <td>Interface to QT libs. (Kylix 3)</td>
+    <td>SysDir/Required</td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td>libbqt.so.2,libqtintf.so.2</td>
+    <td>QT Linux libs and Windows qt libs and interface to qtlibs (Kylix 2)</td>
+    <td>SysDir/Required</td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td>libmidas.so.1</td>
+    <td>Database cached dataset and MyBase driver</td>
+    <td>SysDir/Required</td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td> <p>*.sh *.bin</p></td>
+    <td>If you place SysDir libraries in AppDir you must use this scripts to start 
+      Report Manager executables</td>
+    <td>AppDir/Optional</td>
+  </tr>
+  <tr> 
+    <td>reptotxt.exe</td>
+    <td>reptotxt</td>
+    <td>Converts a report definition to text</td>
+    <td>AppDir/Optional</td>
+  </tr>
+  <tr> 
+    <td>txttorep.exe</td>
+    <td>txttorep</td>
+    <td>Converts a text to report definition</td>
+    <td>AppDir/Optional</td>
+  </tr>
+  <tr> 
+    <td>metaviewxp.exe</td>
+    <td>metaview</td>
+    <td>Displays and prints Report Metafiles</td>
+    <td>AppDir/Optional</td>
+  </tr>
+  <tr> 
+    <td>printrepxp.exe</td>
+    <td>printrep</td>
+    <td>Loads a report definition and executes it to printer</td>
+    <td>AppDir/Optional</td>
+  </tr>
+  <tr> 
+    <td>printreptopdf.exe</td>
+    <td>printreptopdf</td>
+    <td>Loads a report definition, proces it and generates pdf, this is a true 
+      console app. Required for Simetric Multiprocessing</td>
+    <td>AppDir/Required*l</td>
+  </tr>
+  <tr> 
+    <td>doc directory</td>
+    <td>doc directory</td>
+    <td>Documentation of Report Manager Designer</td>
+    <td>AppDir/Optional</td>
+  </tr>
+  <tr> 
+    <td>apilib directory</td>
+    <td>Shared Library</td>
+    <td>Required if your application uses this shared object libraries</td>
+    <td>AppDir/Optional</td>
+  </tr>
+  <tr>
+    <td>upx.exe</td>
+    <td>&nbsp;</td>
+    <td>Metafile executable generator compressor</td>
+    <td>AppDir/Optional</td>
+  </tr>
+</table>
+<table border="1">
+  <tr bgcolor="#00FFFF"> 
+    <td colspan="3"><b>Deployment of dbexpress drivers (SysDir location, Optional)</b></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Windows</b></td>
+    <td bgcolor="#FFFFCC"><b>Linux</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td>dbexpint.dll</td>
+    <td>libsqlig.so.1</td>
+    <td>Interbase DBExpress driver</td>
+  </tr>
+  <tr> 
+    <td>dbexpmysql.dll</td>
+    <td>libsqlmy.so.1</td>
+    <td>MySQL DBExpress driver</td>
+  </tr>
+  <tr> 
+    <td>dbexpmys.dll</td>
+    <td>libsqlmy23.so.1</td>
+    <td>Old MySQL DBExpress drivers</td>
+  </tr>
+  <tr> 
+    <td>dbxoodbc.dll</td>
+    <td>libdbxoodbc.so</td>
+    <td>ODBC and Unix-ODBC DBExpress driver</td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td>libsqlpg.so.1.0</td>
+    <td>PostgreSQL DBExpress driver</td>
+  </tr>
+  <tr> 
+    <td>dbexpdb2.dll</td>
+    <td>libsqldb2.so</td>
+    <td>DB2 DBExpress driver</td>
+  </tr>
+  <tr> 
+    <td>dbexpora.dll</td>
+    <td>libsqlora.so</td>
+    <td>Oracle DBExpress driver</td>
+  </tr>
+  <tr> 
+    <td>dbexpinf.dll</td>
+    <td>libsqlinf.so</td>
+    <td>Informix DBExpress driver</td>
+  </tr>
+  <tr>
+    <td>dbexpmss.dll</td>
+    <td>&nbsp;</td>
+    <td>DBExpress driver for Microsoft SQL server</td>
+  </tr>
+</table>
+<table border="1">
+  <tr bgcolor="#FFCCCC">
+    <td colspan="2">
+      <h2><b>Deployment of native Delphi/Kylix/Builder and ActiveX</b></h2>
+    </td>
+  </tr>
+  <tr bgcolor="#FFCCCC"> 
+    <td colspan="2"><b>Console applications (not VisualCLX) and VCL Windows applications</b></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Windows</b></td>
+    <td bgcolor="#FFFFCC"><b>Linux</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <ul>
+        <li>You must deploy database drivers you use, if you use IBX, IBO, or 
+          something native, none</li>
+        <li>You can deploy the translated resourcestrings, reportmanres.* so the 
+          engine will select the correct user language</li>
+        <li> <b>dbxconnections.ini</b> is used by the engine to read connections 
+          configurations for DBX,IBX, IBO..., to obtain the file the engine will 
+          search at registry \Software\Borland\DBExpress the value 'Connection 
+          Registry File', first will search HKEY_LOCAL_MACHINE if not found, will 
+          search HKEY_CURRENT_USER, if not found will search in the application 
+          directory for that file.</li>
+        <li>If you use BDE driver you must deploy the entire BDE with the sqllinks 
+          dlls you use.</li>
+        <li>If you use DBExpress you can include the following units in your project 
+          to disable the need of dlls. 
+          <table border="1">
+            <tr> 
+              <td><b>Unit</b></td>
+              <td><b>Dll</b></td>
+            </tr>
+            <tr> 
+              <td>dbExpInt </td>
+              <td>dbexpint.dll</td>
+            </tr>
+            <tr> 
+              <td>dbExpOra</td>
+              <td>dbexpora.dll</td>
+            </tr>
+            <tr> 
+              <td>dbExpDb2</td>
+              <td>dbexpdb2.dll</td>
+            </tr>
+            <tr> 
+              <td>dbExpMySQL</td>
+              <td>dbexpmysql.dll</td>
+            </tr>
+          </table>
+        </li>
+        <li>You must deploy <b>midas.dll</b> or include <b>midaslib</b> unit in 
+          your project.</li>
+        <li>Distribute the .manifest file of the executables so they will look 
+          with the XP theme</li>
+      </ul>
+    </td>
+    <td> 
+      <ul>
+        <li>You must deploy <b>libmidas.so.1</b> because Report Manager uses ClientDataset 
+          components when accessing to databases</li>
+        <li>You can deploy the translated resourcestrings, reportmanres.* so the 
+          engine will select the correct user language</li>
+        <li>Usually you need <b>dbxconnections</b> and <b>dbxdrivers</b> in <b>/home/user/.borland</b></li>
+      </ul>
+      <ul>
+        <li>You must deploy database drivers you use, if you use IBX, IBO, or 
+          something native, none.</li>
+        <li>You have two options in Linux to deploy the libraries, copy the libs 
+          into the application dir or copy the libs in /usr/lib or some common 
+          path. If you copy the libs in app path you must modify the LD_LIBRARY_PATH 
+          enviroment variable allways you start the application (see repmand.sh 
+          file)</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+<table border="1">
+  <tr bgcolor="#FFCCCC"> 
+    <td colspan="2"><b>Visual CLX applications (in addition of previous files)</b></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Windows</b></td>
+    <td bgcolor="#FFFFCC"><b>Linux</b></td>
+  </tr>
+  <tr> 
+    <td>qtintf70.dll (Delphi 7) or qtintf.dll (Delphi 6)</td>
+    <td>libborqtintf-6.9-qt2.3.so (Kylix3) or libqt.so.2 and libqtintf.so.2 (Kylix 
+      2)</td>
+  </tr>
+  <tr> 
+    <td>Note: If you use VCL only components in a VCL Application you don't need 
+      qtintf*.dll</td>
+    <td> 
+      <p>libborqt.so.2</p>
+      <p>This are qt runtime files provided by Borland since Kylix 3, if you use 
+        a earlier version of Kylix you should use the older ones.</p>
+    </td>
+  </tr>
+</table>
+<table border="1">
+  <tr bgcolor="#FFCCCC"> 
+    <td><b>ActiveX controls applications</b></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Windows</b></td>
+  </tr>
+  <tr> 
+    <td >Reportman.ocx</td>
+  </tr>
+  <tr> 
+    <td >You can distribute reportmanres.* to show the Preview and Print dialogs 
+      in the language locale of the user.</td>
+  </tr>
+  <tr> 
+    <td >Note: You must register it with regsvr32 as any other ActiveX component, 
+      usually installation applications like Install Shield do it when you include 
+      the file in you installation project</td>
+  </tr>
+</table>
+</body>
+</html>

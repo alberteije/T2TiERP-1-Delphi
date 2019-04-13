@@ -1,0 +1,174 @@
+{******************************************************************************}
+{ Projeto: Componentes ACBr                                                    }
+{  Biblioteca multiplataforma de componentes Delphi para interação com equipa- }
+{ mentos de Automação Comercial utilizados no Brasil                           }
+{                                                                              }
+{ Direitos Autorais Reservados(c)2007  João Carvalho - SIGData Soluções em TI  }
+{                                                                              }
+{ Colaboradores nesse arquivo: Daniel Simoes de Almeida                        }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na pagina do  Projeto ACBr    }
+{ Componentes localizado em      http://www.sourceforge.net/projects/acbr      }
+{                                                                              }
+{  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
+{ sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
+{ Free Software Foundation; tanto a versão 2.1 da Licença, ou (a seu critério) }
+{ qualquer versão posterior.                                                   }
+{                                                                              }
+{  Esta biblioteca é distribuída na expectativa de que seja útil, porém, SEM   }
+{ NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE OU      }
+{ ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral Menor}
+{ do GNU para mais detalhes. (Arquivo LICENÇA.TXT ou LICENSE.TXT)              }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral Menor do GNU junto}
+{ com esta biblioteca; se não, escreva para a Free Software Foundation, Inc.,  }
+{ no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.          }
+{ Você também pode obter uma copia da licença em:                              }
+{ http://www.opensource.org/licenses/gpl-license.php                           }
+{                                                                              }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
+{******************************************************************************}
+
+{******************************************************************************
+|* Historico
+|*
+|* 09/06/2008:  João Carvalho - SIGData Soluções em TI
+|* - Primeira Versao: Criaçao e Distribuiçao da Primeira Versao
+******************************************************************************}
+
+{$I ACBr.inc}
+
+unit ACBrConsts;
+
+interface
+
+{$IFNDEF COMPILER6_UP}
+Uses ACBrD5, Windows ;
+{$ENDIF}
+
+const
+  {* Unit ACBrBase *}
+  ACBR_VERSAO = '0.9.0a';
+  NUL = #00  ;
+  ENQ = #05  ;
+  ACK = #06  ;
+  BELL= #07  ;
+  BS  = #08  ;
+  LF  = #10  ;
+  FF  = #12  ;
+  CR  = #13  ;
+  ESC = #27  ;
+  FS  = #28  ;
+  GS  = #29  ;
+  SI  = #15  ;
+  DC2 = #18  ;
+
+  cTimeout = 3 ;  { Tempo PADRAO para msg de falha de comunicacao }
+
+  ARRAY_TAGS: array[0..37] of String = ( '</linha_simples>', '</linha_dupla>',
+    '<e>', '</e>', '<n>', '</n>', '<s>', '</s>', '<c>', '</c>', '<i>', '</i>',
+    '<ean8>', '</ean8>', '<ean13>', '</ean13>',
+    '<std>', '</std>', '<inter>', '</inter>',
+    '<code11>', '</code11>', '<code39>', '</code39>',
+    '<code93>', '</code93>', '<code128>', '</code128>',
+    '<upca>', '</upca>', '<codabar>', '</codabar>',
+    '<msi>', '</msi>',
+    '<ad>','</ad>','<ce>','</ce>' );
+
+  cACBrDeviceAtivarPortaException    = 'Porta não definida' ;
+  cACBrDeviceAtivarException         = 'Erro abrindo: %s ' + sLineBreak +' %s ' ;
+  cACBrDeviceSetBaudException        = 'Valor deve estar na faixa de 50 a 4000000.'+#10+
+                                       'Normalmente os equipamentos Seriais utilizam: 9600' ;
+  cACBrDeviceSetDataException        = 'Valor deve estar na faixa de 5 a 8.'+#10+
+                                       'Normalmente os equipamentos Seriais utilizam: 7 ou 8' ;
+  cACBrDeviceSetPortaException       = 'Não é possível mudar a Porta com o Dispositivo Ativo' ;
+  cACBrDeviceEnviaStrThreadException = 'Erro gravando em: %s ' ;
+
+
+  {* Unit ACBrECFClass *}
+  cACBrTempoInicioMsg                  = 3 ;  { Tempo para iniciar a exibiçao da mensagem Aguardando a Resposta da Impressora' }
+  cACBrMsgAguardando                   = 'Aguardando a resposta da Impressora: %d segundos' ;
+  cACBrMsgTrabalhando                  = 'Impressora está trabalhando' ;
+  cACBrMsgPoucoPapel                   = 30 ; {Exibe alerta de Pouco Papel somente a cada 30 segundos}
+  cACBrMsgRelatorio                    = 'Imprimindo %s  %dª Via ' ;
+  cACBrPausaRelatorio                  = 5 ;
+  cACBrMsgPausaRelatorio               = 'Destaque a %dª via, <ENTER> proxima, %d seg.';
+  cACBrLinhasEntreCupons               = 7 ;
+  cACBrMaxLinhasBuffer                 = 0 ;
+  cACBrIntervaloAposComando            = 100 ; { Tempo em milisegundos a esperar apos o termino de EnviaComando }
+  cACBrECFAliquotaSetTipoException     = 'Valores válidos para TACBrECFAliquota.Tipo: "T" - ICMS ou "S" - ISS' ;
+  cACBrECFConsumidorCPFCNPJException   = 'CPF/CNPJ Não informado' ;
+  cACBrECFConsumidorNomeException      = 'Para informar o Endereço é necessário informar o Nome' ;
+  cACBrECFClassCreateException         = 'Essa Classe deve ser instanciada por TACBrECF' ;
+  cACBrECFNaoInicializadoException     = 'Componente ACBrECF não está Ativo' ;
+  cACBrECFOcupadoException             = 'Componente ACBrECF ocupado' + sLineBreak +
+                                         'Aguardando resposta do comando anterior' ;
+  cACBrECFSemRespostaException         = 'Impressora %s não está respondendo' ;
+  cACBrECFCmdSemRespostaException      = 'Comandos não estão sendo enviados para Impressora %s ' ;
+  cACBrECFEnviaCmdSemRespostaException = 'Erro ao enviar comandos para a Impressora %s ' ;
+  cACBrECFDoOnMsgSemRespostaRetentar   = 'A impressora %s não está repondendo.' ;
+  cACBrECFVerificaFimLeituraException  = 'Erro Function VerificaFimLeitura não implementada em %s ' ;
+  cACBrECFVerificaEmLinhaMsgRetentar   = 'A impressora %s não está pronta.' ;
+  cACBrECFVerificaEmLinhaException     = 'Impressora %s não está em linha' ;
+  cACBrECFPodeAbrirCupomRequerX        = 'A impressora %s requer Leitura X todo inicio de dia.'+#10+
+                                         ' Imprima uma Leitura X para poder vender' ;
+  cACBrECFPodeAbrirCupomRequerZ        = 'Redução Z de dia anterior não emitida.'+#10+
+                                         ' Imprima uma Redução Z para poder vender' ;
+  cACBrECFPodeAbrirCupomBloqueada      = 'Reduçao Z de hoje já emitida, ECF bloqueado até as 00:00' ;
+  cACBrECFPodeAbrirCupomCFAberto       = 'Cupom Fiscal aberto' ;
+  cACBrECFPodeAbrirCupomNaoAtivada     = 'Impressora nao foi Inicializada (Ativo = false)' ;
+  cACBrECFPodeAbrirCupomEstado         = 'Estado da impressora %s  é '+sLineBreak+' %s (não é Livre) ' ;
+  cACBrECFAbreGavetaException          = 'A Impressora %s não manipula Gavetas' ;
+  cACBrECFImpactoAgulhasException      = 'A Impressora %s não permite ajustar o Impacto das Agulhas' ;
+  cACBrECFImprimeChequeException       = 'Rotina de Impressão de Cheques não implementada para '+
+                                         'Impressora %s ';
+  cACBrECFLeituraCMC7Exception         = 'Rotina de Leitura de CMC7 de Cheques não implementada para '+
+                                         'Impressora %s ';
+  cACBrECFAchaCNFException             = 'Não existe nenhum Comprovante Não Fiscal '+
+                                         'cadastrado como: "%s" ' ;
+  cACBrECFAchaFPGException             = 'Não existe nenhuma Forma de Pagamento '+
+                                         'cadastrada como: "%s" ' ;
+  cACBrECFCMDInvalidoException         = 'Procedure: %s '+ sLineBreak +
+                                         ' não implementada para a Impressora: %s'+sLineBreak + sLineBreak +
+                                         'Ajude no desenvolvimento do ACBrECF. '+ sLineBreak+
+                                         'Acesse nosso Forum em: http://acbr.sf.net/' ;
+  cACBrECFDoOnMsgPoucoPapel            = 'Detectado pouco papel' ;
+  cACBrECFDoOnMsgRetentar              = 'Deseja tentar novamente ?' ;
+  cACBrECFAchaICMSAliquotaInvalida     = 'Aliquota inválida: ' ;
+  cACBrECFAchaICMSCMDInvalido          = 'Aliquota não encontrada: ' ;
+  cACBrECFAbrindoRelatorioGerencial    = 'Abrindo Relatório Gerencial, aguarde %d seg' ;
+  cACBrECFFechandoRelatorioGerencial   = 'Fechando Relatório Gerencial' ;
+  cACBrECFFormMsgDoProcedureException  = 'Erro. Chamada recurssiva de FormMsgDoProcedure' ;
+
+
+  {* Unit ACBrECF *}
+  cACBrECFSetModeloException             = 'Não é possível mudar o Modelo com o ECF Ativo' ;
+  cACBrECFModeloNaoDefinidoException     = 'Modelo não definido' ;
+  cACBrECFModeloBuscaPortaException      = 'Modelo: %s não consegue efetuar busca automática de Porta'+sLineBreak+
+                                           'Favor definir a Porta Ex: (COM1, LPT1, /dev/lp0, etc)' ;
+  cACBrECFMsgDoAcharPorta                = 'Procurando por ECF: %s na porta: %s ' ;
+  cACBrECFSetDecimaisPrecoException      = 'Valor de DecimaisPreco deve estar entre 0-3' ;
+  cACBrECFSetDecimaisQtdException        = 'Valor de DecimaisQtd deve estar entre 0-4' ;
+  cACBrECFVendeItemQtdeException         = 'Quantidade deve ser superior a 0.' ;
+  cACBrECFVendeItemValorUnitException    = 'Valor Unitario deve ser superior a 0.' ;
+  cACBrECFVendeItemValDescAcreException  = 'ValorDescontoAcrescimo deve ser positivo' ;
+  cACBrECFVendeItemDescAcreException     = 'DescontoAcrescimo deve ser "A"-Acrescimo, ou "D"-Desconto' ;
+  cACBrECFVendeItemTipoDescAcreException = 'TipoDescontoAcrescimo deve ser "%"-Porcentagem, ou "$"-Valor' ;
+  cACBrECFVendeItemAliqICMSException     = 'Aliquota de ICMS não pode ser vazia.' ;
+  cACBrECFAchaFPGIndiceException         = 'Forma de Pagamento: %s inválida' ;
+  cACBrECFFPGPermiteVinculadoException   = 'Forma de Pagamento: %s '+#10+
+                                           'não permite Cupom Vinculado' ;
+  cACBrECFRegistraItemNaoFiscalException = 'Comprovante não fiscal: %s inválido' ;
+  cACBrECFSetRFDException                = 'Não é possível mudar ACBrECF.RFD com o componente ativo' ;
+  cACBrECFSetAACException                = 'Não é possível mudar ACBrECF.AAC com o componente ativo' ;
+
+  cACBrAACNumSerieNaoEncontardoException = 'ECF de Número de série %s não encontrado no Arquivo Auxiliar Criptografado.' ;
+  cACBrAACValorGTInvalidoException       = 'Há divergência no Valor do Grande Total'+sLineBreak+
+                                           'Valor do ECF....: %m'+sLineBreak+
+                                           'Valor do Arquivo: %m' ;
+
+implementation
+
+end.

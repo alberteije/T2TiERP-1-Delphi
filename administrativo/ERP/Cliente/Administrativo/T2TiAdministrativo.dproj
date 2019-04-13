@@ -1,0 +1,283 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{89934DF9-7DD6-427C-BE35-D674D39B9925}</ProjectGuid>
+			<MainSource>T2TiAdministrativo.dpr</MainSource>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<ProjectVersion>12.0</ProjectVersion>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_DependencyCheckOutputName>T2TiAdministrativo.exe</DCC_DependencyCheckOutputName>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_Platform>x86</DCC_Platform>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="T2TiAdministrativo.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="..\Comum\Tipos.pas"/>
+			<DCCReference Include="..\Comum\Conversor.pas"/>
+			<DCCReference Include="..\Comum\NotificationService.pas"/>
+			<DCCReference Include="..\Comum\SessaoUsuario.pas"/>
+			<DCCReference Include="..\Comum\Controller\UsuarioController.pas"/>
+			<DCCReference Include="..\Comum\Controller\Controller.pas"/>
+			<DCCReference Include="..\Comum\Controller\FuncaoController.pas"/>
+			<DCCReference Include="..\Comum\Controller\PapelController.pas"/>
+			<DCCReference Include="..\Comum\Controller\PapelFuncaoController.pas"/>
+			<DCCReference Include="..\Comum\Tela\UTelaCadastro.pas">
+				<Form>FTelaCadastro</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\UTela.pas">
+				<Form>FTela</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\ULookup.pas">
+				<Form>FLookup</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\UBase.pas">
+				<Form>FBase</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\UDataModule.pas">
+				<Form>FDataModule</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\UFiltro.pas">
+				<Form>FFiltro</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\ULogin.pas">
+				<Form>FLogin</Form>
+			</DCCReference>
+			<DCCReference Include="Tela\UMenu.pas">
+				<Form>FMenu</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Comum\Atributos.pas"/>
+			<DCCReference Include="..\..\Comum\Biblioteca.pas"/>
+			<DCCReference Include="..\..\Comum\Constantes.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FuncaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\JSonVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\UsuarioVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PapelVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PapelFuncaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PessoaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\EnderecoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ContatoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PessoaFisicaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PessoaJuridicaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ColaboradorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\SetorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\CargoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\UfVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PaisVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ContadorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FpasVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\SindicatoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\NivelFormacaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TipoColaboradorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ContabilContaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\SituacaoColaboradorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TipoAdmissaoVO.pas"/>
+			<DCCReference Include="Tela\UUsuario.pas">
+				<Form>FUsuario</Form>
+			</DCCReference>
+			<DCCReference Include="Tela\UPapel.pas">
+				<Form>FPapel</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\ColaboradorController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\AdministrativoFormularioVO.pas"/>
+			<DCCReference Include="Tela\UAuditoria.pas">
+				<Form>FAuditoria</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Comum\VO\AuditoriaVO.pas"/>
+			<DCCReference Include="Controller\AuditoriaController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\EmpresaSessaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\EmpresaVO.pas"/>
+			<DCCReference Include="..\Comum\Controller\EmpresaController.pas"/>
+			<DCCReference Include="..\Comum\Controller\ViewSessaoEmpresaController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ViewSessaoEmpresaVO.pas"/>
+			<DCCReference Include="Tela\UAtualizaExe.pas">
+				<Form>FAtualizaExe</Form>
+			</DCCReference>
+			<DCCReference Include="Tela\UTributOperacaoFiscal.pas">
+				<Form>FTributOperacaoFiscal</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\TributOperacaoFiscalController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TributOperacaoFiscalVO.pas"/>
+			<DCCReference Include="..\Cadastros Base\Controller\CfopController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\CfopVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TributGrupoTributarioVO.pas"/>
+			<DCCReference Include="Controller\TributGrupoTributarioController.pas"/>
+			<DCCReference Include="Tela\UTributGrupoTributario.pas">
+				<Form>FTributGrupoTributario</Form>
+			</DCCReference>
+			<DCCReference Include="Tela\UTributacao.pas">
+				<Form>FTributacao</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\TributConfiguraOfGtController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TributConfiguraOfGtVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TributPisCodApuracaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TributCofinsCodApuracaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TributIpiDipiVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TributIcmsUfVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\CsosnBVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\CstIcmsBVO.pas"/>
+			<DCCReference Include="..\Cadastros Base\Controller\CsosnBController.pas"/>
+			<DCCReference Include="..\Cadastros Base\Controller\CstIcmsBController.pas"/>
+			<DCCReference Include="..\Cadastros Base\Controller\CstPisController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\CstPisVO.pas"/>
+			<DCCReference Include="..\Cadastros Base\Controller\CstCofinsController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\CstCofinsVO.pas"/>
+			<DCCReference Include="..\Cadastros Base\Controller\CodigoApuracaoEfdController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\CodigoApuracaoEfdVO.pas"/>
+			<DCCReference Include="..\Cadastros Base\Controller\TipoReceitaDipiController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TipoReceitaDipiVO.pas"/>
+			<DCCReference Include="..\Cadastros Base\Controller\UfController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\CstIpiVO.pas"/>
+			<DCCReference Include="..\Cadastros Base\Controller\CstIpiController.pas"/>
+			<DCCReference Include="Controller\TributIcmsUfController.pas"/>
+			<DCCReference Include="Tela\UTributIcmsCustomizado.pas">
+				<Form>FTributIcmsCustomizado</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\TributIcmsCustomDetController.pas"/>
+			<DCCReference Include="Controller\TributIcmsCustomCabController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TributIcmsCustomDetVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TributIcmsCustomCabVO.pas"/>
+			<DCCReference Include="Controller\TributIssController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TributIssVO.pas"/>
+			<DCCReference Include="Tela\UTributIss.pas">
+				<Form>FTributIss</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Comum\VO\PlanoContaRefSpedVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PlanoContaVO.pas"/>
+			<DCCReference Include="Tela\UParametrizacao.pas">
+				<Form>FParametrizacao</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Comum\VO\AdmParametroVO.pas"/>
+			<DCCReference Include="..\Comum\Controller\AdmParametroController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FinStatusParcelaVO.pas"/>
+			<DCCReference Include="Controller\FinStatusParcelaController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FinTipoRecebimentoVO.pas"/>
+			<DCCReference Include="Controller\FinTipoRecebimentoController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FinDocumentoOrigemVO.pas"/>
+			<DCCReference Include="Controller\FinDocumentoOrigemController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ContaCaixaVO.pas"/>
+			<DCCReference Include="Controller\ContaCaixaController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\AgenciaBancoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\BancoVO.pas"/>
+			<DCCReference Include="Tela\UEmpresa.pas">
+				<Form>FEmpresa</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\ContadorController.pas"/>
+			<DCCReference Include="Controller\SindicatoController.pas"/>
+			<DCCReference Include="Controller\FpasController.pas"/>
+			<DCCReference Include="Controller\EnderecoController.pas"/>
+			<DCCReference Include="Controller\ContatoController.pas"/>
+			<DCCReference Include="Tela\UEmpresaCnae.pas">
+				<Form>FEmpresaCnae</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\EmpresaCnaeController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\EmpresaCnaeVO.pas"/>
+			<DCCReference Include="Controller\CnaeController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\CnaeVO.pas"/>
+			<DCCReference Include="Tela\UQuadroSocietario.pas">
+				<Form>FQuadroSocietario</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\QuadroSocietarioController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\QuadroSocietarioVO.pas"/>
+			<DCCReference Include="Tela\USocio.pas">
+				<Form>FSocio</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Comum\VO\SocioDependenteVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\SocioParticipacaoSocietariaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\SocioVO.pas"/>
+			<DCCReference Include="Controller\SocioController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TipoRelacionamentoVO.pas"/>
+			<DCCReference Include="Controller\PessoaController.pas"/>
+			<DCCReference Include="Controller\TipoRelacionamentoController.pas"/>
+			<DCCReference Include="Tela\UAtualizaBd.pas">
+				<Form>FAtualizaBd</Form>
+			</DCCReference>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">T2TiAdministrativo.dpr</Source>
+					</Source>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1046</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\synapse.bpl">Synapse TCP/IP / Serial library (http://www.synapse.ararat.cz)</Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\PCN2.bpl">Projeto Cooperar (http://br.groups.yahoo.com/group/projeto_cooperar_nfe/)</Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\ACBrCapicom.bpl">ACBr Automação Comercial Brasil  ACBrComum   (http://acbr.sf.ne)</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality" Type="String">DelphiDotNet.Personality</Option>
+			<Option Name="ProjectType" Type="String"></Option>
+			<Option Name="Version" Type="String">1.0</Option>
+			<Option Name="GUID" Type="String">{9AC22BC6-737C-46BD-B20E-C132C6DBE589}</Option>
+		</Option>
+	</PersonalityInfo>
+	<DelphiDotNet.Personality>
+		<Source>
+			<Source Name="MainSource" Type="String">repmandnet.dpr</Source>
+		</Source>
+		<FileVersion>
+			<FileVersion Name="Version" Type="String">7.0</FileVersion>
+		</FileVersion>
+		<Compiler>
+			<Compiler Name="A" Type="Integer">0</Compiler>
+			<Compiler Name="B" Type="Integer">0</Compiler>
+			<Compiler Name="C" Type="Integer">1</Compiler>
+			<Compiler Name="D" Type="Integer">1</Compiler>
+			<Compiler Name="E" Type="Integer">0</Compiler>
+			<Compiler Name="F" Type="Integer">0</Compiler>
+			<Compiler Name="G" Type="Integer">1</Compiler>
+			<Compiler Name="H" Type="Integer">1</Compiler>
+			<Compiler Name="I" Type="Integer">1</Compiler>
+			<Compiler Name="J" Type="Integer">0</Compiler>
+			<Compiler Name="K" Type="Integer">0</Compiler>
+			<Compiler Name="L" Type="Integer">1</Compiler>
+			<Compiler Name="M" Type="Integer">0</Compiler>
+			<Compiler Name="N" Type="Integer">1</Compiler>
+			<Compiler Name="O" Type="Integer">1</Compiler>
+			<Compiler Name="P" Type="Integer">1</Compiler>
+			<Compiler Name="Q" Type="Integer">0</Compiler>
+			<Compiler Name="R" Type="Integer">0</Compiler>
+			<Compiler Name="S" Type="Integer">0</Compiler>
+			<Compiler Name="T" Type="Integer">0</Compiler>
+			<Compiler Name="U" Type="Integer">0</Compiler>
+			<Compiler Name="V" Type="Integer">1</Compiler>
+			<Compiler Name="W" Type="Integer">0</Compiler>
+			<Compiler Name="X" Type="Integer">1</Compiler>
+			<Compiler Name="Y" Type="Integer">1</Compiler>
+			<Compiler Name="Z" Type="Integer">1</Compiler>
+			<Compiler Name="ShowHints" Type="Boolean">True</Compiler>
+			<Compiler Name="ShowWarnings" Type="Boolean">True</Compiler>
+			<Compiler Name="UnitAliases" Type="String">WinTypes=Borland.Vcl.Windows;WinProcs=Borland.Vcl.Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;</Compiler>
+			<Compiler Name="NamespacePrefix" Type="String"></Compiler>
+			<Compiler Name="GenerateDocumentation" Type="Boolean">False</Compiler>
+			<Compiler Name="DefaultNamespace" Type="String"></Compiler>
+			<Compiler Name="SymbolDeprecated" Type="Boolean">True</Compiler>
+			<Compiler Name="SymbolLibrary" Type="Boolean">True</Compiler>
+			<Compiler Name="SymbolPlatform" Type="Boolean">True</Compiler>
+			<Compiler Name="SymbolExperimental" Type="Boolean">True</Compiler>
+			<Compiler Name="UnitLibrary" Type="Boolean">True</Compiler>
+			<Compiler Name="UnitPlatform" Type="Boolean">True</Compiler>
+			<Compiler Name="UnitDeprecated" Type="Boolean">True</Compiler>
+			<Compiler Name="UnitExperimental" Type="Boolean">True</Compiler>
+			<Compiler Name="HResultCompat" Type="Boolean">True</Compiler>
+			<Compiler Name="HidingMember" Type="Boolean">True</Compiler>
+			<Compiler Name="HiddenVirtual" Type="Boolean">True</Compiler>
+			<Compiler Name="Garbage" Type="Boolean">True</Compiler>
+			<Compiler Name="BoundsError" Type="Boolean">True</Compiler>
+			<Compiler Name="ZeroNilCompat" Type="Boolean">True</Compiler>
+			<Compiler Name="StringConstTruncated" Type="Boolean">True</Compiler>
+			<Compiler Name="ForLoopVarVarPar" Type="Boolean">True</Compiler>
+			<Compiler Name="TypedConstVarPar" Type="Boolean">True</Compiler>
+			<Compiler Name="AsgToTypedConst" Type="Boolean">True</Compiler>
+			<Compiler Name="CaseLabelRange" Type="Boolean">True</Compiler>
+			<Compiler Name="ForVariable" Type="Boolean">True</Compiler>
+			<Compiler Name="ConstructingAbstract" Type="Boolean">True</Compiler>
+			<Compiler Name="ComparisonFalse" Type="Boolean">True</Compiler>
+			<Compiler Name="ComparisonTrue" Type="Boolean">True</Compiler>
+			<Compiler Name="ComparingSignedUnsigned" Type="Boolean">True</Compiler>
+			<Compiler Name="CombiningSignedUnsigned" Type="Boolean">True</Compiler>
+			<Compiler Name="UnsupportedConstruct" Type="Boolean">True</Compiler>
+			<Compiler Name="FileOpen" Type="Boolean">True</Compiler>
+			<Compiler Name="FileOpenUnitSrc" Type="Boolean">True</Compiler>
+			<Compiler Name="BadGlobalSymbol" Type="Boolean">True</Compiler>
+			<Compiler Name="DuplicateConstructorDestructor" Type="Boolean">True</Compiler>
+			<Compiler Name="InvalidDirective" Type="Boolean">True</Compiler>
+			<Compiler Name="PackageNoLink" Type="Boolean">True</Compiler>
+			<Compiler Name="PackageThreadVar" Type="Boolean">True</Compiler>
+			<Compiler Name="ImplicitImport" Type="Boolean">True</Compiler>
+			<Compiler Name="HPPEMITIgnored" Type="Boolean">True</Compiler>
+			<Compiler Name="NoRetVal" Type="Boolean">True</Compiler>
+			<Compiler Name="UseBeforeDef" Type="Boolean">True</Compiler>
+			<Compiler Name="ForLoopVarUndef" Type="Boolean">True</Compiler>
+			<Compiler Name="UnitNameMismatch" Type="Boolean">True</Compiler>
+			<Compiler Name="NoCFGFileFound" Type="Boolean">True</Compiler>
+			<Compiler Name="MessageDirective" Type="Boolean">True</Compiler>
+			<Compiler Name="ImplicitVariants" Type="Boolean">True</Compiler>
+			<Compiler Name="UnicodeToLocale" Type="Boolean">True</Compiler>
+			<Compiler Name="LocaleToUnicode" Type="Boolean">True</Compiler>
+			<Compiler Name="ImagebaseMultiple" Type="Boolean">True</Compiler>
+			<Compiler Name="SuspiciousTypecast" Type="Boolean">True</Compiler>
+			<Compiler Name="PrivatePropAccessor" Type="Boolean">True</Compiler>
+			<Compiler Name="UnsafeType" Type="Boolean">True</Compiler>
+			<Compiler Name="UnsafeCode" Type="Boolean">True</Compiler>
+			<Compiler Name="UnsafeCast" Type="Boolean">True</Compiler>
+			<Compiler Name="OptionTruncated" Type="Boolean">True</Compiler>
+			<Compiler Name="WideCharReduced" Type="Boolean">True</Compiler>
+			<Compiler Name="DuplicatesIgnored" Type="Boolean">True</Compiler>
+		</Compiler>
+		<Linker>
+			<Linker Name="MapFile" Type="Integer">0</Linker>
+			<Linker Name="OutputObjs" Type="Integer">0</Linker>
+			<Linker Name="ConsoleApp" Type="Integer">1</Linker>
+			<Linker Name="DebugInfo" Type="Boolean">True</Linker>
+			<Linker Name="RemoteSymbols" Type="Boolean">False</Linker>
+			<Linker Name="MinStackSize" Type="Integer">4096</Linker>
+			<Linker Name="MaxStackSize" Type="Integer">1048576</Linker>
+			<Linker Name="ImageBase" Type="Integer">4194304</Linker>
+			<Linker Name="ExeDescription" Type="String"></Linker>
+			<Linker Name="GenerateDRC" Type="Boolean">False</Linker>
+		</Linker>
+		<Directories>
+			<Directories Name="OutputDir" Type="String"></Directories>
+			<Directories Name="UnitOutputDir" Type="String"></Directories>
+			<Directories Name="PackageDLLOutputDir" Type="String"></Directories>
+			<Directories Name="PackageDCPOutputDir" Type="String"></Directories>
+			<Directories Name="SearchPath" Type="String">h:\windows\microsoft.net\framework\v1.1.4322;c:\windows\microsoft.net\framework\v1.1.4322;k:\windows\microsoft.net\framework\v1.1.4322</Directories>
+			<Directories Name="Packages" Type="String">k:\windows\microsoft.net\framework\v1.1.4322\system.xml.dll;k:\windows\microsoft.net\framework\v1.1.4322\system.drawing.dll;k:\windows\microsoft.net\framework\v1.1.4322\system.data.dll;k:\windows\microsoft.net\framework\v1.1.4322\system.dll</Directories>
+			<Directories Name="Conditionals" Type="String"></Directories>
+			<Directories Name="DebugSourceDirs" Type="String"></Directories>
+			<Directories Name="UsePackages" Type="Boolean">True</Directories>
+		</Directories>
+		<Parameters>
+			<Parameters Name="RunParams" Type="String"></Parameters>
+			<Parameters Name="HostApplication" Type="String"></Parameters>
+			<Parameters Name="Launcher" Type="String"></Parameters>
+			<Parameters Name="UseLauncher" Type="Boolean">False</Parameters>
+			<Parameters Name="DebugCWD" Type="String"></Parameters>
+			<Parameters Name="RemoteHost" Type="String"></Parameters>
+			<Parameters Name="RemotePath" Type="String"></Parameters>
+			<Parameters Name="RemoteLauncher" Type="String"></Parameters>
+			<Parameters Name="RemoteCWD" Type="String"></Parameters>
+			<Parameters Name="RemoteDebug" Type="Boolean">False</Parameters>
+		</Parameters>
+		<Language>
+			<Language Name="ActiveLang" Type="String"></Language>
+			<Language Name="ProjectLang" Type="String">$00000000</Language>
+			<Language Name="RootDir" Type="String"></Language>
+		</Language>
+		<VersionInfo>
+			<VersionInfo Name="IncludeVerInfo" Type="Boolean">False</VersionInfo>
+			<VersionInfo Name="AutoIncBuild" Type="Boolean">False</VersionInfo>
+			<VersionInfo Name="MajorVer" Type="Integer">1</VersionInfo>
+			<VersionInfo Name="MinorVer" Type="Integer">0</VersionInfo>
+			<VersionInfo Name="Release" Type="Integer">0</VersionInfo>
+			<VersionInfo Name="Build" Type="Integer">0</VersionInfo>
+			<VersionInfo Name="Debug" Type="Boolean">False</VersionInfo>
+			<VersionInfo Name="PreRelease" Type="Boolean">False</VersionInfo>
+			<VersionInfo Name="Special" Type="Boolean">False</VersionInfo>
+			<VersionInfo Name="Private" Type="Boolean">False</VersionInfo>
+			<VersionInfo Name="DLL" Type="Boolean">False</VersionInfo>
+			<VersionInfo Name="Locale" Type="Integer">3082</VersionInfo>
+			<VersionInfo Name="CodePage" Type="Integer">1252</VersionInfo>
+		</VersionInfo>  
+    
+    <FileList>
+      <File FileName="$(SystemRoot)\microsoft.net\framework\v1.1.4322\system.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="system" AssemblyName="system" Version="1.0.5000.0" LinkUnits="False"/>
+      <File FileName="$(SystemRoot)\microsoft.net\framework\v1.1.4322\system.data.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="system.data" AssemblyName="system.data" Version="1.0.5000.0" LinkUnits="False"/>
+      <File FileName="$(SystemRoot)\microsoft.net\framework\v1.1.4322\system.drawing.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="system.drawing" AssemblyName="system.drawing" Version="1.0.5000.0" LinkUnits="False"/>
+      <File FileName="$(SystemRoot)\microsoft.net\framework\v1.1.4322\system.xml.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="system.xml" AssemblyName="system.xml" Version="1.0.5000.0" LinkUnits="False"/>
+      <File FileName="" ContainerId="" ModuleName="System.Reflection"/>
+      <File FileName="" ContainerId="" ModuleName="System.Runtime.CompilerServices"/>
+      <File FileName="" ContainerId="" ModuleName="SysUtils"/>
+      <File FileName="" ContainerId="" ModuleName="Forms"/>
+      <File FileName="..\rpmdfmainvcl.pas" ContainerId="" ModuleName="rpmdfmainvcl"/>
+      <File FileName="..\rpmdfdesignvcl.pas" ContainerId="" ModuleName="rpmdfdesignvcl"/>
+      <File FileName="..\rpmdfaboutvcl.pas" ContainerId="" ModuleName="rpmdfaboutvcl"/>
+      <File FileName="..\rpmdfstrucvcl.pas" ContainerId="" ModuleName="rpmdfstrucvcl"/>
+      <File FileName="..\rpmdobjinspvcl.pas" ContainerId="" ModuleName="rpmdobjinspvcl"/>
+      <File FileName="..\rppagesetupvcl.pas" ContainerId="" ModuleName="rppagesetupvcl"/>
+      <File FileName="..\rpfparamsvcl.pas" ContainerId="" ModuleName="rpfparamsvcl"/>
+      <File FileName="..\rpgraphutilsvcl.pas" ContainerId="" ModuleName="rpgraphutilsvcl"/>
+      <File FileName="..\rpexpredlgvcl.pas" ContainerId="" ModuleName="rpexpredlgvcl"/>
+      <File FileName="..\rprfvparams.pas" ContainerId="" ModuleName="rprfvparams"/>
+      <File FileName="..\rpmdfsectionintvcl.pas" ContainerId="" ModuleName="rpmdfsectionintvcl"/>
+      <File FileName="..\rptextdriver.pas" ContainerId="" ModuleName="rptextdriver"/>
+      <File FileName="..\rpactivexreport.pas" ContainerId="" ModuleName="rpactivexreport"/>
+      <File FileName="..\rpalias.pas" ContainerId="" ModuleName="rpalias"/>
+      <File FileName="..\rpdatatext.pas" ContainerId="" ModuleName="rpdatatext"/>
+      <File FileName="..\rpcompobase.pas" ContainerId="" ModuleName="rpcompobase"/>
+      <File FileName="..\rpdatainfo.pas" ContainerId="" ModuleName="rpdatainfo"/>
+      <File FileName="..\rpdataset.pas" ContainerId="" ModuleName="rpdataset"/>
+      <File FileName="..\rpdbxconfigvcl.pas" ContainerId="" ModuleName="rpdbxconfigvcl"/>
+      <File FileName="..\rpdbbrowservcl.pas" ContainerId="" ModuleName="rpdbbrowservcl"/>
+      <File FileName="..\rpdrawitem.pas" ContainerId="" ModuleName="rpdrawitem"/>
+      <File FileName="..\rpeval.pas" ContainerId="" ModuleName="rpeval"/>
+      <File FileName="..\rpevalfunc.pas" ContainerId="" ModuleName="rpevalfunc"/>
+      <File FileName="..\rpgdidriver.pas" ContainerId="" ModuleName="rpgdidriver"/>
+      <File FileName="..\rpexceldriver.pas" ContainerId="" ModuleName="rpexceldriver"/>
+      <File FileName="..\rpgdifonts.pas" ContainerId="" ModuleName="rpgdifonts"/>
+      <File FileName="..\rplabelitem.pas" ContainerId="" ModuleName="rplabelitem"/>
+      <File FileName="..\rplastsav.pas" ContainerId="" ModuleName="rplastsav"/>
+      <File FileName="..\rpmdbarcode.pas" ContainerId="" ModuleName="rpmdbarcode"/>
+      <File FileName="..\rpmdchart.pas" ContainerId="" ModuleName="rpmdchart"/>
+      <File FileName="..\rpmdconsts.pas" ContainerId="" ModuleName="rpmdconsts"/>
+      <File FileName="..\rpmdfbarcodeintvcl.pas" ContainerId="" ModuleName="rpmdfbarcodeintvcl"/>
+      <File FileName="..\rpmdfchartintvcl.pas" ContainerId="" ModuleName="rpmdfchartintvcl"/>
+      <File FileName="..\rpmdfdatatextvcl.pas" ContainerId="" ModuleName="rpmdfdatatextvcl"/>
+      <File FileName="..\rpmdfdinfovcl.pas" ContainerId="" ModuleName="rpmdfdinfovcl"/>
+      <File FileName="..\rpmdfdrawintvcl.pas" ContainerId="" ModuleName="rpmdfdrawintvcl"/>
+      <File FileName="..\rpmdfgridvcl.pas" ContainerId="" ModuleName="rpmdfgridvcl"/>
+      <File FileName="..\rpmdflabelintvcl.pas" ContainerId="" ModuleName="rpmdflabelintvcl"/>
+      <File FileName="..\rpmdfsampledatavcl.pas" ContainerId="" ModuleName="rpmdfsampledatavcl"/>
+      <File FileName="..\rpmdobinsintvcl.pas" ContainerId="" ModuleName="rpmdobinsintvcl"/>
+      <File FileName="..\rpmdprintconfigvcl.pas" ContainerId="" ModuleName="rpmdprintconfigvcl"/>
+      <File FileName="..\rpmdshfolder.pas" ContainerId="" ModuleName="rpmdshfolder"/>
+      <File FileName="..\rpmetafile.pas" ContainerId="" ModuleName="rpmetafile"/>
+      <File FileName="..\rpmunits.pas" ContainerId="" ModuleName="rpmunits"/>
+      <File FileName="..\rpparams.pas" ContainerId="" ModuleName="rpparams"/>
+      <File FileName="..\rpparser.pas" ContainerId="" ModuleName="rpparser"/>
+      <File FileName="..\rppdfdriver.pas" ContainerId="" ModuleName="rppdfdriver"/>
+      <File FileName="..\rppdffile.pas" ContainerId="" ModuleName="rppdffile"/>
+      <File FileName="..\rppdfreport.pas" ContainerId="" ModuleName="rppdfreport"/>
+      <File FileName="..\rpprintitem.pas" ContainerId="" ModuleName="rpprintitem"/>
+      <File FileName="..\rpregvcl.pas" ContainerId="" ModuleName="rpregvcl"/>
+      <File FileName="..\rpreport.pas" ContainerId="" ModuleName="rpreport"/>
+      <File FileName="..\rpbasereport.pas" ContainerId="" ModuleName="rpbasereport"/>
+      <File FileName="..\rprulervcl.pas" ContainerId="" ModuleName="rprulervcl"/>
+      <File FileName="..\rpsection.pas" ContainerId="" ModuleName="rpsection"/>
+      <File FileName="..\rpsecutil.pas" ContainerId="" ModuleName="rpsecutil"/>
+      <File FileName="..\rpsubreport.pas" ContainerId="" ModuleName="rpsubreport"/>
+      <File FileName="..\rptranslator.pas" ContainerId="" ModuleName="rptranslator"/>
+      <File FileName="..\rptypes.pas" ContainerId="" ModuleName="rptypes"/>
+      <File FileName="..\rptypeval.pas" ContainerId="" ModuleName="rptypeval"/>
+      <File FileName="..\rpvclreport.pas" ContainerId="" ModuleName="rpvclreport"/>
+      <File FileName="..\rpvgraphutils.pas" ContainerId="" ModuleName="rpvgraphutils"/>
+      <File FileName="..\rpvpreview.pas" ContainerId="" ModuleName="rpvpreview"/>
+      <File FileName="..\rpmdfconnectionvcl.pas" ContainerId="" ModuleName="rpmdfconnectionvcl"/>
+      <File FileName="..\rpmdfwizardvcl.pas" ContainerId="" ModuleName="rpmdfwizardvcl"/>
+      <File FileName="..\rpmdfextsecvcl.pas" ContainerId="" ModuleName="rpmdfextsecvcl"/>
+      <File FileName="..\rpmdfdatasetsvcl.pas" ContainerId="" ModuleName="rpmdfdatasetsvcl"/>
+      <File FileName="..\rpfmetaviewvcl.pas" ContainerId="" ModuleName="rpfmetaviewvcl"/>
+      <File FileName="..\rpfmainmetaviewvcl.pas" ContainerId="" ModuleName="rpfmainmetaviewvcl"/>
+      <File FileName="..\rpmdsysinfo.pas" ContainerId="" ModuleName="rpmdsysinfo"/>
+      <File FileName="..\rpeditconnvcl.pas" ContainerId="" ModuleName="rpeditconnvcl"/>
+      <File FileName="..\rpmdftreevcl.pas" ContainerId="" ModuleName="rpmdftreevcl"/>
+      <File FileName="..\rpmdfopenlibvcl.pas" ContainerId="" ModuleName="rpmdfopenlibvcl"/>
+    </FileList>
+    <VersionInfoKeys>
+      <VersionInfoKeys Name="CompanyName"></VersionInfoKeys>
+      <VersionInfoKeys Name="FileDescription"></VersionInfoKeys>
+      <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="InternalName"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+      <VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductName"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="Comments"></VersionInfoKeys>
+    </VersionInfoKeys>
+  </DelphiDotNet.Personality>
+</BorlandProject>

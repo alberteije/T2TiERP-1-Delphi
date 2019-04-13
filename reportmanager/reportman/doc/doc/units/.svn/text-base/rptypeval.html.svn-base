@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>Units documentation - rptypeval.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rptypeval.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>basic evaluator types and functions</b>, provide base 
+  classes to define functions, variables in a expression evaluator</p>
+<h4>Types</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpToken</td>
+    <td> 
+      <p>Enumeration (totEOF,totSymbol,totString,totInteger,TotFloat,totOperator, 
+        totBoolean,totDate,totTime,totDateTime)</p>
+      <p>An expression is divided in tokens (parsed), each token can have one 
+        of this types.</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TRpValue</td>
+    <td> 
+      <p>Variant</p>
+      <p>It's defined as a variant, in early implementations of the engine the 
+        expression evaluator values was implemented as a record because variants 
+        did not exists, this definition provide the way to implement operations 
+        with custom variants in a future, basic type operations are done using 
+        functions passing this type</p>
+    </td>
+  </tr>
+  <tr>
+    <td>RTypeIdentificator</td>
+    <td>
+      <p>Enumeration (RTypeidenFunction,RTypeIdenVariable,RTypeIdenConstant)</p>
+      <p>A identifier can be a function, variable or constant.</p>
+    </td>
+  </tr>
+</table>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpNamedException</td>
+    <td>Exception</td>
+    <td>Exception with a property to identify the cause of the exception</td>
+  </tr>
+  <tr> 
+    <td>TRpEvalException</td>
+    <td>TRpNamedException</td>
+    <td>Exception with information about the position (inside a expression) where 
+      the exception was launched</td>
+  </tr>
+  <tr> 
+    <td>TIdentifier</td>
+    <td>TObject</td>
+    <td>Abstract definition of a evaluator identifier</td>
+  </tr>
+  <tr> 
+    <td>TIdenFunction</td>
+    <td>TIdentifier</td>
+    <td>The implementation of a evaluator function, to define a new function derive 
+      it from this object</td>
+  </tr>
+  <tr> 
+    <td>TIdenVariable</td>
+    <td>TIdentifier</td>
+    <td>The implementation of a evaluator variable</td>
+  </tr>
+  <tr> 
+    <td>TIdenConstant</td>
+    <td>TIdentifier</td>
+    <td>The implementation of a evaluator constant</td>
+  </tr>
+  <tr> 
+    <td>TIdenField</td>
+    <td>TIdentifier</td>
+    <td>The implementation of a evaluator database field</td>
+  </tr>
+  <tr> 
+    <td>TIdenTrue</td>
+    <td>TIdenConstant</td>
+    <td>Boolean True constant</td>
+  </tr>
+  <tr>
+    <td>TIdenFalse</td>
+    <td>TIdenConstant</td>
+    <td>Boollean False constant</td>
+  </tr>
+</table>
+<h4>Functions</h4>
+<p>Most of the functions are used by the evaluator for common arithmetic and comparation 
+  operations. </p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>function SumTRpValue(Value1,Value2:TRpValue):TRpValue; </td>
+    <td>Sum operation</td>
+  </tr>
+  <tr> 
+    <td>function DifTRpValue(Value1,Value2:TRpValue):TRpValue; </td>
+    <td>Dif operation</td>
+  </tr>
+  <tr> 
+    <td>function MultTRpValue(Value1,Value2:TRpValue):TRpValue;</td>
+    <td>Multiply</td>
+  </tr>
+  <tr> 
+    <td>function DivTRpValue(Value1,Value2:TRpValue):TRpValue;</td>
+    <td>Divide</td>
+  </tr>
+  <tr> 
+    <td>function SignTRpValue(Value:TRpValue):TRpValue;</td>
+    <td>Sign</td>
+  </tr>
+  <tr> 
+    <td>function EqualTRpValue(Value1,Value2:TRpValue):TRpValue;</td>
+    <td>Comp. operator.</td>
+  </tr>
+  <tr> 
+    <td>function EqualEqualTRpValue(Value1,Value2:TRpValue):TRpValue;</td>
+    <td>Comp. operator.</td>
+  </tr>
+  <tr> 
+    <td>function MorethanEqualTRpValue(Value1,Value2:TRpValue):TRpValue;</td>
+    <td>Comp. operator.</td>
+  </tr>
+  <tr> 
+    <td>function LessthanEqualTRpValue(Value1,Value2:TRpValue):TRpValue;</td>
+    <td>Comp. operator</td>
+  </tr>
+  <tr> 
+    <td>function MorethanTRpValue(Value1,Value2:TRpValue):TRpValue;</td>
+    <td>Comp. operator</td>
+  </tr>
+  <tr> 
+    <td>function LessthanTRpValue(Value1,Value2:TRpValue):TRpValue;</td>
+    <td>Comp. operator</td>
+  </tr>
+  <tr> 
+    <td>function DiferentTRpValue(Value1,Value2:TRpValue):TRpValue;</td>
+    <td>Comp. operator</td>
+  </tr>
+  <tr> 
+    <td>function IsNullTRpValue(Value:TRpValue):Boolean;</td>
+    <td>Comp. operator</td>
+  </tr>
+  <tr> 
+    <td>function LogicalANDTRpValue(Value1,Value2:TRpValue):TRpValue;</td>
+    <td>Logical operator</td>
+  </tr>
+  <tr> 
+    <td>function LogicalORTRpValue(Value1,Value2:TRpValue):TRpValue;</td>
+    <td>Logical operator</td>
+  </tr>
+  <tr> 
+    <td>function LogicalNOTTRpValue(Value1:TRpValue):TRpValue;</td>
+    <td>Not operator</td>
+  </tr>
+  <tr> 
+    <td>function TRpValueToString(Value:TRpValue):string;</td>
+    <td>Format operator</td>
+  </tr>
+  <tr> 
+    <td>function FormatTRpValue(sFormat:string;Value:TRpValue;Userdef:Boolean):string; 
+    </td>
+    <td>Format operator</td>
+  </tr>
+  <tr>
+    <td>procedure DatetimeValidation(var Value1,Value2:TRpValue);</td>
+    <td>Date validate</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

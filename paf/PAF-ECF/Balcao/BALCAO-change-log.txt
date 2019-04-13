@@ -1,0 +1,87 @@
+{*******************************************************************************
+Title: T2Ti ERP
+Description: Tela principal do PAF-ECF - Caixa.
+
+The MIT License
+
+Copyright: Copyright (C) 2010 T2Ti.COM
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+       The author may be contacted at:
+           t2ti.com@gmail.com</p>
+
+@author Albert Eije (T2Ti.COM)
+@version 1.0
+*******************************************************************************}
+
+Agradecimentos:
+
+* Administradores:
+- Albert Eije
+
+* Desenvolvedores:
+- Gilson 
+
+
+
+
+
+{******************************************************************************
+|* PafEcf.exe
+|*
+|* PROPÓSITO: Registro de Alterações
+******************************************************************************}
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+Balcao Versão 1.0.0.1 - Beta   09/08/2011 
+-------------------------------------------
+
+Algumas considerações sobre as alterações que o Gilsom fez:
+ 
+[+] - Adicionei o Formulário FConfigConexao semelhante ao usado no frente
+    para fazer as configurações de conexão do sistema.
+
+[+] - Configurei o sistema de tal modo q o exe do balcao seja criado
+    dentro da pasta do Paf-Ecf-Merge
+
+[+]- Uma vez estando dentro da pasta Paf-Ecf-Merge, irá utilizar os
+    arquivos Firebird_Balcao_conn.txt e MySQL_Balcao_conn.txt para conexão
+    com a base do balcao.
+
+[+]- Será necessário disponibilizar nesta pasta o arquivo DAV.rep
+
+[+]- Ajustei várias coisas nos controllers afim de que o sistema ficasse
+   funcional mas confesso que não o conheço e seria muito bom q vc e o
+   pessoal do EAD pudesse verificar se o funcionamento está normal para a
+   partir disso eu iniciar os testes do roteiro que envolvem o sistema do
+   balcao.
+
+   - Como tive dificuldade pra configurar o a conexão do Report Manager,
+   não testei a impressão do DAV. Favor verificar.
+
+

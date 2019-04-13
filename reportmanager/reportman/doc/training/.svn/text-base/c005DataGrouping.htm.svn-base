@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Data grouping</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h1>Chapter 5- Data grouping</h1>
+<h2>5.1.Report processing</h2>
+<p>In this chapter we will learn about grouping data, to obtain aggregated values 
+  and structure report content.</p>
+<p>Let's resume the elements of a report definition file.</p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Name</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td><b>Datasets</b></td>
+    <td>Datasets are <b>optional but a report usually prints data stored in datasets</b>, 
+      the datasets are opened at the beginning of the process, you can <b>open 
+      several datasets and establish relations between them</b></td>
+  </tr>
+  <tr> 
+    <td><b>Parameters</b></td>
+    <td>Parameters are variables that can be printed and can be entered by the 
+      end user, <b>you can assign parameters to datasets (parametric querys)</b></td>
+  </tr>
+  <tr> 
+    <td><b>Sub report</b></td>
+    <td>A Report contains <b>at least one sub report</b>, if it has more than 
+      one the engine will process them in natural order. You can <b>assign a dataset 
+      to a sub report</b>, if you assign a dataset the engine will print all the 
+      <b>detail type sections once for each record</b> in the dataset, else it 
+      will print detail sections once</td>
+  </tr>
+  <tr> 
+    <td><b>Sections</b></td>
+    <td>A Sub report contains sections (<b>bands</b>), the most common section 
+      type is <b>detail</b>, but other are <b>page headers, page footers</b> and 
+      <b>group headers and footers</b>. The engine will print page headers and 
+      footers as necessary, it will check group changes, print group headers and 
+      footers and print the detail type sections for each record of the dataset 
+      assigned to the sub report. A section have useful properties like print 
+      condition, align bottom, horizontal displacement etc...</td>
+  </tr>
+  <tr> 
+    <td><b>Components</b></td>
+    <td>Each section can contain components, the components are the really printable 
+      items, they are <b>labels, expressions (dataset fields), images, drawings...</b>, 
+      this components have properties like Font properties, colour, print condition...</td>
+  </tr>
+</table>
+<p>The engine process sub reports, in natural order, using assigned datasets, 
+  printing sections (page headers, footers and details). To print a section means 
+  to print all the components contained in it and advance print position by the 
+  size of the printed section. Some properties of sections can alter the natural 
+  order or the position advance, this allow the insertion of sub reports (child 
+  sub reports) or other advanced features.</p>
+<h2>5.2.Simple grouping</h2>
+<p>The default report structure when you create a new report is a detail, remember 
+  the detail will be printed once, or, if the parent sub report have a dataset 
+  assigned, it will be printed once for each record in the dataset.</p>
+<p>You can add a group to the structure, a group will have a header and a footer, 
+  there is no limit on the number of groups. </p>
+<p><strong>Group behaviour (group break)</strong></p>
+<p>The group header will be printed before all the details, the group footer will 
+  be printed after all the details (on the active sub report). So, by default 
+  the group header is like a report header, and the group footer is like a report 
+  summary.</p>
+<p>But groups have a special property called <strong>Group Expression</strong>, 
+  the group expression will be evaluated for each record in the dataset of the 
+  sub report, if the result changes between records, the footer, and then, the 
+  header will be printed again. When a group change happens the group footer is 
+  printed with data before the change is done (previous record) and the new header 
+  will be printed with the new record data in the dataset.</p>
+<p><strong>Sorting the dataset</strong></p>
+<p>So the trick for data grouping is to sort the dataset correctly. For example, 
+  a report design for customers by city, it's mandatory you sort by city:</p>
+<p>SELECT * FROM CUSTOMERS ORDER BY City</p>
+<p>And then you can add a group and place a at Group expression:</p>
+<p>CUSTOMERS.City</p>
+<p>So the report will advance printing customers, but when a customer have a different 
+  city, the group will break, the group footer will be printed for the last customer 
+  of the city and the header will be printed for the fist customer of the new 
+  city.</p>
+<p>Now alter the customers report to group them by city.</p>
+<p>First the change to the sql sentence</p>
+<p><img src="images/grouping1.jpg" width="565" height="422"></p>
+<p>Then add a group to the report structure</p>
+<p><img src="images/grouping2.jpg" width="421" height="373"></p>
+<p>Set the group expression for the group by selecting the group header.</p>
+<p><img src="images/grouping3.jpg" width="503" height="406"></p>
+<p>Place labels and expressions on header and footer</p>
+<p><img src="images/grouping5.jpg" width="648" height="323"></p>
+<p>Preview the report</p>
+<p><img src="images/grouping4.jpg" width="460" height="466"></p>
+<h2>5.3 Group aggregates</h2>
+<p>By default expressions are evaluated and the result is printed. You can change 
+  the behaviour of a expression to accumulate (aggregate) the expression result 
+  and print the aggregated value, usually a sum of values, but other operations 
+  are available (min,max,avg,std.desv).</p>
+<p>Aggregated expressions will evaluate the <strong>initial value expression</strong> 
+  (usually 0), then <strong>will be evaluated again once for each record on the 
+  dataset of the sub report</strong>, and the specified operation will be done 
+  with the previously stored value (usually sum). By default aggregate values 
+  are initialised on report start, but you can determine when initialise them, 
+  by selecting the aggregate type. For example you can set aggregate type to group 
+  and specify the group name, then when the group breaks, the initial value will 
+  be set again.</p>
+<h2>5.4 Simple aggregate, record counting</h2>
+<p>Because aggregate expressions will accumulate the expression for each record, 
+  we can use the feature to sum amount for each line of an invoice, but we can 
+  also use the aggregates to count records, so we will understand how aggregates 
+  work.</p>
+<p>Place a expression element on the detail with a the expression: 1</p>
+<p>Set aggregate values to group, and select the newly created group for group 
+  name property. For each record in the dataset a 1 will be aggregated. See initial 
+  value is 0 by default, when the group breaks, the initial value will be set 
+  again.</p>
+<p><img src="images/grouping6.jpg" width="419" height="454"></p>
+<p>Preview and see how the expression aggregate the value.</p>
+<p><img src="images/grouping7.jpg" width="459" height="438"></p>
+<p>You can also place the same expression on the group footer, there, the total 
+  count will be printed, so place a label 'Total customers on the city:'</p>
+<h2>5.5.Grouping sales by customer</h2>
+<p>Another example of grouping, showing the detail of sales for each customer. 
+  Create a new report and setup a connection and a dataset. Name the dataset as 
+  SALES and set sql sentence to:</p>
+<p>SELECT D.*,O.* FROM Orders O<br>
+  LEFT OUTER JOIN &quot;Order Details&quot; D<br>
+  ON O.OrderID=D.OrderID<br>
+  ORDER BY O.CustomerId</p>
+<p>Set Sub report main dataset as SALES. Add a group CUSTOMER with group expression 
+  SALES.CustomerID, drop fields OrderId, ProductId, Quantity on the Detail section, 
+  also drop a expression element and set expression property to SALES.Quantity*SALES.UnitPrice 
+  so it will calculate the amount for that line.</p>
+<p><img src="images/grouping8.jpg" width="905" height="347"></p>
+<p>This grouping will result in this preview:</p>
+<p><img src="images/grouping9.jpg" width="469" height="436"></p>
+<p>To obtain total sales for each customers you can copy and paste the amount 
+  expression to the footer, then set aggregate to group and group name to CUSTOMER. 
+  Use a bold font for this amount.</p>
+<p><img src="images/grouping10.jpg" width="611" height="455"></p>
+<p>Preview the report to see the aggregate, also align amounts to the right by 
+  changing Horz.Alignment property, and display format for numbers as ###,##0.00 
+  so they align decimal places correctly.</p>
+<p><strong>Adding a grand total</strong></p>
+<p>Groups usually have a group expression, but if it have no group expression 
+  can be used as report header and summary, so add a group named TOTALS. Place 
+  the group as the most exterior one, by clicking header on the report structure 
+  tree and clicking the up arrow. Resize header height to 0 and place on footer 
+  the same expression for the amount value, but this time you must select aggregate 
+  to General.</p>
+<p><img src="images/grouping11.jpg" width="561" height="485"></p>
+<p>This grand total will appear at the end of the report.</p>
+<p><img src="images/grouping12.jpg" width="578" height="344"></p>
+<h2>5.6.Composite group expressions</h2>
+<p>In some cases you must break the group when more than one field changes, for 
+  example when customer number or order number changes, then you should use expression 
+  evaluator functions to generate a unique expression that will determine group 
+  break.</p>
+<p>For example if you have a string field Sales.CustomerID and a integer field 
+  Sales.OrderId then the expression can be:</p>
+<p>FormatStr('00000000',Sales.OrderId)+Sales.CustomerID</p>
+<p>So any change to any field will break the group.</p>
+<h2>5.7. Linked querys</h2>
+<p>On the sales by customer report there is no product name or customer name, 
+  a way to obtain them is a join to Customers and Products on the same sql. This 
+  is the preferred way. Other less efficient way is execute a query for each record 
+  on sales to obtain the product name. This will cause lot of querys to be launched 
+  to the database server, the main query will remain simple but for each record 
+  the report engine will execute another query. So use linked querys with caution.</p>
+<p>The example above will be used to obtain the product name.</p>
+<p>Enter data configuration and add a dataset with the following sql:</p>
+<p>SELECT PRODUCTNAME <br>
+  FROM PRODUCTS <br>
+  WHERE PRODUCTID=:PRODUCTID</p>
+<p>See the double quotes before PRODUCTID, this is a parametric query but we don't 
+  define a parameter for it, that is because we set Master Dataset to SALES. The 
+  trick is:</p>
+<p>If exists a field on Master Dataset with the same name as a parameter on this 
+  query, the field on the master dataset will be assigned to the parameter, and 
+  if the master field changes, the query will be executed again to reflect changes 
+  on the parameter.</p>
+<p><img src="images/grouping13.jpg" width="551" height="414"></p>
+<p>You can drop the new field on the detail.</p>
+<p><img src="images/grouping14.jpg" width="769" height="331"></p>
+<p>And preview the report</p>
+<p><img src="images/grouping15.jpg" width="644" height="328"></p>
+<h2>5.A.Exercise. Grouping invoices</h2>
+<p>Modify the report above adding a header and a footer for each invoice</p>
+<h2>5.B.Exercise. Parametric querys use</h2>
+<p>Modify the report above to allow the user to select from a range of Order dates.</p>
+<h2>5.C.Exercise. Report grouping by date</h2>
+<p>Create a new report, grouping sales by date.</p>
+</body>
+</html>

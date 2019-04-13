@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/01/25 16:58:14.904.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Contas a Receber\Controller\LancamentoReceberController.pas=</Transaction>
+    <Transaction>2013/02/20 15:25:12.499.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\VendaOrcamentoDetalheVO.pas=</Transaction>
+    <Transaction>2013/02/20 15:25:12.569.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\VendaOrcamentoCabecalhoVO.pas=</Transaction>
+    <Transaction>2013/02/20 15:25:12.580.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\VendaDetalheVO.pas=</Transaction>
+    <Transaction>2013/02/20 15:25:12.590.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\VendaComissaoVO.pas=</Transaction>
+    <Transaction>2013/02/20 15:25:12.610.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\VendaCabecalhoVO.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

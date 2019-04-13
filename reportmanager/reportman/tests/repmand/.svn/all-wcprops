@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/repmand
+END
+logo.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/repmand/logo.jpg
+END
+patchelf
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/repmand/patchelf
+END
+GNUmakefile
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/repmand/GNUmakefile
+END
+libdbxoodbc.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/repmand/libdbxoodbc.txt
+END
+metaview.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/repmand/metaview.sh
+END
+GNUmakefile.doc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/repmand/GNUmakefile.doc
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/repmand/README
+END
+repmand.sh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/repmand/repmand.sh
+END
+printreptopdf.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/repmand/printreptopdf.sh
+END
+reportservercon.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/repmand/reportservercon.sh
+END
+repserverconfig.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/repmand/repserverconfig.sh
+END
+reportserverapp.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/repmand/reportserverapp.sh
+END
+printrep.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/repmand/printrep.sh
+END
+metaprint.sh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/repmand/metaprint.sh
+END
+GNUmakefile.nolibs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/repmand/GNUmakefile.nolibs
+END

@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Use with other languages</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Basic report design</h2>
+<h3><b>Use the engine with other languages</b></h3>
+<p>Documentation and samples for using Report Manager engine with other languages</p>
+<p><a href="php.html">PHP</a></p>
+<p><a href="gnuc.html">GNU C</a> and languages with capability to access functions 
+  exported by estandard dynamic libraries</p>
+<p><a href="python.html">Python</a></p>
+<p><a href="javascript.html">Javascript</a></p>
+<p><a href="http://wiki.rubyonrails.org/rails/pages/HowtoReportMan">Ruby on rails</a></p>
+</body>
+</html>

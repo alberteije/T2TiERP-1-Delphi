@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>RepManWebServer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<h3 align="center"> ReportManagerIndexLabel</h3>
+<p><a href="./config">ConfigIndexLabel</a></p>
+<p>AvailableAliasesLabel</p>
+<p><a href="./config">Alias1Label</a></p>
+</body>
+</html>

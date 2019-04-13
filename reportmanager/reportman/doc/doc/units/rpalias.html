@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Units documentation - rpalias.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpalias.pas</h3>
+<h4>Description</h4>
+<p>This unit implements the components and classes required to <b>pass application 
+  opened datasets to a report</b> and also provide <b>dataset access to an evalator</b> 
+  component. The main <b>component is TRpAlias, installable</b> in the component 
+  palette.</p>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpAliasItem</td>
+    <td>TCollectionItem</td>
+    <td>Item that stores dataset information, only the dataset alias and a reference 
+      to the TDataset component</td>
+  </tr>
+  <tr> 
+    <td>TRpAliasList</td>
+    <td>TCollection</td>
+    <td>Collection of TRpAliasItem</td>
+  </tr>
+  <tr>
+    <td>TRpAlias</td>
+    <td>TComponent</td>
+    <td>This component has the List property of type TRpAliasList providing a 
+      collection of alias-dataset, so a evaluator or report can use the datasets 
+      referenced by this component</td>
+  </tr>
+</table>
+</body>
+</html>

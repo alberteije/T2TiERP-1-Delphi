@@ -1,0 +1,230 @@
+{******************************************************************************}
+{ Projeto: Componentes ACBr                                                    }
+{ Biblioteca multi plataforma de componentes Delphi para interação com equipa- }
+{ mentos de Automação Comercial utilizados no Brasil                           }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na página do Projeto ACBr     }
+{ Componentes localizado em      http://www.sourceforge.net/projects/acbr      }
+{                                                                              }
+{  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
+{ sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
+{ Free Software Foundation; tanto a versão 2.1 da Licença, ou (a seu critério) }
+{ qualquer versão posterior.                                                   }
+{                                                                              }
+{  Esta biblioteca é distribuída na expectativa de que seja útil, porém, SEM   }
+{ NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE OU      }
+{ ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral Menor}
+{ do GNU para mais detalhes. (Arquivo LICENÇA.TXT ou LICENSE.TXT)              }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral Menor do GNU junto}
+{ com esta biblioteca; se não, escreva para a Free Software Foundation, Inc.,  }
+{ no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.          }
+{ Você também pode obter uma copia da licença em:                              }
+{ http://www.opensource.org/licenses/lgpl-license.php                          }
+{                                                                              }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
+{******************************************************************************}
+Agradecimentos:
+
+* Administradores:
+- Daniel Simões de Almeida
+- André Ferreira de Moraes
+
+* Desenvolvedores:
+- Wemerson P. Souto - Doação do componente ao projeto ACBr
+
+{******************************************************************************
+|* ACBrCTe
+|*
+|* PROPÓSITO: Registro de Alterações
+******************************************************************************}
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+
+Alterações   04/07/11 (Italo Jurisato Junior)
+---------------
+[-] Alterações na rotina para assinar usando o ACBrCTeOpenSSL, conforme
+    correções realizadas por Gilberto Ximenes.
+[-] Alterações na rotina para imprimir o canhoto no rodapé conforme
+    correções realizadas por Clever - BSoft Sistemas.
+
+Alterações   02/06/11 (Italo Jurisato Junior)
+---------------
+[-] Alterada a Procedure GerarEmit, ao gerar a tag CNPJ a função wCampoCNPJ, 
+    recebia os valores contidos nos campos CNPJ e cPais, se cPais fosse 
+    diferente de 1058 a tag CNPJ ficava em branco, agora a função recebe o 
+    valor contido no campo CNPJ e o valor da constante CODIGO_BRASIL.
+
+Alterações   17/05/11 (Italo Jurisato Junior)
+---------------
+[-] As funções: TpDispositivoToStr e StrToTpDispositivo o dominio de valores eram
+    [0, 1 e 2] sendo que o correto é [1, 2 e 3] conforme Schema.
+
+Alterações   17/05/11 (Italo Jurisato Junior)
+---------------
+[*] Foi incluido o parametro Mascara: Boolean a função FormatarChaveAcesso, quando
+    for False (default) divide a chave em segmentos de 4 digitos separados por espaco,
+    se True utiliza a seguente mascara:
+    99-99/99-99.999.999/9999-99-99-999-999.999.999-999.999.999-9 
+    a mascara esta sendo utilizada para formatar a chave de documentos originários.
+[*] Foi alterado o tamanho da fonte de 8 para 10 para o campo numero do CT-e, essa 
+    alteração foi feita nos dois recibos (cabeçalho/rodape) e no quadro principal.
+[*] Foi alterado o tamanho de caracteres de 50 para 60 para os campos:
+    CNPJCPF_1 e CNPJCPF_2 do cdsDocumentos (TClientDataSet) para conportar a chave
+    formatada com a mascara.
+
+Alterações   27/04/11 (Italo Jurisato Junior)
+---------------
+[+] Foi incluido a propriedade PosRecibo no componente ACBrCTeDACTeQR,
+    desta forma é possivel escolher a posição do Recibo (prCabecalho ou prRodape) 
+[*] Foram feitas varias modificações no fonte ACBrCTeDACTeQRRetrato.
+
+
+Alterações   30/03/2011 (Jeickson Gobeti)
+---------------
+[+] Dacte CT-e em FastReport
+
+Alterações   25/01/11 (Italo Jurisato Junior)
+---------------
+[+] Foi incluido novos tipos conforme solicitação no Mantis #613
+
+
+Alterações   09/12/10 (Italo Jurisato Junior)
+---------------
+[-] Correção na procedure GerarEnderExped, estava usando a UF do Emitende em vez
+    do Expedidor, gerando o XML de forma incorreta.
+
+Alterações   14/07/10 (Italo Jurisato Junior)
+---------------
+[+] Foi incluido na classe TGeralConf a propriedade AtualizarXMLCancelado.
+[*] Alterado a Function GerarXML dos fontes: pcteConsStatServ, pcteProcCTe,
+    pcteConsCad.
+[*] Alterado a Function LerXML dos fontes: pcteRetConsReciCTe, pcteConsStatServ.
+[*] Alterado as Classes: TInutCTe, TRetCancCTe, TInfCadCollectionItem,
+    TRetConsSitCTe, TRetInutCTe.
+[*] Alterações diversas no fonte ACBrCTeWevServices para poder gerar o arquivo de log.
+[*] Alterações diversas no fonte ACBrCTeConhecimentos.
+[*] Alterado a Function GetCertificado do fonte: ACBrCTeConfiguracoes.
+
+Alterações   23/06/10 (Italo Jurisato Junior)
+---------------
+[+] Foi incluido a chamada para os links de homologação para o estado de
+    MS-Mato Grosso do Sul.
+
+Alterações   15/06/10 (Italo Jurisato Junior)
+---------------
+[+] Foi incluido uma nova função (GerarXMLCTe) na classe TSignature e alterado a
+    chamada no fonte pcteCTeW de GerarXML para GerarXMLCTe.
+
+Alterações   31/05/10 (Paulo Ronaldo Vilela de Lima Junior)
+---------------
+[-] Correções nos fontes: ACBrCTeConfiguracoes, ACBrCTeUtil e ACBrCTeWebServices
+    Adicionado os comandos "coInitialize(nil)" e "coUninitilize" nas funções de chamada
+    do certificado (GetCertificado e SelecionarCertificado) para possibilitar o uso TRHEAD
+    ao fazer as requisições;
+    Retirado espações em branco no inicio e fim de algumas URLs de MT;
+    Inserido a função TRIM nos comandos de chamada da variavel FURL.
+
+Alterações   22/05/10 (Italo Jurisato Junior)
+---------------
+[-] Correção da versão (1.03) do xml nos fontes pcteInutCTe, pcteConsStatServ,
+    pcteConsSitCTe, pcteConsReciCTe e pcteCancCTe.
+
+Alterações   20/05/10 (Italo Jurisato Junior)
+---------------
+[*] Alterada a classe TProcCTe para prever a condição do Protocolo lido do Arquivo.
+
+Alterações   19/05/10 (Italo Jurisato Junior)
+---------------
+[*] No fonte pcteCTeR foi incluido a leitura da tag protCTe.
+[-] No fonte pcteCTe foi incluido no constructor/destructor da classe TCTe, a criação
+    e a liberação do FprocCTe.
+[*] No Componente ACBrCTeDACTeQRRetrato, foi descomentado o código que ocasionava erro
+    ao imprimir o DACTe (o problema era a inexistencia do FprocCTe).
+
+Alterações   17/05/10 (Italo Jurisato Junior)
+---------------
+[*] Foram Incluídos todos os campos que faltavam entre o campo #321 e o Campo #355 e
+    entre o campo #466 e o campo #510.
+[*] No Componente ACBrCTeDACTeQRRetrato, foi incluido o código da Situação Tributária antes da
+    descrição (Exemplo: 00-Prestação Sujeito a Tributação Normal ICMS).
+
+Alterações   14/05/10 (Italo Jurisato Junior)
+---------------
+[*] Alterado o tipo do campo chave de String para AnsiString na function TCTeW.GerarXml: boolean;
+    (Créditos: EMBarbosa, Daniel Simões, Paulo Gurgel)
+[-] Correções feitas nos fontes: pcteCTeR, pcteCTeW e ACBrCTeDACTeQRRetrato,
+    com relação aos campos do ICMS (Créditos: Doni Delphi).
+
+Alterações   13/05/10 (Italo Jurisato Junior)
+---------------
+[*] No fonte pcnConversao, as funções: StrToCSTICMS, CSTICMSToStrTagPos e CSTICMSToStrTagPosText
+    Foram alteradas para ficarem compativeis com a função CSTICMSToStr.
+
+Alterações   12/05/10
+---------------
+[*] Foram Incluídos todos os campos que faltavam entre o campo #277 e o Campo #320.
+[*] Os pacotes de instalação ACBr_CTe e ACBrCTeDacteQRpkg agora possuiem uma diretiva de 
+    compilação para o Delphi 2010 para ignorar a DCP: visualclx (Créditos: Isaque Pinheiro e Vanderlei Silva).
+[*] Na função function TCTeW.GerarXml: boolean;, possuiem uma diretiva de 
+    compilação para o Delphi 2010 para substituir o tipo String por AnsiString na
+    variável chave (Créditos: Isaque Pinheiro e Vanderlei Silva).
+[-] Alterações feita ao ler o xml, não estava lendo a tag xObs (Créditos: Reginaldo Trindade). 
+
+Alterações   07/05/10
+---------------
+[*] Foram Incluídos todos os campos que faltavam entre o campo #1 e o Campo #276.
+    Campos referentes aos dados complementares do CT-e para fins operacionais ou comerciais,
+    Campos referentes ao Local de retirada constante na NF e
+    Campos referentes ao Local de Entrega constante na NF.
+
+Alterações   03/05/10
+---------------
+[-] Correção dos procedimentos: GerarCST81, GerarCST90 e GerarInfSeg (Créditos: Doni Delphi).
+
+Alterações   30/04/10
+---------------
+[-] Foram corrigidos algumas mensagens de erro que mostrava 'nota fiscal' em vez de 'conhecimento'.
+[-] Corrigido o Componente ACBrCTeDACTeQRRetrato para imprimir no DACTe outros tipos de Documentos.
+    no quadro Documentos Originários.
+
+Alterações   29/04/10
+---------------
+[*] Alterado a descrição da forma de pagamento do DACTe de A Vista e A Prazo para Pago e A Pagar.
+
+Alterações   28/04/10
+---------------
+[*] Incluido a descrição da unidade de medida junto com a quantidade nos 4 quadros do DACTe.
+
+Alterações   27/04/10
+---------------
+[-] Corrigido o problema da não imprimir o Logo da empresa.
+
+Alterações   27/04/10
+---------------
+[-] Código de Barras estava sendo impresso faltando pedaço, falha apontada por Doni Delphi.
+[-] Ao ler o arquivo xml ficava em branco quando tem somente o CPF informado.
+[*] Incluido o UF após a descrição do município do remetente, destinatário, etc, falha apontada por Doni Delphi.
+[*] Novo DACTe muito mais elegante e dentro do padrão (Créditos: Mario Araujo).
+
+Alterações   26/04/10
+---------------
+[+] Vários recursos disponiveis no ACBrNFe agora estão disponiveis no ACBrCTe.
+[*] Várias rotinas foram modificadas para ter os mesmos recursos do ACBrNFe.
+[-] Rotinas corrigidas por conter falhas que só apareciam durante a execução.
+
+Versão 0.01a   16/12/08
+---------------
+[+] Início do Projeto
+[+] Primeira Versao lançada baseado no componente fornecido por Wemerson Souto.
+
+
+
+

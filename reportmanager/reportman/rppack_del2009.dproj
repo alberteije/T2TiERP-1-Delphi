@@ -1,0 +1,217 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{eff4da4b-811b-46a5-b062-0a5aaf55112e}</ProjectGuid>
+			<MainSource>rppack_del2009.dpk</MainSource>
+			<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+			<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<DCC_DependencyCheckOutputName>C:\Documents and Settings\All Users\Documentos\RAD Studio\5.0\Bpl\rppack_del2007.bpl</DCC_DependencyCheckOutputName>
+			<ProjectVersion>12.0</ProjectVersion>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_SymbolReferenceInfo>1</DCC_SymbolReferenceInfo>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DesignOnlyPackage>false</DesignOnlyPackage>
+			<DCC_Description>Report Manager components(non-visual)</DCC_Description>
+			<DCC_DependencyCheckOutputName>..\..\..\..\..\Public\Documents\RAD Studio\6.0\Bpl\rppack_del2009.bpl</DCC_DependencyCheckOutputName>
+			<DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
+			<GenDll>true</GenDll>
+			<GenPackage>true</GenPackage>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<Version>7.0</Version>
+			<DCC_DebugInformation>False</DCC_DebugInformation>
+			<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<Version>7.0</Version>
+		</PropertyGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>Package</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">3082</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Source>
+						<Source Name="MainSource">rppack_del2009.dpk</Source>
+					</Source>
+				</Delphi.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+		<ItemGroup>
+			<DelphiCompile Include="rppack_del2009.dpk">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="rpeval.dcr"/>
+			<DCCReference Include="rpalias.dcr"/>
+			<DCCReference Include="rplastsav.dcr"/>
+			<DCCReference Include="rppdfreport.dcr"/>
+			<DCCReference Include="rptranslator.dcr"/>
+			<DCCReference Include="rpmaskedit.dcr"/>
+			<DCCReference Include="rpvclreport.dcr"/>
+			<DCCReference Include="rpexpredlgvcl.dcr"/>
+			<DCCReference Include="rtl.dcp"/>
+			<DCCReference Include="dbrtl.dcp"/>
+			<DCCReference Include="dsnap.dcp"/>
+			<DCCReference Include="dbexpress.dcp"/>
+			<DCCReference Include="bdertl.dcp"/>
+			<DCCReference Include="adortl.dcp"/>
+			<DCCReference Include="ibxpress.dcp"/>
+			<DCCReference Include="xmlrtl.dcp"/>
+			<DCCReference Include="soaprtl.dcp"/>
+			<DCCReference Include="IndyCore.dcp"/>
+			<DCCReference Include="IndySystem.dcp"/>
+			<DCCReference Include="IndyProtocols.dcp"/>
+			<DCCReference Include="vcldb.dcp"/>
+			<DCCReference Include="vcl.dcp"/>
+			<DCCReference Include="vclx.dcp"/>
+			<DCCReference Include="tee.dcp"/>
+			<DCCReference Include="rptypeval.pas"/>
+			<DCCReference Include="rpmdconsts.pas"/>
+			<DCCReference Include="rpeval.pas"/>
+			<DCCReference Include="rpevalfunc.pas"/>
+			<DCCReference Include="rpparser.pas"/>
+			<DCCReference Include="rpalias.pas"/>
+			<DCCReference Include="rplastsav.pas"/>
+			<DCCReference Include="rpdatainfo.pas"/>
+			<DCCReference Include="rpparams.pas"/>
+			<DCCReference Include="rptypes.pas"/>
+			<DCCReference Include="rpsection.pas"/>
+			<DCCReference Include="rpreport.pas"/>
+			<DCCReference Include="rpsubreport.pas"/>
+			<DCCReference Include="rpmetafile.pas"/>
+			<DCCReference Include="rplabelitem.pas"/>
+			<DCCReference Include="rpdrawitem.pas"/>
+			<DCCReference Include="rpprintitem.pas"/>
+			<DCCReference Include="rpmdchart.pas"/>
+			<DCCReference Include="rpmdbarcode.pas"/>
+			<DCCReference Include="rpmunits.pas"/>
+			<DCCReference Include="rpsecutil.pas"/>
+			<DCCReference Include="rpmzlib.pas"/>
+			<DCCReference Include="rpzlibinfutil.pas"/>
+			<DCCReference Include="rpzlibinfblock.pas"/>
+			<DCCReference Include="rpzlibinfcodes.pas"/>
+			<DCCReference Include="rpzlibinffast.pas"/>
+			<DCCReference Include="rpzlibinftrees.pas"/>
+			<DCCReference Include="rpzlibadler.pas"/>
+			<DCCReference Include="rpzlibzutil.pas"/>
+			<DCCReference Include="rpzlibzdeflate.pas"/>
+			<DCCReference Include="rpzlibzinflate.pas"/>
+			<DCCReference Include="rpzlibzlib.pas"/>
+			<DCCReference Include="rpzlibtrees.pas"/>
+			<DCCReference Include="rpwriter.pas"/>
+			<DCCReference Include="rpdataset.pas"/>
+			<DCCReference Include="rppdfdriver.pas"/>
+			<DCCReference Include="rppdffile.pas"/>
+			<DCCReference Include="rppdfreport.pas"/>
+			<DCCReference Include="rpcompobase.pas"/>
+			<DCCReference Include="rptranslator.pas"/>
+			<DCCReference Include="rpmdshfolder.pas"/>
+			<DCCReference Include="rpmdrepclient.pas"/>
+			<DCCReference Include="rpmdprotocol.pas"/>
+			<DCCReference Include="rpdatatext.pas"/>
+			<DCCReference Include="rptextdriver.pas"/>
+			<DCCReference Include="rpcsvdriver.pas"/>
+			<DCCReference Include="rpsvgdriver.pas"/>
+			<DCCReference Include="rpbasereport.pas"/>
+			<DCCReference Include="rpcompilerep.pas"/>
+			<DCCReference Include="rphtmldriver.pas"/>
+			<DCCReference Include="rpmreg.pas"/>
+			<DCCReference Include="rpmdcharttypes.pas"/>
+			<DCCReference Include="rpinfoprovgdi.pas"/>
+			<DCCReference Include="rpinfoprovid.pas"/>
+			<DCCReference Include="rpxmlstream.pas"/>
+			<DCCReference Include="rpbarcodecons.pas"/>
+			<DCCReference Include="rpclientdataset.pas"/>
+			<DCCReference Include="rpregvcl.pas"/>
+			<DCCReference Include="rppreviewmeta.pas"/>
+			<DCCReference Include="rpmaskedit.pas"/>
+			<DCCReference Include="rpgdidriver.pas"/>
+			<DCCReference Include="rpvgraphutils.pas"/>
+			<DCCReference Include="rppreviewcontrol.pas"/>
+			<DCCReference Include="rpdbdatetimepicker.pas"/>
+			<DCCReference Include="rpgraphutilsvcl.pas"/>
+			<DCCReference Include="rpgdifonts.pas"/>
+			<DCCReference Include="rpexceldriver.pas"/>
+			<DCCReference Include="rpmdfaboutvcl.pas"/>
+			<DCCReference Include="rpmdprintconfigvcl.pas"/>
+			<DCCReference Include="rpvclreport.pas"/>
+			<DCCReference Include="rpexpredlgvcl.pas"/>
+			<DCCReference Include="rpdbgridvcl.pas"/>
+			<DCCReference Include="rpfmetaviewvcl.pas"/>
+			<DCCReference Include="rpvpreview.pas"/>
+			<DCCReference Include="rppagesetupvcl.pas"/>
+			<DCCReference Include="rpmdfsearchvcl.pas"/>
+			<DCCReference Include="rpmdclitreevcl.pas"/>
+			<DCCReference Include="rprfvparams.pas"/>
+			<DCCReference Include="rpfmainmetaviewvcl.pas"/>
+			<DCCReference Include="rpeval.dcr"/>
+			<DCCReference Include="rpalias.dcr"/>
+			<DCCReference Include="rplastsav.dcr"/>
+			<DCCReference Include="rppdfreport.dcr"/>
+			<DCCReference Include="rptranslator.dcr"/>
+			<DCCReference Include="rpmaskedit.dcr"/>
+			<DCCReference Include="rpvclreport.dcr"/>
+			<DCCReference Include="rpexpredlgvcl.dcr"/>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+	</Project>

@@ -1,0 +1,743 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios
+END
+Pessoa.rep
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Pessoa.rep
+END
+Cargo.rep
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Cargo.rep
+END
+Feriados.rep
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Feriados.rep
+END
+Municipio.rep
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Municipio.rep
+END
+PatrimGrupoBem.rep
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/5/trunk/Relatorios/PatrimGrupoBem.rep
+END
+FinDocumentoOrigem.rep
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_report_manager/!svn/ver/4/trunk/Relatorios/FinDocumentoOrigem.rep
+END
+CodigoApuracaoEfd.rep
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/CodigoApuracaoEfd.rep
+END
+BaseCreditoPis.rep
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/BaseCreditoPis.rep
+END
+LivroCaixa.rep
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/11/trunk/Relatorios/LivroCaixa.rep
+END
+CnaeClasse.rep
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/CnaeClasse.rep
+END
+RegistroCartorio.rep
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/6/trunk/Relatorios/RegistroCartorio.rep
+END
+PontoClassificacaoJornada.rep
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/t2tierp_report_manager/!svn/ver/7/trunk/Relatorios/PontoClassificacaoJornada.rep
+END
+Transportadora.rep
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Transportadora.rep
+END
+TipoItemSped.rep
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/TipoItemSped.rep
+END
+EstadoCivil.rep
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/EstadoCivil.rep
+END
+CompraRequisicao.rep
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/5/trunk/Relatorios/CompraRequisicao.rep
+END
+HistoricoReajuste.rep
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/8/trunk/Relatorios/HistoricoReajuste.rep
+END
+FolhaTipoAfastamento.rep
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_report_manager/!svn/ver/12/trunk/Relatorios/FolhaTipoAfastamento.rep
+END
+OrcamentoPeriodo.rep
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/9/trunk/Relatorios/OrcamentoPeriodo.rep
+END
+ContaCaixa.rep
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/ContaCaixa.rep
+END
+CompraCotacao.rep
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/5/trunk/Relatorios/CompraCotacao.rep
+END
+SpedPis4310.rep
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/SpedPis4310.rep
+END
+SituacaoColaborador.rep
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/SituacaoColaborador.rep
+END
+CodigoApuracaoReceitaDacon.rep
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/CodigoApuracaoReceitaDacon.rep
+END
+SpedPis4313.rep
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/SpedPis4313.rep
+END
+SpedPis4314.rep
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/SpedPis4314.rep
+END
+SpedPis4315.rep
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/SpedPis4315.rep
+END
+SpedPis4316.rep
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/SpedPis4316.rep
+END
+TipoContrato.rep
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/10/trunk/Relatorios/TipoContrato.rep
+END
+CsosnA.rep
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/CsosnA.rep
+END
+CsosnB.rep
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/CsosnB.rep
+END
+PatrimTipoMovimentacao.rep
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_report_manager/!svn/ver/5/trunk/Relatorios/PatrimTipoMovimentacao.rep
+END
+CstCofins.rep
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/CstCofins.rep
+END
+OrcamentoFinanceiroCaixa.rep
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_report_manager/!svn/ver/9/trunk/Relatorios/OrcamentoFinanceiroCaixa.rep
+END
+Setor.rep
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Setor.rep
+END
+OrcamentoFluxoCaixaPeriodo.rep
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_report_manager/!svn/ver/9/trunk/Relatorios/OrcamentoFluxoCaixaPeriodo.rep
+END
+PlanoConta.rep
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/11/trunk/Relatorios/PlanoConta.rep
+END
+SefipCategoriaTrabalho.rep
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/SefipCategoriaTrabalho.rep
+END
+CompraTipoPedido.rep
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/5/trunk/Relatorios/CompraTipoPedido.rep
+END
+PlanoNaturezaFinanceira.rep
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/t2tierp_report_manager/!svn/ver/4/trunk/Relatorios/PlanoNaturezaFinanceira.rep
+END
+SefipCodigoRecolhimento.rep
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/SefipCodigoRecolhimento.rep
+END
+CstPis.rep
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/CstPis.rep
+END
+Almoxarifado.rep
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Almoxarifado.rep
+END
+NaturezaFinanceira.rep
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_report_manager/!svn/ver/4/trunk/Relatorios/NaturezaFinanceira.rep
+END
+GedTipoDocumento.rep
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/4/trunk/Relatorios/GedTipoDocumento.rep
+END
+GrupoProduto.rep
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/GrupoProduto.rep
+END
+Uf.rep
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Uf.rep
+END
+PatrimTipoAquisicaoBem.rep
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_report_manager/!svn/ver/5/trunk/Relatorios/PatrimTipoAquisicaoBem.rep
+END
+t2ti.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/t2ti.jpg
+END
+CentroResultado.rep
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/4/trunk/Relatorios/CentroResultado.rep
+END
+Sindicato.rep
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Sindicato.rep
+END
+Movimento.rep
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Movimento.rep
+END
+PontoAbono.rep
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/7/trunk/Relatorios/PontoAbono.rep
+END
+PatrimEstadoConservacao.rep
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/t2tierp_report_manager/!svn/ver/5/trunk/Relatorios/PatrimEstadoConservacao.rep
+END
+Convenio.rep
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Convenio.rep
+END
+PontoHorario.rep
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/7/trunk/Relatorios/PontoHorario.rep
+END
+FinMovimentoCaixaBanco.rep
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_report_manager/!svn/ver/5/trunk/Relatorios/FinMovimentoCaixaBanco.rep
+END
+Cliente.rep
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Cliente.rep
+END
+SubGrupoProduto.rep
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/SubGrupoProduto.rep
+END
+TipoColaborador.rep
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/TipoColaborador.rep
+END
+FinTipoRecebimento.rep
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_report_manager/!svn/ver/4/trunk/Relatorios/FinTipoRecebimento.rep
+END
+Fornecedor.rep
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Fornecedor.rep
+END
+CstIpi.rep
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/CstIpi.rep
+END
+Produto.rep
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Produto.rep
+END
+Pais.rep
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Pais.rep
+END
+SefipCodigoMovimentacao.rep
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/SefipCodigoMovimentacao.rep
+END
+PontoBancoHoras.rep
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/7/trunk/Relatorios/PontoBancoHoras.rep
+END
+TipoCreditoPis.rep
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/TipoCreditoPis.rep
+END
+imgPadrao.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/imgPadrao.png
+END
+FinTipoPagamento.rep
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/4/trunk/Relatorios/FinTipoPagamento.rep
+END
+darf.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/t2tierp_report_manager/!svn/ver/6/trunk/Relatorios/darf.jpg
+END
+FinLancamentoReceber.rep
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_report_manager/!svn/ver/4/trunk/Relatorios/FinLancamentoReceber.rep
+END
+OperadoraCartao.rep
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/OperadoraCartao.rep
+END
+CompraPedido.rep
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/5/trunk/Relatorios/CompraPedido.rep
+END
+TipoDesligamento.rep
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/TipoDesligamento.rep
+END
+Cep.rep
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Cep.rep
+END
+FinStatusParcela.rep
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/4/trunk/Relatorios/FinStatusParcela.rep
+END
+Cheque.rep
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Cheque.rep
+END
+FolhaEvento.rep
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/12/trunk/Relatorios/FolhaEvento.rep
+END
+OrcamentoEmpresarial.rep
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_report_manager/!svn/ver/9/trunk/Relatorios/OrcamentoEmpresarial.rep
+END
+GedDocumento.rep
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/4/trunk/Relatorios/GedDocumento.rep
+END
+Ncm.rep
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Ncm.rep
+END
+PatrimApoliceSeguro.rep
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_report_manager/!svn/ver/5/trunk/Relatorios/PatrimApoliceSeguro.rep
+END
+TipoNotaFiscal.rep
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/11/trunk/Relatorios/TipoNotaFiscal.rep
+END
+ContabilHistorico.rep
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_report_manager/!svn/ver/11/trunk/Relatorios/ContabilHistorico.rep
+END
+ColaboradorFicha.rep
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/ColaboradorFicha.rep
+END
+GPS.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/t2tierp_report_manager/!svn/ver/12/trunk/Relatorios/GPS.jpg
+END
+ChequeEmitido.rep
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/ChequeEmitido.rep
+END
+SituacaoDocumento.rep
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/SituacaoDocumento.rep
+END
+Cfop.rep
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Cfop.rep
+END
+Colaborador.rep
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Colaborador.rep
+END
+AtividadeForCli.rep
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/AtividadeForCli.rep
+END
+FinLancamentoPagar.rep
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_report_manager/!svn/ver/4/trunk/Relatorios/FinLancamentoPagar.rep
+END
+AgenciaBanco.rep
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/7/trunk/Relatorios/AgenciaBanco.rep
+END
+PatrimTaxaDepreciacao.rep
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_report_manager/!svn/ver/5/trunk/Relatorios/PatrimTaxaDepreciacao.rep
+END
+TipoRelacionamento.rep
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/TipoRelacionamento.rep
+END
+TipoAdmissao.rep
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/TipoAdmissao.rep
+END
+Seguradora.rep
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/5/trunk/Relatorios/Seguradora.rep
+END
+DFC.rep
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/t2tierp_report_manager/!svn/ver/11/trunk/Relatorios/DFC.rep
+END
+Balanco.rep
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/11/trunk/Relatorios/Balanco.rep
+END
+DocumentoOrigem.rep
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/DocumentoOrigem.rep
+END
+MarcaProduto.rep
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/MarcaProduto.rep
+END
+CompraTipoRequisicao.rep
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_report_manager/!svn/ver/5/trunk/Relatorios/CompraTipoRequisicao.rep
+END
+Cbo.rep
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Cbo.rep
+END
+SalarioMinimo.rep
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/SalarioMinimo.rep
+END
+CstIcmsA.rep
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/CstIcmsA.rep
+END
+SpedPis439.rep
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/SpedPis439.rep
+END
+SituacaoForCli.rep
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/SituacaoForCli.rep
+END
+CstIcmsB.rep
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/CstIcmsB.rep
+END
+PlanoCentroResultado.rep
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_report_manager/!svn/ver/4/trunk/Relatorios/PlanoCentroResultado.rep
+END
+Contador.rep
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Contador.rep
+END
+DARF.rep
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/t2tierp_report_manager/!svn/ver/6/trunk/Relatorios/DARF.rep
+END
+CodigoGps.rep
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/CodigoGps.rep
+END
+PatrimBem.rep
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_report_manager/!svn/ver/5/trunk/Relatorios/PatrimBem.rep
+END
+PontoRelogio.rep
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_report_manager/!svn/ver/7/trunk/Relatorios/PontoRelogio.rep
+END
+ContratoTipoServico.rep
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_report_manager/!svn/ver/10/trunk/Relatorios/ContratoTipoServico.rep
+END
+Banco.rep
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/Banco.rep
+END
+TalonarioCheque.rep
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/TalonarioCheque.rep
+END
+NivelFormacao.rep
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/NivelFormacao.rep
+END
+UnidadeProduto.rep
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/UnidadeProduto.rep
+END
+PatrimIndiceAtualizacao.rep
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/t2tierp_report_manager/!svn/ver/5/trunk/Relatorios/PatrimIndiceAtualizacao.rep
+END
+OperadoraPlanoSaude.rep
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_report_manager/!svn/ver/3/trunk/Relatorios/OperadoraPlanoSaude.rep
+END
+GPS.rep
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/t2tierp_report_manager/!svn/ver/12/trunk/Relatorios/GPS.rep
+END

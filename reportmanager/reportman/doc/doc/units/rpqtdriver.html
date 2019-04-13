@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Units documentation - rpqtdriver.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpqtdriver.pas</h3>
+<h4>Description</h4>
+<p>This unit implements the <b>QT print driver for Windows and Linux</b>.The output 
+  may be a bitmap or the printer.</p>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpQtDriver</td>
+    <td>TInterfacedObject, IRpPrintDriver</td>
+    <td>Implementation of the Qt print driver print driver using CLX library</td>
+  </tr>
+  <tr>
+    <td>TFRpQtProgress</td>
+    <td>TForm</td>
+    <td>Dialog to show the progress of report and print processing</td>
+  </tr>
+</table>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>procedure PageSizeSelection (rpPageSize:TPageSizeQt); </td>
+    <td>Selects a page size</td>
+  </tr>
+  <tr> 
+    <td>procedure OrientationSelection (neworientation:TRpOrientation); </td>
+    <td>Selects a orientation</td>
+  </tr>
+  <tr> 
+    <td>function PrintMetafile (metafile:TRpMetafileReport; tittle:string; showprogress,allpages:boolean; 
+      frompage,topage,copies:integer; collate:boolean; printerindex:TRpPrinterSelect):boolean; 
+    </td>
+    <td>Prints a metafile</td>
+  </tr>
+  <tr> 
+    <td>function CalcReportWidthProgress (report:TRpReport):boolean; </td>
+    <td>Calculates the report</td>
+  </tr>
+  <tr> 
+    <td>function PrintReport (report:TRpReport; Caption:string; progress:boolean; 
+      allpages:boolean; frompage,topage,copies:integer; collate:boolean):Boolean; 
+    </td>
+    <td>Print a report</td>
+  </tr>
+  <tr> 
+    <td>function ExportReportToPDF (report:TRpReport; Caption:string; progress:boolean; 
+      allpages:boolean; frompage,topage:integer; showprintdialog:boolean; filename:string;compressed:boolean):Boolean; 
+    </td>
+    <td>Saves a report as a pdf file</td>
+  </tr>
+  <tr> 
+    <td>function DoShowPrintDialog (var allpages:boolean; var frompage,topage,copies:integer; 
+      var collate:boolean; disablecopies:boolean=false):boolean; </td>
+    <td>Print Dialog</td>
+  </tr>
+  <tr>
+    <td>function PrinterSelection (printerindex:TRpPrinterSelect):TPoint; </td>
+    <td>Printer selection</td>
+  </tr>
+</table>
+</body>
+</html>

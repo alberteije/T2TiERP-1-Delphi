@@ -1,0 +1,58 @@
+Report Manager Designer Version 1.6
+
+Author:	Toni Martir
+	toni@pala.com (no free support)
+
+http://reportman.sourceforge.net
+
+Open Source under the MPL and GPL License
+
+See LICENSE.TXT for detailed information
+
+You will find last version at:
+http://sourceforge.net/projects/reportman
+http://reportman.sourceforge.net
+
+To install:
+
+tar zxvf repmand-1_6.i386.tar.gz
+
+To execute the application:
+
+
+./repmand.sh
+
+or
+
+./repmand.bin
+
+To execute the report server or report client use
+./reportserverapp.sh
+./metaview.sh
+
+To execute other commandline tools  set first the library path (see repmand.sh script)
+
+Or better copy the libraries to /opt/kylixlibs and execute allways the executable named as .bin that is a launcher.
+
+Linux version:
+
+Supported databases:
+
+MYBASE
+- The sample4.rep sample report uses MyBase to access biolife.cds dataset.
+
+ALL DBEXPRESS DRIVERS
+- Interbase (tested)
+- PostgreSQL (tested)
+- MySQL & MySQL 3.23 (tested)
+- Oracle (tested, some issues)
+- DB2
+- Informix
+- ODBC throught UNIXodbc (tested) 
+
+Bugs:
+- Please submit bugs to sourceforge project.
+
+http://reportman.sourceforge.net
+
+Thanks

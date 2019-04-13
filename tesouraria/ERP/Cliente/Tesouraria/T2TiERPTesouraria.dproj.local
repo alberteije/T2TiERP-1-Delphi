@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/01/29 10:37:13.515.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Tesouraria\Tela\UFinTipoPagamento.pas=</Transaction>
+    <Transaction>2013/01/29 10:37:13.565.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Tesouraria\Tela\UFinTipoPagamento.dfm=</Transaction>
+    <Transaction>2013/01/29 10:37:54.540.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Tesouraria\Tela\UFinStatusParcela.pas=</Transaction>
+    <Transaction>2013/01/29 10:37:54.540.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Tesouraria\Tela\UFinStatusParcela.dfm=</Transaction>
+    <Transaction>2013/01/29 10:38:38.728.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Tesouraria\Tela\UFinLancamentoPagar.pas=</Transaction>
+    <Transaction>2013/01/29 10:38:38.728.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Tesouraria\Tela\UFinLancamentoPagar.dfm=</Transaction>
+  </Transactions>
+</BorlandProject>

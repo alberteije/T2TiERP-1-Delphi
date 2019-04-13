@@ -1,0 +1,567 @@
+object FRpPageSetup: TFRpPageSetup
+  Left = 118
+  Top = 106
+  ActiveControl = PControl
+  AutoScroll = False
+  BorderStyle = fbsDialog
+  Caption = 'Report page setup'
+  ClientHeight = 443
+  ClientWidth = 486
+  Color = clBackground
+  Position = poScreenCenter
+  ShowHint = True
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object PControl: TPageControl
+    Left = 0
+    Top = 0
+    Width = 486
+    Height = 402
+    ActivePage = TabPrint
+    Align = alClient
+    TabOrder = 0
+    object TabPage: TTabSheet
+      Caption = 'Page setup'
+      object SColor: TShape
+        Left = 168
+        Top = 272
+        Width = 33
+        Height = 33
+        OnMouseUp = SColorMouseDown
+      end
+      object RPageSize: TRadioGroup
+        Left = 4
+        Top = 0
+        Width = 209
+        Height = 93
+        Items.Strings = (
+          'Default'
+          'Custom'
+          'User defined')
+        Caption = 'Page size'
+        TabOrder = 0
+        OnClick = RPageSizeClick
+      end
+      object GPageSize: TGroupBox
+        Left = 216
+        Top = 4
+        Width = 241
+        Height = 65
+        Caption = 'Custom size'
+        TabOrder = 2
+        Visible = False
+        object ComboPageSize: TComboBox
+          Left = 4
+          Top = 32
+          Width = 225
+          Height = 21
+          Style = csDropDownList
+          ItemHeight = 15
+          TabOrder = 0
+        end
+      end
+      object RPageOrientation: TRadioGroup
+        Left = 4
+        Top = 96
+        Width = 209
+        Height = 67
+        Items.Strings = (
+          'Default'
+          'Custom')
+        Caption = 'Page orientation'
+        TabOrder = 3
+        OnClick = RPageOrientationClick
+      end
+      object RCustomOrientation: TRadioGroup
+        Left = 216
+        Top = 96
+        Width = 253
+        Height = 67
+        Items.Strings = (
+          'Portrait'
+          'Landscape')
+        Anchors = [akLeft, akTop, akRight]
+        Caption = 'Custom page orientation'
+        TabOrder = 4
+        Visible = False
+      end
+      object BBackground: TButton
+        Left = 4
+        Top = 272
+        Width = 153
+        Height = 33
+        Caption = 'Background color'
+        TabOrder = 8
+        OnClick = BBackgroundClick
+      end
+      object GPageMargins: TGroupBox
+        Left = 4
+        Top = 164
+        Width = 461
+        Height = 69
+        Anchors = [akLeft, akTop, akRight]
+        Caption = 'Page Margins'
+        TabOrder = 5
+        object LLeft: TLabel
+          Left = 16
+          Top = 16
+          Width = 18
+          Height = 13
+          Caption = 'Left'
+        end
+        object ELeftMargin: TRpCLXMaskEdit
+          Left = 80
+          Top = 12
+          Width = 77
+          Height = 21
+          TabOrder = 1
+          EditType = tecurrency
+        end
+        object ETopMargin: TRpCLXMaskEdit
+          Left = 80
+          Top = 40
+          Width = 77
+          Height = 21
+          TabOrder = 2
+          EditType = tecurrency
+        end
+        object LTop: TLabel
+          Left = 16
+          Top = 44
+          Width = 19
+          Height = 13
+          Caption = 'Top'
+        end
+        object LMetrics3: TLabel
+          Left = 168
+          Top = 16
+          Width = 23
+          Height = 13
+          Caption = 'inch.'
+        end
+        object LMetrics4: TLabel
+          Left = 168
+          Top = 40
+          Width = 23
+          Height = 13
+          Caption = 'inch.'
+        end
+        object LMetrics5: TLabel
+          Left = 408
+          Top = 16
+          Width = 23
+          Height = 13
+          Anchors = [akTop, akRight]
+          Caption = 'inch.'
+        end
+        object ERightMargin: TRpCLXMaskEdit
+          Left = 320
+          Top = 12
+          Width = 77
+          Height = 21
+          TabOrder = 7
+          EditType = tecurrency
+        end
+        object LRight: TLabel
+          Left = 236
+          Top = 16
+          Width = 25
+          Height = 13
+          Caption = 'Right'
+        end
+        object LBottom: TLabel
+          Left = 236
+          Top = 44
+          Width = 33
+          Height = 13
+          Caption = 'Bottom'
+        end
+        object EBottomMargin: TRpCLXMaskEdit
+          Left = 320
+          Top = 40
+          Width = 77
+          Height = 21
+          TabOrder = 10
+          EditType = tecurrency
+        end
+        object LMetrics6: TLabel
+          Left = 408
+          Top = 44
+          Width = 23
+          Height = 13
+          Anchors = [akTop, akRight]
+          Caption = 'inch.'
+        end
+      end
+      object GUserDefined: TGroupBox
+        Left = 216
+        Top = 0
+        Width = 253
+        Height = 93
+        Anchors = [akLeft, akTop, akRight]
+        Caption = 'Custom page size (Windows only)'
+        TabOrder = 1
+        Visible = False
+        object LMetrics7: TLabel
+          Left = 218
+          Top = 24
+          Width = 23
+          Height = 13
+          Anchors = [akTop, akRight]
+          Caption = 'inch.'
+        end
+        object LMetrics8: TLabel
+          Left = 218
+          Top = 48
+          Width = 23
+          Height = 13
+          Anchors = [akTop, akRight]
+          Caption = 'inch.'
+        end
+        object EPageheight: TRpCLXMaskEdit
+          Left = 128
+          Top = 44
+          Width = 77
+          Height = 21
+          Anchors = [akLeft, akTop, akRight]
+          TabOrder = 3
+          EditType = tecurrency
+        end
+        object EPageWidth: TRpCLXMaskEdit
+          Left = 128
+          Top = 20
+          Width = 77
+          Height = 21
+          Anchors = [akLeft, akTop, akRight]
+          TabOrder = 2
+          EditType = tecurrency
+        end
+        object EForceFormName: TRpCLXMaskEdit
+          Left = 128
+          Top = 68
+          Width = 77
+          Height = 21
+          Anchors = [akLeft, akTop, akRight]
+          TabOrder = 5
+        end
+        object LWidth: TLabel
+          Left = 16
+          Top = 24
+          Width = 28
+          Height = 13
+          Caption = 'Width'
+        end
+        object LHeight: TLabel
+          Left = 16
+          Top = 48
+          Width = 31
+          Height = 13
+          Caption = 'Height'
+        end
+        object LForceFormName: TLabel
+          Left = 16
+          Top = 72
+          Width = 79
+          Height = 13
+          Caption = 'Force form name'
+        end
+      end
+      object ELinesPerInch: TRpCLXMaskEdit
+        Left = 188
+        Top = 240
+        Width = 45
+        Height = 21
+        TabOrder = 6
+        EditType = tecurrency
+      end
+      object LLinesPerInch: TLabel
+        Left = 8
+        Top = 244
+        Width = 19
+        Height = 13
+        Caption = 'Top'
+      end
+    end
+    object TabPrint: TTabSheet
+      Caption = 'Print setup'
+      ImageIndex = 1
+      object LSelectPrinter: TLabel
+        Left = 4
+        Top = 92
+        Width = 63
+        Height = 13
+        Caption = 'Select Printer'
+      end
+      object ComboSelPrinter: TComboBox
+        Left = 236
+        Top = 88
+        Width = 237
+        Height = 21
+        Style = csDropDownList
+        Anchors = [akLeft, akTop, akRight]
+        ItemHeight = 15
+        TabOrder = 5
+      end
+      object BConfigure: TButton
+        Left = 4
+        Top = 168
+        Width = 213
+        Height = 25
+        Caption = 'Configure printers'
+        TabOrder = 6
+        OnClick = BConfigureClick
+      end
+      object CheckTwoPass: TCheckBox
+        Left = 4
+        Top = 252
+        Width = 213
+        Height = 21
+        Caption = 'Two pass report'
+        TabOrder = 9
+      end
+      object CheckPrintOnlyIfData: TCheckBox
+        Left = 4
+        Top = 276
+        Width = 209
+        Height = 21
+        Caption = 'Print only if data available'
+        TabOrder = 14
+      end
+      object ECopies: TRpCLXMaskEdit
+        Left = 144
+        Top = 200
+        Width = 69
+        Height = 21
+        TabOrder = 7
+        EditType = teinteger
+      end
+      object LCopies: TLabel
+        Left = 4
+        Top = 204
+        Width = 32
+        Height = 13
+        Caption = 'Copies'
+      end
+      object CheckCollate: TCheckBox
+        Left = 4
+        Top = 228
+        Width = 205
+        Height = 21
+        Caption = 'Collate copies'
+        TabOrder = 8
+      end
+      object LPrinterFonts: TLabel
+        Left = 4
+        Top = 8
+        Width = 158
+        Height = 13
+        Caption = 'Printer Fonts (Windows GDI Only)'
+      end
+      object ComboPrinterFonts: TComboBox
+        Left = 236
+        Top = 4
+        Width = 237
+        Height = 21
+        Style = csDropDownList
+        Anchors = [akLeft, akTop, akRight]
+        ItemHeight = 15
+        Items.Strings = (
+          'Default'
+          'Always use printer fonts'
+          'Never use printer fonts')
+        TabOrder = 1
+      end
+      object ComboLanguage: TComboBox
+        Left = 236
+        Top = 32
+        Width = 237
+        Height = 21
+        Style = csDropDownList
+        Anchors = [akLeft, akTop, akRight]
+        ItemHeight = 15
+        TabOrder = 2
+      end
+      object LRLang: TLabel
+        Left = 4
+        Top = 32
+        Width = 79
+        Height = 13
+        Caption = 'Report language'
+      end
+      object LPreview: TLabel
+        Left = 4
+        Top = 60
+        Width = 126
+        Height = 13
+        Caption = 'Preview window and scale'
+      end
+      object ComboPreview: TComboBox
+        Left = 236
+        Top = 60
+        Width = 113
+        Height = 21
+        Style = csDropDownList
+        ItemHeight = 15
+        Items.Strings = (
+          'Normal'
+          'Maxmized')
+        TabOrder = 3
+      end
+      object ComboStyle: TComboBox
+        Left = 352
+        Top = 60
+        Width = 121
+        Height = 21
+        Style = csDropDownList
+        Anchors = [akLeft, akTop, akRight]
+        ItemHeight = 15
+        Items.Strings = (
+          'Wide'
+          'Normal'
+          'Page')
+        TabOrder = 4
+      end
+      object CheckDrawerAfter: TCheckBox
+        Left = 4
+        Top = 324
+        Width = 373
+        Height = 21
+        Caption = 'Open drawer after printing'
+        TabOrder = 16
+      end
+      object CheckDrawerBefore: TCheckBox
+        Left = 4
+        Top = 300
+        Width = 405
+        Height = 21
+        Caption = 'Open drawer before printing'
+        TabOrder = 15
+      end
+      object CheckPreviewAbout: TCheckBox
+        Left = 228
+        Top = 228
+        Width = 261
+        Height = 21
+        Anchors = [akLeft, akTop, akRight]
+        Caption = 'About box in preview'
+        TabOrder = 17
+      end
+      object CheckMargins: TCheckBox
+        Left = 228
+        Top = 252
+        Width = 261
+        Height = 21
+        Anchors = [akLeft, akTop, akRight]
+        Caption = 'Printable margins in preview'
+        TabOrder = 18
+      end
+      object ComboDuplex: TComboBox
+        Left = 236
+        Top = 144
+        Width = 237
+        Height = 21
+        Style = csDropDownList
+        Anchors = [akLeft, akTop, akRight]
+        ItemHeight = 15
+        TabOrder = 19
+      end
+      object LDuplex: TLabel
+        Left = 4
+        Top = 148
+        Width = 65
+        Height = 13
+        Caption = 'Duplex option'
+      end
+      object LPaperSource: TLabel
+        Left = 4
+        Top = 120
+        Width = 95
+        Height = 13
+        Caption = 'Select paper source'
+      end
+      object ComboPaperSource: TComboBox
+        Left = 304
+        Top = 116
+        Width = 165
+        Height = 21
+        Style = csDropDownList
+        Anchors = [akLeft, akTop, akRight]
+        ItemHeight = 15
+        TabOrder = 22
+        OnClick = ComboPaperSourceClick
+      end
+      object EPaperSource: TRpCLXMaskEdit
+        Left = 236
+        Top = 116
+        Width = 61
+        Height = 21
+        TabOrder = 23
+        OnChange = EPaperSourceChange
+        EditType = teinteger
+      end
+      object CheckDefaultCopies: TCheckBox
+        Left = 228
+        Top = 200
+        Width = 237
+        Height = 21
+        Caption = 'Default printer copies'
+        TabOrder = 24
+        OnClick = CheckDefaultCopiesClick
+      end
+    end
+    object TabOptions: TTabSheet
+      Caption = 'Options'
+      ImageIndex = 2
+      object ComboFormat: TComboBox
+        Left = 188
+        Top = 8
+        Width = 281
+        Height = 21
+        Style = csDropDownList
+        Anchors = [akLeft, akTop, akRight]
+        ItemHeight = 15
+        TabOrder = 0
+      end
+      object LPreferedFormat: TLabel
+        Left = 8
+        Top = 12
+        Width = 98
+        Height = 13
+        Caption = 'Prefered save format'
+      end
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 402
+    Width = 486
+    Height = 41
+    Align = alBottom
+    TabOrder = 1
+    object BOK: TButton
+      Left = 8
+      Top = 8
+      Width = 101
+      Height = 25
+      Caption = 'OK'
+      TabOrder = 0
+      OnClick = BOKClick
+    end
+    object BCancel: TButton
+      Left = 120
+      Top = 8
+      Width = 97
+      Height = 25
+      Caption = 'Cancel'
+      TabOrder = 1
+      OnClick = BCancelClick
+    end
+  end
+  object ColorDialog1: TColorDialog
+    Left = 340
+    Top = 280
+  end
+end

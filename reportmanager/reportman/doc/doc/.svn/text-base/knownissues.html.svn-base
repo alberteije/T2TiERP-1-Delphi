@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>Known Issues</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Release Notes</h2>
+<h3>Known issues and workarounds</h3>
+<p></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#00FFFF"><b>Report Manager do not start in some Linux distro</b></td>
+  </tr>
+  <tr> 
+    <td> <p>This issue only affects some Linux distributions or XFree versions.</p>
+      <p>Has been reported that some generated Kylix generated applications don't 
+        work correctly in some Linux distros, errors like 'Error loading icons.Bitmap' 
+        or 'Bitmap not valid' appear in this cases.</p>
+      <p>The workaround for Report Manager version 1.0RC2 and later (Kylix 3):</p>
+      <p>- Add/uncomment the line export CLX_USE_LIBQT=true to the repmand.sh 
+        file (startup script) so libqt.so (and libqtintf.so) system library is 
+        loaded instead of libborqt.so</p>
+      <p>The workaround for Report Manager version 1.0RC1 and previous versions 
+        (Kylix 2):</p>
+      <p>- Remove the libqt.so library provided in the package so the system provided 
+        libqt library will be used. </p></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#00FFFF"><b>Error can not load library libsqlxx.so.x connecting 
+      to databases</b></td>
+  </tr>
+  <tr> 
+    <td>The database library names are in dbxdrivers file, if you are upgrading 
+      from an older version of Report Manager make sure to copy dbxdrivers (and 
+      recomended also dbxconnections) file to /home/yourusername/.borland directory. 
+      If you are installing for the first time Report Manager it will check in 
+      that directory and then copy the files in the current dir there.</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#00FFFF"><b>Setting a page size other than default fails</b></td>
+  </tr>
+  <tr> 
+    <td> <p>Not all printer drivers supports custom page sizes, some drivers are 
+        reported to not work when selecting a predefined pagesize (A2), especially 
+        in Windows NT/2000/XP. Some drivers provided by manufactures allow only 
+        change page size from page setup dialog and not in runtime. Dot matrix 
+        printers are more flexible with page sizes. If you use WinGDI (VCL) driver 
+        you will see in the preview exactly the page size supported by the driver 
+        using Qt driver (CLX) the preview can show a page size and the final result 
+        may differ (printer driver processed).</p>
+      <p>Some Windows 2000/NT/XP provided drivers does not allow custom paper 
+        sizes, but the drivers provided by the manufacter provide this support 
+        (for example Epson FX-880). Also test the driver using draft quality (printer 
+        properties) in Win9x/Me dot matrix printers drivers.</p>
+      <p>Note: You must have Administrator rights to create custom page sizes 
+        in Windows NT/2000/XP, once created by the administrator (preview or print 
+        once), the custom page is available for all users using this printer.</p></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#00FFFF"><b>Previewing a large page size raises eception Invalid 
+      Canvas State-Invalid handle...</b></td>
+  </tr>
+  <tr> 
+    <td>This only happens in some versions of Windows and only with Qt Driver, 
+      this is a limitation of system resources, the issue affects Win9x/Millenium/NT/2000, 
+      in Windows XP works ok, the VCL driver uses Device Independent Bitmaps and 
+      is not affected.</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#00FFFF"><b>Changing the printer device when selecting page ranges 
+      results in nothing printed</b></td>
+  </tr>
+  <tr> 
+    <td> <p>This issue only affects the Qt Driver (CLX) in Windows systems.</p>
+      <p>The printer selection has no effect in Windows systems, the workaround 
+        is to call PrinterSetup dialog before printing or use the GDI driver, 
+        if you use TCLXReport you can select the driver (rpDriverGDI), this setting 
+        is ignored in Linux.</p>
+      <p>This is a <a href="http://www.trolltech.com/developer/changes/3.0.5.html" target="_blank">kwown 
+        bug of Qt Libraries</a> , it's fixed in 3.0.5, </p></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#00FFFF"><b>Setting paper orientation to landscape not works 
+      </b></td>
+  </tr>
+  <tr> 
+    <td> <p>This issue only affects the Qt Driver (CLX) in Windows systems.</p>
+      <p>This is a <a href="http://www.trolltech.com/developer/changes/3.0.5.html" target="_blank">kwown 
+        bug of Qt Libraries</a> , it's fixed in 3.0.5, the workaround is to call 
+        PrinterSetup dialog before printing or use the GDI driver.</p></td>
+  </tr>
+  <tr bgcolor="#00FFFF"> 
+    <td><b>Printing does not work in Linux, the preview is ok but nothing is send 
+      to printer</b></td>
+  </tr>
+  <tr> 
+    <td> <p>This issue only affects some Linux systems the source seems the printer 
+        queue, in Kylix2 the issue is related to qt libs and Borland runtime library 
+        localization </p>
+      <p>The fast and effective workaround is to launch your application setting 
+        enviroment variable LC_NUMERIC=en_US, see repmand.sh startup script. Then 
+        in your Kylix application you can set the DecimalSeparator and ThousandSeparator 
+        variables before print so you can print with your custom locale settings, 
+        take care this setting can get international chars not working (Mandrake 
+        9.0 basic install)</p>
+      <p>Another workaround to is to use the launcher provided by Report Manager, 
+        for example if you have compiled <i>myprogram</i>.</p>
+      <p>But you should enable KYLIX_PRINTBUG first, that is:</p>
+      <p>export KYLIX_PRINTBUG=yes</p>
+      <p>cp repmand.bin myprogram.bin</p>
+      <p>This launcher add the current directory to LD_LIBRARY_PATH, then save 
+        locale configuration to enviroment variables, launch the application without 
+        the .bin extension but with modified LC_NUMERIC, the Report Manager engine 
+        restores the locale configuration (Decimal separator and Thousand separator) 
+      </p>
+      <p>The way to reproduce the bug is:</p>
+      <p>The CLX print engine does not work well in some Linux systems/configurations, 
+        you can test if your system works ok by writting a small program in kylix 
+        and executing it:</p>
+      <p><code>DBXConnection1.Connected:=True;</code></p>
+      <p><code>printer.begindoc</code></p>
+      <p><code>printer.canvas.textout(100,100,'Hello World');</code></p>
+      <p><code>printer.enddoc;</code></p>
+      <p>If after connecting to a database the printer not works your system have 
+        the 'Kylixprintbugfix'. To fix this set Kylix Print Bug Fix in preferences 
+        (Report Manager Designer) and try again. At runtime you must set rpqtdriver.kylixprintbugfix 
+        variable to true. This can be a X fonts qt inplementation because if you 
+        replace the textout by a Rectangle works perfectly.</p>
+      <p>The workaround uses metaprint command line tool to print a generated 
+        metafile so you must distribute metaprint in the same directory of your 
+        exe. </p>
+      <p>Kylix 3 solves only the SIGSEV problem but not the silent problem (see 
+        release notes of Kylix 3).</p></td>
+  </tr>
+  <tr bgcolor="#00FFFF"> 
+    <td><b>Access violation passing runtime linked querys to the engine using 
+      Delphi 7 </b></td>
+  </tr>
+  <tr> 
+    <td>Delphi 7 introduces a bug when linking a query (datasource) that is linked 
+      to another query, (three linked querys), this situation usually raises an 
+      Access Violation in some memory address when the first dataset moves, the 
+      engine introduces the compiler define QUERYLINKBUG, this will disable all 
+      datasources in correct order, move main dataset and then reenable the datasources 
+      in correct order. Delphi 5 and 6 does not have this bug, this bug seems 
+      to be reproduced only with ADO and BDE drivers.</td>
+  </tr>
+  <tr bgcolor="#00FFFF"> 
+    <td><b>Connecting to Oracle 9i databases</b></td>
+  </tr>
+  <tr> 
+    <td>There seems to be a problem with Oracle 9i library. Use libclntsh.so from 
+      an 8.1.7 Oracle version (for example copied to /usr/lib). Connecting to 
+      a 9i database with an 8i driver works as long as you do not use 9i features 
+      inside your queries</td>
+  </tr>
+  <tr bgcolor="#00FFFF"> 
+    <td><b>Web report server don't show international characters</b></td>
+  </tr>
+  <tr> 
+    <td> <p>This problem appear in Interbase dbexpress driver, use IBX driver 
+        instead or investigate the source of the problem, but it's reported to 
+        be fixed using the appropiate lang environment variables, that is place 
+        in area cgi of the apache (httpd.conf): SetEnv LANG pt_BR</p></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#66FFFF"><strong>Connecting to MySQL from ADO/ODBC returns invalid 
+      field size and other errors</strong></td>
+  </tr>
+  <tr> 
+    <td>Try setting OPTION=3 in connection string. It is the same as setting &quot;Don't 
+      optimize column width&quot; and &quot;Return matching rows&quot; in MyODBC 
+      configuration screen</td>
+  </tr>
+  <tr>
+    <td bgcolor="#66FFFF"><strong>Problems connecting to ODBC datasources in Microsoft 
+      Windows</strong></td>
+  </tr>
+  <tr>
+    <td><p>From Paul MacDougall [paul_macdougall@yahoo.ca]</p>
+      <p>If you have problems, make sure you have an entry in the registry:</p>
+      <p>HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\DSN_NAME<br>
+        (where DSN_NAME is the name of your dsn)</p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/01/29 15:22:30.622.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ViewFinResumoTesourariaVO.pas=</Transaction>
+    <Transaction>2013/01/29 15:22:42.113.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ViewFinLancamentoPagarVO.pas=</Transaction>
+    <Transaction>2013/01/29 15:22:42.123.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ViewFinChequesEmSerVO.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file original="C:\Archivos de programa\CodeGear\RAD Studio\5.0\lib\DBPWDLG.dfm" source-language="es-ES" target-language="es-ES" datatype="delphiform" tool="ETM v10.0" ts="C:\Archivos de programa\CodeGear\RAD Studio\5.0\lib\DBPWDLG.dfm">
+    <header>
+      <prop-group name="ITEHeaderProp">
+        <prop prop-type="Version">9.0</prop>
+        <prop prop-type="SelfDateTime">39753.7947222222</prop>
+        <prop prop-type="OrigDateTime">39320.79375</prop>
+        <prop prop-type="XlatDateTime">39320.79375</prop>
+        <prop prop-type="Translated">0</prop>
+        <prop prop-type="UnTranslated">65</prop>
+      </prop-group>
+    </header>
+    <body>
+      <trans-unit id="O:PasswordDialog.Left" resname="O:PasswordDialog.Left">
+        <source>260</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">0</prop><prop prop-type="Type">TPasswordDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.Top" resname="O:PasswordDialog.Top">
+        <source>184</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">1</prop><prop prop-type="Type">TPasswordDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.ActiveControl" resname="O:PasswordDialog.ActiveControl">
+        <source>Edit</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">2</prop><prop prop-type="Type">TPasswordDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.BorderStyle" resname="O:PasswordDialog.BorderStyle">
+        <source>bsDialog</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">3</prop><prop prop-type="Type">TPasswordDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.Caption" resname="O:PasswordDialog.Caption">
+        <source>'Enter password'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">4</prop><prop prop-type="Type">TPasswordDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.ClientHeight" resname="O:PasswordDialog.ClientHeight">
+        <source>132</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">5</prop><prop prop-type="Type">TPasswordDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.ClientWidth" resname="O:PasswordDialog.ClientWidth">
+        <source>273</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">6</prop><prop prop-type="Type">TPasswordDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.ParentFont" resname="O:PasswordDialog.ParentFont">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">7</prop><prop prop-type="Type">TPasswordDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.PixelsPerInch" resname="O:PasswordDialog.PixelsPerInch">
+        <source>96</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">8</prop><prop prop-type="Type">TPasswordDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.Position" resname="O:PasswordDialog.Position">
+        <source>poScreenCenter</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">9</prop><prop prop-type="Type">TPasswordDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.TextHeight" resname="O:PasswordDialog.TextHeight">
+        <source>13</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">10</prop><prop prop-type="Type">TPasswordDialog</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:OKButton.Left" resname="O:PasswordDialog.O:OKButton.Left">
+        <source>109</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">11</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:OKButton.Top" resname="O:PasswordDialog.O:OKButton.Top">
+        <source>98</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">12</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:OKButton.Width" resname="O:PasswordDialog.O:OKButton.Width">
+        <source>75</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">13</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:OKButton.Height" resname="O:PasswordDialog.O:OKButton.Height">
+        <source>25</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">14</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:OKButton.Caption" resname="O:PasswordDialog.O:OKButton.Caption">
+        <source>'&amp;OK'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">15</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:OKButton.Default" resname="O:PasswordDialog.O:OKButton.Default">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">16</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:OKButton.Enabled" resname="O:PasswordDialog.O:OKButton.Enabled">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">17</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:OKButton.ModalResult" resname="O:PasswordDialog.O:OKButton.ModalResult">
+        <source>1</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">18</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:OKButton.TabOrder" resname="O:PasswordDialog.O:OKButton.TabOrder">
+        <source>1</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">19</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:OKButton.OnClick" resname="O:PasswordDialog.O:OKButton.OnClick">
+        <source>OKButtonClick</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">20</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:CancelButton.Left" resname="O:PasswordDialog.O:CancelButton.Left">
+        <source>190</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">21</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:CancelButton.Top" resname="O:PasswordDialog.O:CancelButton.Top">
+        <source>98</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">22</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:CancelButton.Width" resname="O:PasswordDialog.O:CancelButton.Width">
+        <source>75</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">23</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:CancelButton.Height" resname="O:PasswordDialog.O:CancelButton.Height">
+        <source>25</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">24</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:CancelButton.Cancel" resname="O:PasswordDialog.O:CancelButton.Cancel">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">25</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:CancelButton.Caption" resname="O:PasswordDialog.O:CancelButton.Caption">
+        <source>'Cancel'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">26</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:CancelButton.ModalResult" resname="O:PasswordDialog.O:CancelButton.ModalResult">
+        <source>2</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">27</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:CancelButton.TabOrder" resname="O:PasswordDialog.O:CancelButton.TabOrder">
+        <source>2</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">28</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.Left" resname="O:PasswordDialog.O:GroupBox1.Left">
+        <source>8</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">29</prop><prop prop-type="Type">TGroupBox</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.Top" resname="O:PasswordDialog.O:GroupBox1.Top">
+        <source>8</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">30</prop><prop prop-type="Type">TGroupBox</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.Width" resname="O:PasswordDialog.O:GroupBox1.Width">
+        <source>257</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">31</prop><prop prop-type="Type">TGroupBox</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.Height" resname="O:PasswordDialog.O:GroupBox1.Height">
+        <source>81</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">32</prop><prop prop-type="Type">TGroupBox</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.Caption" resname="O:PasswordDialog.O:GroupBox1.Caption">
+        <source>'Password'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">33</prop><prop prop-type="Type">TGroupBox</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.TabOrder" resname="O:PasswordDialog.O:GroupBox1.TabOrder">
+        <source>0</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">34</prop><prop prop-type="Type">TGroupBox</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:Edit.Left" resname="O:PasswordDialog.O:GroupBox1.O:Edit.Left">
+        <source>16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">35</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:Edit.Top" resname="O:PasswordDialog.O:GroupBox1.O:Edit.Top">
+        <source>18</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">36</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:Edit.Width" resname="O:PasswordDialog.O:GroupBox1.O:Edit.Width">
+        <source>225</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947424768</prop><prop prop-type="Status">0</prop><prop prop-type="Order">37</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:Edit.Height" resname="O:PasswordDialog.O:GroupBox1.O:Edit.Height">
+        <source>20</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">38</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:Edit.PasswordChar" resname="O:PasswordDialog.O:GroupBox1.O:Edit.PasswordChar">
+        <source>'*'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">39</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:Edit.TabOrder" resname="O:PasswordDialog.O:GroupBox1.O:Edit.TabOrder">
+        <source>0</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">40</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:Edit.OnChange" resname="O:PasswordDialog.O:GroupBox1.O:Edit.OnChange">
+        <source>EditChange</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">41</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:AddButton.Left" resname="O:PasswordDialog.O:GroupBox1.O:AddButton.Left">
+        <source>16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">42</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:AddButton.Top" resname="O:PasswordDialog.O:GroupBox1.O:AddButton.Top">
+        <source>46</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">43</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:AddButton.Width" resname="O:PasswordDialog.O:GroupBox1.O:AddButton.Width">
+        <source>65</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">44</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:AddButton.Height" resname="O:PasswordDialog.O:GroupBox1.O:AddButton.Height">
+        <source>25</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">45</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:AddButton.Caption" resname="O:PasswordDialog.O:GroupBox1.O:AddButton.Caption">
+        <source>'&amp;Add'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">46</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:AddButton.Enabled" resname="O:PasswordDialog.O:GroupBox1.O:AddButton.Enabled">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">47</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:AddButton.TabOrder" resname="O:PasswordDialog.O:GroupBox1.O:AddButton.TabOrder">
+        <source>1</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">48</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:AddButton.OnClick" resname="O:PasswordDialog.O:GroupBox1.O:AddButton.OnClick">
+        <source>AddButtonClick</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">49</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:RemoveButton.Left" resname="O:PasswordDialog.O:GroupBox1.O:RemoveButton.Left">
+        <source>88</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">50</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:RemoveButton.Top" resname="O:PasswordDialog.O:GroupBox1.O:RemoveButton.Top">
+        <source>46</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">51</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:RemoveButton.Width" resname="O:PasswordDialog.O:GroupBox1.O:RemoveButton.Width">
+        <source>65</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">52</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:RemoveButton.Height" resname="O:PasswordDialog.O:GroupBox1.O:RemoveButton.Height">
+        <source>25</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">53</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:RemoveButton.Caption" resname="O:PasswordDialog.O:GroupBox1.O:RemoveButton.Caption">
+        <source>'&amp;Remove'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">54</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:RemoveButton.Enabled" resname="O:PasswordDialog.O:GroupBox1.O:RemoveButton.Enabled">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">55</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:RemoveButton.TabOrder" resname="O:PasswordDialog.O:GroupBox1.O:RemoveButton.TabOrder">
+        <source>2</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">56</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:RemoveButton.OnClick" resname="O:PasswordDialog.O:GroupBox1.O:RemoveButton.OnClick">
+        <source>RemoveButtonClick</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">57</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:RemoveAllButton.Left" resname="O:PasswordDialog.O:GroupBox1.O:RemoveAllButton.Left">
+        <source>160</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">58</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:RemoveAllButton.Top" resname="O:PasswordDialog.O:GroupBox1.O:RemoveAllButton.Top">
+        <source>46</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">59</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:RemoveAllButton.Width" resname="O:PasswordDialog.O:GroupBox1.O:RemoveAllButton.Width">
+        <source>81</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">60</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:RemoveAllButton.Height" resname="O:PasswordDialog.O:GroupBox1.O:RemoveAllButton.Height">
+        <source>25</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">61</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:RemoveAllButton.Caption" resname="O:PasswordDialog.O:GroupBox1.O:RemoveAllButton.Caption">
+        <source>'Re&amp;move all'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">62</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:RemoveAllButton.TabOrder" resname="O:PasswordDialog.O:GroupBox1.O:RemoveAllButton.TabOrder">
+        <source>3</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">63</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:PasswordDialog.O:GroupBox1.O:RemoveAllButton.OnClick" resname="O:PasswordDialog.O:GroupBox1.O:RemoveAllButton.OnClick">
+        <source>RemoveAllButtonClick</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39753.7947426505</prop><prop prop-type="Status">0</prop><prop prop-type="Order">64</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

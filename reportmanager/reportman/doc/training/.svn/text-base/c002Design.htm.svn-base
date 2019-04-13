@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Report Designer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h1>Chapter 2- Report Designer</h1>
+<h2>2.1.Report Designer screen</h2>
+<p>Select new from file menu to create a new report scheme. The design window 
+  is divided in four areas.</p>
+<p><img src="images/designerareas.jpg" width="700" height="533"></p>
+<p><strong>Report Structure and data</strong></p>
+<p>The report structure will determine the way database data is processed, on 
+  the second tab, printable variable and database fields are represented on a 
+  tree, you can drag and drop to the design area to place elements in the report 
+  sections.</p>
+<p><strong>Sub report's sections and elements area</strong></p>
+<p>This area show the sections and elements for the selected sub report, a report 
+  structure can contain multiple sub reports, each sub report have sections, and 
+  inside sections there are printable report elements (labels, drawings, images 
+  ...).</p>
+<p><strong>Object inspector</strong></p>
+<p>The object inspector allow editing element properties for any item selected 
+  on report structure or sections areas, if you select multiple objects, only 
+  the common properties will be available. It allows also to set print order of 
+  elements (Z order), using the buttons on the bottom of it. Object inspector 
+  show properties in tabs, the first tab show all the properties, the next tabs 
+  show properties related to the caption of the tab.</p>
+<p><strong>The toolbar</strong></p>
+<p>In the toolbar you find basic operations common to other document editing applications 
+  (new, preview, cut,copy,paste ...), but a component palette is also available. 
+  By default the arrow is selected, this means you can select and drag report 
+  items. Component palette is used to place new elements on a section, you select 
+  a element from the palette (label, expression, image ..), then draw a rectangle 
+  over a section in the sections area, the new report element will be created, 
+  and you will see the properties on the object inspector.</p>
+<h2>2.2.Basic report design</h2>
+<p>Main application of Report Manager is database reporting, but you can execute 
+  a report without database access.</p>
+<p>Place a label and a rectangle, resize and move them to obtain following report 
+  scheme.</p>
+<p><img src="images/sample1.jpg" width="590" height="312"></p>
+<p>Steps to design the report above:</p>
+<table border="0">
+  <tr> 
+    <td>Select the label component from component palette</td>
+    <td><img src="images/palettelabel.jpg" width="194" height="26"></td>
+  </tr>
+  <tr> 
+    <td>Drag a rectangle over the detail section</td>
+    <td><img src="images/dragrectangle.jpg" width="298" height="84"></td>
+  </tr>
+  <tr> 
+    <td>Slide object inspector bar to alter Text property, alter also font size 
+      to 14 points</td>
+    <td><img src="images/slideobjectinsp.jpg" width="183" height="294"></td>
+  </tr>
+  <tr> 
+    <td>Use corners of label to resize so you see all the text</td>
+    <td><img src="images/resizelabel.jpg" width="320" height="40"></td>
+  </tr>
+  <tr> 
+    <td>Select the drawing from component palette</td>
+    <td><img src="images/palettedrawing.jpg" width="192" height="26"></td>
+  </tr>
+  <tr> 
+    <td>Drag a rectangle, beside the label</td>
+    <td><img src="images/dragrectanblerec.jpg" width="367" height="133"></td>
+  </tr>
+  <tr> 
+    <td>Move the rectangle on top</td>
+    <td><img src="images/rectoplabel.jpg" width="385" height="131"></td>
+  </tr>
+  <tr> 
+    <td>Use bring object inspector buttons to set Z order</td>
+    <td><img src="images/tofronttoback.jpg" width="181" height="24"></td>
+  </tr>
+</table>
+<h2>2.3.Properties and variables</h2>
+<p>Select the label you placed, and alter some of the properties like font or 
+  text. You can select multiple elements by pressing the Shift key,test it and 
+  see the common properties for the selected elements are visible in object inspector.</p>
+<p><strong>Adding a page header</strong></p>
+<p>In the report structure area, click the add button to include a page header.</p>
+<p><img src="images/structuremenu.jpg" width="185" height="256"></p>
+<p>Some basic variables are available to drop in all reports, try adding a page 
+  number in the page header. You can access this variables on the data tab, at 
+  report structure area.</p>
+<p><strong>Adding page numbering</strong></p>
+<p><img src="images/datastructuremenu.jpg" width="178" height="208"></p>
+<p>You can modify the size of the sections, by dragging the bar on the bottom 
+  or on the right. Remember to save the report, so you can continue the work later.</p>
+<p><img src="images/pagescrenshot.jpg" width="406" height="328"></p>
+<h2>2.4.Report execution</h2>
+<p>To execute the report click on the preview icon or select <em>Preview</em> 
+  option in <em>File</em> menu.</p>
+<p><img src="images/firstpreview.jpg" width="528" height="298"></p>
+<p>You can click on the buttons to zoom in and out, output to printer or output 
+  to other formats. Use the disk icon to export to formats like Adobe PDF.</p>
+<h2>2.A.Exercise. Report design</h2>
+<p>Experiment changing properties of text elements (alignment, font ...), place 
+  other drawings and changing the shape (ellipses, lines ...)</p>
+<h2>2.B.Exercise. Command line tools</h2>
+<p>Use command line tool printreptopdf.exe to generate a Adobe Pdf document from 
+  the report previously designed. Use printrepxp to preview a report on the screen.</p>
+<p>Experiment different options in printrepxp, printereptopdf.</p>
+<h2>2.C.Exercise. Output formats</h2>
+<p>From the report preview save the report to other formats and see the result, 
+  test output as text, comma separated values ...</p>
+</body>
+</html>

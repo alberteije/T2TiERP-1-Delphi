@@ -1,0 +1,10 @@
+DELIMITER $$
+
+CREATE
+    TRIGGER `t2tipafecf`.`IncHashVendaDetalhe` BEFORE UPDATE
+    ON `t2tipafecf`.`ecf_venda_detalhe`
+    FOR EACH ROW BEGIN
+	SET NEW.HASH_INCREMENTO = NEW.HASH_INCREMENTO + 1;
+    END$$
+
+DELIMITER ;

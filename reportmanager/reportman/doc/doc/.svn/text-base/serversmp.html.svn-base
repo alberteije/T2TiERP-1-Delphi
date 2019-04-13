@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Multiprocessor support</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Report Manager Server</h2>
+<h3>Multiprocessor support and hyperthreading</h3>
+<p>Report Manager engine have multiprocessor support feature, that is when you 
+  execute it as a service or as a TCP server standalone application or a web server, 
+  each petition works in a independent thread (or process) so a machine with <strong>more 
+  than one CPU</strong> can distribute threads and <strong>optimize performance</strong>. 
+  It <strong>also supports intel hyperthreading technology</strong>.</p>
+<p>Note, when using a machine with more than one processor use web server repwebexe.exe 
+  for better performance instead the ISAPI module (repwebserver.dll).</p>
+<p><strong>Installation</strong></p>
+<p>In a SMP machine you must copy the tool printreptopdf.exe in the same directory 
+  as the server application (reportserverapp.exe, reportservercon.exe, repserver 
+  service.)</p>
+<p>It's recomended the use of reportservercon application in Linux because smp 
+  applications are more stable running in console mode, not in top of a X window 
+  architechture.</p>
+<p><strong>Performance gain</strong></p>
+<p>In practice you will only experiment performance gain while executing report 
+  server applications, and also only when there is more than one active request 
+  executing.</p>
+<p>But if you execute report server application (or web server) in a dual processor 
+  machine and four client requests of a long report comes to the server at the 
+  same time, the reports will be served with about a 90-95% performance gain (in 
+  completion time), compared with the same machine with only one processor. Note 
+  that a single processor hyperthreading cpu can emulate two processors but I 
+  think you will not obtain a 90% boost (not tested yet).</p>
+<p>This numbers are not precise, the performance gain will depend on other things 
+  like:</p>
+<ul>
+  <li>The support of smp in database engine</li>
+  <li>The database server is the same that executes the report sever</li>
+  <li>The complexity of the querys, that is if the report server is waiting for 
+    the database server to calculate the query.</li>
+  <li>The network bandwidth and ammount of data transfered from the database server.</li>
+</ul>
+<p><strong>How it works</strong></p>
+<p>The server application detects the multiprocessing capability, then for each 
+  report execution request it starts a new process calling printreptopdf.</p>
+<p><strong>Disabling smp support</strong></p>
+<p>You can disable smp support by adding this at the server configuration file:</p>
+<p>[CONFIG]<br>
+  DISABLESMP=1<br>
+</p>
+<p> Take care disabling smp can break the server, that is in some smp systems 
+  it's not allowed to disable smp (most Linux distros) because the ystem threads 
+  implementation, so it's <strong>not recommended and not supported in any way</strong>.</p>
+</body>
+</html>

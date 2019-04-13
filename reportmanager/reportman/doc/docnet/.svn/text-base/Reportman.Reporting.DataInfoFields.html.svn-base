@@ -1,0 +1,74 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>DataInfo Fields</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">Report Manager Documentation</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">DataInfo Fields</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>The fields of the <b>DataInfo</b> class are listed below. For a complete list of <b>DataInfo</b> class members, see the <a href="Reportman.Reporting.DataInfoMembers.html">DataInfo Members</a> topic.</p>
+      <h4 class="dtH4">Public Instance Fields</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.Alias.html">Alias</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.BDEFilter.html">BDEFilter</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.BDEFirstRange.html">BDEFirstRange</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.BDEIndexFields.html">BDEIndexFields</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.BDEIndexName.html">BDEIndexName</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.BDELastRange.html">BDELastRange</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.BDEMasterFields.html">BDEMasterFields</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.BDETable.html">BDETable</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.BDEType.html">BDEType</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.Command.html">Command</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.Data.html">Data</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.DatabaseAlias.html">DatabaseAlias</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.DataReader.html">DataReader</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.DataSource.html">DataSource</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.DataUnions.html">DataUnions</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.GroupUnion.html">GroupUnion</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.MyBaseFields.html">MyBaseFields</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.MyBaseFilename.html">MyBaseFilename</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.MyBaseIndexFields.html">MyBaseIndexFields</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.MyBaseMasterFields.html">MyBaseMasterFields</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.OpenOnStart.html">OpenOnStart</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.SQL.html">SQL</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.DataInfo.SQLOverride.html">SQLOverride</a></td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="Reportman.Reporting.DataInfo.html">DataInfo Class</a> | <a href="Reportman.Reporting.html">Reportman.Reporting Namespace</a></p>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="DataInfo class, fields">
+        </param>
+      </object>
+      <hr />
+      <div id="footer">
+        <p>
+          <a href="mailto:toni@pala.com?subject=Report%20Manager%20Documentation%20Documentation%20Feedback:%20DataInfo Fields">Send comments on this topic.</a>
+        </p>
+        <p>
+          <a href="http://reportman.sourceforge.net">Copyright 2006 Toni Martir</a>
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

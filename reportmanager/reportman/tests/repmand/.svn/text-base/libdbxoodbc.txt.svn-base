@@ -1,0 +1,69 @@
+Extra Dbxopenodbc options in Connect string
+-------------------------------------------
+As well as the standard ODbc connect parameters, you can specify 
+options private to DbxOpenOdbc in the Database connect string.
+These options are stripped out before connect string is passed to Odbc.
+
+DbxOpenOdbc options (and their default settings if not specified)
+-----------------------------------------------------------------
+
+Boolean options - Specify 0, 1 or X for default
+
+ MetaData=1;            
+   Normally, we query the ODBC driver to check if it supports metadata.
+   When MetaData=0, we will never ask for metadata.
+   You may want to do this if asking for metadata hurts performance,
+   or if a particular ODBC driver has bugs in the metadata handling.
+ SchemaFilter=0; (default=1 for Oracle)
+   When 0 catalog entries for all schemas (owners) are passed back to SqlExpress.
+   Sometimes this can hit performance, particularly if you
+   have many tables in the catalog. When this option is 1, we only pass back
+   objects where schema (owner) matches the SchemaName connection option (which 
+   DbExpress automatally sets to be the User_Name of the connection).
+ TrimChar=0;            
+   Applies to FIXED LENGTH string fields only.
+   When =0, we pass fixed length strings back to DbExpress unchanged;
+   Normally the DBMS pads strings that are shorter than the defined length with spaces,
+   Sometimes this is undesirable (eg, for CHAR(5) you store "Hi", but get retrieve "Hi   ")
+   When =1, we strip off trailing spaces from fixed length strings.
+ MapInt64ToBcd=1;
+   When 1, Int64 is mapped to BCD. (This is the way Borland DbExpress drivers behave
+   since DbExpress does not natively support the Int64 field type).
+ MapSmallBcdToNative=0;
+   When 1, 4-digit integer BCD fields are mapped to Int16, 
+   9-digit integer BCD fields are mapped to Int32, and other BCD (decimal) fields 
+   with 10 or fewer signficant digits are mapped to Double. 
+   (BCD fields with 11 or more digits stay as BCD).
+ Catalog=1;  (default =0 for Informix, SQLLite, ThinkSQL)
+   ("Catalog" is the ODBC term for Database name, eg "Northwind" in MS SqlServer).
+   Normally, we check if the ODBC driver supports Catalog.
+   When 1, we pass back the name of the catalog to DbExpress when requested.
+   Sometimes the driver incorrectly indicates catalog support, or sometimes including
+   catalog info can be cumbersome, so set this option to 0 to prevent Catalog info.
+ IgnoreUnknownType=0;   (default=1 for Informix)
+   When 0, dbxoodbc will raise an exception if it fetches an unknown field type
+   When 1, any unkown field types will be ignored
+ MapCharAsBDE=0;    
+   When 1, String fields > 255 chars are passed back to DbExpress as string blobs.
+ EmptyStrParam=1; 
+   When 1, empty (ie string of zero length) are allowed. 
+   However. some ODBC drivers do not correctly handle string with zero length. 
+   For such drivers it is necessary to replace a zero-length string with null,
+   and we will do this automatically if EmptyStrParam=0
+ MixedFetch=0;          
+   When 1, enable Block Cursors even when fetching large fields
+ EnableBCD=1
+   When=0, BCD fields are mapped as Float (this is how BDE behaves)
+ MaxBCD=0
+   When 1, BCD fields of any length are mapped as 32 significant digits.
+   This is to handle cases where the ODBC driver returns wrong information.
+
+Integer options
+ BlobChunkSize=40960;
+ ConPacketSize=4096;
+
+N.B. Default settings listed above might change in the future
+
+
+Edward Benson
+2003-12-11

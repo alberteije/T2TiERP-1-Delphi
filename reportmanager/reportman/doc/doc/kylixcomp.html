@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Compiling in Kylix</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Installation</h2>
+<h3><b>Compiling Report Manager using Kylix</b></h3>
+<p>Download the components from sourceforge and unpack it to a directory:</p>
+<p><a href="http://sourceforge.net/projects/reportman" target="_blank">http://sourceforge.net/projects/reportman</a></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#00FFFF"><b>Version</b></td>
+    <td bgcolor="#00FFFF"><b>Packages</b></td>
+    <td bgcolor="#00FFFF"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td rowspan="3" bgcolor="#FFFFCC">
+      <p>Kylix 2 &amp;</p>
+      <p>Kylix 3 (Delphi)</p>
+      </td>
+    <td>rppack.dpk</td>
+    <td>Base package, non-visual, platform independent</td>
+  </tr>
+  <tr> 
+    <td>rppackv.dpk</td>
+    <td>Visual CLX package, for cross platform development</td>
+  </tr>
+  <tr> 
+    <td>rppackdesign.dpk</td>
+    <td>Visual CLX interface to Report Manager Designer and integration with the 
+      IDE </td>
+  </tr>
+</table>
+<table border="1">
+  <tr> 
+    <td bgcolor="#00FFFF"><b>Version</b></td>
+    <td bgcolor="#00FFFF"><b>Packages</b></td>
+    <td bgcolor="#00FFFF"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td rowspan="3" bgcolor="#FFFFCC"> 
+      <p>Kylix 3 (C++)</p>
+    </td>
+    <td >rppackb.bpk</td>
+    <td >Base package, non-visual, platform independent</td>
+  </tr>
+  <tr> 
+    <td >rppackvb.bpk*</td>
+    <td >Visual CLX package, for cross platform development</td>
+  </tr>
+  <tr> 
+    <td >rppackdesignb.bpk*</td>
+    <td >Visual CLX interface to Report Manager Designer</td>
+  </tr>
+</table>
+<p>* This packages need to be fixed to compile.</p>
+<p>After a Delphi update or a component library update, can be necessary to rebuild 
+  all the packages. Uninstall them and then install them in the same order.</p>
+<p></p>
+<p>You must install the packages in the correct order.</p>
+<p>In Delphi IDE select Open option of file menu, then select .dpk package files, 
+  click the install button.</p>
+<p>If you alter rpconf.inc, you can remove the dependeces of the disabled options, 
+  for example if you disable ADO support you can remove adortl dependence.</p>
+<p><img src="images/installpack.jpg" width="394" height="258"></p>
+<p>To compile your projetcs must add the report manager components directory to 
+  the library path.</p>
+<p>If you compile with runtime packages you must include the .bpl files generated 
+  with your application (just like other Borland packages)</p>
+<p>Report Manager is divided in packages because you can use it in different scenarios, 
+  for example for a console application you only need rppack.dpk, for Visual CLX 
+  applications you need rppackv.dpk, if you want to include the designer linked 
+  into your application you need rppackdesign.dpk.</p>
+<p>If you have problems see <a href="compileropts.html">compiling options</a>.</p>
+</body>
+</html>

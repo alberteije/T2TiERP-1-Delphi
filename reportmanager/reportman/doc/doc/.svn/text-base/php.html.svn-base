@@ -1,0 +1,261 @@
+<html>
+<head>
+<title>Using Report Manager from PHP</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Basic report design</h2>
+<h3><b>Using Report Manager from PHP</b></h3>
+<p>This is a sample provided by Rahul Tamrakar (rahultamrakar@yahoo.com)</p>
+<p>// calling report through any script (PHP,ASP,JSP) basically we need</p>
+<p> 1. full path of the web server<br>
+  2. path of the report manager<br>
+  3. Parameters -&gt; Report name , alias name &amp; rest of the parameter <br>
+  depend on report</p>
+<p> // creating a dynamic link to view report , passing parameter to report<br>
+  // if you click this link yiu will see the actual report</p>
+<p> &lt;a href=&quot;http://192.168.0.227/cgi-bin/repwebexe.bin/execute.pdf?reportname=%2Fr<br>
+  ptsalesorder&amp;aliasname=SALES+ORDER&amp; ParamSONO=$outSO&quot;&gt; View 
+  Report<br>
+  &lt;/a&gt;</p>
+<p><strong>File SalesOrder_Search.php</strong></p>
+<p>&lt;?php<br>
+  $ROOT_PATH = &quot;../&quot;;<br>
+  $PAGE_NAME = &quot;SalesOrder_Search&quot;;</p>
+<p> include($ROOT_PATH.&quot;Common/Config.inc&quot;);</p>
+<p> page_open(array(<br>
+  &quot;sess&quot; =&gt; &quot;MIS_Session&quot;,<br>
+  &quot;auth&quot; =&gt; &quot;MIS_Auth&quot;,<br>
+  &quot;perm&quot; =&gt; &quot;MIS_Perm&quot;,<br>
+  &quot;user&quot; =&gt; &quot;MIS_User&quot; ));</p>
+<p> // Dynamic Permission<br>
+  // eval(&quot;\$perm-&gt;permissions = &quot;.LoadPermission($PAGE_NAME).&quot;;&quot;);<br>
+  // eval(&quot;\$perm-&gt;check(\&quot;&quot;.PagePermission($gDB</p>
+<p> $db = new DB_MPOS;</p>
+<p> $t = new Template(&quot;./&quot;, &quot;keep&quot;);<br>
+  $t-&gt;set_file(array(&quot;form&quot; =&gt; $PAGE_NAME.&quot;.shtml&quot;));<br>
+  $t-&gt;set_block(&quot;form&quot;, &quot;ITEMS&quot;, &quot;ITEMS_List&quot;);</p>
+<p> // Have a Default Empty List<br>
+  $t-&gt;set_var(&quot;ITEMS_List&quot;, &quot;&quot;);</p>
+<p> if($Search==&quot;Search&quot;) {<br>
+  // Check to make sure that required files are in<br>
+  $Msg = &quot;&quot;;<br>
+  $ErrorFlag = 0;</p>
+<p> if(empty($inSTARTDATE) == false &amp;&amp; verify_date($inSTARTDATE) == &quot;&quot;) 
+  {<br>
+  // Invalid Date<br>
+  $Msg = PrepareErrorMsg($Msg, &quot;&lt;B&gt;Start Date&lt;/B&gt; is invliad&quot;);<br>
+  $ErrorFlag = 1;<br>
+  }<br>
+  if(empty($inENDDATE) == false &amp;&amp; verify_date($inENDDATE) == &quot;&quot;) 
+  {<br>
+  // Invalid Date<br>
+  $Msg = PrepareErrorMsg($Msg, &quot;&lt;B&gt;End Date&lt;/B&gt; is invliad&quot;);<br>
+  $ErrorFlag = 1;<br>
+  }</p>
+<p> if($ErrorFlag == 0) {<br>
+  // No Error</p>
+<p><br>
+  $SQL_Extra = &quot;&quot;;<br>
+  if($inLOCATION != 0) {<br>
+  $SQL_Extra = &quot;WHERE location_code = '$inLOCATION' &quot;;<br>
+  }<br>
+  if(!empty($inTERMINAL)) {<br>
+  if(empty($SQL_Extra)) { <br>
+  $SQL_Extra = &quot;WHERE terminal = '$inTERMINAL' &quot;;<br>
+  } else {<br>
+  $SQL_Extra = $SQL_Extra . &quot; AND terminal = '$inTERMINAL' &quot;;<br>
+  }<br>
+  }<br>
+  if(!empty($inSO)) {<br>
+  if(empty($SQL_Extra)) { <br>
+  $SQL_Extra = &quot;WHERE sales_order_no LIKE '$inSO%' &quot;;<br>
+  } else {<br>
+  $SQL_Extra = $SQL_Extra . &quot; AND sales_order_no LIKE '$inSO%' &quot;;<br>
+  }<br>
+  }<br>
+  if(!empty($inSTARTDATE)) {<br>
+  $PERIOD_START = format_date($inSTARTDATE). &quot; 00:00:00&quot;;<br>
+  if(empty($SQL_Extra)) { <br>
+  $SQL_Extra = &quot;WHERE date_in &gt;= '$PERIOD_START' &quot;;<br>
+  } else {<br>
+  $SQL_Extra = $SQL_Extra . &quot; AND date_in &gt;= '$PERIOD_START' &quot;;<br>
+  }<br>
+  }<br>
+  if(!empty($inENDDATE)) {<br>
+  $PERIOD_END = format_date($inENDDATE). &quot; 23:59:59&quot;;<br>
+  if(empty($SQL_Extra)) { <br>
+  $SQL_Extra = &quot;WHERE date_in &lt;= '$PERIOD_END' &quot;;<br>
+  } else {<br>
+  $SQL_Extra = $SQL_Extra . &quot; AND date_in &lt;= '$PERIOD_END' &quot;;<br>
+  }<br>
+  }<br>
+  if(!empty($inSESSION)) {<br>
+  if(empty($SQL_Extra)) { <br>
+  $SQL_Extra = &quot;WHERE session_id = '$inSESSION' &quot;;<br>
+  } else {<br>
+  $SQL_Extra = $SQL_Extra . &quot; AND session_id = '$inSESSION' &quot;;<br>
+  }<br>
+  }</p>
+<p> $Query = &quot;SELECT * FROM sales_order_master &quot; . $SQL_Extra.&quot;ORDER 
+  BY<br>
+  location_code, terminal, sales_order_no DESC&quot;;<br>
+  $db-&gt;query($Query);</p>
+<p> // Display Content in List<br>
+  while($db-&gt;next_record()){<br>
+  $MasterIndex = $db-&gt;f(&quot;master_index&quot;);<br>
+  $outSO = $db-&gt;f(&quot;sales_order_no&quot;);</p>
+<p> $outACTIONS = </p>
+<p><br>
+  // calling report through php basically we need </p>
+<p>// 1. full path of the web server<br>
+  // 2. path of the report manager<br>
+  // 3. Parameters -&gt; Repoprt name , alias name &amp; rest of the parameter 
+  depend on ur report</p>
+<p><br>
+  // creating a dynamic link to c report , passing parameter to report <br>
+  // if u click this link u will c the actule report </p>
+<p><br>
+  htmlLink(&quot;View&quot;,$gMAIN_PATH.&quot;cgi-bin/repwebexe.bin/execute.pdf?reportname=%2Frptsalesorder&amp;aliasname=SALES+ORDER&amp;ParamSONO=$outSO&quot;);</p>
+<p></p>
+<p> $outLOCATION = $db-&gt;f(&quot;location_code&quot;);<br>
+  $outTERMINAL = $db-&gt;f(&quot;terminal&quot;);<br>
+  $outSESSION = $db-&gt;f(&quot;session_id&quot;);<br>
+  $outDATE = substr(format_datetime($db-&gt;f(&quot;date_in&quot;)),0,10);<br>
+  $outSTATUS = $db-&gt;f(&quot;status&quot;);</p>
+<p> $t-&gt;set_var(array(<br>
+  &quot;ACTIONS&quot; =&gt; $outACTIONS,<br>
+  &quot;SO&quot; =&gt; $outSO,<br>
+  &quot;LOCATION&quot; =&gt; $outLOCATION,<br>
+  &quot;TERMINAL&quot; =&gt; $outTERMINAL,<br>
+  &quot;SESSION_ID&quot; =&gt; $outSESSION,<br>
+  &quot;DATE&quot; =&gt; $outDATE,<br>
+  &quot;STATUS&quot; =&gt; $outSTATUS));</p>
+<p> $t-&gt;parse(&quot;ITEMS_List&quot;, &quot;ITEMS&quot;, true);<br>
+  }<br>
+  }<br>
+  }</p>
+<p><br>
+  $t-&gt;set_var(array(<br>
+  &quot;MSG&quot; =&gt; DisplayMsg($Msg, $ErrorFlag),<br>
+  &quot;inLOCATION&quot; =&gt; htmlComboDB(&quot;inLOCATION&quot;, &quot;DB_MRETAIL&quot;,<br>
+  &quot;SELECT * FROM def_outlets&quot;,<br>
+  &quot;name&quot;, &quot;location_code&quot;, $inLOCATION),<br>
+  &quot;inTERMINAL&quot; =&gt; htmlText(&quot;inTERMINAL&quot;, $inTERMINAL, 10, 
+  10),<br>
+  &quot;inSO&quot; =&gt; htmlText(&quot;inSO&quot;, $inSO, 10, 10),<br>
+  &quot;inSESSION&quot; =&gt; htmlText(&quot;inSESSION&quot;, $inSESSION, 10, 
+  10),<br>
+  &quot;inORDER&quot; =&gt; htmlText(&quot;inORDER&quot;, $inORDER, 10,10),<br>
+  &quot;inSTARTDATE&quot; =&gt; htmlText(&quot;inSTARTDATE&quot;,$inSTARTDATE, 
+  10, 10).<br>
+  &quot;&lt;A NAME=\&quot;calposition1\&quot; ID=\&quot;calposition1\&quot;&gt;&lt;/A&gt;&quot;,<br>
+  &quot;Scalendar&quot; =&gt; GenerateCalendar(&quot;Calendar&quot;, &quot;DateSelector&quot;, 
+  <br>
+  &quot;document.forms[0].inSTARTDATE&quot;),<br>
+  &quot;inENDDATE&quot; =&gt; htmlText(&quot;inENDDATE&quot;, $inENDDATE, 10, 
+  10),<br>
+  &quot;Ecalendar&quot; =&gt; GenerateCalendar(&quot;Calendar&quot;, &quot;DateSelector2&quot;, 
+  <br>
+  &quot;document.forms[0].inENDDATE&quot;),<br>
+  &quot;HEADER_EXTRA&quot; =&gt; GenerateCalendarHeader($ROOT_PATH.&quot;Common/&quot;),<br>
+  &quot;FORM_ACTION&quot; =&gt; $PAGE_NAME.&quot;.php&quot; ));</p>
+<p> $t-&gt;pparse(&quot;output&quot;, array(&quot;form&quot;));</p>
+<p> page_close();<br>
+  ?&gt;<br>
+</p>
+<p><strong>File SalesOrder_Search.shtml</strong></p>
+<p>&lt;html&gt;<br>
+  &lt;head&gt;<br>
+  &lt;title&gt;Sales Order Search&lt;/title&gt;<br>
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-1&quot;&gt;<br>
+  &lt;link href=&quot;../Common/mPOS.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;<br>
+  &lt;/head&gt;<br>
+  {HEADER_EXTRA}<br>
+  &lt;body&gt;<br>
+  &lt;form action=&quot;{FORM_ACTION}&quot; method=&quot;post&quot; name=&quot;{FORM_NAME}&quot; 
+  id=&quot;{FORM_NAME}&quot;&gt;<br>
+  &lt;table width=&quot;480&quot; border=&quot;1&quot; bordercolor=&quot;#000000&quot;&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td class=&quot;DialogTitle&quot;&gt;MPOS Sales Order : Search&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;&lt;table width=&quot;100%&quot; border=&quot;0&quot; bgcolor=&quot;#CCCCCC&quot;&gt;<br>
+  &lt;tr&gt; <br>
+  &lt;td colspan=&quot;2&quot; class=&quot;FieldsHeader&quot;&gt;{MSG}&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt; <br>
+  &lt;td class=&quot;FieldsHeader&quot;&gt;Location No&lt;/td&gt;<br>
+  &lt;td class=&quot;Fields&quot;&gt;{inLOCATION}&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt; <br>
+  &lt;td class=&quot;FieldsHeader&quot;&gt;Terminal No&lt;/td&gt;<br>
+  &lt;td class=&quot;Fields&quot;&gt;{inTERMINAL}&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt; <br>
+  &lt;td class=&quot;FieldsHeader&quot;&gt;Sales Order No&lt;/td&gt;<br>
+  &lt;td class=&quot;Fields&quot;&gt;{inSO}&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt; <br>
+  &lt;td class=&quot;FieldsHeader&quot;&gt;Start Date&lt;/td&gt;<br>
+  &lt;td class=&quot;Fields&quot;&gt;{inSTARTDATE}{Scalendar}&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt; <br>
+  &lt;td class=&quot;FieldsHeader&quot;&gt;End Date&lt;/td&gt;<br>
+  &lt;td class=&quot;Fields&quot;&gt;{inENDDATE}{Ecalendar}&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt; <br>
+  &lt;td class=&quot;FieldsHeader&quot;&gt;Session ID&lt;/td&gt;<br>
+  &lt;td class=&quot;Fields&quot;&gt;{inSESSION}&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt; <br>
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;<br>
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt; <br>
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;<br>
+  &lt;td&gt;&lt;div align=&quot;right&quot;&gt; <br>
+  &lt;input name=&quot;Search&quot; type=&quot;submit&quot; id=&quot;Search&quot; 
+  value=&quot;Search&quot;&gt;<br>
+  &lt;/div&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;/table&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;/table&gt;<br>
+  &lt;p&gt;&amp;nbsp;&lt;/p&gt;<br>
+  &lt;table width=&quot;580&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; 
+  cellspacing=&quot;0&quot;&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td bgcolor=&quot;#000000&quot;&gt;<br>
+  &lt;table width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;1&quot; 
+  cellspacing=&quot;1&quot;&gt;<br>
+  &lt;tr class=&quot;ResultsHeader&quot;&gt; <br>
+  &lt;td&gt;Actions&lt;/td&gt;<br>
+  &lt;td&gt;Sales Order No&lt;/td&gt;<br>
+  &lt;td&gt;Location&lt;/td&gt;<br>
+  &lt;td&gt;Terminal&lt;/td&gt;<br>
+  &lt;td&gt;Session ID&lt;/td&gt;<br>
+  &lt;td&gt;Date&lt;/td&gt;<br>
+  &lt;td&gt;Status&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;!-- BEGIN ITEMS --&gt;<br>
+  &lt;tr class=&quot;Results&quot;&gt; <br>
+  &lt;td&gt;{ACTIONS}&lt;/td&gt;<br>
+  &lt;td&gt;{SO}&lt;/td&gt;<br>
+  &lt;td&gt;{LOCATION}&lt;/td&gt;<br>
+  &lt;td&gt;{TERMINAL}&lt;/td&gt;<br>
+  &lt;td&gt;{SESSION_ID}&lt;/td&gt;<br>
+  &lt;td&gt;{DATE}&lt;/td&gt;<br>
+  &lt;td&gt;{STATUS}&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;!-- END ITEMS --&gt;<br>
+  &lt;/table&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;/table&gt;<br>
+  &lt;/form&gt;<br>
+  &lt;/body&gt;<br>
+  &lt;/html&gt;<br>
+</p>
+</body>
+</html>

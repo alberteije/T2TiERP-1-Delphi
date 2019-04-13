@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>Common properties for text components</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Component Reference</h2>
+<h3>Common properties for text components</h3>
+<p><b>Sumary</b></p>
+<p>This properties applies to components with text properties like TRpLabel, TRpExpression 
+  and TRpChart</p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Internal Name</td>
+    <td bgcolor="#FFFFCC">Type</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>H.Alignment</td>
+    <td>Aligment</td>
+    <td>H.TextAlign</td>
+    <td>Horizontal alignment for the text inside the box defined by the component. 
+      The text can be aligned Left (also None), Right and Center. Bidi property 
+      can alter the meaning of this property. Internally stored as an integer.</td>
+  </tr>
+  <tr> 
+    <td>V.Alignment</td>
+    <td>VAlignment</td>
+    <td>V.TextAlign</td>
+    <td>Vertical alignment for the text inside the box defined by the component. 
+      The text can be aligned top (also None), bottom and center. Internally stored 
+      as an integer.</td>
+  </tr>
+  <tr> 
+    <td>WFont Name</td>
+    <td>WFontName</td>
+    <td>WideString</td>
+    <td>Font name (Type face family name) for Microsoft Windows operating systems, 
+      this property will be used when the engine runs in this operating system 
+      and the driver uses system fonts, usually GDI and Qt.</td>
+  </tr>
+  <tr> 
+    <td>LFont Name</td>
+    <td>LFontName</td>
+    <td>WideString</td>
+    <td>Font name (Type face family name) for Linux operating systems, this property 
+      will be used when the engine runs in this operating system and the driver 
+      uses system fonts, usually using Qt printing or display system.</td>
+  </tr>
+  <tr> 
+    <td>PDF Font</td>
+    <td>Type1Font</td>
+    <td>TRpType1Font</td>
+    <td>Font when the result is a PDF file, the generation of pdf files does not 
+      requires an X Server running in Linux, but can use only one of the standard 
+      PDF fonts in current implementation.</td>
+  </tr>
+  <tr> 
+    <td>Font size</td>
+    <td>FontSize</td>
+    <td>Integer</td>
+    <td>Font size in standard points unit, that is 72 points=1 inchess</td>
+  </tr>
+  <tr>
+    <td>Font step</td>
+    <td>FontStep</td>
+    <td>TRpSelectFontStep</td>
+    <td>Font step for dot matrix output and text output with a printer driver 
+      selected, the engine will select the nearest size</td>
+  </tr>
+  <tr> 
+    <td>Font Color</td>
+    <td>FontColor</td>
+    <td>Color</td>
+    <td>Font color, internally stored as a quad byte 0BGR integer</td>
+  </tr>
+  <tr> 
+    <td>Font Style</td>
+    <td>FontStyle</td>
+    <td>Integer</td>
+    <td>Combination of a set of possible effects for the font: bold, italic, underline 
+      and strikeout, all the styles are compatible. Internally stored as an Integer.</td>
+  </tr>
+  <tr> 
+    <td>Bidi</td>
+    <td>BidiModes</td>
+    <td>BidiMode</td>
+    <td> <p>Left to right reading language support (bidirectional). The Bidi property 
+        is stored for each language in the report page setup. Internally stored 
+        as a string list containing the value for each language. </p>
+      <table border="1">
+        <tr> 
+          <td bgcolor="#FFFFCC">Name</td>
+          <td bgcolor="#FFFFCC">Description</td>
+        </tr>
+        <tr> 
+          <td>Bidi No</td>
+          <td>No Bidi support enabled</td>
+        </tr>
+        <tr> 
+          <td>Bidi Partial</td>
+          <td>Bidi enabled, will print right to left text but no change in the 
+            H.Alignment property is done</td>
+        </tr>
+        <tr> 
+          <td>Bidi Full</td>
+          <td>Bidi enabled, will print right to left text and will reverse the 
+            H.Alignment property</td>
+        </tr>
+      </table>
+      <p><a href="bidi_behavior.html">Bidi support</a> is fully implemented in 
+        Windows but Qt library does not implement RightToLeft so in Linux is partially 
+        supported, also in PDF export is only partially supported.</p></td>
+  </tr>
+  <tr> 
+    <td>Back Color</td>
+    <td>BackColor</td>
+    <td>Color</td>
+    <td>Background color for the printed text, if Transparent property is set 
+      to false</td>
+  </tr>
+  <tr> 
+    <td>Transparent</td>
+    <td>Transparent</td>
+    <td>Boolean</td>
+    <td>If false a background color (Back Color) will be used for the text</td>
+  </tr>
+  <tr> 
+    <td>Cut Text</td>
+    <td>CutText</td>
+    <td>Boolean</td>
+    <td>If true, the text will be clipped to the defined box, else the text will 
+      expand outside the box, if word wrap is true, the widh of the box will be 
+      preserved.</td>
+  </tr>
+  <tr> 
+    <td>Word wrap</td>
+    <td>Wordwrap</td>
+    <td>Boolean</td>
+    <td>Will break the sentences in more lines if the lines does not fit in current 
+      box width.</td>
+  </tr>
+  <tr> 
+    <td>Single line</td>
+    <td>SingleLine</td>
+    <td>Boolean</td>
+    <td>Will force printing of text in a single line even if it contains line 
+      feeds. </td>
+  </tr>
+  <tr> 
+    <td>F.Rotation</td>
+    <td>FontRotation</td>
+    <td>Angle</td>
+    <td>Rotation angle in degrees for the text. Rotation in reverse clock wise, 
+      internally stored as an integer in degrees*10 scale.</td>
+  </tr>
+</table>
+<p><b>Developer info</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Internal component name</td>
+    <td>TRpGenTextComponent</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Parent class</td>
+    <td>TRpCommonPosComponent</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Unit name</td>
+    <td>rpprintitem.pas</td>
+  </tr>
+</table>
+<p>See also <a href="refcommon.html">Report components common properties</a>.</p>
+</body>
+</html>

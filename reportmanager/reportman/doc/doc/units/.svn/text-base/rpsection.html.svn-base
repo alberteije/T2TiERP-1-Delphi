@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Units documentation - rpsection.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpsection.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>TRpSection</b>, this is the container for printable 
+  components, a subreport contains a collection of sections, a section (band) 
+  contains a collection of printable components.</p>
+<h4>Types</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpSectionType</td>
+    <td>
+      <p>Enumeration (rpsecpheader, rpsecgheader, rpsecdetail, rpsecgfooter, rpsecpfooter)</p>
+      <p>Section type, page header, group header, detail, group footer and page 
+        footer.</p>
+    </td>
+  </tr>
+</table>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpSection</td>
+    <td>TRpCommonComponent</td>
+    <td>TRpSection implementation</td>
+  </tr>
+</table>
+</body>
+</html>

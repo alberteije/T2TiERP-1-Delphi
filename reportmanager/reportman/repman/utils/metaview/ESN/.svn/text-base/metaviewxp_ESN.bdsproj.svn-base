@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">W32ResourceDLL.Personality</Option>
+			<Option Name="ProjectType">ResourceDLL</Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{8938C225-EEA2-46F6-8AC8-B376C0109D58}</Option>
+		</Option>
+	</PersonalityInfo>
+	<W32ResourceDLL.Personality>
+		<Source>
+			<Source Name="MainSource">metaviewxp.dpr</Source>
+		</Source>
+		<Options>
+			<Options Name="BaseLang">3082</Options>
+			<Options Name="TargetName">..\metaviewxp.ESN</Options>
+			<Options Name="BRCC_IncludePath"></Options>
+			<Options Name="Company"></Options>
+			<Options Name="Configuration"></Options>
+			<Options Name="Copyright"></Options>
+			<Options Name="Description"></Options>
+			<Options Name="Trademark"></Options>
+			<Options Name="Product"></Options>
+			<Options Name="ProductVersion"></Options>
+			<Options Name="Title"></Options>
+			<Options Name="FileVersion"></Options>
+			<Options Name="Evidence"></Options>
+			<Options Name="KeyFile"></Options>
+			<Options Name="KeyName"></Options>
+		</Options>  <FileList>
+      <File FileName="C\Users\Toni\Documents\prog\toni\reportman\rpexceldriver.dfm" ContainerId="W32Form" ModuleName="rpexceldriver.dfm"/>
+      <File FileName="C\Users\Toni\Documents\prog\toni\reportman\rpfmainmetaviewvcl.dfm" ContainerId="W32Form" ModuleName="rpfmainmetaviewvcl.dfm"/>
+      <File FileName="C\Users\Toni\Documents\prog\toni\reportman\rpfmetaviewvcl.dfm" ContainerId="W32Form" ModuleName="rpfmetaviewvcl.dfm"/>
+      <File FileName="C\Users\Toni\Documents\prog\toni\reportman\rpgdidriver.dfm" ContainerId="W32Form" ModuleName="rpgdidriver.dfm"/>
+      <File FileName="C\Users\Toni\Documents\prog\toni\reportman\rpmdclitreevcl.dfm" ContainerId="W32Form" ModuleName="rpmdclitreevcl.dfm"/>
+      <File FileName="C\Users\Toni\Documents\prog\toni\reportman\rpmdfaboutvcl.dfm" ContainerId="W32Form" ModuleName="rpmdfaboutvcl.dfm"/>
+      <File FileName="C\Users\Toni\Documents\prog\toni\reportman\rpmdprintconfigvcl.dfm" ContainerId="W32Form" ModuleName="rpmdprintconfigvcl.dfm"/>
+      <File FileName="C\Users\Toni\Documents\prog\toni\reportman\rprfvparams.dfm" ContainerId="W32Form" ModuleName="rprfvparams.dfm"/>
+      <File FileName="metaviewxp_DRC.rc" ContainerId="W32RC" ModuleName="metaviewxp_DRC.rc"/>
+      <File FileName="vcl\DBLOGDLG.dfm" ContainerId="W32Form" ModuleName="DBLOGDLG.dfm"/>
+      <File FileName="vcl\DBPWDLG.dfm" ContainerId="W32Form" ModuleName="DBPWDLG.dfm"/>
+    </FileList>
+  </W32ResourceDLL.Personality>
+</BorlandProject>

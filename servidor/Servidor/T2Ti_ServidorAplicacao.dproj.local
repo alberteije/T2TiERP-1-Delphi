@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012/12/19 18:39:10.389.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\MovimentoCaixaBancoVO.pas=</Transaction>
+    <Transaction>2013/01/09 14:51:07.519.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Servidor\Controller\ViewFinLancamentosPagarController.pas=</Transaction>
+    <Transaction>2013/01/09 14:51:11.144.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ViewFinLancamentosPagarVO.pas=</Transaction>
+    <Transaction>2013/01/29 11:17:26.456.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\FinResumoTesourariaVO.pas=</Transaction>
+    <Transaction>2013/01/29 11:17:27.638.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Servidor\Controller\FinResumoTesourariaController.pas=</Transaction>
+    <Transaction>2013/01/29 11:19:59.607.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\FinTesourariaEmissaoChequeVO.pas=</Transaction>
+    <Transaction>2013/01/29 11:19:59.657.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Servidor\Controller\FinTesourariaEmissaoChequeController.pas=</Transaction>
+    <Transaction>2013/02/14 16:58:36.768.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Servidor\Controller\VendaComissaoController.pas=</Transaction>
+    <Transaction>2013/02/28 14:06:01.506.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Servidor\Controller\ProdutoLoteController.pas=</Transaction>
+    <Transaction>2013/02/28 16:31:26.532.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Servidor\Controller\ControleEstoqueController.pas=</Transaction>
+    <Transaction>2013/03/11 18:41:45.545.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\NfeDeducoesSafraVO.pas=</Transaction>
+    <Transaction>2013/04/02 17:02:06.095.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Servidor\Controller\TributIcmsCustomizadoController.pas=</Transaction>
+    <Transaction>2013/04/30 17:37:34.661.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Servidor\Controller\ViewSped0150Controller.pas=</Transaction>
+    <Transaction>2013/05/02 15:15:48.904.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ViewSped0150VO.pas=</Transaction>
+    <Transaction>2013/05/02 15:51:05.139.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ViewSped0200VO.pas=</Transaction>
+    <Transaction>2013/05/02 16:20:26.227.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ViewSped0150VO.pas=</Transaction>
+    <Transaction>2013/05/02 16:56:22.816.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ViewSpedNfeItemUnidadeVO.pas=</Transaction>
+    <Transaction>2013/05/15 17:54:19.184.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Servidor\Controller\FiscalFechamentoController.pas=</Transaction>
+    <Transaction>2013/05/16 18:45:52.070.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Servidor\Controller\FiscalObservacaoLancamentoController.pas=</Transaction>
+    <Transaction>2013/05/16 18:45:52.431.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Servidor\Controller\FiscalInformacaoComplementController.pas=</Transaction>
+    <Transaction>2013/05/20 14:56:59.309.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ViewSpedE110VO.pas=</Transaction>
+    <Transaction>2013/05/22 12:06:21.736.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Servidor\Controller\ContabilLancaProgramadoCabController.pas=</Transaction>
+    <Transaction>2013/05/23 14:49:53.847.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ViewSpedI150VO.pas=</Transaction>
+    <Transaction>2013/05/23 18:30:59.499.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Servidor\Controller\ClientePessoaController.pas=</Transaction>
+    <Transaction>2013/05/24 16:41:36.291.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\Dominios.pas=</Transaction>
+    <Transaction>2013/05/27 11:02:08.942.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\Dominios.pas=</Transaction>
+    <Transaction>2013/12/10 19:14:54.404.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Servidor\Controller\ViewPessoaColaboradorController.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2007/04/01 13:26:51.062.dproj,C:\prog\toni\cvsroot\reportman\reportman\rppackvcl_del2005.dproj=C:\prog\toni\cvsroot\reportman\reportman\rppackvcl_del2007.dproj</Transaction>
+    <Transaction>2008/08/07 22:19:31.625.pas,C:\prog\toni\cvsroot\reportman\reportman\rpvclreport.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.625.pas,C:\prog\toni\cvsroot\reportman\reportman\rpregvcl.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.640.pas,C:\prog\toni\cvsroot\reportman\reportman\rpexpredlgvcl.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.640.dfm,C:\prog\toni\cvsroot\reportman\reportman\rpexpredlgvcl.dfm=</Transaction>
+    <Transaction>2008/08/07 22:19:31.656.pas,C:\prog\toni\cvsroot\reportman\reportman\rppagesetupvcl.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.656.dfm,C:\prog\toni\cvsroot\reportman\reportman\rppagesetupvcl.dfm=</Transaction>
+    <Transaction>2008/08/07 22:19:31.671.pas,C:\prog\toni\cvsroot\reportman\reportman\rprfvparams.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.671.dfm,C:\prog\toni\cvsroot\reportman\reportman\rprfvparams.dfm=</Transaction>
+    <Transaction>2008/08/07 22:19:31.671.pas,C:\prog\toni\cvsroot\reportman\reportman\rpvpreview.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.671.dfm,C:\prog\toni\cvsroot\reportman\reportman\rpvpreview.dfm=</Transaction>
+    <Transaction>2008/08/07 22:19:31.687.pas,C:\prog\toni\cvsroot\reportman\reportman\rpgdidriver.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.687.dfm,C:\prog\toni\cvsroot\reportman\reportman\rpgdidriver.dfm=</Transaction>
+    <Transaction>2008/08/07 22:19:31.703.pas,C:\prog\toni\cvsroot\reportman\reportman\rpgdifonts.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.703.pas,C:\prog\toni\cvsroot\reportman\reportman\rpmdprintconfigvcl.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.703.dfm,C:\prog\toni\cvsroot\reportman\reportman\rpmdprintconfigvcl.dfm=</Transaction>
+    <Transaction>2008/08/07 22:19:31.718.pas,C:\prog\toni\cvsroot\reportman\reportman\rpfmainmetaviewvcl.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.718.dfm,C:\prog\toni\cvsroot\reportman\reportman\rpfmainmetaviewvcl.dfm=</Transaction>
+    <Transaction>2008/08/07 22:19:31.718.pas,C:\prog\toni\cvsroot\reportman\reportman\rpfmetaviewvcl.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.718.dfm,C:\prog\toni\cvsroot\reportman\reportman\rpfmetaviewvcl.dfm=</Transaction>
+    <Transaction>2008/08/07 22:19:31.734.pas,C:\prog\toni\cvsroot\reportman\reportman\rpmdclitreevcl.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.734.dfm,C:\prog\toni\cvsroot\reportman\reportman\rpmdclitreevcl.dfm=</Transaction>
+    <Transaction>2008/08/07 22:19:31.750.pas,C:\prog\toni\cvsroot\reportman\reportman\rpexceldriver.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.750.dfm,C:\prog\toni\cvsroot\reportman\reportman\rpexceldriver.dfm=</Transaction>
+    <Transaction>2008/08/07 22:19:31.750.pas,C:\prog\toni\cvsroot\reportman\reportman\rpmdfaboutvcl.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.750.dfm,C:\prog\toni\cvsroot\reportman\reportman\rpmdfaboutvcl.dfm=</Transaction>
+    <Transaction>2008/08/07 22:19:31.765.pas,C:\prog\toni\cvsroot\reportman\reportman\rpvgraphutils.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.765.pas,C:\prog\toni\cvsroot\reportman\reportman\rpmaskedit.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.781.pas,C:\prog\toni\cvsroot\reportman\reportman\rpgraphutilsvcl.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.781.dfm,C:\prog\toni\cvsroot\reportman\reportman\rpgraphutilsvcl.dfm=</Transaction>
+    <Transaction>2008/08/07 22:19:31.796.pas,C:\prog\toni\cvsroot\reportman\reportman\rpdbgridvcl.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.796.pas,C:\prog\toni\cvsroot\reportman\reportman\rppreviewcontrol.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.812.pas,C:\prog\toni\cvsroot\reportman\reportman\rppreviewmeta.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.812.pas,C:\prog\toni\cvsroot\reportman\reportman\rpmdfsearchvcl.pas=</Transaction>
+    <Transaction>2008/08/07 22:19:31.812.dfm,C:\prog\toni\cvsroot\reportman\reportman\rpmdfsearchvcl.dfm=</Transaction>
+    <Transaction>2008/08/07 22:19:31.828.pas,C:\prog\toni\cvsroot\reportman\reportman\rpdbdatetimepicker.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

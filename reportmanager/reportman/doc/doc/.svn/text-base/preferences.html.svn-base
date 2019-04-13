@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>Design preferences</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Basic report design</h2>
+<h3><b>Designer Preferences</b></h3>
+<p>Designer preferences are not stored for each report, but for each machine or 
+  user where Report Manager Designer is installed.</p>
+<p>You can switch between centimeters and inchess measurement units:</p>
+<p><img src="images/preferences.jpg" width="610" height="401"></p>
+<p>Note that the measurement properties of items and sections are expressed in 
+  the unit you select here.</p>
+<p>In Microsoft Windows you can select to print using Qt/CLX library or GDI/VCL 
+  library (a report definition is platform and device independent).</p>
+<p>Here is a table of differences between the drivers:</p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Feature</b></td>
+    <td bgcolor="#FFFFCC"><b>Qt/CLX Driver</b></td>
+    <td bgcolor="#FFFFCC"><b>GDI Windows driver</b></td>
+  </tr>
+  <tr> 
+    <td>Cross Platform</td>
+    <td>Yes</td>
+    <td>No</td>
+  </tr>
+  <tr> 
+    <td>Fixed resolution to 100 dpi</td>
+    <td>Yes</td>
+    <td>No</td>
+  </tr>
+  <tr> 
+    <td>Printer resolution</td>
+    <td>No</td>
+    <td>Yes</td>
+  </tr>
+  <tr> 
+    <td>Can use device fonts</td>
+    <td>No</td>
+    <td>Yes</td>
+  </tr>
+  <tr> 
+    <td>Knows exact printable area</td>
+    <td>No</td>
+    <td>Yes</td>
+  </tr>
+  <tr> 
+    <td>Exactly positioning</td>
+    <td>Driver dependent</td>
+    <td>Yes</td>
+  </tr>
+  <tr> 
+    <td>Pen patterns width variable pen widths (dash, dot...)</td>
+    <td>Yes</td>
+    <td>No</td>
+  </tr>
+  <tr> 
+    <td>System metafile capable</td>
+    <td>No</td>
+    <td>Yes</td>
+  </tr>
+  <tr> 
+    <td>Needs ghostcript in Linux</td>
+    <td>Yes</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>Custom page sizes</td>
+    <td>No</td>
+    <td>Yes*</td>
+  </tr>
+</table>
+<p>* See <a href="knownissues.html">known issues and workarounds</a></p>
+<p>Usually Windows GDI performs better drawing features and precision (with a 
+  good device driver), but it's not cross platform.</p>
+<p>When you print/preview using GDI driver you are obtaining the same result as 
+  using TVCLReport Delphi/Builder component.</p>
+<p>When you print/prevew using Qt driver you are obtaining the same result as 
+  using TCLXDriver.</p>
+<p><b>Qt System print dialog</b></p>
+<p>Selecting this option (default) the print dialog is the Qt system print dialog 
+  in Linux and Windows print dialog in Windows, if you disable this option a custom 
+  Report Manager engine is shown.</p>
+<p><b>Status Bar</b></p>
+<p>Selecting this option (default) the status bar is shown. You can obtain a little 
+  more workspace disabling the status bar.</p>
+<p><b>Qt Widget Style</b></p>
+<p>Qt widget style is set initially to default, so in Microsoft Windows the widget 
+  appearance is the same as Windows 9x/NT/Millenium/2000 but in Linux the widget 
+  style is the default system widget style (usually windows).</p>
+<p>You can select the widget style you like, it will be remembered by Report Manager 
+  Designer, here are two samples:</p>
+<p><img src="images/preferences2.jpg" width="704" height="461"></p>
+<p><img src="images/preferences3.jpg" width="704" height="461"></p>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Subreport  properties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Component Reference</h2>
+<h3>Subreport properties</h3>
+<p><b>Sumary</b></p>
+<p>A report contains at least one subreport, and a subreport contains at least 
+  one detail.</p>
+<p><b>Properties for subreports</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Internal Name</td>
+    <td bgcolor="#FFFFCC">Type</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>Main dataset</td>
+    <td>Alias</td>
+    <td>String</td>
+    <td>Alias name for the dataset the subreport will use to iterate (repeat) 
+      the detail/s section/s. If a subreport have this property empty it will 
+      print each detail section once. You can use more than one subreport and 
+      more than one main dataset to print more than one dataset sequentially or 
+      in a master detail relationship (child subreport property of a section)</td>
+  </tr>
+  <tr> 
+    <td>P.Only Data avail.</td>
+    <td>PrintOnlyIfDataAvailable</td>
+    <td>Boolean</td>
+    <td>If this property is true and a Main dataset have been assigned, the subreport 
+      will not print any of its sections if the dataset is empty.</td>
+  </tr>
+</table>
+<p><b>Developer info</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Internal component name</td>
+    <td>TRpSubReport</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Parent class</td>
+    <td>TComponent</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Unit name</td>
+    <td>rpsubreport.pas</td>
+  </tr>
+</table>
+<p>There is a collection of subreports inside a TRpReport component, to access 
+  the first subreport you can write:</p>
+<p>VCLReport1.Report.SubReports.Items[0].Subreport</p>
+</body>
+</html>

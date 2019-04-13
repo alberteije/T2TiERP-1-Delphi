@@ -1,0 +1,247 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+<head>
+  <title>Report Manager - What is new</title>
+</head>
+<body>
+<h2>Release notes</h2>
+<h3><b>What is new</b></h3>
+<p>Version 2.9 include this new features (January 2010)</p>
+<ul>
+  <li>Unicode support for some database drivers (DAO included, if the driver supports it)</li>
+  <li>Enhaced compatibility with Windows 7 and Vista, some video drivers worked incorrectly whe Themes were enabled.</li>
+  <li>Database drivers updated to the provided by Delphi 2010 compiler (DBExpress)</li>
+  <li>.Net library updated, dot matrix printer support and bug fixes.</li>
+  <li>Enhaced unicode support for PDF output. </li>
+</ul>
+<p>Version 2.8 include this new features (June 2009) </p>
+<ul>
+  <li>Paral.lel unions, capability to merge two datasets into a single one sharing some columns (easy multi-dataset columnar reports)</li>
+  <li>New parameter type, Initial value, to allow parameter initialization when the report is read, before execution and before showing parameters. </li>
+  <li>Updated zeos database drivers (Windows-Linux)</li>
+  <li>Windows Vista compatibility (some video drivers caused problems before)</li>
+  <li>Updated database drivers (Windows).</li>
+  <li>Enhaced Dot net port. (Excel output implemented,Preview is now working in Linux because new Mono releases). </li>
+  <li>Added compatibility for Delphi 2007/C++Builder 2007 and Delphi 2009</li>
+  <li>Added compatibility for Indy version 10.</li>
+  <li>Bugfixes and small enhacements in the Designer. </li>
+</ul>
+<p>Version 2.7e include this new features (March 2008) </p>
+<ul>
+  <li>Enhaced Dot net 1.1 and 2.0 support, preview and print working in latest linux Mono releases. </li>
+  <li>Simplified text search engine in preview.</li>
+  <li>Small features for ActiveX and GNU C library. </li>
+  <li>Bugfixes and performance enhacements. </li>
+</ul>
+<p>Version 2.7 include this new features (September 2007) </p>
+<ul>
+  <li>Enhaced Dot net 1.1 and 2.0 support</li>
+  <li>Design scale (zoom in and out while designing the report) </li>
+  <li>Adding filters to Mybase driver using parameters.</li>
+  <li>Adobe Reader 8 compatibility fixes (Truetype linking and embedding)</li>
+  <li>Bugfixes </li>
+</ul>
+<p>Version 2.6e include this new features</p>
+<ul>
+  <li>Enhaced Dot net 1.1 and 2.0 support</li>
+  <li>String substitution expression parameter type</li>
+  <li>Bugfixes</li>
+</ul>
+<p>Version 2.6 include this new features</p>
+<ul>
+  <li>Dot net port, supporting Dot net 1.1 and 2.0</li>
+  <li>Descriptions and hints for parameters can now be translated to multiple 
+    languages in the same way report labels are.</li>
+  <li>Parameter validation expression: allow checking for conditions when user 
+    enter parameters (also supported on web server)</li>
+  <li>Shared image property, to optimize size of pdfs and metafiles.</li>
+  <li>Enhaced web server, language setting is available as a input parameter.</li>
+  <li>Bugfixes</li>
+</ul>
+<p>Version 2.5d include this new features (February 2005)</p>
+<ul>
+  <li>Enhaced C# port</li>
+  <li>UUEncoded image support</li>
+  <li>In Windows, <a href="webserverinstall.html">environment variables</a> allow 
+    the load for decimal separator, date separator etc</li>
+  <li>Bugfixes</li>
+</ul>
+<p>Version 2.5 include this new features (December 2005)</p>
+<ul>
+  <li>Preview window can now show more than one page at a time, right click on 
+    entire page icon</li>
+  <li>Search dataset for parameters, allowing the user to search for parameter 
+    values</li>
+  <li>A C# port of the engine can be tested, at data configuration select <a href="./dotnetport.html">dot 
+    net driver</a>.</li>
+  <li>Bugfixes (external sections and minors)</li>
+  <li>See http://reportman.sourceforge.net/version/dotnetport.html for more information</li>
+</ul>
+<p>Version 2.4 include this new features (May 2005)</p>
+<ul>
+  <li>New parameter type, multiple selection type parameter.</li>
+  <li>Search dataset for parameters, allowing the user to search for parameter 
+    values</li>
+  <li>Parameter dbxconnections can be used to alter path to configuration file</li>
+  <li>Enhacements on charting</li>
+  <li>Experimental Unicode fonts truetype support on PDF export.</li>
+  <li>Report file can be stored as XML (prefered save format), experimental.</li>
+  <li>Bugfixes</li>
+</ul>
+<p>Version 2.3 include this new features (January 2005)</p>
+<ul>
+  <li>Great performance enhacements in Linux, linked querys, subreport and others.</li>
+  <li>Startup performance enhacement for all command line tools.</li>
+  <li>Truetype font embedding speed up</li>
+  <li>Enhaced ActiveX control, printer selection, saving metafiles...</li>
+  <li>Other minor enhacements (default font in designer,optimized tiled draw, 
+    obj.inspector font selection...)</li>
+  <li>Partial unicode enabled designer (object inspector) for Windows NT systems, 
+    Linux already supports this.</li>
+  <li>Group page count element implementation.</li>
+  <li>PDF417 barcode printing (2d barcode allowing 1024 bytes per barcode)</li>
+  <li>Enhaced export to Excel (single sheet-multiple sheet)</li>
+  <li>Use environment variable (REPMANUSEKPRINTER=true) to integrate the print 
+    engine with KDE.</li>
+  <li>Remote report parameter ask and modify, from components, ActiveX and shared 
+    library API. </li>
+  <li>Allow different page sizes, orientations and paper bins, in a single document 
+    (Windows,PDF, experimental)</li>
+  <li>Report language selection at runtime (M.LANGUAGE for example to print several 
+    invoices in diferent languages in the same report)</li>
+  <li>New expression evaluator functions (TextHeight, ...)</li>
+  <li>Delphi 2005 support</li>
+  <li>Since 2.2 version, for client/server report comunications, the client application 
+    must be at least same version as server, older versions require same version 
+    in client and server to work.</li>
+  <li>Bugfixes</li>
+</ul>
+<p>Version 2.2 include this new features (August 29th 2004)</p>
+<ul>
+  <li>Truetype font linking and embedding (also Type1 linking in Linux)</li>
+  <li>Master fields for <a href="inmemorydata.html">in memory tables</a>, to enhace 
+    query link performance</li>
+  <li>Performance enhacement in DBExpress linked querys</li>
+  <li>Paper source selection and duplex printing at page configuration</li>
+  <li>Added functions to exp.evaluator (chartrange, getvaluefromsql, imageop,barcodeop)</li>
+  <li>Other minor enhacements (default font in designer,optimized tiled draw...)</li>
+  <li>Important bugfixes in .Net native version</li>
+  <li>Bugfixes</li>
+</ul>
+<p>Version 2.1 include this new features (May 14th 2004)</p>
+<ul>
+  <li>Background image in sections for easy form filling and printing.</li>
+  <li>Custom output, generate custom text file format output</li>
+  <li>E-mail report (pdf) feature from preview</li>
+  <li>Expanded align properties (all client alignment, top-down alignment...), 
+    this will allow flexible drawings in dinamically resized sections.</li>
+  <li>Child subreport support for repeatable group header sections.</li>
+  <li>Enhaced Teechart properties</li>
+  <li>New export formats: Comma Separated Values, Scalable Vector Graphics, Custom 
+    text output</li>
+  <li>Italian, german and catalan language support.</li>
+  <li>Enhaced TCP Server configuration, manage active connections.</li>
+  <li>New Zeos library version, stable 6.1</li>
+  <li>Bug fixes</li>
+</ul>
+<p>Version 2.0 include this new features (December 22th 2004)</p>
+<ul>
+  <li>Native .Net support, compiled with <strong><a href="delphinetcomp.html">Delphi 
+    for .Net</a></strong><a href="delphinetcomp.html">.</a></li>
+  <li>HTML output</li>
+  <li><a href="replibraries.html" target="_blank">Full Report Library</a> support 
+    (reports stored inside database tables with a tree structure)</li>
+  <li>Enhaced <strong>security model for web server and TCP report server</strong></li>
+  <li>Enhaced ActiveX</li>
+  <li>Enhaced designer,data browser with <strong>drag&amp;drop feature</strong>, 
+    categorized object inspector, documentation and more.</li>
+  <li>Report compiler (Windows only), generate a executable independent report 
+    (About 300Kbytes).</li>
+  <li>Enhaced <a href="building.html" target="_blank">Borland C++ Builder 6 support</a>.</li>
+  <li>Some of minor features not listed here.</li>
+  <li>Notes: This upgrade requires updates for client and server, that is a 1.6 
+    client does not work with a 2.0 server and a 2.0 client does not work with 
+    1.6 server.</li>
+</ul>
+<p>Version 1.6 include this new features (August 7th 2003)</p>
+<ul>
+  <li><strong><a href="serversmp.html">Multiprocessor</a></strong> support (smp).</li>
+  <li>New output driver, <strong>text only with printer escape codes</strong> 
+    to print lighting fast in any dot matrix printer, in Windows and Linux, also 
+    to save the report result as plain text.</li>
+  <li>New <strong>shared libraries</strong> libreportmanapi.so and libreportmanapiqt.so 
+    <a href="gnuc.html">to access the engine with <strong>GNU C</strong></a> and 
+    any language capable of calling dynamic link library functions (Reportman.ocx 
+    for Windows) </li>
+  <li><a href="http://zeoslib.sourceforge.net" target="_blank"><strong>Zeos library</strong></a> 
+    drivers support</li>
+  <li><strong>Excel export</strong> support for Microsoft Windows</li>
+  <li>Allow report definition streaming in three formats binary-zlib, binary and 
+    text , so you can track changes in your reports with cvs</li>
+  <li><strong>Plain text</strong> file input support <strong>as a database file</strong> 
+    with visual configuration dialog</li>
+  <li>New method for VCL components and ActiveX, <strong>executeremote</strong> 
+    to execute reports stored in report servers, also available in ActiveX and 
+    GNU C interface.</li>
+  <li>New property editors for Delphi 5 (TRpAlias)</li>
+  <li><strong>Enhaced command line tools</strong> (-preview -pdialog options added), 
+    all tools can work now with standard input and standard ouput.</li>
+  <li><a href="compsiterep.html">ActiveX composite reports</a> feature.</li>
+  <li>New methods for drawing text and graphic elements usable from the expression 
+    evaluator.</li>
+  <li>Enhaced designer - New database connections/datasets configuration dialog, 
+    active help in properties in the object inspector...</li>
+  <li>Enhaced support for Borland C++ Builder (added CLX package and more documentation)</li>
+  <li>Enhaced documentation</li>
+  <li>Portuguesse language support thanks to <a href="mailto:warleialves@brfree.com.br">Warlei 
+    Alves</a></li>
+  <li>Bug fixes</li>
+  <li>Report Manager is now a <a href="http://www.delphi-jedi.org" target="_blank"><strong>Project 
+    Jedi Alliance</strong></a> member</li>
+  <li>Notes: This upgrade requires updates for client and server, that is a 1.5 
+    client does not work with a 1.6 server and a 1.6 client does not work with 
+    1.5 server. This is also true for ActiveX Internet explorer plugin. Replace 
+    dbxdrivers old file with the new one for zeos support.</li>
+</ul>
+<p>Version 1.5 include this new features (April 2th 2004)</p>
+<ul>
+  <li>Client side unions with grouping feature to support cross database dataset 
+    unions</li>
+  <li>Command line tools support now the parameter -paramPARAMNAME=paramvalue</li>
+  <li>Parameter values from alist of provided values</li>
+  <li>Full Bidi support for MS Windows, partial Bidi support for PDF and Linux.</li>
+  <li>Global scope page headers and footers</li>
+  <li>Printing large text across multiple pages is now implemented (Multi Page 
+    property)</li>
+  <li>Barcode square rotation</li>
+  <li>ActiveX interface to report parameters and parameter information</li>
+  <li>Enhaced Designer</li>
+</ul>
+      
+<p>Version 1.4 include this new features</p>
+<ul>
+  <li>Positioning of sections based on expressions</li>
+  <li>Page positioning of sections based on expressions (two pass report required)</li>
+  <li>The features above allow printing of datasets in paral.lel.</li>
+  <li>Bugfix to support two pass report in web/tcp server</li>
+  <li>French language support, thanks to Jean Louis Argente (argente@alussinan.org)</li>
+  <li>Report libraries, creating, altering, storing reports inside databases</li>
+  <li>Report wizard</li>
+</ul>
+<p>Version 1.3 include this new features:</p>
+<ul>
+  <li>Web report server</li>
+  <li>TeeChart Support</li>
+  <li>External sections (database streamable)</li>
+  <li>Child-cascade subreports</li>
+  <li>Enhaced Adobe PDF image support</li>
+  <li>Enhaced documentation</li>
+  <li>Enhaced expression build wizard</li>
+  <li>Small Bugfixes</li>
+  <li>OnBeforePrint event handling (Delphi/Kylix/Builder)</li>
+  <li>Enhaced <a href="http://reportman.sourceforge.net" target="_blank">main 
+    website</a></li>
+  <li>Added source code units documentation</li>
+</ul>
+</body>
+</html>

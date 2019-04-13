@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Installing Report Manager Server</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Installation</h2>
+<h3>Report Manager Server</h3>
+<p><b>Installation in Microsoft Windows as a Service</b></p>
+<p>If you are running Windows NT/2000/XP you can install the server as a service, 
+  run the tool to install service with Administrator rights in the server machine 
+  .You can use also this tool to uninstall the service.</p>
+<p><img src="images/repserverinstall.jpg" width="447" height="399"></p>
+<p>After installing the service you can set startup options in the same way as 
+  other services.</p>
+<p>For security issues you should provide an account name and password with rights 
+  to run services and privileges to read directories where the reports are stored. 
+  If you left blank the user name, the service will start as LocalSystem, but 
+  not all Windows versions support this feature.</p>
+<p><b>Installation in Microsoft Windows as a standalone application</b></p>
+<p>If you are running Windows 98/Me you can add a shortcut to reportserverapp.exe 
+  in the Start group so it's started after logging. You can also execute reportservercon.exe, 
+  to start it as a console application.</p>
+<p><b>Installation in Linux as a standalone application</b></p>
+<p>To start the server you must execute reportserverapp.sh or reporservercon.sh 
+  script, the first need an X Server running because is a X application.</p>
+<p><b>Installation in Linux as a service</b></p>
+<p>You can run the report server at boot time, the procedure depends in you linux 
+  distribution, usually the runlevel to start the server is 3 (console network), 
+  that is execute reportservercon.sh in a startup script.</p>
+<p><strong>Installation in mltiprocessor or hyperthreading technology machines</strong></p>
+<p>You must place the printreptopdf.exe in the same directory of the server. The 
+  server will spawn multple processes and use all the processors available (one 
+  for each execution petittion and one multithreaded for the server itself).</p>
+<p>After the installation you must <a href="serverconfig.html">configure the service</a>.</p>
+</body>
+</html>

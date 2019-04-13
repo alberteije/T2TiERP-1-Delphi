@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Units documentation - rpprintitem.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpprintitem.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>base classes for any printable report component</b>, 
+  defines general properties and virtual methods.</p>
+<h4>Types</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpPosAlign</td>
+    <td>
+      <p>Enumeration (rpalnone,rpalbottom,rpalright,rpalbotright)</p>
+      <p>Alignment inside a section of print components </p>
+    </td>
+  </tr>
+</table>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpCommonComponent</td>
+    <td>TComponent</td>
+    <td>Defines basic functionality for a print component</td>
+  </tr>
+  <tr> 
+    <td>TRpCommonPosComponent</td>
+    <td>TRpCommonComponent</td>
+    <td>Defines positioned component</td>
+  </tr>
+  <tr> 
+    <td>TRpGenTextComponent</td>
+    <td>TRpCommonPosComponent</td>
+    <td>Defines a general text enabled print component</td>
+  </tr>
+  <tr> 
+    <td>TRpCommonListItem</td>
+    <td>TCollectionItem</td>
+    <td>Item with a reference to a TRpCommon component to store the components 
+      related to another component (sections)</td>
+  </tr>
+  <tr>
+    <td>TRpCommonList</td>
+    <td>TCollection</td>
+    <td>Collection of TRpCommonComponents</td>
+  </tr>
+</table>
+</body>
+</html>

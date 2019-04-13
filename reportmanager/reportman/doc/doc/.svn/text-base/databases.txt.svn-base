@@ -1,0 +1,15 @@
+Borland DBExpress is a new multi-database, server-based, database driver technology, it's simple  and thin,so database drivers are usually small and efficient. Each database driver needs a  diferent shared object library, you can also find third party dbexpress database drivers. By  default you can connect to most common sql databases, but also a ODBC (OpenODBC) driver is  provided to allow connection to any ODBC compliant database. It's available in Windows and Linux  (unixODBC required in Linux).
+
+
+B.Mybase and text files is a file based database driver, it can read XML database (Borland TClientDataset specification) and plain text files, the path to the XML/text file can be specified in the Database property of dbxconnections file. For text files you can specify a field configuration file where the fields position-type-size are stored, you can use the provided tool to generate this configuration file.
+
+Interbase Express -IBX allows fast connections to any Interbase and Firebird database, it does not need any shared object library, only Firebird/Interbase client library. The database configuration (database path, language driver, user and password) is read from dbxconnections configuration file. It's available in Windows and Linux.
+
+
+
+Borland Database Engine is a mature engine allowing connexions to a wide range of databases,  including file based (DBase-FoxPro-Paradox) and server based (any SQL Link installed on the  system). It can allows connection to any ODBC database. Requires Borland Database Engine installed on your system, from control panel you can add,  remove BDE database aliases, the database connection is the BDE alias name, the password if  required is read from dbxconnections file. It's available only in Microsoft Windows.
+
+Microsoft DAO - Microsoft Data Access Components is an interface to connect databases using Microsoft DAO, you can build a connection string using the Connection Wizard or write the connection string manually. The connection string can contain user-password-lang.drivers, so no more configuration is read from any external file. This connection driver allow you also to connect to any ODBC data source, but it's recommended to use OLEDB database drivers. It's available only in Microsoft Windows
+
+Interbase Objects -IBO is a Delphi native database driver (and more) by Jason Wharton, this is a commercial product so it's supported but not distributed with Report Manager. It's only available in Windows.
+

@@ -1,0 +1,104 @@
+unit UIntegracaoPDV;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, Generics.Collections, StdCtrls, Buttons, FileCtrl,
+  JvComponentBase, JvTrayIcon;
+
+type
+  TFIntegracaoPDV = class(TForm)
+    TimeIntegracao: TTimer;
+    LabelContador: TLabel;
+    ListTXT: TFileListBox;
+    JvTrayIcon1: TJvTrayIcon;
+    procedure FormCreate(Sender: TObject);
+    procedure TimeIntegracaoTimer(Sender: TObject);
+    function ImportaPDV:boolean;
+  private
+    Contador:integer;
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FIntegracaoPDV: TFIntegracaoPDV;
+
+implementation
+
+uses Biblioteca,  UDataModule, ImportaController, LogImportacaoController;
+
+
+{$R *.dfm}
+
+procedure TFIntegracaoPDV.FormCreate(Sender: TObject);
+begin
+  Contador:=0;
+  LabelContador.Caption:='';
+  TimeIntegracao.Enabled:=True;
+end;
+
+function TFIntegracaoPDV.ImportaPDV:boolean;
+var
+  RemoteApp, LocalApp : string;
+  i:integer;
+  iContaTXT: Integer;
+  DataTXT: TDate;
+begin
+  try
+    TimeIntegracao.Enabled:=False;
+    TImportaController.ConsultaDataAtualizacao(now);
+    try
+      Result:=false;
+      ListTXT.Mask      := '*.txt';
+      ListTXT.Directory := FDataModule.RemoteAppPath;
+      ListTXT.Update;
+
+      LocalApp:=  ExtractFilePath(Application.ExeName)+'Script\vendas.txt';
+      for i := 1 to (StrToInt(FDataModule.QtdeECF)) do
+      begin
+        for iContaTXT := 0 to ListTXT.Count -1 do
+        begin
+          RemoteApp :=  FDataModule.RemoteAppPath+RemoteApp+ListTXT.Items[iContaTXT];
+          if not FileExists(FDataModule.RemoteAppPath+'Semaforo') then
+          begin
+            if FileExists(RemoteApp) then
+            begin
+              if CopyFile(PChar(RemoteApp), PChar(LocalApp), False) then
+              begin
+                if TImportaController.ImportaDadosDoPDV(LocalApp) then
+                begin
+                  // DataTXT := StrToDate(StringReplace(Copy(ListTXT.Items[iContaTXT],6,10),'-','/',[rfReplaceAll]));
+                  //if DataTXT < date then
+                  DeleteFile(Pchar(RemoteApp));
+                end;
+              end;
+            end;
+          end;
+          RemoteApp := '';
+        end;
+      end;
+    except
+      TLogImportacaoController.GravaLogImportacao(LocalApp);
+    end;
+  finally
+    Result:= True;
+  end;
+end;
+
+
+procedure TFIntegracaoPDV.TimeIntegracaoTimer(Sender: TObject);
+
+begin
+  if ImportaPDV then
+  begin
+    inc(Contador);
+    LabelContador.Caption:=IntToStr(contador);
+    TimeIntegracao.Enabled:=true;
+  end;
+
+end;
+
+end.

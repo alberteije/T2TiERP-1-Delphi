@@ -1,0 +1,204 @@
+<html>
+<head>
+<title>Print output and design for dot matrix and pos devices</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Advanced report design</h2>
+<h3>Print output and design for dot matrix and pos devices</h3>
+
+<p><strong>Page setup</strong></p>
+<p>Page size is very important to configure, else you will obtain longer lines 
+  and longer pages and not the correct output.</p>
+<p>You can define margins to 0, because the page size will define the practical 
+  print out of the printer, that is the printable area.</p>
+<p>For a page width of 80 columns at 10cpi the page width is calculated:</p>
+<p><strong>Page Width=80 characters</strong> with/ 10 characters per inches = 
+  <strong>8 inchess</strong> = 8*2.54 cms = <strong>20.32 cms</strong></p>
+<p>For a page height of 66 lines:</p>
+<p><strong>Page Height=66 lines</strong> / 6 lines per inches = <strong>11 inchess</strong> 
+  = 11*2.54 cms = <strong>27.94 cms</strong> </p>
+<p>Select user defined paper size and enter the correct values.</p>
+<p>For <strong>thermal receipt printers</strong> usually the font A is 12cpi and 
+  font B is 17 cpi, so set a page with of 42 /12cpi=<strong>3,3 inchess=8..6cms.</strong> 
+  The characters for font B are 3.3*17=56 at this size. The physical real page 
+  width can differ. </p>
+<p>For <strong>impact receipt printers</strong> usually the font A is 10cpi and 
+  font B is 12 cpi, so set a page with of 33/10cpi=<strong>3,3 inchess=8..6cms.</strong> 
+  The characters for font B are 3.3*12=40 at this size. The physical real page 
+  width can differ. </p>
+<p>For receipt printers you can establish a <strong>page length of 11 inchess=27.94 
+  cms</strong>. If you don't use page headers-footers, or repeatable group headers, 
+  will be just like there was not page breaks, the ticket printer driver does 
+  not send form feeds.</p>
+<p><strong>Activate text out</strong></p>
+<p>To automatically activate a report to print as a text (without driver interaction 
+  or filtering) with escape code secuences you can go to page setup, select that 
+  the report will be output to <b>the character printer (default EPSON driver)</b> 
+  or select the output to ticket printer (default EPSONTMU210 driver).</p>
+<p>If you have problems or want to enable better quality escape codes (bold,italic, 
+  12cpi, 20cpi) you can select another driver by clicking at printer setup button. 
+  You can select a printer in the list and the driver it will use. If you don't 
+  select a driver, standard output will be used. </p>
+<p>You <b>can also select a printer queue</b> (system printer) so the output will be 
+  done to the selected printer.</p>
+<p>At <b>page setup you can force cash drawer open </b>(the engine will send the 
+  escape command to the printer), before or after printing the report.</p>
+<p><b>Microsoft Windows additonal features</b></p>
+<p>With Microsoft Windows and a good quality print driver installed you can still 
+  use the driver to provide fast printing with printer native fonts. You must 
+  select the blank text driver and <b>check the Device fonts option</b>.</p>
+<p>With this method, the engine will select the best affordable font for the texts, 
+  but the graphic elements and images will be printed also (usually the graphic 
+  elements print slow on impact printers).</p>
+<p>Note this print method does not output lines, but calls Windows API for any 
+  graphic and text operation, and for page size selection, the source of any problem 
+  (page displacement, garbage output) is usually the print driver.</p>
+<p><b>How it works and design recommendations</b></p>
+<p>The graphic elements (drawings and images) are ignored, based on the page size, 
+  the number of lines of the report are determined at a rate of 1/6 lines for 
+  inch so for a 11 inch page size the page will be build with 66 text lines.</p>
+<p>The length in characters of each line is determined by the first text element 
+  placed in the line (or 10cpi is selected if no text in this line), the font 
+  step (you can specify a Font Step in the designer) of this text will determine 
+  the font size for that line (only one font size is allowed for each line but 
+  multiple font styles can be combined in one line). If the text element Font 
+  Step indicates By Size value, the engine will use the following table:</p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Font Size</td>
+    <td bgcolor="#FFFFCC">Step cpi</td>
+  </tr>
+  <tr> 
+    <td>&lt;8</td>
+    <td>20</td>
+  </tr>
+  <tr> 
+    <td>8</td>
+    <td>17</td>
+  </tr>
+  <tr> 
+    <td>9</td>
+    <td>15</td>
+  </tr>
+  <tr> 
+    <td>10</td>
+    <td>12</td>
+  </tr>
+  <tr> 
+    <td>11,12</td>
+    <td>10</td>
+  </tr>
+  <tr> 
+    <td>13-15</td>
+    <td>6</td>
+  </tr>
+  <tr> 
+    <td>&gt;15</td>
+    <td>5</td>
+  </tr>
+</table>
+<p>The text elements are placed vertically rounded to 1/6 inch, so the better 
+  way to design a report for text output is set <b>grid height to 1/6 inch that 
+  is 0.1666 inch or 0.42333 cms</b>. Also set the horz.grid size as the most common 
+  size of it, for example <b>for a 10cpi report set horz. grid to 0.1 inch or 
+  0.254 cms</b>. Also <b>resize the section heights to multiples of 1/6 inch</b>, 
+  you can do it automatically by selection the option in Edit menu.</p>
+<p>Set horizontal page size correctly or at least narrower than the real page 
+  size (printer capability), if you print a 132 column report in a 80 cols printer, 
+  the printer will skip two lines for each report line.</p>
+<p>The final output will be a number of lines formatted with the selected driver 
+  (escape codes), or no formatting at all (PLAIN driver). Depending on the selected 
+  driver the last line of each page will finish with a Form Feed instead a Line 
+  Feed.</p>
+<p><b>Internal implementation</b></p>
+<p>When the final output is created in memory, the engine send it to the printer 
+  in this way:</p>
+<p><b>Microsoft Windows</b></p>
+<p>A new print document is created with the Windows API, to disable the driver, 
+  the document is queued as a RAW type document, so the text go to the printer 
+  throught the selected port in printer configuration without processing in the 
+  printer driver. If oem option is checked then the text is processed first with 
+  CharToOem API function.</p>
+<p><b>Linux</b></p>
+<p>The lines are saved to a temporary file, and using unix like interprocess comunication 
+  (pipes) the engine calls <b>lpr</b> command line tool, if oem option is checked 
+  then the file is processed first by the <b>recode</b> command line tool.</p>
+<p>The recode command line tool is called with this parameters:</p>
+<p>recode ..850/ tempfile</p>
+<p>The lpr command line tool is called with this parameters:</p>
+<p>lpr -P printerqueue -r -l -J Title</p>
+<p>The -P printerqueue parameters are omited if the default printer is used. The 
+  -r will force deletion of the temporary file after processing it, the -l indicates 
+  the lpr command to send the file directly to the device without using any print 
+  filter, and the -J gives a job title for the printer queue.</p>
+<p><b>Drivers overview</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Description, escape codes</td>
+  </tr>
+  <tr> 
+    <td>PLAIN</td>
+    <td>No escape codes are introduced , no form feed characters</td>
+  </tr>
+  <tr> 
+    <td>EPSON</td>
+    <td>Init printer, page size, 10cpi, wide escape (5cpi) and condensed escape 
+      (17cpi), form feed, underline style</td>
+  </tr>
+  <tr> 
+    <td>EPSON-MASTER</td>
+    <td>Init printer, page size,form feed, 5-6-10-12-17-20cpi, underline-bold-italic, 
+      all with ESC ! command</td>
+  </tr>
+  <tr> 
+    <td>EPSON-ESCP</td>
+    <td>Init printer, page size,form feed, 5-6-10-12-17-20cpi, underline-bold-italic, 
+      all with ESC/P compatible commands</td>
+  </tr>
+  <tr> 
+    <td>EPSON-ESCPQ</td>
+    <td>Same as EPSON-ESCP but selecting the better quality (slower)</td>
+  </tr>
+  <tr> 
+    <td>IBMPROPRINTER</td>
+    <td>Init printer, page size,form feed, 5-6-10-12-17-20cpi, underline-bold-italic, 
+      with IBM Proprinter escape commands</td>
+  </tr>
+  <tr> 
+    <td>EPSONTMU210</td>
+    <td>Init printer, page size,form feed, 6-12-17cpi, underline-bold, all with 
+      ESC ! command, but is capable of printing red color text.</td>
+  </tr>
+  <tr> 
+    <td>EPSONTMU210CUT</td>
+    <td>Same as EPSONTMU210 but perform a cut paper command at the end of the 
+      document </td>
+  </tr>
+  <tr> 
+    <td>EPSONTM88II</td>
+    <td>Init printer, page size, 6-12-17cpi, underline-bold, all with ESC ! command</td>
+  </tr>
+  <tr> 
+    <td>EPSONTM88IICUT</td>
+    <td>Same as EPSONTM88II but a cut paper command at the end of the document</td>
+  </tr>
+  <tr> 
+    <td>HP-PCL</td>
+    <td>Init printer, page size,form feed, 5-6-10-12-17-20cpi, underline-bold-italic, 
+      all with HP-PCL compatible commands</td>
+  </tr>
+  <tr> 
+    <td>VT-100</td>
+    <td>Try to emulate VT-100 escape codes</td>
+  </tr>
+  <tr>
+    <td>PLAINFULL</td>
+    <td>Same as plain but without blank spaces or blank lines</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

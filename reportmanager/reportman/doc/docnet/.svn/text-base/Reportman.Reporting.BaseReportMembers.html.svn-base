@@ -1,0 +1,228 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>BaseReport Members</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">Report Manager Documentation</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">BaseReport Members
+					</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>
+        <a href="Reportman.Reporting.BaseReport.html">BaseReport overview</a>
+      </p>
+      <h4 class="dtH4">Public Static Fields</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.BaseReport.MAX_PAGENUM.html">MAX_PAGENUM</a></td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">Public Instance Fields</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.ActionAfter.html">ActionAfter</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.ActionBefore.html">ActionBefore</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.Alignment.html">Alignment</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.AsyncExecution.html">AsyncExecution</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.BackColor.html">BackColor</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.BottomMargin.html">BottomMargin</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.CollateCopies.html">CollateCopies</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.Components.html">Components</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.Copies.html">Copies</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.CurrentOrientation.html">CurrentOrientation</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.CurrentSubReportIndex.html">CurrentSubReportIndex</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.CustomPageHeight.html">CustomPageHeight</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.CustomPageWidth.html">CustomPageWidth</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.CutText.html">CutText</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.DatabaseInfo.html">DatabaseInfo</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.DataInfo.html">DataInfo</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.Duplex.html">Duplex</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.Evaluator.html">Evaluator</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.FontColor.html">FontColor</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.FontRotation.html">FontRotation</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.FontSize.html">FontSize</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.FontStyle.html">FontStyle</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.ForcePaperName.html">ForcePaperName</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.FreeSpace.html">FreeSpace</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.GridColor.html">GridColor</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.GridEnabled.html">GridEnabled</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.GridHeight.html">GridHeight</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.GridLines.html">GridLines</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.GridVisible.html">GridVisible</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.GridWidth.html">GridWidth</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.InternalPageHeight.html">InternalPageHeight</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.InternalPageWidth.html">InternalPageWidth</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.LeftMargin.html">LeftMargin</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.LFontName.html">LFontName</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.LinesPerInch.html">LinesPerInch</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.MultiPage.html">MultiPage</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PageBackColor.html">PageBackColor</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PageDetail.html">PageDetail</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PageHeight.html">PageHeight</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PageNum.html">PageNum</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PageNumGroup.html">PageNumGroup</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PageOrientation.html">PageOrientation</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PageSize.html">PageSize</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PageSizeIndex.html">PageSizeIndex</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PageWidth.html">PageWidth</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PaperSource.html">PaperSource</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.Params.html">Params</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PreviewAbout.html">PreviewAbout</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PreviewMargins.html">PreviewMargins</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PreviewStyle.html">PreviewStyle</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PreviewWindow.html">PreviewWindow</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PrintedSomething.html">PrintedSomething</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PrinterFonts.html">PrinterFonts</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PrinterSelect.html">PrinterSelect</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PrintOnlyIfDataAvailable.html">PrintOnlyIfDataAvailable</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.PrintStep.html">PrintStep</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.RightMargin.html">RightMargin</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.SingleLine.html">SingleLine</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.StreamFormat.html">StreamFormat</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.SubReports.html">SubReports</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.TopMargin.html">TopMargin</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.Transparent.html">Transparent</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.TwoPass.html">TwoPass</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.Type1Font.html">Type1Font</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.UpdatePageSize.html">UpdatePageSize</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.VAlignment.html">VAlignment</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.WFontName.html">WFontName</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Reporting.BaseReport.WordWrap.html">WordWrap</a></td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">Public Instance Properties</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Reportman.Reporting.BaseReport.Driver.html">Driver</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Reportman.Reporting.BaseReport.Language.html">Language</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Reportman.Reporting.BaseReport.MetaFile.html">MetaFile</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Reportman.Reporting.BaseReport.RecordCount.html">RecordCount</a></td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">Public Instance Methods</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Reporting.BaseReport.AddComponent.html">AddComponent</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Reporting.BaseReport.AddTotalPagesItem.html">AddTotalPagesItem</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Reporting.BaseReport.BeginPrint.html">BeginPrint</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Reporting.BaseReport.CreateNew.html">CreateNew</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Reporting.BaseReport.EndPrint.html">EndPrint</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassEqualsTopic.htm">Equals</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassGetHashCodeTopic.htm">GetHashCode</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassGetTypeTopic.htm">GetType</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Reporting.BaseReport.InitEvaluator.html">InitEvaluator</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Reporting.BaseReport.LoadFromFile.html">LoadFromFile</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Reporting.BaseReport.LoadFromStream_overloads.html">LoadFromStream</a></td><td width="50%">Overloaded.  </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Reporting.BaseReport.PrintAll.html">PrintAll</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Reporting.BaseReport.PrintNextPage.html">PrintNextPage</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Reporting.BaseReport.RemoveComponent.html">RemoveComponent</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Reporting.BaseReport.RequestPage.html">RequestPage</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassToStringTopic.htm">ToString</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">Public Instance Events</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubevent.gif"></img><a href="Reportman.Reporting.BaseReport.OnProgress.html">OnProgress</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubevent.gif"></img><a href="Reportman.Reporting.BaseReport.OnWorkAsyncError.html">OnWorkAsyncError</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubevent.gif"></img><a href="Reportman.Reporting.BaseReport.OnWorkProgress.html">OnWorkProgress</a></td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">Protected Instance Constructors</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr VALIGN="top">
+            <td width="50%">
+              <img src="protmethod.gif" />
+              <a href="Reportman.Reporting.BaseReportConstructor.html">BaseReport Constructor</a>
+            </td>
+            <td width="50%">Initializes a new instance of the <a href="Reportman.Reporting.BaseReport.html">BaseReport</a> class.</td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="dtH4">Protected Instance Fields</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.asection.html">asection</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.CurrentSectionIndex.html">CurrentSectionIndex</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.ErrorProcessing.html">ErrorProcessing</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.EvalIdens.html">EvalIdens</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.FCompose.html">FCompose</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.FDataAlias.html">FDataAlias</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.FDriver.html">FDriver</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.FExecuting.html">FExecuting</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.FGroupHeaders.html">FGroupHeaders</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.FRecordCount.html">FRecordCount</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.GFooters.html">GFooters</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.GHeaders.html">GHeaders</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.havepagefooters.html">havepagefooters</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.LastErrorProcessing.html">LastErrorProcessing</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.LastPage.html">LastPage</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.mmfirst.html">mmfirst</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.mmlast.html">mmlast</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.oldprintedsection.html">oldprintedsection</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.oldprintedsectionext.html">oldprintedsectionext</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.oldsubreport.html">oldsubreport</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.pagefooterpos.html">pagefooterpos</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.pagefooters.html">pagefooters</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.pageposx.html">pageposx</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.pageposy.html">pageposy</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.pagespacex.html">pagespacex</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.PendingSections.html">PendingSections</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.printing.html">printing</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.section.html">section</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.sectionext.html">sectionext</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.sectionextevaluated.html">sectionextevaluated</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Reporting.BaseReport.subreport.html">subreport</a></td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">Protected Instance Methods</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="Reportman.Reporting.BaseReport.ActivateDatasets.html">ActivateDatasets</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="Reportman.Reporting.BaseReport.CheckIfDataAvailable.html">CheckIfDataAvailable</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="Reportman.Reporting.BaseReport.CheckProgress.html">CheckProgress</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="Reportman.Reporting.BaseReport.DeActivateDatasets.html">DeActivateDatasets</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="Reportman.Reporting.BaseReport.FillGlobalHeaders.html">FillGlobalHeaders</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassFinalizeTopic.htm">Finalize</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassMemberwiseCloneTopic.htm">MemberwiseClone</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="Reportman.Reporting.BaseReport.PrepareParamsAfterOpen.html">PrepareParamsAfterOpen</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="Reportman.Reporting.BaseReport.PrepareParamsBeforeOpen.html">PrepareParamsBeforeOpen</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="Reportman.Reporting.BaseReport.UpdateParamsAfterOpen.html">UpdateParamsAfterOpen</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="Reportman.Reporting.BaseReport.UpdateParamsBeforeOpen.html">UpdateParamsBeforeOpen</a></td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="Reportman.Reporting.BaseReport.html">BaseReport Class</a> | <a href="Reportman.Reporting.html">Reportman.Reporting Namespace</a></p>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="BaseReport class">
+        </param>
+        <param name="Keyword" value="Reportman.Reporting.BaseReport class">
+        </param>
+        <param name="Keyword" value="BaseReport class, all members">
+        </param>
+      </object>
+      <hr />
+      <div id="footer">
+        <p>
+          <a href="mailto:toni@pala.com?subject=Report%20Manager%20Documentation%20Documentation%20Feedback:%20BaseReport%20Members&#xD;&#xA;						">Send comments on this topic.</a>
+        </p>
+        <p>
+          <a href="http://reportman.sourceforge.net">Copyright 2006 Toni Martir</a>
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

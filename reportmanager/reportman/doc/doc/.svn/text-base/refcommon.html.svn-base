@@ -1,0 +1,153 @@
+<html>
+<head>
+<title>Report components common properties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Component Reference</h2>
+<h3>Report components common properties</h3>
+<p><b>Sumary</b></p>
+<p><b>Properties for sections and also for components inside sections</b></p>
+<table border="1">
+  <tr>
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Internal Name</td>
+    <td bgcolor="#FFFFCC">Type</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr>
+    <td>Width</td>
+    <td>Width</td>
+    <td>Twips</td>
+    <td>Width of the component, for sections or component</td>
+  </tr>
+  <tr>
+    <td>Height</td>
+    <td>Height</td>
+    <td>Twips</td>
+    <td>Height of the component, for sections and components this size can be 
+      modified while the report is executing depending of other properties (autocontract, 
+      wordwrap) </td>
+  </tr>
+  <tr>
+    <td>Print Condition</td>
+    <td>PrintCondition</td>
+    <td>Expression</td>
+    <td>This expression will be evaluated before printing the section or component, 
+      if evaluated to true or empty the component will print else the component 
+      will not print</td>
+  </tr>
+  <tr>
+    <td>Before Print</td>
+    <td>DoBeforePrint</td>
+    <td>Expression</td>
+    <td>This expression will be evaulated before printing the component but after 
+      PrintCondition checked. You can use this expression to perform modifications 
+      in variables or evaluate expressions</td>
+  </tr>
+  <tr>
+    <td>After Print</td>
+    <td>DoAfterPrint</td>
+    <td>Expression</td>
+    <td>This expression will be evaulated after printing the component You can 
+      use this expression to perform modifications in variables or evaluate expressions</td>
+  </tr>
+</table>
+<p><b>Developer info</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Internal component name</td>
+    <td>TRpCommonComponent</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Parent class</td>
+    <td>TComponent</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Unit name</td>
+    <td>rpprintitem.pas</td>
+  </tr>
+</table>
+<p><b>Events</b></p>
+<p>OnBeforePrint:TNotifyEvent</p>
+<p>You can assign this event to any component so it will be activated before printing. 
+</p>
+<p><b>Properties for components inside sections</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Internal Name</td>
+    <td bgcolor="#FFFFCC">Type</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>Left</td>
+    <td>PosX</td>
+    <td>Twips</td>
+    <td>Horizontal position for the component, this is relative for the parent 
+      section position in the page, the left position can be modified at run time 
+      because other properties like Align</td>
+  </tr>
+  <tr> 
+    <td>Top</td>
+    <td>PosY</td>
+    <td>Twips</td>
+    <td>Vertical position for the component, this is relative for the parent section 
+      position in the page, the left position can be modified at run time because 
+      other properties like Align</td>
+  </tr>
+  <tr> 
+    <td>Align</td>
+    <td>Align</td>
+    <td>TRpPosAlign</td>
+    <td> 
+      <p>The alignment is used to move the component down or right when the section 
+        resizes while the report is processing</p>
+      <table border="1">
+        <tr> 
+          <td bgcolor="#FFFFCC">Name</td>
+          <td bgcolor="#FFFFCC">Description</td>
+        </tr>
+        <tr> 
+          <td>None</td>
+          <td>No align, default</td>
+        </tr>
+        <tr> 
+          <td>Right</td>
+          <td>The component will be placed at the right of the section</td>
+        </tr>
+        <tr> 
+          <td>Bottom</td>
+          <td>The component will be placed at the bottom of the section</td>
+        </tr>
+        <tr> 
+          <td>Right/B ottom</td>
+          <td>The component will be placed at the right and the bottom of the 
+            section</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<p>* Twips are internally stored as an integer representing 1440 points per inchess, 
+  when you are in the designer they are converted to your selected unit in preferences, 
+  cms or inches.</p>
+<p>* Expressions are internally stored as widestrings</p>
+<p><b>Developer info</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Internal component name</td>
+    <td>TRpCommonPosComponent</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Parent class</td>
+    <td>TRpCommonComponent</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Unit name</td>
+    <td>rpprintitem.pas</td>
+  </tr>
+</table>
+</body>
+</html>

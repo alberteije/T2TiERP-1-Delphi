@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011/08/15 17:23:07.703.pas,C:\ERP\Modulos\PAF-ECF-TEF\Desenvolvimento\Fontes\Balcao\UNF2.pas=</Transaction>
+    <Transaction>2011/08/15 17:23:07.703.dfm,C:\ERP\Modulos\PAF-ECF-TEF\Desenvolvimento\Fontes\Balcao\UNF2.dfm=</Transaction>
+    <Transaction>2011/08/16 11:49:41.562.pas,C:\ERP\Modulos\PAF-ECF-TEF\Desenvolvimento\Fontes\Balcao\UEmiteNFe.pas=</Transaction>
+    <Transaction>2011/08/16 11:49:41.562.dfm,C:\ERP\Modulos\PAF-ECF-TEF\Desenvolvimento\Fontes\Balcao\UEmiteNFe.dfm=</Transaction>
+    <Transaction>2011/08/16 14:45:56.343.pas,C:\ERP\Modulos\PAF-ECF-TEF\Desenvolvimento\Fontes\Balcao\VO\NotaFiscalDetalheVO.pas=</Transaction>
+    <Transaction>2011/08/16 14:45:56.359.pas,C:\ERP\Modulos\PAF-ECF-TEF\Desenvolvimento\Fontes\Balcao\VO\NotaFiscalCabecalhoVO.pas=</Transaction>
+    <Transaction>2011/08/16 17:17:16.687.pas,C:\ERP\Modulos\PAF-ECF-TEF\Desenvolvimento\Fontes\Balcao\Controller\EmpresaController.pas=</Transaction>
+    <Transaction>2011/08/30 17:22:39.203.pas,C:\ERP\Modulos\PAF-ECF-TEF\Desenvolvimento\Fontes\Balcao\VO\DAVVO.pas=</Transaction>
+    <Transaction>2011/08/30 17:22:39.218.pas,C:\ERP\Modulos\PAF-ECF-TEF\Desenvolvimento\Fontes\Balcao\VO\DAVDetalheVO.pas=</Transaction>
+    <Transaction>2011/09/09 15:49:34.953.pas,C:\ERP\Modulos\PAF-ECF-TEF\Desenvolvimento\Balcao\UConsultaDAV.pas=</Transaction>
+    <Transaction>2011/09/09 15:49:34.953.dfm,C:\ERP\Modulos\PAF-ECF-TEF\Desenvolvimento\Balcao\UConsultaDAV.dfm=</Transaction>
+  </Transactions>
+</BorlandProject>

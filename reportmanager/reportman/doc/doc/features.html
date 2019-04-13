@@ -1,0 +1,261 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+<head>
+  <title>Features</title>
+</head>
+<body>
+<h2>Introduction</h2>
+<h3><b>Report Manager Features</b></h3>
+<table border="1">
+  <tr bordercolor="#000000" bgcolor="#66FFFF"> 
+    <td><b>General</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <ul>
+        <li> Opensource under the MPL license model. So, free inclusive for use 
+          in commercial applications</li>
+        <li> <b>Cross platform</b> supporting <b>Windows and Linux</b> (Kylix/Delphi/C++Builder) 
+        </li>
+        <li>Can be used from any <a href="internatsupport.html" target="_blank">programming 
+          language</a>.</li>
+        <li><a href="serversmp.html"><b>Simetric multiprocessing support</b></a></li>
+        <li>Cross platform TCP<b> <a href="serverintro.html">Report Server</a> 
+          and <a href="serverclient.html">Report Server client</a></b>.</li>
+        <li>Cross platform <b><a href="webserverintro.html">Web Report Server</a></b>.</li>
+        <li>Report Manager <a href="installwebreport.html" target="_blank"><b>Internet 
+          explorer plugin</b></a>.</li>
+        <li>Small footprint, the engine can be embedded inside your exe.</li>
+        <li><b>Band based</b> report designer, very easy and similar to MSAccess, 
+          Visual Foxpro....</li>
+        <li>Report definition files are very small (most <b>reports fit in less 
+          than 5Kbytes</b>)</li>
+        <li><b>Expression evaluator</b> with builtin functions and access to database 
+          fields</li>
+        <li><b>Report parameters</b>, define them, assign them to querys at run 
+          time or design time, optionally the user can alter the parameters</li>
+        <li><b>Linked or unlinked additional datasets</b>, link querys easily, 
+          open datasets to obtain aditional information...</li>
+        <li>Exports to compressed/uncompressed <b>Adobe PDF</b> (scalable/native), 
+          and <strong>HTML.</strong></li>
+        <li>Custom text output: For each expression inside the report you can 
+          define a export line and position to build custom text output.</li>
+        <li>Exports to Excel (Windows) or plain text file or ready to print formated 
+          file for dot matrix printers.</li>
+        <li>Supports Delphi 5E-6PE-7PE-8, Kylix 2-3,C++Builder 4E, it should work 
+          also with C++ Builder 5E-6 and Delphi 4E</li>
+        <li>If you are using Windows you can select between VCL (no Qt) graphic 
+          driver and CLX graphics driver.</li>
+        <li>You can print <b>texts (multiline), images, shapes, lines, barcodes,charts</b>...</li>
+        <li><b>Multilanguage</b> support <b>for the interface and the reports</b>, 
+          runtime and designer. A <b>translation application</b> is provided, 
+          if you want to localize report manager to a still not translated language 
+          use it.</li>
+        <li><b><a name="childsub"></a>Child subreports</b> (many to many)</li>
+        <li><b><a name="external"></a>External sections </b>(share the same section 
+          in different reports)</li>
+        <li><b>Print anything anywhere</b>, with Page position expression and 
+          Page number expresion. </li>
+        <li><strong>Report compiler</strong> (Windows only), generate a single 
+          exe with your report embedded to distribute it (about 300Kbytes)</li>
+      </ul>
+    </td>
+  </tr>
+  <tr bordercolor="#000000" bgcolor="#66FFFF"> 
+    <td><b>Supported database engines</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <ul>
+        <li> Any <b>TDataset descendant</b> passed from Delphi/Kylix.</li>
+        <li>Windows: Borland database engine (DBase, Paradox, Interbase, Oracle, 
+          DB2, SQL Server, ODBC) </li>
+        <li> Windows: Microsoft Data Access Objects (Microsoft Jet, ODBC...) </li>
+        <li>Windows: Interbase Objects (IBO)</li>
+        <li> Windows & Linux: DBExpress (Interbase, MySQL, PostgreSQL, DB2, Oracle,DB2,Informix, 
+          ODBC)</li>
+        <li> Windows & Linux: Native Access to Interbase (IBX, no additional libraries 
+          needed)</li>
+        <li> Windows & Linux: Borland Native simple local file database (MyBase)</li>
+        <li>Windows &amp; Linux: <a href="http://zeoslib.sourceforge.net" target="_blank">Zeos 
+          database objects</a>, native access to Interbase/Firebird,MySQL, PostgreSQL...</li>
+      </ul>
+    </td>
+  </tr>
+  <tr bordercolor="#000000" bgcolor="#66FFFF"> 
+    <td><b>Report definition &amp; desingning</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <ul>
+        <li> Unlimited number of subreports, <b>each subreport can use a dataset</b></li>
+        <li><a name="subreports"></a>You can print <b>multiple subreports in the 
+          same page</b></li>
+        <li>You can merge subreports using <b><a href="childsubreports.html">child 
+          subreports</a></b> feature.</li>
+        <li> Each subreport can have a unlimited number of sections of each type 
+          (page headers,page footers,<b>group header an footers</b>)</li>
+        <li>Grouping allow <b>sum,min,max,avg and std.desv</b>. operations.</li>
+        <li> You can use groups as subreport headers and footers (<b>summary</b>)</li>
+        <li> Multiple details are printed once for each record of the subreport's 
+          dataset</li>
+        <li><b>Multilanguage</b> support, the labels of the report can be defined 
+          in various languages.</li>
+        <li>Each section has also some useful properties:print condition,skip 
+          page before or after print,<b>align bottom</b></li>
+        <li>It supports <b>cms, and inchess</b> and design time</li>
+        <li>Page setup, margings, paper size, page orientation</li>
+        <li>Driver selection when designing the report (Qt driver or Windows GDI 
+          driver) </li>
+        <li>You can <b>embed Report Manager Designer in your application</b>, 
+          just drop a TRpDesigner, component and use it.</li>
+        <li>You can <b>open any querys or tables you need</b>, you usually link 
+          secondary datasets to the main dataset or to other dataset linked to 
+          the main dataset. </li>
+        <li>Parametrized linked querys allow you to obtain results from many querys.</li>
+        <li>Define a background image to fill a form for example.</li>
+        <li>Advanced edition options like <b>multiselect</b>, <b>hide elements, 
+          alignments...</b></li>
+        <li><b><a href="replibraries.html" target="_blank">Report Libraries</a></b></li>
+      </ul>
+    </td>
+  </tr>
+  <tr bordercolor="#000000" bgcolor="#66FFFF"> 
+    <td><b>Printing engine</b></td>
+  </tr>
+  <tr> 
+    <td height="22"> 
+      <ul>
+        <li>Horizontal movement (<b>multicolumn</b> for <a href="labels.html">label 
+          print</a> for example)</li>
+        <li>Page Margins and page orientation</li>
+        <li><b>Fast, scalable, preview</b></li>
+        <li>Positioning in <b>1440 dots per inchess</b> of precision</li>
+        <li>Print resolution limited only by the system print driver</li>
+        <li>Save the report as a <b>metafile report<a name="metafile"></a></b> 
+          (device independent graphic format) </li>
+        <li>A separate application can <b>print/preview metafiles</b> (metaview)</li>
+        <li>Two pass report optional (<b>pagecount variable</b> available)</li>
+        <li><a name="devicefonts"></a>Use <b>device fonts option</b> (Windows 
+          only becuase it still uses the driver), the report will print <b>fast 
+          in any dot matrix printer</b></li>
+        <li><b>Character lines output for <a href="dotmatrix.html" target="_blank">dot 
+          matrix and pos devices</a></b>, this feature allow the print of any 
+          report to character based devices like receipt printers and dot matrix 
+          printers, it outputs lines with optional formating of escape codes and 
+          easy access to cash drawers connected to the printer.</li>
+        <li><b>Multiple page sizes support</b>: Default page size, system page 
+          size and user defined page size.</li>
+        <li><b>Sections can autoexpand or autocontract</b></li>
+      </ul>
+    </td>
+  </tr>
+  <tr bordercolor="#000000" bgcolor="#66FFFF"> 
+    <td><b>Properties for all controls</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <ul>
+        <li><b>Print condition</b></li>
+        <li>Expression evaluation before print</li>
+        <li>Expression evaluation after print</li>
+        <li>Align right, bottom or bottom-right.</li>
+        <li><b>Z Order</b> (to back, to front)</li>
+      </ul>
+    </td>
+  </tr>
+  <tr bordercolor="#000000" bgcolor="#66FFFF"> 
+    <td><b>Properties for text controls</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <ul>
+        <li> Font Name (for each platform and Type1 for PDF) </li>
+        <li> Font Size, Bold, Italic, Color. </li>
+        <li> <b>Background color</b> or transparent </li>
+        <li> <b>Alignment</b>, vertical or horizontal, full text justification 
+          only supported in Adobe pdf output.</li>
+        <li><b>Wordwrap</b>, cut text or not cut text, ignore CR...</li>
+        <li><b>Multiline</b> texts</li>
+        <li>If you select not cut text, the text control will expand to acomodate 
+          size, if parent section has autoexpand property it will expand also.</li>
+        <li>Labels are <b>multilanguage</b></li>
+        <li><b>Rotation</b></li>
+      </ul>
+    </td>
+  </tr>
+  <tr bordercolor="#000000" bgcolor="#66FFFF"> 
+    <td height="21"><b>Properties for expressions</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <ul>
+        <li> <b>Display Mask</b></li>
+        <li><b>Identifier, to reference from other controls</b></li>
+        <li>Don't print repeated values option</li>
+        <li>The expressions can be grouped with <b>sum, avg</b>...</li>
+        <li>Export expression, line, position, size and format to build custom 
+          text output.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr bordercolor="#000000" bgcolor="#66FFFF"> 
+    <td><b>Image print control</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <ul>
+        <li>The image can be <b>embedded</b> in the report </li>
+        <li> The image can be <b>loaded</b> from a binary field</li>
+        <li>The image can be <b>loaded from a file path containe in a string field</b></li>
+        <li>The image can be <b>loaded from a file by writting the filename inside 
+          single quotes</b></li>
+        <li> The image can be stretched, or adapt to pixels per inch defined resolution, 
+          you can also do a tile effect</li>
+        <li><b>Images are supported in PDF format</b> without the need of a XServer 
+          running (Linux), <a href="refimage.html">see image reference</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr bordercolor="#000000" bgcolor="#66FFFF"> 
+    <td><b>Barcode control</b></td>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li>Multiple barcode types support</li>
+        <li>The barcode is readed from a expression or database field</li>
+        <li>You can set the size of the barcode, the ratio, checksum...</li>
+      </ul>
+    </td>
+  </tr>
+  <tr bordercolor="#000000" bgcolor="#66FFFF"> 
+    <td><b>Chart control</b></td>
+  </tr>
+  <tr> 
+    <td>
+      <ul>
+        <li>Value expression</li>
+        <li>Get value condition</li>
+        <li>Serie change expression (bool or groupexpression)</li>
+        <li>You can insert values while processing the report.</li>
+        <li>Driver selection, <b><a href="teechart.html">TeeChart</a></b> (Windows 
+          and Linux) or Native.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr bordercolor="#000000" bgcolor="#66FFFF"> 
+    <td><b>Simple drawing/decoration control</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <ul>
+        <li> Horz line, Vert line, Rectangle, Ellipse, Roundrect... </li>
+        <li> Pen style (dash,dash dot, solid), width and color </li>
+        <li> Brush Style (lines, cross, solid, pattern) and color</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

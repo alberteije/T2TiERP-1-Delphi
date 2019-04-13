@@ -1,0 +1,209 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html>
+<head>
+<title>Using Report Manager ActiveX control</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Installation</h2>
+<h3><b>Using Report Manager ActiveX control</b></h3>
+<p>Download the Report Manager Activex component from sourceforge and unpack it 
+  to a directory usually windows system directory.</p>
+<p><a href="http://sourceforge.net/projects/reportman" target="_blank">http://sourceforge.net/projects/reportman</a></p>
+<p>Unzip it and install it (you must have Administrator Rights)</p>
+<p>At command line execute:</p>
+<p><b>regsvr32 Reportman.ocx</b></p>
+<p>Then the control is available to insert in any ActiveX application or development 
+  enviroment</p>
+<p>In your development enviroment you usually must activate (or include into your 
+  project) to use, is called ReportManX Control or Reportman Library.</p>
+<p></p>
+<p> Usually you use Filename, Preview property and Visible properties at design
+time 
+  and Execute method at runtime.</p>
+<p>Here is a list of properties and methods:</p>
+<p> procedure SetDatasetSQL(datasetname:string;sqlsentence:string);<br>
+  procedure SetDatabaseConnectionString(databasename:string;connectionstring:string);<br>
+  function GetDatasetSQL(datasetname:string):string;<br>
+  function GetDatabaseConnectionString(databasename:string):string;<br>
+  procedure SetParamValue(paramname:string;paramvalue:Variant);<br>
+  function GetParamValue(paramname:string):Variant;<br>
+  function Execute:Boolean;<br>   
+  procedure ExecuteRemote(hostname:String;port:integer;user,password,aliasname,reportname:String);
+<br>
+  procedure PrinterSetup;<br>
+  function ShowParams:boolean;<br>
+  procedure SaveToPDF(filename:string;compressed:boolean=false);<br>
+  function PrintRange(frompage:integer;topage:integer;<br>
+  copies:integer;collate:boolean):boolean;<br>
+  procedure SetBounds(ALeft, ATop, AWidth, AHeight: Integer);override;<br>
+  constructor Create(AOwner:TComponent);override;<br>
+  { Public declarations }<br>
+  published<br>
+  { Published declarations }<br>
+  property Filename:string read FFilename write SetFilename;<br>
+  property Preview:boolean read FPreview write SetPreview default true;<br>
+  property ShowProgress:boolean read FShowProgress write SetShowProgress;<br>
+  property ShowPrintDialog:boolean read FShowPrintDialog write SetShowPrintDialog;<br>
+  property Title:string read FTitle write SetTitle;<br>
+  property Language:integer read FLanguage write SetLanguage;<br>
+</p>
+<p><b>Since version 1.5 there are this interfaces available</b></p>
+<p>property Report:IReportReport;<br>
+  // Inside Report<br>
+  property Params:IReportParams;<br>
+  // Inside Params<br>
+  property Count:Integer;<br>
+  property Items[index:integer]:IReportParam<br>
+  // Inside param<br>
+  property Value:Variant<br>
+  property Name:String;<br>
+  property ParamType:TxParamType<br>
+  property Description:WideString;<br>
+  So to Access a parameter type or Name:<br>
+  activexcontrol.Report.Params.Items[0].ParamType<br>
+  activexcontrol.Report.Params.Items[0].Name<br>
+  Or to Get parameter count:<br>
+  activexcontrol.Report.Params.Count</p>
+<p><b>Since version 1.6 there are this interfaces available</b></p>
+<p>procedure CalcReport(ShowProgress:Boolean);<br>
+  procedure Compose(Report:IReportReport;execute:Boolean);<br>
+  procedure SaveToText(const filename, textdriver: String);<br>
+  procedure SaveToExcel(const filename: String); // Needs Excel installation</p>
+<p>&nbsp;</p>
+<p><b>Since version 2.0</b></p>
+<p>procedure SaveToHTML(const filename: String); </p>
+<p>Early binding (VTables) and late binding (OleAuto) is supported<br>
+</p>
+<p><b>Since version 2.1</b></p>
+<p>procedure SaveToCustomText(const filename: String);<br>
+procedure SaveToCSV(const filename: String);<br>
+procedure SaveToSVG(const filename: String);<br>
+procedure SetRecordSet(const datasetname: String,recordset: OleVariant);
+</p>
+<p><b>Since version 2.3</b></p>
+<p>procedure SaveToMetafile(const filename: String);<br>
+  procedure SaveExcel2(const filename: String); // Save to excel in only one sheet 
+  <br>
+  property DefaultPrinter:WideString; // Sets &amp; gets the default printer 
+  for Report Manager Engine<br>
+  property PrintersAvailable:WideString; // Gets a list of the available printers 
+  separated by a LF (Chr(10))<br>
+  procedure GetRemoteParams(hostname:string;port:integer;user,password,aliasname,hostname:string)</p>
+<p><b>Since version 2.5</b></p>
+<p>procedure SaveToCSV2(const filename,separator: String);<br>
+  property AsyncExecution:Boolean</p>
+<p>A new control have been introduced: <strong>PreviewControl</strong>, to work 
+  with the classic ActiveX control, drop onto the form:</p>
+<p> ReportManX1.FileName = &quot;c:\test.rep&quot;<br>
+  PreviewControl1.EntirePageCount = 2<br>
+  PreviewControl1.SetReport ReportManX1.Report<br>
+</p>
+<p><b>Since version 2.5f</b></p>
+<p>The Report object inside the activeX controls have a new property</p>
+<p>property AutoResizeColumns:Boolean</p>
+<p>This property will force the resize of all added columns to fit inside the 
+  parent section.<br>
+</p>
+<p>To add columns to a report you can call the AddColum method</p>
+<p>procedure AddColumn(width:integer;expression,expformat,caption,captionformat,summaryexp,summaryformat:widestring);</p>
+<p>The expformat must be a report elementent inside the template, for example 
+  'TRpExpression2'.</p>
+<p>Inside params, exists a new function, FindParam that returns true if the parameter 
+  exists. </p>
+<p><b>Since version 2.7c </b></p>
+<p>procedure SaveToHtmlSingle(const filename: String);</p>
+<p>Saves the report as html file, in a single html file if possible. <br>
+</p>
+<h3>Using the control with VB like languages</h3>
+<p>The ActiveX control may be used directly in VB, VBScript, ASP and WSH. In the 
+  VB environment you are generally recommended to &quot;Reference&quot; the control 
+  from within a VB Project. This gives &quot;early binding&quot; which improves 
+  the performance of your application over &quot;late binding&quot;. This is not 
+  an option within VBScript languages. </p>
+<p>Here is an complete example of the use of control in a VBScript program. This
+one was developed under W/98 and runs under the Windows Scripting Host (WSH).
+The choice of runtime environment dictates the format of the second line of the
+program where the activeX object is created. For example, under Active Server
+Pages VBScript, this line would read </p>
+<pre><code>set blah = server.createobject(&quot;ReportMan.ReportManX&quot;)</code></pre>
+<p>(please note for ASP work you must use a version 1.3+ of the OCX).
+Here is the example program</p>
+<pre><code>dim blah
+set blah = WScript.createobject(&quot;ReportMan.ReportManX&quot;)
+' the object blah is an instance of the activex control
+' set some environment variables 
+blah.Preview = false
+blah.ShowProgress = false
+blah.ShowPrintDialog = false
+' define the location of the report file to be generated 
+blah.Filename = &quot;C:/sample4.rep&quot;
+' generate the report 
+blah.execute
+</code></pre>
+<p>Rather than execute (print) the report you might instead choose to generate a
+PDF file to be later viewed with the Adobe Acrobat Reader. To do this substitute
+the line &quot;blah.execute&quot; with</p>
+<p><code>blah.SaveToPDF &quot;hello.pdf&quot;,true</code></p>
+<p>This action creates a pdf format file named &quot;hello.pdf&quot;. For a more
+complete list of methods available on the control please see the table at the
+top of this page. </p>
+<h4>Setting report parameters from VBScript</h4>
+<p>It is possible to pass parameters to the report at run time. These parameters
+could, for example, change the set of data that is returned from the database
+and reported. The parameters are identified within the report definition and
+used within the SQL Select statement by preceeding the parameter name with a
+colon (:) character. So if a parameter named &quot;PARAM1&quot; was defined it
+may be utilised in a SQL Select statement such as:</p>
+<p> </p>
+<pre>Select * from testtable where column1 = :PARAM1</pre>
+<p> </p>
+<p>The parameter &quot;PARAM1&quot; is set from VB/Script by a program line such
+as </p>
+<p><code>blah.setParamValue &quot;PARAM1&quot; , 442380629429</code></p>
+<p>Clearly this line is best placed in your program AFTER the report file
+to be used has been identified. For further information on parameters please see
+<br>
+&quot;<a href="repparams.html">Advanced Report Design/Using Report Parameters</a>&quot;</p>
+<p><strong>Obtaining information about report parameters</strong> </p>
+<p>You can obtain information about parameters by accessing the Report property.</p>
+<p> rp.filename = &quot;c:\sample2.rep&quot;<br>
+  rp.Report.Params.Items(2).Value = 1920<br>
+  rp.Preview = True<br>
+  rp.Execute<br>
+  MessageBox.Show(Str(rp.Report.Params.Count), &quot;Paramcount&quot;, MessageBoxButtons.OK, 
+  MessageBoxIcon.Exclamation)</p>
+<p><strong>Using report Manager ActiveX from ASP pages</strong></p>
+<p>You can use the Report Manager ActiveX to generate the pdf inside a ASP page 
+  and return it to the current processing page on the fly. For that purpose there 
+  is a Microsoft Transaction Server Object, so you can retrieve the entire stream. 
+  You must pass the prepared report to the object. This sample will help you:</p>
+<p>&lt;%@ Language=VBScript %&gt;<br>
+  &lt;% Set Reportobj = Server.CreateObject(&quot;ReportMan.ReportmanX&quot;) 
+  <br>
+  ReportObj.Filename = &quot;c:\inetpub\wwwroot\cgi-bin\nettest.rep&quot;<br>
+  Set DelphiASPObj = Server.CreateObject(&quot;ReportMan.ReportmanXAServer&quot;) 
+  <br>
+  DelphiASPObj.GetPDF ReportObj.Report,false<br>
+  %&gt;<br>
+  <br>
+  When working in the IIS environment remember to place the reports in a directory 
+  accessible (permissions) by the user executing IIS.</p>
+<p>Version 2.2 DelphiASPObj have this procedures:</p>
+<p> procedure GetPDF(const Report: IReportReport; Compressed: WordBool);<br>
+  procedure GetCustomText(const Report: IReportReport);<br>
+  procedure GetText(const Report: IReportReport);<br>
+  procedure GetCSV(const Report: IReportReport);</p>
+<p>Version 2.3 DelphiASPObj have this new procedures:</p>
+<p>procedure GetMetafile(const Report: IReportReport);<br>
+</p>
+<p>Version 2.5 DelphiASPObj have this new procedures:</p>
+<p>procedure GetCSV2(const Report: IReportReport;separator:string);<br>
+</p>
+<p>&nbsp; </p>
+<p>&nbsp; </p>
+</body>
+</html>
+
+

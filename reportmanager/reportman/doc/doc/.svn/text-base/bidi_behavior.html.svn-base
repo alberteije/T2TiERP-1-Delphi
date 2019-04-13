@@ -1,0 +1,78 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0037)http://www.zvi.org/bidi_behavior.html -->
+<HTML><HEAD><TITLE>Delphi BiDi Behavior</TITLE>
+<META http-equiv=content-type content="text/html; charset=UTF-8">
+<META content="MSHTML 6.00.2719.2200" name=GENERATOR></HEAD>
+<BODY>
+<DIV align=center><U><BIG><B>How should BiDi work?</B></BIG></U><BR></DIV><BR>
+<UL>
+  <LI>This table shows all the different combinations of BiDiMode with 
+  Horizontal Alignment.<BR><BR>
+  <LI>The table reflects the behavior of Delphi's VCL controls, and uses 
+  Delphi's terminology for BiDiMode settings.<BR><BR>
+  <LI>The example is given with Hebrew words and punctuation marks, in order to 
+  give a realistic demonstration of BiDi behavior. For those interested, the 
+  first phrase means "Not good...", the second means "Excellent!", and the third 
+  means "Alright;". </LI></UL><BR>
+<TABLE cellSpacing=0 cellPadding=2 width="100%" border=1 valign="middle">
+  <TBODY>
+  <TR>
+    <TD align=middle bgColor=#eeeeee><B>BiDiMode<BR></B></TD>
+    <TD align=middle bgColor=#eeeeee><B>H.Alignment<BR></B></TD>
+    <TD align=middle bgColor=#eeeeee><B>Action<BR></B></TD>
+    <TD align=middle width="40%" bgColor=#eeeeee><B>Comments</B></TD>
+    <TD align=middle bgColor=#eeeeee><B>Example<BR></B></TD></TR>
+  <TR>
+    <TD vAlign=center bgColor=#ffcccc rowSpan=3>bdLeftToRight<BR><B><SMALL>(No 
+      BiDi support)</SMALL></B><BR></TD>
+    <TD bgColor=#ffcccc>None, Left<BR></TD>
+    <TD bgColor=#ffcccc>Align text to left<BR></TD>
+    <TD bgColor=#ffcccc rowSpan=3>Note that the ellipsis (...) is on the 
+      <U><B>wrong</B></U> side of the text.</TD>
+    <TD bgColor=#ffcccc>לא טוב...<BR></TD></TR>
+  <TR>
+    <TD bgColor=#ffcccc>Center<BR></TD>
+    <TD bgColor=#ffcccc>Center text<BR></TD>
+    <TD align=middle bgColor=#ffcccc>לא טוב...<BR></TD></TR>
+  <TR>
+    <TD bgColor=#ffcccc>Right<BR></TD>
+    <TD bgColor=#ffcccc>Align text to right<BR></TD>
+    <TD align=right bgColor=#ffcccc>לא טוב...</TD></TR>
+  <TR>
+    <TD vAlign=center bgColor=#99ff99 
+      rowSpan=3>bdRightToLeft<BR><B><SMALL>(Full BiDi 
+      support)</SMALL></B><BR><BR></TD>
+    <TD bgColor=#99ff99>None, Left<BR></TD>
+    <TD bgColor=#99ff99>Align text to <U><B>right</B></U><BR></TD>
+    <TD bgColor=#99ff99 rowSpan=3>The exclamation mark (!) is on the correct 
+      side of the word.<BR>The alignment is <U><B>opposite</B></U> to the 
+      direction that is actually specified in H.Alignment. 
+      <OL></OL></TD>
+    <TD dir=rtl bgColor=#ffcc66>מצויין!</TD></TR>
+  <TR>
+    <TD bgColor=#99ff99>Center<BR></TD>
+    <TD bgColor=#99ff99>Center text</TD>
+    <TD dir=rtl align=middle bgColor=#ffcc66>מצויין!</TD></TR>
+  <TR>
+    <TD bgColor=#99ff99>Right<BR></TD>
+    <TD bgColor=#99ff99>Align text to <U><B>left</B></U></TD>
+    <TD dir=rtl align=left bgColor=#ffcc66>מצויין!</TD></TR>
+  <TR>
+    <TD bgColor=#ccffff 
+      rowSpan=3>bdRightToLeftNoAlign,<BR>bdRightToLeftReadingOnly 
+      <BR><B><SMALL>(Partial BiDi support)</SMALL></B><BR></TD>
+    <TD bgColor=#ccffff>None, Left </TD>
+    <TD bgColor=#ccffff>Align text to left </TD>
+    <TD bgColor=#ccffff rowSpan=3>The semicolon (;) is on the correct side of 
+      the word.<BR>The alignment is as specified in H.Alignment. 
+      <OL></OL></TD>
+    <TD dir=rtl align=left bgColor=#ffff33>בסדר;<BR></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff>Center </TD>
+    <TD bgColor=#ccffff>Center text </TD>
+    <TD dir=rtl align=middle bgColor=#ffff33>בסדר; </TD></TR>
+  <TR>
+    <TD bgColor=#ccffff>Right </TD>
+    <TD bgColor=#ccffff>Align text to right </TD>
+    <TD dir=rtl align=right bgColor=#ffff33>בסדר; 
+</TD></TR></TBODY></TABLE><BR></BODY></HTML>

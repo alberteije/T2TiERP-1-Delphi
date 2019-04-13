@@ -1,0 +1,22 @@
+After doing a make clean then type files are:
+
+Ascii
+
+.xfm    Delphi/Kylix Form
+.pas    Delphi/Kylix Source code file
+.dpr    Delphi/Kylix project to build executables or dlls
+.dof    Delphi options file
+.kof    Kylix options file
+.dpk    Delphi/Kylix components package
+.cfg    Delphi configuration file
+.conf   Kylix configuration file (not sure)
+.txt    Text files like this
+
+Binary
+.dcr   Component resource containing image to Delphi/Kylix palette
+.res   Resource file (containing icon of the application)
+.ddp   Diagram file of Delphi (to draw diagrams)
+.rpmf  Report manager metafile
+.rep   Reportmanager report
+.bmp   Bitmap files
+.ico   Icon windows file

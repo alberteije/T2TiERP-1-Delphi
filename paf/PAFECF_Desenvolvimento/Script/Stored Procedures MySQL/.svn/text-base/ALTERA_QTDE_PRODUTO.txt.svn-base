@@ -1,0 +1,15 @@
+DELIMITER $$
+
+CREATE
+    PROCEDURE `mini`.`ALTERA_QTDE_PRODUTO`(
+      IN PQTDE DECIMAL(18,6),
+      IN PDATA DATE,
+      IN PID INTEGER
+    )
+    BEGIN
+       update produto set
+         produto.QTD_ESTOQUE = PQTDE + produto.QTD_ESTOQUE,
+         produto.DATA_ESTOQUE = PDATA
+       where ID = PID;
+    END$$
+DELIMITER ;

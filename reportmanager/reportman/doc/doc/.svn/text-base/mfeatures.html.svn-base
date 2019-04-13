@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+<head>
+  <title>Missing Features</title>
+</head>
+<body>
+<h2>Introduction</h2>
+<h3><b>Missing features, maybe included in next major versions</b></h3>
+<p>This is a missing features list, it can be considered also a <b>to do list</b>. 
+</p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#66FFFF" bordercolor="#000000"><b>General</b></td>
+  </tr>
+  <tr> 
+    <td> <ul>
+        <li>Enhaced exporting to HTML (drawing elements)</li>
+        <li>Enhaced exporting to SVG (drawing elements)</li>
+        <li>Export to RTF (use export to plain text now)</li>
+        <li>Better parameters configuration (datasource)</li>
+      </ul>
+    </td>
+  </tr>
+  <tr> 
+    <td bgcolor="#66FFFF" bordercolor="#000000"><b>Supported database engines</b></td>
+  </tr>
+  <tr> 
+    <td><ul>
+        <li>Removing the TClientDataset dependence (it will allow compile with 
+          Professional versions of Delphi 4/5 and Builder 4/5</li>
+        <li>Add Borland .Net data providers and Microsoft .Net data providers</li>
+      </ul>
+    </td>
+  </tr>
+  <tr bgcolor="#66FFFF"> 
+    <td bordercolor="#000000"><b>Report Server and web Report Server</b></td>
+  </tr>
+  <tr> 
+    <td>
+      <ul>
+        <li>Better parameter HTML in web report server using datasources and lists 
+          of values</li>
+      </ul>
+    </td>
+  </tr>
+  <tr> 
+    <td bgcolor="#66FFFF" bordercolor="#000000"><b>Report definition &amp; desingning</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <ul>
+        <li>Moving components between sections (use cut &amp; paste now)</li>
+      </ul>
+    </td>
+  </tr>
+  <tr> 
+    <td bgcolor="#66FFFF" bordercolor="#000000"><b>Printing engine</b></td>
+  </tr>
+  <tr> 
+    <td height="22"> 
+      <ul>
+        <li>Exactly same sizes in preview and print, using TRpVCLDriver and TRpPDFdrivers</li>
+      </ul>
+    </td>
+  </tr>
+  <tr> 
+    <td bgcolor="#66FFFF" bordercolor="#000000"><b>Properties for all sections</b></td>
+  </tr>
+  <tr> 
+    <td><ul>
+        <li>Drill down?</li>
+        <li>Establish relations between fields to get size and position from each 
+          other component.</li>
+      </ul></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#66FFFF" bordercolor="#000000"><b>Properties for text controls</b></td>
+  </tr>
+  <tr> 
+    <td><ul>
+        <li>Hyperlinks at preview</li>
+      </ul> </td>
+  </tr>
+  <tr> 
+    <td height="21" bgcolor="#66FFFF" bordercolor="#000000"><b>Properties for 
+      expressions</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <ul>
+        <li> More functions available</li>
+        <li>Add a OnFunction to the base report class you user defined functions 
+          can easily added</li>
+      </ul>
+    </td>
+  </tr>
+  <tr> 
+    <td bgcolor="#66FFFF" bordercolor="#000000"><b>Image print control</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <ul>
+        <li> Monocrome and RLE compressed bitmaps in PDF export (Qt and GDI already 
+          support them)</li>
+      </ul>
+    </td>
+  </tr>
+  <tr> 
+    <td bgcolor="#66FFFF" bordercolor="#000000"><b>Barcode control</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <ul>
+        <li>Enhaced barcode printing in Linux with a better resolution (Qt 3.0 
+          version is needed to pass the 100dpi limitation)</li>
+      </ul>
+    </td>
+  </tr>
+  <tr> 
+    <td bgcolor="#66FFFF" bordercolor="#000000"><b>Chart control</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <ul>
+        <li>More chart types in native driver, for now you can <a href="teechart.html">use 
+          TeeChar</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr> 
+    <td bgcolor="#66FFFF" bordercolor="#000000"><b>Simple drawing/decoration control</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <ul>
+        <li>Polylines</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

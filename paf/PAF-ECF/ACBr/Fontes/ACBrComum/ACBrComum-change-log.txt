@@ -1,0 +1,184 @@
+{******************************************************************************}
+{ Projeto: Componentes ACBr                                                    }
+{ Biblioteca multi plataforma de componentes Delphi para interação com equipa- }
+{ mentos de Automação Comercial utilizados no Brasil                           }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na página do Projeto ACBr     }
+{ Componentes localizado em      http://www.sourceforge.net/projects/acbr      }
+{                                                                              }
+{  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
+{ sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
+{ Free Software Foundation; tanto a versão 2.1 da Licença, ou (a seu critério) }
+{ qualquer versão posterior.                                                   }
+{                                                                              }
+{  Esta biblioteca é distribuída na expectativa de que seja útil, porém, SEM   }
+{ NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE OU      }
+{ ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral Menor}
+{ do GNU para mais detalhes. (Arquivo LICENÇA.TXT ou LICENSE.TXT)              }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral Menor do GNU junto}
+{ com esta biblioteca; se não, escreva para a Free Software Foundation, Inc.,  }
+{ no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.          }
+{ Você também pode obter uma copia da licença em:                              }
+{ http://www.opensource.org/licenses/lgpl-license.php                          }
+{                                                                              }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
+{******************************************************************************}
+{******************************************************************************
+|* ACBr
+|*
+|* PROPÓSITO: Registro de Alterações
+******************************************************************************}
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+24/08/2011
+-- ACBrAAC --
+[-] Acerto no método que atualização do MD5.
+
+11/08/2011
+-- ACBrAAC --
+[+] Adicionada a propriedade EfetuarFlush : Boolean = True
+    Se True, chama rotina que descarrega Cache de memória no disco, para
+    garantir a gravação do arquivo.
+
+-- ACBrUtil --
+[+] Adicionada a função: FlushToDisk(sDriveLetter: string): boolean;
+
+Data: 27/07/2011
+-- ACBrUtil --
+[-] Corrigido o método AjustaLinhas para considerar as tags de formatação
+    estava colocando a quebra de linha no meio delas e causando erros
+    (por: Régys Silveira)
+
+Data: 05/06/2011
+-- ACBTXTClass --
+[-] Corrigido o método DFill, que ao receber o parametro DFill(15.00, 3)
+    retornava 15 e o correto pelo Guia Pratico deveria voltar 15,000
+    (por Isaque Pinheiro)
+
+Data: 03/06/2011
+-- ACBPAFClass --
+[*] Recebeu as class "TACBrECFDAV" e "TACBrECFDAVs" que estavam em ACBrECFClass 
+    (por: Isaque Pinheiro)
+
+01/06/2011
+-- ACBrAAC --
+[*] Ampla reforma nas propriedades de Identificação da S.H. e PAF, que foram
+    substiuidas por tipos já existente no ABCrECF, mais completos e organizados
+  ACBrAAC1.SH_RazaoSocial -> ACBrAAC1.IdentPAF.Empresa.RazaoSocial
+  ACBrAAC1.SH_CNPJ        -> ACBrAAC1.IdentPAF.Empresa.CNPJ
+  ACBrAAC1.SH_IM          -> ACBrAAC1.IdentPAF.Empresa.IM
+  ACBrAAC1.SH_IE          -> ACBrAAC1.IdentPAF.Empresa.IE
+  ACBrAAC1.PAF_Nome       -> ACBrAAC1.IdentPAF.Paf.Nome
+  ACBrAAC1.PAF_Versao     -> ACBrAAC1.IdentPAF.Paf.Versao
+  ACBrAAC1.PAF_MD5        -> ACBrAAC1.IdentPAF.ArquivoListaAutenticados.MD5
+
+  Nota: Apesar da modificação os arquivos AAC gerados continuam compatíveis.
+
+[*] A Class "TACBrECFIdentificacaoPAF", que era instanciada avulsa, para guardar 
+    informações, passou a fazer parte do componente ACBrAAC, basta agora alimentar
+    a propriedade IdentPAF do ACBrAAC, la estão todas as informações necessárias
+    (por Isaque Pinheiro)
+
+[*] Melhor integrado com ACBrPAF. Quando inteligados com o ACBrPAF, se o ACBrAAC 
+    tiver nele todos os dados, os registros N1, N2 e N3, serão automaticamente 
+    preenchidos necessitando apenas chamar o método ACBrPAF.SaveFileTXT_N(NomeArquivo), 
+    para que o arquivo seja gerado e o MD5 seja atualizado no arquivo auxiliar.
+
+   Nota: Caso não tenha todos os dados no ACBrAAC, poderá alimentar as informações
+         manualmente antes de chamar o método ACBrPAF.SaveFileTXT_N(NomeArquivo);
+
+[*] Melhor integrado com o ACBrECF. Quando interligados o ACBrECF e a 
+    propriedade ACBrAAC.IdentPAF, recebe todas as informações que antes era 
+    armazenadas em uma class "TACBrECFIdentificacaoPAF", essa proprieade será 
+    usada como parametro para a impressão da identificação do PAF-ECF pelo método 
+    do MF(PafMF_RelIdentificacaoPafECF;) bastando chamar o método sem parametro.
+
+   Nota: Caso não esteja interligado ao ACBrECF, mas queira usar a propriedade
+         ACBrAAC.IdentPAF, para não ter que instanciar uma class 
+         "TACBrECFIdentificacaoPAF", poderá chamar o método do MF passando a 
+         propriedade como parametro:
+         PafMF_RelIdentificacaoPafECF(ACBrAAC.IdentPAF);
+
+12/05/2011
+-- ACBrAAC --
+[+] Adicionado o Evento "VerificarRecomporValorGT", que será chamado sempre que
+    o ACBrAAC detectar que o Valor do G.T. não confere com o do arquivo... Nesse 
+    caso, programe o Evento, e caso a recuperação do GT seja permitida (de acordo 
+    com as regras do PAF-ECF), informe na variável ValorGT o valor correto. O 
+    componente ACBrAAC irá atualizar o GT no arquivo e NAO informará o Erro -2
+    (por: DSA)
+
+09/05/2011
+-- ACBrAAC --
+[*] Componente ACBrAAC volta para o Package ACBrComum, para poder ser usado por
+    ACBrECF e ACBrPAF.. (por: DSA)   
+	** NOTA: Isso exige a completa re-instalação dos Packages ACBrComum e ACBrSerial
+
+	05/05/2011
+-- ACBrArqAuxCriptografado
+[+] Componente movido para ACBrSerial, por favor leia ACBrSerial-change-log.txt
+
+04/04/2011
+-- ACBrEAD
+[+] Métodos para geração do MD5 de arquivos e strings diretamente.
+    por: Régys Silveira
+
+28/03/2011
+-- ACBrArqAuxCriptografado
+[+] Novo componente para controle do arquivo auxiliar criptografado do PAF-ECF
+    por: Régys Silveira
+
+22/02/2011
+-- ACBrEAD --
+[*] Métodos de MD5 modificados para permitir todos os mecanismos de Digest do
+    OpenSSL. permitindo os seguintes calculos de HASH: (MD2, MD4, MD5, RMD160,
+    SHA, SHA1).
+    Infelizmente isso "quebrou" a assinatura do componente, mas o ajuste é
+    rápido. Exemplo:
+    ACBrEAD1.CalcularMD5Arquivo( StrArqEntrada )              mudou para:
+    ACBrEAD1.CalcularHashArquivo( StrArqEntrada, dgstMD5 )
+
+01/02/2011
+-- ACBrEAD --
+[*] Unit ACBrEAD modificada para se tornar um componente. Portanto o package
+    ===>>> ACBrComum PRECISA SER RE-COMPILADO e INSTALADO <<<===
+
+[+] Novo componente ACBrEAD destinado a ser uma interface com o OpenSSL para
+    Fazer e Verificar assinatura digital, usando chaves RSA, implementando os
+    seguinte métodos:
+
+    Procedure GerarChaves( var AChavePublica : AnsiString;
+       var AChavePrivada : AnsiString ) ;
+    function AssinarArquivoComEAD( const NomeArquivo: String) : AnsiString ;
+    function VerificarEADArquivo( const NomeArquivo: String): Boolean ; overload ;
+    function VerificarEAD( const AString : AnsiString): Boolean ; overload ;
+    function VerificarEAD( const AStringList : TStringList): Boolean ; overload ;
+    function VerificarEAD( const MS : TMemoryStream; EAD: AnsiString):
+       Boolean ; overload ;
+    Function GerarXMLeECFc( const NomeSwHouse, Diretorio : String ) : Boolean ;
+    Procedure CalcularModuloeExpoente( var Modulo, Expoente : AnsiString );
+    Function CalcularChavePublica : AnsiString ;
+    function CalcularMD5Arquivo( const NomeArquivo: String): AnsiString ; overload ;
+    function CalcularMD5( const AString : AnsiString): AnsiString ; overload ;
+    function CalcularMD5( const AStringList : TStringList): AnsiString ; overload ;
+    function CalcularMD5( const MS : TMemoryStream): AnsiString ; overload ;
+    function CalcularEADArquivo( const NomeArquivo: String): AnsiString ; overload ;
+    function CalcularEAD( const AString : AnsiString): AnsiString ; overload ;
+    function CalcularEAD( const AStringList : TStringList): AnsiString ; overload ;
+    function CalcularEAD( const MS : TMemoryStream): AnsiString ; overload ;
+
+    - Veja na pasta ACBr\Exemplos\ACBrEAD projetos com Exemplos de uso para uma
+      melhor compreensão de como usar o componente...
+    - No Delphi isso causará a dependencia estática da DLL libeay32.dll em todos
+      os programas que usem os componentes ACBrECF, ACBrRFD ou ACBrPAF
+    - A DLL pode ser encontrada em: ACBr\DLLs\OpenSSL
+    - Copie-a para a pasta do seu executável.
+

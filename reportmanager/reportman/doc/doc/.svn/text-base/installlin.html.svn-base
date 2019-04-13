@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Installation in Linux</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Installation</h2>
+<h3>Linux Installation</h3>
+<p>Installing Report Manager Designer in Linux is a easy process also, you must 
+  have <b>root rights if you want to install to allow all users to execute it 
+  or if rpm installation system is used</b>.</p>
+<p>See <a href="requirements.html">hardware and software requirements</a> before 
+  installing Report Manager designer.</p>
+<p>You must <b>download the latest Report Manager for Linux version</b> from sourceforge:</p>
+<p><a href="http://sourceforge.net/projects/reportman" target="_blank">http://sourceforge.net/projects/reportman</a></p>
+<p><b>RPM Package Installation</b></p>
+<p>May be you distribution uses .rpm packages and a .rpm package is available 
+  for download, in this case use your own installation distribution procedure 
+  or go to the command line and write:</p>
+<p>rpm -U reportmand-1.0.i386.rpm</p>
+<p><b>tar.gz File Installation</b></p>
+<p>If you downloaded a .tar.gz file then you must create a directory and place 
+  the downloaded file there:</p>
+<p><code>make /opt/repmand</code></p>
+<p><code>mv reportmand-1.0.tar.gz /opt/repmand</code></p>
+<p>Note: If you are not root you can place it in /home/youusername/repmand for 
+  example. </p>
+<p>Change to that directory and untar the files</p>
+<p><code>cd /opt/repmand</code></p>
+<p><code>tar zxvf repmand.tar.gz</code></p>
+<p>After that a number of files in the current dir will be created.</p>
+<p>Execute repmand.sh to start Report Manager designer:</p>
+<p><code>./repmand.sh</code></p>
+<p><b>System Libraries Issues</b></p>
+<p>When you execute a Linux application it searchs libraries using LD_LIBRARY_PATH 
+  variable, repmand.sh set this variable to search the current directory first. 
+  To call any command line tool you must set also this option or you can set it 
+  system wide. The launcher repmand.bin will set also the variable before calling 
+  the application repmand.</p>
+<p>Also there are issues with Borland provided qt libraries, see<a href="knownissues.html"> 
+  known issues</a> if you have problems starting the application.</p>
+<p><b>Database configuration files</b></p>
+<p>Report Manager Designer will look for database configuration files, it will 
+  look first at <b>/home/yourusername/.borland</b> directory, will search for 
+  'dbxdrivers' and 'dbxconnections' files, if there are no files there it will 
+  search at '/usr/local/etc' for files 'dbxdrivers.conf' and 'dbxconnections.conf', 
+  if this files does not exists it will search in the current executable directory 
+  and will copy them to /home/yourusername/.borland. So any user executing Report 
+  Manager Designer can own their database connections file or use system common 
+  configuration files.</p>
+<p>When you execute Report Manager command line tools or applications from other 
+  applications (like apache web server) you should copy the database configuration 
+  files to correct path following the above explanation.</p>
+<p><b>Printer configuration file</b></p>
+<p>Report Manager Designer will use a Printer configuration file, only used in 
+  printer selection, this file will be searched as /etc/reporman, if not found 
+  it will create or use /home/yourusername/.reportman</p>
+<p><strong>Environment variables</strong></p>
+<p>You can define a special environment variable to enable, by default, the use 
+  of kprinter to print reports, this will allow to select the diferent options 
+  in the kprinter dialog.</p>
+<p>export REPMAN_USEKPRINTER=true</p>
+<p>Before showing print dialog, the report will be transformed to Adobe PDF, then 
+  converted to postcript using pdftops command line tool (so Xpdf package installation 
+  is required), the resulting postcript file will be sent to kprinter command 
+  line tool and the user will see the kprinter print dialog.</p>
+<p>The operations that the engine performs internally are:</p>
+<p>printerreptopdf -u yourreport.rep pdffile.pdf</p>
+<p>pdftops pdffile.pdf postcriptfile.ps</p>
+<p>kprinter postcriptfile.ps</p>
+<p>The main diference is when you use kprinter the report must be calculated entirely 
+  before showing the print dialog, and if the report is very long and you want 
+  to print only one page, a lot of processing time may be not really useful.</p>
+<p></p>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,629 @@
+object FMain: TFMain
+  Left = 149
+  Top = 60
+  ActiveControl = ComboHost
+  AutoScroll = False
+  Caption = 'Report Manager Server configuration'
+  ClientHeight = 443
+  ClientWidth = 517
+  Color = clBackground
+  ShowHint = True
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object GUser: TGroupBox
+    Left = 4
+    Top = 40
+    Width = 509
+    Height = 117
+    Anchors = [akLeft, akTop, akRight]
+    Caption = 'User information'
+    TabOrder = 1
+    object LUserName: TLabel
+      Left = 8
+      Top = 24
+      Width = 51
+      Height = 13
+      Caption = 'User name'
+    end
+    object EUserName: TEdit
+      Left = 112
+      Top = 20
+      Width = 389
+      Height = 21
+      Anchors = [akLeft, akTop, akRight]
+      TabOrder = 1
+      Text = 'Admin'
+    end
+    object EPassword: TEdit
+      Left = 112
+      Top = 48
+      Width = 389
+      Height = 21
+      Anchors = [akLeft, akTop, akRight]
+      EchoMode = emPassword
+      TabOrder = 2
+    end
+    object LPassword: TLabel
+      Left = 8
+      Top = 52
+      Width = 46
+      Height = 13
+      Caption = 'Password'
+    end
+    object BConnect: TButton
+      Left = 8
+      Top = 84
+      Width = 113
+      Height = 25
+      Caption = 'Connect'
+      TabOrder = 4
+      OnClick = BConnectClick
+    end
+  end
+  object LHost: TLabel
+    Left = 4
+    Top = 12
+    Width = 22
+    Height = 13
+    Caption = 'Host'
+  end
+  object ComboHost: TComboBox
+    Left = 92
+    Top = 8
+    Width = 261
+    Height = 21
+    Anchors = [akLeft, akTop, akRight]
+    ItemHeight = 15
+    Items.Strings = (
+      'localhost')
+    TabOrder = 0
+  end
+  object LMessages: TListBox
+    Left = 4
+    Top = 368
+    Width = 509
+    Height = 69
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Color = clBackground
+    TabOrder = 3
+  end
+  object ComboPort: TComboBox
+    Left = 428
+    Top = 8
+    Width = 77
+    Height = 21
+    Anchors = [akTop, akRight]
+    ItemHeight = 15
+    Items.Strings = (
+      '3060')
+    TabOrder = 4
+    Text = '3060'
+  end
+  object LPort: TLabel
+    Left = 380
+    Top = 12
+    Width = 19
+    Height = 13
+    Anchors = [akTop, akRight]
+    Caption = 'Port'
+  end
+  object GServerinfo: TGroupBox
+    Left = 1
+    Top = 40
+    Width = 512
+    Height = 325
+    Anchors = [akLeft, akTop, akRight]
+    Caption = 'Server information'
+    TabOrder = 6
+    Visible = False
+    object BCloseConnection: TButton
+      Left = 4
+      Top = 289
+      Width = 173
+      Height = 33
+      Caption = 'Close connection'
+      TabOrder = 0
+      OnClick = BCloseConnectionClick
+    end
+    object PControl: TPageControl
+      Left = 4
+      Top = 12
+      Width = 501
+      Height = 273
+      ActivePage = TabUsers
+      Anchors = [akLeft, akTop, akRight]
+      TabOrder = 1
+      object TabUsers: TTabSheet
+        Caption = 'Users'
+        object GUsers: TGroupBox
+          Left = 0
+          Top = 0
+          Width = 489
+          Height = 105
+          Anchors = [akLeft, akTop, akRight]
+          Caption = 'Users'
+          TabOrder = 0
+          object LUsers: TListBox
+            Left = 4
+            Top = 12
+            Width = 301
+            Height = 85
+            Anchors = [akLeft, akTop, akRight]
+            TabOrder = 0
+            OnClick = LUsersClick
+          end
+          object BDeleteUser: TButton
+            Left = 312
+            Top = 72
+            Width = 169
+            Height = 25
+            Anchors = [akTop, akRight]
+            Caption = 'Delete'
+            TabOrder = 3
+            OnClick = BDeleteUserClick
+          end
+          object BAddUser: TButton
+            Left = 312
+            Top = 13
+            Width = 169
+            Height = 24
+            Anchors = [akTop, akRight]
+            Caption = 'Add'
+            TabOrder = 1
+            OnClick = BAddUserClick
+          end
+          object BChangePassword: TButton
+            Left = 312
+            Top = 41
+            Width = 169
+            Height = 28
+            Anchors = [akTop, akRight]
+            Caption = 'Change Password'
+            TabOrder = 2
+            OnClick = BChangePasswordClick
+          end
+        end
+        object GGroups: TGroupBox
+          Left = 0
+          Top = 108
+          Width = 233
+          Height = 105
+          Caption = 'Groups'
+          TabOrder = 1
+          object LGroups: TListBox
+            Left = 104
+            Top = 16
+            Width = 121
+            Height = 81
+            TabOrder = 0
+          end
+          object BAddGroup: TButton
+            Left = 4
+            Top = 16
+            Width = 97
+            Height = 25
+            Caption = 'Add'
+            TabOrder = 1
+            OnClick = BAddGroupClick
+          end
+          object BDeleteGroup: TButton
+            Left = 4
+            Top = 48
+            Width = 97
+            Height = 25
+            Caption = 'Delete'
+            TabOrder = 2
+            OnClick = BDeleteGroupClick
+          end
+        end
+        object GUserGroups: TGroupBox
+          Left = 236
+          Top = 108
+          Width = 253
+          Height = 105
+          Anchors = [akLeft, akTop, akRight]
+          Caption = 'The user is member of this groups'
+          TabOrder = 2
+          object LUserGroups: TListBox
+            Left = 40
+            Top = 20
+            Width = 205
+            Height = 77
+            Anchors = [akLeft, akTop, akRight]
+            TabOrder = 0
+          end
+          object BAddUserGroup: TBitBtn
+            Left = 4
+            Top = 24
+            Width = 33
+            Height = 33
+            TabOrder = 1
+            OnClick = BAddUserGroupClick
+            Glyph.Data = {
+              AE040000424DAA04000000000000360000002800000013000000130000000100
+              18000000000074040000C40E0000C40E00000000000000000000FF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF00
+              0000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000000000FF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000000000000000FF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FF000000000000000000000000FF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FF000000000000000000FF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FF000000000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF00
+              0000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FF000000}
+          end
+          object BDeleteUserGroup: TBitBtn
+            Left = 4
+            Top = 60
+            Width = 33
+            Height = 33
+            TabOrder = 2
+            OnClick = BDeleteUserGroupClick
+            Glyph.Data = {
+              AE040000424DAA04000000000000360000002800000013000000130000000100
+              18000000000074040000C40E0000C40E00000000000000000000FF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF00
+              0000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000000000FF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000000000000000FF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FF000000000000000000000000FF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FF000000000000000000FF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FF000000000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF00
+              0000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FF000000}
+          end
+        end
+      end
+      object TabAliases: TTabSheet
+        Caption = 'Aliases'
+        ImageIndex = 2
+        object GReportDirectories: TGroupBox
+          Left = 0
+          Top = 0
+          Width = 489
+          Height = 133
+          Anchors = [akLeft, akTop, akRight]
+          Caption = 'Report server directories'
+          TabOrder = 0
+          object DBGrid1: TDBGrid
+            Left = 4
+            Top = 16
+            Width = 477
+            Height = 81
+            Anchors = [akLeft, akTop, akRight]
+            DataSource = SDirectories
+            ReadOnly = True
+            TabOrder = 0
+            TitleFont.Color = clBlack
+            TitleFont.Height = 11
+            TitleFont.Name = 'MS Shell Dlg'
+            TitleFont.Pitch = fpVariable
+            TitleFont.Style = []
+            TitleFont.Weight = 40
+          end
+          object BAddAlias: TButton
+            Left = 4
+            Top = 99
+            Width = 133
+            Height = 30
+            Caption = 'Add'
+            TabOrder = 1
+            OnClick = BAddAliasClick
+          end
+          object BDeleteAlias: TButton
+            Left = 140
+            Top = 99
+            Width = 133
+            Height = 30
+            Caption = 'Delete'
+            TabOrder = 2
+            OnClick = BDeleteAliasClick
+          end
+          object BPreviewTree: TButton
+            Left = 276
+            Top = 99
+            Width = 205
+            Height = 30
+            Anchors = [akLeft, akTop, akRight]
+            Caption = 'Preview Report Tree'
+            TabOrder = 3
+            OnClick = BPreviewTreeClick
+          end
+        end
+        object GGroups2: TGroupBox
+          Left = 0
+          Top = 136
+          Width = 197
+          Height = 105
+          Caption = 'Groups'
+          TabOrder = 1
+          object LGroups2: TListBox
+            Left = 4
+            Top = 16
+            Width = 185
+            Height = 81
+            TabOrder = 0
+          end
+        end
+        object GAliasGroups: TGroupBox
+          Left = 200
+          Top = 136
+          Width = 289
+          Height = 105
+          Anchors = [akLeft, akTop, akRight]
+          Caption = 'This alias is accessible by this user groups'
+          TabOrder = 2
+          object LAliasGroups: TListBox
+            Left = 40
+            Top = 20
+            Width = 241
+            Height = 77
+            Anchors = [akLeft, akTop, akRight]
+            TabOrder = 0
+          end
+          object BDeleteAliasGroup: TBitBtn
+            Left = 4
+            Top = 64
+            Width = 33
+            Height = 33
+            TabOrder = 2
+            OnClick = BDeleteAliasGroupClick
+            Glyph.Data = {
+              AE040000424DAA04000000000000360000002800000013000000130000000100
+              18000000000074040000C40E0000C40E00000000000000000000FF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF00
+              0000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000000000FF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000000000000000FF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FF000000000000000000000000FF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FF000000000000000000FF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FF000000000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF00
+              0000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FF000000}
+          end
+          object BAddAliasGroup: TBitBtn
+            Left = 4
+            Top = 24
+            Width = 33
+            Height = 33
+            TabOrder = 1
+            OnClick = BAddAliasGroupClick
+            Glyph.Data = {
+              AE040000424DAA04000000000000360000002800000013000000130000000100
+              18000000000074040000C40E0000C40E00000000000000000000FF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF00
+              0000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000000000FF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000000000000000FF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FF000000000000000000000000FF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FF000000000000000000FF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FF000000000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF00
+              0000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FF000000}
+          end
+        end
+      end
+      object TabConnections: TTabSheet
+        Caption = 'Connections'
+        ImageIndex = 2
+        object GTasks: TDBGrid
+          Left = 0
+          Top = 0
+          Width = 493
+          Height = 214
+          Align = alClient
+          DataSource = SData
+          TabOrder = 0
+          TitleFont.Color = clBlack
+          TitleFont.Height = 11
+          TitleFont.Name = 'MS Shell Dlg'
+          TitleFont.Pitch = fpVariable
+          TitleFont.Style = []
+          TitleFont.Weight = 40
+          Visible = False
+        end
+        object PBotTasks: TPanel
+          Left = 0
+          Top = 214
+          Width = 493
+          Height = 29
+          Align = alBottom
+          TabOrder = 1
+          object BRefresh: TButton
+            Left = 8
+            Top = 4
+            Width = 125
+            Height = 21
+            Caption = 'Refresh'
+            TabOrder = 0
+            OnClick = BRefreshClick
+          end
+          object BStop: TButton
+            Left = 144
+            Top = 4
+            Width = 113
+            Height = 21
+            Caption = 'Close connection'
+            TabOrder = 1
+            OnClick = BStopClick
+          end
+        end
+      end
+    end
+  end
+  object Trans: TRpTranslator
+    Active = False
+    Filename = 'reportmanres'
+    Left = 408
+    Top = 8
+  end
+  object DDirectories: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    AfterPost = DDirectoriesAfterScroll
+    AfterScroll = DDirectoriesAfterScroll
+    Left = 276
+    Top = 236
+    object DDirectoriesAlias: TStringField
+      DisplayLabel = 'Server alias'
+      DisplayWidth = 15
+      FieldName = 'Alias'
+      Size = 30
+    end
+    object DDirectoriesServerPath: TStringField
+      DisplayLabel = 'Server Path'
+      DisplayWidth = 50
+      FieldName = 'ServerPath'
+      Size = 250
+    end
+  end
+  object SDirectories: TDataSource
+    DataSet = DDirectories
+    Left = 232
+    Top = 240
+  end
+  object adata: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 116
+    Top = 120
+    object adataID: TIntegerField
+      DisplayLabel = 'Id.'
+      FieldName = 'ID'
+    end
+    object adataLASTOPERATION: TDateTimeField
+      DisplayLabel = 'Last operation'
+      DisplayWidth = 18
+      FieldName = 'LASTOPERATION'
+    end
+    object adataCONNECTIONDATE: TDateTimeField
+      DisplayLabel = 'Conn. Date'
+      FieldName = 'CONNECTIONDATE'
+    end
+    object adataUSERNAME: TStringField
+      DisplayLabel = 'User name'
+      FieldName = 'USERNAME'
+      Size = 40
+    end
+    object adataRUNNING: TBooleanField
+      DisplayLabel = 'Running'
+      FieldName = 'RUNNING'
+    end
+  end
+  object SData: TDataSource
+    DataSet = adata
+    Left = 172
+    Top = 124
+  end
+end

@@ -1,0 +1,713 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF
+END
+Biblioteca.pas
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/Biblioteca.pas
+END
+ECFTeste.ini
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/ECFTeste.ini
+END
+UCargaPDV.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UCargaPDV.dfm
+END
+UCancelaPreVenda.pas
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UCancelaPreVenda.pas
+END
+UPenDrive.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UPenDrive.pas
+END
+libeay32.dll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/libeay32.dll
+END
+ULocaliza.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/ULocaliza.dfm
+END
+UConfigConexao.pas
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UConfigConexao.pas
+END
+UMesclaDAV.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UMesclaDAV.dfm
+END
+UNotaFiscal.pas
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UNotaFiscal.pas
+END
+UFichaTecnica.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UFichaTecnica.dfm
+END
+UExcluiProdutoVenda.pas
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UExcluiProdutoVenda.pas
+END
+UEstoque.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UEstoque.pas
+END
+UEspelhoMFD.pas
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UEspelhoMFD.pas
+END
+UIdentificaCliente.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UIdentificaCliente.dfm
+END
+UDescontoAcrescimo.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UDescontoAcrescimo.dfm
+END
+UEfetuaPagamento.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UEfetuaPagamento.dfm
+END
+MySQL_Balcao_conn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/MySQL_Balcao_conn.txt
+END
+UCancelaPreVenda.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UCancelaPreVenda.dfm
+END
+UPenDrive.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UPenDrive.dfm
+END
+UConfiguracao.pas
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UConfiguracao.pas
+END
+Conexao.ini
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/Conexao.ini
+END
+UConfigConexao.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UConfigConexao.dfm
+END
+UNotaFiscal.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UNotaFiscal.dfm
+END
+UExcluiProdutoVenda.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UExcluiProdutoVenda.dfm
+END
+UEstoque.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UEstoque.dfm
+END
+MySQL_DBExpress_conn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/MySQL_DBExpress_conn.txt
+END
+UEspelhoMFD.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UEspelhoMFD.dfm
+END
+NotaFiscalEletronica.rav
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/NotaFiscalEletronica.rav
+END
+dbxmys.dll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/dbxmys.dll
+END
+PAF-ECF-change-log.txt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/PAF-ECF-change-log.txt
+END
+ACBrECF001.INI
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/ACBrECF001.INI
+END
+UArquivoMFD.pas
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UArquivoMFD.pas
+END
+UImportaCliente.pas
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UImportaCliente.pas
+END
+BemaMFD2.dll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/BemaMFD2.dll
+END
+UConfiguracao.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UConfiguracao.dfm
+END
+PafEcf.dproj.local
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/PafEcf.dproj.local
+END
+ULoginGerenteSupervisor.pas
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/ULoginGerenteSupervisor.pas
+END
+CONVECF.dll
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/CONVECF.dll
+END
+UMenuFiscal.pas
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UMenuFiscal.pas
+END
+UValorReal.pas
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UValorReal.pas
+END
+UImportaProduto.pas
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UImportaProduto.pas
+END
+dbxfb.dll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/dbxfb.dll
+END
+Firebird_DBExpress_conn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/Firebird_DBExpress_conn.txt
+END
+DarumaFrameWork.dll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/DarumaFrameWork.dll
+END
+PafEcf.dproj
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/PafEcf.dproj
+END
+UIniciaMovimento.pas
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UIniciaMovimento.pas
+END
+UMovimentoECF.pas
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UMovimentoECF.pas
+END
+UFechaEfetuaPagamento.pas
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UFechaEfetuaPagamento.pas
+END
+Constantes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/Constantes.pas
+END
+ArquivoAuxiliar.ini
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/ArquivoAuxiliar.ini
+END
+lebin.dll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/lebin.dll
+END
+UCarregaDAV.pas
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UCarregaDAV.pas
+END
+UArquivoMFD.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UArquivoMFD.dfm
+END
+ULogImportacao.pas
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/ULogImportacao.pas
+END
+PafEcf.dpr
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/PafEcf.dpr
+END
+UImportaNumero.pas
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UImportaNumero.pas
+END
+UImportaCliente.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UImportaCliente.dfm
+END
+UVendasPeriodo.pas
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UVendasPeriodo.pas
+END
+PafEcf.identcache
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/PafEcf.identcache
+END
+ULoginGerenteSupervisor.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/ULoginGerenteSupervisor.dfm
+END
+UDAVEmitidos.pas
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UDAVEmitidos.pas
+END
+UMeiosPagamento.pas
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UMeiosPagamento.pas
+END
+UMenuFiscal.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UMenuFiscal.dfm
+END
+UMovimentoAberto.pas
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UMovimentoAberto.pas
+END
+UValorReal.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UValorReal.dfm
+END
+Firebird_Balcao_conn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/Firebird_Balcao_conn.txt
+END
+UImportaProduto.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UImportaProduto.dfm
+END
+UIniciaMovimento.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UIniciaMovimento.dfm
+END
+USpedFiscal.pas
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/USpedFiscal.pas
+END
+UMovimentoECF.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UMovimentoECF.dfm
+END
+UFechaEfetuaPagamento.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UFechaEfetuaPagamento.dfm
+END
+ULMFC.pas
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/ULMFC.pas
+END
+UCarregaDAV.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UCarregaDAV.dfm
+END
+ULogImportacao.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/ULogImportacao.dfm
+END
+UImportaNumero.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UImportaNumero.dfm
+END
+UCaixa.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UCaixa.pas
+END
+UVendasPeriodo.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UVendasPeriodo.dfm
+END
+sign_bema.dll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/sign_bema.dll
+END
+LeituraMFDBin.dll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/LeituraMFDBin.dll
+END
+DAV.rep
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/DAV.rep
+END
+EAD_Class.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/EAD_Class.pas
+END
+UMesclaPreVenda.pas
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UMesclaPreVenda.pas
+END
+USplash.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/USplash.pas
+END
+UDAVEmitidos.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UDAVEmitidos.dfm
+END
+UMeiosPagamento.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UMeiosPagamento.dfm
+END
+UCheques.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UCheques.pas
+END
+UMovimentoAberto.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UMovimentoAberto.dfm
+END
+ULMFS.pas
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/ULMFS.pas
+END
+SWC.INI
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/SWC.INI
+END
+ULMFC.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/ULMFC.dfm
+END
+PafEcf.res
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/PafEcf.res
+END
+hwinterface.sys
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/hwinterface.sys
+END
+UCaixa.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UCaixa.dfm
+END
+UParcelamento.pas
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UParcelamento.pas
+END
+UMesclaPreVenda.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UMesclaPreVenda.dfm
+END
+USintegra.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/USintegra.pas
+END
+UEncerraMovimento.pas
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UEncerraMovimento.pas
+END
+USplash.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/USplash.dfm
+END
+UDataModule.pas
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UDataModule.pas
+END
+DarumaFrameWork.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/DarumaFrameWork.xml
+END
+UCheques.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UCheques.dfm
+END
+SWMFD.DLL
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/SWMFD.DLL
+END
+ULMFS.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/ULMFS.dfm
+END
+UCargaPDV.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UCargaPDV.pas
+END
+fbclient.dll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/fbclient.dll
+END
+UECF.pas
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UECF.pas
+END
+UParcelamento.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UParcelamento.dfm
+END
+ULocaliza.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/ULocaliza.pas
+END
+UMesclaDAV.pas
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UMesclaDAV.pas
+END
+UEncerraMovimento.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UEncerraMovimento.dfm
+END
+limpa.bat
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/limpa.bat
+END
+UFichaTecnica.pas
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UFichaTecnica.pas
+END
+UDataModule.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UDataModule.dfm
+END
+UIdentificaCliente.pas
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UIdentificaCliente.pas
+END
+UDescontoAcrescimo.pas
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UDescontoAcrescimo.pas
+END
+UEfetuaPagamento.pas
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UEfetuaPagamento.pas
+END
+UPAF.pas
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/t2tierp_delphi_pafecf_sitef/!svn/ver/2/branches/PAFECF_Desenvolvimento/PAF/UPAF.pas
+END

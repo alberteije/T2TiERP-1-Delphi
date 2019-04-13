@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Report Manager Web Server</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Report Manager Web Server</h2>
+<h3>Introduction</h3>
+<p>Report Manager Web Server is a multithread application that works together 
+  with a web server application. It allows any number of HTML client machines 
+  to execute reports obtaining <b>ready to print Adobe PDF files</b>.</p>
+<p>The web report server will ask user name and password, then show any available 
+  report groups, and any <b>report in each group</b>, <b>allowing to change report 
+  parameters</b> before executing the report, all is done via HTML and <b>without 
+  the need of enabling Cookies in the client browser</b>.</p>
+<p></p>
+<p>The client machine only need a Html Browser, if the browser have an Adobe PDF 
+  file viewer plugin, the user will see the report in the screen, else the user 
+  can save the resulting file and proces it with any tool like <b>pdf2ps or with 
+  Adobe PDF Reader</b>.</p>
+<p>The web report server supports Linux (Apache) and Windows (apache 2-Microsoft 
+  IIS 5).</p>
+<p>See<a href="webserverinstall.html"> Installation instructions</a> for more 
+  information.</p>
+<p>The web report sever must have any database drivers required by available reports, 
+  optionally the web server can be also be the database server, but the database 
+  server can be any machine accesible by the report server machine, so you can 
+  distribute the work of generated reports, for example the report client can 
+  be a Internet enabled machine running any operating system, requesting a report 
+  from a far network, the server generates the report requesting process intensive 
+  querys to a high performance database server, after the calculation of the report 
+  is done, the server sends the result to the client machine.</p>
+<p>The web server is optimized to use very little bandwith.</p>
+<p><b>Configuration</b></p>
+<p>See<a href="webserverinstall.html"> Installation instructions</a> for configuration 
+  information.</p>
+<p></p>
+<p>See <a href="webserveroperations.html">web server operations</a> page for operation 
+  options, basically you can operate the web server passing parameters in the 
+  URL.</p>
+<p>By default there is only one user named Admin and without password, in the 
+  report web server Admin user can't do administration tasks.</p>
+<p><b>Other considerations</b></p>
+<p>When you design reports for use with web report server you must configure them 
+  to be thread safe, that is make sure your driver supports multithread (as far 
+  as I know all drivers supports this) and your database connection string is 
+  thread safe, for example to access Interbase/Firebird databases provide the 
+  always the hostname (or write localhost), so the access method to the database 
+  is thread safe (local access method is not thread safe).</p>
+<p>Also you should define parameters, and the report should be a separate independent 
+  entity that only requires user parameters to execute.</p>
+</body>
+</html>

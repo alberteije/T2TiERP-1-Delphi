@@ -1,0 +1,60 @@
+object FRpDInfo: TFRpDInfo
+  Left = 269
+  Top = 178
+  Width = 565
+  Height = 522
+  VertScrollBar.Range = 39
+  ActiveControl = BOk
+  AutoScroll = False
+  Caption = 'Database connections and datasets'
+  Color = clButton
+  Position = poScreenCenter
+  ShowHint = True
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object PBottom: TPanel
+    Left = 0
+    Top = 483
+    Width = 565
+    Height = 39
+    Align = alBottom
+    TabOrder = 0
+    object BOk: TButton
+      Left = 12
+      Top = 8
+      Width = 89
+      Height = 25
+      Caption = 'OK'
+      TabOrder = 0
+      OnClick = BOkClick
+    end
+    object BCancel: TButton
+      Left = 116
+      Top = 8
+      Width = 89
+      Height = 25
+      Caption = 'Cancel'
+      TabOrder = 1
+      OnClick = BCancelClick
+    end
+  end
+  object PControl: TPageControl
+    Left = 0
+    Top = 0
+    Width = 565
+    Height = 483
+    ActivePage = TabConnections
+    Align = alClient
+    TabOrder = 1
+    OnChange = PControlChange
+    object TabConnections: TTabSheet
+      Caption = 'Connections'
+    end
+    object TabDatasets: TTabSheet
+      Caption = 'Datasets'
+      ImageIndex = 1
+    end
+  end
+end

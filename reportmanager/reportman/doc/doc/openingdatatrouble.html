@@ -1,0 +1,521 @@
+<html>
+<head>
+<title>Database access information</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Advanced report design</h2>
+<h3><b>Database access information</b></h3>
+<p>This documentation will help you to solve problems and setup your database.</p>
+<p><strong>Check installation</strong></p>
+<p>Before beginning the troubleshooting you should check this items:</p>
+<ul>
+  <li>Install the client database software correctly, and server database if needed</li>
+  <li>Check your database connection with a standard TCP/IP connection application 
+    provided by the database vendor. Check you can access tables and fields executing 
+    some querys</li>
+  <li>Install additional software if needed, for example if you plan to access 
+    the database throught ODBC, install the ODBC software (unixODBC in Linux/ODBC32 
+    in Microsoft Windows) and make sure to use ODBC driver compatible with the 
+    version you installed. Again check ODBC connections with the provided ODBC 
+    client tools.</li>
+  <li>Check you are using the correct or latest drivers, for example for Visual 
+    FoxPro you should download the ODBC driver update from Microsoft web site.</li>
+</ul>
+<p>This will ensure the database software is correctly installed.</p>
+<p><strong>Database drivers overview</strong></p>
+<p>There are some database drivers to connect with Report Manager to databases, 
+  usually a connection can be done using different database drivers, each database 
+  driver can have issues or bugs, if you find a issue using a database driver 
+  you should ask about the issue in a correct place.</p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><strong>Driver Name</strong></td>
+    <td bgcolor="#FFFFCC"><strong>Vendor/Autor</strong></td>
+    <td bgcolor="#FFFFCC"><strong>Databases</strong></td>
+    <td bgcolor="#FFFFCC"><strong>Support</strong></td>
+  </tr>
+  <tr> 
+    <td>DBExpress</td>
+    <td>Borland</td>
+    <td>Some SQL Servers</td>
+    <td>Borland newsgroups about dbexpress</td>
+  </tr>
+  <tr> 
+    <td>DBExpress-OpenODBC</td>
+    <td>Edward Benson</td>
+    <td>All ODBC</td>
+    <td><p><a href="http://open-dbexpress.sourceforge.net" target="_blank">http://open-dbexpress.sourceforge.net</a></p>
+      <p>Borland newsgroups about dbexpress</p></td>
+  </tr>
+  <tr> 
+    <td>Borland Database Engine</td>
+    <td>Borland</td>
+    <td>See bellow</td>
+    <td>Borland newsgroups about BDE</td>
+  </tr>
+  <tr> 
+    <td>Zeos Library</td>
+    <td>Zeos team</td>
+    <td>Some SQL Servers, see bellow</td>
+    <td><p>http://zeoslib.sourceforge.net</p></td>
+  </tr>
+  <tr> 
+    <td>Microsoft DAO</td>
+    <td>Borland</td>
+    <td>OLE DB/ODBC Capable databases</td>
+    <td>Borland newsgroups about adoexpress or dbgo</td>
+  </tr>
+  <tr> 
+    <td>Interbase Express</td>
+    <td>Borland</td>
+    <td>Interbase/Firebird</td>
+    <td>Borland newsgroups about InterbaseExpress</td>
+  </tr>
+  <tr> 
+    <td>IBObjects</td>
+    <td>Jason Wharton</td>
+    <td>Interbase/Firebird</td>
+    <td>http://www.ibobjects.com</td>
+  </tr>
+  <tr>
+    <td>MyBase</td>
+    <td>Borland</td>
+    <td>Text files, xml and binary compatible TClientDataset files</td>
+    <td>Borland newsgroups about TClientDataset and Report Manager mail list</td>
+  </tr>
+</table>
+<p>You can also purchase drivers to third party, usually for a fee, you can find 
+  more DBExpress drivers, more ODBC drivers etc.</p>
+<p><strong>DBExpress</strong></p>
+<p>DBExpress is a technology introduced by Borland since the release of Delphi 
+  6, as a replacement for the Borland Database Engine SQL Links, see section about 
+  BDE bellow for more information.</p>
+<p>DBExpress libraries are small and efficient, they are easy to update when a 
+  version change of the vendor occur. </p>
+<p>The main problem is that, Borland, the main developer of DBExpress drivers, 
+  does not frequently update this drivers, because limited resources etc.., this 
+  is a important issue because some database engine change versions often, this 
+  changes introduce sometimes incompatibilities (PostgreSQL, MySQL). </p>
+<p>Borland was not released sourcecode of DBExpress drivers (but released the 
+  specification so third party can write them), so you can't update the Borland 
+  provided DBExpress drivers.</p>
+<p>Provided DBExpress drivers:</p>
+<table border="1">
+  <tr bgcolor="#FFFFCC"> 
+    <td><strong>Database Name</strong></td>
+    <td><strong>Linux</strong></td>
+    <td><strong>Linux vendor Lib</strong></td>
+    <td><strong>Windows</strong></td>
+    <td><strong>Windows vendor lib</strong></td>
+  </tr>
+  <tr> 
+    <td>Interbase 6.0-7.1/Firebird 1.0-1.5</td>
+    <td>libsqlib.so</td>
+    <td>libgds.so</td>
+    <td>dbexpint.dll</td>
+    <td>gds32.dll</td>
+  </tr>
+  <tr> 
+    <td>IBM DB2</td>
+    <td>libsqldb2.so</td>
+    <td>libdb2.so</td>
+    <td>dbexpdb2.dll</td>
+    <td>db2cli.dll</td>
+  </tr>
+  <tr> 
+    <td>MySQL</td>
+    <td>libsqlmy.so.1</td>
+    <td>libmysqlclient.so</td>
+    <td>dbexpmysql.dll</td>
+    <td>lubmysql.dll</td>
+  </tr>
+  <tr> 
+    <td>MySQL 2.3</td>
+    <td>libsqlmy23.so</td>
+    <td>lubmysqlclient.so</td>
+    <td>dbexpmys.dll</td>
+    <td>libmysql.dll</td>
+  </tr>
+  <tr> 
+    <td>Oracle</td>
+    <td>libsqlora.so</td>
+    <td>libclntsh.so</td>
+    <td>dbexpora.dll</td>
+    <td>oci.dll</td>
+  </tr>
+  <tr> 
+    <td>Informix</td>
+    <td>libsqlinf.so</td>
+    <td>libinfclient.so.1.0.0</td>
+    <td>dbexpinf.dll</td>
+    <td>isqlb09a.dll</td>
+  </tr>
+  <tr> 
+    <td>Microsoft SQL Server</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>dbexpmss.dll</td>
+    <td>oledb (native)</td>
+  </tr>
+  <tr> 
+    <td>OpenODBC</td>
+    <td>libdbxoodbc.so</td>
+    <td>libodbc.so</td>
+    <td>dbxoodbc.dll</td>
+    <td>odbc32.dll</td>
+  </tr>
+</table>
+<p><strong>Troubleshooting for all drivers</strong></p>
+<p>Check the libraries you need are in your system, you can also check dependences. 
+  If you have problems with some datatypes you can try to set BlobSize to a value 
+  like 10000</p>
+<p> <strong>Unable to load library &quot;libraryname&quot;</strong></p>
+<p> This message is raised when the vendor librarys are not installed or are a 
+  different incompatible version, it's reported to work to install the correct 
+  version for the DBExpress driver.</p>
+<p>Note that the error message usually refers to the DBExpress driver library, 
+  not the vendor library but the problem is in the vendor library.</p>
+<p>For example when using Oracle 9i, you can install the Oracle 8i client library 
+  in the directory where Report Manager is installed, so Oracle 8i client library 
+  will be used, this is usually not recomended by the database vendor, so be aware 
+  of the risk, especially when updating the database (working with report libraries).</p>
+<p>Check the dependences with a programming tool, for example in Linux:</p>
+<p>ldd libsqlpg.so</p>
+<p>It reports a link to libpq.so.2 so you should create a symbolic link if this 
+  library does not exists:</p>
+<p>ln -s /usr/lib/libsqlpg.so.2 /usr/lib/libsqlpg.so.3</p>
+<p><strong>Borland Database Engine</strong></p>
+<p>Borland Database Engine was released by Borland since the first version of 
+  Delphi, and have been updated until Delphi 6.</p>
+<p>It's not provided by default on Report Manager, unless you purchase the <a href="../contrib.html" target="_blank">Standard 
+  Edition</a>. </p>
+<p> It's a really mature engine, but is big and have some overhead when accessing 
+  to SQL servers. It's very good to access <strong>DBase, Foxpro, and Paradox</strong> 
+  files because it includes a <strong>Local SQL processing</strong> engine for 
+  this file based databases, can also access text files and have a automatic and 
+  mature <strong>ODBC bridge</strong>. It has an interesting and flexible database 
+  connection manager, you can configure and test database connections using <strong>Borland 
+  Database engine configuration at the control panel</strong>.</p>
+<p>The <strong>SQL Links</strong> are libraries installed with the Borland Database 
+  Engine, this SQL Links will not be updated in a future and was not updated from 
+  Delphi 6 release, I think from 2001, so you can have problems if you access 
+  a database server wich changed the client/server protocol or client libraries 
+  since that date. If you want continuing using BDE and the <strong>SQL Link is 
+  out of data you can create a ODBC connection</strong>, and install the correct 
+  driver for the newer database version. </p>
+<p>The SQL Links provided are:</p>
+<table border="1">
+  <tr> 
+    <td>Interbase (also works for Firebird) supporting only Dialect 1</td>
+  </tr>
+  <tr> 
+    <td>Microsoft Access</td>
+  </tr>
+  <tr> 
+    <td>IBM DB2</td>
+  </tr>
+  <tr> 
+    <td>Informix</td>
+  </tr>
+  <tr> 
+    <td>Microsoft SQL Server</td>
+  </tr>
+  <tr> 
+    <td>Oracle</td>
+  </tr>
+  <tr> 
+    <td>Sybase</td>
+  </tr>
+</table>
+<p>Borland replace the BDE SQL Links with DBExpress, because BDE is big in size 
+  (and functionallity), it's not cross-platform, and the update and programming 
+  of SQL Links (drivers for SQL engines) is a difficult thing, and can be done 
+  only by Borland. So for all SQL Servers is recommended the use of DBExpress.</p>
+<p><strong>Microsoft DAO</strong></p>
+<p>This driver is based on Borland interface to Microsoft Data Access Objects, 
+  it only works in Microsoft Windows, there is a wizard to build connection strings 
+  to connect to any installed OLE DB provider or ODBC datasource. This is a common 
+  system for database connection for Microsoft enabled development environments 
+  like Visual Basic, Visual FoxPro...</p>
+<p><strong>ZeosLib</strong></p>
+<p><a href="http://zeoslib.sourceforge.net">Zeos library</a> is a component set 
+  to access some database engines, it's compiled inside all Report Manager binaries, 
+  so you can use it normally, but if you use Report Manager components and want 
+  to add the support in compilation (Kylix/Builder/Delphi) modify the rpconf.inc 
+  file to enable the Zeos Library compiling and linking.</p>
+<p>Usually you set the hostname, database, user name and password, but other parameters 
+  are available like the TCP/IP port and character set.</p>
+<p>To configure ZeosLib connections the same files as DBExpress drivers are used 
+  (dbxdrivers and dbxconnections).</p>
+<p>This driver is allows reading of TClientDataset files (.cds) in binary or XML 
+  format, also allows reading of text files as a database.</p>
+<p>The protocol property allow the selection of the database server. It supports 
+  Mysql,Ppostgresql, Interbase/Firebird, Microsoft SQL Server, Sybase, Oracle 
+  and IBM DB2.</p>
+<p><strong>Interbase Express</strong></p>
+<p>This driver is based on Interbase Express components provided by Borland in 
+  Delphi/Kylix and C++Builder environments, the main advantage is that no external 
+  shared object libraries are needed.</p>
+<p><strong>Interbase Objects</strong></p>
+<p>This driver is only available for Windows, it's implemented but not provided 
+  because it's a comercial product. Allow access to Interbase and Firebird.</p>
+<p><strong>Mybase</strong></p>
+<p>This driver is allows reading of TClientDataset files (.cds) in binary or XML 
+  format, also allows reading of text files as a database.</p>
+<h3><strong>Getting to work all databases and database drivers in Suse 9.0</strong></h3>
+This section will give you the steps to configure and use the databases provided 
+  in Suse 9.0. For each database different drivers will be used.
+<p><strong>PostgreSQL</strong></p>
+<p>Execute Yast, install PostgreSQL server packages and client packages (this 
+  where not installed by default), the important file missing by default to install 
+  is libpq.so.3, located at a client library package. I went to Software installation 
+  selected search postgre and checked all related packages to be sure.</p>
+<p>Related packages: postgresql-libs pgaccess postgresql</p>
+<p>First step is to start and setup the server I had some problems here because 
+  I'm new to PostgreSQL, I don't know if the way I do things is ok but it worked, 
+  I don't know why this steps are not done automatically by the setup scripts 
+  in software installation. Of course that forced me understanding how PostgreSQL 
+  works, learn reading documentation and also loosing lot of time.</p>
+<p>We will also install the unixODBC related packages and the qt and tk interfaces 
+  for configuration, this is for testing purposes , if you do not plan to use 
+  ODBC you don't need them. This are packages: unixODBC unixODBC-gui-qt unixODBC-gui-tk 
+  psqlODBC</p>
+<p>The startup script uses the postgres user to launch the PostgreSQL server for 
+  security reasons, so this user have limited privileges but should have all the 
+  privileges for the main &quot;database repository&quot;, we will create a database 
+  directory and give ownership to this user.</p>
+<p>Login as root and type:</p>
+<p>mkdir /var/pgdata</p>
+<p>chown postgres /var/pgdata</p>
+<p>Now we must initialize the &quot;database repository&quot;, but we must do 
+  it with postgres user, another problem here, I dont know the postgres default 
+  password, so I changed the password with the Yast configuratoin tool.</p>
+<p>Login as postgres and type:</p>
+<p>initdb -D/var/pgdata</p>
+<p>This initializes the &quot;database repository&quot;.</p>
+<p>Before starting the service we should say to the startup script /etc/init.d/postgresql 
+  the location of &quot;database repository&quot;. I did it by executing the Yast 
+  tool: Editor for /etc/sysconfig. Go to the branch Applications-PostgreSQL and 
+  set:</p>
+<p>POSTGRES_DATADIR /var/pgdata</p>
+<p>POSGRES_OPTIONS -i</p>
+<p>The -i option is to tell PostgreSQL to listen TCP/IP incoming connections.</p>
+<p>Now we will start the database server but we will need to restart in a few 
+  minutes. Go to Yast and execute the tool: Execution Level editor. Select PostgreSQL 
+  and check levels 3 and 5, select start and check it's started.</p>
+<p>Loign as posgresql and type:</p>
+<p>createuser yourloginname</p>
+<p>You will be asked, let the user create databases and optionally users.</p>
+<p>Now you are a postgresql database user, we will create a database:</p>
+<p>Login as yourloginname and type:</p>
+<p>createdb test</p>
+<p>Still not finished, we must say PostgreSQL wich IP connections are able to 
+  connect to the database server, by default all connections are closed.</p>
+<p>Login as postgres and type, or edit with your favourite editor:</p>
+<p>vim /var/pgdata/pg_hba.conf</p>
+<p>Remove the # symbol from the line:</p>
+<p>host all all 127.0.0.1 255.255.255.255 trust</p>
+<p>Now we need to restart the postgresql service, go to Yast Execution Level Editor 
+  and restart the service.</p>
+<p>Login as yourloginname and create some data.</p>
+<p>I executed pgaccess from a X-Window console to start a client application to 
+  connect to database test, this application uses also TCP/IP, so it's usefull 
+  to test a connection, other tools like createdb are not usefull to test connection 
+  configuration because does not use TCP/IP.</p>
+<p>Now we are sure PostgreSQL is up and running correctly.</p>
+<p><strong>PosgreSQL with DBExpress</strong></p>
+<p>Go to Report Manager connections configuration window, select PostgreSQL and 
+  click add.</p>
+<p>After configuring the hostname as localhost, the database name as test, and 
+  placing login information (the same as your login) It does not work, a error 
+  message is raised: library libsqlpg.so can not be found.</p>
+<p>But the library is in the path, this is a problem with the vendor library, 
+  lets see executing:</p>
+<p>ldd libsqlpg.so</p>
+<p>This commands shows a link to libpq.so.2, but in my system I have a library 
+  libpq.so.3, I cross my fingers and expect libqt.so.3 be compatible with the 
+  expected libpq.so.2.</p>
+<p>Login as root and type:</p>
+<p>ln -s /usr/lib/libpq.so.3 /usr/lib/libpq.so.2</p>
+<p>This creates a symbolic link to the newer library, I think you can have problems 
+  if you use features available only with the newer version. But it works ok.</p>
+<p>For consistency we will create another link:</p>
+<p>Login as root and type:</p>
+<p>ln -s /usr/lib/libpq.so.3 /usr/lib/libpq.so</p>
+<p><strong>PosgreSQL with Zeos</strong></p>
+<p>Go to Report Manager connections configuration window, select ZeosLib and click 
+  add.</p>
+<p>Select protocol PostgreSQL, database as test, hostname as localhost and set 
+  user_name and password, you can left the port to default 0.</p>
+<p>It does not work but it says correctly the missing library: unable to find 
+  libqp.so </p>
+<p>Login as root and type:</p>
+<p>ln -s /usr/lib/libpq.so.3 /usr/lib/libpq.so</p>
+<p>Now it works. I created a report library to test functionallity but before 
+  I executed from pgaccess:</p>
+<p>CREATE DOMAIN BLOB as bytea</p>
+<p><strong>PosgreSQL with DBExpress-OpenODBC</strong></p>
+<p>After installing unixODBC to allow odbc connections to the database a script 
+  must be executed.</p>
+<p>Login as yourloginname and type:</p>
+<p>psql -d test -f /usr/share/psqlodbc/odbc.sql</p>
+<p>We need to create a ODBC data source.</p>
+<p>I executed ODBCConfig (as root) and created a System DSN, to access databases 
+  from other services you should add a System DSN instead a User DSN, for example 
+  to access from Report Manager web server (that is executed from apache for example).</p>
+<p>You must add a driver:</p>
+<p>I setup Driver Name as POSGRESQL. Driver as /usr/lib/psqlodbc.so Setup as /usr/lib/unixODBC/libodbcpsqlS.so</p>
+<p>Then add a System DSN and assign parameter values to each item, Database, UserName, 
+  Password. Save configuration.</p>
+<p>I execute qtodbctest to check the connection without success. I think /etc/unixODBC/odbc.ini 
+  contains a setup configuration incorrect for this PostgreSQL version, again 
+  a configuration nightmare, this was so simple as providing a odbc.ini sample 
+  entry in the psqlodbc pacakage, but there is no documentation, oh yes documentation 
+  about how to build the driver (make clean..) but none about how to install it.</p>
+<p>This driver cannot be tested with Report Manager because it fails with basic 
+  ODBC connections tests (qtodbctest). Note that in Suse 8.2 and Suse 7.3 the 
+  ODBC driver for PostgreSQL worked without problems.</p>
+<p><strong>MySQL</strong></p>
+<p>Intallation is done using software package installation in Yast, intall mysql 
+  package, then the service is activated using Execution Level Editor also in 
+  Yast (select 3 and 5 execution levels).</p>
+<p>Install also the client libraries, in this caso mysql-shared package contains 
+  the libmysqlclient.so.12 libraries, mysql-client will be useful for installation 
+  testing. </p>
+<p>Login as yourloginname and type:</p>
+<p>mysqlshow</p>
+<p>It will show you the database test.</p>
+<p>I installed mysqlcc, a usefull client tool. Note that by default you must not 
+  enter any password when connecting to mysql, that is to access your database 
+  server connecting with mysqlcc set Host Name as localhost, User name as yourloginname 
+  and blank password. It will connect and show you databases, I created a test 
+  table an populated it.</p>
+<p><strong>Zeos and MySQL</strong></p>
+<p>Open Report Manager dataacess configuration, select ZeosLib and click add, 
+  select a connection name, select the new connection, set Database Protocol to 
+  mysql, Host Name to localhost, Database to test, User_Name to yourloginname 
+  and important, blank password, Suse 9 default installation is with blank passwords 
+  for MySQL.</p>
+<p>When you click Test connection, a error is raised: libmysqlclient.so not found. 
+  To solve the problem you must provide a symbolink link to the correct version 
+  of MySQL client library.</p>
+<p>Login as root and type:</p>
+<p>ln -s /usr/lib/libmysqlclient.so.12 /usr/lib/libmysqlclient.so</p>
+<p>Retry your connection with yourloginname user. Now it works ok.</p>
+<p><strong>DBExpress and MySQL</strong></p>
+<p>Open Report Manager dataacess configuration, select MySQL and click add, select 
+  a connection name, select the new connection, Host Name to localhost, Database 
+  to test, User_Name to yourloginname and important, blank password, Suse 9 default 
+  installation is with blank passwords for MySQL.</p>
+<p>If you test the connection a error is raised: libmysqlclient.so not found.</p>
+<p>Login as root and type:</p>
+<p>ln -s /usr/lib/libmysqlclient.so.12 /usr/lib/libmysqlclient.so</p>
+<p>But still the same error is launched, this is because DBExpress find a diferent 
+  version of the driver not supported by the DBExpress driver. You need a previous 
+  version of the client library for example libmysqlclient.so.10 search it at 
+  google for example and install in your system, to be persistent about the libmysqlclient.so 
+  is the latest edit your dbxdrivers file in ~/.borland and set vendor lib to 
+  of mysql driver to libmysqlclient.so.10. Now you are using a different client 
+  library. This is a bit dangerous because you are using a wrong client library, 
+  but should work.</p>
+<p><strong>DBExpress OpenODBC and MySQL</strong></p>
+<p>Installation of MySQL odbc driver is needed. You must install package MyODBC-unixODBC.</p>
+<p>You can read the documentation provided (you can see the files of the package 
+  executing rpm -ql MyODBC-unixODBC)</p>
+<p>After the installation you can add to /etc/unixODBC/odbcinst.ini file this 
+  section:</p>
+<p>[myodbcdriver]</p>
+<p>Description = MySQL ODBC Driver</p>
+<p>Driver = /usr/lib/unixODBC/libmyodbc.so</p>
+<p>And add to /etc/unixODBC/odbc.ini this section:</p>
+<p>[myodbc]</p>
+<p>Driver=myodbcdriver</p>
+<p>Description= Test of DSN for MySQL</p>
+<p>SERVER=localhost</p>
+<p>PORT=</p>
+<p>USER=yourloginname</p>
+<p>PASSWORD=</p>
+<p>Database=test</p>
+<p>OPTION=3</p>
+<p>Now you can test the connection with qtodbctest (remember, blank password and 
+  yourloginname). Full connection must be correct.</p>
+<p>Open Report Manager dataacess configuration, select OpenODBC and click add, 
+  select a connection name, select the new connection, and set Database to myodbc 
+  (the DSN name) the User_name to yourloginname and blank password.</p>
+<p>In this case the test connection failed (the driver hangs), so a bug report 
+  to OpenODBC driver project should be posted</p>
+<p><strong>Firebird</strong></p>
+<p>Intallation is done downloading the sofware from <a href="http://sourceforge.net/projects/firebird" target="_blank">http://sourceforge.net/projects/firebird</a></p>
+<p>Login as root and type</p>
+<p>rpm -U FirebirdSS-1.5.0.4027-RC7.i686.rpm</p>
+<p>Then use Execution Level editor to startup the server and activate at runlevels 
+  3 and 5.</p>
+<p>To check installation:</p>
+<p>We create a directory for databases, giving privileges only to firebird user:</p>
+<p>mkdir /var/data</p>
+<p>chown firebird /var/data</p>
+<p>cd /opt/firebird/bin</p>
+<p>./isql -user SYSDBA -password masterkey</p>
+<p>CREATE DATABASE '/var/data/test.fdb';</p>
+<p>quit;</p>
+<p>Now test connection:</p>
+<p>./isql -user SYSDBA -password masterkey localhost:/var/data/test.fdb</p>
+<p>Login as yourloginname:</p>
+<p>To create some I used IBAccess (<a href="http://www.ibaccess.org" target="_blank">http://www.ibaccess.org</a>), 
+  after downloading:</p>
+<p>tar zxvf ibaccess-1_18.i386.tar.gz</p>
+<p>./ibaccess.sh</p>
+<p>A symbolink link must be created because this tool uses Interbase Express, 
+  this link is also necessary to work with Interbase Express driver in Report 
+  Manager.</p>
+<p>Login as root and type:</p>
+<p>ln -s /usr/lib/libfbclient.so /usr/lib/libgds.so.0</p>
+<p>Now you can use ibaccess to create a test table.</p>
+<p></p>
+<p><strong>Firebird using Interbase Express</strong></p>
+<p>You must generate a symbolic link to enable Interbase Express:</p>
+<p>Login as root and type:</p>
+<p>ln -s /usr/lib/libfbclient.so /usr/lib/libgds.so.0</p>
+<p>Now you can create a connection and set the type to IBX. Configure the connection 
+  in the same way as a DBExpress Interbase connection.Set database to localhost:/var/data/test.fdb 
+  and it's working.</p>
+<p><strong>Firebird using DBExpress</strong></p>
+<p>You must generate a symbolic link to enable Interbase Express:</p>
+<p>Login as root and type:</p>
+<p>ln -s /usr/lib/libfbclient.so /usr/lib/libgds.so</p>
+<p>Now you can create a connection and set parameters for that connection. Set 
+  database to localhost:/var/data/test.fdb and it's working.</p>
+<p><strong>Firebird using Zeos</strong></p>
+<p>Open Report Manager dataacess configuration, select ZeosLib and click add, 
+  select a connection name, select the new connection, set Database Protocol to 
+  Firebird-1.5, Host Name to localhost, Database to /var/data/test.fdb, User_Name 
+  to SYSDBA and password to masterkey.</p>
+<p>When you click Test connection, a error is raised: fbclient.so not found. To 
+  solve the problem you must provide a symbolink link to the correct version of 
+  Firebird client library.</p>
+<p>Login as root and type:</p>
+<p>ln -s /usr/lib/libfbclient.so /usr/lib/fbclient.so</p>
+<p>Retry your connection, now it works ok.</p>
+<p><strong>Oracle and DBExpress </strong>(by Stefano Tronu -stefano.tronu@gmail.com)</p>
+<p>1) Installing latest version of Oracle Client (10g actually) (for<br>
+  example on /usr/lib/oracle/10.1.0.3/)<br>
+  2) Installing ReportManager (for example on /opt/repmand)<br>
+  3) verify if the Oracle VendorLib name on /root/.borland/dbxdriver is<br>
+  the same of libclntsh.so* under lib root oracle installation. If is<br>
+  not the same, create a link to the .so library or rename the VendorLib<br>
+  name under dbxdriver. (for example, Oracle10g library name is<br>
+  libclntsh.so.10.1).<br>
+  4) Copy the TNSNAMES.ORA contents into the databasename connections<br>
+  configuration, for example<br>
+  &quot;(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST =<br>
+  hostname)(PORT = 1521)) )<br>
+  (CONNECT_DATA = (SERVICE_NAME = ORATEST) ) )&quot;.<br>
+  <br>
+  On Linux is not a valid environment TNS_ADMIN=TNSNAMES.ORA path, so<br>
+  is'n need create environment variables such as<br>
+  ORACLE_HOME, ORACLE_SID, LD_LIBRARY_PATH and TNS_ADMIN.<br>
+</p>
+</body>
+</html>

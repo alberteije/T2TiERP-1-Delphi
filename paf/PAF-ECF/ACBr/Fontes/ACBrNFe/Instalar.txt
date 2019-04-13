@@ -1,0 +1,112 @@
+Instalando ACBrNFe 
+
+Primeiro, as diferenças entre as versões OpenSSL e CAPICOM
+ 
+- CAPICOM - Usa as DLLs da Microsfot CAPICOM (conexão segura) e MSXML 
+(Assinatura e validação do XML) - Apenas funciona no Delphi e Windows. 
+Funciona com certificados do tipo A1 e A3.
+- OpenSSL - Usa Projetos OpenSource: Synapse+OpenSSL (conexão segura) e 
+LibXml2 + XmlSEC (Assinatura e validação do XML) - Será compatível com DELPHI6, Lazarus, Kylix e com Linux.
+Funciona apenas com certificados do tipo A1.
+
+- Se vc pretende desenvolver apenas para Windows e não pretende usar o Lazarus, de preferência a 
+versão CAPICOM
+
+- IMPORTANTE: USUÁRIOS DO DELPHI 6 DEVEM USAR A VERSÃO OPENSSL (somente certificados A1)
+
+-Caso tenha o pacote ACBr_CLX ou ACBr_VCL já instalado no Delphi, remova todos os componentes do ACBr e todas as pastas
+do Library Path, pois a partir de Maio de 2010 a estrutura de pastas do componente mudou e os pacotes ACBr_CLX e ACBr_VCL
+deixaram de existir sendo dividos em pacotes com os nomes ACBrDiversos, ACBrSerial, ACBrTCP, etc.
+
+
+Versão OpenSSL
+- Abra o arquivo Fontes\ACBrComum\ACBr.inc e procure por {$DEFINE ACBrNFeOpenSSL}. Esta linha estará comentada,
+descomente esta linha e salve o arquivo.
+
+- Copie a DLL DLLs\Diversos\iconv.dll e as DLLs da pasta DLLs\OpenSSL\ e da pasta DLLs\XMLSec\
+(libeay32.dll, libxml2.dll, libxmlsec.dll, libxmlsec-openssl.dll,libxslt.dll, ssleay32.dll e zlib1.dll) para a pasta Windows\System32
+
+-Adicione ao Library Path do Delphi as pastas Fontes\ACBrComum, Fontes\ACBrNFe, Fontes\PCN e Fontes\synalist
+   Na IDE do Delphi acione  "Tools, Enviroment Options" selecione a guia
+   "Library",  clique no botão elíptico (...) de "Library Path",
+   clique no botão elíptico (...) à frente da caixa de texto, localize a pasta
+   " Fontes\ACBrComum " no diretório de instalação da Biblioteca, clique em
+   "OK", e em "Add". Repita o mesmo processo com as demais pastas.
+   Clique em "OK" para finalizar.
+
+-Na IDE do Delphi, clique em "File - Close All"
+
+-Procure pela pasta Pacotes\Delphi e abra o arquivo synapse.dpk e clique em compile.
+ Procure pela pasta Pacotes\Delphi e abra o arquivo ACBrComum.dpk e clique em compile. 
+ Procure pela pasta Pacotes\Delphi e abra o arquivo ACBrDiversos.dpk e clique em compile e depois clique em Install. 
+ Procure pela pasta Pacotes\Delphi e abra o arquivo ACBrOpenSSL.dpk e clique em compile.
+ Procure pela pasta Pacotes\Delphi\ACBrNFe e abra o arquivo PCN.dpk e clique em compile.
+ Procure pela pasta Pacotes\Delphi\ACBrNFe e abra o arquivo ACBr_NFe.dpk e clique em compile e depois clique em Install.
+
+Versão CAPICOM
+
+-Copie as DLLs da pasta DLLs\Capicom (capicom.dll, msxml5.dll e msxml5r.dll) e as DLLs da pasta DLLs\OpenSSL\(libeay32.dll,ssleay32.dll) 
+ para a pasta Windows\System32.
+
+-Vá ao botão Iniciar do Windows - Executar e execute os seguinte comandos
+   regsvr32 capicom.dll 
+   regsvr32 msxml5.dll
+
+-Adicione ao Library Path do Delphi as pastas Fontes\ACBrComum, Fontes\ACBrNFe, Fontes\PCN, Fontes\synalist e Fontes\ACBrCapicom
+   Na IDE do Delphi acione  "Tools, Enviroment Options" selecione a guia
+   "Library",  clique no botão elíptico (...) de "Library Path",
+   clique no botão elíptico (...) à frente da caixa de texto, localize a pasta
+   " Fontes\ACBrComum " no diretório de instalação da Biblioteca, clique em
+   "OK", e em "Add". Repita o mesmo processo com as demais pastas.
+   Clique em "OK" para finalizar.
+
+-Na IDE do Delphi, clique em "File - Close All"
+
+
+-Procure pela pasta Pacotes\Delphi e abra o arquivo synapse.dpk e clique em compile.
+ Procure pela pasta Pacotes\Delphi e abra o arquivo ACBrComum.dpk e clique em compile. 
+ Procure pela pasta Pacotes\Delphi e abra o arquivo ACBrDiversos.dpk e clique em compile e depois clique em Install. 
+ Procure pela pasta Pacotes\Delphi e abra o arquivo ACBrCapicom.dpk e clique em compile.
+ Procure pela pasta Pacotes\Delphi\ACBrNFe e abra o arquivo PCN.dpk e clique em compile.
+ Procure pela pasta Pacotes\Delphi\ACBrNFe e abra o arquivo ACBr_NFe.dpk e clique em compile e depois clique em Install.
+
+Para instalar o DANFe, siga os passos abaixo:
+
+-Na IDE do Delphi, clique em "File - Close All"
+
+-Procure pela pasta Pacotes\Delphi\ACBrNFe e abra o arquivo ACBrNFeDanfeRV.dpk, clique em compile e depois clique em Install.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Caso esteja usando a versão CAPICOM, e mesmo após registrar as DLLs continuar recebendo a mensagem de
+classe não registrada, use o seguinte arquivo: https://wwws.prodemge.gov.br/images/stories/exe/capicom.exe
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Para utilizar o ACBrNFe ou ACBrNfeMonitor no Windows 2003, veja http://acbr.sourceforge.net/mantis/view.php?id=164
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ATENÇÃO - Caso esteja usando o pacote ACBrNFeDanfeRV.dpk para impressão do DANFE, use o arquivo DANFE_Rave513.rav apenas quando
+possuir o Rave na versão 5.1.3 ou superior. Caso possua uma versão inferior ao Rave 5.1.3 use o arquivo NotaFiscalEletronica.rav 
+na propriedade RavFile do componente ACBrNFeDanfeRave. Se vc tentar utilizar o arquivo DANFE_Rave513.rav em versões inferiores
+ao Rave 5.1.3 irá receber um erro de Accesss Violation no momento da impressão.
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ATENÇÃO - O pacote ACBrNFeDanfeQRpkg.dpk ainda não está funcional, pois não atende as instruções do Manual de Integração versão 3.0
+Estamos aguardando que alguém interessado em usar o DANFE em QuickReport adeque o relatório a última versão do manual e nos envie
+as alterações necessárias. Mais informações em http://acbr.sourceforge.net/mantis/view.php?id=351
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ATENÇÃO - O pacote ACBrNFeDanfeRVCodeBase.dpk só funciona com a versão 5.0.8 ou superior do Rave.
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ATENÇÃO - Para envio de email com conexão segura é necessário que as DLLs do OpenSSL estejam máquina (no diretório do EXE ou na System32)
+libeay32.dll e ssleay32.dll
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+PARA TIRAR DÚVIDAS SOBRE O COMPONENTE UTILIZE - http://www.djsystem.com.br/acbr/forum

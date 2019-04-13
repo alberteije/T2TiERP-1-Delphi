@@ -1,0 +1,190 @@
+
+<!doctype html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module reportman</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>reportman</strong></big></big> (version 0.1.0.0)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:///C|/python23/lib/site-packages/reportman.py">c:\python23\lib\site-packages\reportman.py</a></font></td></tr></table>
+    <p><tt>This&nbsp;file&nbsp;is&nbsp;copyright&nbsp;2004&nbsp;by&nbsp;Shawn&nbsp;L.&nbsp;Church.&nbsp;&nbsp;Permission&nbsp;to&nbsp;copy,&nbsp;&nbsp;use,<br>
+and&nbsp;distribute&nbsp;this&nbsp;file&nbsp;is&nbsp;granted&nbsp;in&nbsp;accordance&nbsp;with&nbsp;the&nbsp;wxWidgets&nbsp;license&nbsp;<br>
+agreement&nbsp;found&nbsp;at&nbsp;<a href="http://wxwidgets.org/newlicen.htm">http://wxwidgets.org/newlicen.htm</a><br>
+&nbsp;<br>
+This&nbsp;module&nbsp;implements&nbsp;python&nbsp;bindings&nbsp;to&nbsp;the&nbsp;<a href="#ReportMan">ReportMan</a>&nbsp;ActiveX&nbsp;control.<br>
+For&nbsp;more&nbsp;information&nbsp;on&nbsp;ReportManager&nbsp;see:&nbsp;<a href="http://ReportMan.sourceforge.net">http://ReportMan.sourceforge.net</a><br>
+&nbsp;<br>
+Requirements:&nbsp;ctypes&nbsp;module.&nbsp;&nbsp;To&nbsp;download&nbsp;see:&nbsp;<a href="http://starship.python.net/crew/theller/ctypes/index.html">http://starship.python.net/crew/theller/ctypes/index.html</a><br>
+&nbsp;<br>
+Limitations:&nbsp;Currently&nbsp;implemented&nbsp;for&nbsp;Windows&nbsp;only&nbsp;although&nbsp;Linux&nbsp;should&nbsp;work&nbsp;with<br>
+a&nbsp;change&nbsp;to&nbsp;the&nbsp;_rp_lib=&nbsp;statement&nbsp;to&nbsp;reference&nbsp;the&nbsp;Linux&nbsp;shared&nbsp;library&nbsp;for&nbsp;Report&nbsp;Manager.<br>
+&nbsp;<br>
+INSTALLATION:&nbsp;&nbsp;&nbsp;1)&nbsp;Install&nbsp;ctypes&nbsp;module&nbsp;if&nbsp;necassary.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2)&nbsp;Copy&nbsp;reportman.py&nbsp;to&nbsp;Python&nbsp;site-packages&nbsp;directory<br>
+&nbsp;<br>
+TODO:&nbsp;&nbsp;&nbsp;1)&nbsp;Implement&nbsp;Cross-platform&nbsp;compatibility&nbsp;with&nbsp;Linux.&nbsp;&nbsp;&nbsp;Should&nbsp;also<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;also&nbsp;implement&nbsp;MAC&nbsp;compatability&nbsp;but&nbsp;I&nbsp;have&nbsp;no&nbsp;way&nbsp;to&nbsp;test&nbsp;this.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2)&nbsp;Add&nbsp;capabilities&nbsp;to&nbsp;export&nbsp;other&nbsp;ReportManager-supported&nbsp;file&nbsp;types<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;such&nbsp;as&nbsp;excel,&nbsp;CSV,&nbsp;&nbsp;text,&nbsp;&nbsp;etc.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3)&nbsp;Add&nbsp;remote&nbsp;printing&nbsp;capabilities.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+USAGE:&nbsp;&nbsp;1)&nbsp;Import&nbsp;reportman&nbsp;module<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2)&nbsp;The&nbsp;<a href="#ReportMan">ReportMan</a>&nbsp;class&nbsp;is&nbsp;provided&nbsp;for&nbsp;general&nbsp;use.&nbsp;&nbsp;It&nbsp;takes<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;care&nbsp;of&nbsp;opening&nbsp;and&nbsp;closing&nbsp;the&nbsp;report&nbsp;handle.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3)&nbsp;The&nbsp;rp_*&nbsp;functions&nbsp;are&nbsp;available&nbsp;for&nbsp;low&nbsp;level&nbsp;access&nbsp;to&nbsp;the&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Report&nbsp;Manager&nbsp;API.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#fffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="ctypes.html">ctypes</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="__builtin__.html#object">__builtin__.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="reportman.html#ReportMan">ReportMan</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ReportMan">class <strong>ReportMan</strong></a>(<a href="__builtin__.html#object">__builtin__.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Implements&nbsp;wrapper&nbsp;class&nbsp;around&nbsp;Report&nbsp;Manager&nbsp;ActiveX&nbsp;control.<br>
+&nbsp;<br>
+Usage:&nbsp;&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Py&nbsp;0.9.4<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Python&nbsp;2.3.3&nbsp;(#51,&nbsp;Dec&nbsp;18&nbsp;2003,&nbsp;20:22:39)&nbsp;[MSC&nbsp;v.1200&nbsp;32&nbsp;bit&nbsp;(Intel)]&nbsp;on&nbsp;win32<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Type&nbsp;"help",&nbsp;"copyright",&nbsp;"credits"&nbsp;or&nbsp;"license"&nbsp;for&nbsp;more&nbsp;information.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;from&nbsp;reportman&nbsp;import&nbsp;<a href="#ReportMan">ReportMan</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;report=<a href="#ReportMan">ReportMan</a>("c:\test.rep")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;report.<a href="#ReportMan-set_param">set_param</a>("title",&nbsp;"This&nbsp;is&nbsp;the&nbsp;report&nbsp;title")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;report.<a href="#ReportMan-preview">preview</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;report.<a href="#ReportMan-execute">execute</a>()&nbsp;#&nbsp;produces&nbsp;test.pdf&nbsp;in&nbsp;same&nbsp;directory&nbsp;as&nbsp;test.rep<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;report.<a href="#ReportMan-execute">execute</a>(metafile=True)&nbsp;#&nbsp;produces&nbsp;test.rpmf&nbsp;in&nbsp;same&nbsp;directory&nbsp;as&nbsp;test.rep<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;report.<a href="#ReportMan-execute">execute</a>("c:\report.pdf")&nbsp;#&nbsp;Proudces&nbsp;c:\report.pdf<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;report.params<br>
+&nbsp;&nbsp;&nbsp;&nbsp;['TITLE',&nbsp;'DATETEST']<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="ReportMan-__del__"><strong>__del__</strong></a>(self)</dt><dd><tt>Closes&nbsp;report&nbsp;manager&nbsp;report&nbsp;handle</tt></dd></dl>
+
+<dl><dt><a name="ReportMan-__init__"><strong>__init__</strong></a>(self, report_filename)</dt><dd><tt>Initializes&nbsp;a&nbsp;report&nbsp;manager&nbsp;report&nbsp;handle.<br>
+&nbsp;<br>
+report_filename&nbsp;=&nbsp;"\path\to\your\report.rep"</tt></dd></dl>
+
+<dl><dt><a name="ReportMan-execute"><strong>execute</strong></a>(self, filename<font color="#909090">=None</font>, metafile<font color="#909090">=False</font>, compressed<font color="#909090">=True</font>)</dt><dd><tt>Creates&nbsp;a&nbsp;PDF&nbsp;or&nbsp;Report&nbsp;Manager&nbsp;Meta&nbsp;File&nbsp;<br>
+&nbsp;<br>
+filename=name&nbsp;of&nbsp;report&nbsp;file&nbsp;(defaults&nbsp;to&nbsp;report&nbsp;file&nbsp;name+.pdf/.rpmf)<br>
+metafile=True&nbsp;to&nbsp;produce&nbsp;Report&nbsp;Manager&nbsp;meta-file&nbsp;or&nbsp;false&nbsp;for&nbsp;PDF.<br>
+compressed=True&nbsp;to&nbsp;produce&nbsp;commpressed&nbsp;file&nbsp;output.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+returns&nbsp;None&nbsp;on&nbsp;success&nbsp;or&nbsp;ValueError&nbsp;on&nbsp;error.</tt></dd></dl>
+
+<dl><dt><a name="ReportMan-preview"><strong>preview</strong></a>(self, title<font color="#909090">=None</font>)</dt><dd><tt>Previews&nbsp;report&nbsp;to&nbsp;screen.<br>
+&nbsp;<br>
+title=Caption&nbsp;of&nbsp;to&nbsp;appear&nbsp;on&nbsp;preview&nbsp;window.<br>
+&nbsp;<br>
+returns&nbsp;None&nbsp;on&nbsp;success&nbsp;or&nbsp;ValueError&nbsp;on&nbsp;error.</tt></dd></dl>
+
+<dl><dt><a name="ReportMan-printout"><strong>printout</strong></a>(self, title<font color="#909090">=None</font>, showprogress<font color="#909090">=True</font>, showprintdialog<font color="#909090">=False</font>)</dt><dd><tt>Prints&nbsp;report&nbsp;to&nbsp;printer.<br>
+&nbsp;<br>
+title=Caption&nbsp;to&nbsp;appear&nbsp;in&nbsp;status&nbsp;dialog.<br>
+showprogress=True&nbsp;to&nbsp;show&nbsp;status&nbsp;dialog.<br>
+showprintdialog=True&nbsp;to&nbsp;show&nbsp;standard&nbsp;printer&nbsp;dialog&nbsp;before&nbsp;printing&nbsp;report<br>
+&nbsp;<br>
+returns&nbsp;None&nbsp;on&nbsp;success&nbsp;or&nbsp;ValueError&nbsp;on&nbsp;error.</tt></dd></dl>
+
+<dl><dt><a name="ReportMan-set_param"><strong>set_param</strong></a>(self, paramname, paramvalue)</dt><dd><tt>Sets&nbsp;the&nbsp;specified&nbsp;paramater&nbsp;to&nbsp;the&nbsp;specified&nbsp;value&nbsp;<br>
+&nbsp;<br>
+paramname=Name&nbsp;of&nbsp;the&nbsp;paramater.<br>
+paramvalue=Value&nbsp;of&nbsp;the&nbsp;paramater&nbsp;must&nbsp;be&nbsp;one&nbsp;of&nbsp;the&nbsp;following&nbsp;types:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;None:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets&nbsp;paramater&nbsp;to&nbsp;SQL&nbsp;NULL&nbsp;-&nbsp;c-void*&nbsp;&nbsp;&nbsp;&nbsp;(None)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets&nbsp;paramater&nbsp;using&nbsp;c-int&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1,2,3)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;long:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets&nbsp;paramater&nbsp;using&nbsp;c-longlong&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1L,2L)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets&nbsp;paramater&nbsp;to&nbsp;string&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;("string")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;unicode:&nbsp;&nbsp;&nbsp;&nbsp;Sets&nbsp;paramater&nbsp;to&nbsp;unicode&nbsp;string&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(u"Unicode")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets&nbsp;paramater&nbsp;using&nbsp;c-double&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(12.54321)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Other&nbsp;types&nbsp;result&nbsp;in&nbsp;a&nbsp;value&nbsp;exception.&nbsp;&nbsp;I&nbsp;use&nbsp;strings&nbsp;to&nbsp;pass<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dates&nbsp;and&nbsp;just&nbsp;adjust&nbsp;the&nbsp;SQL&nbsp;statement&nbsp;to&nbsp;convert&nbsp;them&nbsp;for<br>
+&nbsp;&nbsp;&nbsp;&nbsp;comparison&nbsp;purposes.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+returns&nbsp;None&nbsp;on&nbsp;success&nbsp;or&nbsp;ValueError&nbsp;on&nbsp;error.</tt></dd></dl>
+
+<hr>
+Properties defined here:<br>
+<dl><dt><strong>params</strong></dt>
+<dd><tt>Read&nbsp;Only&nbsp;list&nbsp;of&nbsp;paramater&nbsp;names</tt></dd>
+<dd><dl><dt><strong><em>get</em></strong> <em>lambda</em> self</dt></dl>
+</dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__dict__</strong> = &lt;dictproxy object at 0x0117EE50&gt;<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dl>
+
+<dl><dt><strong>__weakref__</strong> = &lt;attribute '__weakref__' of 'ReportMan' objects&gt;<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;<a href="__builtin__.html#object">object</a>&nbsp;(if&nbsp;defined)</tt></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-rp_close"><strong>rp_close</strong></a>(hreport)</dt><dd><tt>Wrapper&nbsp;for:&nbsp;int&nbsp;<a href="#-rp_close">rp_close</a>(int&nbsp;hreport);&nbsp;<br>
+&nbsp;<br>
+returns&nbsp;None&nbsp;on&nbsp;success&nbsp;or&nbsp;ValueError&nbsp;on&nbsp;error.</tt></dd></dl>
+ <dl><dt><a name="-rp_execute"><strong>rp_execute</strong></a>(hreport, outputfilename, metafile, compressed)</dt><dd><tt>Wrapper&nbsp;for:&nbsp;int&nbsp;<a href="#-rp_execute">rp_execute</a>(int&nbsp;hreport,char&nbsp;*outputfilename,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;metafile,int&nbsp;compressed);&nbsp;<br>
+&nbsp;<br>
+returns&nbsp;None&nbsp;on&nbsp;success&nbsp;or&nbsp;ValueError&nbsp;on&nbsp;error.</tt></dd></dl>
+ <dl><dt><a name="-rp_getparamcount"><strong>rp_getparamcount</strong></a>(hreport)</dt><dd><tt>Wrapper&nbsp;for:&nbsp;int&nbsp;<a href="#-rp_getparamcount">rp_getparamcount</a>(int&nbsp;hreport,int&nbsp;*paramcount);&nbsp;<br>
+&nbsp;<br>
+returns&nbsp;paramater&nbsp;count&nbsp;as&nbsp;int&nbsp;on&nbsp;success&nbsp;or&nbsp;ValueError&nbsp;on&nbsp;error.</tt></dd></dl>
+ <dl><dt><a name="-rp_getparamname"><strong>rp_getparamname</strong></a>(hreport, index)</dt><dd><tt>Wrapper&nbsp;for:&nbsp;int&nbsp;<a href="#-rp_getparamname">rp_getparamname</a>(int&nbsp;hreport,int&nbsp;index,char&nbsp;*abuffer);&nbsp;<br>
+&nbsp;<br>
+returns&nbsp;paramater&nbsp;name&nbsp;as&nbsp;str&nbsp;on&nbsp;success&nbsp;or&nbsp;ValueError&nbsp;on&nbsp;error.</tt></dd></dl>
+ <dl><dt><a name="-rp_open"><strong>rp_open</strong></a>(filename)</dt><dd><tt>Wrapper&nbsp;for:&nbsp;int&nbsp;<a href="#-rp_open">rp_open</a>(char&nbsp;*filename);&nbsp;<br>
+&nbsp;<br>
+returns&nbsp;ReportManager&nbsp;handle&nbsp;as&nbsp;int&nbsp;on&nbsp;success&nbsp;or&nbsp;ValurError&nbsp;on&nbsp;error</tt></dd></dl>
+ <dl><dt><a name="-rp_preview"><strong>rp_preview</strong></a>(hreport, title)</dt><dd><tt>Wrapper&nbsp;for:&nbsp;int&nbsp;<a href="#-rp_preview">rp_preview</a>(int&nbsp;hreport,char&nbsp;*title);&nbsp;<br>
+&nbsp;<br>
+returns&nbsp;None&nbsp;on&nbsp;success&nbsp;or&nbsp;ValueError&nbsp;on&nbsp;error.</tt></dd></dl>
+ <dl><dt><a name="-rp_print"><strong>rp_print</strong></a>(hreport, title, showprogress<font color="#909090">=True</font>, showprintdialog<font color="#909090">=False</font>)</dt><dd><tt>Wrapper&nbsp;for:&nbsp;int&nbsp;<a href="#-rp_print">rp_print</a>(int&nbsp;hreport,char&nbsp;*title,int&nbsp;showprogress,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;showprintdialog);&nbsp;<br>
+&nbsp;<br>
+returns&nbsp;None&nbsp;on&nbsp;success&nbsp;or&nbsp;ValueError&nbsp;on&nbsp;error.</tt></dd></dl>
+ <dl><dt><a name="-rp_setparamvalue"><strong>rp_setparamvalue</strong></a>(hreport, paramname, paramvalue)</dt><dd><tt>Wrapper&nbsp;for:&nbsp;int&nbsp;<a href="#-rp_setparamvalue">rp_setparamvalue</a>(int&nbsp;hreport,char&nbsp;*paramname,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;paramtype,void&nbsp;*paramvalue);&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+returns&nbsp;None&nbsp;on&nbsp;success&nbsp;or&nbsp;ValueError&nbsp;on&nbsp;error.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__version__</strong> = '0.1.0.0'</td></tr></table>
+</body></html>

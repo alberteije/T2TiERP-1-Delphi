@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Common properties for TRpLabel</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Component Reference</h2>
+<h3>Properties for TRpLabel</h3>
+<p><b>Sumary</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Internal Name</td>
+    <td bgcolor="#FFFFCC">Type</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>Text</td>
+    <td>Text</td>
+    <td>WideString</td>
+    <td>This is a static text, but with a special feature. You can assign the 
+      texts for your labels, then change the report language (at page setup) and 
+      assign other texts for the selected language</td>
+  </tr>
+</table>
+<p><b>Developer info</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Internal component name</td>
+    <td>TRpLabel</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Parent class</td>
+    <td>TRpGenTextComponent</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Unit name</td>
+    <td>rplabelitem.pas</td>
+  </tr>
+</table>
+<p>See also <a href="refcommontext.html">Report components common text properties</a>.</p>
+</body>
+</html>

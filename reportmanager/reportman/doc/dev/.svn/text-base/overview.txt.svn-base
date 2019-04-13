@@ -1,0 +1,27 @@
+IMPLEMENTATION OVERVIEW OF THE REPORT MANAGER REPORTING ENGINE
+
+What's internally a report definition?
+- It's a component with some properties and a collection of subreports, a subreport is also a component that has some properties and a collection of sections, each section has some properties and a collection of finally printable components (fields, texts, images).
+
+How is stored and readed (streamed) a report definition?
+- Because it's a component, it can be streamed using the delphi/kylix component streaming engine (classes.pas), so it's fast,
+generates small files and very little code to implement it.
+
+How works the print engine?
+- It prints the first subreport, then the second subreport...:-)
+
+Well, then how is printed a subreport?
+1- Opens the dataset definitions. If the main dataset is eof does nothing.
+2- Prints the report headers if exists.
+3- For each page:
+ a-Prints the page headers if exists.
+ b-Prints group headers until the first detail.
+ c-Prints details until a group condition change or eof.
+ d-Prints footers until group condition and then go to pass b.
+ Notes:
+	- All group footers are printed after eof.
+	- If a group header or footer can't fit, gen. new page. 
+4- Prints the report footers if exists.
+
+How is implemented preview and print?
+- 

@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Operating Report Manager Web Server</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Report Manager Web Server</h2>
+<h3>Operations</h3>
+<p>The web server has predefined commands </p>
+<p>The entry point por the web server is the login page:</p>
+<p><a href="http://localhost/cgi-bin/repwebserver.dll/login">http://localhost/cgi-bin/repwebserver.dll/login</a></p>
+<p>To test installation you can call version command, with version command you 
+  also obtain the location of configuration files.</p>
+<p><a href="http://localhost/cgi-bin/repwebserver.dll/version">http://localhost/cgi-bin/repwebserver.dll/version</a></p>
+<p>After login you can execute configured reports, see <a href="webserverinstall.html">Installation 
+  instructions</a> about how to configure the available reports and users.</p>
+<p>You can operate the report web server by providing a complete URL with required 
+  param values, that is if you execute a report, you can add it to favorites because 
+  all execution information is stored in the provided URL.</p>
+<p>If you need <b>security, run the web server in a secure web server</b> so the 
+  URL and all the informatino will be encoded.</p>
+<p>If the web report server is installed in Linux you should execute:</p>
+<p><a href="http://localhost/cgi-bin/repwebexe.bin/version">http://localhost/cgi-bin/repwebexe.bin/version</a></p>
+<p>This are a few screenshots of the report web server.</p>
+<p>The web report server URL is formed when you advance in login, selection etc, 
+  so you don't need to know them, but for developers here is a list of them:</p>
+<table width="100%" border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Parameter name</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td>username</td>
+    <td>User name accessing the report server by default only the user Admin with 
+      blank password is available. You can alter the configuration file to add 
+      users (execute /version command to know where is located), this user name 
+      will be assigned to a report parameter if exists one named <b>pusername</b>, 
+      this is usefull for executing reports obtaining diferent results depending 
+      on the logged user</td>
+  </tr>
+  <tr> 
+    <td>password</td>
+    <td>Password for the selected user, this will travel on the internet so it's 
+      recommended to use a secure server</td>
+  </tr>
+  <tr> 
+    <td>aliasname</td>
+    <td>You can configure several report groups in the configuration file</td>
+  </tr>
+  <tr> 
+    <td>reportname</td>
+    <td>The report file name</td>
+  </tr>
+  <tr> 
+    <td>metafile</td>
+    <td><p>Possible values</p>
+      <table border="1">
+        <tr> 
+          <td>0(default)</td>
+          <td> The server returns a pdf file</td>
+        </tr>
+        <tr> 
+          <td>1</td>
+          <td>Returns a native Report Manager Metafile, useful for example to 
+            work with WebReportManX web component</td>
+        </tr>
+        <tr> 
+          <td>2</td>
+          <td>Returns a comma separated values file, useful to import from excel 
+            for example</td>
+        </tr>
+        <tr> 
+          <td>3</td>
+          <td>Returns a text file, useful to return printable data or plain text 
+            data, use it with the textdriver parameter</td>
+        </tr>
+        <tr> 
+          <td>4</td>
+          <td>Returns a svg file (Scalable vector graphics)</td>
+        </tr>
+      </table>
+      <p> with 0 (default), with 1 returns a native Report Manager Metafile, useful 
+        for example to work with WebReportManX web component</p></td>
+  </tr>
+  <tr> 
+    <td>pusername</td>
+    <td>Assigns this parameter to a parameter inside the report named pusername, 
+      if exists</td>
+  </tr>
+  <tr> 
+    <td>language</td>
+    <td>Assigns the language index to the report, to show parameter descriptions 
+      and result in the selected language.</td>
+  </tr>
+  <tr> 
+    <td>oemconvert</td>
+    <td>When metafile parameter exports to text file, if set to 1, the file will 
+      be converted to OEM charset</td>
+  </tr>
+  <tr> 
+    <td>textdriver</td>
+    <td>When metafile parameter exports to text file, sets the output driver, 
+      default 'PLAIN'</td>
+  </tr>
+  <tr>
+    <td>separator</td>
+    <td>When metafile parameter exports to csv file, sets the separator string, 
+      default ','</td>
+  </tr>
+</table>
+<p>The login page:</p>
+<p><img src="images/webserverop1.jpg" width="547" height="365"></p>
+<p>The index page (selection of aliases):</p>
+<p><img src="images/webserverop2.jpg" width="629" height="373"></p>
+<p>The available reports page:</p>
+<p><img src="images/webserverop3.jpg" width="629" height="373"></p>
+<p>The report parameters page:</p>
+<p><img src="images/webserverop4.jpg" width="608" height="520"></p>
+<p>The resulting report:</p>
+<p><img src="images/webserverop5.jpg" width="608" height="520"></p>
+</body>
+</html>

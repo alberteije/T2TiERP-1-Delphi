@@ -1,0 +1,13 @@
+' Add the following lines to dbxdrivers.ini
+' This is normally located in 
+' C:\Program Files\Common Files\Borland Shared\DBExpress\dbxdrivers.ini
+
+[Installed Drivers]
+OpenOdbc=1
+
+[OpenOdbc]
+LibraryName=dbxoodbc.dll
+GetDriverFunc=getSQLDriverODBC
+VendorLib=odbc32.dll
+
+

@@ -1,0 +1,144 @@
+<DARUMAFRAMEWORK>
+  <START>
+    <LocalArquivos>\</LocalArquivos>
+    <LocalArquivosRelatorios>\</LocalArquivosRelatorios>
+    <LogTamMaxMB>5</LogTamMaxMB>
+    <Produto>FISCAL</Produto>
+    <ThreadAoIniciar>0</ThreadAoIniciar>
+    <TipoRegistro>2</TipoRegistro>
+    <ModoObserver>0</ModoObserver>
+  </START>
+  <DUAL>
+    <AguardarProcesso>1</AguardarProcesso>
+    <Auditoria>0</Auditoria>
+    <CodePageAutomatico>0</CodePageAutomatico>
+    <EnterFinal>1</EnterFinal>
+    <Inicializou>0</Inicializou>
+    <LinhasGuilhotina>0</LinhasGuilhotina>
+    <ModoGaveta>0</ModoGaveta>
+    <PortaComunicacao>COM1</PortaComunicacao>
+    <Tabulacao>05,10,15,20,30,40</Tabulacao>
+    <TempoEsperaLeitura>10</TempoEsperaLeitura>
+    <Termica>1</Termica>
+    <Velocidade>9600</Velocidade>
+    <ZeroCortado>0</ZeroCortado>
+  </DUAL>
+  <ECF>
+    <AguardarBitmapRZ>0</AguardarBitmapRZ>
+    <AguardarImpressao>0</AguardarImpressao>
+    <ArquivoLeituraX>LeituraX.ser</ArquivoLeituraX>
+    <ArredondarTruncar>A</ArredondarTruncar>
+    <Auditoria>0</Auditoria>
+    <CaracterSeparador>;</CaracterSeparador>
+    <ControleAutomatico>1</ControleAutomatico>
+    <EncontrarECF>1</EncontrarECF>
+    <EmErroBuscarPorta>0</EmErroBuscarPorta>
+    <EnviarAvisoAoUsuario>0</EnviarAvisoAoUsuario>
+    <EnviarErroAoUsuario>0</EnviarErroAoUsuario>
+    <FarmaciaPopular>0</FarmaciaPopular>
+    <LegendaInmetro>0</LegendaInmetro>
+    <LMFCompleta>0</LMFCompleta>
+    <MaxFechamentoAutomatico>0</MaxFechamentoAutomatico>
+    <MensagemApl1>DarumaFramework - Mensagem Não Programada</MensagemApl1>
+    <MensagemApl2>DarumaFramework - Mensagem Não Programada</MensagemApl2>
+    <MensagemAviso>AVISO: [O PAPEL ESTA ACABANDO!!]. INSIRA NOVA BOBINA DE PAPEL.</MensagemAviso>
+    <ModoGaveta>0</ModoGaveta>
+    <NaoAvisarPoucoPapel>0</NaoAvisarPoucoPapel>
+    <PortaSerial>COM1</PortaSerial>
+    <ReceberAvisoEmArquivo>0</ReceberAvisoEmArquivo>
+    <ReceberDescricaoAvisoEmArquivo>0</ReceberDescricaoAvisoEmArquivo>
+    <ReceberDescricaoErroEmArquivo>0</ReceberDescricaoErroEmArquivo>
+    <ReceberErroEmArquivo>0</ReceberErroEmArquivo>
+    <ReceberInfoEstendida>1</ReceberInfoEstendida>
+    <ReceberInfoEstendidaEmArquivo>0</ReceberInfoEstendidaEmArquivo>
+    <ReducaoZAutomatica>0</ReducaoZAutomatica>
+    <RetornarAvisoErro>0</RetornarAvisoErro>
+    <SangriaMensagem></SangriaMensagem>
+    <SangriaValor>100</SangriaValor>
+    <SerialByteAByte>0</SerialByteAByte>
+    <SinalSonoroIniciar>1</SinalSonoroIniciar>
+    <SuprimentoMensagem></SuprimentoMensagem>
+    <SuprimentoValor>100</SuprimentoValor>
+    <TituloMensagem>[DarumaFramework]</TituloMensagem>
+    <Velocidade>115200</Velocidade>
+    <CF>
+      <CupomAdicionalDllConfig>111111111100000000000</CupomAdicionalDllConfig>
+      <CupomAdicionalDllTitulo>Cupom Adicional</CupomAdicionalDllTitulo>
+      <CupomMania>0</CupomMania>
+      <FormaPgto>Dinheiro</FormaPgto>
+      <MensagemPromocional> </MensagemPromocional>
+      <ModoPreVenda>0</ModoPreVenda>
+      <Quantidade>1</Quantidade>
+      <TamanhoMinimoDescricao>15</TamanhoMinimoDescricao>
+      <TipoDescAcresc>D%</TipoDescAcresc>
+      <UnidadeMedida>un</UnidadeMedida>
+      <ValorDescAcresc>0.00</ValorDescAcresc>
+      <BMP>0</BMP>
+        <IdentificaConsumidorFormatado></IdentificaConsumidorFormatado>
+        <MinasLegal>0</MinasLegal>
+      </CF>
+    <CCD>
+      <DocOrigem></DocOrigem>
+      <FormaPgto>Cartao</FormaPgto>
+      <LinhasTEF>20</LinhasTEF>
+      <Parcelas>01</Parcelas>
+      <Valor></Valor>
+    </CCD>
+    <CHEQUE>
+      <XLinha1>10</XLinha1>
+      <XLinha2>10</XLinha2>
+      <XLinha3>10</XLinha3>
+      <YLinha1>10</YLinha1>
+      <YLinha2>20</YLinha2>
+      <YLinha3>30</YLinha3>
+    </CHEQUE>
+    <SINTEGRA>
+      <Bairro>Bairro</Bairro>
+      <CEP>12345.123</CEP>
+      <Cod_Convenio>1</Cod_Convenio>
+      <Cod_Finalidade>1</Cod_Finalidade>
+      <Cod_Natureza>1</Cod_Natureza>
+      <Complemento>Complemento</Complemento>
+      <Contato_Nome>Nome Contato</Contato_Nome>
+      <Contato_Telefone>(12) 1234-1234</Contato_Telefone>
+      <Fax>(12) 1234-1234</Fax>
+      <Logradouro>Logradouro</Logradouro>
+      <Municipio>Municipio</Municipio>
+      <Numero>12345</Numero>
+      <UF>XX</UF>
+    </SINTEGRA>
+    <ATOCOTEPE>
+      <Automatico>0</Automatico>
+    </ATOCOTEPE>
+    <NomeUltimoCMD>rGerarRelatorio_ECF_Daruma</NomeUltimoCMD>
+    <TipoUltimoDocumento>0</TipoUltimoDocumento>
+    </ECF>
+  <TA2000>
+    <Auditoria>0</Auditoria>
+    <MensagemBoasVindasLinha1>**********Daruma Automacao**************</MensagemBoasVindasLinha1>
+    <MensagemBoasVindasLinha2>********MicroTerminal TA2000************</MensagemBoasVindasLinha2>
+    <Porta>LPT0</Porta>
+  </TA2000>
+  <MODEM>
+    <Apn>XXXXX</Apn>
+    <Auditoria>0</Auditoria>
+    <BandejaInicio>SIM1</BandejaInicio>
+    <CaptionWinAPP>MODEM - MIN100/MIN200</CaptionWinAPP>
+    <Tecla>F10</Tecla>
+    <ConfirmaEntregaSMS>0</ConfirmaEntregaSMS>
+    <IpCliente>XXX.XXX.XXX.XXX</IpCliente>
+    <IpServidor>XXX.XXX.XXX.XXX</IpServidor>
+    <LerApagar>FALSE</LerApagar>
+    <Porta>COM1</Porta>
+    <PortaTimeOut>5</PortaTimeOut>
+    <Senha>XXXXX</Senha>
+    <TempoAlertar>4000</TempoAlertar>
+    <Thread>FALSE</Thread>
+    <Usuario>XXXXX</Usuario>
+    <Velocidade>115200</Velocidade>
+  </MODEM>
+  <OBSERVER>
+    <PathEntrada>c:\</PathEntrada>
+    <PathSaida>c:\</PathSaida>
+  </OBSERVER>
+</DARUMAFRAMEWORK>

@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>Units documentation - rpmetafile.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpmetafile.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>the driver abstraction layer</b> for the reporting 
+  engine, defines a interface to print reports and a <b>streamable metafile structure</b> 
+  to store, proces, draw, set of pages containing graphic and text elements, it 
+  also defines the <b>Report Metafile file format</b>.</p>
+<h4>Types</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpOrientation</td>
+    <td> 
+      <p>Enumeration (rpOrientationDefault,rpOrientationPortrait,rpOrientationLandscape)</p>
+      <p>Page orientation</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TRpMetaObjectType</td>
+    <td> 
+      <p>Enumeration (rpMetaText,rpMetaDraw,rpMetaImage)</p>
+      <p>Three graphic types rupported</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TRpMetaSeparator</td>
+    <td> 
+      <p>Enumeration (rpFHeader,rpFPage,rpFObject)</p>
+      <p>Separators for metafile file format</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TRpMetaObject</td>
+    <td>Packet record, used to store in memory information about graphic objects, 
+      also to stream pages (array of TRpMetaObject), it's a variant record, can 
+      contain any type of meta object</td>
+  </tr>
+  <tr> 
+    <td>TRpTextObject</td>
+    <td>Record used to pass text options to interface functions</td>
+  </tr>
+  <tr>
+    <td> TRpMetafileStreamProgres</td>
+    <td>
+      <p>procedure (Sender:TRpMetafileReport; Position,Size:int64; page:integer) 
+        of object; </p>
+      <p>Event for metafile streaming progress</p>
+    </td>
+  </tr>
+</table>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>ERpBadFileFormat</td>
+    <td>Exception</td>
+    <td>Exception with stream position information</td>
+  </tr>
+  <tr> 
+    <td>TTotalPagesObject</td>
+    <td>TObject</td>
+    <td>Used to store total page variable print for the two pass report</td>
+  </tr>
+  <tr> 
+    <td>IRpPrintDriver</td>
+    <td>
+      <p>IUnknown</p>
+      </td>
+    <td>Interface, defines the required functions to implement a Report Manager 
+      output driver</td>
+  </tr>
+  <tr> 
+    <td>TRpMetafilePage</td>
+    <td>TObject</td>
+    <td>Defines a page object, each page has an array of TRpMetaObjects</td>
+  </tr>
+  <tr>
+    <td>TRpMetafileReport</td>
+    <td>TComponent</td>
+    <td>Report Metafile component, contains a collection of pages, the pages can 
+      be streamed, the TRpMetafileReport can be drawn to any IRpPrintDriver</td>
+  </tr>
+</table>
+</body>
+</html>

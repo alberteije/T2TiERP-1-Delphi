@@ -1,0 +1,15 @@
+object FRpMainMeta: TFRpMainMeta
+  Left = 121
+  Top = 58
+  Width = 658
+  Height = 435
+  Caption = 'Metafile report preview'
+  Color = clBackground
+  KeyPreview = True
+  Position = poScreenCenter
+  Scaled = False
+  ShowHint = True
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+end

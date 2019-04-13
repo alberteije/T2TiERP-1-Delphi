@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Group header and footer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Basic report design</h2>
+<h3><b>Group header and footer</b></h3>
+<p>Now we will group the sample customers dataset by the first character of his 
+  name.</p>
+<p>Note that if you want to group data it must be ordered correctly, we can't 
+  group the customers by city if they are not ordered by city.</p>
+<p>We will count also the number of customers for each initial character, the 
+  same procedure you can do for printing order items and order totals.</p>
+<p>First add a group with name 'Initial'.</p>
+<p><img src="images/groupheader.jpg" width="566" height="539"></p>
+<p>Add a expression at group header created with expression property Left(CUSTOMER.CUSTOMER,1), 
+  select it, click Copy button, select the footer and Paste it then preview the 
+  report, the first letter of customer must be shown at the beginning and end 
+  of the report:</p>
+<p><img src="images/groupheader2.jpg" width="566" height="539"></p>
+<p>To force group change, we must enter the change expression for the group as 
+  Left(CUSTOMER.CUSTOMER,1),click 'Header-Initial' item in the design tree and 
+  then set the Group Expression, if you preview the report, then the deail sections 
+  are enclosed by group header and footer grouping customers with the same initial 
+  customer name character:</p>
+<p><img src="images/groupheader3.jpg" width="533" height="580"></p>
+<p>Lets count the customers by initial character, include a expression in the 
+  new group footer, set <i>Expression</i> property to 1, <i>Aggregate</i> to Group, 
+  and <i>Ag.Group</i> to 'Initial', also include a label with the <i>Text</i> 
+  'Total customers with initial:':</p>
+<p><img src="images/groupheader4.jpg" width="565" height="538"></p>
+<p>Preview the report and you will see the count for each group:</p>
+<p><img src="images/groupheader5.jpg" width="426" height="522"></p>
+<p><strong>Additional information for correct grouping</strong></p>
+<p> In the main dataset use a order by clause that specify each group field:</p>
+<p>SELECT .... ORDER BY MORE_EXTERNAL_GROUP_FIELD,...,MORE_INTERNAL_GROUP_FIELD</p>
+<p> For compatibility reasons, the expression of each group must contain other 
+  groups fields that is, for a grouping by custno,orderno and partno:</p>
+<p>The select musbe SELECT ... ORDER BY CUSTNO,ORDERNO,PARTNO...</p>
+<p>The more external CUSTNO group expression:</p>
+<p>FormatStr('0000000000',CUSTNO)</p>
+<p>The ORDERNO group expression:</p>
+<p>FormatStr('0000000000',CUSTNO)+FormatStr('000000000',ORDERNO)</p>
+<p>The PARTNO group expression:</p>
+<p>FormatStr('0000000000',CUSTNO)+FormatStr('000000000',ORDERNO)+FormatStr('000000000',PARTNO)</p>
+<p>That is: the change of any field when processing PARTNO group will break the 
+  PARTNO group.</p>
+</body>
+</html>

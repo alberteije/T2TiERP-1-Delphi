@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Integrating into the application with delphi/kylix</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h3>Integrating the report in Delphi/Kylix</h3>
+<p>To integrate the report in Delphi/Kylix you must install first the correct 
+  packages, refer to documentation in <a href="../doc/kylixcomp.html">Kylix</a> 
+  and <a href="../doc/delphicomp.html">Delphi</a>.</p>
+<p>New components appear in the palette (reportman section) wherefrom most important 
+  is the TCLXReport component.</p>
+<p><img src="integrating2.jpg" width="569" height="52"></p>
+<p>To pass custom opened datasets (any dataaccess engine with a TDataset descendant 
+  like Zeos, Direct Oracle Access...) to the reporting engine you can use the 
+  AliasList property in TCLXReport and a TRpAlias component that establishes relations 
+  between aliases and Application datasets.</p>
+<p>Drop the TNewCLXReport to a form and select a report by clicking the button 
+  beside the Filename property. You can select also the preview property and the 
+  tittle.</p>
+<p><img src="integrating3.jpg" width="175" height="253"> </p>
+<p>Place a button and call the execute methot at onclick event as this:</p>
+<p><img src="integrating4.jpg" width="469" height="282"></p>
+<p>If you have problems compiling the application check the library path includes 
+  the path to the directory where reportman packages are stored.</p>
+<p>You can call other methods like SaveToPdf, ShowParams...</p>
+</body>
+</html>

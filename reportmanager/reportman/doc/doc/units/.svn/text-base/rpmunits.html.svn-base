@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Units documentation - rpmunits.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpmunits.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>units conversion functions</b>, from twips to cms and 
+  inchess.</p>
+<h4>Types</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>Trpmunits</td>
+    <td> 
+      <p>Enumeration (rpUnitcms,rpUnitInchess)</p>
+      <p>Only this units available for now</p>
+      </td>
+  </tr>
+</table>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>function gettextfromtwips(twips1:TRptwips):string; </td>
+    <td>Returns the string from twips and current unit</td>
+  </tr>
+  <tr> 
+    <td>function gettwipsfromtext(atext:string):TRptwips;</td>
+    <td>Returns twips from text and current unit</td>
+  </tr>
+  <tr> 
+    <td>function getdefaultunitstring:string;</td>
+    <td>Returns the default unit string</td>
+  </tr>
+  <tr> 
+    <td>function twipstoinchess(twips1:TRpTwips):double;</td>
+    <td>Unit conversion</td>
+  </tr>
+  <tr>
+    <td>function twipstocms(twips1:TRpTwips):double; </td>
+    <td>Unit conversion</td>
+  </tr>
+</table>
+</body>
+</html>

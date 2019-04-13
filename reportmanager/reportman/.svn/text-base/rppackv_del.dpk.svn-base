@@ -1,0 +1,63 @@
+package rppackv_del;
+
+{$R *.res}
+{$R 'rpexpredlg.dcr'}
+{$R 'rpclxreport.dcr'}
+{$R 'rpmaskeditclx.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Report manager Visual CLX components'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  dbrtl,
+  visualclx,
+  rppack_del,
+  indy,
+  dsnap,
+  ibxpress,
+  bdertl,
+  dbexpress,
+  visualdbclx;
+
+contains
+  rpregv in 'rpregv.pas',
+  rpexpredlg in 'rpexpredlg.pas' {FrpExpredialog},
+  rpdbxconfig in 'rpdbxconfig.pas' {FDBXConfig},
+  rpclxreport in 'rpclxreport.pas',
+  rpqtdriver in 'rpqtdriver.pas' {FRpQtProgress},
+  rppreview in 'rppreview.pas' {FRpPreview},
+  rpgraphutils in 'rpgraphutils.pas' {FRpGraphProgres},
+  rpprintdia in 'rpprintdia.pas' {FRpPrintDialog},
+  rprfparams in 'rprfparams.pas' {FRpRunTimeParams},
+  rpfmainmetaview in 'rpfmainmetaview.pas' {FRpMainMeta},
+  rpfmetaview in 'rpfmetaview.pas' {FRpMeta: TFrame},
+  rpmdclitree in 'rpmdclitree.pas' {FRpCliTree: TFrame},
+  rpmdfabout in 'rpmdfabout.pas' {FRpAboutBox},
+  rpmdprintconfig in 'rpmdprintconfig.pas' {FRpPrinterConfig},
+  rpmdfhelpform in 'rpmdfhelpform.pas' {FRpHelpForm},
+  rpmaskeditclx in 'rpmaskeditclx.pas',
+  rppagesetup in 'rppagesetup.pas' {FRpPageSetup},
+  rpmdfsearch in 'rpmdfsearch.pas' {FRpSearchParam};
+
+end.

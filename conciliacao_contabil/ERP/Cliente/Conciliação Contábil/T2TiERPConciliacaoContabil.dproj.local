@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/05/23 17:35:55.919.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Conciliação Contábil\Controller\ExtratoContaBancoController.pas=</Transaction>
+    <Transaction>2013/05/23 18:31:27.066.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ClientePessoaVO.pas=</Transaction>
+    <Transaction>2013/05/23 18:31:27.066.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Conciliação Contábil\Controller\ClientePessoaController.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

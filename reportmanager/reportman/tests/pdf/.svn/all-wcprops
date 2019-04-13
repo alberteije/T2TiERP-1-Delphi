@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/pdf
+END
+pdftest.kof
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/pdf/pdftest.kof
+END
+sample2.rep
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/pdf/sample2.rep
+END
+pdftest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/pdf/pdftest.conf
+END
+pdftest.dpr
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/tests/pdf/pdftest.dpr
+END

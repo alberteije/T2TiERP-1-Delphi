@@ -1,0 +1,65 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>Variant.GetTypeString Method</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">Report Manager Documentation</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">Variant.GetTypeString Method </h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p> Function to get the type of the value as a string. </p>
+      <div class="syntax">public <a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemStringClassTopic.htm">string</a> GetTypeString();</div>
+      <h4 class="dtH4">Return Value</h4>
+      <p> Returns the string representation from the type of the value. Possible values are: <ul>
+                    <li>VariantType.Null</li>
+                    <li>VariantType.Boolean</li>
+                    <li>VariantType.Byte</li>
+                    <li>VariantType.Char</li>
+                    <li>VariantType.Integer</li>
+                    <li>VariantType.Long</li>
+                    <li>VariantType.Decimal</li>
+                    <li>VariantType.Double</li>
+                    <li>VariantType.DateTime</li>
+                    <li>VariantType.Binary</li>
+                    <li>VariantType.String</li></ul></p>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="Reportman.Reporting.Variant.html">Variant Class</a> | <a href="Reportman.Reporting.html">Reportman.Reporting Namespace</a></p>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="GetTypeString method">
+        </param>
+        <param name="Keyword" value="GetTypeString method, Variant structure">
+        </param>
+        <param name="Keyword" value="Variant.GetTypeString method">
+        </param>
+      </object>
+      <hr />
+      <div id="footer">
+        <p>
+          <a href="mailto:toni@pala.com?subject=Report%20Manager%20Documentation%20Documentation%20Feedback:%20Variant.GetTypeString Method ">Send comments on this topic.</a>
+        </p>
+        <p>
+          <a href="http://reportman.sourceforge.net">Copyright 2006 Toni Martir</a>
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

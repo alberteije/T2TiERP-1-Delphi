@@ -1,0 +1,89 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>Variant 
+							Operators and Type Conversions
+							</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">Report Manager Documentation</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">Variant 
+							Operators and Type Conversions
+							</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>The 
+							operators and type conversions
+							 of the <b>Variant</b> structure are listed below. For a complete list of <b>Variant</b> structure members, see the <a href="Reportman.Reporting.VariantMembers.html">Variant Members</a> topic.</p>
+      <h4 class="dtH4">Public Static 
+							Operators and Type Conversions
+							</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Addition.html">Addition Operator</a></td><td width="50%"> Binary add arithmetic operator </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_BitwiseAnd.html">Bitwise And Operator</a></td><td width="50%"> Binary and logic operator </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_BitwiseOr.html">Bitwise Or Operator</a></td><td width="50%"> Binary or logic operator </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Division.html">Division Operator</a></td><td width="50%"> Binary division arithmetic operator </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Equality.html">Equality Operator</a></td><td width="50%"> Compare two variants </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_GreaterThan.html">Greater Than Operator</a></td><td width="50%"> Compare two Variants </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_GreaterThanOrEqual.html">Greater Than Or Equal Operator</a></td><td width="50%"> Compare two Variants </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Inequality.html">Inequality Operator</a></td><td width="50%"> Compare two Variants </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_LessThan.html">Less Than Operator</a></td><td width="50%"> Compare two Variants </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_LessThanOrEqual.html">Less Than Or Equal Operator</a></td><td width="50%"> Compare two Variants </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Multiply.html">Multiplication Operator</a></td><td width="50%"> Binary multiplier arithmetic operator </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Subtraction.html">Subtraction Operator</a></td><td width="50%"> Binary substraction arithmetic operator </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_UnaryNegation.html">Unary Negation Operator</a></td><td width="50%"> Unary sign arithmetic operator </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Implicit_overload_10.html">Implicit Variant to Boolean Conversion</a></td><td width="50%"> Implicit conversion from Variant to bool </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Implicit_overload_12.html">Implicit Variant to Byte Conversion</a></td><td width="50%"> Implicit conversion from Variant to byte </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Implicit_overload_13.html">Implicit Variant to Char Conversion</a></td><td width="50%"> Implicit conversion from Variant to char </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Implicit_overload_16.html">Implicit Variant to DateTime Conversion</a></td><td width="50%"> Implicit conversion from Variant to DateTime </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Implicit_overload_14.html">Implicit Variant to Decimal Conversion</a></td><td width="50%"> Implicit conversion from Variant to decimal </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Implicit_overload_15.html">Implicit Variant to Double Conversion</a></td><td width="50%"> Implicit conversion from Variant to double </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Implicit_overload_11.html">Implicit Variant to Int32 Conversion</a></td><td width="50%"> Implicit conversion from Variant to int </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Implicit_overload_17.html">Implicit Variant to String Conversion</a></td><td width="50%"> Implicit conversion from Variant to string </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Implicit_overload_1.html">Implicit Boolean to Variant Conversion</a></td><td width="50%"> Assigns a bool value to a Variant </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Implicit_overload_9.html">Implicit Byte to Variant Conversion</a></td><td width="50%"> Assigns a byre value to a Variant </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Implicit_overload_8.html">Implicit Char to Variant Conversion</a></td><td width="50%"> Gets the stream on a binary type Variant </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Implicit_overload_7.html">Implicit DateTime to Variant Conversion</a></td><td width="50%"> Assigns a DateTime value to a Variant </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Implicit_overload_4.html">Implicit Decimal to Variant Conversion</a></td><td width="50%"> Assigns a decimal value to a Variant </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Implicit_overload_5.html">Implicit Double to Variant Conversion</a></td><td width="50%"> Assigns a double value to a Variant </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Implicit_overload_2.html">Implicit Int32 to Variant Conversion</a></td><td width="50%"> Assigns an int value to a Variant </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Implicit_overload_3.html">Implicit Int64 to Variant Conversion</a></td><td width="50%"> Assigns a long value to a Variant </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="puboperator.gif"></img><img src="static.gif" /><a href="Reportman.Reporting.Variant.op_Implicit_overload_6.html">Implicit String to Variant Conversion</a></td><td width="50%"> Assigns a string value to a Variant </td></tr></table>
+      </div>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="Reportman.Reporting.Variant.html">Variant Class</a> | <a href="Reportman.Reporting.VariantMembers.html">Variant Members</a> | <a href="Reportman.Reporting.html">Reportman.Reporting Namespace</a></p>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="Variant structure, &#xD;&#xA;							operators and type conversions&#xD;&#xA;							">
+        </param>
+      </object>
+      <hr />
+      <div id="footer">
+        <p>
+          <a href="mailto:toni@pala.com?subject=Report%20Manager%20Documentation%20Documentation%20Feedback:%20Variant &#xD;&#xA;							Operators%20and%20Type%20Conversions&#xD;&#xA;							">Send comments on this topic.</a>
+        </p>
+        <p>
+          <a href="http://reportman.sourceforge.net">Copyright 2006 Toni Martir</a>
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

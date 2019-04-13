@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>Common properties for TRpBarcode</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Component Reference</h2>
+<h3>Properties for TRpBarcode</h3>
+<p><b>Sumary</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Internal Name</td>
+    <td bgcolor="#FFFFCC">Type</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>Bar Type</td>
+    <td>Typ</td>
+    <td>TRpBarcodeType</td>
+    <td><table border="1">
+        <tr> 
+          <td bgcolor="#FFFFCC" >Type</td>
+          <td bgcolor="#FFFFCC" >Description</td>
+        </tr>
+        <tr> 
+          <td > <p>Code_2_5_interleaved, Code_2_5_industrial, Code_2_5_matrix, 
+              bcCodeITF14</p></td>
+          <td >2 of 5 code family, supports all properties, this code allow to 
+            code an unlimited number of digits</td>
+        </tr>
+        <tr> 
+          <td >Code39, Code39Extended</td>
+          <td >Code39 Family, supports all properties, this code allow to code 
+            an unlimited number of alphanumeric characters, the barcode with is 
+            wider than other that only supports digits, if CalcChecksum is set 
+            an additional character checksum is added</td>
+        </tr>
+        <tr> 
+          <td>Code128A, Code128B, Code128C, Code128</td>
+          <td> <p>Code 128 family, A and B allow alphanumeric coding, the B allow 
+              also lowercase chars. The C allow only numeric values but gerenerates 
+              the narrowest barcode. The Code128 generates a B and C mixed barcode, 
+              full optimized, so a code like 234534AB generates a 128C segment 
+              and a 128B segment, so the barcode is 50% smaller than using 128B.</p>
+            <p>To generate EAN128 valid codes you must use the application fields 
+              and separator digits, you can use the 102 code or any char with 
+              a ascii code greater than 102 to represent a separator digit, a 
+              EAN128 code always begins with a separator, a sample:</p>
+            <p>#102+'10896021'+#102+'21456738XABT'</p></td>
+        </tr>
+        <tr> 
+          <td>Code93, Code93Extended</td>
+          <td>Code93 family, alphanumeric barcodes</td>
+        </tr>
+        <tr> 
+          <td>CodeMSI</td>
+          <td>MSI barcodes, only digits</td>
+        </tr>
+        <tr> 
+          <td >CodePostNet</td>
+          <td >Postnet barcode, only digits</td>
+        </tr>
+        <tr> 
+          <td>CodeCodabar</td>
+          <td>Codabar barcode, digits, and A..D letters and some symbols</td>
+        </tr>
+        <tr> 
+          <td>CodeEAN8, CodeEAN13</td>
+          <td>European EAN barcodes, the last digit is a checksum and can be calculated 
+            if CalcChecksum property is set</td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      </td>
+  </tr>
+  <tr> 
+    <td>Calc.Checksum</td>
+    <td>Checksum</td>
+    <td>Boolean</td>
+    <td><p>For codes with checksum, the checksum is not included and the engine 
+        must calculate it.</p>
+      <p>Only has effect on EAN8,EAN13 and Code39 barcodes.</p></td>
+  </tr>
+  <tr> 
+    <td>Bar Modul</td>
+    <td>Modul</td>
+    <td>Integer</td>
+    <td>Internally stored in twips, editable in cms or inch, determine the minimum 
+      bar with, depends on print quality, the barcode can be readable or not, 
+      Windows GDI allow the access to device points so in Windows you usually 
+      obtain better readable barcodes with lower quality printers</td>
+  </tr>
+  <tr> 
+    <td>Bar Ratio</td>
+    <td>Ratio</td>
+    <td>Double</td>
+    <td><p>Valid ratio values are between 2.0 and 3.0, except for 2_5_matrix between 
+        2.25 and 3.0. Usually the ratio is 2.0 and it's adjusted to 2.25 on 2_5_matrix. 
+        Larger the ratio value wider the barcode output.</p></td>
+  </tr>
+  <tr> 
+    <td>Expression</td>
+    <td>Expression</td>
+    <td>WideString</td>
+    <td>The value of the barcode is obtained evaluating this expression, the result 
+      must be a string, depends on the barcode type, can contain aphanumeric or 
+      only digits</td>
+  </tr>
+  <tr> 
+    <td>Display Format</td>
+    <td>DisplayFormat</td>
+    <td>String</td>
+    <td>If assigned, the result expression will be processed with this mask, see 
+      <a href="refexpression.html">TRpExpression reference</a></td>
+  </tr>
+  <tr>
+    <td>Rotation</td>
+    <td>Rotation</td>
+    <td>Integer</td>
+    <td>Only square rotations are allowed for now</td>
+  </tr>
+</table>
+<p><strong>Aditional details about the implementation</strong></p>
+<p>Because Report Manager <a href="devdriver.html">driver architechture</a>, the 
+  barcodes are only supported by the drivers supporting drawing and filling rects, 
+  that is the Excel and Plain text driver does not support barcodes.</p>
+<p><b>Developer info</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Internal component name</td>
+    <td>TRpBarcode</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Parent class</td>
+    <td>TRpCommonPosComponent</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Unit name</td>
+    <td>rpmdbarcode.pas</td>
+  </tr>
+</table>
+<p>See also <a href="refcommon.html">Report components common properties</a>.</p>
+</body>
+</html>

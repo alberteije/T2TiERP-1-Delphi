@@ -1,0 +1,2411 @@
+object FRpMainF: TFRpMainF
+  Left = 108
+  Top = 180
+  VertScrollBar.Visible = False
+  HorzScrollBar.Visible = False
+  ActiveControl = ToolButton1
+  AutoScroll = False
+  Caption = 'Report Manager Designer'
+  ClientHeight = 394
+  ClientWidth = 891
+  Color = clBackground
+  Menu = MainMenu1
+  Position = poScreenCenter
+  Scaled = False
+  ShowHint = True
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  OnShow = FormShow
+  PixelsPerInch = 96
+  object ToolBar1: TToolBar
+    Left = 0
+    Top = 0
+    Width = 891
+    Height = 30
+    AutoSize = True
+    ButtonHeight = 26
+    ButtonWidth = 26
+    Caption = 'ToolBar1'
+    Flat = True
+    Images = iconlist
+    TabOrder = 0
+    object ToolButton1: TToolButton
+      HelpType = htContext
+      Left = 1
+      Top = 4
+      Height = 26
+      Action = ANew
+      Caption = 'New'
+    end
+    object ToolButton2: TToolButton
+      HelpType = htContext
+      Left = 27
+      Top = 4
+      Height = 26
+      Action = AOpen
+      Caption = 'Open'
+    end
+    object ToolButton3: TToolButton
+      Left = 53
+      Top = 4
+      Width = 8
+      Height = 26
+      Style = tbsSeparator
+      Caption = 'ToolButton3'
+      ImageIndex = 2
+    end
+    object BSave: TToolButton
+      HelpType = htContext
+      Left = 61
+      Top = 4
+      Height = 26
+      Action = ASave
+      Caption = 'Save'
+    end
+    object ToolButton4: TToolButton
+      HelpType = htContext
+      Left = 95
+      Top = 4
+      Height = 26
+      Action = ADataConfig
+      Caption = 'Data access configuration'
+    end
+    object ToolButton5: TToolButton
+      Left = 87
+      Top = 4
+      Width = 8
+      Height = 26
+      Style = tbsSeparator
+      Caption = 'ToolButton5'
+      ImageIndex = 5
+    end
+    object ToolButton6: TToolButton
+      Left = 121
+      Top = 4
+      Width = 8
+      Height = 26
+      Style = tbsSeparator
+      Caption = 'ToolButton6'
+      ImageIndex = 5
+    end
+    object ToolButton7: TToolButton
+      HelpType = htContext
+      Left = 129
+      Top = 4
+      Height = 26
+      Action = APrint
+      Caption = 'Print...'
+    end
+    object ToolButton8: TToolButton
+      HelpType = htContext
+      Left = 155
+      Top = 4
+      Height = 26
+      Action = APreview
+      Caption = 'Print Preview'
+    end
+    object ToolButton9: TToolButton
+      Left = 181
+      Top = 4
+      Width = 20
+      Height = 26
+      Style = tbsSeparator
+      Caption = 'ToolButton9'
+      ImageIndex = 7
+    end
+    object BLabel: TToolButton
+      Left = 227
+      Top = 4
+      Height = 26
+      Hint = 'Inserts a static text'
+      Style = tbsCheck
+      Caption = 'BLabel'
+      Enabled = False
+      Grouped = True
+      ImageIndex = 9
+    end
+    object BArrow: TToolButton
+      Left = 201
+      Top = 4
+      Height = 26
+      Hint = 'Select objects'
+      Style = tbsCheck
+      Caption = 'BArrow'
+      Enabled = False
+      Grouped = True
+      ImageIndex = 8
+    end
+    object BExpression: TToolButton
+      Left = 253
+      Top = 4
+      Height = 26
+      Hint = 'Inserts a expression'
+      Style = tbsCheck
+      Caption = 'BExpression'
+      Enabled = False
+      Grouped = True
+      ImageIndex = 10
+    end
+    object BShape: TToolButton
+      Left = 279
+      Top = 4
+      Height = 26
+      Hint = 'Inserts a simple drawing'
+      Style = tbsCheck
+      Caption = 'BShape'
+      Enabled = False
+      Grouped = True
+      ImageIndex = 11
+    end
+    object BImage: TToolButton
+      Left = 305
+      Top = 4
+      Height = 26
+      Hint = 'Inserts a image'
+      Style = tbsCheck
+      Caption = 'BImage'
+      Enabled = False
+      Grouped = True
+      ImageIndex = 12
+    end
+    object BChart: TToolButton
+      Left = 357
+      Top = 4
+      Height = 26
+      Hint = 'Inserts a chart'
+      Style = tbsCheck
+      Caption = 'BChart'
+      Enabled = False
+      Grouped = True
+      ImageIndex = 13
+    end
+    object ToolButton10: TToolButton
+      Left = 383
+      Top = 4
+      Width = 16
+      Height = 26
+      Style = tbsSeparator
+      Caption = 'ToolButton10'
+      ImageIndex = 14
+    end
+    object ToolButton11: TToolButton
+      HelpType = htContext
+      Left = 478
+      Top = 4
+      Height = 26
+      Action = ACut
+      Caption = 'Cut'
+    end
+    object ToolButton12: TToolButton
+      HelpType = htContext
+      Left = 504
+      Top = 4
+      Height = 26
+      Action = ACopy
+      Caption = 'Copy'
+    end
+    object ToolButton13: TToolButton
+      HelpType = htContext
+      Left = 530
+      Top = 4
+      Height = 26
+      Action = APaste
+      Caption = 'Paste'
+    end
+    object ToolButton14: TToolButton
+      Left = 556
+      Top = 4
+      Width = 14
+      Height = 26
+      Style = tbsSeparator
+      Caption = 'ToolButton14'
+      ImageIndex = 17
+    end
+    object ToolButton15: TToolButton
+      HelpType = htContext
+      Left = 570
+      Top = 4
+      Height = 26
+      Action = ALeft
+      Caption = 'Left'
+    end
+    object ToolButton16: TToolButton
+      HelpType = htContext
+      Left = 596
+      Top = 4
+      Height = 26
+      Action = ARight
+      Caption = 'Right'
+    end
+    object ToolButton17: TToolButton
+      HelpType = htContext
+      Left = 622
+      Top = 4
+      Height = 26
+      Action = AUp
+      Caption = 'Up'
+    end
+    object ToolButton18: TToolButton
+      HelpType = htContext
+      Left = 648
+      Top = 4
+      Height = 26
+      Action = ADown
+      Caption = 'Down'
+    end
+    object ToolButton19: TToolButton
+      Left = 674
+      Top = 4
+      Width = 12
+      Height = 26
+      Style = tbsSeparator
+      Caption = 'ToolButton19'
+      ImageIndex = 25
+    end
+    object ToolButton20: TToolButton
+      HelpType = htContext
+      Left = 686
+      Top = 4
+      Height = 26
+      Action = AAlignLeft
+      Caption = 'Left'
+    end
+    object ToolButton21: TToolButton
+      HelpType = htContext
+      Left = 712
+      Top = 4
+      Height = 26
+      Action = AAlignRight
+      Caption = 'Right'
+    end
+    object ToolButton22: TToolButton
+      HelpType = htContext
+      Left = 738
+      Top = 4
+      Height = 26
+      Action = AAlignUp
+      Caption = 'Up'
+    end
+    object ToolButton23: TToolButton
+      HelpType = htContext
+      Left = 764
+      Top = 4
+      Height = 26
+      Action = AAlignDown
+      Caption = 'Down'
+    end
+    object ToolButton24: TToolButton
+      HelpType = htContext
+      Left = 790
+      Top = 4
+      Height = 26
+      Action = AAlignHorz
+      Caption = 'Horizontal space'
+    end
+    object ToolButton25: TToolButton
+      HelpType = htContext
+      Left = 816
+      Top = 4
+      Height = 26
+      Action = AAlignVert
+      Caption = 'Vertical space'
+    end
+    object BBarcode: TToolButton
+      Left = 331
+      Top = 4
+      Height = 26
+      Hint = 'Inserts a barcode'
+      Style = tbsCheck
+      Caption = 'BBarcode'
+      Enabled = False
+      Grouped = True
+      ImageIndex = 31
+    end
+    object BDelete: TToolButton
+      HelpType = htContext
+      Left = 452
+      Top = 4
+      Height = 26
+      Action = ADelete
+      Caption = 'Delete'
+    end
+    object ComboScale: TComboBox
+      Left = 399
+      Top = 4
+      Width = 53
+      Height = 21
+      Style = csDropDownList
+      DropDownCount = 12
+      ItemHeight = 15
+      Items.Strings = (
+        '50%'
+        '75%'
+        '100%'
+        '125%'
+        '150%'
+        '175%'
+        '200%'
+        '250%'
+        '300%'
+        '350%'
+        '400%')
+      TabOrder = 34
+      OnClick = ComboScaleClick
+    end
+  end
+  object mainscrollbox: TScrollBox
+    Left = 0
+    Top = 30
+    Width = 891
+    Height = 343
+    HorzScrollBar.Range = 189
+    Align = alClient
+    BorderStyle = bsNone
+    TabOrder = 1
+    Visible = False
+    object Splitter1: TSplitter
+      Left = 181
+      Top = 0
+      Width = 8
+      Height = 343
+      Beveled = True
+      ResizeStyle = rsUpdate
+      OnMoved = Splitter1Moved
+    end
+    object leftpanel: TPanel
+      Left = 0
+      Top = 0
+      Width = 181
+      Height = 343
+      Align = alLeft
+      BevelOuter = bvNone
+      TabOrder = 0
+      object Splitter2: TSplitter
+        Left = 0
+        Top = 0
+        Width = 181
+        Height = 8
+        Cursor = crVSplit
+        Align = alTop
+        Beveled = True
+        ResizeStyle = rsUpdate
+      end
+    end
+  end
+  object BStatus: TStatusBar
+    Left = 0
+    Top = 373
+    Width = 891
+    Height = 21
+    Panels = <
+      item
+      end>
+  end
+  object MainMenu1: TMainMenu
+    Images = iconlist
+    Left = 336
+    Top = 224
+    object File1: TMenuItem
+      Caption = 'File'
+      object New1: TMenuItem
+        Action = ANew
+      end
+      object Open1: TMenuItem
+        Action = AOpen
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object MLibraries: TMenuItem
+        Caption = 'Libraries'
+        Hint = 'Open report libraries dialog'
+        object Configure1: TMenuItem
+          Action = ALibraries
+        end
+        object Openfrom1: TMenuItem
+          Action = AOpenFrom
+        end
+        object Copyto1: TMenuItem
+          Action = ASaveTo
+        end
+      end
+      object N7: TMenuItem
+        Caption = '-'
+        Visible = False
+      end
+      object Save1: TMenuItem
+        Action = ASave
+      end
+      object Saveas1: TMenuItem
+        Action = ASaveas
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object Pagesetup1: TMenuItem
+        Action = APageSetup
+      end
+      object PrintPreview1: TMenuItem
+        Action = APreview
+      end
+      object Print1: TMenuItem
+        Action = APrint
+      end
+      object Printersetup1: TMenuItem
+        Action = APrintSetup
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object Exit1: TMenuItem
+        Action = AExit
+      end
+    end
+    object MReport: TMenuItem
+      Caption = 'Report'
+      Enabled = False
+      object MAdd: TMenuItem
+        Caption = 'Add'
+        ImageIndex = 19
+        object Newpageheader1: TMenuItem
+          Action = ANewPageHeader
+        end
+        object Pagefooter1: TMenuItem
+          Action = ANewPageFooter
+        end
+        object Groupheaderandfooter1: TMenuItem
+          Action = ANewGroup
+        end
+        object Subreport1: TMenuItem
+          Action = ANewSubreport
+        end
+        object Detail1: TMenuItem
+          Action = ANewDetail
+        end
+      end
+      object Dataaccessconfiguration1: TMenuItem
+        Action = ADataConfig
+      end
+      object Parameters1: TMenuItem
+        Action = AParams
+      end
+      object Userparameters1: TMenuItem
+        Action = AUserParams
+      end
+      object ADeleteSelection1: TMenuItem
+        Action = ADeleteSelection
+      end
+    end
+    object MEdit: TMenuItem
+      Caption = 'Edit'
+      Enabled = False
+      object Delete1: TMenuItem
+        Action = ADelete
+      end
+      object Cut1: TMenuItem
+        Action = ACut
+      end
+      object Copy1: TMenuItem
+        Action = ACopy
+      end
+      object APaste1: TMenuItem
+        Action = APaste
+      end
+      object N4: TMenuItem
+        Caption = '-'
+      end
+      object MSelect: TMenuItem
+        Caption = 'Select'
+        object ASelectAll1: TMenuItem
+          Action = ASelectAll
+        end
+        object ASelectAllText1: TMenuItem
+          Action = ASelectAllText
+        end
+      end
+      object MMove: TMenuItem
+        Caption = 'Move'
+        object Left1: TMenuItem
+          Action = ALeft
+        end
+        object Right1: TMenuItem
+          Action = ARight
+        end
+        object Up1: TMenuItem
+          Action = AUp
+        end
+        object Down1: TMenuItem
+          Action = ADown
+        end
+      end
+      object MAlign: TMenuItem
+        Caption = 'Align'
+        object Left2: TMenuItem
+          Action = AAlignLeft
+        end
+        object Right2: TMenuItem
+          Action = AAlignRight
+        end
+        object Up2: TMenuItem
+          Action = AAlignUp
+        end
+        object Down2: TMenuItem
+          Action = AAlignDown
+        end
+        object Horizontalspace1: TMenuItem
+          Action = AAlignHorz
+        end
+        object Verticalspace1: TMenuItem
+          Action = AAlignVert
+        end
+      end
+      object N5: TMenuItem
+        Caption = '-'
+      end
+      object Hide1: TMenuItem
+        Action = AHide
+      end
+      object Showall1: TMenuItem
+        Action = AShowAll
+      end
+      object N6: TMenuItem
+        Caption = '-'
+      end
+      object MAlign1_6: TMenuItem
+        Action = AAlign1_6
+      end
+    end
+    object MDisplay: TMenuItem
+      Caption = 'Display'
+      Enabled = False
+      object Grid1: TMenuItem
+        Action = AGridOptions
+      end
+    end
+    object MPreferences: TMenuItem
+      Caption = 'Preferences'
+      object MMeasurement: TMenuItem
+        Caption = 'Measurement'
+        object Cms1: TMenuItem
+          Action = AUnitCms
+        end
+        object Inchess1: TMenuItem
+          Action = AUnitsinchess
+        end
+      end
+      object MDriverSelect: TMenuItem
+        Caption = 'Driver'
+        object MQtDriver: TMenuItem
+          Action = ADriverQT
+        end
+        object MGDIDriver: TMenuItem
+          Action = ADriverGDI
+        end
+        object MPDFQtDriver: TMenuItem
+          Action = ADriverPDFQt
+        end
+        object MPDFGDIDriver: TMenuItem
+          Action = ADriverPDFGDI
+        end
+      end
+      object MSystemPrint: TMenuItem
+        Action = ASystemPrintDialog
+      end
+      object MKylixPrintBug: TMenuItem
+        Action = AkylixPrintBug
+      end
+      object Statusbar1: TMenuItem
+        Action = AStatusBar
+      end
+      object MAppFont: TMenuItem
+        Caption = 'Application Font'
+        Visible = False
+        OnClick = MAppFontClick
+      end
+      object MObjFont: TMenuItem
+        Caption = 'Object inspector Font'
+        OnClick = MObjFontClick
+      end
+      object MTypeInfo: TMenuItem
+        Caption = 'Data type information'
+        OnClick = MTypeInfoClick
+      end
+      object MAsync: TMenuItem
+        Caption = 'Asynchronous execution'
+        OnClick = MAsyncClick
+      end
+      object MQtStyle: TMenuItem
+        Caption = 'Qt Widget Style'
+        object Windows1: TMenuItem
+          Caption = 'Windows'
+          OnClick = Windows1Click
+        end
+        object Motif1: TMenuItem
+          Tag = 1
+          Caption = 'Motif'
+          OnClick = Windows1Click
+        end
+        object MotifPlus1: TMenuItem
+          Tag = 2
+          Caption = 'Motif Plus'
+          OnClick = Windows1Click
+        end
+        object CDE1: TMenuItem
+          Tag = 3
+          Caption = 'CDE'
+          OnClick = Windows1Click
+        end
+        object QtSGI1: TMenuItem
+          Tag = 4
+          Caption = 'QtSGI'
+          OnClick = Windows1Click
+        end
+        object Platinum1: TMenuItem
+          Tag = 5
+          Caption = 'Platinum'
+          OnClick = Windows1Click
+        end
+        object MQtDefault: TMenuItem
+          Tag = 6
+          Caption = 'Normal'
+          OnClick = Windows1Click
+        end
+      end
+    end
+    object MHelp: TMenuItem
+      Caption = 'Help'
+      object MDoc: TMenuItem
+        Action = ADocumentation
+      end
+      object MSysInfo: TMenuItem
+        Action = ASysInfo
+      end
+      object MAbout: TMenuItem
+        Action = AAbout
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Images = iconlist
+    Left = 456
+    Top = 152
+    object ANew: TAction
+      Category = 'File'
+      Caption = 'New'
+      Hint = 'Creates a new report'
+      ImageIndex = 0
+      OnExecute = ANewExecute
+    end
+    object ASysInfo: TAction
+      Category = 'Help'
+      Caption = 'System information'
+      Hint = 'Shows system and printer information'
+      OnExecute = ASysInfoExecute
+    end
+    object AOpen: TAction
+      Category = 'File'
+      Caption = 'Open'
+      Hint = 'Opens an existing report'
+      ImageIndex = 1
+      OnExecute = AOpenExecute
+    end
+    object AExit: TAction
+      Category = 'File'
+      Caption = 'Exit'
+      Hint = 'Closes de application'
+      ImageIndex = 2
+      OnExecute = AExitExecute
+    end
+    object ASave: TAction
+      Category = 'File'
+      Caption = 'Save'
+      Enabled = False
+      Hint = 'Saves the current report'
+      ImageIndex = 3
+      OnExecute = ASaveExecute
+    end
+    object ASaveas: TAction
+      Category = 'File'
+      Caption = 'Save as...'
+      Enabled = False
+      Hint = 'Saves the report to a new file'
+      ImageIndex = 7
+      OnExecute = ASaveasExecute
+    end
+    object APageSetup: TAction
+      Category = 'File'
+      Caption = 'Page setup...'
+      Enabled = False
+      Hint = 'Configures the page for the report'
+      ImageIndex = 32
+      OnExecute = APageSetupExecute
+    end
+    object ANewPageHeader: TAction
+      Category = 'Report'
+      Caption = 'Page header'
+      Enabled = False
+      Hint = 'Inserts a page header in the selected subreport'
+      OnExecute = ANewPageHeaderExecute
+    end
+    object ANewPageFooter: TAction
+      Category = 'Report'
+      Caption = 'Page footer'
+      Enabled = False
+      Hint = 'Inserts a page footer in the selected subreport'
+      OnExecute = ANewPageFooterExecute
+    end
+    object ANewGroup: TAction
+      Category = 'Report'
+      Caption = 'Group header and footer'
+      Enabled = False
+      Hint = 'Insert a group header an footer'
+      OnExecute = ANewGroupExecute
+    end
+    object ANewSubreport: TAction
+      Category = 'Report'
+      Caption = 'Subreport'
+      Enabled = False
+      Hint = 'Insert a new subreport'
+      OnExecute = ANewSubreportExecute
+    end
+    object ADeleteSelection: TAction
+      Category = 'Report'
+      Caption = 'Delete section/subreport'
+      Enabled = False
+      Hint = 'Deletes the selected subreport or section'
+      ImageIndex = 20
+      OnExecute = ADeleteSelectionExecute
+    end
+    object ANewDetail: TAction
+      Category = 'Report'
+      Caption = 'Detail'
+      Enabled = False
+      Hint = 'Inserts a detail section in the selected subreport'
+      OnExecute = ANewDetailExecute
+    end
+    object ADataConfig: TAction
+      Category = 'Report'
+      Caption = 'Data access configuration'
+      Enabled = False
+      Hint = 'Modifies data access information'
+      ImageIndex = 4
+      OnExecute = ADataConfigExecute
+    end
+    object AParams: TAction
+      Category = 'Report'
+      Caption = 'Parameter definition'
+      Enabled = False
+      Hint = 'Shows parameter definition for the report and data configuration'
+      OnExecute = AParamsExecute
+    end
+    object APrint: TAction
+      Category = 'File'
+      Caption = 'Print...'
+      Enabled = False
+      Hint = 'Print the report, you can select pages to print'
+      ImageIndex = 5
+      OnExecute = APrintExecute
+    end
+    object APreview: TAction
+      Category = 'File'
+      Caption = 'Print Preview'
+      Enabled = False
+      Hint = 'Preview the report in the screen'
+      ImageIndex = 6
+      OnExecute = APreviewExecute
+    end
+    object AGridOptions: TAction
+      Category = 'Display'
+      Caption = 'Grid'
+      Enabled = False
+      Hint = 'Grid options for this report'
+      OnExecute = AGridOptionsExecute
+    end
+    object ACut: TAction
+      Category = 'Edit'
+      Caption = 'Cut'
+      Enabled = False
+      Hint = 'Cut selected object'
+      ImageIndex = 14
+      OnExecute = ACutExecute
+    end
+    object ACopy: TAction
+      Category = 'Edit'
+      Caption = 'Copy'
+      Enabled = False
+      Hint = 'Copy selected object to clipboard'
+      ImageIndex = 15
+      OnExecute = ACopyExecute
+    end
+    object APaste: TAction
+      Category = 'Edit'
+      Caption = 'Paste'
+      Enabled = False
+      Hint = 'Paste from clipboard'
+      ImageIndex = 16
+      OnExecute = APasteExecute
+    end
+    object AAbout: TAction
+      Category = 'Help'
+      Caption = 'About Report Manager'
+      Hint = 'Shows information about Report Manger'
+      OnExecute = AAboutExecute
+    end
+    object ADocumentation: TAction
+      Category = 'Help'
+      Caption = 'Documentation'
+      Hint = 'Display Report Manager Designer Documentation'
+      OnExecute = ADocumentationExecute
+    end
+    object APrintSetup: TAction
+      Category = 'File'
+      Caption = 'Printer setup...'
+      Hint = 'Displays printer setup dialog'
+      ImageIndex = 17
+      OnExecute = APrintSetupExecute
+    end
+    object AUnitCms: TAction
+      Category = 'Preferences'
+      Caption = '&Cms'
+      Hint = 'Change measurement units to cms'
+      OnExecute = AUnitCmsExecute
+    end
+    object AUnitsinchess: TAction
+      Category = 'Preferences'
+      Caption = 'Inchess'
+      Hint = 'Changes measurement units to inchess'
+      OnExecute = AUnitsinchessExecute
+    end
+    object AUserParams: TAction
+      Category = 'Report'
+      Caption = 'Parameter values'
+      Hint = 'Shows user parameter window'
+      ImageIndex = 18
+      OnExecute = AUserParamsExecute
+    end
+    object ADriverQT: TAction
+      Category = 'Preferences'
+      Caption = 'Qt driver (CLX)'
+      Checked = True
+      Hint = 'Activates the Qt cross platform graphics and printing driver'
+      OnExecute = ADriverQTExecute
+    end
+    object ADriverGDI: TAction
+      Category = 'Preferences'
+      Caption = 'GDI Driver (VCL)'
+      Hint = 'Activates the GDI32 direct rendering driver (VCL), Windows only'
+      OnExecute = ADriverGDIExecute
+    end
+    object ASystemPrintDialog: TAction
+      Category = 'Preferences'
+      Caption = 'Qt System print dialog'
+      Hint = 'Shows the system print dialog, or a custom print dialog'
+      OnExecute = ASystemPrintDialogExecute
+    end
+    object AkylixPrintBug: TAction
+      Caption = 'Kylix Print Bugfix'
+      Checked = True
+      Hint = 'Uses kylix print bugfix (use metaprint to print metafiles)'
+      Visible = False
+      OnExecute = AkylixPrintBugExecute
+    end
+    object AHide: TAction
+      Category = 'Edit'
+      Caption = 'Hide'
+      Enabled = False
+      Hint = 'Hide selected objects'
+      OnExecute = AHideExecute
+    end
+    object AShowAll: TAction
+      Category = 'Edit'
+      Caption = 'Show all'
+      Hint = 'Shows all the hiden components'
+      OnExecute = AShowAllExecute
+    end
+    object ASelectAll: TAction
+      Category = 'Edit'
+      Caption = 'All'
+      Hint = 'Selects all components of the report'
+      OnExecute = ASelectAllExecute
+    end
+    object ASelectAllText: TAction
+      Category = 'Edit'
+      Caption = 'All Text'
+      Hint = 'Selects all text components of the report'
+      OnExecute = ASelectAllTextExecute
+    end
+    object ALeft: TAction
+      Category = 'Edit'
+      Caption = 'Left'
+      Enabled = False
+      Hint = 'Moves the selection to the left'
+      ImageIndex = 21
+      OnExecute = ALeftExecute
+    end
+    object ARight: TAction
+      Category = 'Edit'
+      Caption = 'Right'
+      Enabled = False
+      Hint = 'Moves the selection to the left'
+      ImageIndex = 22
+      OnExecute = ARightExecute
+    end
+    object AUp: TAction
+      Category = 'Edit'
+      Caption = 'Up'
+      Enabled = False
+      Hint = 'Moves the selection up'
+      ImageIndex = 23
+      OnExecute = AUpExecute
+    end
+    object ADown: TAction
+      Category = 'Edit'
+      Caption = 'Down'
+      Enabled = False
+      Hint = 'Moves the selection down'
+      ImageIndex = 24
+      OnExecute = ADownExecute
+    end
+    object AAlignLeft: TAction
+      Category = 'Edit'
+      Caption = 'Left'
+      Enabled = False
+      Hint = 'Aligns selection to the left'
+      ImageIndex = 25
+      OnExecute = AAlignLeftExecute
+    end
+    object AAlignRight: TAction
+      Category = 'Edit'
+      Caption = 'Right'
+      Enabled = False
+      Hint = 'Aligns selection to the right'
+      ImageIndex = 26
+      OnExecute = AAlignRightExecute
+    end
+    object AAlignUp: TAction
+      Category = 'Edit'
+      Caption = 'Up'
+      Enabled = False
+      Hint = 'Aligns selection up'
+      ImageIndex = 27
+      OnExecute = AAlignUpExecute
+    end
+    object AAlignDown: TAction
+      Category = 'Edit'
+      Caption = 'Down'
+      Enabled = False
+      Hint = 'Aligns selection down'
+      ImageIndex = 28
+      OnExecute = AAlignDownExecute
+    end
+    object AAlignHorz: TAction
+      Category = 'Edit'
+      Caption = 'Horizontal space'
+      Enabled = False
+      Hint = 'Aligns selection distributing horzontal space'
+      ImageIndex = 29
+      OnExecute = AAlignHorzExecute
+    end
+    object AAlignVert: TAction
+      Category = 'Edit'
+      Caption = 'Vertical space'
+      Enabled = False
+      Hint = 'Aligns selection distributing vertical space'
+      ImageIndex = 30
+      OnExecute = AAlignVertExecute
+    end
+    object AStatusBar: TAction
+      Category = 'Preferences'
+      Caption = 'Status bar'
+      Checked = True
+      Hint = 'Shows or hides the status bar'
+      OnExecute = AStatusBarExecute
+    end
+    object ADriverPDFGDI: TAction
+      Category = 'Preferences'
+      Caption = 'Native driver (GDI)'
+      Hint = 'Activates the Native driver, no graphics dependent'
+      OnExecute = ADriverPDFGDIExecute
+    end
+    object ADriverPDFQt: TAction
+      Category = 'Preferences'
+      Caption = 'Native driver (Qt)'
+      Hint = 'Activates the Native driver, no graphics dependent'
+      OnExecute = ADriverPDFQtExecute
+    end
+    object AAlign1_6: TAction
+      Category = 'Edit'
+      Caption = 'Align height to lines per inch'
+      Hint = 
+        'Aligns all sections height to lines per inch for dot matrix comp' +
+        'atibility'
+      OnExecute = AAlign1_6Execute
+    end
+    object ALibraries: TAction
+      Category = 'Library'
+      Caption = 'Libraries'
+      Hint = 'Open report libraries dialog'
+      OnExecute = ALibrariesExecute
+    end
+    object ADelete: TAction
+      Category = 'Edit'
+      Caption = 'Delete'
+      Enabled = False
+      Hint = 'Delete the selected object'
+      ImageIndex = 20
+      OnExecute = ADeleteExecute
+    end
+    object AOpenFrom: TAction
+      Category = 'Library'
+      Caption = 'Open from'
+      Hint = 'Open a report from a library'
+      OnExecute = AOpenFromExecute
+    end
+    object ASaveTo: TAction
+      Category = 'Library'
+      Caption = 'Save to'
+      Hint = 'Save the report to a database library'
+      OnExecute = ASaveToExecute
+    end
+  end
+  object iconlist: TImageList
+    Height = 19
+    Width = 19
+    Left = 452
+    Top = 224
+    Bitmap = {
+      494D474C01000100130000001300000021000000424D66990000000000003600
+      0000280000007200000072000000010018000000000030990000120B0000120B
+      00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF000000000000000000000000000000FFFFFF0000
+      00FFFFFF000000000000FFFFFF000000FFFFFFFFFFFF000000000000FFFFFFFF
+      FFFF000000FFFFFF000000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF
+      000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF848284F7AAF7848284DEAADE000000FFFFFF000000FFFFFF00000000
+      0000FFFFFF000000FFFFFFFFFFFF000000000000FFFFFFFFFFFF000000FFFFFF
+      000000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000
+      00000000000000000000000000000000000000000000FFFF00FFFF00FFFF00FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFF000000000000000000FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FBFFFFFFFF848284000000FFFFFF000000FFFFFF000000000000FFFFFF000000
+      FFFFFFFFFFFF000000000000FFFFFFFFFFFF000000FFFFFF000000FFFFFF0000
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFF00000000
+      0000FFFFFF00FFFFFFFFFF00FFFF000000FFFF00FFFF00FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF0000000000FFFFFF000000FFFFFF000000FFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCED3D6F7AAF7
+      000000FFFFFF000000FFFFFF000000000000FFFFFF000000FFFFFFFFFFFF0000
+      00000000FFFFFFFFFFFF000000FFFFFF000000FFFFFF000000FFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFF000000FFFFFF00000000FFFFFFFFFF00FFFF000000
+      00FFFFFFFFFF00FFFF000000FFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBFFFFFFFF848284000000FFFFFF0000
+      00FFFFFF000000000000FFFFFF000000FFFFFFFFFFFF000000000000FFFFFFFF
+      FFFF000000FFFFFF000000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000FFFFFFFFFFFF00000000000000000000FFFFFFFFFF00FFFFFFFF
+      FF00FFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF
+      000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFCED3D6DEAADE000000FFFFFF000000FFFFFF00000000
+      0000FFFFFF000000FFFFFFFFFFFF000000000000FFFFFFFFFFFF000000FFFFFF
+      000000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFF
+      FFFFFFFFFFFFFF00000000FFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF000000FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FBFFFFFFFF848284000000FFFFFF000000FFFFFF000000000000FFFFFF000000
+      FFFFFFFFFFFF000000000000FFFFFFFFFFFF000000FFFFFF000000FFFFFF0000
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000000000000000000000000000
+      FFFFFFFFFF000000FFFFFF00FFFFFFFFFF00FFFF000000FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF0000FFFFFFFFFFFF000000FFFFFFFFFFFF00000000000000
+      0000000000000000000000000000000000000000FFFFFFFFFFFFCED3D6F7AAF7
+      000000FFFFFF000000FFFFFF000000000000FFFFFF000000FFFFFFFFFFFF0000
+      00000000FFFFFFFFFFFF000000FFFFFF000000FFFFFF000000FFFFFFFFFFFF00
+      0000000000000000FFFFFF00FFFFFFFFFF00FFFF000000FFFFFF000000FFFFFF
+      00FFFF00000000FFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFF000000FFFFFFFFFFFF848284F7BAF7848284F7BAF7000000
+      F7BAF7848284F7BAF7848284FFFFFFFFFBFFFFFFFF848284000000FFFFFF0000
+      00FFFFFF000000000000FFFFFF000000FFFFFFFFFFFF000000000000FFFFFFFF
+      FFFF000000FFFFFF000000FFFFFF000000FFFFFFFFFFFFFFFF00000000FFFFFF
+      00FFFF00000000000000000000000000000000000000000000000000FFFFFFFF
+      FF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF
+      000000FFFFFFFFFFFFFFFFFFCED3D6FFFFFF848284000000FFFFFFFFFFFFCED3
+      D6DEAADEFFFFFFFFFFFFCED3D6DEAADE000000FFFFFF000000FFFFFF00000000
+      0000FFFFFF000000FFFFFFFFFFFF000000000000FFFFFFFFFFFF000000FFFFFF
+      000000FFFFFF000000FFFFFFFFFFFFFFFF0000000000FFFFFFFFFF00FFFFFFFF
+      FF00FFFFFFFFFF00FFFFFFFFFF00FFFF000000FFFFFF000000FFFFFF000000FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFBFFF7BAF7000000FFFFFFFFFBFFFFFFFF848284FFFFFFFF
+      FFFFFFFFFFFFFFFF000000FFFFFF000000FFFFFF000000000000FFFFFF000000
+      FFFFFFFFFFFF000000000000FFFFFFFFFFFF000000FFFFFF000000FFFFFF0000
+      00FFFFFFFFFFFFFFFF00000000FFFFFF00FFFFFFFFFF00FFFF00000000000000
+      0000000000000000000000000000FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF0000FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFCED3D6FF
+      FFFF848284000000FFFFFFFFFFFFCED3D6F7AAF7000000FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF000000FFFFFF000000000000FFFFFF000000FFFFFFFFFFFF0000
+      00000000FFFFFFFFFFFF000000FFFFFF000000FFFFFF000000FFFFFFFFFFFFFF
+      FF0000000000FFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF00FFFF
+      000000FFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFBFFF7BAF7000000
+      FFFFFFFFFBFFFFFFFF848284000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FFFFFF000000000000FFFFFF000000FFFFFFFFFFFF000000000000FFFFFFFF
+      FFFF000000FFFFFF000000FFFFFF000000FFFFFFFFFFFFFFFF00000000FFFFFF
+      00FFFFFFFFFF00FFFF000000000000000000000000000000FFFFFF0000000000
+      00000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF
+      000000FFFFFFFFFFFFFFFFFFCED3D6FFFFFF848284000000FFFFFFFFFFFFCED3
+      D6DEAADE000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF00000000
+      0000FFFFFF000000FFFFFFFFFFFF000000000000FFFFFFFFFFFF000000FFFFFF
+      000000FFFFFF000000FFFFFFFFFFFFFFFF00000000000000FFFFFF00FFFFFFFF
+      FF00FFFFFFFFFF00FFFF000000FFFFFFFFFFFF000000FFFFFFFFFFFF000000FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000FFFFFF000000FFFFFF0000
+      00FFFFFFFFFFFFFFFBFFF7BAF7000000FFFFFFFFFBFFFFFFFF848284000000FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF000000000000FFFFFF000000
+      FFFFFFFFFFFF000000000000FFFFFFFFFFFF000000FFFFFF000000FFFFFF0000
+      00FFFFFFFFFFFF000000000000FFFFFF00000000000000000000000000000000
+      0000FFFFFFFFFFFFFFFFFF000000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF0000FFFFFF000000000000000000FFFFFFFFFFFFCED3D6FF
+      FFFF848284000000FFFFFFFFFFFFCED3D6F7AAF7000000FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF000000FFFFFF000000000000FFFFFF000000FFFFFFFFFFFF0000
+      00000000FFFFFFFFFFFF000000FFFFFF000000FFFFFF000000FFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFBFFF7BAF7000000
+      FFFFFFFFFBFFFFFFFF848284000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FFFFFF000000000000FFFFFF000000FFFFFFFFFFFF000000000000FFFFFFFF
+      FFFF000000FFFFFF000000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000000000000000000000000000000000000000000000000000FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000000000
+      000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFF
+      FFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000
+      00000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF000000848684FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF00000000000000000000000000000000000000000000000000
+      00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF848684F7AEF7848684DE
+      AEDE000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000
+      000000000000FFFFFFFFFFFF000000DEAEDECED7D6FFFFFFCED7D6FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF848284F7AAF7848284DEAADE848284F7AAF7848284DEAADE848284000000
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000000000000000000000000000
+      0000000000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF000000F7BEF7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF848684000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF000000FFFFFF0000
+      00FFFFFF000000848684FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBFF
+      FFFFFFFFFBFFFFFFFFFFFBFFFFFFFFFFFBFFF7BAF70000000000FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFF7AEF7848684DEAEDE848684F7AEF7848684DEAEDE
+      848684F7AEF7848684000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FF000000848684FFFFFFCED7D6FFFFFFCED7D6FFFFFFCED7D6FFFFFFCED7D6FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFCED7D6FFFFFFCED7D6F7AEF7000000FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF000000F7
+      AEF7CED7D6FFFFFFCED7D6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCED3D6FFFFFFCED3D6FFFFFFCED3
+      D6FFFFFFCED3D6FFFFFF8482840000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7BE
+      F7000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000F7BEF7FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF848684000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF000000848684FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000000000000000000000000000
+      00000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFF7BAF70000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000000000000000000000000000000000FFFFFFFFFFFFFFFFFFCED7
+      D6FFFFFFCED7D6FFFFFFCED7D6FFFFFFCED7D6FFFFFF848684000000FFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000848684FFFFFFCED7D6FFFFFF
+      CED7D6FFFFFFCED7D6FFFFFFCED7D6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCED7D6FFFFFFCED7D6DE
+      AEDE000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      000000FFFFFFFFFFFFFFFFFF000000DEAEDECED7D6FFFFFFCED7D6FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF848284F7AAF7848284DEAADE848284F7AAF7848284DE
+      AADE848284000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFF7BEF7000000FFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF000000F7BEF7848684F7BEF7848684F7BEF7848684F7BE
+      F7848684F7BEF7848684FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF848684000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000F7BEF7FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF000000848684FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFBFFFFFFFFFFFBFFFFFFFFFFFBFFFFFFFFFFFBFFF7BAF7000000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFCED7D6FFFFFFCED7D6FFFFFFCED7D6FFFFFF
+      CED7D6FFFFFF848684000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FF00000000000000000000000000000000000000000000000000000000000000
+      0000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFCED7D6FFFFFFCED7D6F7AEF7000000FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF000000848684FFFFFFCED7D6FFFFFFFFFFFFFFFFFF000000F7
+      AEF7CED7D6FFFFFFCED7D6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCED3D6FFFFFF
+      CED3D6FFFFFFCED3D6FFFFFFCED3D6FFFFFF848284000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF848684000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+      0000F7BEF7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000848684F7BEF7848684
+      F7BEF7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFF7BAF7000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+      0000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00000000000000000000000000000000FFFFFFFFFFFFCED7D6FFFFFFCED7D6DE
+      AEDE000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000848684FFFFFF
+      CED7D6FFFFFFFFFFFFFFFFFF000000000000000000000000000000000000FFFF
+      FFFFFFFFFFFFFF00000000000000000000000000000000000000000000000000
+      0000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000000000
+      000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF848684F7BEF784
+      8684F7BEF7000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF848684000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000F7BEF7FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFF7BAF7848284F7BAF7848284F7BAF7848284F7BAF7848284F7BAF7000000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000000000000000000000
+      0000000000000000000000000000000000000000000000FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF000000F7AEF7CED7D6FFFFFFCED7D6FFFFFFCED7
+      D6FFFFFFCED7D6FFFFFFCED7D6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCED7D6FFFFFF848684000000
+      FFFFFFFFFFFFCED7D6FFFFFFCED7D6F7AEF7000000FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF000000848684FFFFFFCED7D6FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCED3D6FFFFFF
+      CED3D6FFFFFFCED3D6FFFFFFCED3D6FFFFFF848284000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFF7BEF7848684F7BEF7848684F7BEF7848684
+      F7BEF7848684F7BEF7848684000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF000000848684FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7BEF7000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF848684000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+      0000F7BEF7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBFFFFFFFFFFFBFFFFFF
+      FFFFFBFFFFFFFFFFFBFFF7BAF7000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFCED7D6FFFFFFCED7D6FFFFFFCED7D6FFFFFFCED7D6FFFFFFCED7
+      D6F7AEF7000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000DE
+      AEDECED7D6FFFFFFCED7D6FFFFFFCED7D6FFFFFFCED7D6FFFFFFCED7D6FFFFFF
+      FFFFFF000000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFCED7D6FFFFFF848684000000FFFFFFFFFFFFFFFFFF000000FFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000848684FFFFFF
+      CED7D6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF848284000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF848684000000FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000848684FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFF7BEF7000000FFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000F7BEF7FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+      0000FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFF0000000000FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCED7D6FFFFFFCED7D6FF
+      FFFFCED7D6FFFFFFCED7D6FFFFFFCED7D6DEAEDE000000FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF000000F7AEF7848684DEAEDE848684F7AEF78486
+      84DEAEDE848684F7AEF7848684FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCED7D6FFFFFF848684000000
+      FFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF000000848684FFFFFFCED7D6FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF000000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF000000FFFFFF0000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF848684000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF00000000000000000000000000000000000000000000000000000000
+      0000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7BEF7000000FFFFFF000000FFFF
+      FF000000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+      0000F7BEF7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFCED7D6FFFFFF848684000000FFFFFFFFFFFF000000000000000000FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000848684F7AEF7
+      848684DEAEDEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF000000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF000000
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFF7BEF7000000FFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000000000000000000000000000
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+      0000FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFF0000000000FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFF70000FF0000F70000FF0000F70000FF0000FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF0000FFFFFF00AA00CE0000FFFFFFFFFFFFF70000009E0000
+      AA00009E0000AA00009E0000AA00D60000F70000FFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFF00AA0000BA00FF0000F7000000AA0000BA0000AA0000BA0000AA00
+      00BA0000AA0000BA0000AA00F70000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF
+      0000FF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFF00AA00
+      009E0000AA00009E0000AA00009E0000FF0000FF0000FF0000FF0000FF00009E
+      0000AA00009E00F70000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000D69ED6F7
+      AAF7CE9ECEDEAADED69ED6F7AAF7CE9ECEDEAADED69ED6F7AAF7FF0000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFF00AA0000BA0000AA0000BA
+      0000AA0000FF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FF0000AA0000BA0000
+      AA00F70000FFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000FFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF0000FFFFFF00AA00009E0000AA00009E0000AA00FFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FF00009E0000AA00D60000FFFFFF
+      FFFFFFFFFFFFFFFFFFFF0000FFFFFF000000000000FFFFFF000000000000FFFF
+      FF000000000000FFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFF00AA0000BA0000AA0000BA0000AA0000BA00FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF00FF00F70000FF0000F70000FFFFFFFFFFFFFFFFFFFFFF
+      FFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF000000000000FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFF00FF00
+      00FF0000FF0000FF0000FF0000FF0000FF00FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7AAF7FFFFFFFF0000FFFFFF00
+      0000000000FFFFFF000000000000FFFFFF000000000000000000000000000000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00000000000000FFFFFFFFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000
+      000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF000000000000000000000000000000000000000000FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000FF00000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000000000
+      0000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000000000FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000000000FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFD60000F70000CE0000DE0000D60000F70000
+      FFFFFFFFFFFFFFFFFFFF0000FF0000FF0000FF0000FF0000FF0000FF0000FF00
+      00FF0000FF000000000000FF00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+      0000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFF00FF00F70000FF0000F70000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF00FF0000BA0000AA0000BA0000AA0000BA00FF0000FFFFFFFFFFFFFFFF
+      FFFF0000FFFFFFFF0000FF0000FFFFFFFF0000FF000000000000000000000000
+      000000FF00000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF000000000000000000000000000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFF00FF00
+      009E0000AA00CE0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FF
+      0000AA00009E0000AA00009E00DE0000FFFFFFFFFFFFFFFFFFFF0000FF0000FF
+      0000FF0000FF0000FF0000FF000000000000FF0000FF0000FF0000FF0000FF00
+      00FF0000FF00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00000000000000FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF00FF0000AA0000BA
+      00FF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000F7000000AA0000BA0000
+      AA0000BA00FF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF00000000000000000000000000FF000000000000000000000000
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000000000FFFFFFFF
+      FFFFFFFFFFFFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF0000FFFFFFFFFFFF00FF0000AA00009E0000AA00CE0000DE
+      0000D60000F70000CE000000AA00009E0000AA00009E0000AA00009E00F70000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF00000000FF00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFF000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFFFFFFFF00FF0000BA0000AA0000BA0000AA0000BA0000AA00
+      00BA0000AA0000BA0000AA0000FF0000FF0000BA00FF0000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+      000000FF00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000
+      000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF
+      FFFFFFFFFFFF00FF0000FF00009E0000AA00009E0000AA00009E0000AA0000FF
+      0000FF00FFFFFFFFFFFF00FF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF00FF0000FF0000FF0000FF0000FF0000FF00FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000
+      000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF000000000000000000FFFFFF0000FFFFFF0000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000FFFFFF000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00007B0000FFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000FFFFFFFF0000FF0000FF0000FF0000FF0000FF0000FF
+      0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000
+      000000FFFFFF000000EFFFFFFFC3C6FFFFFFFFC3C6FFFFFFFFC3C6FFFFFFFFC3
+      C6FFFFFFFFC3C6FFFFFFFFC3C6FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF7B0000FFFFFFFFFFFFEF0000
+      7B0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF00007B0000FF00007B0000FF00007B0000FF00007B0000FF00007B00
+      00FFFFFFFFFFFFFFFFFF000000FFFFFFFF0000FF0000FF0000FF0000FF0000FF
+      0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000000000
+      0000FFFFFFFF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000
+      FF0000FF0000FF0000FF0000FF0000FF000000FF0000FF00000000FFFFFF0000
+      00FFFFFF000000000000000000FFFFFF0000000000000000007BFFFF00000000
+      0000000000000000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF7B0000FFFFFFFFFFFFFF0000FFFFFFFF0000FFFFFFFFFFFF7B0000FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFF7B0000EF00007B0000FF00007B0000EF00007B0000FF00007B0000
+      FFFFFFFFFFFFFFFFFFFFFFFF0000000000000000000000000000007B0000FFFF
+      FFFFEBFFFFFFFFFFEBFFFFFFFFFFEBFFFFFFFFFFEBFFFF0000FFFFFFFFFFFFFF
+      FFFF000000FFEBFFFF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000
+      FF0000FF0000FF0000FF0000FF0000FF0000FF00000000000000FFFFFFFF0000
+      FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF00
+      00FF000000C30000FF0000C30000FF00000000FFFFFF000000FFFFFF000000FF
+      0000FF000000000000000000FFFF00C3C60000000000000000FF0000C60000FF
+      000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEF0000FFFF
+      FFFFFFFF7B0000FFFFFF7B0000FFFFFFFFFFFFEF0000FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      FFF7FFFFFFFFFFF7FFFFFFFFFFF7FFFFFFFFFFF7FFFF0000FFFFFFFFFFFFFFFF
+      FF0000007BF7FF00FFFF7BF7FF00FFFF7BF7FFFF0000FFF7FFFF00007B0000FF
+      00007B0000FF00007B0000FFFFFF7B0000FFFFFFFFFFFFFFFFFF000000FFFFFF
+      FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF00
+      000000FF0000FFFF0000FF00000000000000FFFFFFFF0000FF0000FF0000FF00
+      00FF0000FF0000FF0000FF0000FF0000FF0000FF000000FF0000FF0000FF0000
+      FF0000FF0000FF00000000FFFFFF0000007BFFFF000000FF0000FF00007B0000
+      00000000FFFF00FFFF00FFFF0000000000FF0000FF0000FF000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00007B0000FF0000FF
+      FFFFFF0000FFFFFFFFFFFF7B0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7B0000FFFFFF0000000000
+      00000000000000000000FFFFFF7B0000FFFFFFFFFFFFFFFFFF00000000FFFF7B
+      EBFF00FFFF7BEBFF00FFFF7B0000FFFFFFFFEBFFFFFFFFFFEBFFFFFFFFFFEBFF
+      FFFFFFFFEBFFEF0000FFFFFFFFFFFFFFFFFF000000FFEBFFFFFFFFFFEBFFFFFF
+      FFFFEBFFFFFFFFFFEBFFFFFFFFFFEBFFFFFFFFFFEBFFFFFFFFFFEBFFFFFFFFFF
+      EBFFFFFFFF0000000000FFFFFFFFFFFFFFC300FFFFFFFFC300FFFFFFFFC300FF
+      FFFFFFC300FFFFFF00C30000FF0000C30000FF0000C30000FF0000C30000FF00
+      000000FFFFFF000000EFFFFF000000FF0000FF0000EF000000000000FFFF00C3
+      C600FFFF0000000000FF0000C60000FF000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7B0000FFFFFF7B0000EF0000
+      7B0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000
+      00000000000000000000000000FF0000FFF7FFFFFFFFFFF7FFFFFFFFFFF7FFFF
+      FFFFFFF7FFFF0000FFFFFFFFFFFFFFFFFF0000007BF7FF00FFFF7BF7FF00FFFF
+      7BF7FFFF0000FFF7FFFF00007B0000FF0000FFF7FFFF00007B0000FF00007B00
+      00FFFFFFFFFFFFFFFFFF840000000000000000FF0000840000FF0000840000FF
+      0000840000FF0000840000FF0000840000FF0000840000000000000000FF0000
+      0000FFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF00
+      FFFFFFFFFF0000FF0000FF0000FF0000FF0000FF0000FF00000000FFFFFF0000
+      007BFFFF000000FF0000FF00007B000000000000FFFF00FFFF00FFFF00000000
+      00FF0000FF0000FF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF0000000000FF0000FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFEBFFFFFFFFFF
+      EBFFFFFFFF7B0000FFFFFF000000000000000000000000000000FFFFFF7B0000
+      FFFFFFFFFFFFFFFFFF00000000FFFF7BEBFF00FFFF7BEBFF00FFFF7B0000FFFF
+      FFFFEBFFFFFFFFFFEBFFFFFFFF7B0000FFFFFF7B0000FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FFFFFFFFFFFF0000FFFFFFFFFFFF
+      FFC300FFFFFFFFC300FFFFFFFFC300FFFFFFFFC300FFFFFFFFC300FFFFFFFFC3
+      00FFFFFF00C30000FF0000C30000FF00000000FFFFFF000000FFFFFF000000FF
+      0000FF0000FF000000000000FFFF00C3C600FFFF0000000000FF0000C60000FF
+      000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFF000000FFF7FF000000000000000000000000FF0000
+      FFF7FFFFFFFFFFF7FFFFFFFFFFF7FFFFFFFFFFF7FFFF0000FFFFFFFFFFFFFFFF
+      FF0000007BF7FF00FFFF7BF7FF00FFFF7BF7FFFF0000FFF7FFFFFFFFFFF7FFFF
+      FFFFFFF7FFFF00007B0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      000000FF0000840000FF0000840000FF0000840000FF0000840000FF00008400
+      00FF0000840000000000FFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFF00FFFF
+      FFFFFF00FFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF00FFFFFFFF
+      FF0000FF0000FF00000000FFFFFF000000FFFFFF000000FF0000FF00007B0000
+      00000000FFFF00FFFF00FFFF0000000000FF0000FF0000FF000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+      0000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000FFFFFFFFEBFFFFFFFFFFEBFFFFFFFF7B0000FFFFFF0000000000
+      00FFEBFFFF00007B0000EF00007B0000FFFFFFFFFFFFFFFFFF00000000FFFF7B
+      EBFF00FFFF7BEBFF00FFFF7B0000EF00007B0000FF00007B0000EF00007B0000
+      000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000FFFFFFFFFFFF0000FFFFFFFFFFFFFFC300FFFFFFFFC300FFFFFFBDC3C6FF
+      FFFFFFC300FFFFFFFFC300FFFFFFFFC300FFFFFFFFC300FFFFFFFFC30000FF00
+      000000FFFFFF000000EFFFFFFFFFFF00000000000000000000000000FFFF00C3
+      C600FFFF0000000000FF0000C60000FF000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFF7
+      FF000000000000000000000000FF0000FFF7FFFFFFFFFFF7FFFFFFFF7B0000FF
+      FFFF7B0000FFFFFFFFFFFFFFFFFFFFFFFF0000007BF7FF00FFFF7BF7FF00FFFF
+      7BF7FF00FFFF7BF7FF00FFFF7BF7FF00FFFF7BF7FF00FFFF000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFF00
+      FFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF00000000FFFFFF0000
+      00FFFFFFFFFFFF000000FFFFFFFFFFFF00000000FFFF00FFFF00FFFF00000000
+      00FF0000FF0000FF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF000000000000FFFFFF000000000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFEBFFFFFFFFFF
+      EBFFFFFFFF7B0000FFFFFFFFEBFFFFFFFFFFEBFFEF00007B0000FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF00000000FFFF7BEBFF0000000000000000000000000000
+      00000000000000000000FFFFFF7BEBFF000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF0000000000000000000000FF0000FFFFFF0000FFFFFFFFFFFF
+      FFC300FFFFFFBDC3C600FFFFFFC3C6FFFFFFFFC300FFFFFFFFC300FFFFFFFFC3
+      00FFFFFFFFC300FFFFFFFFC300FFFFFF000000FFFFFF000000FFFFFFFFFFFF00
+      0000FFFFFFFFFFFF00000000FFFF00C3C600FFFF0000000000000000C60000FF
+      000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FF000000FFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFF000000FFF7FF000000000000FFFFFF000000FF0000
+      7B0000FF00007B0000FF00007B0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FF0000007BF7FFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+      00007BF7FF00FFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FFFF00FFE3FFFFFF00000000FFFFFF0000FFFFFFFFFFFFFFFFFFFFFF00FFFF
+      FFFFFFFFFFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF00FFFFFFFF
+      FF00FFFFFFFFFF00000000FFFFFF000000FFFFFFFFFFFF000000FFFFFFFFFFFF
+      00000000FFFF00FFFF00FFFF000000FFFFFF000000000000000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFF
+      FFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000FFFFFFFFEBFFFFFFFFFFEBFF000000FFEBFF000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000FFFF7B
+      EBFF00FFFF00000000FFFF00000000000000EBFF0000007BEBFF00FFFF7BEBFF
+      000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000000000
+      00000000000000000000000000000000000000000000FFFF00FFEBFF00000000
+      0000FF0000FFFFFF0000FFFFFFFFFFFFFFC300FFFFFFFFC300FFFFFFFFC300FF
+      FFFFFFC300FFFFFFFFC300FFFFFFFFC300FFFFFFFFC300FFFFFFFFC300FFFFFF
+      000000FFFFFFFFFFFF000000FFC3C6000000FFFFFFFFFFFF00000000FFFF00C3
+      C6FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF000000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFF7
+      FFFFFFFFFFF7FFFFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000000000
+      00000000FFFF00F7FF000000000000000000000000000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFF00840000FFFF00FFE3FFFF
+      FF00FFE3FFFFFF00FFE3FFFF0000FFE3FFFFFF00000000FFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF00
+      FFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF00000000FFFFFFFFFF
+      FFFFFFFF000000000000FFFFFFFFFFFFFFFFFF000000000000000000000000FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000000000000000000000
+      0000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000000000
+      00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF0000000000000000000000000000000000000000000000
+      000000000000FFFF00FFEBFF000000000000FF0000FFFFFF0000FFFFFFFFFFFF
+      FFC3C6FFFFFFFFC3C6FFFFFFFFC3C6FFFFFFFFC3C6FFFFFFFFC3C6FFFFFFFFC3
+      C6FFFFFFFFC3C6FFFFFFFFC3C6FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFF00
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FFFF00FFE3FFFFFF00000000FFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000
+      0000FF0000FFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFF000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00FFFFFFFFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7B0000
+      FF0000EF0000FF00007B0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFF000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF00000000
+      0000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000
+      000000000000000000000000000000000000000000000000000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF000000FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEF0000FF0000EF00007B0000EF00
+      00FF0000EF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF0000FFFFFF000000FFFFFFFFFBFFFFFFFFFFFBFFFFFFFFFF
+      FBFFFFFFFF000000000000000000000000F70000000000000000FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000000000000000000000
+      00000000000000FFFFFF000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFBFF
+      FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000
+      00000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+      0000000000000000FFFFFFFFFFFFFFFFFFEFFFFF000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000FFFFFF7B0000FF0000EF0000FF00007B0000FF0000EF0000FF00007B
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF0000
+      FFFFFFFFFFFFF70000000000F70000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF000000000000000000000000000000000000000000FF
+      FFFF000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000FFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFF000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000EFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFF000000000000FFFFFF
+      FFFFFFFFFFFFFFFFFF7BFFFFFFFBFFFFFFFFFFFBFFFFFFFFFFFBFFFFFFFFFFFB
+      FFFFFFFFFFFBFFFFFFFF000000000000FFFBFF000000000000000000FFFFFFFF
+      0000EF00007B0000EF0000FF0000EF00007B0000EF0000FF0000FFFFFF000000
+      0000000000000000000000000000000000000000000000000000FFFFFF000000
+      FFFFFFFFFBFFFFFFFFFFFBFFFFFFFF000000FF0000FFFFFFFFFFFFFFFB00FF00
+      00DE0000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF000000000000000000000000000000000000000000000000000000000000
+      000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000
+      00FFFFFFFFFFFF000000FFFFFFFFFBFF000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF000000000000000000FFFFFFFFFFFFFFFFFFFFFF
+      FF7BFFFFFFFFFFEF0000FF00007B0000FF0000FFFFFFFF00007B0000FF0000EF
+      0000FFFFFFFFFFFF000000FFFFFFFFFFFF000000FFFFFFEF0000FF00007B0000
+      FF0000EF0000FF00007B0000FF0000EF0000FFFFFF000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF0000000000FFFFFF000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFF70000FFFFFF000000FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000
+      000000000000000000000000000000000000000000000000000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF000000000000FF
+      FFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF000000000000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEF00007B
+      0000FFFBFFFF0000EF0000FFFFFFEF0000FF0000FFFBFF7B0000EF0000FFFFFF
+      000000FFFFFFFFFBFF000000FFFFFF7B0000EF0000FF0000EF00007B0000EF00
+      00FF0000EF00007B0000FFFFFF000000FFFBFFFFFFFFFFFBFFFFFFFFFFFBFFFF
+      FFFFFFFBFF0000000000FFFFFF000000FFFFFFFFFBFFFFFFFFFFFBFFFFFFFF00
+      0000FFFFFFFFFB00FFFFFFFFFFFFFF0000FFFFFF000000FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF000000000000FFFFFF0000000000000000000000000000
+      00000000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFBFFFFFFFFFFFBFFFFFFFF000000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFEFFBFF00000000000000000000000000000000000000000000000000000000
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFFF00007B0000FFFFFFEF0000
+      FF0000FFFFFFFF0000EF0000FFFFFF7B0000FF0000FFFFFF000000FFFFFFFFFF
+      FF000000FFFFFF7B0000FF0000EF0000FF00007B0000FF0000EF0000FF00007B
+      0000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF000000
+      0000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000F70000FFFF00
+      FFFF00FFFFFFF70000FF0000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF000000000000000000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000000000000000
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+      0000EFFFFFFFFFFFFFFFFFFFFFFFEFFFFF000000000000FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF7BFFFFFFFBFFFF0000EF00007B0000EF0000FFFFFFEF00
+      007B0000FFFBFFFF0000EF0000FFFFFF000000FFFFFFFFFBFF000000FFFFFFFF
+      FFFFEF00007B0000EF0000FF0000EF00007B0000EF0000FFFFFFFFFBFFFFFFFF
+      FFFBFFFFFFFF000000FFFFFFFFFBFFFFFFFFFFFBFF0000000000FFFFFF000000
+      FFFFFFFFFBFFFFFFFFFFFBFFFFFFFFFFFBFF000000DE0000FFFFFFFFFFFFFF00
+      00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000
+      000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFF
+      FFFFFBFFFFFFFFFFFBFFFFFFFFFFFBFFFFFFFF000000FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7BFFFF000000000000FFFFFF
+      FFFFFFFFFFFF000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FF7BFFFFFFFFFFFFFFFFFFFFFF7B0000FF0000FFFFFFFF00007B0000FFFFFFEF
+      0000FF0000FFFFFF000000FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF7B0000
+      FF0000EF0000FF00007B0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF0000000000FFFFFF000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000000000FFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000
+      000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000FFFFFFFFFFFFFFFFFF0000
+      00000000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBFF7B
+      0000EF0000FF0000FFFBFFFFFFFFEF0000FF0000EF00007B0000FFFBFFFFFFFF
+      000000FFFFFFFFFBFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FF000000FFFBFFFFFFFFFFFBFFFFFFFFFFFBFF000000FFFBFFFFFFFFFFFBFFFF
+      FFFFFFFBFF0000000000FFFFFF000000FFFFFFFFFBFFFFFFFFFFFBFFFFFFFFFF
+      FBFFFFFFFFFFFBFFFFFFFFFFFBFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF000000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFBFFFFFFFFFFFBFFFFFFFF000000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF7BFBFF000000000000FFFFFF000000000000000000FFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF0000EF0000FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFF
+      FF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFF000000FF
+      FFFFFFFFFFFFFFFF0000007BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000
+      0000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000
+      000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF00000000000000000000000000000000000000000000
+      0000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF7BFFFFFFFBFFFFFFFFFFFBFFFFFFFFFFFBFFFFFFFFEF00
+      007B0000FFFBFFFFFFFFFFFBFFFFFFFF000000FFFFFFFFFBFF000000FFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFBFFFFFFFF
+      000000FFFFFF0000000000000000000000000000000000000000FFFFFF000000
+      FFFFFFFFFBFFFFFFFFFFFBFFFFFFFFFFFBFFFFFFFF000000FFFFFF000000FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFF
+      FFFFFBFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000
+      000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FF7BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF000000000000FFFFFF000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFF000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFF000000FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000000000EFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFBFF7B
+      FFFFEFFBFFFFFFFFEFFBFF7BFFFFEFFBFFFFFFFFEFFBFF7BFFFFEFFBFFFFFFFF
+      EFFBFF7BFFFFEFFBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF000000FFFBFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF0000FFFFFF00000000000000000000000000000000000000
+      0000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFF000000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7B
+      FFFF000000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      000000FFFFFFFFC3C6000000FFFFFFFFFFFF0000C60000000000C6FFFFFF0000
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000
+      000000000000000000000000000000000000000000000000000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000FFFFFFFFFFFF0000
+      00FFFFFFFFFFFFFFFFFF0000FF0000000000FF000000000000FFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF
+      FFFFFFFFFFFF0000000000000000000000000000000000000000000000000000
+      00000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000000000
+      0000000000000000000000000000000000000000000000000000FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000FF00FFFF00FFFF00FF
+      FF00FFFF00FFFF00FFFF00FFFF00FFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000948A94000000000000000000
+      000000000000000000000000948A94000000000000FFFFFFFFFFFFFFFFFFFFFF
+      FF7BFFFF000000FFFFFFFFC3C6FFFFFFFFC3C6000000FFFFFFFFFFFFFFFFFFFF
+      FFFF0000C60000000000C6000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF0000000000000000000000000000000000000000000000000000000000
+      00000000FFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000000000828400FFFF008284
+      00FFFF00828400FFFF00828400FFFF008284000000FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF0000000000940000FF00FFFF00FFFF00FFFF00FFFF00
+      FFFF00FFFF00FFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF00000000FFFF00FFFF000000948A94FFFFFF948A94FFFFFF948A94FFFF
+      FFFFFFFF00000000FFFF000000FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF00
+      0000000000FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFF0000FF000000
+      0000FF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF000000FF
+      FFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF00000000FFFF00000000828400FFFF00828400FFFF0082
+      8400FFFF00828400FFFF008284000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF0000000000FF0000940000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+      000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000C7
+      CE00FFFF000000FFF7FF948A94FFF7FF948A94FFF7FFD6CBD6FFFFFF00000000
+      FFFF000000FFFFFFFFFFFFFFFFFFFFFFFF000000000000FFFFFFFFFFFF000000
+      FFC3C6000000FFFFFFFFFFFFFFFFFFFFFFFF0000C60000000000C6000000FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000FFFFFF000000FFFFFFFFFFFF
+      0000FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FF000000FFFFFF00FFFF00000000828400FFFF00828400FFFF00828400FFFF00
+      828400FFFF008284000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000094
+      0000FF00009400000000FFFF00FFFF00FFFF00FFFF00FFFF000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000FFFF00FFFF00000094
+      8A94FFFFFF948A94FFFFFF948A94FFFFFFFFFFFF00000000FFFF000000FFFFFF
+      FFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF000000FFFFFF000000FFFF
+      FFFFFFFFFFFFFF0000FF0000FF0000FF0000FF0000FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFF00EBFF
+      00FFFFFFFFFFFFFFFF000000000000000000FFFFFFFFFFFF0000FFFFFFFFFFFF
+      FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000FFFFFF
+      FFFF00FFFF00000000828400FFFF00828400FFFF00828400FFFF00828400FFFF
+      008284000000FFFFFFFFFFFFFFFFFFFFFFFF0000000000FF0000940000FF0000
+      0000FFFF00FFFF00FFFF00FFFF00FFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFF00000000C7CE00FFFF000000000000000000000000
+      00000000000000000000000000000000FFFF000000FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF000000FFFFFF000000FFFFFFFFFFFFFFFFFF00000000
+      0000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF840000FF0000840000FFFFFFFFFF
+      FF000000FFFFFF000000FFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF00FFFFFFFFFF00FFFF
+      0000000000000000000000000000000000000000000000000000000000000000
+      00FFFFFFFFFFFFFFFFFF0000000000940000FF00009400000000FFFF00FFFF00
+      FFFF00FFFF00FFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF00000000FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+      FF00FFFF00FFFF00FFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+      0000000000000000FFFFFFFFFFFFFFFFFF000000000000000000000000000000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000000000000000
+      00000000000000000000000000000000000000000000000000000000FFFFFFFF
+      FFFF000000FFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF00000000FFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF00FF
+      FFFFFFFF00FFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF0000000000FF0000940000FF00000000FFFF00FFFF00FFFF00FFFF00FFFF
+      000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000C7
+      CE00000000000000000000000000000000000000000000000000000000C7CE00
+      FFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF000000000000000000000000FFFFFF000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF000000FFFFFF000000FFFFFF
+      0000FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FF000000FFFFFF00FFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF00FFFFFFFFFF00
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000094
+      0000FF00009400000000FFFF00FFFF00FFFF00FFFF00FFFF000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000FFFF000000FFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000FFFF000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000FFFFFFFFFFFF0000000000
+      00000000000000FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF000000000000000000000000000000000000000000000000
+      000000000000FFFFFF000000FFFFFF000000000000FFFFFF0000FFFFFFFFFFFF
+      FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000FFFFFF
+      FFFF00FFFF000000000000000000000000000000000000000000FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000FF0000940000FF0000
+      0000FFFF00FFFF00FFFF00FFFF00FFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFF00000000C7CE000000D6CBD6FFFFFFD6CBD6FFFFFF
+      D6CBD6FFFFFFD6CBD6FFFFFF00000000FFFF000000FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF000000FFFFFF000000FFFFFF000000000000000000000000FFFFFFFF
+      FFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000FFF7FFFFFFFFFFF7FFFFFFFFFFF7FFFFFFFFFFF7FFFFFFFF0000
+      00FFFFFF000000FFFFFF000000FFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000000000FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000FFFF
+      FFFFFFFFFFFFFFFFFFFF0000000000940000FF00009400FFFF00000000FFFF00
+      FFFF00FFFF00FFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF00000000FFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF00000000FFFF000000FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF00
+      0000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF000000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FFEBFF000000000000000000000000000000FFEBFF00000000000000000000
+      0000FFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFF000000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000FFFFFFFFFFFFFFFFFFFF
+      FFFF0000000000FF0000940000FF00000000FFFF00FFFF00FFFF00FFFF00FFFF
+      000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000C7
+      CE000000D6CBD6FFFFFFD6CBD6FFFFFFD6CBD6FFFFFFD6CBD6FFFFFF00000000
+      FFFF000000FFFFFFFFFFFFFFFFFFFFFFFF000000000000000000000000000000
+      000000000000FFFFFFFFFFFFFFFFFFFFFFFF7BC3C60000007BC3C6FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFF7FFFF
+      FFFFFFF7FFFFFFFFFFF7FFFFFFFFFFF7FF000000FFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFF
+      FFFFFFFFFF000000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFF000000000094
+      0000FF00009400000000FFFF00FFFF00FFFF00FFFF00FFFF000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000FFFF000000FFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000000000000000FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF000000000000000000
+      000000000000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF
+      FFFFFFFFFFFF000000000000000000000000000000000000000000000000FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000FFFFFF000000FF0000
+      0000FFFF00FFFF00FFFF00FFFF00FFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFF00000000C7CE000000D6CBD6FFFFFFD6CBD6FFFFFF
+      D6CBD6FFFFFFD6CBD6FFFFFF000000FFFFFF000000FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF0000000000000000000000000000007BC3C6FFFFFFFFFFFFFF
+      FFFF7BC3C60000007BC3C6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF000000FFF7FFFFFFFFFFF7FFFFFFFFFFF7FFFFFFFFFFF7
+      FFFFFFFF000000FFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF000000000094FFFF00FFFF0000000000FFFF00FFFF00
+      FFFF00FFFF00FFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF0000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+      0000000000FFFFFF000000000000000000000000000000FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF000000000000000000000000000000000000000000000000000000FF
+      FFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF000000000000000000000000000000000000000000000000000000000000
+      000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000424D5E070000
+      000000003E000000280000007200000072000000010001000000000020070000
+      120B0000120B00000200000002000000FFFFFF0000000000000000000000007F
+      FFFFFFFFFFFFFFFFF803EB4CA800007FFFFFFFFFFFFFFFFF2003EB4CA81FFE7F
+      FFFFFFFFFFFFFFFF70016B4CA8135E7FFFFFFFFFFFFFFFFFA800EB4CA816EE7F
+      FFFFFFFFFFFFFFFF20016B4CA813D67FFFFFFFFFFFFFFFFF2000EB4CA811AA7F
+      FFFFFFFFFFFFFFFF20016B4CA83F567FFFFFFFFFFFFFFFFF27FCEB4CA9D6BA7F
+      FFFFFFFFFFFFFFFF27FD6B4CA9BFF67FFFFFFFFFFFFFFFFF22CCEB4CA9D56A7F
+      FFFFFFFFFFFFFFFF21D42B4CA9AFF27FFFFFFFFFFFFFFFFF22CE0B4CA9D5627F
+      FFFFFFFFFFFFFFFF21D60B4CA9AFDE7FFFFFFFFFFFFFFFFF22CE0B4CA9D5927F
+      FFFFFFFFFFFFFFFFA9D60B4CA9BF147FFFFFFFFFFFFFFFFF72CE0B4CA810187F
+      FFFFFFFFFFFFFFFF21D60B4CA81FF07FFFFFFFFFFFFFFFFFF84200000000007F
+      FFFFFFFFFFFFFFFF00000000000000001F80230001FFFFFF0000000000040000
+      0F8073A000FFFFFF0000003FFC0600000180AB000055FFFF0000041FFC06AA00
+      0B8023A000AAFFFF000008000C06000001802301FE00FFFF00001F8AAC06AA00
+      0B8023A0FFC03FFF000008000C07FF000181830055C03FFF0040040AAC07FF80
+      0B81A3A0AAC03FFF00E0000004000000018183E000C03FFF01F000000000000F
+      CB81A3F1FFC03FFF03F8000002000007C1818000FFC03FFF00001FFE03AA8202
+      CB81A000AAC03FFF00000FFE03000100C181800055C03FFF00000AAE03AA9F82
+      C401A00000C03FFF0000000603000100C401800120027FFF00000AAE03FF8202
+      C401A00140017FFF0000000603FFC000D5018001FFFFFFFF0000000200000002
+      CE01F00140017FFF0000000000000000C401F80120027FFF0000000000000000
+      0000000000003FFF03F00000000000000000000000003FFF67FC000000000000
+      0000000000003FFF7FFE07FF800004000000000000003FFF7FFF07FF80100000
+      0000000000003FFF7E0F8400803808000000000000003FFF7C0785B680381000
+      1000080000003FFF7E078400801C300030000C0000003FFF7F0015B7C00E6000
+      70000E0007F03FFF00000401C007C000F0000F0003E03FFF000FC7FFC0038000
+      70000E0001C03FFF781FC5BFF807C00030000C0000803FFF780FC7FFF80E4000
+      1000080000003FFF3C1FC00FF83C30000000000000003FFF3FFFC001C0781800
+      0000000000003FFF1FFFC001C0600C000000000000003FFF0FFC8001C0000000
+      0000000000003FFF03F00000000000000000000000003FFF0000000000000000
+      0000000000003FFF00000000000000000000000000003FFF0000000000000000
+      000000007003BFFF7FFFEFFFC00C000000000000FFFFFFFF7FFFEEAAA0126000
+      00001FF8BFFFFFFF7FFFEBBFD01290007FC3F558FFFFFFFF7FFFEBFFF0129000
+      6AC7FFE8BFFFFFFF7FFFEFFFE00E90005F47F558D5557FFF2ABFEFFFE002E01F
+      EAC7FFF8FFFFFFFF155FEFFFE00380155F47F5503FFF3FFF2AABEBFFE001001F
+      EAC7FAE03FFF3FFF1555EBFFE00380155FC7FFE03FFF3FFF2AAAEDFFE002801F
+      EA87FFE000003FFF1255693FE006C0155707FF60000FBFFF2EAAA93FE004401E
+      FE0681E0000FBFFF1155693EE0044015E007FFE03FFFBFFF2AAAA73A0004401A
+      C003FFC03FFE3FFF1555631E0000001F80003C003FFFBFFF2AAAA10000000000
+      00000000000FBFFF000000000000000000000000000FBFFF0000000000000000
+      0000000000003FFF00000404080000000000000000003FFF7FF9820000006000
+      000000007C003FFF400B807FE000900000000000FE003FFF557F00FEE000D01E
+      03C7FFFDFF003FFF40CE00FEE011200E0386AAFDFF7FFFFF559E00FFE0196006
+      0385EF25FF407FFF410A00FFE01640060383EFADFF6AFFFF554A06FFE0154007
+      FF076DA5FFF87FFF41EE00E0E81078038E07EFACFEAAFFFF55CC00E0E0155003
+      8E046DA47C107FFF407800E0E01020018E03EFAC06BAFFFF555800E0A0154001
+      DC040C2406307FFF407800FFE0108000F806AEAC02AFFFFF5550000000150000
+      780400DC01403FFF4060020410120000F803BBB801C03FFF7FC0040408140000
+      0000000001C03FFF00000000001800000000000000803FFF0000000000000000
+      0000000000003FFF00000000000000000000000000003FFF0000000000000000
+      00002CE800003FFF0000000000FFE0000001C8F800003FFF0FFE07FF00FFE00F
+      FF86B0F81FFC3FFF080207FF80FFE01F538590F8200A3FFF080207FFC0FFE01F
+      FB8670F07FFD3FFF080205FFE0FFE01F538451F040E73FFF080206FFF0FFE01F
+      FF80A3F040E53FFF0802057FF8FFE01FFF81C7C07FFCBFFF080206AB00FFE01F
+      FF800F40400ABFFF0802055500FFE01C03819E403FF5BFFF080206FF00FFE01E
+      AB82BC401AAABFFF081E038070FFE01C0385F8400FFF3FFF0814000030FFE01E
+      AB87F0E00AAC3FFF0818000450FFE01C0381F04005F43FFF0FF0000380FFE01E
+      AA81F8E006AA3FFF0000000000FFE01FFF81BE0003FE3FFF0000000000FFE000
+      0000000000003FFF00000000000000000000000000003FFF}
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = 'rep'
+    Filter = 'Report Files (*.rep)|Any File (*.*)'
+    FilterIndex = 0
+    Height = 0
+    Title = 'Save report as'
+    Width = 0
+    Left = 240
+    Top = 144
+  end
+  object RpAlias1: TRpAlias
+    List = <>
+    Connections = <>
+    Left = 136
+    Top = 142
+  end
+  object FontDialog1: TFontDialog
+    Font.Color = clBlack
+    Font.Height = 11
+    Font.Name = 'MS Shell Dlg'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    Font.Weight = 40
+    Left = 384
+    Top = 122
+  end
+  object OpenDialog1: TOpenDialog
+    DefaultExt = 'rep'
+    FileName = '*.rep'
+    Filter = 'Report files (*.rep)'
+    FilterIndex = 0
+    Height = 0
+    Title = 'Open report'
+    Width = 0
+    Left = 192
+    Top = 156
+  end
+  object Lastusedfiles: TRpLastUsedStrings
+    HistoryCount = 7
+    SaveIndex = 0
+    Left = 280
+    Top = 80
+  end
+end

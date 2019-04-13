@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>Units documentation - rpgdifonts.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpgdifonts.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>device font selection</b> in Windows, to <b>print fast 
+  in dot matrix printers</b>.</p>
+<h4>Types</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TFontStep</td>
+    <td> 
+      <p>Enumeration (cpi20,cpi17,cpi15,cpi12,cpi10,cpi6,cpi5)</p>
+      <p>Possible steps in a dot matrix printer</p>
+    </td>
+  </tr>
+  <tr>
+    <td>TGDIFontType</td>
+    <td>
+      <p>Enumeration (tfontraster, tfonttruetype, tfontdevice, tfonttruetypedevice)</p>
+      <p>Windows font type</p>
+    </td>
+  </tr>
+</table>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TPrinterFont</td>
+    <td>TObject</td>
+    <td>Object containing information about a printer font</td>
+  </tr>
+  <tr> 
+    <td>TCaracfont</td>
+    <td>TObject</td>
+    <td>Device font information</td>
+  </tr>
+</table>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>function UpdatePrinterFontList:boolean; </td>
+    <td>Update fonts available in current printer</td>
+  </tr>
+  <tr> 
+    <td>procedure FindDeviceFont (DC:HDC; Font:Tfont; fstep:TFontStep); </td>
+    <td>Font calculation routine</td>
+  </tr>
+  <tr> 
+    <td>function FindRotatedFont (Desti:HDC; Font:TFont; rotation:integer):HFont; 
+    </td>
+    <td>Font calculation routine</td>
+  </tr>
+  <tr> 
+    <td>function FontStepToString (fstep:TFontStep):string; </td>
+    <td>Font calculation routine</td>
+  </tr>
+  <tr> 
+    <td>function StringToPasFont (cad:string):TFontStep; </td>
+    <td>Font calculation routine</td>
+  </tr>
+  <tr> 
+    <td>function FindFontStep (Font:TFont):integer; </td>
+    <td>Font calculation routine</td>
+  </tr>
+  <tr>
+    <td>function FontSizeToStep (asize:integer):TFontStep; </td>
+    <td>Font calculation routine</td>
+  </tr>
+</table>
+</body>
+</html>

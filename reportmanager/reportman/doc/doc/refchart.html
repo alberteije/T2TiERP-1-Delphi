@@ -1,0 +1,256 @@
+<html>
+<head>
+<title>Common properties for TRpChart</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Component Reference</h2>
+<h3>Properties for TRpChart</h3>
+<p><b>Sumary</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Internal Name</td>
+    <td bgcolor="#FFFFCC">Type</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>Expression</td>
+    <td>Expression</td>
+    <td>WideString</td>
+    <td> Expression, the result of evaluating the expression will be included 
+      in the chart data for each record, if the data is not record based you can 
+      use the <a href="exevaluator.html">expression evaluator </a>functions for 
+      charts with the identifier property of the chart to enter the desired values 
+      to the chart data</td>
+  </tr>
+  <tr> 
+    <td>Identifier</td>
+    <td>Identifier</td>
+    <td>String</td>
+    <td><p>If you assign a identifier string, the identifier is included in the 
+        expression evaluator namespace, this is useful to add values to the chart 
+        (or clear them) using expression <a href="exevaluator.html">evaluator 
+        functions</a> for charts.</p></td>
+  </tr>
+  <tr> 
+    <td>Chart Type</td>
+    <td>ChartType</td>
+    <td>TRpChartType</td>
+    <td>Chart type, the native driver only supports the Line type, <a href="teechart.html">Teechart</a> 
+      supports all of them</td>
+  </tr>
+  <tr> 
+    <td>Get V.Cond</td>
+    <td>GetValueCondition</td>
+    <td>WideString</td>
+    <td>Expression indicating when to get a value (for each record the engine 
+      will insert a value if expression property is set)</td>
+  </tr>
+  <tr> 
+    <td>Serie Change exp.</td>
+    <td>SerieChangeExpressoin</td>
+    <td>WideString</td>
+    <td>Expression to determine a serie change, evaluated for each record if expression 
+      property is set</td>
+  </tr>
+  <tr> 
+    <td>Bool S.Change</td>
+    <td>BoolSerieChange</td>
+    <td>Boolean</td>
+    <td>Indicates if the change serie expression must be processed as a boolean 
+      value (true) or as a value that can change and the change of a serie must 
+      coincide with expression value change (just like group expressions)</td>
+  </tr>
+  <tr> 
+    <td>Clear Expression</td>
+    <td>ClearExpression </td>
+    <td>WideString</td>
+    <td>Like Serie change but to determine when to clear the values</td>
+  </tr>
+  <tr> 
+    <td>Bool C. Esp.</td>
+    <td>BoolClearExpression</td>
+    <td>Boolean</td>
+    <td>Indicates if the clear expression must be processed as a boolean value 
+      (true=clear) or as a value that can change and the change of the balue foces 
+      the clear of the chart values</td>
+  </tr>
+  <tr> 
+    <td>Caption Exp</td>
+    <td>CaptionExpression</td>
+    <td>WideString</td>
+    <td>If expression property is set, for each record a value is entered into 
+      the chart, the caption of the value is get evaluating this expression</td>
+  </tr>
+  <tr> 
+    <td>Driver</td>
+    <td>Driver</td>
+    <td>TRpChartDriver</td>
+    <td>Default driver will get <a href="teechart.html">TeeChart</a> in Windows 
+      and Native in Linux (to avoid Qt libs dependence and because it's not included 
+      by default in Kylix), you can force to use any driver, Teechart is only 
+      available if Teechart have been compiled into the engine.</td>
+  </tr>
+  <tr> 
+    <td>View3d</td>
+    <td>View3d</td>
+    <td>Boolean</td>
+    <td>View the chart as 3d chart (Teechart only)</td>
+  </tr>
+  <tr> 
+    <td>3dWalls</td>
+    <td>View3dWalls</td>
+    <td>Boolean</td>
+    <td>Draw the walls with a 3d effect (Teechart only)</td>
+  </tr>
+  <tr> 
+    <td>Perspective</td>
+    <td>Perspective</td>
+    <td>Integer</td>
+    <td>Perpective value for Teechart</td>
+  </tr>
+  <tr> 
+    <td>Elevation</td>
+    <td>Elevation</td>
+    <td>Integer</td>
+    <td>Elevation value for Teechart</td>
+  </tr>
+  <tr> 
+    <td>Rotation</td>
+    <td>Rotation</td>
+    <td>Integer</td>
+    <td>Rotation value for Teechart</td>
+  </tr>
+  <tr> 
+    <td>Orthogonal</td>
+    <td>Orthogonal</td>
+    <td>Boolean</td>
+    <td>Orthogonal value for Teechart</td>
+  </tr>
+  <tr> 
+    <td>Zoom</td>
+    <td>Zoom</td>
+    <td>Integer</td>
+    <td>Zoom value for Teechart</td>
+  </tr>
+  <tr> 
+    <td>H.Offset</td>
+    <td>HorzOffset</td>
+    <td>Integer</td>
+    <td>Horizontal displacement for Teechart</td>
+  </tr>
+  <tr> 
+    <td>V.Offset</td>
+    <td>VertOffset</td>
+    <td>Integer</td>
+    <td>Vertical displacement for Teechart</td>
+  </tr>
+  <tr> 
+    <td>Tilt</td>
+    <td>Tilt</td>
+    <td>Integer</td>
+    <td>Tilt value for Teechart</td>
+  </tr>
+  <tr> 
+    <td>Resolution(dpi)</td>
+    <td>Resolution</td>
+    <td>Integer</td>
+    <td>Dots per inchess for drawing the chart (Teechart), choose a value from 
+      100 for low quality (less size) to 400 for high quality (more size)</td>
+  </tr>
+  <tr> 
+    <td>Multibar</td>
+    <td>Multibar</td>
+    <td>TRpMultibar</td>
+    <td>Multibar value for Teechart</td>
+  </tr>
+  <tr> 
+    <td>Show Hint</td>
+    <td>SHowHint</td>
+    <td>Boolean</td>
+    <td>Show a mark with the value inside the drawing</td>
+  </tr>
+  <tr> 
+    <td>Show Legend</td>
+    <td>Showlegend</td>
+    <td>Boolean</td>
+    <td>Show chart legend</td>
+  </tr>
+  <tr> 
+    <td>Mark style</td>
+    <td>MarkStyle</td>
+    <td>Integer</td>
+    <td>Select a mark style, value, percent...</td>
+  </tr>
+  <tr> 
+    <td>Font Size V.Axis</td>
+    <td>HorzFontSize</td>
+    <td>Integer</td>
+    <td>Font size, horizontal axis texts</td>
+  </tr>
+  <tr> 
+    <td>Font Rot.V.Axis</td>
+    <td>HorzFontRotation</td>
+    <td>Integer</td>
+    <td>Font rotation, horizontal axis texts</td>
+  </tr>
+  <tr> 
+    <td>Font Size H. Axis</td>
+    <td>VertFontSize</td>
+    <td>Integer</td>
+    <td>Font size, vertical axis texts</td>
+  </tr>
+  <tr> 
+    <td>Font Rot. H.Axis</td>
+    <td>HorzFontRotation</td>
+    <td>Integer</td>
+    <td>Font rotation horizontal axis texts</td>
+  </tr>
+  <tr> 
+    <td>Color Expression</td>
+    <td>ColorExpression</td>
+    <td>WideString</td>
+    <td>A expression can be assigned, the result should be an integer value, that 
+      will be used as the color for the current value added to the chart</td>
+  </tr>
+  <tr>
+    <td>Serie Color Expression</td>
+    <td>SerieColorExpression</td>
+    <td>WideString</td>
+    <td>A expression can be assigned, the result should be an integer value, that 
+      will be used as the color for the current serie added to the chart</td>
+  </tr>
+</table>
+  <tr>
+    
+  <td>&nbsp;</td>
+    
+  <td>&nbsp;</td>
+</tr>
+<p><strong>Aditional details about the implementation</strong></p>
+<p>Because Report Manager <a href="devdriver.html">driver architechture</a>, the
+  chart output is processed diferently for each driver, the drivers not supporting
+  charts are Excel and Plain Text driver. Printreptopdf command line tool does not
+  support Teechart (nice charts) because it does not requires an X-Server. To
+  generate pdf files or metafiles (with nice charts), from command line use printrep command line
+  instead</p>
+<p><b>Developer info</b></p>
+<table border="1">
+  <tr>
+    <td bgcolor="#FFFFCC">Internal component name</td>
+    <td>TRpChart</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Parent class</td>
+    <td>TRpCommonPosComponent</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Unit name</td>
+    <td>rpmdchart.pas</td>
+  </tr>
+</table>
+<p>See also <a href="refcommon.html">Report components common properties</a>.</p>
+</body>
+</html>

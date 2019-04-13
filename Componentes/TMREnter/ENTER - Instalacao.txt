@@ -1,0 +1,36 @@
+{=======================================================================}
+{   TMREnter                                                            }
+{                                                                       }
+{   Autor : Martins(martins@mrw.com.br)                                 }
+{                  (http://www.mrsoftware.com.br/user/martins)          }
+{           10/08/1997                                                  }
+{           São Paulo - Brazil                                          }
+{                                                                       }
+{   Colaboradores :                                                     }
+{           Dennis Rosa (dra@svn.com.br)                                }
+{           Mauricio Rother (mrother@plugon.com.br)                     }
+{           Paulo H. Trentin (phtrentin@feob.br)                        }
+{           Fernando Sarturi Prass (prass@unifra.br)                    }
+{           Edson Cabral (adm.cabral@yahoo.com.br) -- Delphi 6 e 7      }
+{   Delphi : 1,2,3,4 e 5 (modificado para 6 e 7)                        }
+{=======================================================================}
+
+                        Este componente é FREEWARE
+
+          Para instalar este componente basta instalar o arquivo
+
+                              ENTERREG.PAS
+
+                         <<<<<<< ATENCAO >>>>>>>>>
+
+------------------------------------------------------------------------
+|     NAO INSTALE PELO ARQUIVO ENTER.PAS -- UTILIZE O ENTERREG.PAS     |
+------------------------------------------------------------------------
+
+Esta versão foi modificada é para o Delphi 7 por adm.cabral@yahoo.com.br
+
+********************** Para instalar no Delphi: ************************
+Extraia os arquivos numa pasta que esteja no Library Path do Delphi.
+Component / Install Component > Browse (selecione o ENTERREG.PAS) e siga
+os passos normais para a instalação de qualquer componente.
+************************************************************************

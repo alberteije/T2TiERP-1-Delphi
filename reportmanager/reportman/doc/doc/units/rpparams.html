@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Units documentation - rpparams.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpparams.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>report parameters</b>, a TRpReport has params property 
+  that is a collection of parameters that can interact with the report engine, 
+  assigning them to datasets or evaluating them inside expressions.</p>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpParam</td>
+    <td>TCollectionItem</td>
+    <td>Item with all information about the parameter like type, value, a list 
+      of datasets to assign it...</td>
+  </tr>
+  <tr> 
+    <td>TRpParamList</td>
+    <td>TCollection</td>
+    <td>Collection of parameters</td>
+  </tr>
+  <tr> 
+    <td>TRpParamComp</td>
+    <td>TComponent</td>
+    <td>This component is used to perform streaming of parameters because TCollection 
+      does not allow streaming without a component</td>
+  </tr>
+</table>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>function ParamTypeToDataType(paramtype:TRpParamType):TFieldType;</td>
+    <td>Returns the datatype of a param type</td>
+  </tr>
+  <tr> 
+    <td>function VariantTypeToDataType(avariant:Variant):TFieldType;</td>
+    <td>Returns the datatype of a Variant</td>
+  </tr>
+  <tr> 
+    <td>function ParamTypeToString(paramtype:TRpParamType):String;</td>
+    <td>Returns localized string description of a param type</td>
+  </tr>
+  <tr> 
+    <td>function StringToParamType(Value:String):TRpParamType;</td>
+    <td>Reverse of last function</td>
+  </tr>
+  <tr>
+    <td>procedure GetPossibleDataTypes(alist:TStrings);</td>
+    <td>Fill the list with the all the possible param type descriptions</td>
+  </tr>
+</table>
+</body>
+</html>

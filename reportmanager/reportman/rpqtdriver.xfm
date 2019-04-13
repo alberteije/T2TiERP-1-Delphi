@@ -1,0 +1,119 @@
+object FRpQtProgress: TFRpQtProgress
+  Left = 202
+  Top = 242
+  ActiveControl = BCancel
+  AutoScroll = False
+  BorderStyle = fbsDialog
+  Caption = 'Print progress'
+  ClientHeight = 163
+  ClientWidth = 534
+  Color = clButton
+  Position = poScreenCenter
+  ShowHint = True
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object BCancel: TButton
+    Left = 111
+    Top = 124
+    Width = 75
+    Height = 25
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 4
+    TabOrder = 0
+    OnClick = BCancelClick
+  end
+  object LProcessing: TLabel
+    Left = 8
+    Top = 60
+    Width = 52
+    Height = 13
+    Caption = 'Processing'
+  end
+  object LRecordCount: TLabel
+    Left = 8
+    Top = 88
+    Width = 497
+    Height = 25
+    AutoSize = False
+  end
+  object LTitle: TLabel
+    Left = 8
+    Top = 4
+    Width = 23
+    Height = 13
+    Caption = 'Tittle'
+    Visible = False
+  end
+  object LTittle: TLabel
+    Left = 8
+    Top = 28
+    Width = 501
+    Height = 25
+    AutoSize = False
+  end
+  object BOK: TButton
+    Left = 8
+    Top = 123
+    Width = 81
+    Height = 26
+    Caption = 'OK'
+    Default = True
+    TabOrder = 1
+    Visible = False
+    OnClick = BOKClick
+  end
+  object GBitmap: TGroupBox
+    Left = 4
+    Top = 8
+    Width = 317
+    Height = 105
+    TabOrder = 3
+    Visible = False
+    object LHorzRes: TLabel
+      Left = 12
+      Top = 20
+      Width = 180
+      Height = 13
+      Caption = 'Horizotal resolution in dots per inchess'
+    end
+    object LVertRes: TLabel
+      Left = 12
+      Top = 52
+      Width = 180
+      Height = 13
+      Caption = 'Horizotal resolution in dots per inchess'
+    end
+    object EHorzRes: TRpCLXMaskEdit
+      Left = 212
+      Top = 16
+      Width = 77
+      Height = 21
+      Cursor = crIBeam
+      TabOrder = 0
+      Text = '100'
+      EditType = teinteger
+    end
+    object EVertRes: TRpCLXMaskEdit
+      Left = 212
+      Top = 48
+      Width = 77
+      Height = 21
+      Cursor = crIBeam
+      TabOrder = 1
+      Text = '100'
+      EditType = teinteger
+    end
+    object CheckMono: TCheckBox
+      Left = 12
+      Top = 80
+      Width = 277
+      Height = 17
+      Caption = 'Monocrhome'
+      TabOrder = 2
+    end
+  end
+end

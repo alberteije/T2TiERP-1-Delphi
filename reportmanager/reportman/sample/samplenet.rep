@@ -1,0 +1,482 @@
+object TRpReport
+  PageHeight = 8120
+  PageWidth = 5742
+  PageBackColor = 2147483647
+  SubReports = <
+    item
+      SubReport = TRpSubReport0
+    end>
+  DataInfo = <
+    item
+      Alias = 'FISH'
+      DatabaseAlias = 'ACONNECTION'
+      SQL = 
+        'SELECT * FROM BIOLIFE '#13#10'WHERE CATEGORY>=:CATINI'#13#10'AND CATEGORY<=:' +
+        'CATEND'#13#10'ORDER BY CATEGORY'
+      MyBaseFilename = 'biolife.cds'
+      MyBaseIndexFields = 'Category'
+    end>
+  DatabaseInfo = <
+    item
+      Alias = 'ACONNECTION'
+      LoadParams = True
+      LoadDriverParams = True
+      LoginPrompt = False
+      Driver = rpdatamybase
+      ReportTable = 'REPMAN_REPORTS'
+      ReportSearchField = 'REPORT_NAME'
+      ReportField = 'REPORT'
+      ReportGroupsTable = 'REPMAN_GROUPS'
+      ADOConnectionString = ''
+    end>
+  Params = <
+    item
+      Name = 'CATINI'
+      Value = 'C'
+      Datasets.Strings = (
+        'FISH')
+      Description = 'From category'
+      Search = ''
+    end
+    item
+      Name = 'CATEND'
+      Value = 'GZ'
+      Datasets.Strings = (
+        'FISH')
+      Description = 'To category'
+      Search = ''
+    end>
+  StreamFormat = rpStreamText
+  ReportAction = []
+  object TRpSubReport0: TRpSubReport
+    Sections = <
+      item
+        Section = TRpSection1
+      end
+      item
+        Section = TRpSection2
+      end
+      item
+        Section = TRpSection3
+      end
+      item
+        Section = TRpSection0
+      end
+      item
+        Section = TRpSection4
+      end
+      item
+        Section = TRpSection5
+      end>
+    Alias = 'FISH'
+  end
+  object TRpSection0: TRpSection
+    Width = 10900
+    Height = 1320
+    SubReport = TRpSubReport0
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecdetail
+    Components = <
+      item
+        Component = TRpExpression4
+      end
+      item
+        Component = TRpExpression0
+      end
+      item
+        Component = TRpLabel1
+      end
+      item
+        Component = TRpLabel3
+      end
+      item
+        Component = TRpExpression1
+      end>
+    AutoExpand = True
+    AutoContract = True
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    PrintCondition = ' '
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+  end
+  object TRpSection1: TRpSection
+    Width = 10900
+    Height = 287
+    SubReport = TRpSubReport0
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecpheader
+    Components = <
+      item
+        Component = TRpLabel6
+      end
+      item
+        Component = TRpExpression6
+      end>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+  end
+  object TRpSection3: TRpSection
+    Width = 10900
+    Height = 1147
+    SubReport = TRpSubReport0
+    GroupName = 'F'
+    ChangeBool = False
+    PageRepeat = True
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecgheader
+    Components = <
+      item
+        Component = TRpShape0
+      end
+      item
+        Component = TRpLabel2
+      end
+      item
+        Component = TRpExpression3
+      end>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = 'FISH.CATEGORY'
+    BeginPageExpression = 'FREE_SPACE_CMS<6.5'
+    ChangeExpression = 'FISH.CATEGORY'
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+  end
+  object TRpSection4: TRpSection
+    Width = 10900
+    Height = 574
+    SubReport = TRpSubReport0
+    GroupName = 'F'
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecgfooter
+    Components = <
+      item
+        Component = TRpExpression5
+      end
+      item
+        Component = TRpLabel5
+      end>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = 'FISH.CATEGORY'
+    BeginPageExpression = ''
+    ChangeExpression = 'FISH.CATEGORY'
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+  end
+  object TRpLabel2: TRpLabel
+    Width = 1843
+    Height = 576
+    PosX = 120
+    PosY = 225
+    Type1Font = poCourier
+    FontSize = 16
+    FontStyle = 6
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'adobe-courier'
+    WideText = 'Category'#10'Category'#10'Categor'#237'a'
+  end
+  object TRpExpression3: TRpExpression
+    Width = 3557
+    Height = 576
+    PosX = 2070
+    PosY = 225
+    Type1Font = poCourier
+    FontSize = 16
+    FontStyle = 3
+    AutoExpand = False
+    AutoContract = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'adobe-courier'
+    Expression = 'FISH.Category'
+    AgIniValue = '0'
+  end
+  object TRpExpression4: TRpExpression
+    Width = 7470
+    Height = 810
+    PosX = 0
+    PosY = 465
+    Type1Font = poHelvetica
+    WordWrap = True
+    AutoExpand = False
+    AutoContract = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'FISH.Notes'
+    AgIniValue = '0'
+  end
+  object TRpExpression0: TRpExpression
+    Width = 3915
+    Height = 345
+    PosX = 1605
+    PosY = 120
+    Type1Font = poHelvetica
+    FontStyle = 1
+    AutoExpand = False
+    AutoContract = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'FISH.Common_Name'
+    AgIniValue = '0'
+  end
+  object TRpLabel1: TRpLabel
+    Width = 1500
+    Height = 345
+    PosX = 0
+    PosY = 120
+    Type1Font = poHelvetica
+    FontStyle = 4
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Name'#10'Name'#10'Nombre'
+  end
+  object TRpLabel3: TRpLabel
+    Width = 1830
+    Height = 345
+    PosX = 5865
+    PosY = 120
+    Type1Font = poHelvetica
+    FontStyle = 4
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Length'#10'Length'#10'Longitud'
+  end
+  object TRpExpression1: TRpExpression
+    Width = 2419
+    Height = 346
+    PosX = 7710
+    PosY = 120
+    Type1Font = poHelvetica
+    FontStyle = 1
+    AutoExpand = False
+    AutoContract = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = '[FISH.Length (cm)]'
+    AgIniValue = '0'
+  end
+  object TRpShape0: TRpShape
+    Width = 6437
+    Height = 691
+    PosX = 0
+    PosY = 120
+    PenWidth = 0
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+  end
+  object TRpSection2: TRpSection
+    Width = 10900
+    Height = 0
+    SubReport = TRpSubReport0
+    GroupName = 'SUMARY'
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecgheader
+    Components = <>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+  end
+  object TRpSection5: TRpSection
+    Width = 10900
+    Height = 4590
+    SubReport = TRpSubReport0
+    GroupName = 'SUMARY'
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecgfooter
+    Components = <
+      item
+        Component = TRpChart0
+      end
+      item
+        Component = TRpLabel4
+      end>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+  end
+  object TRpChart0: TRpChart
+    Width = 10890
+    Height = 3915
+    PosX = 0
+    PosY = 570
+    Type1Font = poHelvetica
+    Series = <
+      item
+        Color = 0
+      end>
+    Driver = rpchartdriverdefault
+    View3dWalls = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    GetValueCondition = ''
+    ValueExpression = '[FISH.Length (cm)]'
+    ChangeSerieExpression = ''
+    CaptionExpression = 'Fish.Common_Name'
+    SerieCaption = ''
+    ClearExpression = ''
+  end
+  object TRpLabel4: TRpLabel
+    Width = 4605
+    Height = 450
+    PosX = 0
+    PosY = 120
+    Type1Font = poHelvetica
+    FontSize = 15
+    FontStyle = 7
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 
+      'Length in cms Chart'#10'Length in cms Chart'#10'Gr'#225'fico de longitud en c' +
+      'ms'
+  end
+  object TRpExpression5: TRpExpression
+    Width = 1830
+    Height = 450
+    PosX = 1728
+    PosY = 115
+    Type1Font = poHelvetica
+    Aggregate = rpAgGroup
+    GroupName = 'F'
+    AutoExpand = False
+    AutoContract = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = '1'
+    AgIniValue = '0'
+  end
+  object TRpLabel5: TRpLabel
+    Width = 1613
+    Height = 461
+    PosX = 115
+    PosY = 115
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'In this category'
+  end
+  object TRpLabel6: TRpLabel
+    Width = 1440
+    Height = 275
+    PosX = 2645
+    PosY = 0
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Page'#10'Page'#10'P'#225'gina'
+  end
+  object TRpExpression6: TRpExpression
+    Width = 1440
+    Height = 275
+    PosX = 4250
+    PosY = 0
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'Page'
+    AgIniValue = '0'
+  end
+end

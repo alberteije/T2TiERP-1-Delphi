@@ -1,0 +1,268 @@
+object Form1: TForm1
+  Left = 201
+  Top = 152
+  Width = 567
+  Height = 481
+  HorzScrollBar.Range = 533
+  VertScrollBar.Range = 257
+  ActiveControl = BConnections
+  Caption = 'Form1'
+  Color = clBackground
+  OnCreate = FormCreate
+  PixelsPerInch = 75
+  TextHeight = 15
+  TextWidth = 7
+  object Label1: TLabel
+    Left = 12
+    Top = 92
+    Width = 61
+    Height = 15
+    Caption = 'Expression'
+  end
+  object BConnections: TButton
+    Left = 12
+    Top = 224
+    Width = 133
+    Height = 33
+    Caption = 'Connect/Disconnect'
+    TabOrder = 1
+    OnClick = BConnectionsClick
+  end
+  object Label2: TLabel
+    Left = 160
+    Top = 232
+    Width = 100
+    Height = 15
+    Caption = 'Connection status'
+  end
+  object LConnected: TLabel
+    Left = 284
+    Top = 232
+    Width = 77
+    Height = 15
+    Caption = 'Disconnected'
+  end
+  object GTables: TGroupBox
+    Left = 8
+    Top = 268
+    Width = 525
+    Height = 197
+    Caption = 'Accesible tables'
+    TabOrder = 4
+    Visible = False
+    object LTables: TListBox
+      Left = 4
+      Top = 16
+      Width = 141
+      Height = 173
+      TabOrder = 0
+      OnClick = LTablesClick
+    end
+    object Label6: TLabel
+      Left = 152
+      Top = 20
+      Width = 58
+      Height = 15
+      Caption = 'Aliasname'
+    end
+    object EAlias: TEdit
+      Left = 152
+      Top = 40
+      Width = 113
+      Height = 23
+      TabOrder = 2
+    end
+    object LAlias: TListBox
+      Left = 268
+      Top = 12
+      Width = 237
+      Height = 61
+      TabOrder = 3
+      OnClick = LAliasClick
+    end
+    object BAdd: TButton
+      Left = 152
+      Top = 72
+      Width = 109
+      Height = 33
+      Caption = '->'
+      TabOrder = 4
+      OnClick = BAddClick
+    end
+    object BSub: TButton
+      Left = 152
+      Top = 112
+      Width = 109
+      Height = 33
+      Caption = '<-'
+      TabOrder = 5
+    end
+    object DBGrid1: TDBGrid
+      Left = 268
+      Top = 100
+      Width = 245
+      Height = 93
+      DataSource = DataSource1
+      TabOrder = 6
+      TitleFont.Color = clBlack
+      TitleFont.Height = 12
+      TitleFont.Name = 'helvetica'
+      TitleFont.Pitch = fpVariable
+      TitleFont.Style = []
+    end
+    object DBNavigator1: TDBNavigator
+      Left = 268
+      Top = 72
+      Width = 204
+      Height = 29
+      DataSource = DataSource1
+      VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]
+      TabOrder = 7
+    end
+    object LStatus: TLabel
+      Left = 152
+      Top = 152
+      Width = 34
+      Height = 15
+      Caption = 'Status'
+    end
+  end
+  object EExpression: TMemo
+    Left = 12
+    Top = 112
+    Width = 225
+    Height = 53
+    Lines.Strings = (
+      '2+4+5*4+6')
+    TabOrder = 5
+  end
+  object Label3: TLabel
+    Left = 8
+    Top = 172
+    Width = 106
+    Height = 15
+    Caption = 'Interbase database'
+  end
+  object EDatabase: TEdit
+    Left = 8
+    Top = 192
+    Width = 157
+    Height = 23
+    TabOrder = 7
+    Text = '/var/data/prima.gdb'
+  end
+  object Label4: TLabel
+    Left = 192
+    Top = 172
+    Width = 59
+    Height = 15
+    Caption = 'User name'
+  end
+  object EUser: TEdit
+    Left = 192
+    Top = 192
+    Width = 157
+    Height = 23
+    TabOrder = 9
+    Text = 'SYSDBA'
+  end
+  object Label5: TLabel
+    Left = 368
+    Top = 172
+    Width = 54
+    Height = 15
+    Caption = 'Password'
+  end
+  object EPassword: TEdit
+    Left = 368
+    Top = 192
+    Width = 157
+    Height = 23
+    TabOrder = 11
+    Text = 'masterkey'
+  end
+  object Label7: TLabel
+    Left = 352
+    Top = 96
+    Width = 34
+    Height = 15
+    Caption = 'Result'
+  end
+  object Memo1: TMemo
+    Left = 352
+    Top = 112
+    Width = 181
+    Height = 53
+    ReadOnly = True
+    TabOrder = 13
+  end
+  object BEVal: TButton
+    Left = 248
+    Top = 112
+    Width = 93
+    Height = 29
+    Caption = 'Evaluate'
+    TabOrder = 14
+    OnClick = BEValClick
+  end
+  object Label8: TLabel
+    Left = 8
+    Top = 8
+    Width = 40
+    Height = 15
+    Caption = 'Drivers'
+  end
+  object LDrivers: TListBox
+    Left = 12
+    Top = 24
+    Width = 221
+    Height = 69
+    TabOrder = 16
+  end
+  object base: TSQLConnection
+    DriverName = 'Interbase'
+    GetDriverFunc = 'getSQLDriverINTERBASE'
+    LibraryName = 'libsqlib.so.1'
+    LoginPrompt = False
+    Params.Strings = (
+      'Database=database.gdb'
+      'RoleName=RoleName'
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'ServerCharSet='
+      'SQLDialect=1'
+      'BlobSize=-1'
+      'CommitRetain=False'
+      'WaitOnLocks=True'
+      'ErrorResourceFile=./DbxIbErr.msg'
+      'LocaleCode=0000'
+      'Interbase TransIsolation=ReadCommited')
+    VendorLib = 'libgds.so.0'
+    Left = 476
+    Top = 256
+  end
+  object RpEvaluator1: TRpEvaluator
+    Rpalias = RpAlias1
+    Expression = ''
+    Left = 416
+    Top = 224
+  end
+  object RpAlias1: TRpAlias
+    List = <>
+    Left = 456
+    Top = 224
+  end
+  object DataSource1: TDataSource
+    Left = 376
+    Top = 256
+  end
+  object SQLClientDataSet1: TSQLClientDataSet
+    Aggregates = <>
+    Options = [poAllowCommandText]
+    ObjectView = True
+    Params = <>
+    DBConnection = base
+    Left = 336
+    Top = 240
+  end
+end

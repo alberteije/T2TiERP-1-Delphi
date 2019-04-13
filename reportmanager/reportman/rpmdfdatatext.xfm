@@ -1,0 +1,514 @@
+object FRpDataText: TFRpDataText
+  Left = 225
+  Top = 159
+  ActiveControl = EFileName
+  AutoScroll = False
+  Caption = 'Text file to database table configuration'
+  ClientHeight = 447
+  ClientWidth = 550
+  Color = clButton
+  Position = poScreenCenter
+  ShowHint = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object PTop: TPanel
+    Left = 0
+    Top = 0
+    Width = 550
+    Height = 65
+    Align = alTop
+    TabOrder = 0
+    object LFieldsFile: TLabel
+      Left = 8
+      Top = 8
+      Width = 43
+      Height = 13
+      Caption = 'Fields file'
+    end
+    object LSampleFile: TLabel
+      Left = 8
+      Top = 40
+      Width = 51
+      Height = 13
+      Caption = 'Sample file'
+    end
+    object EFileName: TEdit
+      Left = 108
+      Top = 4
+      Width = 435
+      Height = 21
+      Anchors = [akLeft, akTop, akRight]
+      Color = clInfoBk
+      ReadOnly = True
+      TabOrder = 0
+      Text = 'EFileName'
+    end
+    object ESampleFile: TEdit
+      Left = 108
+      Top = 36
+      Width = 435
+      Height = 21
+      Anchors = [akLeft, akTop, akRight]
+      Color = clInfoBk
+      ReadOnly = True
+      TabOrder = 1
+      Text = 'EFieldsFile'
+    end
+  end
+  object PClient: TPanel
+    Left = 0
+    Top = 65
+    Width = 550
+    Height = 382
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 1
+    object Splitter1: TSplitter
+      Left = 0
+      Top = 156
+      Width = 550
+      Height = 8
+      Cursor = crVSplit
+      Align = alTop
+      Beveled = True
+    end
+    object PList: TPanel
+      Left = 0
+      Top = 0
+      Width = 550
+      Height = 156
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 0
+      object ToolBar1: TToolBar
+        Left = 0
+        Top = 0
+        Width = 550
+        Height = 30
+        AutoSize = True
+        ButtonHeight = 26
+        ButtonWidth = 26
+        Caption = 'ToolBar1'
+        Flat = True
+        Images = ImageList1
+        TabOrder = 0
+        object ToolButton1: TToolButton
+          Left = 1
+          Top = 4
+          Height = 26
+          Action = ANewField
+          Caption = 'New field'
+        end
+        object ToolButton5: TToolButton
+          Left = 27
+          Top = 4
+          Width = 36
+          Height = 26
+          Style = tbsSeparator
+          Caption = 'ToolButton5'
+          ImageIndex = 4
+        end
+        object ToolButton4: TToolButton
+          Left = 63
+          Top = 4
+          Height = 26
+          Action = ADelete
+          Caption = 'Delete field'
+        end
+        object ToolButton6: TToolButton
+          Left = 89
+          Top = 4
+          Width = 40
+          Height = 26
+          Style = tbsSeparator
+          Caption = 'ToolButton6'
+          ImageIndex = 4
+        end
+      end
+      object GridFields: TDBGrid
+        Left = 0
+        Top = 30
+        Width = 550
+        Height = 126
+        Align = alClient
+        DataSource = SFiedls
+        TabOrder = 1
+        TitleFont.Color = clBlack
+        TitleFont.Height = 11
+        TitleFont.Name = 'MS Shell Dlg'
+        TitleFont.Pitch = fpVariable
+        TitleFont.Style = []
+        TitleFont.Weight = 40
+      end
+    end
+    object PBottom: TPanel
+      Left = 0
+      Top = 164
+      Width = 550
+      Height = 218
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 1
+      object PFieldProps: TPanel
+        Left = 0
+        Top = 0
+        Width = 550
+        Height = 85
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 0
+        object Label4: TLabel
+          Left = 8
+          Top = 32
+          Width = 197
+          Height = 13
+          Caption = 'Ignore after record separator (ASCII code)'
+        end
+        object Label3: TLabel
+          Left = 8
+          Top = 4
+          Width = 145
+          Height = 13
+          Caption = 'Record separator (ASCII code)'
+        end
+        object BTest: TButton
+          Left = 96
+          Top = 56
+          Width = 81
+          Height = 25
+          Caption = 'Open'
+          TabOrder = 3
+          OnClick = BTestClick
+        end
+        object ERecordseparator: TEdit
+          Left = 321
+          Top = 0
+          Width = 61
+          Height = 21
+          TabOrder = 0
+          Text = 'ERecordseparator'
+        end
+        object EIgnoreAfterRecordseparator: TEdit
+          Left = 321
+          Top = 28
+          Width = 61
+          Height = 21
+          TabOrder = 1
+          Text = 'ERecordseparator'
+        end
+        object BOK: TButton
+          Left = 8
+          Top = 56
+          Width = 81
+          Height = 25
+          Caption = 'OK'
+          TabOrder = 2
+          OnClick = Button1Click
+        end
+      end
+      object PControl: TPageControl
+        Left = 0
+        Top = 85
+        Width = 550
+        Height = 133
+        ActivePage = TabSource
+        Align = alClient
+        TabOrder = 1
+        object TabSource: TTabSheet
+          Caption = 'Source'
+          object MSource: TMemo
+            Left = 0
+            Top = 0
+            Width = 542
+            Height = 103
+            Align = alClient
+            Color = clInfoBk
+            ReadOnly = True
+            ScrollBars = ssBoth
+            TabOrder = 0
+            WordWrap = False
+          end
+        end
+        object TabData: TTabSheet
+          Caption = 'Data'
+          ImageIndex = 1
+          object GridTest: TDBGrid
+            Left = 0
+            Top = 0
+            Width = 542
+            Height = 103
+            Align = alClient
+            DataSource = SData
+            TabOrder = 0
+            TitleFont.Color = clBlack
+            TitleFont.Height = 11
+            TitleFont.Name = 'MS Shell Dlg'
+            TitleFont.Pitch = fpVariable
+            TitleFont.Style = []
+            TitleFont.Weight = 40
+          end
+        end
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Images = ImageList1
+    Left = 252
+    Top = 128
+    object ANewField: TAction
+      Caption = 'New field'
+      Hint = 'Adds a new parameter'
+      ImageIndex = 0
+      OnExecute = ANewFieldExecute
+    end
+    object ADelete: TAction
+      Caption = 'Delete field'
+      Hint = 'Deletes the selected field'
+      ImageIndex = 1
+      OnExecute = ADeleteExecute
+    end
+  end
+  object ImageList1: TImageList
+    Height = 19
+    Width = 19
+    Left = 172
+    Top = 200
+    Bitmap = {
+      494D474C01000100130000001300000002000000424DD2080000000000003600
+      000028000000260000001300000001001800000000009C080000120B0000120B
+      00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFF0000000000000000000000000000
+      00000000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF
+      FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000FFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFF
+      FFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00000000000000FFFFFFFFFFFFFFFFFFFFFFFF000000000000FFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000FFFF
+      FFFFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFF
+      FFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF000000000000000000000000000000FFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000000000
+      000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF
+      FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000
+      00000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFF000000000000000000FFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF000000FFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000000000FF
+      FFFFFFFFFFFFFFFFFFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      0000FFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFF
+      FFFF000000000000000000000000000000000000000000000000FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000FF
+      FFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFF0000424DD6000000000000003E000000280000002600000013000000
+      010001000000000098000000120B0000120B00000200000002000000FFFFFF00
+      000000000000000003FFFFFF0000000003FFFFFF0000000003FFFFFF0FFE0000
+      23FFFFFF0802008003FFFFFF080201C043FFFFFF080201C083FFFFFF080200E1
+      83FFFFFF0802007303FFFFFF0802003E03FFFFFF0802001C03FFFFFF0802003E
+      03FFFFFF081E007203FFFFFF081401E183FFFFFF081803C0C3FFFFFF0FF00300
+      63FFFFFF0000000003FFFFFF0000000003FFFFFF0000000003FFFFFF}
+  end
+  object DFields: TClientDataSet
+    Aggregates = <>
+    FieldDefs = <>
+    IndexDefs = <
+      item
+        Name = 'IFIELDNAME'
+        Fields = 'FIELDNAME'
+        Options = [ixPrimary]
+      end>
+    Params = <>
+    StoreDefs = True
+    OnNewRecord = DFieldsNewRecord
+    Left = 28
+    Top = 141
+    object DFieldsFIELDNAME: TStringField
+      FieldName = 'FIELDNAME'
+      Required = True
+      Size = 31
+    end
+    object DFieldsFIELDTYPE: TIntegerField
+      FieldName = 'FIELDTYPE'
+      Required = True
+      Visible = False
+    end
+    object DFieldsFIELDTYPENAME: TStringField
+      FieldKind = fkLookup
+      FieldName = 'FIELDTYPENAME'
+      LookupDataSet = DDataType
+      LookupKeyFields = 'CODE'
+      LookupResultField = 'DESCRIPTION'
+      KeyFields = 'FIELDTYPE'
+      Lookup = True
+    end
+    object DFieldsFIELDSIZE: TIntegerField
+      FieldName = 'FIELDSIZE'
+      Required = True
+    end
+    object DFieldsPOSBEGIN: TIntegerField
+      FieldName = 'POSBEGIN'
+      Required = True
+    end
+    object DFieldsFIELDTRIM: TBooleanField
+      FieldName = 'FIELDTRIM'
+      Required = True
+      Visible = False
+    end
+    object DFieldsTRIM: TStringField
+      FieldKind = fkLookup
+      FieldName = 'TRIM'
+      LookupDataSet = DYesNo
+      LookupKeyFields = 'CODE'
+      LookupResultField = 'DESCRIPTION'
+      KeyFields = 'FIELDTRIM'
+      Size = 10
+      Lookup = True
+    end
+    object DFieldsPRECISION: TIntegerField
+      FieldName = 'PRECISION'
+      Required = True
+    end
+    object DFieldsPOSBEGINPRECISION: TIntegerField
+      FieldName = 'POSBEGINPRECISION'
+      Required = True
+    end
+    object DFieldsYEARPOS: TIntegerField
+      FieldName = 'YEARPOS'
+      Required = True
+    end
+    object DFieldsYEARSIZE: TIntegerField
+      FieldName = 'YEARSIZE'
+      Required = True
+    end
+    object DFieldsMONTHPOS: TIntegerField
+      FieldName = 'MONTHPOS'
+      Required = True
+    end
+    object DFieldsMONTHSIZE: TIntegerField
+      FieldName = 'MONTHSIZE'
+      Required = True
+    end
+    object DFieldsDAYPOS: TIntegerField
+      FieldName = 'DAYPOS'
+      Required = True
+    end
+    object DFieldsDAYSIZE: TIntegerField
+      FieldName = 'DAYSIZE'
+      Required = True
+    end
+    object DFieldsHOURPOS: TIntegerField
+      FieldName = 'HOURPOS'
+      Required = True
+    end
+    object DFieldsHOURSIZE: TIntegerField
+      FieldName = 'HOURSIZE'
+      Required = True
+    end
+    object DFieldsMINPOS: TIntegerField
+      FieldName = 'MINPOS'
+      Required = True
+    end
+    object DFieldsMINSIZE: TIntegerField
+      FieldName = 'MINSIZE'
+      Required = True
+    end
+    object DFieldsSECPOS: TIntegerField
+      FieldName = 'SECPOS'
+      Required = True
+    end
+    object DFieldsSECSIZE: TIntegerField
+      FieldName = 'SECSIZE'
+      Required = True
+    end
+  end
+  object SData: TDataSource
+    DataSet = DData
+    Left = 84
+    Top = 321
+  end
+  object DData: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 44
+    Top = 325
+  end
+  object SFiedls: TDataSource
+    DataSet = DFields
+    Left = 96
+    Top = 137
+  end
+  object DDataType: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 176
+    Top = 141
+    object DDataTypeCODE: TIntegerField
+      FieldName = 'CODE'
+    end
+    object DDataTypeDESCRIPTION: TStringField
+      FieldName = 'DESCRIPTION'
+    end
+  end
+  object DYesNo: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 300
+    Top = 137
+    object DYesNoCODE: TBooleanField
+      FieldName = 'CODE'
+    end
+    object DYesNoDESCRIPTION: TStringField
+      FieldName = 'DESCRIPTION'
+      Size = 10
+    end
+  end
+end

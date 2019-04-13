@@ -1,0 +1,390 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>Reportman.Drawing</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">Report Manager Documentation</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">Reportman.Drawing Namespace</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>
+        <a href="Reportman.DrawingHierarchy.html">Namespace hierarchy</a>
+      </p>
+      <h3 class="dtH3">Classes</h3>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr valign="top">
+            <th width="50%">Class</th>
+            <th width="50%">Description</th>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.Doubles.html">Doubles</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.DoubleUtil.html">DoubleUtil</a>
+            </td>
+            <td width="50%"> Provide utitilies about handling double values </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.ExceptionUtil.html">ExceptionUtil</a>
+            </td>
+            <td width="50%"> Provide utitilies about exception handling </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.GraphicUtils.html">GraphicUtils</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.Integers.html">Integers</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.Longs.html">Longs</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MemStreams.html">MemStreams</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MetaFile.html">MetaFile</a>
+            </td>
+            <td width="50%"> Class used engine to read/write metafiles </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MetaObject.html">MetaObject</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MetaObjectDraw.html">MetaObjectDraw</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MetaObjectExport.html">MetaObjectExport</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MetaObjectImage.html">MetaObjectImage</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MetaObjectPolygon.html">MetaObjectPolygon</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MetaObjects.html">MetaObjects</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MetaObjectText.html">MetaObjectText</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MetaPage.html">MetaPage</a>
+            </td>
+            <td width="50%"> Metafile page, part of metafile </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MetaPages.html">MetaPages</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.NamedException.html">NamedException</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.PrintOut.html">PrintOut</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.PrintOutNet.html">PrintOutNet</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.PrintOutPDF.html">PrintOutPDF</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.PrintOutPrint.html">PrintOutPrint</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.StreamUtil.html">StreamUtil</a>
+            </td>
+            <td width="50%"> Provide utitilies for handling streams, write strings, read/write datatypes etc. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.Strings.html">Strings</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.TotalPages.html">TotalPages</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.Translator.html">Translator</a>
+            </td>
+            <td width="50%"> Translator component helps in translating aplications to multiple languages using current user regional configuration loads the specified file with the regional extension for the file </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.Twips.html">Twips</a>
+            </td>
+            <td width="50%"> Provide utitilies and constants related to Twips measurement unit. One inch contains 1440 twips </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.UnNamedException.html">UnNamedException</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+        </table>
+      </div>
+      <h3 class="dtH3">Structures</h3>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr valign="top">
+            <th width="50%">Structure</th>
+            <th width="50%">Description</th>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.PageSizeDetail.html">PageSizeDetail</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.TextObjectStruct.html">TextObjectStruct</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.TotalPage.html">TotalPage</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+        </table>
+      </div>
+      <h3 class="dtH3">Delegates</h3>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr valign="top">
+            <th width="50%">Delegate</th>
+            <th width="50%">Description</th>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.BeginPrintOut.html">BeginPrintOut</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MetaFileLoadError.html">MetaFileLoadError</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MetaFileLoadProgress.html">MetaFileLoadProgress</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MetaFileSaveWorkProgress.html">MetaFileSaveWorkProgress</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MetaFileWorkAsyncError.html">MetaFileWorkAsyncError</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MetaFileWorkProgress.html">MetaFileWorkProgress</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MetaStopWork.html">MetaStopWork</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.RequestPageEvent.html">RequestPageEvent</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+        </table>
+      </div>
+      <h3 class="dtH3">Enumerations</h3>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr valign="top">
+            <th width="50%">Enumeration</th>
+            <th width="50%">Description</th>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.AutoScaleType.html">AutoScaleType</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.BrushType.html">BrushType</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.ImageDrawStyleType.html">ImageDrawStyleType</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.MetaObjectType.html">MetaObjectType</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.OrientationType.html">OrientationType</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.PDFFontType.html">PDFFontType</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.PenType.html">PenType</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.PreviewStyleType.html">PreviewStyleType</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.PreviewWindowStyleType.html">PreviewWindowStyleType</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.PrinterSelectType.html">PrinterSelectType</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.PrintStepType.html">PrintStepType</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.ShapeType.html">ShapeType</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Reportman.Drawing.WMFOptimization.html">WMFOptimization</a>
+            </td>
+            <td width="50%"> </td>
+          </tr>
+        </table>
+      </div>
+      <hr />
+      <div id="footer">
+        <p>
+          <a href="mailto:toni@pala.com?subject=Report%20Manager%20Documentation%20Documentation%20Feedback:%20Reportman.Drawing%20Namespace">Send comments on this topic.</a>
+        </p>
+        <p>
+          <a href="http://reportman.sourceforge.net">Copyright 2006 Toni Martir</a>
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

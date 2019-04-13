@@ -1,0 +1,242 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{49DD69F7-1FA4-4C7C-89B9-1EA4E11DD7F2}</ProjectGuid>
+			<MainSource>T2TiERPPontoEletronico.dpr</MainSource>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<ProjectVersion>12.0</ProjectVersion>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_UsePackage>vclx;vcl;vclimg;dbrtl;Rave77VCL;bdertl;rtl;vclactnband;vcldb;vcldbx;vcltouch;xmlrtl;dsnap;dsnapcon;TeeUI;TeeDB;Tee;vclib;ibxpress;adortl;IndyCore;IndySystem;IndyProtocols;inet;intrawebdb_100_140;Intraweb_100_140;VclSmp;vclie;websnap;webdsnap;inetdb;inetdbbde;inetdbxpress;soaprtl;vclribbon;dbexpress;DbxCommonDriver;DataSnapIndy10ServerTransport;DataSnapProviderClient;DbxClientDriver;DataSnapServer;DBXInterBaseDriver;DBXMySQLDriver;dbxcds;DBXFirebirdDriver;DBXSybaseASEDriver;DBXSybaseASADriver;DBXOracleDriver;DBXMSSQLDriver;DBXInformixDriver;DBXDb2Driver;JclDeveloperTools;Jcl;JclVcl;JclContainers;JvCore;JvSystem;JvStdCtrls;JvAppFrm;JvBands;JvDB;JvDlgs;JvBDE;JvControls;JvCmp;JvCrypt;JvCustom;JvDocking;JvDotNetCtrls;JvGlobus;JvHMI;JvJans;JvManagedThreads;JvMM;JvNet;JvPageComps;JvPascalInterpreter;JvPluginSystem;JvPrintPreview;JvRuntimeDesign;JvTimeFramework;JvWizards;JvXPCtrls;ACBrSerial;synapse;ACBrDiversos;ACBrComum;ACBr_Boleto;ACBr_BoletoFC_Fortes;ACBr_NFe2;PCN2;ACBrCapicom;ACBr_PAF;ACBr_SPED;ACBr_Sintegra;ACBr_TEFD;ACBrNFeDanfeRV;LabeledControls;DTwain;rppack_del2009;T2Ti;ACBr_Ponto;DelPrint2010</DCC_UsePackage>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_DependencyCheckOutputName>T2TiERPPontoEletronico.exe</DCC_DependencyCheckOutputName>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_Platform>x86</DCC_Platform>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="T2TiERPPontoEletronico.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="..\..\Comum\Constantes.pas"/>
+			<DCCReference Include="..\..\Comum\Atributos.pas"/>
+			<DCCReference Include="..\..\Comum\Biblioteca.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FuncaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\JSonVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PapelFuncaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PapelVO.pas"/>
+			<DCCReference Include="..\Comum\Tipos.pas"/>
+			<DCCReference Include="..\Comum\Conversor.pas"/>
+			<DCCReference Include="..\Comum\NotificationService.pas"/>
+			<DCCReference Include="..\Comum\SessaoUsuario.pas"/>
+			<DCCReference Include="..\Comum\Controller\ColaboradorController.pas"/>
+			<DCCReference Include="..\Comum\Controller\Controller.pas"/>
+			<DCCReference Include="..\Comum\Controller\FuncaoController.pas"/>
+			<DCCReference Include="..\Comum\Controller\PapelController.pas"/>
+			<DCCReference Include="..\Comum\Controller\PapelFuncaoController.pas"/>
+			<DCCReference Include="..\Comum\Controller\UsuarioController.pas"/>
+			<DCCReference Include="..\Comum\Tela\UBase.pas">
+				<Form>FBase</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\UDataModule.pas">
+				<Form>FDataModule</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\UFiltro.pas">
+				<Form>FFiltro</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\ULogin.pas">
+				<Form>FLogin</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\ULookup.pas">
+				<Form>FLookup</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\UTela.pas">
+				<Form>FTela</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\UTelaCadastro.pas">
+				<Form>FTelaCadastro</Form>
+			</DCCReference>
+			<DCCReference Include="Tela\UMenu.pas">
+				<Form>FMenu</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Comum\VO\UsuarioVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ContatoVO.pas"/>
+			<DCCReference Include="Tela\UPontoParametro.pas">
+				<Form>FPontoParametro</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\PontoParametroController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PontoParametroVO.pas"/>
+			<DCCReference Include="Controller\PontoHorarioController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PontoHorarioVO.pas"/>
+			<DCCReference Include="Tela\UPontoHorario.pas">
+				<Form>FPontoHorario</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Comum\VO\PontoRelogioVO.pas"/>
+			<DCCReference Include="Controller\PontoRelogioController.pas"/>
+			<DCCReference Include="Tela\UPontoRelogio.pas">
+				<Form>FPontoRelogio</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\PontoAbonoController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PontoAbonoUtilizacaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PontoAbonoVO.pas"/>
+			<DCCReference Include="Tela\UPontoAbono.pas">
+				<Form>FPontoAbono</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\PontoEscalaController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PontoEscalaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PontoTurmaVO.pas"/>
+			<DCCReference Include="Tela\UPontoEscala.pas">
+				<Form>FPontoEscala</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\PontoTurmaController.pas"/>
+			<DCCReference Include="Tela\UPontoBancoHoras.pas">
+				<Form>FPontoBancoHoras</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\PontoBancoHorasController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PontoBancoHorasVO.pas"/>
+			<DCCReference Include="Controller\PontoHorarioAutorizadoController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PontoHorarioAutorizadoVO.pas"/>
+			<DCCReference Include="Tela\UPontoHorarioAutorizado.pas">
+				<Form>FPontoHorarioAutorizado</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\PontoMarcacaoController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PontoMarcacaoVO.pas"/>
+			<DCCReference Include="Tela\UPontoGeracaoArquivos.pas">
+				<Form>FPontoGeracaoArquivos</Form>
+			</DCCReference>
+			<DCCReference Include="Tela\UPontoEspelho.pas">
+				<Form>FPontoEspelho</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Comum\VO\TipoAdmissaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TipoColaboradorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\UfVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\AtividadeForCliVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ColaboradorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ContabilContaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ContadorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\EmpresaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\EnderecoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FpasVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PaisVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PessoaFisicaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PessoaJuridicaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PessoaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\SetorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\SindicatoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\CargoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\NivelFormacaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\SituacaoColaboradorVO.pas"/>
+			<DCCReference Include="..\Comum\Controller\EmpresaController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\AdministrativoFormularioVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\EmpresaSessaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PontoBancoHorasUtilizacaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ViewSessaoEmpresaVO.pas"/>
+			<DCCReference Include="..\Comum\Controller\ViewSessaoEmpresaController.pas"/>
+			<DCCReference Include="Tela\UPontoClassificacaoJornada.pas">
+				<Form>FPontoClassificacaoJornada</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\PontoClassificacaoJornadaController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PontoClassificacaoJornadaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ColaboradorPessoaVO.pas"/>
+			<DCCReference Include="..\Comum\Controller\ViewColaboradorPisController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ViewColaboradorPisVO.pas"/>
+			<DCCReference Include="Tela\UPontoRegistroIncluidoAFD.pas">
+				<Form>FPontoRegistroIncluidoAFD</Form>
+			</DCCReference>
+			<DCCReference Include="Tela\UPontoTratamentoArquivoAFD.pas">
+				<Form>FPontoTratamentoArquivoAFD</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\ViewPontoMarcacaoController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ViewPontoMarcacaoVO.pas"/>
+			<DCCReference Include="Controller\ViewPontoEscalaTurmaController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ViewPontoEscalaTurmaVO.pas"/>
+			<DCCReference Include="Controller\PontoFechamentoJornadaController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PontoFechamentoJornadaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PessoaFisicaJuridicaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PlanoContaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PlanoContaRefSpedVO.pas"/>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">T2TiERPPontoEletronico.dpr</Source>
+					</Source>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1046</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\synapse.bpl">Synapse TCP/IP / Serial library (http://www.synapse.ararat.cz)</Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\PCN2.bpl">Projeto Cooperar (http://br.groups.yahoo.com/group/projeto_cooperar_nfe/)</Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\ACBrCapicom.bpl">ACBr Automação Comercial Brasil  ACBrComum   (http://acbr.sf.ne)</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

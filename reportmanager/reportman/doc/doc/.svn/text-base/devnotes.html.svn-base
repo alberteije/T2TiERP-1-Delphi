@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>Developer notes about Report Manager</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Developer</h2>
+<h3>Devoloper notes about Report Manager</h3>
+<h4>TClientDataset and BCD types, why Delphi 5 enterprise version at least need</h4>
+<p>TRpDataset (rpdataset.pas) is a TClientDataset to buffer all the datasets passed 
+  to the engine that can feature grouping, so the main dataset go forward only 
+  (support for unidirectional datasets like SQLExpress), but the engine can remember 
+  at least two records to do grouping. Somebody said me last version of some reporting 
+  engines does not allow grouping if the dataset is unidirectional...</p>
+<p>The method to implement TRpDataset is duplicate fields of new Dataset to a 
+  newly created TClientDataset (rpdataset)<br>
+</p>
+<p>Then assign fields and post the record in memory...</p>
+<p>for i:=0 to fieldcount-1 do<br>
+  fields[i].Assign(fielddefs[i]);</p>
+<p>It's a bit more complex because needs freeing memory (garbage old records)</p>
+<p>This worked fine inclusive passing opened datasets to the engine until I updated 
+  to Delphi 7, where blob fields assignements are broken, I added the function 
+  AssignField(Source,Destination), and a compiler define, active for Delphi 7 
+  (BLOBSTREAMBUG) so assignement for blobfields are patched in this function.</p>
+<p>If you find an assignment fails using a particular type (like BCD) you can 
+  patch the assignment there, send me the bugfix so I will add a compiler define 
+  for the bug and add to the main tree.</p>
+<p>BCD is a problematic type, see for example FormatVariant function in rptypes.pas.</p>
+<h4>Borland changes in TFiler in Delphi 6 and up</h4>
+<p>Borland have changed the way it stores WideStrings because Utf8 support.<br>
+  (TFiler,TWriter,TReader) since Delphi 6, so because the engine can be compiled 
+  with any version of Delphi/Builder/Kylix, WideStrings properties are written 
+  in a custom way, really they are written in the Delphi 4/5 way.<br>
+  WideString properties are TRpLabel text, Font names, etc.</p>
+<p>From classes.pas</p>
+<p>procedure TWriter.WriteWideString(const Value: WideString);<br>
+  var<br>
+  L: Integer;<br>
+  Utf8Str: UTF8String;<br>
+  begin<br>
+  Utf8Str := Utf8Encode(Value);<br>
+  if Length(Utf8Str) &lt; (Length(Value) * SizeOf(WideChar)) then<br>
+  WriteMinStr(Value, Utf8Str)<br>
+  else<br>
+  begin<br>
+  WriteValue(vaWString);<br>
+  L := Length(Value);<br>
+  Write(L, SizeOf(Integer));<br>
+  Write(Pointer(Value)^, L * 2);<br>
+  end;<br>
+  end;</p>
+<p>This causes a incompatibility with earlier versions of Delphi.</p>
+<p>The workaround is a to store all the widestring properties as <br>
+  special properties defined in DefineProperties of each report <br>
+  streamable component, and write and read the widestrings using the <br>
+  old Delphi 5 method.</p>
+<p>This problem was fixed in 1.2 version.</p>
+<h4>The horrible bug in Delphi 7 about TComboBox (VCL) empty items</h4>
+<p>Delphi 7 has a horrible bug, when you place a TCombobox in a form, with a empty 
+  selectable item (csDropDownList), at run time, selecting this item the application 
+  will crash (Win9x), or raise an exception in ntdll (WinNT) or work correctly 
+  (WinXP).</p>
+<p>A patch for this issue is expected in a service pack, but for now all the empty 
+  selectable items of comboboxes are replaced with a a space (' ') to solve this 
+  issue. For your convenience the engine also includes a patch unit (D7GetComboBoxStringsPatch.pas) 
+  for your projects</p>
+<p><b>The Open/Save dialog Windows CLX bug since Delphi 7</b></p>
+<p>Delphi 7 has another horrible bug in CLX Open/Save Dialogs, a 'Drive C: not 
+  found' exception is raised if you try to select a file that is not in the root 
+  dir, but only in Win9x systems, in WinNT/XP works ok. Because for windows a 
+  pure VCL version is provided (repmandxp.exe) I don't worry about this issue 
+  but if you find a workaround feel free to send me it. You can reproduce it compiling 
+  repmand.exe for Windows and saving files in Windows 9x OS.</p>
+<p><b>BiDi Support </b></p>
+<p>Bidi support is now implemented allowing each label to have a diffetent value 
+  for each language, here are the comments about the user introducing the main 
+  idea. </p>
+<p><b>(ez_bikbon@hotmail.com)</b></p>
+<p>INTRODUCTION<br>
+  ------------------------</p>
+<p>I think that you should not bother yourself too much with providing<br>
+  full BiDi support within RepMan. Instead, you should do what Delphi<br>
+  controls do - let Windows API do the work. I'll explain in a little<br>
+  more detail.</p>
+<p>There are many small details surrounding BiDi, but all of them can be<br>
+  grouped into two major problems: BiDi layout, and BiDi text input/output.</p>
+<p>BIDI LAYOUT<br>
+  ------------------------</p>
+<p>The layout problem is a bit complicated, becuase everything has to be<br>
+  calculated in reverse. For example, when you create a right-to-left<br>
+  (RTL) drop down field, you need to:<br>
+  1. Place the field label to the right of the input box.<br>
+  2. Place any drop down icon to the left of the field.<br>
+  3. Draw the drop-down box aligned to the right of the input box.</p>
+<p>However, BiDi layout is NOT IMPORTANT for printed reports. Reports are<br>
+  mostly made of text objects and the positioning of is easily<br>
+  determined at design time.</p>
+<p>Of course that having full BiDi layout support is nice, and my guess<br>
+  is that it will not be very difficult to implement. But even without<br>
+  it, most users will be able to create right-aligned reports quite easily.</p>
+<p>BIDI TEXT<br>
+  ------------------------</p>
+<p>The other BiDi problem is correct input and output of text. We can<br>
+  ignore the input, becuase report objects are for output only.</p>
+<p>Fortunately, this should be VERY easy to solve, becuase you can<br>
+  duplicate Delphi's text output methods. Actually Delphi only calls the<br>
+  Windows API with the required parameters, and Windows does the work.</p>
+<p>POSSIBLE SOLUTIONS<br>
+  ------------------------</p>
+<p>I think that adding BiDi text output should be really easy. Probably<br>
+  all you need to do is:</p>
+<p>1. Add BiDiMode and ParentBiDiMode properties (and some related<br>
+  methods) to the report objects. You can look at an example in Delphi<br>
+  source code for TControl in unit Controls.</p>
+<p>2. Duplicate the way Delphi controls call DrawText - I think that you<br>
+  only need to add a flag depending on the BiDiMode property. You can<br>
+  look at an example in Delphi source code for TLabel in unit StdCtrls.</p>
+<p>Another approach can require more work now, but may be better in the<br>
+  long run: make RepMan objects descendants of Delphi controls, such as<br>
+  TLabel, and use their output methods. This way your code will benefit<br>
+  from future improvements to Delphi, like Unicode support.</p>
+<p>WINDOWS vs. LINUX<br>
+  ------------------------</p>
+<p>The only remaining issue is compatability between Windows and Linux. </p>
+<p>As I mentioned, Delphi uses the underlying OS (or graphics library)<br>
+  for BiDi text input and output. The VCL libraries call the Windows API<br>
+  which has full BiDi capabilities.</p>
+<p>Unfortunately the QT library does not support BiDi, so at the moment<br>
+  Delphi-CLX (and Kylix) don't support BiDi. (The most recent versions<br>
+  of QT do have BiDi, but Delphi's CLX is built on older versions.)</p>
+<p>So CLX/Kylix compatability is not relevant at the moment, because<br>
+  there's no way to create BiDi applications at all with QT, so there's<br>
+  no point to worry about the reports...</p>
+<p>CONCLUSION<br>
+  ------------------------</p>
+<p>Out of two major issues, the big one (BiDi layout) is not really a<br>
+  problem for reports, and the smaller one (BiDi text output) can be<br>
+  solved easily.</p>
+<p>I do hope very much that you decide to enable BiDi, and I will be glad<br>
+  to test it for you and help you make it work. If indeed RepMan will<br>
+  support BiDi, then I intend to purchase a copy, and I will also help<br>
+  you add further features such as Hebrew translation, BiDi layout, etc.</p>
+<p>Regards,</p>
+<p>EZ.</p>
+<p>&nbsp;</p>
+</body>
+</html>

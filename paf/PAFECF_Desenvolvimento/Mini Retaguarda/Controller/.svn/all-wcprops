@@ -1,0 +1,299 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/t2tierp_delphi_pafecf/!svn/ver/380/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller
+END
+NfeCabecalhoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/NfeCabecalhoController.pas
+END
+EmpresaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/t2tierp_delphi_pafecf/!svn/ver/368/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/EmpresaController.pas
+END
+ProdutoPromocaoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/ProdutoPromocaoController.pas
+END
+SetorController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/SetorController.pas
+END
+PedidoCompraDetalheController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/PedidoCompraDetalheController.pas
+END
+ParcelaReceberController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/ParcelaReceberController.pas
+END
+PessoaEnderecoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/PessoaEnderecoController.pas
+END
+FichaTecnicaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/FichaTecnicaController.pas
+END
+MeiosPagamentoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/MeiosPagamentoController.pas
+END
+LancamentoReceberController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/LancamentoReceberController.pas
+END
+ContadorController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/t2tierp_delphi_pafecf/!svn/ver/368/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/ContadorController.pas
+END
+NotaFiscalDetalheController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/NotaFiscalDetalheController.pas
+END
+EcfResolucaoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/EcfResolucaoController.pas
+END
+EcfConfiguracaoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/EcfConfiguracaoController.pas
+END
+PlanoContasController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/PlanoContasController.pas
+END
+BancoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/BancoController.pas
+END
+ParcelaPagarController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/ParcelaPagarController.pas
+END
+TalonarioChequeController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/TalonarioChequeController.pas
+END
+NotaFiscalController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/NotaFiscalController.pas
+END
+ParcelaRecebimentoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/ParcelaRecebimentoController.pas
+END
+EcfTurnoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/EcfTurnoController.pas
+END
+UnidadeProdutoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/t2tierp_delphi_pafecf/!svn/ver/376/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/UnidadeProdutoController.pas
+END
+EcfPosicaoComponentesController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/EcfPosicaoComponentesController.pas
+END
+AgenciaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/AgenciaController.pas
+END
+TipoDocumentoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/TipoDocumentoController.pas
+END
+NFeConfiguracaoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/NFeConfiguracaoController.pas
+END
+PessoaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/t2tierp_delphi_pafecf/!svn/ver/374/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/PessoaController.pas
+END
+CargoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/CargoController.pas
+END
+ProdutoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/t2tierp_delphi_pafecf/!svn/ver/355/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/ProdutoController.pas
+END
+LancamentoPagarController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/LancamentoPagarController.pas
+END
+NfeDetalheController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/NfeDetalheController.pas
+END
+EcfImpressoraController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/EcfImpressoraController.pas
+END
+ParcelaPagamentoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/ParcelaPagamentoController.pas
+END
+ImpostoIcmsController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/t2tierp_delphi_pafecf/!svn/ver/362/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/ImpostoIcmsController.pas
+END
+PedidoCompraController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/PedidoCompraController.pas
+END
+CepController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/CepController.pas
+END
+CargaFuncionarioController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/CargaFuncionarioController.pas
+END
+ChequeController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/ChequeController.pas
+END
+ContaCaixaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/ContaCaixaController.pas
+END
+SintegraController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/SintegraController.pas
+END
+NcmController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/t2tierp_delphi_pafecf/!svn/ver/359/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/NcmController.pas
+END
+ExportaTabelasController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/t2tierp_delphi_pafecf/!svn/ver/376/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/ExportaTabelasController.pas
+END
+Controller.pas
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/Controller.pas
+END
+TipoEnderecoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/TipoEnderecoController.pas
+END
+FechamentoCaixaBancoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/FechamentoCaixaBancoController.pas
+END
+SituacaoPessoaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/SituacaoPessoaController.pas
+END
+MovimentoCaixaBancoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/MovimentoCaixaBancoController.pas
+END
+CfopController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/t2tierp_delphi_pafecf/!svn/ver/377/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/CfopController.pas
+END
+UsuarioController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/t2tierp_delphi_pafecf/!svn/ver/351/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Controller/UsuarioController.pas
+END

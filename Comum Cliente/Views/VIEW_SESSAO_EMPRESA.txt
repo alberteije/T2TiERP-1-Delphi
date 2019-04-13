@@ -1,0 +1,10 @@
+CREATE
+VIEW t2tierp.VIEW_SESSAO_EMPRESA
+AS
+(
+select 
+   EP.ID_EMPRESA, EP.ID_PESSOA, E.RAZAO_SOCIAL
+from
+   empresa_pessoa ep
+   inner join empresa e on (ep.id_empresa = e.id)
+)

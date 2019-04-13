@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>Building Report Manager Designer and tools</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Developer</h2>
+<h3>Building Report Manager Designer and tools</h3>
+<p>Here is a detailed explanation on how to build Report Manager binaries.</p>
+<p>If you build and distribute Report Manager binaries you must report that it's 
+  another version, you can change the version (rpmdconts.pas), this is because 
+  obvious practical reasons.</p>
+<p><b>Required tools</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Windows</b></td>
+    <td bgcolor="#FFFFCC"><b>Linux</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <p><a href="http://www.borland.com/delphi" target="_blank">Delphi 6/7 Professional</a></p>
+      <p>Enterprise version is required for translation manager features</p>
+    </td>
+    <td><a href="http://www.borland.com/kylix" target="_blank">Kylix 2/3 Professional</a>, 
+      open edition is reported to compile also previous installation of the FreeCLX</td>
+  </tr>
+  <tr> 
+    <td><a href="http://www.innosetup.com" target="_blank">InnoSetup</a> 
+      2.019 to build autoinstallable executable</td>
+    <td>GNU Makefile to build the distributable tar.gz package, this tool is usually 
+      provided by all linux distributions</td>
+  </tr>
+  <tr> 
+    <td><a href="http://www.wincvs.org" target="_blank">CVS</a> to 
+      obtain the source also SSH to contribute actively in the project.</td>
+    <td>CVS client and SSH client are provided in most linux distributions and 
+      is installed by default if developer workstation installation is selected 
+      (Red Hat,Suse,Mandrake...)</td>
+  </tr>
+</table>
+<p>The following steps are for building Report Manager from Delphi/Kylix IDE. 
+  You can also <a href="#commandline">build the packages from the command line</a>.</p>
+<h3>Building Report Manager from the IDE</h3>
+<p><b>1.Install Report Manager packages</b></p>
+<p>Install all Report Manager packages, follow instructions for <a href="delphicomp.html">Delphi</a> 
+  and <a href="kylixcomp.html">Kylix</a>.</p>
+<p><b>2.Update language resources(Windows only)</b></p>
+<p>If you modified the resources (forms,resourcestrings) the language resources 
+  must be updated.</p>
+<p>You can omit this step, but don't distribute the repman\transwin\repmand.* 
+  and repman\transwin\repmandxp.* because are old resource libs.</p>
+<p> Only repmand.dpr an repmandxp.dpr must be updated.</p>
+<p>Open repman\repmand.dpr and select Project-Languages-Update Resource DLLs</p>
+<p>Open repman\repmandxp.dpr and select Project-Languages-Update Resource DLLs</p>
+<p></p>
+<p>Open repman\metaview.dpr and select Project-Languages-Update Resource DLLs</p>
+<p>Open repman\metaviewxp.dpr and select Project-Languages-Update Resource DLLs</p>
+<p></p>
+<p></p>
+<p>After that you can translate the strings you added.</p>
+<p>Build the resources for all languajes then copy them to repman\transwin directory.</p>
+<p><b>3.Build the applications</b></p>
+<p>Windows have two versions of various applications (Qt dependent and Pure VCL), 
+  because Qt draws controls in a custom way does not look like standard Windows 
+  apps, Pure VCL applications (marqued here as xp) looks like all other applications 
+  specially in XP or .Net versions.</p>
+<p>You must open and compile the following project groups:</p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Windows</b></td>
+    <td bgcolor="#FFFFCC"><b>Linux</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <p>repman\reportman.bpg</p>
+    </td>
+    <td>repman\reportman.bpg</td>
+  </tr>
+  <tr> 
+    <td>repman\reportmanxp.bpg</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p><b>4.Build installation packages</b></p>
+<p>After executable applications are build, you can build the distributable packages 
+  to easy install Report manager designer in other computers.</p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Windows</b></td>
+    <td bgcolor="#FFFFCC"><b>Linux</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <p>Open install\reportman.iss with Innosetup if you want all the versions 
+        (Qt and no Qt)</p>
+    </td>
+    <td> 
+      <p><code>cd tests\repmand</code></p>
+      <p><code>make clean</code></p>
+      <p><code>make</code></p>
+      </td>
+  </tr>
+  <tr> 
+    <td>Open \install\reportman.iss with Innosetup if you want the 
+      applications without qt dependences (the docs are also removed because are 
+      internet enabled)</td>
+    <td>Note: Edit GNUmakefile in \tests\repmand and specify your path to Kylix 
+      installation</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><b>5. Distribution of source packages for Linux and Delphi</b></p>
+<p>To distribute the installable packages it's recommended to use Windows because 
+  source code compatibility with Delphi 5/Builder 4 (MSDOS style line ends)</p>
+<p>Go to the main tree in a console window and with borland make in the path type</p>
+<p>make clean</p>
+<p>This will delete any dcus, dpus innecessary files (warning also cleans the 
+  executables)</p>
+<p>Zip all the files in one and it's done.</p>
+<h3><a name="commandline"></a>Building Report Manager from the command line</h3>
+<p>To build Report Manager from the command line in <b>Windows you must have Borland</b> 
+  make in the path (not GNU make), for Linux GNU make is used.</p>
+<p>Start a terminal window (command prompt in Windows) and cd to main reportman 
+  directory, that is the directory containing the .dpk files GNUmakefile(Linux) 
+  and Makefile (Windows).</p>
+<p>Edit <i>GNUmakefile</i> (Linux) or <i>Makefile</i> (Windows) and set Borland 
+  Delphi path or Kylix path enviroment variables to correct paths.</p>
+<p>Enter:</p>
+<p>make all</p>
+<p>All the packages and command line tools will be compiled.</p>
+<p>If you want to compile only packages you can write make packages or <i>make 
+  reportman</i> to compile only executables, see available options by opening 
+  the file <i>GNUmakefile</i> in Linux or <i>Makefile</i> in Windows.</p>
+<p>The command <i>make clean</i> will delete all generated executables and compiled 
+  files.</p>
+</body>
+</html>

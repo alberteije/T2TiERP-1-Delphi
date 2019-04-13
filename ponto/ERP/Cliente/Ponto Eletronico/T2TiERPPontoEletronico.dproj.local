@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012/11/07 19:09:47.028.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Ponto Eletronico\Tela\UPontoMarcacao.pas=</Transaction>
+    <Transaction>2012/11/07 19:09:47.028.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Ponto Eletronico\Tela\UPontoMarcacao.dfm=</Transaction>
+    <Transaction>2012/11/08 16:23:03.788.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Ponto Eletronico\ACBrPonto\ACBrPonto_AFD.pas=</Transaction>
+    <Transaction>2012/11/08 16:23:15.615.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Ponto Eletronico\ACBrPonto\ACBrPonto_AFD_Class.pas=</Transaction>
+    <Transaction>2012/11/08 16:23:22.441.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Ponto Eletronico\ACBrPonto\ACBrPonto_AFDT_Class.pas=</Transaction>
+    <Transaction>2012/11/08 16:23:28.069.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Ponto Eletronico\ACBrPonto\ACBrPonto_AFDT.pas=</Transaction>
+    <Transaction>2012/11/08 19:30:15.519.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Ponto Eletronico\Unit1.pas=C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Ponto Eletronico\Tela\UPontoRegistroIncluidoAFD.pas</Transaction>
+    <Transaction>2012/11/08 19:30:15.519.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Ponto Eletronico\Unit1.dfm=C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Ponto Eletronico\Tela\UPontoRegistroIncluidoAFD.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

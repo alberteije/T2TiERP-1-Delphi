@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>TeeChart support</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Advanced report design</h2>
+<h3>TeeChart support</h3>
+
+<p>The chart component of Report Manager engine has a Driver property, you can 
+  select the desired driver, the default driver will choose the best available
+  driver, that is TeeChart if you enabled it.</p>
+<h4>Enabling TeeChart</h4>
+<p>If you compile the engine, by default does not enable TeeCharts. To enable TeeChart you must
+  modify rpconf.inc file and enable it:</p>
+<p>{$DEFINE USETEECHART}</p>
+<p> TeeChart is a powerful component included in Delphi (Windows, TeeChart standard
+  edition) since early versions. Unfortunatelly, TeeChart is not provided in Kylix.</p>
+<p>You can purchase TeeChart Pro from <a href="http://www.steema.com" target="_blank">Steema
+  corporation</a>, it's also available for Kylix.</p>
+<h4>TeeChart limitations</h4>
+<p>When you enable TeeChart compilation, the engine uses VCL TeeChart version
+  in Windows (Delphi), and CLX version in Kylix. You must recompile all the packages
+  because TeeChart introduces new dependences to the base package, so after enabling
+  TeeChart, you can't use the Report Manager engine without an X Server running
+  in Linux.</p>
+<p>Many of the properties of the chart component of the Report Manager engine
+  are related only to TeeChart (perspective, rotation..), the native chart driver
+  only support lines, but it's very fast and don't have any CLX or VCL dependences
+  (ideal for console or web applications). </p>
+<p>TeeChart generates bitmaps in a selected bitmap resolution, so they are stored as
+  a bitmap inside the processed report (pdf or metafile), it's not vectorized,
+  and the generated report can be bigger and slower to print.</p>
+<p>TeeChart is enabled in provided binaries, the exception are printreptopdf
+  and repwebexe commmand line tools because they don't need a X-Server running,
+  if you want to display <b>beautiful charts you need to enable TeeChart</b>.</p>
+</body>
+</html>

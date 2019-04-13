@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>PDF Output</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Developer</h2>
+<h3>Adobe PDF output</h3>
+<p>Native pdf output is implemented, you may experiment that the pdf output is 
+  lighting fast compared to Acrobat Distiller and other print drivers that output 
+  pdf, this is because the translation is done directly from Report Manager native 
+  format to Adobe PDF format.</p>
+<p>To enable truetype font embedding in a report, at the designer select Edit-&gt;Select 
+  all texts, then at object inspector select Truetype font option in PDF Font 
+  property. </p>
+<p>But you may take consideration the following issues and limitations:</p>
+<ul>
+  <li>Unicode is  supported only if the original font supports unicode </li>
+  <li>True type font linking and embedding is available from version 2.2, but 
+    see bellow details of the implementation.</li>
+  <li>Only Jpeg and Windows Bitmap image formats are supported.</li>
+  <li>Compression is available, and used by default, but some pdf viewers does 
+    not read PDF compressed files, the official Adobe PDF reader does not have 
+    such problems.</li>
+  <li>Composite fonts and CID Fonts are not supported, that is are supported but 
+    PDF output processed as single fonts.</li>
+  <li>The engine is faster and the file is smaller if you use standard Type 1 
+    fonts (Courier/Times/Helvetica)</li>
+  <li>The TrueType font embedding enlarges the file size of the PDF file. Better 
+    optimization is hard to done (remove unused glyphs for example). You can use 
+    TrueType font linking if you know the destination computers have the font 
+    installed. </li>
+</ul>
+<p><strong>Linux and Windows, different technologies, different implementation</strong></p>
+<p>Microsoft Windows already have a font cache, that is any application can ask 
+  information about installed fonts, including obtaining the entire font file 
+  (to be embedded), also the operating system will search the most appropiate 
+  font when the original font is not available (font matching). Implementation 
+  works for TrueType and OpenType fonts, but some fonts can not be embedded (I 
+  didn't found anyone), that is the API does not allow to get font data for that 
+  fonts (maybe distribution license issues?)</p>
+<p>Linux does not have a standard font service in the operating system itself, 
+  instead of this it has libraries that provides some services, and of course 
+  there is the X library.</p>
+<p><strong>The X client library</strong></p>
+<p>There are funtions in the X protocol to retrieve sizing infomation about installed 
+  fonts (in the server), but this information is not complete, and there is no 
+  way to retrieve full font data (the font file), some work have been done, there 
+  is a project called X print server in early stages, this requires the installation 
+  of a X print server process, and X print client libraries, but this is not the 
+  good way.</p>
+<p>There is also a font information library Xft, the good thing is that it can 
+  work optionally with font servers, the bad thing is that does not provide enought 
+  information (font file data). Anyway it depends on a running X server (bad thing 
+  for console applications).</p>
+<p>Applications like OpenOffice take the font information from the computer executing 
+  the X client program not the X server so the X server protocol probably does 
+  not allow to work with sever side installed fonts.</p>
+<p>Another library providing font services Fontconfig, font config provides font 
+  informantion and font matching services, but does not provide enought information 
+  (char sizes and full font data), it's designed as very basic font information 
+  system.</p>
+<p>But a great <strong>library is usually available in Linux systems, <a href="http://freetype.sourceforge.net">freetype 
+  library</a></strong>, Report Manager implementation is done using the version 
+  2.1.8, but it's compatible with 2.X version, <strong>you will find it as freetype2 
+  in your linux distribution </strong>, and the <strong>shared object needed is 
+  libfreetype.so</strong>. Usually is installed by default, probably minimal console 
+  Linux installations does not install it, Report Manager will need it only if 
+  you use TrueType font embedding or linking.</p>
+<p>Because freetype allows the access to Type1 fonts information, <strong>the 
+  Type1 fonts can be also used in a pdf but only linking is available</strong>, 
+  because of the requirements of PDF specification there is additional work to 
+  embed Type1 fonts.</p>
+<p>Unfortunatelly the freetype library does not implement font maching (and font 
+  information file catching), bug at least it can provide full information about 
+  font files, also extended information and can also render fonts. So simple font 
+  matching is done in code at Report Manager engine.</p>
+<p>Report Manager <strong>uses /etc/fonts/fonts.conf file to search for font directories</strong>, 
+  the font information is cached the first time a TrueType font embedding is required, 
+  but to retrieve this information costs reading all font files and get information 
+  about the fonts (font names, styles...) to perform font maching. This process 
+  is done once, but it's expensive when you execute only one report (printreptopdf 
+  command line tool for example). Note that this overhead will not appear if you 
+  don't embbed PDF fonts. Depending on the number of fonts you have installed 
+  it will be not noticeable. </p>
+<p>The good thing is that <strong>you don't need a X server</strong> generate 
+  the pdfs with TrueType embedding.</p>
+<p>The font maching algorith inside Report Manager is really simple, search for 
+  the same family name and style, else search for a similiar family name, else 
+  get a default font and apply the style. Note that Fontconfig does not force 
+  font maching to his own unique way like Microsoft Windows do (give few options), 
+  but you must provide preferences about the most important features of the font 
+  to match. Maybe a future enhacement to use FontConfig for font matching but 
+  for now it only adds a dependence to enhace a little the matching algorithm 
+  (maybe only font information caching is only the reason to use it).</p>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Successfull projects</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Successfull Projects</h2>
+<p>This comments have been provided by users and companies using Report Manger 
+  in their work or software implementations</p>
+<table border="1">
+  <tr> 
+    <td><strong>Associated Veterinary Services</strong><br>
+      Implementation Begin: 05/01/2003<br>
+      Implementaiton Working Since: 11/01/2003 <p>Report Manager was part of a 
+        succesfull migration from Paradox under BDE and Crystal Reports to a new 
+        application using FireBird under IBX and Report Manager, it is use to 
+        do reciepts, historys, rabies tags, and payroll management reports. The 
+        server database is FireBird 1.03 running on a 800mhz Linux computer with 
+        one gig of ram and two 10,000rpm scsi drives. the client operating system 
+        is a mixture of windows 98, windows me, and windows 2k.</p>
+      <p>Jacob Alberty,January 22th, 2004, Associated Veterinary Services USA, 
+        calberty@cox.net</p>
+      </td>
+  </tr>
+  <tr> 
+    <td><p><strong>AMNET, Cable TV company</strong></p>
+      <p>Since 2 years we have looking for a good reporting tool that can be used 
+        in both Windows and Linux environment. Since we found RM we've solved 
+        all our problems of compatibility. Now we can deploy the reports that 
+        our internal users need. In the past we used to develop our reports in 
+        QR/FR but RM is the best tool I ever known, we are happy in our IT department 
+        because It let us forget about the painfull work of coversion. By the 
+        way, we develop in Delphi 7 / Kylix 3 and use RM v1.6. , INTERBASE v6 
+        on linux server. Win98/2000 and Linux RedHat/Mandrake in WK.<br>
+        <br>
+        Steiger Pizarro, January 22th, 2004<br>
+        Grupo AMNET, Costa Rica<br>
+        spizarro@amnet.co.cr<br>
+        <a href="http://www.amnet.co.cr">http://www.amnet.co.cr</a><br>
+      </p></td>
+  </tr>
+  <tr> 
+    <td><p><strong>VSO MicroLab - Laboratory Reports Management System</strong></p>
+      <p>This application manages and prints the Patients Tests Requisition Slips. 
+        It will also print reports of the tests for Bio-chemistry, Hematology, 
+        Lipid Profile, Micro-Biology, Stool Examination, Sugar Profile and Urine 
+        Analysis.</p>
+      <p>Some of the test are as follows: Liver Function Test, Renal Function 
+        Test, Cardiac Profile, Amylase, Electrolytes, HB, TC, DC, ESR, BT CT, 
+        TBT, FNAC, Histo-Pathology, Urine Routine Micro, BSBP, Acetone, Pregnancy, 
+        Semen Analysis, and others.</p>
+      <p>Mr. Bhavbhuti Nathwani<br>
+        Venus Software Operations</p>
+      <p>Softwares for Indian Businesses at:<br>
+        <a href="http://ahmedabad.sancharnet.in/vso_ad1/">http://ahmedabad.sancharnet.in/vso_ad1/</a> 
+        <br>
+        venussoftop@postmark.net<br>
+        venussoftop@hotpop.com<br>
+        venussoftop@mail.ru<br>
+        vso_ad1@sancharnet.in</p>
+      </td>
+  </tr>
+</table>
+<h3>&nbsp;</h3>
+</body>
+</html>

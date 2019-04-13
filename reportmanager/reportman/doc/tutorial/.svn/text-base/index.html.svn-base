@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>Official Report Manager Tutorial</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<frameset cols="155,415*" frameborder="NO" border="0" framespacing="0" rows="*"> 
+  <frame name="leftFrame" noresize src="left.html" frameborder="YES" bordercolor="#000000">
+  <frame name="mainFrame" src="right.html" frameborder="YES" bordercolor="#000000">
+</frameset>
+<noframes></noframes>
+
+</html>

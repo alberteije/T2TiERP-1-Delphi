@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Barcode printing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Advanced report design</h2>
+<h3>Barcode printing</h3>
+
+<h4>Barcode limitations</h4>
+<p>In Linux, the qt library (version 2.3) have only a resolution of 100dpi (dots 
+  per inches) so with some printer drivers the barcodes printed are not readable, 
+  that is because the rectangles of the barcode are slightly bad positioned because 
+  this low resolution. If you export the report to Adobe PDF format and print 
+  them using Adobe Acrobat Reader you will obtain better quality. You can try 
+  to use other printer driver or change the module of the barcode (size of the 
+  narrowest rectangle). You can also try to install latest CUPS drivers, it's 
+  reported to work better.</p>
+<p><b>Barcodes supported and comments</b>:</p>
+<table width="100%" border=1>
+  <tbody> 
+  <tr> 
+    <td><b>Type</b></td>
+    <td><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <p>bcCode_2_5_interleaved, bcCode_2_5_industrial, bcCode_2_5_matrix, bcCodeITF14</p>
+    </td>
+    <td>2 of 5 code family, supports all properties, this code allow an unlimited 
+      number of digits</td>
+  </tr>
+  <tr> 
+    <td>bcCode39, bcCode39Extended</td>
+      <td>Code39 Family, supports all properties, this code allow an unlimited 
+        number of alphanumeric characters, the barcode with is wider than other 
+        that only supports digits, if Calc.Checksum is set an additional character 
+        checksum is added, the start and stop characters (*) are automatically 
+        added. </td>
+  </tr>
+  <tr> 
+    <td>bcCode128A, bcCode128B, bcCode128C, bcCode128</td>
+    <td> 
+      <p>Code 128 family, A and B allow alphanumeric coding, the B allow also 
+        lowercase chars. The C allow only numeric values but gerenerates the narrowest 
+        barcode. The bcCode128 generates a B and C mixed barcode, full optimized, 
+        so a code like 234534AB generates a 128C segment and a 128B segment, so 
+        the barcode is 50% smaller than using 128B.</p>
+      <p>To generate EAN128 valid codes you must use the application fields and 
+        separator digits, you can use the 102 code or any char with a ascii code 
+        greater than 102 to represent a separator digit, a EAN128 code always 
+        begins with a separator, a sample:</p>
+      <p>#102+'10896021'+#102+'21456738XABT'</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>bcCode93, bcCode93Extended</td>
+    <td>Code93 family, alphanumeric barcodes</td>
+  </tr>
+  <tr> 
+    <td>bcCodeMSI</td>
+    <td>MSI barcodes, only digits</td>
+  </tr>
+  <tr> 
+    <td>bcCodePostNet</td>
+    <td>Postnet barcode, only digits</td>
+  </tr>
+  <tr> 
+    <td>bcCodeCodabar</td>
+    <td>Codabar barcode, digits, and A..D letters and some simbols</td>
+  </tr>
+  <tr> 
+    <td>bcCodeEAN8, bcCodeEAN13</td>
+    <td>European EAN barcodes, the last digit is a checksum and can be calculated 
+      if Calc.Checksum property is set</td>
+  </tr>
+  </tbody>
+</table>
+<p><b>The Ratio property</b></p>
+<p>Valid ratio values are between 2.0 and 3.0, except for 2_5_matrix between 2.25 
+  and 3.0. Usually the ratio is 2.0 and it's adjusted to 2.25 on 2_5_matrix. Larger 
+  the ratio value wider the barcode output.</p>
+<p><b>Calc.Checksum property</b></p>
+<p>Only has effect on EAN8,EAN13 and Code39 barcodes.</p>
+<p><b>Modul</b></p>
+<p>The Modul property is used to build the barcode as the size of the narrowest 
+  bar. </p>
+<p><b>Rotation property</b></p>
+<p>You can rotate the barcode by a square angle, this property is in degrees.</p>
+</body>
+</html>

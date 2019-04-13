@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Units documentation - rpvgraphutils.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpvgraphutills.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>CLX to GDI conversion routines, </b>this includes page 
+  size conversion, color, font styles, also other functions implemented by the 
+  CLX library but not in VCL.</p>
+<h4>Types</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TGDIPageSize</td>
+    <td>Record containing information for Windows GDI page size</td>
+  </tr>
+</table>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TPrinterForm</td>
+    <td>TObject</td>
+    <td>Object with form information in Windows format (Form_info_1)</td>
+  </tr>
+</table>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>procedure DrawBitmap (Destination:TCanvas; Bitmap:TBitmap; Rec,RecSrc:TRect); 
+    </td>
+    <td>Draws a bitmap</td>
+  </tr>
+  <tr> 
+    <td>procedure DrawBitmapMosaic (canvas:TCanvas; rec:TRect; bitmap:TBitmap); 
+    </td>
+    <td>Draws a bitmap with mosaic effect</td>
+  </tr>
+  <tr> 
+    <td>procedure DrawBitmapMosaicSlow (canvas:TCanvas; rec:Trect; bitmap:TBitmap); 
+    </td>
+    <td>The same but only for printer and screen</td>
+  </tr>
+  <tr> 
+    <td>function GetPhysicPageSizeTwips:TPoint;</td>
+    <td>Page size</td>
+  </tr>
+  <tr> 
+    <td>function GetPageSizeTwips:TPoint;</td>
+    <td>Page size</td>
+  </tr>
+  <tr> 
+    <td>function GetPageMarginsTWIPS:TRect;</td>
+    <td>Page margins</td>
+  </tr>
+  <tr> 
+    <td>function QtPageSizeToGDIPageSize (qtsize:TPageSizeQt):TGDIPageSize;</td>
+    <td>Page size conversion</td>
+  </tr>
+  <tr> 
+    <td>function FindIndexPaperName (device, name:string):integer;</td>
+    <td>Printer index</td>
+  </tr>
+  <tr> 
+    <td>procedure SetCurrentPaper (apapersize:TGDIPageSize);</td>
+    <td>Get current paper</td>
+  </tr>
+  <tr> 
+    <td>procedure SendControlCodeToPrinter (S: string);</td>
+    <td>Sends raw data to printer</td>
+  </tr>
+  <tr>
+    <td>procedure JPegStreamToBitmapStream (AStream:TMemoryStream);</td>
+    <td>Converts a Jpeg to bitmap</td>
+  </tr>
+</table>
+</body>
+</html>

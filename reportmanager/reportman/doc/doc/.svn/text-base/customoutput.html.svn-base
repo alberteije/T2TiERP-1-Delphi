@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Custom text output</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Advanced report design</h2>
+<h3><b>Custom text output</b></h3>
+<p>Custom text output allow to generate customized text files with information 
+  inside the report. For each expression you can define a Export Expression, formating 
+  with Export Display format.</p>
+<p>Because the output will be a text file, you can specify the line number (Export 
+  Line), if you set this property to 0, the current line will be used. The Export 
+  Position property will place the text in the specified position inside the line, 
+  ans Export Size will specify the size of the text, blanks will be added to fill 
+  the size.</p>
+<p>The property Export New Line, will generate a new line after exporting the 
+  element, current line is always the last line of the text. You can control the 
+  export order by using bring to front and send to back buttons at the designer, 
+  so when you define the last element of a line you should push the bring to front 
+  button, so it's exported the last of the current section.</p>
+<p>See <a href="refexpression.html">Expression reference</a> for more information.</p>
+</body>
+</html>

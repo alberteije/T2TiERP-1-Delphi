@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+<head>
+  <title>Report Manager - Dot net version</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head>
+<body>
+<h2>Report Manager for Dot Net</h2>
+<h3><b>Basics</b></h3>
+<p>The dot net version of Report Manager is a full translation from Delphi to C# of 
+  the reporting engine. The port to dot net is near completion but requires still 
+  some work. Libraries are provided so you can link easily your reports with your 
+  application. The .net por tof the Report Designer is not completed, so, the design and test of ther reports must be done with native Win32 database drivers </p>
+<p><strong>How to design reports for .Net</strong></p>
+<p>Design the report normally but:</p>
+<ul>
+  <li> Set at page setup, options tab the prefered save method to XML or XML compressed. The .net runtime read and save the reports in this new formats.</li>
+  <li>There are small diferences, for example when executing in .net, the fortmat property for dates will behave like in .Net framework so the M represents the month and the m the minutes, and the H is the 24 hour format hour.</li>
+  <li>For linked querys, the parameters of the child dataset must be defined in Parameters definition and must be assigned to the child dataset.</li>
+</ul>
+<p><strong>Missing parts</strong></p>
+<ul>
+  <li>Output as csv.</li>
+  <li>Report Designer </li>
+  <li>Some barcodes still missing, charting not implemented </li>
+</ul>
+<p><strong>Different behaviour</strong></p>
+<ul>
+  <li>In odbc provider you use ? for placing parameters, the parameters will be 
+    assigned by position, not by name, parameters by name are not supported by 
+    odbc dot net driver, so make sure to sort the parameters to match query position 
+    when you use odbc.</li>
+</ul>
+<p><strong>Using the library</strong></p>
+<p>To use the libraries provided, you should include a reference to them in your 
+  project. It' better if you include the .csproj to your project and then a reference to that project so you can debug any problem deeper. </p>
+<p><a href="../docnet/index.html">Documentation 
+  is available</a> but still incomplete.</p>
+<p>This is sample code to execute a report, a portion of the sample provided testinglib.exe.</p>
+<p>using Reportman.Drawing;
+  <br>
+  </br>
+using Reportman.Drawing.Forms;<br></br>
+using Reportman.Reporting;<br></br>
+using Reportman.Reporting.Forms;<br></br>
+</p>
+<p> Report rp=new Reportman.Report();<br>
+rp.LoadFromFile(EFile.Text);</p>
+<p>// Set the provider factory for each database, user the invariant name of the factory (defined in mahine.config) </p>
+<p> rp.DatabaseInfo[0].ProviderFactory = &quot;YourDatabasefactory&quot;; <br>
+</p>
+<p>// As an alternative you can provide an already stablished connection and transaction </p>
+<p>//  rp.DatabaseInfo[0].Connection =YourIDBConnection</p>
+<p>//  rp.DatabaseInfo[0].Transaction=YourIDBTransacion</p>
+<p></p>
+<p><br>
+  if (pdf)<br>
+  {<br>
+  rp.AsyncExecution=false;<br>
+  PrintOutPDF printpdf = new PrintOutPDF();<br>
+  printpdf.FileName=pdffilename;<br>
+  printpdf.Compressed=compressedpdf;<br>
+  printpdf.Print(rp.MetaFile);<br>
+  }<br>
+  else<br>
+  {<br>
+  rp.AsyncExecution=asyncexecution;<br>
+  if (ParamsForm.ShowParams(rp)<br>
+  {<br>
+  PrintOutWinForms prw = new PrintOutWinForms();<br>
+  prw.Preview = preview;<br>
+  prw.SystemPreview=systempreview;<br>
+  prw.ShowPrintDialog=showprintdialog;<br>
+  prw.Print(rp.MetaFile);<br>
+  } <br>
+  }<br>
+</p>
+</body>
+</html>

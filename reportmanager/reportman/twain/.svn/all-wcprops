@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/twain
+END
+testtwain.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/twain/testtwain.cfg
+END
+testtwain.dpr
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/twain/testtwain.dpr
+END
+testtwain.dof
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/twain/testtwain.dof
+END
+testtwain.res
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/twain/testtwain.res
+END
+umain.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/twain/umain.pas
+END
+umain.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/twain/umain.dfm
+END

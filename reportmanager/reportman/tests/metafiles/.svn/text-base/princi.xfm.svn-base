@@ -1,0 +1,94 @@
+object Form1: TForm1
+  Left = 125
+  Top = 42
+  Width = 696
+  Height = 480
+  VertScrollBar.Range = 477
+  HorzScrollBar.Range = 569
+  ActiveControl = Button1
+  Caption = 'Form1'
+  Color = clBackground
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object Image1: TImage
+    Left = 28
+    Top = 164
+    Width = 521
+    Height = 313
+  end
+  object Button1: TButton
+    Left = 8
+    Top = 8
+    Width = 221
+    Height = 57
+    Caption = 'Create and populate'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 8
+    Top = 76
+    Width = 221
+    Height = 61
+    Caption = 'Draw'
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 264
+    Top = 12
+    Width = 145
+    Height = 49
+    Caption = 'Load'
+    TabOrder = 2
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 424
+    Top = 12
+    Width = 145
+    Height = 49
+    Caption = 'Save'
+    TabOrder = 3
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 244
+    Top = 76
+    Width = 221
+    Height = 61
+    Caption = 'Draw qt'
+    TabOrder = 4
+    OnClick = Button5Click
+  end
+  object RpRuler1: TRpRuler
+    Left = 8
+    Top = 164
+    Width = 21
+    Height = 285
+  end
+  object RpRuler2: TRpRuler
+    Left = 28
+    Top = 144
+    Width = 521
+    Height = 21
+    RType = rHorizontal
+  end
+  object OpenDialog1: TOpenDialog
+    DefaultExt = 'rmf'
+    Filter = '*.rmf'
+    Title = 'Open'
+    Left = 288
+    Top = 108
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = 'rmf'
+    FileName = 'test.rmf'
+    Filter = '*.rmf'
+    Title = 'Save As'
+    Left = 332
+    Top = 104
+  end
+end

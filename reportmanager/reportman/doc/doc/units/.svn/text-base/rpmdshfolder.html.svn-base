@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Units documentation - rpmdshfolder.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpmdshfolder.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>obtaining local configuration file paths</b>, in a 
+  way compatible with Windows 2000 and Linux enviromnments.</p>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td> function Obtainininameuserconfig (company, product, filename:string):string; 
+    </td>
+    <td>Home user configuration file</td>
+  </tr>
+  <tr> 
+    <td> function Obtainininamelocalconfig (company, product, filename:string):string; 
+    </td>
+    <td>Machine based configuration file, shared with all users</td>
+  </tr>
+  <tr>
+    <td> function Obtainininamecommonconfig (company, product, filename:string):string; 
+    </td>
+    <td>System configuration usually you need Administrator or root privileges</td>
+  </tr>
+</table>
+</body>
+</html>

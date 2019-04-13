@@ -1,0 +1,14 @@
+CREATE VIEW VIEW_BALANCO_PATRIMONIAL
+AS
+select 
+	CAST( CONCAT(cccab.ID,ccdet.ID) as UNSIGNED) as ID, 
+	DATE_FORMAT(cccab.data_lancamento,'%Y') as ANO,
+	cc.classificacao as CLASSIFICACAO,
+	cc.descricao as DESCRICAO, 
+	sum(ccdet.valor) as VALOR
+from
+	contabil_conta cc 
+	inner join contabil_lancamento_detalhe ccdet on (ccdet.id_contabil_conta = cc.id)
+	inner join contabil_lancamento_cabecalho cccab on (ccdet.id_contabil_lancamento_cab = cccab.id)
+group by 
+	ANO, classificacao, descricao

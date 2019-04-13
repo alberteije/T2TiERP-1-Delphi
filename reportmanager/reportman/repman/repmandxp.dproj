@@ -1,0 +1,371 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{d1ccfac4-c150-4038-9215-c34bde5040e6}</ProjectGuid>
+			<MainSource>repmandxp.dpr</MainSource>
+			<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<DCC_DependencyCheckOutputName>repmandxp.exe</DCC_DependencyCheckOutputName>
+			<ProjectVersion>13.4</ProjectVersion>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<Base>True</Base>
+			<AppType>Application</AppType>
+			<FrameworkType>VCL</FrameworkType>
+			<Platform Condition="'$(Platform)'==''">Win32</Platform>
+			<TargetedPlatforms>3</TargetedPlatforms>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+			<Base_Win64>true</Base_Win64>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+			<Base_Win32>true</Base_Win32>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win64)'!=''">
+			<Cfg_2_Win64>true</Cfg_2_Win64>
+			<CfgParent>Cfg_2</CfgParent>
+			<Cfg_2>true</Cfg_2>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+			<Cfg_2_Win32>true</Cfg_2_Win32>
+			<CfgParent>Cfg_2</CfgParent>
+			<Cfg_2>true</Cfg_2>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+			<VerInfo_AutoGenVersion>true</VerInfo_AutoGenVersion>
+			<VerInfo_MajorVer>2</VerInfo_MajorVer>
+			<VerInfo_MinorVer>4</VerInfo_MinorVer>
+			<DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;Data.Win;$(DCC_Namespace)</DCC_Namespace>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+			<VerInfo_Keys>CompanyName=Toni Martir;FileDescription=Report Manager Designer;FileVersion=2.4.0.135;InternalName=repmandxp;LegalCopyright=MPL/GPL License;LegalTrademarks=;OriginalFilename=repmandxp;ProductName=Report Manager Designer;ProductVersion=2.4.0.0;Comments=</VerInfo_Keys>
+			<VerInfo_Build>135</VerInfo_Build>
+			<DCC_OutputDRCFile>true</DCC_OutputDRCFile>
+			<DCC_DependencyCheckOutputName>repmandxp.exe</DCC_DependencyCheckOutputName>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base_Win64)'!=''">
+			<DCC_Namespace>Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+			<Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+			<Icon_MainIcon>repmandxp_Icon1.ico</Icon_MainIcon>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base_Win32)'!=''">
+			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+			<Icon_MainIcon>repmandxp_Icon1.ico</Icon_MainIcon>
+			<DCC_Namespace>Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+			<Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<Version>7.0</Version>
+			<DCC_DebugInformation>False</DCC_DebugInformation>
+			<DCC_IOChecking>False</DCC_IOChecking>
+			<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+			<DCC_Optimize>False</DCC_Optimize>
+			<DCC_IntegerOverflowCheck>True</DCC_IntegerOverflowCheck>
+			<DCC_RangeChecking>True</DCC_RangeChecking>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_Define>REPMANRELEASE;RELEASE;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<Version>7.0</Version>
+			<DCC_IOChecking>False</DCC_IOChecking>
+			<DCC_Optimize>False</DCC_Optimize>
+			<DCC_IntegerOverflowCheck>True</DCC_IntegerOverflowCheck>
+			<DCC_RangeChecking>True</DCC_RangeChecking>
+			<DCC_Define>REPMANRELEASE;DEBUG;$(DCC_Define)</DCC_Define>
+			<DCC_OutputDRCFile>True</DCC_OutputDRCFile>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
+			<DCC_RemoteDebug>true</DCC_RemoteDebug>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+		</PropertyGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Parameters/>
+					<Language>
+						<Language Name="ProjectLang">$00000C0A</Language>
+					</Language>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">True</VersionInfo>
+						<VersionInfo Name="MajorVer">2</VersionInfo>
+						<VersionInfo Name="MinorVer">4</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">137</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1033</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">Toni Martir</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription">Report Manager Designer</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">2.4.0.137</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName">repmandxp</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalCopyright">MPL/GPL License</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename">repmandxp</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductName">Report Manager Designer</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductVersion">2.4.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Source>
+						<Source Name="MainSource">repmandxp.dpr</Source>
+					</Source>
+					<Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bcboffice2k160.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bcbofficexp160.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dcloffice2k160.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dclofficexp160.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+					</Excluded_Packages>
+					<Resource_DLL_Projects>
+						<Resource_DLL_Projects Name="Item0">Español (España, internacional)*$00000C0A*ESN*..\..\..\..\..\..\..\prog\toni\cvsroot\reportman\reportman\repman\ESN</Resource_DLL_Projects>
+					</Resource_DLL_Projects>
+					<RDP_Source_Files>
+						<RDP_Source_Files Name="Item0">..\rpmdfmainvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item1">..\rpmdfdesignvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item2">..\rpmdfaboutvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item3">..\rpmdfstrucvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item4">..\rpmdobjinspvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item5">..\rppagesetupvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item6">..\rpfparamsvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item7">..\rpgraphutilsvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item8">..\rpexpredlgvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item9">..\rprfvparams.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item10">..\rpmdfsearchvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item11">..\rpdbxconfigvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item12">..\rpdbbrowservcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item13">..\rpgdidriver.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item14">..\rpexceldriver.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item15">..\rpmdfdatatextvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item16">..\rpmdfdinfovcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item17">..\rpmdfgridvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item18">..\rpmdfsampledatavcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item19">..\rpmdprintconfigvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item20">..\rpvpreview.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item21">..\rpmdfconnectionvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item22">..\rpmdfwizardvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item23">..\rpmdfextsecvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item24">..\rpmdfdatasetsvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item25">..\rpfmetaviewvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item26">..\rpfmainmetaviewvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item27">..\rpmdsysinfo.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item28">..\rpeditconnvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item29">..\rpmdftreevcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item30">..\rpmdfopenlibvcl.dfm</RDP_Source_Files>
+						<RDP_Source_Files Name="Item31">repmandxp.drc</RDP_Source_Files>
+					</RDP_Source_Files>
+				</Delphi.Personality>
+				<Platforms>
+					<Platform value="Win64">True</Platform>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+		<ItemGroup>
+			<DelphiCompile Include="$(MainSource)">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="..\rpmdfmainvcl.pas">
+				<Form>FRpMainFVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpmdfdesignvcl.pas">
+				<Form>FRpDesignFrameVCL</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\rpmdfaboutvcl.pas">
+				<Form>FRpAboutBoxVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpmdfstrucvcl.pas">
+				<Form>FRpStructureVCL</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\rpmdobjinspvcl.pas">
+				<Form>FRpObjInspVCL</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\rppagesetupvcl.pas">
+				<Form>FRpPageSetupVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpfparamsvcl.pas">
+				<Form>FRpParamsVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpgraphutilsvcl.pas">
+				<Form>FRpMessageDlgVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpexpredlgvcl.pas">
+				<Form>FRpExpredialogVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rprfvparams.pas">
+				<Form>FRpRTParams</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpmdfsearchvcl.pas">
+				<Form>TFRpSearchParamVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpmdfsectionintvcl.pas"/>
+			<DCCReference Include="..\rptextdriver.pas"/>
+			<DCCReference Include="..\rpxmlstream.pas"/>
+			<DCCReference Include="..\rpcolumnar.pas"/>
+			<DCCReference Include="..\rpstringhash.pas"/>
+			<DCCReference Include="..\rpcomparable.pas"/>
+			<DCCReference Include="..\rphashtable.pas"/>
+			<DCCReference Include="..\rpactivexreport.pas"/>
+			<DCCReference Include="..\rpalias.pas"/>
+			<DCCReference Include="..\rpdatatext.pas"/>
+			<DCCReference Include="..\rpcompobase.pas"/>
+			<DCCReference Include="..\rpdatainfo.pas"/>
+			<DCCReference Include="..\rpdataset.pas"/>
+			<DCCReference Include="..\rpdbxconfigvcl.pas">
+				<Form>FRpDBXConfigVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpdbbrowservcl.pas">
+				<Form>FRpBrowserVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpdrawitem.pas"/>
+			<DCCReference Include="..\rpeval.pas"/>
+			<DCCReference Include="..\rpevalfunc.pas"/>
+			<DCCReference Include="..\rpgdidriver.pas">
+				<Form>FRpVCLProgress</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpexceldriver.pas">
+				<Form>FRpExcelProgress</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpcsvdriver.pas"/>
+			<DCCReference Include="..\rpgdifonts.pas"/>
+			<DCCReference Include="..\rplabelitem.pas"/>
+			<DCCReference Include="..\rplastsav.pas"/>
+			<DCCReference Include="..\rpmaskedit.pas"/>
+			<DCCReference Include="..\rpmdbarcode.pas"/>
+			<DCCReference Include="..\rpbarcodecons.pas"/>
+			<DCCReference Include="..\rpmdchart.pas"/>
+			<DCCReference Include="..\rpmdcharttypes.pas"/>
+			<DCCReference Include="..\rpmdconsts.pas"/>
+			<DCCReference Include="..\rpcompilerep.pas"/>
+			<DCCReference Include="..\rpmdfbarcodeintvcl.pas"/>
+			<DCCReference Include="..\rpmdfchartintvcl.pas"/>
+			<DCCReference Include="..\rpmdfdatatextvcl.pas">
+				<Form>FRpDataTextVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpmdfdinfovcl.pas">
+				<Form>FRpDInfoVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpmdfdrawintvcl.pas"/>
+			<DCCReference Include="..\rpmdfgridvcl.pas">
+				<Form>FRpGridOptionsVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpmdflabelintvcl.pas"/>
+			<DCCReference Include="..\rpmdfsampledatavcl.pas">
+				<Form>FRpShowSampledataVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpmdobinsintvcl.pas"/>
+			<DCCReference Include="..\rpmdprintconfigvcl.pas">
+				<Form>FRpPrinterConfigVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpmdshfolder.pas"/>
+			<DCCReference Include="..\rpmetafile.pas"/>
+			<DCCReference Include="..\rpmunits.pas"/>
+			<DCCReference Include="..\rpparams.pas"/>
+			<DCCReference Include="..\rpparser.pas"/>
+			<DCCReference Include="..\rppdfdriver.pas"/>
+			<DCCReference Include="..\rppdffile.pas"/>
+			<DCCReference Include="..\rppdfreport.pas"/>
+			<DCCReference Include="..\rpprintitem.pas"/>
+			<DCCReference Include="..\rpregvcl.pas"/>
+			<DCCReference Include="..\rpreport.pas"/>
+			<DCCReference Include="..\rpbasereport.pas"/>
+			<DCCReference Include="..\rprulervcl.pas"/>
+			<DCCReference Include="..\rpsection.pas"/>
+			<DCCReference Include="..\rpsecutil.pas"/>
+			<DCCReference Include="..\rpsubreport.pas"/>
+			<DCCReference Include="..\rptranslator.pas"/>
+			<DCCReference Include="..\rptypes.pas"/>
+			<DCCReference Include="..\rptypeval.pas"/>
+			<DCCReference Include="..\rpvclreport.pas"/>
+			<DCCReference Include="..\rpvgraphutils.pas"/>
+			<DCCReference Include="..\rpvpreview.pas">
+				<Form>FRpVPreview</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpwriter.pas"/>
+			<DCCReference Include="..\rphtmldriver.pas"/>
+			<DCCReference Include="..\rpmdfconnectionvcl.pas">
+				<Form>FRpConnectionVCL</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\rpmdfwizardvcl.pas">
+				<Form>FRpWizardVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpmdfextsecvcl.pas">
+				<Form>FRpExtSectionVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpmdfdatasetsvcl.pas">
+				<Form>FRpDatasetsVCL</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\rpfmetaviewvcl.pas">
+				<Form>FRpMetaVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpfmainmetaviewvcl.pas">
+				<Form>FRpMainMetaVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpmdsysinfo.pas">
+				<Form>FRpSysInfo</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpeditconnvcl.pas">
+				<Form>FRpEditConVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpmdftreevcl.pas">
+				<Form>FRpDBTreeVCL</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\rpmdfopenlibvcl.pas">
+				<Form>FRpOpenLibVCL</Form>
+			</DCCReference>
+			<DCCReference Include="..\rpsvgdriver.pas"/>
+			<DCCReference Include="..\rpinfoprovgdi.pas"/>
+			<DCCReference Include="..\rpinfoprovid.pas"/>
+			<DCCReference Include="..\rpdatetimepicker.pas"/>
+			<DCCReference Include="..\rppreviewcontrol.pas"/>
+			<DCCReference Include="..\rppreviewmeta.pas"/>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+	</Project>

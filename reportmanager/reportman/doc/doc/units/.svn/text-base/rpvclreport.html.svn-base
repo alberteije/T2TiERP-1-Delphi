@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Units documentation - rpvclreport.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpvclreport.pas</h3>
+<h4>Description</h4>
+<p>This unit implements the <b>palette installable TVCLReport component</b></p>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TVCLReport</td>
+    <td>TComponent</td>
+    <td>Report component to drop it to your forms or datamodules, this component 
+      <b>only supports Windows</b> and uses the TRpGDIDriver and TRpPDFDriver 
+      print drivers</td>
+  </tr>
+</table>
+</body>
+</html>

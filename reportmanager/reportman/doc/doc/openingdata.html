@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Opening Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Basic report design</h2>
+<h3><b>Opening the dataset</b></h3>
+<p>To print a report you usually need a dataset, for example a list of customers, 
+  employees, projects,.... This is not a requirement, you can design your report 
+  without any database source.</p>
+<p>The first step of report design procedure should be open the main dataset, 
+  the engine will print the detail section (or sections) for each record in the 
+  dataset. This happens for each subreport, you can have more than one subreport 
+  or also child subreports.</p>
+<p>In the sample we will use DBExpress driver to connect througth Interbase/Firebird 
+  to the <b>sample database employee.gdb</b>.</p>
+<p><img src="images/opendata.jpg" width="415" height="255"></p>
+<p>A report have database connections and datasets, you must create first the 
+  connection then add a dataset and set the properties like the SQL sentence.</p>
+<p>We will add a <b>DBExpress </b> connection, you will have a list of available 
+  connections, if you are using Delphi/Kylix/Builder development enviroments you 
+  will see the same list you see in your development tool. See database access 
+  troubleshooting for more information.</p>
+<p><img src="images/opendata2.jpg">&nbsp;</p>
+<p>You must configure connection parameters, click 'Configure' button:</p>
+<p><img src="images/opendata3.jpg" width="615" height="436"></p>
+<p>By default all connections are shown, you must select the database driver before 
+  adding a connection, select Interbase and click the add connection button, the 
+  connection name must be the same as you defined in your connections window, 
+  in this example the connection name will be 'EMPLOYEE'.</p>
+<p>In top of database connection window you will see the location of DBExpress 
+  configuration files, the most important parameters of this sample are <b>Database, 
+  User_Name and Password</b>. If you use Interbase/Firebird you are safe to set 
+  TransIsolation level to Repeteable Read so the report will be database consistent, 
+  else see documentation of your database engine to know the recommended transaction 
+  isolation for reporting operations (read only, long in time transactions).</p>
+<p>You can test the connection and close the database connections configuration 
+  window.</p>
+<p>Now it's time to setup the dataset, select the datasets page and add a dataset 
+  named 'CUSTOMER'.</p>
+<p>Add EMPLOYEE connection name and lets go to write a SQL sentence to obtain 
+  customer data, to do that click 'Add' Button, enter a alias for the dataset 
+  and enter the correct SQL sentence:</p>
+<p><img src="images/opendata4.jpg" width="565" height="422"></p>
+<p>You can examine database tables and fields using the database browser to help 
+  you in the SQL sentence construction, to check and view the dataset click 'Show 
+  data' button.</p>
+<p><img src="images/opendata5.jpg" width="376" height="315"> </p>
+<p>You can navigate (unidirectional) throught the dataset, close this windows 
+  and click 'Ok' button to save and go to the main report design window.</p>
+<p>Now you must assign the dataset to the subreport, click the subreport item 
+  in the design tree and select it in the object inspector:</p>
+<p><img src="images/opendata6.jpg" width="411" height="357"></p>
+<p>This is nice moment to save the report, after saving we will <a href="droppingfields.html">drop 
+  fields and preview</a> the report.</p>
+</body>
+</html>

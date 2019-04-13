@@ -1,0 +1,59 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.02.5
+#------------------------------------------------------------------------------
+MAKE = make -$(MAKEFLAGS) -f$**
+DCC =dcc $<
+#------------------------------------------------------------------------------
+PROJECTS = repmand metaprint metaview printrep reptotxt txttorep printreptopdf \
+  reportserverapp reportservercon repserverconfig repwebexe repwebexex startup.bin \
+  libreportmanapi.so libreportmanapiqt.so
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+repmand: repmand.dpr
+	$(DCC)
+
+metaprint: utils/metaprint/metaprint.dpr
+	$(DCC)
+
+metaview: utils/metaview/metaview.dpr
+	$(DCC)
+
+printrep: utils/printrep/printrep.dpr
+	$(DCC)
+
+reptotxt: utils/reptotxt/reptotxt.dpr
+	$(DCC)
+
+txttorep: utils/txttorep/txttorep.dpr
+	$(DCC)
+
+printreptopdf: utils/printreptopdf/printreptopdf.dpr
+	$(DCC)
+
+reportserverapp: ../server/app/reportserverapp.dpr
+	$(DCC)
+
+reportservercon: ../server/app/reportservercon.dpr
+	$(DCC)
+
+repserverconfig: ../server/config/repserverconfig.dpr
+	$(DCC)
+
+repwebexe: ../server/web/repwebexe.dpr
+	$(DCC)
+
+repwebexex: ../server/web/repwebexex.dpr
+	$(DCC)
+
+startup.bin: utils/startup/startup.dpr
+	$(DCC)
+
+libreportmanapi.so: ../dll/reportmanapi.dpr
+	$(DCC)
+
+libreportmanapiqt.so: ../dll/reportmanapiqt.dpr
+	$(DCC)
+
+

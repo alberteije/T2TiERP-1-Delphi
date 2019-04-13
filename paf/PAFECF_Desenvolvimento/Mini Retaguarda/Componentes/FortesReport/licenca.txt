@@ -1,0 +1,75 @@
+TERMO DE LICENÇA DE USO
+-----------------------
+
+IMPORTANTE - LEIA COM ATENÇÃO
+
+Leia atentamente e entenda todos os direitos e restrições descritos neste
+documento. Solicitamos que você verifique e aceite ou não os termos contidos
+neste documento. O SOFTWARE, identificado acima, não deverá ser instalado em
+seu computador até que você aceite os termos aqui estabelecidos.
+
+LICENÇA DO SOFTWARE
+
+Este SOFTWARE é protegido por leis de copyright e tratados internacionais
+relativos a direitos autorais, bem como por outras legislações e tratados
+sobre propriedade intelectual. O SOFTWARE é licenciado e não vendido.
+
+1. CONCESSÃO DA LICENÇA
+
+Este documento lhe concede os direitos a seguir:
+
+-  Instalação e Uso. Você poderá instalar e utilizar um número ilimitado de
+   cópias do SOFTWARE.
+-  Reprodução e Distribuição. Você poderá reproduzir e distribuir um número
+   ilimitado de cópias do SOFTWARE, desde que cada uma das cópias seja uma
+   cópia fiel e completa, incluindo todos os avisos de direitos autorais e
+   de marcas comerciais e esteja acompanhada de uma cópia deste documento.
+   Cópias do SOFTWARE poderão ser distribuídas como produtos individuais ou
+   incluídas no seu próprio produto.
+
+2. OUTROS DIREITOS E LIMITAÇÕES
+
+-  É vedada a engenharia reversa, descompilação ou desmontagem do SOFTWARE,
+   exceto e somente mediante permissão expressa do autor.
+-  Serviços de Suporte. A Fortes Informática não se obriga a prestar qualquer
+   tipo de suporte.
+
+3. DIREITOS AUTORAIS
+
+Todos os títulos e direitos autorais relativos ao SOFTWARE, aos materiais
+impressos que o acompanham e a quaisquer cópias do SOFTWARE são de propriedade
+da Fortes Informática ou seus fornecedores. O SOFTWARE é protegido pelas leis
+de direitos autorais e tratados internacionais. Assim, você deverá tratar o
+SOFTWARE como qualquer outro material protegido pelo direito autoral.
+
+GARANTIA LIMITADA
+
+A Fortes Informática expressamente renuncia qualquer garantia relativa ao
+SOFTWARE. O SOFTWARE e a documentação correlata são fornecidos no estado
+em que se encontram, sem garantia de qualquer espécie, seja expressa ou
+implícita, incluindo, sem limitação, garantias implícitas de comercialidade,
+de adequação a uma finalidade específica ou de não-violação. Você assume
+totalmente o risco decorrente da utilização ou desempenho do SOFTWARE.
+
+RESPONSABILIDADE POR DANOS CAUSADOS
+
+Em nenhuma circunstância, a Fortes Informática ou seus fornecedores serão
+responsáveis por quaisquer danos (incluindo, sem limitação, lucros cessantes,
+danos causados por interrupção de transações comerciais, perda de informações
+comerciais ou qualquer outra perda financeira) decorrente do uso ou da
+incapacidade de usar este produto, ainda que a Fortes Informática tenha sido
+alertada quanto a possibilidade de ocorrência de tais danos. Tendo em vista
+que alguns estados/jurisdições não permitem a exclusão ou limitação de
+responsabilidade por danos conseqüentes ou indiretos, a limitação acima pode
+não ser aplicável a você.
+
+
+Fortes Informática Ltda
+R. Antonio Fortes, 330  Água Fria
+CEP 60813-630
+Fortaleza - CE - Brasil
+PABX: 55(85)4005-1111
+
+Internet
+http://www.fortesinformatica.com.br
+fortesreport@fortesinformatica.com.br

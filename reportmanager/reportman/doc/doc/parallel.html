@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>In memory datasets</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Advanced report design</h2>
+<h3><b>Parallel unions</b></h3>
+<p>You can use parallel unions to build easyly columnar reports.</p>
+<p>Performing parallel unions allow the combination of diferent datasets into a single dataset, the resulting dataset will have all the fileds of the combined datasets, and as many rows as the larger dataset (or dataset rows group if common fields are used). The field names(columns) of joined datasets will be renamed, using a prefix Q01_ for the first joined dataset, Q02 for the second and so. </p>
+<p>This feaute allow the printing of multiple columns combining diferent tables.</p>
+<p>Example using two datasets (parallel.rep):<br>
+  - Enter into data access configuration window.<br>
+  - Open the two datasets. In this sample we use DBDEMOS connection (Borland database engine), animals and biolife tables. There is no need to select a sorting, but you can use parameters to filter the datasets.<br>
+  - Create a new connection named MEM for example, with connection type Mybase, this connection will used by the new dataset.<br>
+  - Create a new dataset named COMBINED, check parallel union option, and assign the new connection, when you assign the connection to the dataset the new options will appear, you can select any dataset and include it into the union list. In this case we include ANIMALS and BIOLIFE, when the desinger ask for common fields clic ok without entering any common fields.
+  <br>
+  - In main report design window select the COMBINED dataset as the main dataset.<br>
+- Drag and drop fields into the detail section from the COMBINED dataset, usually you will drop the fields to build columnar report.</p>
+<p>In this case there is no relation between the two datasets, so there is no join.<br>
+</p>
+<p>Example using two datasets (parallel2.rep):<br>
+- Enter into data access configuration window.<br>
+- Open the two datasets. In this sample we use DBDEMOS connection (Borland database engine), animals and biolife tables. There is no need to select a sorting, but you can use parameters to filter the datasets.<br>
+- Create a new connection named MEM for example, with connection type Mybase, this connection will used by the new dataset.<br>
+- Create a new dataset named COMBINED, check parallel union option, and assign the new connection, when you assign the connection to the dataset the new options will appear, you can select any dataset and include it into the union list. In this case we include ITEMS and ITEMS again. when the desinger ask for common fields write OrderNo and clic ok.<br>
+- You can click Show dat button to see the result.<br>
+- You can sort the resulting dataset by using the indexfields property.<br>
+- In main report design window select the COMBINED dataset as the main dataset.<br>
+- Drag and drop fields into the detail section from the COMBINED dataset, usually you will drop the fields to build columnar report.</p>
+</body>
+</html>

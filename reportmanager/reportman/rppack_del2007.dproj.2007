@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{eff4da4b-811b-46a5-b062-0a5aaf55112e}</ProjectGuid>
+    <MainSource>rppack_del2007.dpk</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>C:\Documents and Settings\All Users\Documentos\RAD Studio\5.0\Bpl\rppack_del2007.bpl</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>Package</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><Package_Options><Package_Options Name="PackageDescription">Report Manager components</Package_Options><Package_Options Name="ImplicitBuild">False</Package_Options><Package_Options Name="DesigntimeOnly">False</Package_Options><Package_Options Name="RuntimeOnly">False</Package_Options></Package_Options><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">3082</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">rppack_del2007.dpk</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="rppack_del2007.dpk">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="adortl.dcp" />
+    <DCCReference Include="bdertl.dcp" />
+    <DCCReference Include="dbexpress.dcp" />
+    <DCCReference Include="dbrtl.dcp" />
+    <DCCReference Include="dsnap.dcp" />
+    <DCCReference Include="ibxpress.dcp" />
+    <DCCReference Include="IndyCore.dcp" />
+    <DCCReference Include="IndyProtocols.dcp" />
+    <DCCReference Include="IndySystem.dcp" />
+    <DCCReference Include="rpalias.dcr" />
+    <DCCReference Include="rpalias.dcr" />
+    <DCCReference Include="rpalias.pas" />
+    <DCCReference Include="rpbarcodecons.pas" />
+    <DCCReference Include="rpbasereport.pas" />
+    <DCCReference Include="rpclientdataset.pas" />
+    <DCCReference Include="rpcolumnar.pas" />
+    <DCCReference Include="rpcompilerep.pas" />
+    <DCCReference Include="rpcompobase.pas" />
+    <DCCReference Include="rpcsvdriver.pas" />
+    <DCCReference Include="rpdatainfo.pas" />
+    <DCCReference Include="rpdataset.pas" />
+    <DCCReference Include="rpdatatext.pas" />
+    <DCCReference Include="rpdbbrowservcl.pas" />
+    <DCCReference Include="rpdbdatetimepicker.pas" />
+    <DCCReference Include="rpdbgridvcl.pas" />
+    <DCCReference Include="rpdbxconfigvcl.pas" />
+    <DCCReference Include="rpdrawitem.pas" />
+    <DCCReference Include="rpeditconnvcl.pas" />
+    <DCCReference Include="rpeval.dcr" />
+    <DCCReference Include="rpeval.dcr" />
+    <DCCReference Include="rpeval.pas" />
+    <DCCReference Include="rpevalfunc.pas" />
+    <DCCReference Include="rpexceldriver.pas" />
+    <DCCReference Include="rpexpredlgvcl.dcr" />
+    <DCCReference Include="rpexpredlgvcl.dcr" />
+    <DCCReference Include="rpexpredlgvcl.pas" />
+    <DCCReference Include="rpfmainmetaviewvcl.pas" />
+    <DCCReference Include="rpfmetaviewvcl.pas" />
+    <DCCReference Include="rpfparamsvcl.pas" />
+    <DCCReference Include="rpgdidriver.pas" />
+    <DCCReference Include="rpgdifonts.pas" />
+    <DCCReference Include="rpgraphiccolor.pas" />
+    <DCCReference Include="rpgraphiccompression.pas" />
+    <DCCReference Include="rpgraphicex.pas" />
+    <DCCReference Include="rpgraphicstrings.pas" />
+    <DCCReference Include="rpgraphutilsvcl.pas" />
+    <DCCReference Include="rphtmldriver.pas" />
+    <DCCReference Include="rpinfoprovgdi.pas" />
+    <DCCReference Include="rpinfoprovid.pas" />
+    <DCCReference Include="rplabelitem.pas" />
+    <DCCReference Include="rplastsav.dcr" />
+    <DCCReference Include="rplastsav.dcr" />
+    <DCCReference Include="rplastsav.pas" />
+    <DCCReference Include="rpmaskedit.dcr" />
+    <DCCReference Include="rpmaskedit.dcr" />
+    <DCCReference Include="rpmaskedit.pas" />
+    <DCCReference Include="rpmdbarcode.pas" />
+    <DCCReference Include="rpmdchart.pas" />
+    <DCCReference Include="rpmdcharttypes.pas" />
+    <DCCReference Include="rpmdclitreevcl.pas" />
+    <DCCReference Include="rpmdconsts.pas" />
+    <DCCReference Include="rpmdesignervcl.dcr" />
+    <DCCReference Include="rpmdesignervcl.dcr" />
+    <DCCReference Include="rpmdesignervcl.pas" />
+    <DCCReference Include="rpmdfaboutvcl.pas" />
+    <DCCReference Include="rpmdfbarcodeintvcl.pas" />
+    <DCCReference Include="rpmdfchartintvcl.pas" />
+    <DCCReference Include="rpmdfconnectionvcl.pas" />
+    <DCCReference Include="rpmdfdatasetsvcl.pas" />
+    <DCCReference Include="rpmdfdatatextvcl.pas" />
+    <DCCReference Include="rpmdfdesignvcl.pas" />
+    <DCCReference Include="rpmdfdinfovcl.pas" />
+    <DCCReference Include="rpmdfdrawintvcl.pas" />
+    <DCCReference Include="rpmdfextsecvcl.pas" />
+    <DCCReference Include="rpmdfgridvcl.pas" />
+    <DCCReference Include="rpmdflabelintvcl.pas" />
+    <DCCReference Include="rpmdfmainvcl.pas" />
+    <DCCReference Include="rpmdfopenlibvcl.pas" />
+    <DCCReference Include="rpmdfsampledatavcl.pas" />
+    <DCCReference Include="rpmdfsearchvcl.pas" />
+    <DCCReference Include="rpmdfsectionintvcl.pas" />
+    <DCCReference Include="rpmdfselectfields.pas" />
+    <DCCReference Include="rpmdfstrucvcl.pas" />
+    <DCCReference Include="rpmdftreevcl.pas" />
+    <DCCReference Include="rpmdfwizardvcl.pas" />
+    <DCCReference Include="rpmdobinsintvcl.pas" />
+    <DCCReference Include="rpmdobjinspvcl.pas" />
+    <DCCReference Include="rpmdprintconfigvcl.pas" />
+    <DCCReference Include="rpmdprotocol.pas" />
+    <DCCReference Include="rpmdrepclient.pas" />
+    <DCCReference Include="rpmdshfolder.pas" />
+    <DCCReference Include="rpmdsysinfo.pas" />
+    <DCCReference Include="rpmetafile.pas" />
+    <DCCReference Include="rpmreg.pas" />
+    <DCCReference Include="rpmregdesignvcl.pas" />
+    <DCCReference Include="rpmunits.pas" />
+    <DCCReference Include="rpmzlib.pas" />
+    <DCCReference Include="rppagesetupvcl.pas" />
+    <DCCReference Include="rpparams.pas" />
+    <DCCReference Include="rpparser.pas" />
+    <DCCReference Include="rppdfdriver.pas" />
+    <DCCReference Include="rppdffile.pas" />
+    <DCCReference Include="rppdfreport.dcr" />
+    <DCCReference Include="rppdfreport.dcr" />
+    <DCCReference Include="rppdfreport.pas" />
+    <DCCReference Include="rppreviewcontrol.pas" />
+    <DCCReference Include="rppreviewmeta.pas" />
+    <DCCReference Include="rpprintitem.pas" />
+    <DCCReference Include="rpregvcl.pas" />
+    <DCCReference Include="rpreport.pas" />
+    <DCCReference Include="rprfvparams.pas" />
+    <DCCReference Include="rprulervcl.dcr" />
+    <DCCReference Include="rprulervcl.dcr" />
+    <DCCReference Include="rprulervcl.pas" />
+    <DCCReference Include="rpsection.pas" />
+    <DCCReference Include="rpsecutil.pas" />
+    <DCCReference Include="rpsubreport.pas" />
+    <DCCReference Include="rpsvgdriver.pas" />
+    <DCCReference Include="rptextdriver.pas" />
+    <DCCReference Include="rptranslator.dcr" />
+    <DCCReference Include="rptranslator.dcr" />
+    <DCCReference Include="rptranslator.pas" />
+    <DCCReference Include="rptypes.pas" />
+    <DCCReference Include="rptypeval.pas" />
+    <DCCReference Include="rpvclreport.dcr" />
+    <DCCReference Include="rpvclreport.dcr" />
+    <DCCReference Include="rpvclreport.pas" />
+    <DCCReference Include="rpvgraphutils.pas" />
+    <DCCReference Include="rpvpreview.pas" />
+    <DCCReference Include="rpwebmetaclient.dcr" />
+    <DCCReference Include="rpwebmetaclient.dcr" />
+    <DCCReference Include="rpwebmetaclient.pas" />
+    <DCCReference Include="rpwriter.pas" />
+    <DCCReference Include="rpxmlstream.pas" />
+    <DCCReference Include="rpzlib77.pas" />
+    <DCCReference Include="rpzlibadler.pas" />
+    <DCCReference Include="rpzlibinfblock.pas" />
+    <DCCReference Include="rpzlibinfcodes.pas" />
+    <DCCReference Include="rpzlibinffast.pas" />
+    <DCCReference Include="rpzlibinftrees.pas" />
+    <DCCReference Include="rpzlibinfutil.pas" />
+    <DCCReference Include="rpzlibtrees.pas" />
+    <DCCReference Include="rpzlibzdeflate.pas" />
+    <DCCReference Include="rpzlibzinflate.pas" />
+    <DCCReference Include="rpzlibzlib.pas" />
+    <DCCReference Include="rpzlibzutil.pas" />
+    <DCCReference Include="rtl.dcp" />
+    <DCCReference Include="soaprtl.dcp" />
+    <DCCReference Include="tee.dcp" />
+    <DCCReference Include="vcl.dcp" />
+    <DCCReference Include="vcldb.dcp" />
+    <DCCReference Include="vcljpg.dcp" />
+    <DCCReference Include="vclx.dcp" />
+    <DCCReference Include="xmlrtl.dcp" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,308 @@
+<html>
+<head>
+<title>Section properties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Component Reference</h2>
+<h3>Section properties</h3>
+<p><b>Sumary</b></p>
+<p>The sections are contained inside subreports, depending on the section type 
+  it will print after the detail (group header), before the detail (group header), 
+  or in special places (page headers and footers)</p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Internal Name</td>
+    <td bgcolor="#FFFFCC">Type</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>Horz.Desp</td>
+    <td>HorzDesp</td>
+    <td>Boolean</td>
+    <td>When horizzontal desplacement is set to true, after printing the section 
+      the print position will move to the left, in an amount equivalent to the 
+      section width. But this will happen only when the next section to print 
+      has also the horizontal desplacement set to true, else the horizontal print 
+      position will be restored. Set this property to true in the detail section 
+      for example to print labels left to right, adjust the section with so many 
+      details fit in the total page width. See also <a href="labels.html">labels 
+      documentation</a>.</td>
+  </tr>
+  <tr> 
+    <td>Vert.Desp.</td>
+    <td>VertDesp</td>
+    <td>Boolean</td>
+    <td>When vertical desplacement is set to true, the print is performed as usually 
+      (up to down), after reaching the bottom of the page, the print position 
+      will place at the top of the page (or group header) , and the left print 
+      position will move an amount equivalent to the section with (if fits in 
+      the page), then printing continue. But this will happen only when the next 
+      section to print has also the vertical desplacement set to true, else the 
+      engine will skip to next page. Set this property to true in the detail section 
+      for example to print labels up to down, adjust the section with so many 
+      details fit in the total page width. See also <a href="labels.html">labels 
+      documentation</a>.</td>
+  </tr>
+  <tr> 
+    <td>Auto expand</td>
+    <td>AutoExpand</td>
+    <td>Boolean</td>
+    <td>The section will expand vertically to keep space for any component inside 
+      it. This is useful when you want to print some variable text and you don't 
+      know how much page space you need</td>
+  </tr>
+  <tr> 
+    <td>Auto contract</td>
+    <td>AutoContract</td>
+    <td>Boolean</td>
+    <td>The section will contract vertically to avoid unused space. This is useful 
+      when you want to print some variable text and you don't know how much page 
+      space you need, of if some of the components are printed under certain conditions 
+      and you want to profit space</td>
+  </tr>
+  <tr> 
+    <td>Init.PageNum</td>
+    <td>InitPageNum</td>
+    <td>Boolean</td>
+    <td>Available only for groups, initialize the variable PageNum to 1 when the 
+      group changes</td>
+  </tr>
+  <tr> 
+    <td>Group Name</td>
+    <td>GroupName</td>
+    <td>String</td>
+    <td>Group name, to be referenced in <a href="refexpression.html">TRpExpressions</a> 
+      to aggregate values</td>
+  </tr>
+  <tr> 
+    <td>Group Expression</td>
+    <td>ChangeExpression</td>
+    <td>WideString</td>
+    <td>This expression is evaluated for each record of the Main dataset for the 
+      subreport, it will determine a group break with the Bool Expression property</td>
+  </tr>
+  <tr> 
+    <td>Bool Expression</td>
+    <td>ChangeBool</td>
+    <td>Boolean</td>
+    <td>If true, the engine breaks the group when the Group Expression is true, 
+      else will break the group when the group expression result changes</td>
+  </tr>
+  <tr> 
+    <td>Page repeat</td>
+    <td>PageRepeat</td>
+    <td>Boolean</td>
+    <td>If true, the group header will print in each page where the group is still 
+      active.</td>
+  </tr>
+  <tr> 
+    <td>Begin Page</td>
+    <td>BeginPageExpression</td>
+    <td>WideString</td>
+    <td>This expression is evaluated before printing, if result is true the group 
+      will begin a page</td>
+  </tr>
+  <tr> 
+    <td>Skip Page</td>
+    <td>SkipPage</td>
+    <td>Boolean</td>
+    <td>If this property is true, after printing the section a new page will begin 
+      (unless there is nothing more to print)</td>
+  </tr>
+  <tr> 
+    <td>Align Bottom</td>
+    <td>AlignBottom</td>
+    <td>Boolean</td>
+    <td>If this property is true, the section will be aligned to the bottom of 
+      the page, and of course next section will be printed in the next page, the 
+      alignment is done after resizing (so it's compatible with Auto expand and 
+      Auto contract properties)</td>
+  </tr>
+  <tr> 
+    <td>Horz.Desp.</td>
+    <td>HorzDesp</td>
+    <td>Boolean</td>
+    <td>If this property is true, the displazement for the next printed section 
+      will be horizontal, not vertical unless the next section have this property 
+      false. </td>
+  </tr>
+  <tr> 
+    <td>Skip Type</td>
+    <td>SkipType</td>
+    <td>TRpSkipType</td>
+    <td><p>Default=no skip, Before=skip before print, After=skip after print</p>
+      <p>The skip is a repositioning of the print pointer, you can place print 
+        pointer to another page and/or page position with properties bellow</p></td>
+  </tr>
+  <tr> 
+    <td>Skip to page</td>
+    <td>SkipToPageExpre</td>
+    <td>WideString</td>
+    <td>If a skip type is assigned then this expression is used to determine the 
+      page to relocate the print pointer</td>
+  </tr>
+  <tr> 
+    <td>H.Skip Expre</td>
+    <td>SkipExpreH</td>
+    <td>WideString</td>
+    <td> <p>Determines the horizontal position, the result of the expression must 
+        be an integer, the unit is in twips (1440twips=1 inch), the skip may be 
+        relative or absolute depending on property bellow</p></td>
+  </tr>
+  <tr> 
+    <td>H.Relative Skip</td>
+    <td>SkipRelativeH</td>
+    <td>Boolean</td>
+    <td>If true the skip is relative to the print pointer else is relative to 
+      the current page</td>
+  </tr>
+  <tr> 
+    <td>V.Skip Expre</td>
+    <td>SkipExpreV</td>
+    <td>WideString</td>
+    <td>Determines the verticalposition, the result of the expression must be 
+      an integer, the unit is in twips (1440twips=1 inch), the skip may be relative 
+      or absolute depending on property bellow</td>
+  </tr>
+  <tr> 
+    <td>V.Relative Skip</td>
+    <td>SkipRelativeV</td>
+    <td>Boolean</td>
+    <td>If true the skip is relative to the print pointer else is relative to 
+      the current page</td>
+  </tr>
+  <tr> 
+    <td>Child subreport</td>
+    <td>ChildSubreport</td>
+    <td>TRpSubReport</td>
+    <td>If a child subreport is assigned it will be processed and printed after 
+      printing this section, see also <a href="childsubreports.html">child subreports 
+      reference</a>.</td>
+  </tr>
+  <tr> 
+    <td>External Path</td>
+    <td>FExternalFilenam</td>
+    <td>String</td>
+    <td>Will load the section from a file so the report file can <a href="externalsec.html">share 
+      sections</a>. The external path can be an expression by preceding the string 
+      by the @ symbol.</td>
+  </tr>
+  <tr> 
+    <td>External Database</td>
+    <td>ExternalDat.Tabl.F</td>
+    <td>String</td>
+    <td>Will load the section from a database so the reports can <a href="externalsec.html">share 
+      sections</a>.</td>
+  </tr>
+  <tr> 
+    <td>Global Scope</td>
+    <td>Global</td>
+    <td>Boolean</td>
+    <td>For page header and footers only, if this property is true, the header/footer 
+      will be processed globally just like if it was outside the subreport</td>
+  </tr>
+  <tr> 
+    <td>Force Print</td>
+    <td>ForcePrint</td>
+    <td>Boolean</td>
+    <td>Only for page footers, means the page footer must print at the end of 
+      the subreport if no data is still available</td>
+  </tr>
+  <tr> 
+    <td>Image</td>
+    <td>Stream</td>
+    <td>TStream</td>
+    <td>Embedded image, stored with the report structure containing a image stream, 
+      will be drawn bellow the grid, using the resolution bellow. When embedding 
+      large images you should set prefered save format in page setup to binary/gzip 
+      to enhace performance.</td>
+  </tr>
+  <tr> 
+    <td>Resolution (dpi)</td>
+    <td>dpires</td>
+    <td>Integer</td>
+    <td>Resolution of the image in pixels per inch unit, the size of the bitmap 
+      and the resolution will determine the final size</td>
+  </tr>
+  <tr> 
+    <td>Background Style</td>
+    <td>BackStyle</td>
+    <td>TBackStyle</td>
+    <td>The background of the section can be used for multiple purposes, one is 
+      help in design time to fill a form for example, but no preview or print 
+      (preprinted forms). You can also select to draw the background image in 
+      preview or print the image on the paper also.</td>
+  </tr>
+  <tr> 
+    <td>Back. Expression</td>
+    <td>Expression</td>
+    <td>WideString</td>
+    <td>The image can be embedded (Image propery) or obtained throught this expression 
+      property, the expression is evaluated, if the expression result is a binary 
+      database field will try to read the image from there, see below the image 
+      formats supported. If the field is a string field or the result of evaluation 
+      is a string the engine will try to load the image as a file reference.</td>
+  </tr>
+  <tr> 
+    <td>Export Expression</td>
+    <td>ExportExpression</td>
+    <td>WideString</td>
+    <td>A expression to obtain the value that will be uses in custom output text 
+      format </td>
+  </tr>
+  <tr> 
+    <td>Exp. Format</td>
+    <td>ExportDisplayFormat</td>
+    <td>String</td>
+    <td>The display format will be used if provided to format the export expression</td>
+  </tr>
+  <tr> 
+    <td>Exp. Line</td>
+    <td>ExportLine</td>
+    <td>Integer</td>
+    <td>The exact line of the text file where the export result will be placed, 
+      if you set this value to 0, the current (last) line will be used</td>
+  </tr>
+  <tr> 
+    <td>Exp. Position</td>
+    <td>ExportPosition</td>
+    <td>Integer</td>
+    <td>Postion inside the line (first position is 1), where the text will be 
+      placed in custom text output</td>
+  </tr>
+  <tr> 
+    <td>Exp. Size</td>
+    <td>ExportSize</td>
+    <td>Integer</td>
+    <td>Size of the output for custom text output, will be right padded with blank 
+      characters </td>
+  </tr>
+  <tr>
+    <td>Exp.New Line</td>
+    <td>ExportDoNewLine</td>
+    <td>Boolean</td>
+    <td>If this value is true, a new line will be added after exporting this item 
+      in custom text output</td>
+  </tr>
+</table>
+<p><b>Developer info</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Internal component name</td>
+    <td>TRpSection</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Parent class</td>
+    <td>TRpCommonComponent</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Unit name</td>
+    <td>rpsection.pas</td>
+  </tr>
+</table>
+<p>See also <a href="refcommon.html">Report components common properties</a>.</p>
+</body>
+</html>

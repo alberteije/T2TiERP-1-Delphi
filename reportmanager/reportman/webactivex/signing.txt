@@ -1,0 +1,7 @@
+To sign the .cab file use signcode.exe provided in 
+Microsoft FrameWorkSDK included in Visual Studio .Net
+
+If you have your personal certificate installed in Internet
+Explorer then you will be able to select the certificate directly.
+
+

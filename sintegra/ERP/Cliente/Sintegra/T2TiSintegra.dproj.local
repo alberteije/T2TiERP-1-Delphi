@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/07/30 15:31:54.404.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Sintegra\Tela\USpedFiscal.pas=</Transaction>
+    <Transaction>2013/07/30 15:31:54.404.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Sintegra\Tela\USpedFiscal.dfm=</Transaction>
+    <Transaction>2013/07/30 15:31:54.414.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Sintegra\Tela\USpedContabil.pas=</Transaction>
+    <Transaction>2013/07/30 15:31:54.414.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Sintegra\Tela\USpedContabil.dfm=</Transaction>
+    <Transaction>2013/07/30 15:31:54.454.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Sintegra\Controller\SpedFiscalController.pas=</Transaction>
+    <Transaction>2013/07/30 15:31:54.504.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Sintegra\Controller\SpedContabilController.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

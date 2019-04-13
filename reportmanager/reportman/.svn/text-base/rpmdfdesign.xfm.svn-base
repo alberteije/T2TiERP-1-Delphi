@@ -1,0 +1,34 @@
+object FRpDesignFrame: TFRpDesignFrame
+  Left = 0
+  Top = 0
+  Width = 451
+  Height = 304
+  VertScrollBar.Range = 20
+  HorzScrollBar.Range = 20
+  Align = alClient
+  Color = clDisabledForeground
+  ParentColor = False
+  ParentShowHint = False
+  ShowHint = True
+  TabOrder = 0
+  object PTop: TPanel
+    Left = 0
+    Top = 0
+    Width = 451
+    Height = 20
+    Align = alTop
+    BevelOuter = bvNone
+    Color = clButton
+    TabOrder = 0
+  end
+  object PLeft: TPanel
+    Left = 0
+    Top = 20
+    Width = 20
+    Height = 284
+    Align = alLeft
+    BevelOuter = bvNone
+    Color = clButton
+    TabOrder = 1
+  end
+end

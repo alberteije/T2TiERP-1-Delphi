@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source
+END
+DbxOpenOdbcASAIntf.pas
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/DbxOpenOdbcASAIntf.pas
+END
+release.opt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/release.opt
+END
+OdbcApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/OdbcApi.pas
+END
+debug.opt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/debug.opt
+END
+dbxoodbc.dproj.local
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/dbxoodbc.dproj.local
+END
+_make_driver_release.bat
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/_make_driver_release.bat
+END
+DbxOpenOdbc3.pas
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/DbxOpenOdbc3.pas
+END
+make_driver.bat
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/make_driver.bat
+END
+RegExpr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/RegExpr.pas
+END
+DbxOpenOdbcASA.pas
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/DbxOpenOdbcASA.pas
+END
+FastMM4Options.inc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/FastMM4Options.inc
+END
+dbxoodbc.dproj
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/dbxoodbc.dproj
+END
+_make_driver_debug.bat
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/_make_driver_debug.bat
+END
+DbxObjectParser.pas
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/DbxObjectParser.pas
+END
+dbxoodbc.dpr
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/dbxoodbc.dpr
+END
+DbxOpenOdbc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/DbxOpenOdbc.pas
+END
+clean_full.bat
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/clean_full.bat
+END
+DbxOpenOdbc_options.inc
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/DbxOpenOdbc_options.inc
+END
+dbxoodbc.identcache
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/dbxoodbc.identcache
+END
+DbxOpenOdbcDbx3Types.pas
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/DbxOpenOdbcDbx3Types.pas
+END
+FastMM4Options.rel.inc
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/FastMM4Options.rel.inc
+END
+DbxOpenOdbc_history.inc
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/DbxOpenOdbc_history.inc
+END
+DbxOpenOdbcStatic.pas
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/DbxOpenOdbcStatic.pas
+END
+_make_all_delphi-2005.bat
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/_make_all_delphi-2005.bat
+END
+_make_all_delphi-2006.bat
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/_make_all_delphi-2006.bat
+END
+_make_all_delphi-2007.bat
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/_make_all_delphi-2007.bat
+END
+DbxOpenOdbcApiHook.pas
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/DbxOpenOdbcApiHook.pas
+END
+FastMM4Messages.pas
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/FastMM4Messages.pas
+END
+_make_all_delphi-2009.bat
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/_make_all_delphi-2009.bat
+END
+clean.bat
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/clean.bat
+END
+DbxOpenOdbcTrace.pas
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/DbxOpenOdbcTrace.pas
+END
+FastMM4Options.dbg.inc
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/FastMM4Options.dbg.inc
+END
+DbxOpenOdbcInterface.pas
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/DbxOpenOdbcInterface.pas
+END
+FastMM4.pas
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/FastMM4.pas
+END
+DbxOpenOdbc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/DbxOpenOdbc.inc
+END
+_make_all_delphi-6.bat
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/_make_all_delphi-6.bat
+END
+_make_all_delphi-7.bat
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/_make_all_delphi-7.bat
+END
+trim_files.bat
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/trim_files.bat
+END
+dbxoodbc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/dbxoodbc.pas
+END
+_make_all_cust.bat
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/_make_all_cust.bat
+END
+_make_all.bat
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/_make_all.bat
+END
+dbxoodbc.res
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/dbxoodbc_3_201/Source/dbxoodbc.res
+END

@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Configuring Report Manager server</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Report Manager Server</h2>
+<h3>Configuration</h3>
+<p>Report Manager server runs using <b>port 3060</b>, you can run the server as 
+  an application and see the report configuration and log files location. You 
+  can alter all settings using repserverconfig application except the port (you 
+  can alter it modifying the configuration file stored in the server).</p>
+<p>You can connect to a report server for admin:</p>
+<p><img src="images/repserverconfig.jpg" width="496" height="458"></p>
+<p>By default there is only one user named Admin with blank password. You can 
+  assign a password to Admin user, and add other users.</p>
+<p><img src="images/repserverconfig3.jpg" width="328" height="199"></p>
+<p>You can define user groups, then assign groups to users, you can assign execution 
+  privileges for aliases (groups of reports) for any user group.</p>
+<p><img src="images/repserverconfig2.jpg" width="523" height="469"></p>
+<p>In the alias page you can assign privileges to user groups for each alias.</p>
+<p><img src="images/repserverconfig6.jpg" width="523" height="469"></p>
+<p>You can add or delete aliases also, to use a configured library replace the 
+  file path with the : symbol and the library alias, for example :TESTLIB. Library 
+  aliases can be defined from report server application, click the button Configure 
+  libs, there.</p>
+<p><img src="images/repserverconfig4.jpg" width="543" height="169"></p>
+<p>After adding an alias you can preview the report tree.</p>
+<p><img src="images/repserverconfig5.jpg" width="479" height="334"></p>
+</body>
+</html>

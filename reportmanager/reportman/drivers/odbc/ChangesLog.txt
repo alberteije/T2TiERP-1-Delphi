@@ -1,0 +1,683 @@
+Kylix / Delphi open source DbExpress driver for ODBC.
+
+Home page:
+  http://open-dbexpress.sourceforge.net/
+
+Project Home Page:
+  https://sourceforge.net/projects/open-dbexpress/
+
+Version 2.010, 2003-11-06  [ Vadim V.Lopushansky pult@ukr.net ]
+------------------------
++ Fixed procedure .next() for 'ARRAY FETCH' when the driver returns lines less than should.
+  For example SAP DB ' ODBC Driver, ver: '7.04.03.00' always returns only one line at any
+  set of rows.
++ Fixed TextFile(*.txt, *.csv) Table Name parsing. TableName can contain the '.'.
++ Fixed SQLite update/fetch BLOB (Memo) data types.
+New/Changed options:
++ Added option "ENABLEBCD". In this option any BCD is mapped to Float.
++ Added mapping unsupported BCD Size to Float. See MaxFMTBcdDigits in FMTBcd.pas
++ Added MAXBCD option. For this option any BCD is mapped to BCD(32,??).
+  It is possible for using in a case when the driver returns the incorrect column info.
++ Added check BCD Oveflow for procedure .getBCD(). Uncorrect values are trimmed.
++ Added default driver option. You can set default driver value at any time for any properties.
+  For  make it you must set option value to 'X':
+  example:
+    SQLConnection1.SQLConnection.SetOption(
+      TSQLConnectionOption(xeConnCustomInfo), Integer(PChar('MAXBCD=X')) );
+New supported odbc drivers:
++ Added support for 'SAP DB ODBC Driver', ver: '7.04.03.00'
++ Added support for Firebird 'IBPhoenix ODBC Driver': http://www.ibphoenix.com/, ver: '01.00.0000'
+  There were problems for the some Float fields.
++ Added support for 'XTG System Open Source Firebird, Interbase6 ODBC Driver':
+  http://www.xtgsystems.com/, ver: '1.00.00.16'
+  At use of this driver for function RowsAffected you will always receive 0 as the driver
+  does not realize function SQLRowCount. From for it by transfer of changes to a DB by means
+  of DSP you will receive mistakes: 'Record not found or changed by another user'. In part
+  this problem can be solved as it is made in example OdbcExplor.dpr
+  Also this driver returns bad columns Size(fColSize) for BCD field.
+
+  The driver can be established in system by means of the following file (correct ways):
+  Regisry file for manual istall this driver:
+  ================================================================
+  REGEDIT4
+
+  ; Uninstall old values
+  [-HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBCINST.INI\IB6 XTG ODBC]
+  [-HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBCINST.INI\ODBC Drivers\IB6 XTG ODBC]
+
+  ; Set new values
+  [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBCINST.INI\IB6 XTG ODBC]
+  "ConnectionFunctions"="YYY"
+  "APILevel"="1"
+  "FileUsage"="0"
+  "Setup"="C:\\PROGRAMs\\DB\\Firebird\\ODBC\\ib6xtg10.dll"
+  "AltDefaults"="1"
+  "SQLLevel"="0"
+  "Driver"="C:\\PROGRAMs\\DB\\Firebird\\ODBC\\ib6xtg10.dll"
+  "CPTimeout"="60"
+  "DriverODBCVer"="02.50"
+
+  [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBCINST.INI\ODBC Drivers]
+  "IB6 XTG ODBC"="Installed"
+  ================================================================
+
++ Added support for 'MERANT DBASE ODBC Driver', ver: '3.60.00.00'.
+  Fixed .FetchIndexes() for it driver. The driver returns fields for an index as their concatenation
+  (with a separator '+'). Example: 'fieldA+fieldB'.
+
+Version 2.09, 2003-10-31  [ Vadim V.Lopushansky pult@ukr.net ]
+------------------------
++ Added usage of one buffer of memory for all types with a known size.
++ Added support BLOCK FETCHING options:
+   eCommBlockRead (default=True),
+   eCommRowsetSize (default in SqlExp=20).
+  *****************************************************************
+  *** Added support ODBC option: SQL_ATTR_ROW_ARRAY_SIZE !!!    ***
+  *** It mapped to standart connection option: eCommRowsetSize. ***
+  *****************************************************************
+
+Version 2.08, 2003-10-30  [ Vadim V.Lopushansky pult@ukr.net ]
+------------------------
++ Fixed FetchLateBoundData and FetchLongData. There can be errors, when connection
+  option coIgnoreUnknownFieldType is turned ON and query contained unsupported
+  field type and fetching usage  LateBoundFound method for field located after
+  unsupported field.
++ Fixed set SQL_VARCHAR parameter with length>255.
+  AV: the reason - record outside the allocated memory.
++ Added access to INFORMIX LOB fields (not fully tested).
++ Fixed BcdToStr from FMTBcd.pas. See QC: 6169.
++ Release fhCon at disconnecting reconciled in impossibility of a reconnecting.
++ Fixed SQLite field mapping
++ Added checking of reasonableness of field size (returned from odbc driver) for next SQLTypes:
+  SQL_CHAR, SQL_VARCHAR, ... SQL_BINARY, SQL_VARBINARY, SQL_LONGVARCHAR, SQL_WLONGVARCHAR
++ Added limitation to BindBufferSize for simple types:
+  SQL_BINARY, SQL_VARBINARY,
+  SQL_CHAR, SQL_VARCHAR ...
+  It is handled only when fCommandBlobSizeLimitK<=0 (When it is possible to apply OdbcLateBound).
++ Added support in MSSQL sql_variant field type: SELECT value FROM "dbo"."sysproperties"
+  But you can usage the next code for accessing:
+  http://www.novicksoftware.com/UDFofWeek/Vol1/T-SQL-UDF-Volume-1-Number-12-udf_SQL_VariantToDatatypeName.htm
++ Set ConPacketSize for Cloned Cnnection
++ Fixed when transaction not supported
++ Fixed Connect: Removal of user options is made of a line of connection before its analysis.
++ Fixed Fetch Bytes Fields. Has been skipped FetchLateBoundData.
++ Added support of fldVARBYTES.
++ Fixed SortOrder. Must be in Upper Case.
++ Fixed indexing for TClientDataSet. Index cannot be unnamed (Very impotent for PK and Unique indexes).
++ Fixed Create RegExp Parser when QuoteChar = #0
++ Added support for:
+    Pervasive.SQL (odbc ver: '8.10.117.17'),
+    PostgreSQL (odbc ver: '7.03.01.00'),
+    Cache`.
++ Added the opportunity to collect the driver in younger version Delphi for the senior version.
+  Access to new opportunities now are accessible and in younger versions Delphi.
++ Added demo application: ODBC Explorer.
+
+Version 2.07, 2003-05-07  [ Vadim V.Lopushansky pult@ukr.net ]
+------------------------
++ Some critical errors have been corrected. (Uncorrect call FillChar, ...).
++ Added the possibility of watching of a sequence of calls of methods. See directive "_TRACE_CALLS_".
++ Tracing can be applied for watching problems with new drivers or DBMS.
+
+Version 2.06, 2003-04-22 [ Edward Benson ]
+------------------------
++ Use CompilerVersion instead of VERxxx to determine Compiler Version - this is more future-proof
++ Show Sql command text (if available) in GetErrorMessage
++ Show parameter values (if available) in GetErrorMessage
++ Show Sql Connect string (but with hidden password) in GetErrorMessage
++ Allow for Input, Output, Inout and Return parameters
++ Allow for transaction isolation level to be specified in ISQLConnection.beginTransaction
++ Reformat some exception messages
++ After SqlCloseCursor, add ODBC calls to UNBIND cursor bind vars and RESET parameters
++ Rollback outstanding transaction on disconnect, in case where concurrent statements
+  per connection not unlimited (Vadim Lopushansky)
++ Conditional compilation for Kylix 3 [Kurt Fitzner / Stig Johansen]
++ TSqlCursorMetaData.isSearchable no longer raises error (Dmitry Arefiev)
++ Rename conditional (not) _DisableOverloadCloningConnection_ to _InternalCloneConnection_
++ Procedure FreeHCon changed from (out HCon: SqlHDbc) to (var HCon: SqlHDbc) [Stig Johansen]
++ Fix problem with TSqlCommandOdbc.SetParameter for fldFLOAT [Stig Johansen]
++ Do not call SQLGetStmtOption(SQL_ROWSET_SIZE) -- it does nothing [Stig Johansen]
++ In TSqlCommandOdbc.Destroy add check for statement already freed [Stig Johansen]
+
+Version 2.05, 2003-04-04 [ Edward Benson ]
+------------------------
++ Reformatting to agreed standard only (see FormattingRules.txt).
+  No functional changes.
+  Release to CVS, to so we can see real functional DIFFs between next version and 2.043
+
+  Version 2.04, 2002-12-19 [ Vadim V.Lopushansky pult@ukr.net ]
+------------------------
++ Regular Expression Parser for Decode/Encode different DBMS object name format.
+  Usage of this capability is adjusted(regulated) in parameter: {$define _RegExprParser_}
+  It option can be turned off.
+
+  If for your DBMS the off-gauge format of the definition of a full name of the object of DBMS,
+  to you is necessary to describe the template of this format in the file "DbxObjectParser.pas".
+  For debugging your template you can take advantage of an example from "RegExprParser.zip".
+
++ The capability of mapping of text fields into memo field is added as it is made in BDE:
+  the fields with lengthy more than 256 characters are imaged on BlobMemo
+  (optional. Connection parameter: "Database"="...;MapCharAsBDE=1"
+    or "Custom String"="...;MapCharAsBDE=1")
+
+Version 2.041, 2003-01-15 [ Dmitry Arefiev <darefiev@da-soft.com> ]
+-------------------------
+  Some AV fixed in:
+   TSqlCursorOdbc.BindResultSet
+   TSqlCursorMetaDataIndexes.getString
+
++  TSqlCursorOdbc.BindResultSet. It is returning up to fOdbcMaxColumnNameLen - 1 characters in column name.
+   Fix:
+       OdbcRetCode := SQLDescribeCol(
+         fhStmt, colno,
+         ColNameTemp, fOwnerDbxConnection.fOdbcMaxColumnNameLen + 1, fColNameSize,
+         fSqlType, fColSize, fColScale, fNullable);
++  TSqlCursorMetaDataIndexes.getString. It is raising AV for DSN's which does not supports catalogs and schemas.
+   Fix:
+   function TSqlCursorMetaDataIndexes.getString(ColumnNumber: Word;
+     Value: Pointer; var IsBlank: LongBool): SQLResult;
+   begin
+   try
+     case ColumnNumber of
+       1:;   // RECNO      fldINT32
+       2:  // CATALOG_NAME
+         begin
+         if not fSqlConnectionOdbc.fSupportsCatalog or (fCurrentIndexColumn.fMetaTable.fCat = nil) then
+           IsBlank := True
+         else
+           begin
+           StrCopy(Value, pChar(fCurrentIndexColumn.fMetaTable.fCat));
+           IsBlank := False;
+
+Version 2.02, 2002-11-04 [ Vadim V.Lopushansky (DbxOpenOdbc.pas) pult@ukr.net ]
+------------------------
+
+      All changes are concluded in the block:
+      {+2.02 Optional Description}
+       ... new or changed code
+      {/+2.02 /Optional Description}
+
++ added suported INTERVAL types as Fixed Char (look SQL_INTERVAL_YEAR or SQL_INTERVAL_MINUTE_TO_SECOND )
++ added optiong for ignoring of uknknown field types (look coNoIgnoreUnknownFieldType and IgnoreUnknownType )
+  Connectin parameter: Database=...;IgnoreUnknownType=1 or parameter "Custom String"="...;IgnoreUnknownType=1"
+  Default is False(0) except informix. For informix=True(1)
++ Set default isolation to DirtyRead (look SQL_TXN_READ_UNCOMMITTED) (???)
++ ??? Set default CURSOR BEHAVIOR to PRESERVE MODE. !!! Has failed !!! (look SQL_CURSOR_COMMIT_BEHAVIOR) (???)
++ detect RDBMS types ( you can analyze RDBMS name, major and minor version, and client version )
+
+Version 2.01, 2002-11-01 (Vadim Lopushansky)
+------------------------
+
+Edward> + below means I have included Vadim's change,
+Edward> - means I have not
+
+  + Change to support Delphi7. See block: {$IFDEF _D7UP_}.
+  + Change to support INFORMIX (tested on version IDS 7.31 TD3).
+  + Change to support ThinkSQL (tested on version 0.4.07 beta. http://thinksql.com/).
+  + Change to detect database types for Multiplatform DataDirect ODBC Drivers
+    (http://www.datadirect-technologies.com)
+  - Change to detect database type method TSqlConnectionOdbc.RetrieveDriverName.
+    For detecting usage specific RDMS query.
+    Edward> I have not included this:
+    Edward> I think it is better to use SQLGetInfoString(SQL_DBMS_NAME) instead
+  + Change to remapping Int64 to BCD
+    (optional. Connection parameter: "Database"="...;MapInt64ToBcd=1"
+    or "Custom String"="...;MapInt64ToBcd=1")
+  + Change to remapping small BCD to native
+    (optional. Connection parameter: "Database"="...;MapSmallBcdToNative=1"
+    or "Custom String"="...;MapSmallBcdToNative=1"))
+    Is problem in editing controls when native type length is more then BCD data type length.
+    For editing you mast usage controls with format string...
+  + Change for addition of possibility of disconnecting of support of the metadata.
+    Is used in case of availability of errors in the ODBC driver.
+    For disconnecting the metadata it is necessary to add to connection line Metadata=0
+    (Connection parameter: "Database"="...;Metadata=0"  or "Custom String"="...;Metadata=1").
+  + Change to updating BCD values when DecimalSeparator <> '.'
+  + Change to reading of PK_INDEX from metadata (Calculating fPkNameLenMax).
+    For an example look: ($DELPHI$)\Demos\Db\DbxExplorer\dbxexplorer.dpr
+    (Read PKEY_NAME error).
+    All metadata fields returned length more 0.
+  + Change in %Metadata%.getColumnLength:
+    Adapting to calculate visible of columns in SqlExpr.pas type.
+    For an example look: ($DELPHI$)\Demos\Db\DbxExplorer\dbxexplorer.dpr
+    (Read procedure parameters position error).
+  + Change to remove warnings and hints.
+  + Change to Access Violation code
+    (When returned column precision from LongWord to Smallint type when
+    precission is more High(smallint), ... )
+  + Change to setting metadata position for bad odbc driver
+    (Read of columns information with the "Easysoft Interbase ODBC Driver"
+     version 1.00.01.67 on example "dbxexplorer.dpr").
+  + Changes when QuoteChar=' '.
+    In this situation QuoteChar must be empty (''). (MSSQL, Informix,...)
+    ( Edward> ???Ed>Vad/All: But I think MSSQL uses doublequote char ("), not blank. )
+  + Change to support Trim of Fixed Char when connection parameter "Trim Char" is True
+    or when connection parameter: Database=...;TrimChar=1.
+    The mode 1 - allows to work in the mode compatible
+    with the "BDE" mode for "FixedChar" of strings.
+    Mode 0 - is default - the strings of fixed width are not truncating.
+  + New SchemaFilter parameter in login parameter "Custom String".
+    This parameter allows to filter the metadata of the only current scheme.
+    By default filtering is on for: Oracle.
+    If it does not settle - disable filtering through the parameter of connection:
+    Custom String=...;SchemaFilter=0
+  + Change to autodetect ODBC driver level mode 2.
+  + Change to autodetect SupportsCatalog Options.
+    Warning: Some of the driver is illconditioned work with this option.
+    For example do not return an error at installation of a unknown of the catalog.
+    From behind it the procedure of installation of the catalog was received
+    cumbersome and depending from database.
+    But you have possibility of load shedding of support of the catalog.
+    Read further about parameter of Catalog...
+  + The possibility is supplemented to disable support of the
+    'Catalog option. Database=...;Catalog=0
+  + Change to increase of speed of blob fetching.
+    Database or "Custom String" parameter "BlobChunkSize".
+    In Bytes. Define size blob buffer for loop-fetching.
+    The size of a cache can be synchronized with a size of a cache assigned in the ODBC driver.
+  + Vadim> ???Vad>All: Change to support Odbc driver attribute SQL_ATTR_PACKET_SIZE.
+    Edward> Very good! Although I think it is not advisable to ever change this,
+    Edward> Borland has seen fit to add it as an option, so we should implement it.
+    For support this attribute you must define value it parameter in
+    "Custom String" (Delphi 7) or "Database" (Delphi 6, 7)
+    "Custom String"="...;ConPacketSize=8192";
+    Database="..;ConPacketSize=8192"
+    ConPacketSize should not be less than 4096. The upper range is defined by the driver.
+  + Database or "Custom String" parameter "DriverLevel"
+    user defined ODBC driver level mode.
+    Edward> ???Ed>Vad: This should not be necessary -
+    Edward> you have code to autodetect ODBC driver level mode 2
+  - Change in ParseTableName for parsing in informix ...
+    Warning: Probably and for other database servers it is necessary to change
+    in view of their format of the job(definition) of a full name of the table.
+  + Ignoring of exceptions for want of indexes.
+  + It is possible at call to the tables from other spaces (catalog, servers, references).
+    (Edward> what do you mean?)
+  + The possibility of the external definition of parameters of the driver
+    is supplemented (Catalog,TrimChar,DriverLevel,BlobChankSize).
+      Examples:
+        Delphi 7:
+          Custom String=;Catalog=0;TrimChar=1;MapInt64ToBcd=1;SchemaFilter=1;
+           Metadata=0;MapSmallBcdToNative=0;BlobChunkSize=32768;DriverLevel=2
+        Delphi 6 (also will work for Delphi 7):
+          Database=DSN=DBDEMOS;UID=anonymous;PWD=unknown;
+           DriverLevel=2; TrimChar=1;BlobChunkSize=32768;ConPacketSize=3072
+  - Change in "SqlExpr.pas" (Delphi 6,7):
+     Change for reading of metadata when ODBC driver supported
+     only one sql statement (MSSQL...).
+     Change for support of the "connection string with prompt" '?'
+     when need clone connection.
+     For more detail look then file WhatNews.Txt.
+    (Edward> I have done this by internally cloning the connection to handle this case)
+  + All changes are included in the block:
+      //                                   {+ver Optional description}
+      //                                   ... new or changed code
+      //                                   {/+ver /Optional description}
+
+*)
+
+      - INFORMIX:
+      ==========
+          Informix was tested on:
+            1) INFORMIX 3.32 32 BIT ODBC driver (www.informix.com)
+               INFORMIX 3.34 32 BIT ODBC driver
+               INFORMIX 3.80 32 BIT ODBC driver
+            2) DataDirect 4.1 Informix ODBC Driver (http://www.datadirect-technologies.com).
+            3) OpenLink Lite Informix 7( 32Bit) ODBC Driver (http://www.openlinksw.com/)
+            4) INTERSOLV Inc ODBC Driver 1997
+            5) MERANT 2.10 ODBC-OLE DB Adapter Driver.
+
+        - Example Informix connectivity description:
+
+           dbxconnections.ini
+           ===================
+           ;You can set client and database locales
+           [Open Odbc - Informix Driver]
+           DriverName=OpenOdbc
+           Database=DRIVER={INFORMIX 3.32 32 BIT};DATABASE=stores7;HOST=nila;SRVR=onshark;SERV=sqlexec;PRO=olsoctcp;CLOC=ua_ua.1251;DLOC=ua_ua.1251;VMB=1;CURB=1;SCUR=0;ICUR=0;OAC=0;OPTOFC=0;RKC=0;ODTYP=0;DDFP=0
+           User_Name=informix
+           Password=1
+
+           [Open Odbc - Informix DSN]
+           DriverName=OpenOdbc
+           Database=DSN=dsn_informix
+           User_Name=informix
+           Password=1
+
+           ;You can set client and database locales
+           [Open Odbc - Informix DSN Ex]
+           DriverName=OpenOdbc
+           Database=DSN=dsn_informix;DATABASE=stores7;HOST=nila;SRVR=onshark;SERV=sqlexec;PRO=olsoctcp;CLOC=ua_ua.1251;DLOC=ru_RU.1251;VMB=1;CURB=1;SCUR=0;ICUR=0;OAC=0;OPTOFC=0;RKC=0;ODTYP=0;DDFP=0;
+           User_Name=informix
+           Password=1
+
+        - Example delphi code for informix dynamic connection:
+
+           SQLConnection.Close;
+                 SQLConnection.DriverName    := 'Unknown';
+                 SQLConnection.GetDriverFunc := 'getSQLDriverODBC';
+                 SQLConnection.LibraryName   := 'dbxoodbc.dll';
+                 SQLConnection.VendorLib     := 'aodbc32.dll';
+                 SQLConnection.LoginPrompt   := False;
+
+                 SQLConnection.Params.Clear;
+
+                 SQLConnection.Params.Values['User_Name'] := 'informix';
+                 SQLConnection.Params.Values['Password']  := 'password';
+
+                 SQLConnection.Params.Values['Database']  :=
+
+                    // ODBC parameters:
+
+                    'DRIVER={INFORMIX 3.32 32 BIT};'+
+                    'DATABASE=dbdemos;'+
+                    'HOST=nila;'+
+                    'SRVR=onshark;'+
+                    'SERV=sqlexec;'+
+                    'PRO=olsoctcp;'+
+                    'CLOC=ua_ua.1251;'+
+                    'DLOC=ua_ua.1251;'+
+                    'CURB=1;'+ // Cursor Behavior = Preserve
+                    'VMB=0;SCUR=0;ICUR=0;OAC=0;OPTOFC=0;RKC=0;ODTYP=0;DDFP=0;'+
+
+                    // OpenOdbc dbExpres driver parameters:
+                    {$IFDEF VER140}//Delphi6
+                      'Metadata=0;'+ // When there are read errors of the metadata by the ODBC driver
+                      'MapInt64ToBcd=1;'+
+                      'TrimChar=1;'+ // Support Trim Char in Delphi6
+                    {$ENDIF}
+                    ''
+                 ;
+                 {$IFNDEF VER140}//Delphi7 or more
+                    SQLConnection.Params.Values['Custom String'] := 'Metadata=0;'MapInt64ToBcd=1';
+                    SQLConnection.Params.Values['Trim Char'] := 'True';
+                 {$ENDIF}
+           SQLConnection.Open;
+
+      - ORACLE
+      ==============================
+
+        The option of filtering of the data is by default switched on.
+        It is made because of a great many of the metadata of low-productive algorithm of their analysis in "SqlExpr.pas".
+        If it does not settle - disable filtering through the parameter of connection: Custom String=...;SchemaFilter=0
+        Example (dbxconnections.ini):
+          [Open Odbc Oracle]
+          DriverName=OpenOdbc
+          Database=DSN=oracle
+          Custom String=SchemaFilter=0
+          ...
+
+        Oracle was tested on:
+          - Microsoft ODBC for ORACLE ( version 2.573.7713.00 )
+              !!! Does not supported LONGVARBINARY. ODBC Level 2.
+          - Oracle  ODBC Driver
+                  Force Retrieval of Long Columns = [x]    (for fetching LONG types)
+                  Database=DSN=dsn_oracle;FRL=T
+          - DataDirect 4.1 Oracle (http://www.datadirect-technologies.com).
+          - DataDirect 4.1 Oracle Wire Protocol
+
+      - dbExpress DbExplorer example "OdbcTest3.dpr":
+      ===============================================
+          - Some defects were corrected (Blob reading error. Add exception handling).
+            All changes are concluded in the block:
+            {+}
+             ... new or changed code
+            {+.}
+
+      -  SQL Server
+      ================
+        SQL Server was tested on:
+          - SQL Server
+          - DataDirect 4.1 SQL Server (http://www.datadirect-technologies.com).
+          - DataDirect 4.1 SQL Server Wire Protocol
+          - OpenLink Lite for MS-SQL Server (32 Bit) (http://www.openlinksw.com/)
+                - Preferences/High Cursor sensitivity = [ ]  (for reading metadata "dbo"."systypes")
+
+
+      -  MySQL ODBC Drivers (http://www.mysql.com/) version 3.51.03
+      =================================================================
+         - Metadata: returning all tables in user tables and system tables.
+
+      - IBM DB2:
+      ==========
+          DB2 was tested on:
+            1) IBM DB2 ODBC Driver, version: 7.01.00.40
+
+      - ACCESS:
+      ===========
+       - Code in DbxOpenOdbc.pas:
+          function TSqlConnectionOdbc.RetrieveDriverName: SQLResult;
+         may be not correctly detection Access database type.
+         The SQL_DRIVER_NAME string 'ODBCJT' may be usage in other database types.
+
+      - SQLLite (http://www.hwaci.com/sw/sqlite/):
+      ============================================
+       + ODBC driver at 2002-7-05 (http://www.ch-werner.de/sqliteodbc/) not supporting read AUTOINC attribute.
+       - can't update values over ODBC and select queries with parametes.
+         ODBC don't support parameters in query (select * from mytable where myfield=:myparam).
+       - can't connected with ODBC after connected over dbExpress driver
+         DbxSQLite.dll (http://codecentral.borland.com/codecentral/ccWeb.exe/listing?id=18385)
+         or EasySQLite graphical user interface (http://www.jansfreeware.com/jfdatabase.htm).
+       - The all metadata of columns is string (ftString).
+
+         In outcome works in the mode only for reading.
+
+      - ThinkSQL version 0.4.07 beta (http://thinksql.com/):
+      =====================================================
+       Very much poor efficiency of the server. For example at viewing of the data.
+       There are problems for TClientDataSet. Refresh; For solution - it is necessary to close and to open the data anew;
+
+      - Examples (dbxconnections.ini):
+      ================================
+       1)
+         [Open Odbc Example Delphi7]
+         DriverName=OpenOdbc
+         Database=DSN=dbdemos
+         Custom String=Metadata=0;MapInt64ToBcd=1
+         ;^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+         Trim Char=True
+         ...
+
+       2)
+         [Open Odbc Example Delphi6 or more]
+         DriverName=OpenOdbc
+         Database=DSN=dbdemos;Metadata=0;MapInt64ToBcd=1;TrimChar=1
+         ;^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+       3) MS SQL OS Authentication:
+
+          [Open Odbc MSSQL-OS-Authentication]
+          DriverName=OpenOdbc
+          Database=DSN=dsn_mssql;Trusted_Connection=Yes
+
+          ...
+
+          [Open Odbc MSSQL-OS-Authentication-DataDirect]
+          DriverName=OpenOdbc
+          Database=DSN=dd-mssql;UNA=0
+
+      - Examples dbxexplorer in D6,D7:
+      ================================
+         1)
+            Before using example ($DELPHI$)Demos\Db\DbxExplorer\dbxexplorer.exe you must add then next lines
+            to file: "dbxexpl.ini"
+          ---------------------------------------------------------------------------------
+          [OpenOdbc]
+          Procedures=TRUE
+          Views=TRUE
+          Synonyms=TRUE
+          System Tables=TRUE
+          ---------------------------------------------------------------------------------
+
+         2)
+            "dbxexplore.pas"
+            // Contain error for reading procedure data types:
+          ---------------------------------------------------------------------------------
+          procedure TForm1.AddArgTypes(Node: TTreeNode; List: TList; I: Integer);
+          ...
+          //base code:
+          //TreeView1.Items.AddChildObject(Node, 'DataType : ' + SDataTypeMap[integer(pSPParamDesc(List.Items[I]).iDataType)], nil);
+          //fixed code:
+            TreeView1.Items.AddChildObject(Node, 'DataType : ' + SParamTypeMap[pSPParamDesc(List.Items[I]).iDataType], nil);
+
+          , where:
+
+          SDataTypeMap: array[0..MAXLOGFLDTYPES - 1] of String = (
+              'ftUnknown', 'ftString', 'ftDate', 'ftBlob', 'ftBoolean', 'ftSmallint',
+              'ftInteger', 'ftFloat', 'ftBCD', 'ftBytes', 'ftTime', 'ftDateTime',
+              'ftWord', 'ftInteger', 'ftUnknown', 'ftVarBytes', 'ftUnknown','ftCursor',
+              'ftLargeInt', 'ftLargeInt', 'ftADT', 'ftArray', 'ftReference','ftDataSet',
+              'ftTimeStamp', 'ftFMTBcd');
+          ---------------------------------------------------------------------------------
+         3) "dbxexplore.pas"
+            // Blob reading error. Add exception handling:
+
+             procedure TForm1.ActivateBlob(Field: TBlobField);
+             begin
+               if Field.BlobType in [ftGraphic, ftBlob, ftOraBlob] then
+               begin
+                 try
+                   DBImage1.DataField := Field.FieldName;
+                   DBGrid1.Height := DBImage1.Top - DBGrid1.Top;
+                   DBImage1.Visible := True;
+                   DBImage1.SetFocus;
+                 except
+                   {+}//add exception handling:
+                   try
+                     DBImage1.DataField := '';
+                     DBMemo1.DataField := Field.FieldName;
+                     DBGrid1.Height := DBMemo1.Top - DBGrid1.Top;
+                     DBMemo1.Visible := True;
+                     DBMemo1.SetFocus;
+                   except
+                     DBMemo1.DataField := '';
+                   end;
+                   {+.}
+                 end;
+               end else
+               begin
+                  {+}add exception handling:
+                  try
+                    DBMemo1.DataField := Field.FieldName;
+                    DBGrid1.Height := DBMemo1.Top - DBGrid1.Top;
+                    DBMemo1.Visible := True;
+                    DBMemo1.SetFocus;
+                  except
+                    DBMemo1.DataField := '';
+                  end;
+                  {+.}
+               end;
+             end;
+
+          ---------------------------------------------------------------------------------
+         4) "dbxexplore.pas"
+            // CLX TreeView error:
+
+            function TForm1.OpenConnection(Node: TTreeNode): Boolean;
+            ...
+            begin
+              SQLConnection := TSQLConnection(Node.Data);
+              {+}
+              if SQLConnection=nil then begin
+                  if Assigned(Node) then Node.Collapse(True);
+                  exit;
+              end;
+              if SQLConnection.Connected then begin
+                  Result := False;
+                  Exit;
+              end;
+              {+.}
+              if Node.getFirstChild.getFirstChild = nil then
+              begin
+                try
+                  CloseDataSet;
+                  ...
+                    if DrInfo.SupportsArrays then
+                    begin
+                      N := Node.GetNextChild(N);
+                      AddEmptyNode(N);
+                    end;
+                  end
+                  {+}
+                  else begin
+                     SQLConnection.ConnectionName := '';
+                     Node.Collapse(True);
+                     Abort;
+                  end
+                  {+.}
+                  ;
+                Except
+                  On E : Exception do
+                  begin
+                    MessageDlg( E.Message, mtError, [mbOK], 0 );
+                    SQLConnection.ConnectionName := '';
+                    {+}
+                    Node.Collapse(True);
+                    {+.}
+                  end;
+                end;
+                ...
+          ---------------------------------------------------------------------------------
+         5) "dbxexplore.pas"
+            // Clear Blob references:
+
+               procedure TForm1.CloseDataSet;
+               begin
+                 ...
+                 SqlDataSet1.IndexDefs.Clear;
+                 {+}
+                 DBImage1.DataField := '';
+                 DBMemo1.DataField := '';
+                 {+.}
+                 SetDBControlsVisible(False);
+               end;
+
+
+Version 1.06, 2002-11-01 [ Edward Benson ] (Prepare for Vadim's changes)
+------------------------------------------
++ Reformatted comments and code, so diff shows up changes for 2.00
+
+Version 1.05, 2002-06-09 [ Edward Benson ] (Not released to public)
+------------------------------------------
++ Change to support TIMESTAMP parameters
+  (fix posted and tested by Michael Schwarzl)
++ Work around to support multiple GetBlob calls for MS SqlServer
+  (fix posted and tested by Michael Schwarzl)
++ Work around for Delphi 6.02 -
+  SqlExpress now calls ISqlCommand.SetOption(RowSetSize) for all drivers
++ Fix TSqlCursorOdbc functions: isReadOnly, isAutoIncrement, isSearchable
+  Were incorrectly using ColNo-1 (ie 0-based) - ODBC column indexes are 1-based
+  (Confusing, because the bind array (fOdbcBindList) is 0-based)
++ eOdbcDriverTypeAccess renamed eOdbcDriverTypeMsJet
+  (MsJet driver works for other databases, not just Access)
+
+Version 1.04, 2002-01-22 [ Edward Benson ] (Not released to public)
+------------------------------------------
++ Internally clone connection for databases that only support 1 statement
+  handle per connection, such as MsSqlServer
+  (maintain internal connection cache for such databases, until disconnected)
++ Work around MySql bug - odbc driver incorrectly reports that
+  it supports transactions when it doesn't
++ More changes to support Kylix (in OdbcApi.pas)
+  (fixes posted and tested by Ivan Francolin Martinez)
++ Allow for blank column names (returned by Informix stored procedures)
+  (fix posted and tested by Bulent Erdemir)
+
+Version 1.03, 2001-12-06 [ Edward Benson ]
+------------------------------------------
++ Change to support Kylix
+  (fixes posted by Ivan Francolin Martinez)
+
+Version 1.02, 2001-12-05 [ Edward Benson ]
+------------------------------------------
++ Fix bug in TSqlCursorOdbc.getBcd to cater for comma decimal separator
+
+Version 1.01, 2001-11-28  [ Edward Benson ]
+-------------------------------------------
++ Fix bug in TSqlCursorMetaDataIndexes
++ Support Interbase 6 Easysoft ODBC Driver
++ Support MySql ODBC Driver (ODBC level 2)
+
+Beta, 2001-10-26 [ Edward Benson ]
+----------------------------------
++ First public release

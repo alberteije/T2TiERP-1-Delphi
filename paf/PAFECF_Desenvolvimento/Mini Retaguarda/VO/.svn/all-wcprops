@@ -1,0 +1,311 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/380/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO
+END
+NfeCabecalhoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/NfeCabecalhoVO.pas
+END
+ContasPagarReceberVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/ContasPagarReceberVO.pas
+END
+EmpresaVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/EmpresaVO.pas
+END
+ProdutoPromocaoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/ProdutoPromocaoVO.pas
+END
+SetorVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/SetorVO.pas
+END
+PedidoCompraDetalheVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/PedidoCompraDetalheVO.pas
+END
+PessoaEnderecoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/PessoaEnderecoVO.pas
+END
+FichaTecnicaVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/FichaTecnicaVO.pas
+END
+ContasParcelasVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/ContasParcelasVO.pas
+END
+CstBIcmsVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/CstBIcmsVO.pas
+END
+CstPisCofinsVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/CstPisCofinsVO.pas
+END
+MeiosPagamentoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/MeiosPagamentoVO.pas
+END
+ContadorVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/ContadorVO.pas
+END
+NotaFiscalDetalheVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/NotaFiscalDetalheVO.pas
+END
+EcfResolucaoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/EcfResolucaoVO.pas
+END
+EcfConfiguracaoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/EcfConfiguracaoVO.pas
+END
+VendaCabecalhoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/VendaCabecalhoVO.pas
+END
+PlanoContasVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/PlanoContasVO.pas
+END
+BancoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/BancoVO.pas
+END
+TalonarioChequeVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/TalonarioChequeVO.pas
+END
+EcfTurnoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/EcfTurnoVO.pas
+END
+UnidadeProdutoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/UnidadeProdutoVO.pas
+END
+EcfPosicaoComponentesVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/EcfPosicaoComponentesVO.pas
+END
+AgenciaVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/AgenciaVO.pas
+END
+TipoDocumentoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/TipoDocumentoVO.pas
+END
+NFeConfiguracaoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/NFeConfiguracaoVO.pas
+END
+PessoaVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/PessoaVO.pas
+END
+CargoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/CargoVO.pas
+END
+ProdutoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/t2tierp_delphi_pafecf/!svn/ver/374/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/ProdutoVO.pas
+END
+PapelFuncaoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/PapelFuncaoVO.pas
+END
+NfeDetalheVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/NfeDetalheVO.pas
+END
+PapelVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/PapelVO.pas
+END
+EcfImpressoraVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/EcfImpressoraVO.pas
+END
+NotaFiscalCabecalhoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/NotaFiscalCabecalhoVO.pas
+END
+ImpostoIcmsVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/t2tierp_delphi_pafecf/!svn/ver/377/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/ImpostoIcmsVO.pas
+END
+PedidoCompraVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/PedidoCompraVO.pas
+END
+CepVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/CepVO.pas
+END
+CargaFuncionarioVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/CargaFuncionarioVO.pas
+END
+ChequeVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/ChequeVO.pas
+END
+ContaCaixaVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/ContaCaixaVO.pas
+END
+SintegraVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/SintegraVO.pas
+END
+NcmVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/t2tierp_delphi_pafecf/!svn/ver/374/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/NcmVO.pas
+END
+TipoEnderecoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/TipoEnderecoVO.pas
+END
+FechamentoCaixaBancoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/FechamentoCaixaBancoVO.pas
+END
+SituacaoPessoaVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/SituacaoPessoaVO.pas
+END
+VendaDetalheVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/VendaDetalheVO.pas
+END
+ChequeEmitidoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/ChequeEmitidoVO.pas
+END
+MovimentoCaixaBancoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/MovimentoCaixaBancoVO.pas
+END
+CfopVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/CfopVO.pas
+END
+ColaboradorVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/ColaboradorVO.pas
+END
+UsuarioVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/VO/UsuarioVO.pas
+END

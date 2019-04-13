@@ -1,0 +1,60 @@
+[Oracle]
+BlobSize=1
+DataBase=Database Name
+DriverName=Oracle
+ErrorResourceFile=
+LocaleCode=0000
+Password=password
+Oracle TransIsolation=ReadCommited
+User_Name=user
+
+[MSConnection]
+BlobSize=1
+Database=DBNAME
+DriverName=MYSQL
+ErrorResourceFile=
+HostName=ServerName
+LocaleCode=0000
+Password=password
+User_Name=user
+
+[IBLocal]
+BlobSize=1
+CommitRetain=False
+Database=c:\dades\prima.gdb
+DriverName=Interbase
+ErrorResourceFile=
+LocaleCode=0000
+Password=masterkey
+RoleName=RoleName
+ServerCharSet=
+SQLDialect=1
+Interbase TransIsolation=RepeatableRead
+User_Name=sysdba
+WaitOnLocks=True
+
+[DB2Connection]
+BlobSize=1
+Database=DBNAME
+DriverName=DB2
+ErrorResourceFile=
+LocaleCode=0000
+Password=password
+DB2 TransIsolation=ReadCommited
+User_Name=user
+
+[REPSAMPLES]
+DriverName=Interbase
+BlobSize=-1
+CommitRetain=False
+Database=localhost:c:\program files\Report Manger Std\Database\biolife.gdb
+ErrorResourceFile=
+LocaleCode=0000
+Password=masterkey
+RoleName=RoleName
+ServerCharSet=
+SQLDialect=1
+Interbase TransIsolation=ReadCommited
+User_Name=sysdba
+WaitOnLocks=True
+

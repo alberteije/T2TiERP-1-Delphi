@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador
+END
+MySQL_DBExpress_conn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/MySQL_DBExpress_conn.txt
+END
+Biblioteca.pas
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/Biblioteca.pas
+END
+ULogin.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/ULogin.pas
+END
+UUsuario.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/UUsuario.dfm
+END
+USplash.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/USplash.dfm
+END
+UDataModule.pas
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/UDataModule.pas
+END
+ConfiguraPAFECF.dproj.local
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/ConfiguraPAFECF.dproj.local
+END
+UConfigConexao.pas
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/UConfigConexao.pas
+END
+UConfiguracao.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/UConfiguracao.dfm
+END
+TurnoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/TurnoVO.pas
+END
+UUsuario.pas
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/UUsuario.pas
+END
+ConfiguraPAFECF.dproj
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/ConfiguraPAFECF.dproj
+END
+USplash.pas
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/USplash.pas
+END
+UTurno.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/UTurno.dfm
+END
+ULogin.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/ULogin.dfm
+END
+Constantes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/Constantes.pas
+END
+ArquivoAuxiliar.ini
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/ArquivoAuxiliar.ini
+END
+ConfiguraPAFECF.dpr
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/ConfiguraPAFECF.dpr
+END
+UConfiguracao.pas
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/UConfiguracao.pas
+END
+limpa.bat
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/limpa.bat
+END
+ConfiguraPAFECF.identcache
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/ConfiguraPAFECF.identcache
+END
+UDataModule.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/UDataModule.dfm
+END
+ConfiguraPAFECF.res
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/ConfiguraPAFECF.res
+END
+Conexao.ini
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/Conexao.ini
+END
+UConfigConexao.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/UConfigConexao.dfm
+END
+UTurno.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Configurador/UTurno.pas
+END

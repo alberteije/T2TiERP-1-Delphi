@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/win32
+END
+dbexpmss.dll
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/win32/dbexpmss.dll
+END
+dbexpasa.dll
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/win32/dbexpasa.dll
+END
+dbexpmysql.dll
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/win32/dbexpmysql.dll
+END
+dbexpdb2.dll
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/win32/dbexpdb2.dll
+END
+dbexpmys.dll
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/win32/dbexpmys.dll
+END
+dbexpint.dll
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/win32/dbexpint.dll
+END
+dbexpinf.dll
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/win32/dbexpinf.dll
+END
+upx.exe
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/win32/upx.exe
+END
+dbexpora.dll
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/win32/dbexpora.dll
+END
+dbxoodbc.dll
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/win32/dbxoodbc.dll
+END

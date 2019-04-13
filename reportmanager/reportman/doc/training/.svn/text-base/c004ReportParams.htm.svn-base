@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Report Parameters</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h1>Chapter 4- Report parameters</h1>
+<h2>4.1.What are report parameters?</h2>
+<p>A report parameter is a report element that may cause variations in final report 
+  result. Some report parameters are shown to the user to obtain a customized 
+  report result. So you define parameters, the user or the developer change them 
+  before executing the report and the final result is obtained.</p>
+<p>For example the user can choose which order number to print, or the title for 
+  the document.</p>
+<p>Parameters can be used for multiple purposes:</p>
+<ul>
+  <li> Allow the user to change words or sentences of the report.</li>
+  <li>Set initial values of group sums, etc, place the parameter name in any expression</li>
+  <li>Assign them to querys to alter the result set (parametric or linked querys)</li>
+  <li>Replace some text in the query with a provided text (text substitution)</li>
+  <li>Print them, or alter them while executing the report, you can use the parameter 
+    in any expression</li>
+  <li>Parameters are also available on web report server and TCP report server.</li>
+  <li>The parameters can contain expressions evaluated before or after opening 
+    report datasets</li>
+</ul>
+<h2>4.2.A single parameter</h2>
+<p>Create a new report then select <em>Parameter Definition</em> from <em>Report</em> 
+  menu.</p>
+<p>Click on the add button and set parameter name as PARAMTEST.</p>
+<p><img src="images/repparams1.jpg" width="414" height="293"></p>
+<p>Introduce the Value, a description and a hint, the hint will appear when the 
+  mouse pointer moves over the parameter.</p>
+<p>Select from the component palette the expression item.</p>
+<p><img src="images/paletteexpression.jpeg" width="200" height="26"></p>
+<p>Drag a rectangle over the detail section and write, on the expression property 
+  o newly created element: M.PARAMTEST</p>
+<p><img src="images/paramtest.jpeg" width="439" height="373"></p>
+<p>Preview the report, on preview you can click the green button to change parameters, 
+  and execute the report again with new parameter values:</p>
+<p><img src="images/paramchange.jpeg" width="550" height="251"></p>
+<p>Try setting different values.</p>
+<h2>4.3.Parametrized querys</h2>
+<p>A parameter can also be used to alter query result. To place a parameter inside 
+  a query you must use a double quoted before the name of the parameter, for example:</p>
+<p>SELECT MYDATA FROM MYTABLE WHERE MYCODE=:CODE</p>
+<p>Open the customers report designed on chapter 3 and alter the sql sentence 
+  to this:</p>
+<p>SELECT * FROM Customers WHERE CompanyName&gt;:FROMNAME<br>
+  ORDER BY CompanyName</p>
+<p><img src="images/paramquery1.jpeg" width="565" height="422"></p>
+<p>Then click on parameters button and define the parameter, note that you must 
+  specify that the parameter will be assigned to the 'CUSTOMER' query.</p>
+<p><img src="images/paramquery2.jpeg" width="451" height="465"></p>
+<p>Preview the report, you should see Customers which name is greater than C:</p>
+<p><img src="images/paramquery3.jpg" width="533" height="285"></p>
+<h2>4.4.Parameter types</h2>
+<p>This is a list of the parameter types available:</p>
+<table width="100%" border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Type</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td>String, Integer, Float, Date, Time, DateTime</td>
+    <td>Basic types, they contain fixed values</td>
+  </tr>
+  <tr> 
+    <td>Boolean</td>
+    <td>False or True values</td>
+  </tr>
+  <tr> 
+    <td>Expres.Bef.Open</td>
+    <td>Contains a expression evaluated before any dataset is open, so the result 
+      can be assigned to a parametric query for example</td>
+  </tr>
+  <tr> 
+    <td>Expres.Aft.Open</td>
+    <td>Contains a expression evaluated after opening all datasets, so it can 
+      contain dataset fields</td>
+  </tr>
+  <tr> 
+    <td>String Substi.</td>
+    <td>You use this parameter type assigning it to at least one dataset, you 
+      must provide a search string, the engine will search in the sql sentence 
+      for that string and will replace it with the value of the parameter. This 
+      can be used to pass the entire sql sentence as a parameter or only the WHERE 
+      clause for example.</td>
+  </tr>
+  <tr> 
+    <td>Value list</td>
+    <td>You provide two list, one for value captions, and other for real values, 
+      the engine will show to the user a combo box to select from the caption 
+      list, and will assign the corresponding value from list of values.</td>
+  </tr>
+</table>
+<p>Value list type can be useful to show to the user strings like Yes/No that 
+  will translate to values 1/0, S/N when querying database.</p>
+<p>String substitution can be used to replace full text from the sql sentence 
+  in this case the parameter name is not relevant, usually this parameters are 
+  not visible to the end user but assigned by programmers to change sql sentence 
+  (or the where clause) at runtime, before executing the report.</p>
+<h2>4.5.Limitations</h2>
+<p>Because parametric querys are interpreted by the database driver, and compiled 
+  only once on the database server, you should use only them parts of the sql 
+  sentence where the database server allow, usually on the WHERE clause and on 
+  the SELECT clause.</p>
+<p>For example this syntax is usually <strong>not accepted by database server</strong>:</p>
+<p>SELECT MYFIELD1,MYFIELD2 FROM MYTABLE ORDER BY :MYPARAM</p>
+<p>SELECT MYFIELD1,MYFIELD2 FROM :MYPARAM</p>
+<p>When a parametric query can not be used you can use other advanced features 
+  like string substitution parameter type.</p>
+<h2>4.6.Using parameters outside the designer</h2>
+<p>Report parameters can be changed from the preview window, but also when you 
+  use development tools or from command line tools.</p>
+<p>If you use Delphi for example you can write following sentence to change a 
+  parameter value:</p>
+<p><code>CLXReport1.Report.Params.ParamByName('CUSTOMERINI').Value:=2;</code></p>
+<p>If you use the ActiveX component:</p>
+<p><code>ReportManX.ParamByName('CUSTOMERINI').Value=2</code></p>
+<p>You can also access parameters by using other properties:</p>
+<p><code>ReportManX.Report.Params.Items[0].Value=2;<br></br>ReportManX.Report.Params.Items.Count;</code></p>
+<p>For command line tools you can assign parameter values using the parameter 
+  name:</p>
+<p>printreptopdf -PARAMparamname=value myreport.rep myresult.pdf</p>
+<h2>4.A.Exercise. Simple parameters use</h2>
+<p>Modify the customers report to allow the user set a title for it.</p>
+<h2>4.B.Exercise. Parametric querys use</h2>
+<p>Modify the customers report, the user must select a City, only the customers 
+  inside this city will be shown.</p>
+<h2>4.C.Exercise. Report execution</h2>
+<p>Execute printreptopdf changing the parameter values from command line obtaining 
+  different PDF files from different parameter values.</p>
+<p>&nbsp;</p>
+</body>
+</html>

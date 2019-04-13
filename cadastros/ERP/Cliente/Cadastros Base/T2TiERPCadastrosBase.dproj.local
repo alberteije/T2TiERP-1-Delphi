@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/02/21 12:05:14.550.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Comum\Tela\UTelaCadastro.pas=</Transaction>
+    <Transaction>2013/02/21 12:05:14.550.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Comum\Tela\UTelaCadastro.dfm=</Transaction>
+    <Transaction>2013/02/21 12:05:14.600.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Comum\Tela\UTela.pas=</Transaction>
+    <Transaction>2013/02/21 12:05:14.600.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Comum\Tela\UTela.dfm=</Transaction>
+    <Transaction>2013/02/21 12:05:14.680.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Cadastros Base\Tela\UMenu.pas=</Transaction>
+    <Transaction>2013/02/21 12:05:14.680.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Cadastros Base\Tela\UMenu.dfm=</Transaction>
+    <Transaction>2013/02/21 12:05:14.990.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Comum\Tela\UBase.pas=</Transaction>
+    <Transaction>2013/02/21 12:05:14.990.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Comum\Tela\UBase.dfm=</Transaction>
+    <Transaction>2013/04/17 16:28:32.345.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Cadastros Base\Controller\MatrizController.pas=</Transaction>
+    <Transaction>2013/05/24 11:06:26.048.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Cadastros Base\Tela\UCliente.pas=</Transaction>
+    <Transaction>2013/05/24 11:06:26.048.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Cadastros Base\Tela\UCliente.dfm=</Transaction>
+    <Transaction>2013/06/28 11:26:47.743.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Comum\VO\ClienteVO.pas=</Transaction>
+    <Transaction>2013/06/28 11:35:32.134.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Comum\VO\ClientePessoaVO.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

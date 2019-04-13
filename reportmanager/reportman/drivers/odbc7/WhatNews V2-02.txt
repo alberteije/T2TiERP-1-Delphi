@@ -1,0 +1,18 @@
+Kylix / Delphi open source DbExpress driver for ODBC
+...
+
+Version 2.02, 2002-11-04 [ Vadim V.Lopushansky (DbxOpenOdbc.pas) pult@ukr.net ]
+------------------------
+
+      All changes are concluded in the block:
+      {+2.02 Optional Description}
+       ... new or changed code
+      {/+2.02 /Optional Description}
+
++ added suported INTERVAL types as Fixed Char (look SQL_INTERVAL_YEAR or SQL_INTERVAL_MINUTE_TO_SECOND )
++ added optiong for ignoring of uknknown field types (look coNoIgnoreUnknownFieldType and IgnoreUnknownType )
+  Connectin parameter: Database=...;IgnoreUnknownType=1 or parameter "Custom String"="...;IgnoreUnknownType=1"
+  Default is False(0) except informix. For informix=True(1)
++ Set default isolation to DirtyRead (look SQL_TXN_READ_UNCOMMITTED) (???)
++ ??? Set default CURSOR BEHAVIOR to PRESERVE MODE. !!! Has failed !!! (look SQL_CURSOR_COMMIT_BEHAVIOR) (???)
++ detect RDBMS types ( you can analyze RDBMS name, major and minor version, and client version )

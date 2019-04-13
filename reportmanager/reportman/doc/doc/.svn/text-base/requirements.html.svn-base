@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>System requirements</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Introduction</h2>
+<h3>Hardware and software requirements</h3>
+<p>Report Manager works in all current <b>Microsoft OS</b>, Win98,Windows Millenium, 
+  Windows NT, Windows 2000, Windows XP, it also works in any <b>Linux modern distribution</b>.</p>
+<p>To compile Report Manager you need Delphi, C++Builder in Microsoft Windows 
+  or Kylix in Linux. <b>It has command line tools to allow</b> the use of the 
+  engine from <b>any development enviroment or language</b>.</p>
+<p><b>Hardware system requirements are relative to the use of the engine</b>, 
+  the database engine performance etc... </p>
+<p>Report Manager Designer uses Qt library widgets under X Window System so the 
+  performance gain with a good machine will be noticeable.</p>
+<p>On the other way console processing of a report and exporting it to Adobe PDF 
+  format (for example using printtopdf command line tool) will consume little 
+  resources, and can be fast enought using a old Pentium 75 machine.</p>
+<table border="1">
+  <tr bgcolor="#99FFFF"> 
+    <td><b>Microsoft Windows System Requirements</b></td>
+  </tr>
+  <tr> 
+    <td>shfolder.dll, shlwapi.dll system files provided by Internet Explorer 5 
+      or better, Windows 2000, Millenium and XP already provide this systems files</td>
+  </tr>
+  <tr> 
+    <td>To allow unicode widestrings you need a Windows NT system</td>
+  </tr>
+  <tr> 
+    <td>Installing a printer is optional but recomended</td>
+  </tr>
+  <tr bgcolor="#99FFFF"> 
+    <td><b>Linux System Requirements</b></td>
+  </tr>
+  <tr> 
+    <td>glibc 2.2 or better, jpeg library</td>
+  </tr>
+  <tr> 
+    <td>To Design reports, print or preview a X Window Server is required</td>
+  </tr>
+  <tr>
+    <td>You can use the reporting engine without a X Server exporting to PDF format 
+      for example</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

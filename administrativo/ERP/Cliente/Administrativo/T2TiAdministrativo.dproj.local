@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/01/02 17:32:17.277.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\EmpresaVO.pas=</Transaction>
+    <Transaction>2013/02/21 18:57:01.200.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Administrativo\Controller\AtualizaExeController.pas=</Transaction>
+    <Transaction>2013/04/02 17:01:27.901.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Administrativo\Controller\TributIcmsCustomizadoController.pas=</Transaction>
+    <Transaction>2013/04/02 17:01:33.659.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\TributIcmsCustomizadoVO.pas=</Transaction>
+    <Transaction>2013/08/08 13:28:21.627.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Comum\VO\ResponsavelSocioVO.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

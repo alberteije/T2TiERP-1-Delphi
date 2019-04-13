@@ -1,0 +1,365 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO
+END
+NfeCabecalhoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/NfeCabecalhoVO.pas
+END
+ContasPagarReceberVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/ContasPagarReceberVO.pas
+END
+ProdutoPromocaoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/ProdutoPromocaoVO.pas
+END
+EmpresaVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/EmpresaVO.pas
+END
+NfeCupomFiscalVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/NfeCupomFiscalVO.pas
+END
+Sintegra60MVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/Sintegra60MVO.pas
+END
+DAVDetalheVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/DAVDetalheVO.pas
+END
+FichaTecnicaVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/FichaTecnicaVO.pas
+END
+ContasParcelasVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/ContasParcelasVO.pas
+END
+Sintegra60RVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/Sintegra60RVO.pas
+END
+SuprimentoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/SuprimentoVO.pas
+END
+SpedFiscalC321VO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/SpedFiscalC321VO.pas
+END
+TipoPagamentoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/TipoPagamentoVO.pas
+END
+MeiosPagamentoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/MeiosPagamentoVO.pas
+END
+ContadorVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/ContadorVO.pas
+END
+FechamentoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/FechamentoVO.pas
+END
+NotaFiscalDetalheVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/NotaFiscalDetalheVO.pas
+END
+SpedFiscalC425VO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/SpedFiscalC425VO.pas
+END
+TotalTipoPagamentoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/TotalTipoPagamentoVO.pas
+END
+FuncionarioVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/FuncionarioVO.pas
+END
+RecebimentoNaoFiscalVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/RecebimentoNaoFiscalVO.pas
+END
+SituacaoClienteVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/SituacaoClienteVO.pas
+END
+MovimentoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/MovimentoVO.pas
+END
+VendaCabecalhoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/VendaCabecalhoVO.pas
+END
+BancoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/BancoVO.pas
+END
+ClienteVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/ClienteVO.pas
+END
+SangriaVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/SangriaVO.pas
+END
+UnidadeProdutoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/UnidadeProdutoVO.pas
+END
+PreVendaDetalheVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/PreVendaDetalheVO.pas
+END
+ProdutoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/ProdutoVO.pas
+END
+DavCabecalhoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/DavCabecalhoVO.pas
+END
+ResolucaoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/ResolucaoVO.pas
+END
+NfeDetalheVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/NfeDetalheVO.pas
+END
+LogImportacaoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/LogImportacaoVO.pas
+END
+ConfiguracaoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/ConfiguracaoVO.pas
+END
+R01VO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/R01VO.pas
+END
+R02VO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/R02VO.pas
+END
+R03VO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/R03VO.pas
+END
+NotaFiscalCabecalhoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/NotaFiscalCabecalhoVO.pas
+END
+R04VO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/R04VO.pas
+END
+Sintegra61RVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/Sintegra61RVO.pas
+END
+R05VO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/R05VO.pas
+END
+R06VO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/R06VO.pas
+END
+TurnoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/TurnoVO.pas
+END
+PosicaoComponentesVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/PosicaoComponentesVO.pas
+END
+R07VO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/R07VO.pas
+END
+SpedFiscalC370VO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/SpedFiscalC370VO.pas
+END
+OperadorVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/OperadorVO.pas
+END
+SintegraVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/SintegraVO.pas
+END
+SpedFiscalC390VO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/SpedFiscalC390VO.pas
+END
+SpedFiscalC490VO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/SpedFiscalC490VO.pas
+END
+ChequeClienteVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/ChequeClienteVO.pas
+END
+DocumentosEmitidosVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/DocumentosEmitidosVO.pas
+END
+Sintegra60AVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/Sintegra60AVO.pas
+END
+ImpressoraVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/ImpressoraVO.pas
+END
+VendaDetalheVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/VendaDetalheVO.pas
+END
+CaixaVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/CaixaVO.pas
+END
+PreVendaCabecalhoVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/PreVendaCabecalhoVO.pas
+END
+Sintegra60DVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/Sintegra60DVO.pas
+END
+CfopVO.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/PAF/VO/CfopVO.pas
+END

@@ -1,0 +1,10 @@
+DELIMITER $$
+
+CREATE
+    TRIGGER `mini`.`IncHashDavCabecalho` BEFORE UPDATE
+    ON `mini`.`dav_cabecalho`
+    FOR EACH ROW BEGIN
+	SET NEW.HASH_INCREMENTO = NEW.HASH_INCREMENTO + 1;
+    END$$
+
+DELIMITER ;

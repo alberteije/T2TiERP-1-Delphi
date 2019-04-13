@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Units documentation - rpmreg.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpmreg.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>component registration for non-visual package</b>.</p>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>procedure Register;</td>
+    <td>Register standard procedure</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

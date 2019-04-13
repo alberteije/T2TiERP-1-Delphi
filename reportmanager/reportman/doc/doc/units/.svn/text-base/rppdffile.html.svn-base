@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Units documentation - rppdffile.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rppdffile.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>the pdf output as a canvas</b> semi-compatible object.</p>
+<h4>Types</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpPDFFont</td>
+    <td>Font </td>
+  </tr>
+  <tr> 
+    <td>TWinAnsiWidthsArray</td>
+    <td> 
+      <p>array [32..255] of integer</p>
+      <p>Ansi widhts of each font ASCII code</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TRpLineInfo</td>
+    <td>Record conatining a line position information</td>
+  </tr>
+</table>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpPDFFont</td>
+    <td>TObject</td>
+    <td>PDF File Font description object</td>
+  </tr>
+  <tr> 
+    <td>TRpPDFCanvas</td>
+    <td>TObject</td>
+    <td>Canvas semi-compatible interface to draw to a pdf file</td>
+  </tr>
+  <tr> 
+    <td>TRpPDFFile</td>
+    <td>TComponent</td>
+    <td>Component allowing the creation of PDF Files, it uses the TRpPDFCanvas 
+      object </td>
+  </tr>
+</table>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>function PDFCompatibleText (astring:string):string; </td>
+    <td>Converts a text to a pdf compatible streamable text</td>
+  </tr>
+  <tr> 
+    <td>function NumberToText (Value:double):string; </td>
+    <td>Converts a number to pdf compatible text</td>
+  </tr>
+  <tr> 
+    <td>procedure GetBitmapInfo (stream:TStream; var width, height, imagesize:integer;FMemBits:TMemoryStream); 
+    </td>
+    <td>Obtains information about a bitmap without using Graphics unit (non Visual)</td>
+  </tr>
+  <tr>
+    <td>function GetJPegInfo (astream:TStream; var width, height:integer):boolean; 
+    </td>
+    <td>Obtains JPef information without using the Graphics unit (non Visual)</td>
+  </tr>
+</table>
+</body>
+</html>

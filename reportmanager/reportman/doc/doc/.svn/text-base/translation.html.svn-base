@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Translating Report Manager to other languages</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Developer</h2>
+<h3>Translating Report Manager to other languages</h3>
+<p>Report Manager supports automatic internacionalization and localization it 
+  will show the forms in the language selected by the user, that is LANG enviroment 
+  variable in Linux or Regional configuration in Microsoft Windows. This is only 
+  possible if you provide the translated resourcestring file for the selected 
+  language, if you don't provide it then the english language is selected.</p>
+<p>The resource file is reportmanres.*, where * means the user selected language, 
+  for example reportmanres.es for Spanish based languages. The engine will search 
+  this file in the current dir so you must provide them when deploying your applications 
+  or Report Manager Designer.</p>
+<p>To translate the resourcestrings you must download the translation kit (for 
+  now only supports Microsoft Windows, but the translated file is platform independent), 
+  it includes rptranslate.exe.</p>
+<p>You must execute rptranslate.exe, open the reportmanres.en file located at 
+  Report Manager Designer directory and save as reportman.* where * is the destination 
+  language, then you can begin the translation. You can see a list of languages 
+  and their extensions, you must get the first two letters of the extension.</p>
+<p><img src="images/translator.jpg" width="614" height="341"></p>
+<p>You can translate the translator itself using the same procedure with rptranslateres.en 
+  file.</p>
+<p>If you don't know your language extension you can examine the avaliable extensions 
+  using the Language information item in utilities menu.</p>
+<p><img src="images/translator2.jpg" width="630" height="431"></p>
+</body>
+</html>

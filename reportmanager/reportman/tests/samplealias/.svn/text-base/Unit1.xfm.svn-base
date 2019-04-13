@@ -1,0 +1,150 @@
+object Form1: TForm1
+  Left = 204
+  Top = 177
+  Width = 870
+  Height = 640
+  HorzScrollBar.Range = 745
+  VertScrollBar.Range = 593
+  ActiveControl = BFillData
+  Caption = 'Form1'
+  Color = clBackground
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 20
+  TextWidth = 8
+  object BFillData: TButton
+    Left = 40
+    Top = 176
+    Width = 161
+    Height = 49
+    Caption = 'Fill Data'
+    TabOrder = 0
+    OnClick = BFillDataClick
+  end
+  object Button1: TButton
+    Left = 40
+    Top = 240
+    Width = 161
+    Height = 49
+    Caption = 'Preview Data'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object EFileName: TEdit
+    Left = 264
+    Top = 320
+    Width = 257
+    Height = 28
+    TabOrder = 2
+    Text = 'sample.cds'
+  end
+  object Button2: TButton
+    Left = 40
+    Top = 304
+    Width = 169
+    Height = 49
+    Caption = 'Save Data'
+    TabOrder = 3
+    OnClick = Button2Click
+  end
+  object Label1: TLabel
+    Left = 224
+    Top = 320
+    Width = 25
+    Height = 20
+    Caption = 'File'
+  end
+  object Label2: TLabel
+    Left = 48
+    Top = 368
+    Width = 465
+    Height = 20
+    Caption = 
+      'Define the fields of each record with TClientDataset Fields edit' +
+      'or'
+  end
+  object Label3: TLabel
+    Left = 48
+    Top = 392
+    Width = 392
+    Height = 20
+    Caption = 'You can fill data at run time by clicking Fill Data button'
+  end
+  object Label4: TLabel
+    Left = 48
+    Top = 416
+    Width = 487
+    Height = 20
+    Caption = 
+      'I placed a grid to allow you modify data at runtime interactivel' +
+      'y also.'
+  end
+  object Label5: TLabel
+    Left = 48
+    Top = 448
+    Width = 697
+    Height = 145
+    AutoSize = False
+    Caption = 
+      'If you save the data to a file you can easily design the report ' +
+      'model, selecting the saved file, but because a TRpAlias componen' +
+      't is used the data that you send from the aplication is used ins' +
+      'tead. The only condition is the ALIAS of the dataset is the same' +
+      ' and the fields printed in the report are also part or the TCLie' +
+      'ntDataset you send. You can see the link between your data and t' +
+      'he report by clicking the AliasList property in TRpAlias, you ca' +
+      'n assign one dataset for each dataset alias.'
+    WordWrap = True
+  end
+  object DBGrid1: TDBGrid
+    Left = 40
+    Top = 16
+    Width = 673
+    Height = 153
+    DataSource = DataSource1
+    TabOrder = 9
+    TitleFont.Color = clBlack
+    TitleFont.Height = 16
+    TitleFont.Name = 'adobe-helvetica'
+    TitleFont.Pitch = fpVariable
+    TitleFont.Style = []
+    TitleFont.Weight = 0
+  end
+  object ClientDataSet1: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 256
+    Top = 224
+    object ClientDataSet1CODE: TStringField
+      FieldName = 'CODE'
+      Size = 10
+    end
+    object ClientDataSet1NAME: TStringField
+      FieldName = 'NAME'
+      Size = 40
+    end
+    object ClientDataSet1PRICE: TCurrencyField
+      FieldName = 'PRICE'
+    end
+  end
+  object RpAlias1: TRpAlias
+    List = <
+      item
+        Alias = 'SAMPLE'
+        Dataset = ClientDataSet1
+      end>
+    Left = 304
+    Top = 224
+  end
+  object CLXReport1: TCLXReport
+    Title = 'Untitled'
+    AliasList = RpAlias1
+    Left = 352
+    Top = 224
+  end
+  object DataSource1: TDataSource
+    DataSet = ClientDataSet1
+    Left = 296
+    Top = 96
+  end
+end

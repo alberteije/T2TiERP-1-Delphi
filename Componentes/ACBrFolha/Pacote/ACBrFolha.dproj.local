@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/06/12 13:33:59.427.pas,C:\acbr\Fontes\ACBrFolha\ACBrFolhaUtils.pas=</Transaction>
+    <Transaction>2013/06/12 13:33:59.507.pas,C:\acbr\Fontes\ACBrFolha\ACBrFolha_Sefip_Class.pas=</Transaction>
+    <Transaction>2013/06/12 13:33:59.547.pas,C:\acbr\Fontes\ACBrFolha\ACBrFolha_Sefip.pas=</Transaction>
+    <Transaction>2013/06/12 13:33:59.587.pas,C:\acbr\Fontes\ACBrFolha\ACBrFolha.pas=</Transaction>
+    <Transaction>2013/06/12 13:34:29.710.dproj,C:\Documents and Settings\Toninho.SOMARMV\Meus documentos\RAD Studio\Projects\Package1.dproj=C:\acbr\Fontes\ACBrFolha\Pacote\ACBrFolha.dproj</Transaction>
+    <Transaction>2013/06/12 14:19:04.006.pas,C:\acbr\Fontes\ACBrFolha\Pacote\Unit1.pas=C:\acbr\Fontes\ACBrFolha\ACBrFolha_Caged.pas</Transaction>
+    <Transaction>2013/06/13 12:03:01.143.pas,C:\acbr\Fontes\ACBrFolha\Pacote\Unit1.pas=C:\acbr\Fontes\ACBrFolha\ACBrFolha_Caged_Class.pas</Transaction>
+  </Transactions>
+</BorlandProject>

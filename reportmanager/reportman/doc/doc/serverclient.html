@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Report Manager Client</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Report Manager Server</h2>
+<h3>Report Client</h3>
+<p>The report client application is metaview, with metaview you can connect to 
+  a machine running Report Manager Server. You connect providing hostname, user 
+  name and password. By default a report server has only Admin user with blank 
+  password.</p>
+<p>You can also execute reports with the <a href="delphicomp.html">VCL component</a> 
+  and the <a href="gnuc.html">standard library</a>.</p>
+<p>Note: The screenshots are in spanish</p>
+<p><img src="images/repserverclient.jpg" width="611" height="494"></p>
+<p>After connection, the report server provides a list of available aliases, each 
+  alias can have a diferent set of avaliable reports, the reports are represented 
+  in a tree structure. Here is a sample of a generated tree.</p>
+<p><img src="images/repserverclient2.jpg" width="611" height="494"></p>
+<p>You can modify the parameters before executing:</p>
+<p><img src="images/repserverclient3.jpg" width="591" height="137"></p>
+<p>When you execute the report, the server sends the result to the client application, 
+  then you can print it, save as a report metafile or as a Adobe PDF file.</p>
+<p><img src="images/repserverclient4.jpg" width="611" height="494"></p>
+<p>To distribute the report client you need only this files</p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Windows</b></td>
+    <td bgcolor="#FFFFCC"><b>Linux</b></td>
+  </tr>
+  <tr> 
+    <td>metaviewxp.exe</td>
+    <td>metaview, metaview.sh, libborqtint.6.9.so</td>
+  </tr>
+  <tr>
+    <td>reportmanres.*, metaviewxp.* (Optional)<br>
+    </td>
+    <td>reportmanres.* (Optional)</td>
+  </tr>
+</table>
+<p>Internationalization files (reportmanres.*,metaviewxp.*) are optional, the 
+  default language is English.</p>
+<p>See also <a href="serverconfig.html">Report Server configuration.</a></p>
+<p>&nbsp;</p>
+</body>
+</html>

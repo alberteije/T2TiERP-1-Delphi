@@ -1,0 +1,104 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{9546283e-4500-4894-806d-25bfb74d05d1}</ProjectGuid>
+    <MainSource>metaviewxp.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>..\metaviewxp.ESN</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_Optimize>False</DCC_Optimize>
+    <DCC_IntegerOverflowCheck>True</DCC_IntegerOverflowCheck>
+    <DCC_RangeChecking>True</DCC_RangeChecking>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_ExeOutput>..\..\metaview</DCC_ExeOutput>
+    <DCC_Define>NOLINUXPRINTBUG;RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Optimize>False</DCC_Optimize>
+    <DCC_IntegerOverflowCheck>True</DCC_IntegerOverflowCheck>
+    <DCC_RangeChecking>True</DCC_RangeChecking>
+    <DCC_ExeOutput>..\..\metaview</DCC_ExeOutput>
+    <DCC_Define>NOLINUXPRINTBUG;DEBUG</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject xmlns=""> <Delphi.Personality>   <Parameters>
+      <Parameters Name="UseLauncher">False</Parameters>
+      <Parameters Name="LoadAllSymbols">True</Parameters>
+      <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+    </Parameters>
+    <VersionInfo>
+      <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+      <VersionInfo Name="AutoIncBuild">True</VersionInfo>
+      <VersionInfo Name="MajorVer">2</VersionInfo>
+      <VersionInfo Name="MinorVer">4</VersionInfo>
+      <VersionInfo Name="Release">0</VersionInfo>
+      <VersionInfo Name="Build">52</VersionInfo>
+      <VersionInfo Name="Debug">False</VersionInfo>
+      <VersionInfo Name="PreRelease">False</VersionInfo>
+      <VersionInfo Name="Special">False</VersionInfo>
+      <VersionInfo Name="Private">False</VersionInfo>
+      <VersionInfo Name="DLL">False</VersionInfo>
+      <VersionInfo Name="Locale">3082</VersionInfo>
+      <VersionInfo Name="CodePage">1252</VersionInfo>
+    </VersionInfo>
+    <VersionInfoKeys>
+      <VersionInfoKeys Name="CompanyName">Toni Martir</VersionInfoKeys>
+      <VersionInfoKeys Name="FileDescription">Report client and metafile viewer</VersionInfoKeys>
+      <VersionInfoKeys Name="FileVersion">2.4.0.52</VersionInfoKeys>
+      <VersionInfoKeys Name="InternalName">metaview</VersionInfoKeys>
+      <VersionInfoKeys Name="LegalCopyright">MPL/GLP License</VersionInfoKeys>
+      <VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+      <VersionInfoKeys Name="OriginalFilename">metaview</VersionInfoKeys>
+      <VersionInfoKeys Name="ProductName">Report Manager Metafile viewer/client</VersionInfoKeys>
+      <VersionInfoKeys Name="ProductVersion">1.1.0.0</VersionInfoKeys>
+    </VersionInfoKeys>
+    <Source>
+      <Source Name="MainSource">metaviewxp.dpr</Source>
+    </Source>
+  </Delphi.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <ItemGroup />
+  <ItemGroup>
+    <DelphiCompile Include="metaviewxp.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="C\prog\toni\cvsroot\reportman\reportman\rpexceldriver.dfm">
+      <Form>FRpExcelProgress</Form>
+    </DCCReference>
+    <DCCReference Include="C\prog\toni\cvsroot\reportman\reportman\rpfmainmetaviewvcl.dfm">
+      <Form>FRpMainMetaVCL</Form>
+    </DCCReference>
+    <DCCReference Include="C\prog\toni\cvsroot\reportman\reportman\rpfmetaviewvcl.dfm">
+      <Form>FRpMetaVCL</Form>
+    </DCCReference>
+    <DCCReference Include="C\prog\toni\cvsroot\reportman\reportman\rpgdidriver.dfm">
+      <Form>FRpVCLProgress</Form>
+    </DCCReference>
+    <DCCReference Include="C\prog\toni\cvsroot\reportman\reportman\rpmdclitreevcl.dfm">
+      <Form>FRpCliTreeVCL</Form>
+    </DCCReference>
+    <DCCReference Include="C\prog\toni\cvsroot\reportman\reportman\rpmdfaboutvcl.dfm">
+      <Form>FRpAboutBoxVCL</Form>
+    </DCCReference>
+    <DCCReference Include="C\prog\toni\cvsroot\reportman\reportman\rpmdprintconfigvcl.dfm">
+      <Form>FRpPrinterConfigVCL</Form>
+    </DCCReference>
+    <DCCReference Include="C\prog\toni\cvsroot\reportman\reportman\rprfvparams.dfm">
+      <Form>FRpRTParams</Form>
+    </DCCReference>
+    <RcCompile Include="metaviewxp_DRC.rc">
+      <ModuleName>metaviewxp_DRC.rc</ModuleName>
+      <Form>metaviewxp_DRC.res</Form>
+    </RcCompile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+</Project>

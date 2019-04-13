@@ -1,0 +1,1450 @@
+{*******************************************************************************
+Title: T2Ti ERP
+Description: Tela principal do PAF-ECF - Caixa.
+
+The MIT License
+
+Copyright: Copyright (C) 2010 T2Ti.COM
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+       The author may be contacted at:
+           t2ti.com@gmail.com</p>
+
+@author Albert Eije (T2Ti.COM)
+@version 1.0
+*******************************************************************************}
+
+Agradecimentos:
+
+* Administradores:
+- Albert Eije
+
+* Desenvolvedores:
+- José Rodrigues
+
+{******************************************************************************
+|* PafEcf.exe
+|*
+|* PROPÓSITO: Registro de Alterações
+******************************************************************************}
+
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+------------------------------------------------------------------------------------
+Paf-Ecf Versão 1.0.3.2 - Beta   02/11/2011 
+
+[+] Criada a Tabela para armazenar os indices das aliquotas de acordo com o ecf 
+
+    CREATE TABLE ECF_ALIQUOTAS (
+                                 ID                   INTEGER NOT NULL,
+                                 TOTALIZADOR_PARCIAL  VARCHAR(10),
+                                 ECF_ICMS_ST          VARCHAR(4),
+                                 PAF_P_ST             CHAR(1)
+    );
+
+
+      ALTER TABLE ECF_ALIQUOTAS ADD CONSTRAINT PK_ECF_ALIQUOTAS  PRIMARY KEY (ID);
+
+
+     Obs: esta tabela tem chave primaria, mas não tem auto-incremento e esta disponivel somente para FireBird.
+
+
+
+[+]  Criada a unit AliquotasVO;
+
+[+]  Criada a unit AliquotasController;
+
+[*]  Alterada a procedure TFCaixa.ConfiguraACBr, na altura da linha 570.
+
+[-]  Removido ArrayAliquotas da unit Ucaixa.pas
+
+[*]  Alterada a procedure TFCaixa.VendeItem, para a retirada da ArrayAliquotas e inclusão da pesquisa na ECF_ALIQUOTAS.
+
+[*]  Alterada na unit ProdutoController a class function AtualizaEstoque: Boolean;
+
+[*]  Alterada na unit ProdutoController a class function GravaCargaProduto(vTupla: String): Boolean;
+
+[*] Alterada a function VerificaNULL(Texto:string;Tipo:integer):string;
+
+---------------------------------------------------------------------------------------
+Paf-Ecf Versão 1.0.1.50 - Beta   12/09/2011 
+
+
+[*]  Uma das principais mudanças está relacionada a procedure GravaR06 que existia em vários locais e eu resolvi deixar apenas uma na unit UPAF com um parâmetro para torna-lá genérica e executa-lá na finalização de todos os relatórios gerenciais. Foi feito também um teste nessa procedure conforme o colega Moacir havia informado afim de tratar uma determinada informação quando a impressora for MFD ou não.
+
+[*]  Ainda fiz um pequeno teste na chamada de duas funções no menu fiscal pra identificar se a impressora é MFD ou não e dar a mensagem padrão que o roteiro determina.
+
+[*]  A unit UEcf foi modificada novamente na procedure Reducaoz, fiz alguns comentários nas mudanças e uma das principais é q alguns procedimentos q eram executados antes da redução z agora estão sendo executados após a redução z conforme determina o roteiro.
+
+
+conforme alterações enviadas por email por pelos autores:
+- Gilson Santos Lima
+- Jose Moacir Tavares
+
+
+Paf-Ecf Versão 1.0.1.49 - Beta   7/09/2011 
+
+[+]  Criado parâmetro na tela de configuração de caixa na aba outras configurações referente ao lançamento de notas manuais q deve estar disponivél de acordo com a unidade da federação.
+[+]  Na tela de IniciaMovimento quando não for possível a primeira carga do dia, será solicitado a senha do gerente para autorizar a liberação do terminal independentemente da primeira carga. (Este recurso é para casos extremos, posto q a primeira carga do dia é necessária para a atualização do estoque do movimento anterior).
+[+]  Vários ajustes principalmente nas functions ConfereGT e ECFAutorizado da unit UPAF para atender o requisito XXII do roteiro.
+[+]  Criação do arquivo Conexao.ini para armazenar parametros que não estão relacionados diretamente com os requisitos do roteiro deixando assim o arquivoauxiliar.ini exclusivamente para as necessidades do roteiro.
+[+]  Com a utilização do arquivo Conexao.ini para determinar, entre outras coisas, o tipo de acesso à base de dados, o configurador também já foi ajustado para trabalha com ele.
+
+estrutura do arquivo Conexao.ini
+
+[SGBD]
+BD=FIREBIRD
+BDBalcao=FIREBIRD
+
+[IMPORTA]
+REMOTEAPP=C:\T2TIPAFECF\
+
+[ECFS]
+QUANTIDADE=1
+EMPRESA=1
+
+conforme alterações enviadas por email por pelo autor Gilson Santos Lima
+
+
+Paf-Ecf Versão 1.0.1.48 - Beta   18/08/2011 
+-------------------------------------------
+
+[*] Alterado NotafiscalController
+
+
+[*] Alterado UCargaPDV
+
+
+[*] Alterado Ucaixa
+
+
+[*] Alterado UNotaFiscal
+
+
+[+] Adicionado UPenDrive
+
+
+Paf-Ecf Versão 1.0.1.47 - Beta   16/08/2011 
+-------------------------------------------
+
+[*] Alterado NotafiscalController
+
+
+[*] Alterado OperadorController
+
+
+[*] Alterado Ucaixa
+
+
+[*] Alterado UNotaFiscal
+
+
+
+
+Paf-Ecf Versão 1.0.1.46 - Beta   06/08/2011 
+-------------------------------------------
+
+[*] Alterado o UExcluiProdutoVenda.pas
+
+[*] Alterado IntegracaoPDV conforme post de Daniel Wanderley
+
+
+1º - O Integração esta lendo o arquivo C1E1-05-08-2011.txt, certo, mas percebi que se por algum motivo a aplicação nao executar neste dia, então este movimento nao será lido pois ele esta lendo somente o dia atual.
+
+Solução: Inserir um TFileListBox, onde atualizo o diretorio com o FDataModule.RemoteAppPath, entao é feita a leitura de todos os movimentos gaurdados nos TXT, sendo que os movimentos anteriores a data atual serão excluidos para não ter que ficar lendo estes arquivos sem necessidade.
+
+codigo: 
+function TFIntegracaoPDV.ImportaPDV:boolean;
+var
+  RemoteApp, LocalApp : string;
+  i:integer;
+  iContaTXT: Integer;
+  DataTXT: TDate;
+begin
+  TimeIntegracao.Enabled:=False;
+  try
+
+    ListTXT.Mask      := '*.txt';
+    ListTXT.Directory := FDataModule.RemoteAppPath;
+    ListTXT.Update;
+
+    LocalApp:=  ExtractFilePath(Application.ExeName)+'Script\vendas.txt';
+    for i := 1 to (StrToInt(FDataModule.QtdeECF)) do
+    begin
+      for iContaTXT := 0 to ListTXT.Count -1 do
+      begin
+        RemoteApp :=  FDataModule.RemoteAppPath+RemoteApp+ListTXT.Items[iContaTXT];
+        if not FileExists(FDataModule.RemoteAppPath+'Semaforo') then
+        begin
+          if FileExists(RemoteApp) then
+          begin
+            if CopyFile(PChar(RemoteApp), PChar(LocalApp), False) then
+            begin
+              if TImportaController.ImportaDadosDoPDV(LocalApp) then
+              begin
+                Result:=True;
+                DataTXT := StrToDate(StringReplace(Copy(ListTXT.Items[iContaTXT],6,10),'-','/',[rfReplaceAll]));
+                if DataTXT < date then
+                  DeleteFile(Pchar(RemoteApp));
+              end;
+            end;
+          end;
+        end;
+        RemoteApp := '';
+      end;
+    end;
+  except
+    Result:=false;
+  end;
+end;
+
+2º - Estava retornando erro de conexao com algumas instruções SQL no codigo, entao vi que em:
+
+class procedure TDBExpress.Conectar(BD: String);
+begin
+  Conexao := TSQLConnection.Create(nil); // Neste ponto esta sendo criada outro componente Conexao
+  ConfigurarConexao(Conexao, BD);
+  Conexao.KeepConnection := True;
+  Conexao.AutoClone := False;
+  Conexao.Connected := True;
+  Banco := BD;
+end;
+
+Isto estava cusando erro nas consultas pois temos algo como 
+Query.SQLConnection := FDataModule.Conexao;
+
+Solução: Em ConexaoBD.pas
+
+class procedure TDBExpress.Conectar(BD: String);
+begin
+  Conexao := FDataModule.Conexao; // TSQLConnection.Create(nil); // Alterado para configurar e utilizar Conexao do DataModule
+  ConfigurarConexao(Conexao, BD);
+  Conexao.KeepConnection := True;
+  Conexao.AutoClone := False;
+  Conexao.Connected := True;
+  Banco := BD;
+end;
+
+
+
+
+
+
+Paf-Ecf Versão 1.0.1.45 - Beta   05/08/2011 
+-------------------------------------------
+[*] Varias alteraçoes enviadas pelo gilson
+
+
+Fiz pequenas mudanças no FConfigConexao a maioria apenas para dar uma enxugada no código e a mais perceptivel foi a desbailitação do radiogroup que possibilita configurar a conexão local ou remota na aba de configuração do Paf ficando chumbado para ser Local a conexão.
+
+No formlário UCaixa foram feitas a seguintes mudanças:
+- A nomenclatura dos itens do menu fiscal foi alterada para ficar de acordo com o que estabelece o roteiro.
+- Foi removido todas as referência a Nfe (inclusive no datamodule e menu) uma vez que esta ficará no Balcão.
+- Alterado o Label da Calculadora que era acionada através da tecla F5 (ainda chama provisóriamente) uma vez que será utilizado para chamar a tela (Ainda em implementação) do lançamento manual das notas (PED). Para que a descrição seja alterada de fato é necessário fazer o ajuste dessa nomenclatura na tabela de ECF_POSICAO_COMPONENTES mudando de Calculadora para PED. Uma vez que o caption desse label é modificado em tempo de execução.
+- Quando o Paf estiver em estado "Somente Consulta" todas as funções agora ficam bloqueadas com exceção das de consultas e da de lançamento de notas manuais (PED). Com relação a isso, o botão Identificar Cliente trará a tela de consulta de clientes quando o PAF estiver em modo "Somente Consulta". A mensagem de impossibilidade de uso das demais funções foi padronizada para todos.
+
+No encerramovimento fiz o seguite, após o encerramento do caixa eu atualizo o objeto Movimento da Unit UCaixa que vai ficar atualizada sem nenhum movimento aberto:
+
+   TMovimentoController.EncerraMovimento(Movimento);
+   ImprimeFechamento;
+   UCaixa.Movimento := TMovimentoController.VerificaMovimento;
+
+e o inicio da procedure IniciaVendaDeItens foi modificado para checar se o movimento está aberto, conforme abaixo: 
+
+procedure TFCaixa.IniciaVendaDeItens;
+var
+  Unitario, Quantidade, Total: Extended;
+  Estado: String;
+begin
+  TimeIntegracao.Enabled := False;
+
+  if Movimento.Id = 0 then
+  begin
+    labelMensagens.Caption := 'CAIXA FECHADO';
+    IniciaMovimento;  //se o caixa estiver fechado abre o iniciaMovimento
+    Abort;
+  end;
+
+Assim, não é possivel mais fazer vendas sem que haja um movimento aberto!
+
+Para corrigir o erro de fechamento de movimento na Redução Z fiz o seguinte:
+Após a execução de todo o processo da redução z, caso haja movimento em aberto, este será fechado automáticamente e impesso seu respectivo relatório de fechamento (naturalmente nesse caso não será possivel o usuário informar os valores manualmente para conferencia, mas considerando que o caixa não foi fechado quando deveria, particularmente não vejo muita diferença, mas se alguém tiver alguma ideia melhor será bem vinda.)
+Abaixo algumas mudanças no código da procedure ReducaoZ da unit UECF:
+
+    //se for a primeira redução do mês e o ECF for antigo, imprime a leitura da memoria fiscal
+    if not FDataModule.ACBrECF.MFD then
+      PrimeiraReducaoDoMes;
+
+    FCaixa.labelMensagens.Caption := 'Movimento do ECF Encerrado.';
+
+    Movimento := TMovimentoController.VerificaMovimento;
+    if Movimento.Id <> 0 then
+    begin
+      Movimento.DataFechamento := FormatDateTime('yyyy-mm-dd', FDataModule.ACBrECF.DataMovimento);
+      Movimento.HoraFechamento := FormatDateTime('hh:nn:ss', FDataModule.ACBrECF.DataMovimento);
+      Movimento.Status := 'F';
+      TMovimentoController.EncerraMovimento(Movimento);
+      try
+        Application.CreateForm(TFEncerraMovimento, FEncerraMovimento);
+        UEncerraMovimento.Movimento := TMovimentoController.VerificaMovimento(Movimento.Id);
+        FEncerraMovimento.ImprimeFechamento;
+      Finally
+        FreeAndNil(FEncerraMovimento);
+      end;
+      Application.CreateForm(TFIniciaMovimento, FIniciaMovimento);
+      FIniciaMovimento.ShowModal;
+    end;
+  end;
+
+Não aprofundei os testes nesse aspecto, portanto, ainda pode ser q tenha algo a ser feito.
+
+
+Refiz totalmente a funtion GeraMD5 para atender o roteiro. Com relação a isso, deve-se observar que o arquivo Balcao.exe deve estar na mesma pasta do Frente.
+
+Adicionei a "function Codifica" na unit UBiblioteca. Oportunamente farei o ajuste para que todas as informações do ArquivoAuxiliar.ini que hoje estão "criptografadas" fazendo uso do MD5 sejam substituidas por esta função que serve para criptografar e descriptografar uma vez que iremos precisar disso.
+
+Na unit TotalTipoPagamentoController alterei a function MeiosPagamentoTotal fazendo um select statico ao invés do uso da view VIEW_MEIOS_PAGAMENTO_TOTAL. Esta view eu até removi da base pois da forma q foi concebida não atendia ao requisito. Acredito q o select q criei deva funcionar tmb no Mysql.
+
+Fiz pequenas mudanças no sistema nos locais onde faz chamada da procedimento UECF.FechaCupom adequando a mensagem desse método ao q é exigido no roteiro.
+
+Para atender o requisito XVI fiz esta mudança na procedure IniciaVendaDeItens na unit UCaixa:
+
+  if StatusCaixa <> 3 then
+  begin
+
+    try
+      Estado := UECF.Estados[FDataModule.ACBrECF.Estado];
+    except
+      StatusCaixa := 3;
+      labelMensagens.Caption := 'Terminal em Estado Somente Consulta';
+      MensagemPersistente := labelMensagens.Caption;
+      Application.MessageBox('Impressora Desligada  ou  Sem Papel  ou Fora de Linha!'+#13+'Caso a Impressora esteja ligada, com Papel e Em Linha'+#13+ 'Verifique se os cabos  estão  devidamente  conectados.', 'Informação do Sistema', MB_OK + MB_ICONINFORMATION);
+      TelaPadrao;
+      editCodigo.SetFocus;
+      Abort;
+    end;
+
+    if UECF.ImpressoraOK then
+    begin
+      if MenuAberto = 0 then
+
+ 
+A intenção é que caso a impressora esteja desligada, fora de linha, sem papel ou com o cabo desconectado o sistema notifique o usuário qnto a isso e bloquei todo o sistem possibilitando apenas as operações prevista para qndo o terminal estiver em modo de somente consulta.
+
+Pequenos ajuste no componente ACBrPAF para formatação correta dos arquivos por ele gerados.
+
+Pequena correção na unit ULMFC por conta de que o arquivo não estava sendo assinado.
+
+Observei que o relatório LMFS por intervalo de CRZ deu problema (não sei pq) qndo tentei tira-lo dentro de um intervalo pequeno de CRZ, qndo aumentei o intervalo ele funcionou sem problema (fica ai a dica).
+
+Após os teste e correções que fiz, posso dar por completos os seguintes requisitos e seus respectivos testes:
+
+Requisito I
+Requisito II
+Requisito III 
+Requisito VIII 
+Requisito IX
+Requisito X
+Requisito XI
+Requisito XII
+Requisito XIII
+Requisito XIV
+Requisito XV
+Requisito XVI
+Requisito XXIX 
+Requisito XXX
+Requisito XXXI
+
+
+OBs: Tem que atualizar a ACBr e o Blacao.exe tem que estar na mesma pasta do PafEcf.exe
+
+
+Paf-Ecf Versão 1.0.1.44 - Beta   02/08/2011 
+-------------------------------------------
+
+[+] criado a pasta \branches\Paf-Ecf-Merge\Mini Retaguarda\IntegracaoPDV 
+
+    obs: O Integracao.exe devera ficar na mesma pasta  do \Mini Retaguarda\
+
+    pois vai utilizar o mesmo ArquivoAuxiliar.ini
+
+    neste arquivo ficam as informações para o fincionamento do mesmo
+
+    [IMPORTA]
+    REMOTEAPP=C:\T2TIPAFECF\
+     
+    remoteapp é o diretorio onde o aplicativo vai ler as informações de venda
+
+
+    [ECFS]
+    QUANTIDADE=1   // aqui vai a informação de quantos caixas tem na empresa
+    EMPRESA=1      // id da empresa
+
+
+[*] Alterado o ArquivoAuxiliar.ini do pafecf
+   
+
+    [IMPORTA]
+    REMOTEAPP=C:\T2TIPAFECF\  
+
+    aqui devera ser informado o mesmo diretorio do arquivoauxiliar.ini nas dua aplicações
+
+
+    Obs: este diretorio, devera ser compartilhado e haver permissão de leitura e gravação para os aplicativos.
+
+    foram feitas outras pequenas modificações nos VOs e Controller para adequar a carga.
+
+    
+    
+
+Paf-Ecf Versão 1.0.1.43 - Beta   26/07/2011 Versão final antes do merge
+-------------------------------------------
+
+
+[*]  Alterado a UConfigConexao.pas  e muitos outras alterações 
+
+     autor Daniel Wanderley
+
+     Comentarios:
+
+     Aproveitando, fiz algumas alterações para FConfigConexao alterar as configurações para conexao do Balcao...
+     Tbem esta no anexo a FConfiguracao com um botao que permite chamar o FConfigConexao 
+
+
+     
+
+
+[+]  Adicionado a unit ULogImportacao.pas
+
+[*]  Alterado a tabela LOG_IMPORTACAO
+
+
+    autor Gilson Santos Lima e Jose Rodrigues
+
+    Comentarios:
+
+    Quando da importação dos dados, os registros que não estiverem consistentes não 
+    serão gravados na base de dados do frente. Para que o usuário tenha ciência de que
+    houve problema na gravação do registro no Paf será exibido um ícone animado na tela 
+    principal na área das imagens dos produtos sinalizando que exitem registro que necessitam
+    de ajuste para poderem ser gravados no PAf, daí o usuário clica na imagem animada e é exibida
+    uma tela onde o usuário pode visualizar o q ocorreu de errado e excluir em seguida estes registros.
+    Uma vez que não haja mais nenhum registro de log a imagem animada da tela principal desaparece 
+    indicando que não há mais nenhum aviso de pendencias. 
+
+
+
+[*]  Alterado a tabela ECF_CHEQUE_CLIENTE
+
+[*]  Alterado UEFETUAPAGAMENTO, ChequeClienteVO, ChequeController, UCheque. Acho que foi isso.
+
+     Na tabela ecf_tipo_pagamento utilizar o campo gera_parcelas na seguinte forma:   
+     N - SEM USO
+     C - CHAMA TELA DE CHEQUE
+     S - CHAMA TELA DE PARCELAMENTO
+
+
+     Autores Gilson Santos Lima e Clausqueller O. Mitome
+
+     Pendencias:
+
+     Impressão no cupom fiscal como vinculado;
+     Exportação;
+     Ajustar alguns controles de tela;
+     Verificar Importação dados do cheque; (não tinha string para testar ou equipamento para leitura)
+     Tambem não testei a impressao do cheque; (falta de equipamento)
+
+
+[*] Alterado scripts firebird_semdados.sql, firebird_comdados.sql e Procedures_Firebird.sql 
+
+
+Paf-Ecf Versão 1.0.1.42 - Beta   25/07/2011 
+-------------------------------------------
+
+[*] Alterado a class function TVendaController.CalculaImpostos
+
+        //essa consulta vai trazer apenas um registro contendo o totalizador parcial
+        //cujo valor é o maior nessa venda
+
+        Query := TSQLQuery.Create(nil);
+        Query.SQLConnection := FDataModule.Conexao;
+
+        if FDataModule.Conexao.DriverName = 'Firebird' then
+        begin
+          ConsultaSQL := 'select FIRST 1 SKIP 0 TOTALIZADOR_PARCIAL,sum(VALOR_TOTAL) as TOTAL ' +
+          ' from ECF_VENDA_DETALHE where ID_ECF_VENDA_CABECALHO=' + IntToStr(pVendaCabecalho.Id) +
+          ' group by TOTALIZADOR_PARCIAL ' +
+          ' order by TOTAL desc ' ;
+        end else
+        if FDataModule.Conexao.DriverName = 'MySQL' then
+        begin
+        ConsultaSQL := 'select TOTALIZADOR_PARCIAL,sum(VALOR_TOTAL) as TOTAL ' +
+          ' from ECF_VENDA_DETALHE where ID_ECF_VENDA_CABECALHO=' + IntToStr(pVendaCabecalho.Id) +
+          ' group by TOTALIZADOR_PARCIAL ' +
+          ' order by TOTAL desc ' +
+          ' limit 1';
+        end;
+
+        Query.sql.Text := ConsultaSQL;
+        Query.Open;
+
+
+  conforme identificado por Jorge Antonio Ribeiro Ferreira
+
+  http://www.t2ti.com/ead/mod/forum/discuss.php?d=2752#p22117
+
+
+
+Paf-Ecf Versão 1.0.1.41 - Beta   25/07/2011 
+-------------------------------------------
+
+[*] units revisadas do inicio e encerramento do movimento (já com as alterações do colega Clausqueller).
+
+    conforme postado por Gilson Santos Lima
+
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2752#p22163
+
+
+[*] Alterado UCargaPDV adicionar o código 
+    
+    procedure TFCargaPDV.FormShow ForceDirectories(ExtractFilePath(Application.ExeName)+'Script');
+
+    conforme postado por Gilson Santos Lima
+
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2752#p22152
+
+
+[*] algumas units revisadas conforme post de Gilson Santos Lima
+
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2752#p22135
+
+
+
+
+Paf-Ecf Versão 1.0.1.40 - Beta   24/07/2011 
+-------------------------------------------
+
+[+] Alterado a procedure TFCaixa.FormKeyDown
+
+
+[+] Adicionado a chamada do Form FCheques
+
+    If (ssctrl in shift) and CharInSet(chr(Key),['C','c']) then
+    begin
+      Application.CreateForm(TFCheques, FCheques);
+      FCheques.ShowModal;
+    end;
+
+
+
+Paf-Ecf Versão 1.0.1.39 - Beta   23/07/2011 
+-------------------------------------------
+
+[+] Varias Alterações, agora para o Banco Firebird Já está Importando as Tabelas abaixo:
+
+    UNIDADE
+    PRODUTO
+    SITUACAO_CLI
+    CLIENTE
+    EMPRESA
+    CONTADOR
+    TURNO
+    FUNCIONARIO
+    OPERADOR
+    BANCO
+    CFOP
+    FICHA
+    PROMOCAO
+
+[+] Alterado a unit UEncerraMovimento.pas
+
+    conforme postado por marco chagas costa
+
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2752#p22058
+
+
+
+Paf-Ecf Versão 1.0.1.38 - Beta   23/07/2011 
+-------------------------------------------
+
+[+] Alterado a unit UEncerraMovimento.pas
+
+[+] Alterado a unit TotalTipoPagamentoController.pas
+
+[+] Adicionado a unit UCheques.pas
+
+    conforme post de Gilson Santos Lima
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2752#p22045
+
+
+[+] CREATE  PROCEDURE CARGA_BANCO
+[+] CREATE  PROCEDURE CARGA_CFOP
+[+] CREATE  PROCEDURE CARGA_CLIENTE
+[+] CREATE  PROCEDURE CARGA_ECF_CONTADOR
+[+] CREATE  PROCEDURE CARGA_ECF_EMPRESA
+[+] CREATE  PROCEDURE CARGA_ECF_FUNCIONARIO
+[+] CREATE  PROCEDURE CARGA_ECF_OPERADOR
+[+] CREATE  PROCEDURE CARGA_ECF_TURNO
+[+] CREATE  PROCEDURE CARGA_FICHA_TECNICA
+[+] CREATE  PROCEDURE CARGA_PRODUTO
+[+] CREATE  PROCEDURE CARGA_PRODUTO_PROMOCAO
+[+] CREATE  PROCEDURE CARGA_SITUACAO_CLI
+[+] CREATE  PROCEDURE CARGA_UNIDADE_PRODUTO
+
+
+[+] Adicionado a unit CFOPController.pas
+[*] Alterado a unit ClienteController.pas
+[*] Alterado a unit ContadorController.pas
+[*] Alterado a unit EmpresaController.pas
+[*] Alterado a unit FichaTecnicaController.pas
+[*] Alterado a unit OperadorController.pas
+[*] Alterado a unit ProdutoController.pas
+[+] Adicionado a unit ProdutoPromocaoController.pas
+[*] Alterado a unit SituacaoClienteController.pas
+[*] Alterado a unit TotalTipoPagamentoController.pas
+[*] Alterado a unit UnidadeController.pas
+[*] Alterado a unit BancoController.pas+
+
+
+[*] Alterado scripts firebird_semdados.sql e firebird_comdados.sq
+
+[+] Adicionado DER_PAF_ECF_TEF_FB.xml
+
+[*] Alterado DER_PAF_ECF_TEF.xml
+
+
+    
+
+
+
+Paf-Ecf Versão 1.0.1.37 - Beta   22/07/2011 
+-------------------------------------------
+
+[+] Adicionado a class Function VerificaMovimento(Id: Integer; StatusMovimento : String): TMovimentoVO; overload;
+
+    conforme postado por Clausqueller Mitome
+
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2752#p21978 
+
+
+
+Paf-Ecf Versão 1.0.1.36 - Beta   21/07/2011 
+-------------------------------------------
+
+[+] Alterado a unit class Function TConfiguracaoController.PegaConfiguracao: TConfiguracaoVO;
+
+    conforme postado por Clausqueller Mitome
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2752#p21927
+
+
+
+
+Paf-Ecf Versão 1.0.1.35 - Beta   20/07/2011 
+-------------------------------------------
+[+] Alterado a unit UMesclaPreVenda.pas
+
+[+] Alterado a unit UMesclaDAV.pas
+
+[+] Alterado a unit UDataModule.pas
+
+[+] Alterado a unit UCaixa.pas
+
+[+] Alterado a unit PreVendaController.pas
+
+[+] Alterado a unit DAVController.pas
+
+    Objetivo: Dotar o Caixa de mais uma conexão a Banco de Dados(Balcao) 
+
+    conforme postado por Daniel Wanderley
+
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2713#p21818
+
+    Dicas:
+    - foi adicionado em ArquivoAuxiliar.ini na secao [SGBD] BDBalcao=MySQL que deverar informar o tipo de Banco do Balcao...
+    - Foi adicionado dois arquivos, Firebird_Balcao_conn.txt e MySQL_Balcao_conn.txt ambos identicos aos que ja usamos para configurar a conexao com o banco local.
+
+[+] Alterado a unit USplash
+    
+    Objetivo: recurso para substituir as imagens utilizadas
+
+    conforme postado por Clausqueller Mitome
+
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2743#p21887
+
+
+
+[-] Alterado scripts sem_dados.sql e com_dados.sq (MySQL)
+
+
+
+
+Paf-Ecf Versão 1.0.1.34 - Beta   18/07/2011 
+-------------------------------------------
+
+[+] Adicionado a unit USplash
+
+    objetivo: dar uma cara mais profissional ao sistema.
+
+    conforme postado por Daniel Wanderley
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2713#p21752
+
+
+
+[+] Alterado a procedure UECF.ReducaoZ;
+
+    Não se pode efetuar uma Redução Z toda vez que se encerra um movimento, mas toda vez que se realiza uma Redução Z o movimento deve estar encerrado 
+
+[+] Alterado a function ImpressoraOK(Msg : Integer = 1): Boolean; 
+
+[+] Alterado a procedure TFCaixa.TelaPadrao;
+
+[+] Alterado a procedure TFIniciaMovimento.confirma;
+
+    conforme postado por Gilson Santos Lima
+
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2634#p21652
+
+
+
+Paf-Ecf Versão 1.0.1.33 - Beta   18/07/2011 
+-------------------------------------------
+
+[+] Alterado na unit UConfiguracao para acrescentar o parametro TecladoReduzido
+
+[+] Alterado na unit ConfiguracaoVO para acrescentar o parametro TecladoReduzido
+
+[+] Alterado na unit Ucaixa para acrescentar o parametro TecladoReduzido
+
+    Conforme sugestão discutida no EAD
+
+    Gilson Santos Lima
+
+
+Paf-Ecf Versão 1.0.1.32 - Beta   18/07/2011 
+-------------------------------------------
+
+[*] retirado da Fcaixa F1 - Identifica Cliente
+
+[*] retirado da FcaixaF11 - Identifica Vendedor
+
+[+] Adicionado a unit ULocaliza
+
+    objetivo:
+
+    unificar as funções de localizar para teclados reduzidos conforme discussão no EAD 
+
+
+
+
+
+
+Paf-Ecf Versão 1.0.1.31 - Beta   17/07/2011 
+-------------------------------------------
+[*] Alterado a class procedure TParcelaController.ImprimeParcelas
+
+
+
+Paf-Ecf Versão 1.0.1.30 - Beta   16/07/2011 
+-------------------------------------------
+
+[+] Adicionado a unit UEmiteNFe.pas
+
+[*] Alterado a unit UDataModule.pas
+    
+[*] Alterado a unit UCaixa.pas
+
+    Emitir NF-e ainda em desenvolvimento, depende de aprovação do modelo
+    if listaMenuOperacoes.ItemIndex = 5 then
+    begin
+      Application.CreateForm(TFEmitirNFe,FEmitirNFe);
+      FEmitirNFe.ShowModal;
+    end;
+
+   conforme postado por Daniel Wanderley
+   http://www.t2ti.com/ead/mod/forum/discuss.php?d=2711#p21597
+
+
+
+Paf-Ecf Versão 1.0.1.29 - Beta   16/07/2011 
+-------------------------------------------
+
+
+[+] Adicionado unit UConfigConexao
+
+[+] Alterado a procedure TFDataModule.DataModuleCreate
+
+    try
+      Conexao.Connected := True;
+    except
+      Application.CreateForm(TFConfigConexao, FConfigConexao);
+      if FConfigConexao.ShowModal <> mrOK then
+        Application.Terminate;
+    end;
+   
+    conforme post de Gilson Santos Lima e Daniel Wanderley 
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2211#p21610
+
+
+[+] Adicionado função para sincronizar as formas de pagamento do sistema com o ECF. Veja aba Formas/Pagamento. 
+
+    conforme post de Daniel Wanderley 
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2713#p21539
+
+[+] Adicionado FechamentoVO.pas
+
+[*] Alterado a unit UEncerraMovimento.pas
+
+[*] Alterado a unit MovimentoController.pas
+
+[*] Alterado a unit FechamentoController.pas
+
+[+] Adicionado no banco de dados 
+    CREATE TABLE ECF_FECHAMENTO (
+    ID                INTEGER NOT NULL,
+    ID_ECF_MOVIMENTO  INTEGER NOT NULL,
+    TIPO_PAGAMENTO    VARCHAR(20),
+    VALOR             DECIMAL(18,6));
+
+
+[*] Alterado scripts firebird_semdados.sql e firebird_comdados.sq
+
+    conforme postado por Gilson Santos Lima
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2634#p21608
+
+
+
+Paf-Ecf Versão 1.0.1.28 - Beta   14/07/2011 
+-------------------------------------------
+[+] Alterado na unit UConfiguracao para acrescentar o parametro ImprimeParcela
+
+[+] Alterado na unit ConfiguracaoVO para acrescentar o parametro ImprimeParcela
+
+[+] Alterado na unit Ucaixa para acrescentar o parametro ImprimeParcela
+
+[+] Adicionado class procedure TParcelaController.ImprimeParcelas(Nome, CPF :string; pListaParcelaDetalhe: TObjectList<TParcelaDetalheVO>);
+
+    conforme  post de Gilson Santos Lima
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2724#p21499
+   
+    Objetivo : imprimir comprovante das parcelas na ECF.
+
+
+
+
+Paf-Ecf Versão 1.0.1.27 - Beta   13/07/2011 
+-------------------------------------------
+
+[-] Alterado na unit USpedFiscal a procedure GerarBloco0, acrescentado o codigo abaixa na altura da linha 82
+
+    if (not Assigned(ListaUnidade)) or (not Assigned(ListaProduto))then
+    begin
+      Application.MessageBox('Não há venda no período selecionado'+#13+
+                             'e ou a data informada é inválida', 'Informação do Sistema', MB_OK + MB_ICONINFORMATION);
+      abort;
+    end;
+
+  Objetivo: Dar ao usuario uma mensagem amigavel.
+
+  conforme identificado no post de Felipe Henrique
+  http://www.t2ti.com/ead/mod/forum/discuss.php?d=2713#p21488
+
+
+Paf-Ecf Versão 1.0.1.26 - Beta   12/07/2011 
+-------------------------------------------
+
+[-] Alterado scripts sem_dados.sql e com_dados.sq (MySQL)
+    
+    a tabela CONTAS_PAGAR_RECEBER estava com campo "TOTAL" errado, o correto é  "VALOR"
+   
+    conforme identificado no post de Sergio Toshio Kawahara
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2723#p21405
+    
+
+
+Paf-Ecf Versão 1.0.1.25 - Beta   12/07/2011 
+-------------------------------------------
+
+[+] Adicionado procedure TFExcluiProdutoVenda.EscolheComSetas(Tipo:integer);
+
+    Objetivo: Pode escolher o os botões por meio das setas(para teclados reduzidos) direita e esquerda.
+
+
+
+Paf-Ecf Versão 1.0.1.24 - Beta   12/07/2011 
+-------------------------------------------
+
+[+] Adicionado procedure TFEfetuaPagamento.Label1Click(Sender: TObject);
+    begin
+      keybd_event(VK_F2, 0, 0, 0);
+    end;
+
+[+] Adicionado procedure TFEfetuaPagamento.Label2Click(Sender: TObject);
+    begin
+      keybd_event(VK_F5, 0, 0, 0);
+    end;
+
+   Objetivo:
+   Foram adicionas para que seja possivel efetuar o fechamento rápido com o mouse.
+
+   para atender demanda conforme discusão no EAD
+   http://www.t2ti.com/ead/mod/forum/discuss.php?d=2713#p21318
+
+
+
+
+
+Paf-Ecf Versão 1.0.1.23 - Beta   09/07/2011 
+-------------------------------------------
+
+[*] Alterada a procedure TFCaixa.IniciaEncerramentoVenda;// removido o codigo da chamada do form FCargaPDV
+
+[*] Alterada aprocedure TFEfetuaPagamento.FormCloseQuery(Sender: TObject; var CanClose: Boolean); //codigo movido da TFCaixa.IniciaEncerramentoVenda;
+    begin
+      if (PodeFechar = True) and (StatusCaixa=0) then
+      begin
+        if (StatusCaixa=0) and (Configuracao.UsaIntegracao = 1) then
+        begin
+          FCaixa.labelMensagens.Caption:='Aguarde..., Exportando Dados';
+          Application.ProcessMessages;
+          Application.CreateForm(TFCargaPDV, FCargaPDV);
+          FCargaPDV.Tipo := 1;
+          FCargaPDV.ShowModal;
+          Application.ProcessMessages;
+          FCaixa.RecebeCarga;
+        end;
+
+        Application.CreateForm(TFFechaEfetuaPagamento, FFechaEfetuaPagamento);
+        FFechaEfetuaPagamento.ShowModal;
+     end;
+     CanClose := PodeFechar;
+   end;
+   
+   Motivo, o usuario poderia ficar com a venda concluida por tempo indeterminado, e não ocorreia a criação do arquivo texto de exportação.
+
+
+
+[+] Adicionado class function RetornaCabecalhoDaParcela(var IdVenda:integer):TParcelaCabecalhoVO;
+
+[+] Adicionado class Function RetornaDetalheDaParcela(IdContas:integer): TObjectList<TParcelaDetalheVO>;
+
+[*] Alterada a function TFCargaPDV.ExportaCarga(RemoteApp: string): boolean;
+    
+    para exportar as parcelas e alterada a forma de criação do arquivo texto de exportação de venda, agora será criado um unico arquivo por caixa por dia.
+    motivo: sempre teremos nos caixas as vendas diarias armazenadas por dia.
+
+    Obs: precisamos dos campos memo nas tabelas do Caixa?
+
+
+    Jose Rodrigues de Oliveira junior  
+
+
+
+Paf-Ecf Versão 1.0.1.22 - Beta   06/07/2011 
+-------------------------------------------
+
+[*] Alterado scripts sem_dados.sql e com_dados.sq (MySQL)
+
+    conforme postado por Sergio Toshio Kawahara
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2662#p21219
+
+
+
+Paf-Ecf Versão 1.0.1.21 - Beta   06/07/2011 
+-------------------------------------------
+
+[*] Movido o codigo que havia no onexit do editVencimento
+    para o procedure TFParcelamento.CalculaParcelas, e fazendo a chamada 
+    em  TFParcelamento.qtdParcelasChange e TFParcelamento.editVencimentoChange
+
+[+] Adicionado os campos abaixo na tabela de ECF_RESOLUCAO:
+    EDITS_COLOR                   VARCHAR(20)
+    EDITS_FONT_COLOR          VARCHAR(20)
+    EDITS_DISABLED_COLOR    VARCHAR(20)
+    EDITS_FONT_NAME            VARCHAR(20)
+    EDITS_FONT_STYLE           VARCHAR(20)
+
+[+] Adicionado em ResolucaoVO os seguintes códigos:
+    FEDITS_COLOR: String;
+    FEDITS_FONT_COLOR: String;
+    FEDITS_DISABLED_COLOR: String;
+    FEDITS_FONT_NAME: String;
+    FEDITS_FONT_STYLE: String;
+
+    property EditColor: String         read FEDITS_COLOR          write FEDITS_COLOR;
+    property EditFontColor: String     read FEDITS_FONT_COLOR     write FEDITS_FONT_COLOR;
+    property EditDisabledColor: String read FEDITS_DISABLED_COLOR write FEDITS_DISABLED_COLOR;
+    property EditFontName: String      read FEDITS_FONT_NAME      write FEDITS_FONT_NAME;
+    property EditFontStyle: String     read FEDITS_FONT_STYLE     write FEDITS_FONT_STYLE;
+
+[+] Adicionado na unit UCaixa na procedure TFCaixa.ConfiguraCores para configuração dos campos acima.
+
+[*] Alterado scripts firebird_semdados.sql e firebird_comdados.sq
+
+    conforme postado por Gilson Santos Lima
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2615#p20978
+
+
+
+Paf-Ecf Versão 1.0.1.20 - Beta   06/07/2011 
+-------------------------------------------
+
+[+] Adicionado ao formulário FCaixa um componente ACBrLCB 
+ 
+[+] Adicionado procedure TFCaixa.ACBrLCB1LeCodigo(Sender: TObject);
+    begin
+      If editCodigo.Focused then  // Para evitar que ponha o codigo no campo quantidade por exemplo
+      begin
+        editCodigo.Text := ACBrLCB1.UltimoCodigo;    // Preenche o edit com o codigo lido
+        keybd_event(VK_RETURN, 0, 0, 0);            // Simula o acionamento da tecla ENTER
+      end;
+    end;
+[+] Adicionado procedure TFCaixa.ConectaComLeitorSerial;    // novo procedimento leitor serial
+
+[+] Alterado a procedure TFCaixa.Timer2Timer(Sender: TObject);
+
+[+] Adicionado chamada a procedure TFCaixa.ConectaComLeitorSerial; 
+
+    if Configuracao.UsaLeitorSerial = 1 then   //acrescentar
+    try
+      ConectaComLeitorSerial;
+    except
+      Application.MessageBox('Leitor de Código de Barras Serial não conectado ou está desligado!'+#13+'Verifique os cabos e reveja as                   configurações do dispositivo!' ,'Informação do Sistema', MB_OK + MB_ICONINFORMATION);
+    end;
+
+    conforme postado por Gilson Santos Lima
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2662#p21117
+
+
+
+Paf-Ecf Versão 1.0.1.19 - Beta   04/07/2011 
+-------------------------------------------
+[-] Alterado as units UParcelamento e UEfetuaPagamento
+    conforme postado por Gilson Santos Lima
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2615#p21077
+
+[+] Adicionado editQtdeParcelas no form FConfiguracao
+[+] Alterado a unit ConfiguracaoVO por conta da adição do campo acima
+[+] Alterado a procedure TFCaixa.PegaConfiguracao por conta deste campo acima
+
+
+Paf-Ecf Versão 1.0.1.18 - Beta   02/07/2011 
+-------------------------------------------
+
+[+] Adicionado cmbUsaLeitorSerial no form FConfiguracao
+[+] Adicionado cmbPortaLeitorSerial no form FConfiguracao
+[+] Adicionado cmbBaudLeitorSerial no form FConfiguracao
+[+] Adicionado editSufixoLeitorSerial no form FConfiguracao
+[+] Adicionado editIntervaloLeitorSerial no form FConfiguracao
+[+] Adicionado editDataLeitorSerial no form FConfiguracao
+[+] Adicionado cmbParidadeLeitorSerial no form FConfiguracao
+[+] Adicionado cmbHard_SoftLeitorSerial no form FConfiguracao
+[+] Adicionado cmbHandShakeLeitorSerial no form FConfiguracao
+[+] Adicionado cmbStopLeitorSerial no form FConfiguracao
+[+] Adicionado cmbFilaLeitorSerial no form FConfiguracao
+[+] Adicionado cmbSufixoLeitorSerial no form FConfiguracao
+
+
+[+] Alterado a unit ConfiguracaoVO por conta da adição dos campos acima
+[+] Alterado a procedure TFCaixa.PegaConfiguracao por conta destes campos acima
+
+
+
+Paf-Ecf Versão 1.0.1.17 - Beta   02/07/2011 
+-------------------------------------------
+
+[+] Adicionado um campo na tabela ECF_TIPO_PAGAMENTO chamado GERA_PARCELAS CHAR (1)
+
+[-] Alterado a function TFCaixa.VerificaVendaAberta: Boolean;
+
+    VendaCabecalho := TVendaCabecalhoVO.Create;
+    VendaCabecalho := TVendaController.RetornaCabecalhoDaUltimaVenda;
+    //    VendaCabecalho.IdMovimento := Movimento.Id;
+    //    VendaCabecalho.Id := TVendaDetalheVO(ListaVendaDetalhe.Items[0]).IdVendaCabecalho;
+
+  
+    Quando da recuperação de uma venda que havia sido interrompida (tipo finalizar o sistema com ctrl+alt+del e iniciar novamente),
+    não estava preenchendo no objeto VendaCabecalho os dados do cliente e consequentemente não estava permitindo fazer parcelamento.
+
+[+] Adicionado Units ParcelaCabecalhoVO, ParcelaDetalheVO, ParcelaController e  UParcelamento
+
+[-] Alterado as units  UCaixa, UEfetuaPagamento, UConfiguracao,  TipoPagamentoVO e TipoPagamentoController
+
+[+] Adicionado tabela CONTAS_PAGAR_RECEBER 
+
+[+] Adicionado tabela CONTAS_PARCELAS
+
+[*] Alterado scripts firebird_semdados.sql e firebird_comdados.sq
+
+
+
+    conforme postado por Gilson Santos Lima
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2615#p20941
+
+
+
+Paf-Ecf Versão 1.0.1.16 - Beta   02/07/2011 
+-------------------------------------------
+
+[*] Alterado a procedure TFDataModule.DataModuleCreate(Sender: TObject);
+
+    Banco := UpperCase(ini.ReadString('SGBD','BD',''));
+
+    if Banco = 'MYSQL' then
+
+    else if Banco = 'FIREBIRD' then
+
+    Para evitar erros de comparação da string por Ex: MySQL <> MySql <> MYSQL <> mysql etc...
+
+
+
+Paf-Ecf Versão 1.0.1.15 - Beta   02/07/2011 
+-------------------------------------------
+[-] Alterado as unit UVendasPeriodo.pas, USpedFiscal.pas e RegistroRController.pas
+   
+    Conforme post de  José Moacir Tavares Moreira
+
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2635#p20847
+
+
+
+
+Paf-Ecf Versão 1.0.1.14 - Beta   01/07/2011 
+-------------------------------------------  
+[+] Alterado unit CliienteVO 
+    property Endereco: String read FENDERECO write FENDERECO;
+
+[+] Alterado procedure TFCaixa.IniciaVenda;
+    UECF.AbreCupom(Cliente.CPFOuCNPJ, Cliente.Nome, Cliente.Endereco);
+
+[+] Alterado unit UIdentificaCliente 
+    adicionado Cliente.Endereco := editEndereco.Text;  
+
+[+] Alterado unit UECF 
+    procedure AbreCupom(CPFouCNPJ, Nome, Endereco : String);
+    begin
+      FDataModule.ACBrECF.AbreCupom(CPFouCNPJ, Nome, Endereco);
+    end;
+
+    Requisito VIII
+    conforme postado por Gilson Santos Lima e FC Costa
+
+
+[*] Alterado UPAF: GravaR02R03 -> Modificado para gravar corretamente Totalizador Parcial
+
+[*] Alterado RegistroRController: TabelaR05 -> Adicionado R05.IdUnidade := Query.FieldByName('ID_UNIDADE').AsInteger;
+
+[*] Alterado USpedFiscal: Removido Linha pois estava gerando duplicidade Registro C490. 
+    VersaoLeiaute, FinalidadeArquivo, PerfilApresentacao: Integer; 
+    modificado    localização para tornar-se publico. 
+    Modificado C470 - Deve ser informado o valor total da venda do produto qtde x valunit.
+
+[*] AlteradoUVendasPeriodo: Modificado Procedure confirma para correto preencimento do arquivo (Somente esta gerando perfil A).
+
+    Correções feitas por José Moacir Tavares Moreira
+
+
+
+
+Paf-Ecf Versão 1.0.1.13 - Beta   29/06/2011 
+-------------------------------------------
+[-] Alterado form FEfetuaPagamento para a troca do componente EditValorPago para um EditValorPago: TJvCalcEdit
+    
+    pelo mesmo motivo que foi substituido no form Fcaixa, e ainda por não ser possivel formatar para 1.202,10 por exe.
+
+[-] Alterado procedure TFEfetuaPagamento.botaoSimClick(Sender: TObject);
+    procure por // substituido por conta da troca do componente
+
+
+
+Paf-Ecf Versão 1.0.1.12 - Beta   29/06/2011 
+-------------------------------------------
+[*] Alterado unit  UImportaProduto 
+    baseado no post de Sergio Toshio Kawahara
+
+
+[*] Alterado unit UnidadeController.pas
+    conforme postado por post de JM Sistemas
+
+[+] Adicionado unit UEstoque 
+    Para atender o Ítem 8 do Requisito VII
+
+     if listaMenuFiscal.ItemIndex = 6 then 
+     begin
+      Application.CreateForm(TFEstoque, FEstoque);
+      FEstoque.ShowModal;
+     end;
+
+[*] Alterado unit UPAF.pas e ProdutoController.pas para atender o Requisito VII
+
+[*] Alterado unit UCaixa para que seja feita a chamada do referido formulário
+
+    conforme postado por Gilson Santos Lima 
+
+
+
+Paf-Ecf Versão 1.0.1.11 - Beta   29/06/2011 
+-------------------------------------------
+[+] Adicionado FichaTecnicaController.pas
+
+[+] Adicionado Form FFichaTecnica
+
+[+] Adicionado Unit UFichaTecnica.pas 
+
+    
+    conforme post do Autor Gilson Santos Lima
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2616#p20563
+
+
+[*] Alterado unit UImportaProduto 
+    Requisito XI por Gilson Santos Lima
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2610#p20536
+
+
+
+
+Paf-Ecf Versão 1.0.1.10 - Beta   28/06/2011 
+------------------------------
+[+] Adicionado no form FConfiguracao o parametro para gaveta com sinal invertido, para que a gaveta possa abrir
+
+[+] Adicionado o referido campo no arquivo ConfiguracaoVO
+
+[+] Adicionado no ConfiguracaoController na class Function PegaConfiguracao o referido campo 
+
+[*] Alterado a procedure TFEfetuaPagamento.FinalizaVenda;
+
+    // usado quando a gaveta tem sinal invertido
+       if UCaixa.Configuracao.SinalInvertido = 1 then
+       FDataModule.ACBrECF.GavetaSinalInvertido := True;
+   baseado no post de marco chagas costa
+   http://www.t2ti.com/ead/mod/forum/discuss.php?d=2615#p20559
+
+
+
+Paf-Ecf Versão 1.0.1.9 - Beta   28/06/2011 
+------------------------------
+[+] Criado na tabela ECF_CONFIGURACAO um campo chamado LAUDO Varchar 10
+
+[+] Adicionado o referido campo no arquivo ConfiguracaoVO
+
+[+] Adicionado no ConfiguracaoController na class Function PegaConfiguracao o referido campo 
+
+[*] Alterado na Unit USintegra a procedure GerarArquivoSintegra
+
+[*] Alterado na Unit USpedFiscal a procedure GerarArquivoSpedFiscal
+
+[*] Alterado scripts firebird_semdados.sql e firebird_comdados.sq
+
+[*] Alterado scripts sem_dados.sql e com_dados.sq (MySQL)
+    baseado no Requisito XXVIII por Gilson Santos Lima
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2612#p20542
+
+
+
+
+Paf-Ecf Versão 1.0.1.8 - Beta   28/06/2011 
+------------------------------
+[*] Alterado o form FExcluiProdutoVenda para "memorizar" a ultima pesquisa
+
+    criado novo campo (ULTIMA_PESQUISA ,Integer) na tabela de configuração para salvar esta ultima pesquisa
+    Alterado ConfiguracaoVO, ConfiguraController para atender estas mudanças
+    Conforme foi discutido no EAD
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2595#p20534
+
+[*] Alterado scripts firebird_semdados.sql e firebird_comdados.sq
+
+[*] Alterado scripts sem_dados.sql e com_dados.sq (MySQL)
+
+[*] Alterado o form FFechaEfetuaPagamento para usar FDataModule.ACBrECF.GavetaAberta.
+
+[+] Criado novo parametro no form FConfiguracao  GavetaDinheiro  0 - Sem Gaveta,  1 - Com Gaveta
+
+[+] Criado na unit ConfiguracaoVO property GavetaDinheiro :Integer   read FGavetaDinheiro   write FGavetaDinheiro;
+
+[*] Alterado a  procedure TFCaixa.PegaConfiguracao
+    Configuracao.GavetaDinheiro := StrToIntDef(DevolveConteudoDelimitado('|',Linha),0);
+
+    Baseado nos posts de FC Costa e marco chagas costa
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2596#p20500
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2596#p20496
+
+
+Paf-Ecf Versão 1.0.1.7 - Beta   27/06/2011 
+------------------------------
+
+[*] No form Ucaixa Alterado a propriedade DisplayFormat =  ##,#0.00 dos edits editUnitario, editTotalItem, editSubTotal
+    para atender o comentado no post de marco chagas costa
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2596#p20460
+
+
+[*] Alterado a procedure TFEfetuaPagamento.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+    para fazer a chamada do FFechaEfetuaPagamento.
+
+   if (PodeFechar = True) and (StatusCaixa=0) then
+   begin
+     Application.CreateForm(TFFechaEfetuaPagamento, FFechaEfetuaPagamento);
+     FFechaEfetuaPagamento.ShowModal;
+   end;
+
+
+[+] Criado Novo form FFechaEfetuaPagamento, que abre em showmodal quando a venda é concluida,
+    "segurando" desta forma a tela de EfetuaPagamento ate que seja precionado o Enter ou Escape ou ainda clicar sobre ele.
+     podemos programar quando gaveta de dinheiro for fechada, o aplicativo retorna para a tela de venda,
+     caso não tenha gaveta, aguarda o pressionamento do tecla Enter ou Escape ou clik.
+
+
+
+Paf-Ecf Versão 1.0.1.6 - Beta   26/06/2011 
+------------------------------
+
+[*] Alterada unit ucaixa na altura da linha 2180 de if Configuracao.UsaIntegracao = 1 then  
+    para if (StatusCaixa=0) and (Configuracao.UsaIntegracao = 1) then
+    pois estava exportando a ultima venda quando era cancelado as formas de pagamento para continuar a venda. 
+
+
+
+Paf-Ecf Versão 1.0.1.5 - Beta   26/06/2011 
+------------------------------
+
+[*]  Alterado procedure TFEfetuaPagamento.botaoSimClick(Sender: TObject);
+     na altura da linha 539 de TotalTipoPagamento.CodigoPagamento := TipoPagamento.Codigo; 
+     para TotalTipoPagamento.CodigoPagamento := trim(TipoPagamento.Codigo); 
+     estava dando erro de forma de pagamento não cadastrada quando utilizava o banco Firebird
+     conforme identificado no post de Alisson Marques de Souza  e Jorge Antonio Ribeiro Ferreira
+     http://www.t2ti.com/ead/mod/forum/discuss.php?d=2595#p20390
+
+
+Paf-Ecf Versão 1.0.1.4 - Beta   25/06/2011 
+------------------------------
+
+[-] Alterada UConfiguracao.pas e UConfiguracao.dfm
+    Utilizando o banco de dados Firebird,ao abrir a Tela de Configurações, recebia a mensagem TDBXError with message 'unknown ISC error 0'
+    conforme post de Daniel Wanderley
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2596#p20349
+
+
+[*] Alterada na Unit uExcluiProdutoVenda a procedure TFExcluiProdutoVenda.localiza(Tipo:integer);
+    
+[+] Criada opção de exclusão por codigo de barras, Item do Cupom, Código da balança, Código interno,ID do Produto
+
+
+Paf-Ecf Versão 1.0.1.3 - Beta   24/06/2011 
+------------------------------
+[+] View adptadas do MySql por Gilson Santos Lima conforme varios posts em 24/06/2011
+
+
+    VIEW_60D
+    VIEW_60R
+    VIEW_61R
+    VIEW_C321
+    VIEW_C390
+    VIEW_C425
+    VIEW_C490
+    VIEW_E110
+    VIEW_MEIOS_PAGAMENTO
+    VIEW_MEIOS_PAGAMENTO_TOTAL
+    VIEW_R04
+    VIEW_R05
+
+[+] Criado os scripts firebird_semdados.sql e firebird_comdados.sql
+
+[+] Pasta \branches\Paf-Ecf-Merge\Banco\T2TIPAFECF.FDB 
+
+[*]  Definição do CHARSET e COLLATION para respectivamente WIN1252 e WINPT_BR na criação da base.
+[*]  Substituição do tipo CHAR pelo VARCHAR de todos os campos.
+[*]  Definição do Default 0 (zero) para todos os campos do tipo decimal.
+
+    enviados por Gilson Santos Lima conforme varios posts em 24/06/2011
+
+
+Paf-Ecf Versão 1.0.1.2 - Beta   24/06/2011 
+
+------------------------------
+
+[+] Criado o campo BD PAF_P_ST char (1) na tabela Produto,
+
+[+] Criado na unit ProdutoVO  FPAF_P_ST : String; property PafProdutoST: String read FPAF_P_ST write FPAF_P_ST;
+
+[*] Alterada na Unit UPAF a procedure GeraTabelaProdutos;
+
+    P2.ST := TProdutoVO(ListaProduto.Items[i]).PafProdutoST;
+    if (P2.ST = 'T') or (P2.ST = 'S') then
+      P2.ALIQ := TProdutoVO(ListaProduto.Items[i]).AliquotaICMS
+    else
+      P2.ALIQ := 0;
+
+[*] Alterada na unit CAIXA na chamada da GeraMD5.    MD5 := 'MD-5:' + GeraMD5;
+
+   Conforme Posts de FC Costa em     * Fórum - Roteiro Versão 1.5 – abril/2011 - Aplicável à versão 01.07
+
+
+[*] Atualizado os scripts com_dados.sql e sem_dados.sql
+
+
+[-] Corrigido o listaGerente, faltava alguns itens
+
+    Iniciar Movimento
+    Encerrar Movimento
+
+    Suprimento
+    Sangria
+
+    Redução Z
+
+    Consultar Cliente
+
+    Configurações Caixa
+
+    Funções Administativas TEF Discado
+    Funções administrativas do TECBAN
+    Funções administrativas do HIPER
+
+    Importar Tabelas com Dispositivo (pen-drive)
+    Exportar Tabelas com Dispositivo (pen-drive)
+
+
+
+
+Versão 1.0.1.1 - Beta   24/06/2011 
+
+------------------------------
+
+[-] Adicionado na unit DAVVO  FID_EMPRESA: Integer;  property IdEmpresa: Integer read FID_EMPRESA write FID_EMPRESA;
+    
+    Estava faltando para compilar BalcaoFC
+
+
+
+Paf-Ecf Versão 1.0.1.0 - Beta   23/06/2011 - primeira versão depois do Merge com o TEF-Homologado corrigido.
+
+------------------------------
+
+
+
+
+
+

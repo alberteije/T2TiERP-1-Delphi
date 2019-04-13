@@ -1,0 +1,1379 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom
+END
+JwaBugCodes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaBugCodes.pas
+END
+JwaAuthz.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaAuthz.pas
+END
+JwaWinEFS.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinEFS.pas
+END
+JwaDSQuery.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaDSQuery.pas
+END
+JwaLmServer.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmServer.pas
+END
+JwaRpcNtErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaRpcNtErr.pas
+END
+JwaShlGuid.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaShlGuid.pas
+END
+JwaLmRemUtl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmRemUtl.pas
+END
+JwaNtDsbCli.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaNtDsbCli.pas
+END
+JwaNb30.pas
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaNb30.pas
+END
+JwaAdtGen.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaAdtGen.pas
+END
+JwaDhcpSSdk.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaDhcpSSdk.pas
+END
+JwaWPCrsMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWPCrsMsg.pas
+END
+JwaImapiError.pas
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaImapiError.pas
+END
+JwaAdsTLB.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaAdsTLB.pas
+END
+JwaIpExport.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaIpExport.pas
+END
+JwaWPTypes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWPTypes.pas
+END
+JwaIssPer16.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaIssPer16.pas
+END
+JwaPowrProf.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaPowrProf.pas
+END
+JwaObjSel.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaObjSel.pas
+END
+JwaCardErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaCardErr.pas
+END
+JwaRpcASync.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaRpcASync.pas
+END
+JwaWowNT32.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWowNT32.pas
+END
+JwaAdsnms.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaAdsnms.pas
+END
+JwaWSnetbs.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWSnetbs.pas
+END
+JwaIpRtrMib.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaIpRtrMib.pas
+END
+JwaWinWlx.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinWlx.pas
+END
+JwaWsrm.pas
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWsrm.pas
+END
+JwaPatchWiz.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaPatchWiz.pas
+END
+JwaNspApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaNspApi.pas
+END
+JwaLmRepl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmRepl.pas
+END
+JwaDhcpsApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaDhcpsApi.pas
+END
+JwaIAdmExt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaIAdmExt.pas
+END
+JwaDde.pas
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaDde.pas
+END
+JwaImapi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaImapi.pas
+END
+ACBrCAPICOM_TLB.pas
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/ACBrCAPICOM_TLB.pas
+END
+JwaRpcSsl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaRpcSsl.pas
+END
+JwaBitsMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaBitsMsg.pas
+END
+JwaAccCtrl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaAccCtrl.pas
+END
+JwaFaxMmc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaFaxMmc.pas
+END
+JwaWS2tcpip.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWS2tcpip.pas
+END
+JwaDSGetDc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaDSGetDc.pas
+END
+JwaSnmp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaSnmp.pas
+END
+JwaWinDLLNames.pas
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinDLLNames.pas
+END
+JwaMsiQuery.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaMsiQuery.pas
+END
+JwaSchemaDef.pas
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaSchemaDef.pas
+END
+JwaWinGDI.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinGDI.pas
+END
+JwaPdhMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaPdhMsg.pas
+END
+JwaLpmApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLpmApi.pas
+END
+JwaLmWkSta.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmWkSta.pas
+END
+JwaZMOUSE.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaZMOUSE.pas
+END
+JwaRpc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaRpc.pas
+END
+JwaLmJoin.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmJoin.pas
+END
+JwaDlgs.pas
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaDlgs.pas
+END
+JwaBtHDef.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaBtHDef.pas
+END
+JwaWinsock2.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinsock2.pas
+END
+JwaRpcDce.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaRpcDce.pas
+END
+JwaAdssts.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaAdssts.pas
+END
+JwaWinDNS.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinDNS.pas
+END
+JwaDSClient.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaDSClient.pas
+END
+JwaBits1_5.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaBits1_5.pas
+END
+JwaRegStr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaRegStr.pas
+END
+JwaWinNetWk.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinNetWk.pas
+END
+JwaMprError.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaMprError.pas
+END
+JwaAdsHlp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaAdsHlp.pas
+END
+JwaSubAuth.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaSubAuth.pas
+END
+JwaPsApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaPsApi.pas
+END
+JwaHtmlHelp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaHtmlHelp.pas
+END
+JwaQosPol.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaQosPol.pas
+END
+JwaWS2atm.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWS2atm.pas
+END
+JwaSspi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaSspi.pas
+END
+JwaMSTcpIP.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaMSTcpIP.pas
+END
+WinDefines.inc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/WinDefines.inc
+END
+JwaWShisotp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWShisotp.pas
+END
+JwaWbemCli.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWbemCli.pas
+END
+JwaLmErrLog.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmErrLog.pas
+END
+JwaLmSvc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmSvc.pas
+END
+JwaSceSvc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaSceSvc.pas
+END
+JwaWS2spi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWS2spi.pas
+END
+JwaMsi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaMsi.pas
+END
+JwaPatchApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaPatchApi.pas
+END
+JwaWinReg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinReg.pas
+END
+JwaWinFax.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinFax.pas
+END
+JwaLmConfig.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmConfig.pas
+END
+JwaWinLDAP.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinLDAP.pas
+END
+JwaLmAudit.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmAudit.pas
+END
+win32api.res
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/win32api.res
+END
+JwaBits.pas
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaBits.pas
+END
+JwaMsTask.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaMsTask.pas
+END
+JwaLM.pas
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLM.pas
+END
+JwaAdsProp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaAdsProp.pas
+END
+ACBrMSXML2_TLB.pas
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/ACBrMSXML2_TLB.pas
+END
+JwaDbt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaDbt.pas
+END
+JwaHhError.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaHhError.pas
+END
+ModuleLoader.pas
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/ModuleLoader.pas
+END
+readme.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/readme.html
+END
+JwaCpl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaCpl.pas
+END
+JwaSpOrder.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaSpOrder.pas
+END
+JwaUxTheme.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaUxTheme.pas
+END
+JwaAuthif.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaAuthif.pas
+END
+JwaIisCnfg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaIisCnfg.pas
+END
+JwaProfInfo.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaProfInfo.pas
+END
+JwaPbt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaPbt.pas
+END
+JwaNative.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaNative.pas
+END
+JwaMSWSock.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaMSWSock.pas
+END
+JwaDSRole.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaDSRole.pas
+END
+JwaWinBase.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinBase.pas
+END
+JwaCryptUIApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaCryptUIApi.pas
+END
+JwaWindows.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWindows.pas
+END
+JwaBatClass.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaBatClass.pas
+END
+JwaWinCpl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinCpl.pas
+END
+JwaWinResrc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinResrc.pas
+END
+JwaWinUser.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinUser.pas
+END
+JwaAclUI.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaAclUI.pas
+END
+JwaWinNT.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinNT.pas
+END
+JwaWinType.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinType.pas
+END
+JwaErrorRep.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaErrorRep.pas
+END
+JwaPrSht.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaPrSht.pas
+END
+JwaNtDsApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaNtDsApi.pas
+END
+JwaCmnQuery.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaCmnQuery.pas
+END
+JwaQosName.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaQosName.pas
+END
+JwaColorDlg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaColorDlg.pas
+END
+JwaIsGuids.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaIsGuids.pas
+END
+JwaMciAvi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaMciAvi.pas
+END
+JwaSens.pas
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaSens.pas
+END
+JwaWs2Bth.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWs2Bth.pas
+END
+JwaIme.pas
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaIme.pas
+END
+JwaSensEvts.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaSensEvts.pas
+END
+JwaWinNLS.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinNLS.pas
+END
+JwaAdsDb.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaAdsDb.pas
+END
+JwaHtmlGuid.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaHtmlGuid.pas
+END
+JwaLmUseFlg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmUseFlg.pas
+END
+JwaWinSafer.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinSafer.pas
+END
+JwaWPApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWPApi.pas
+END
+JwaBitscfg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaBitscfg.pas
+END
+JwaNtLDAP.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaNtLDAP.pas
+END
+JwaIcmpApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaIcmpApi.pas
+END
+JwaWPPstMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWPPstMsg.pas
+END
+JwaSrRestorePtApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaSrRestorePtApi.pas
+END
+JwaSchedule.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaSchedule.pas
+END
+JwaLmAt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmAt.pas
+END
+JwaIpTypes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaIpTypes.pas
+END
+JwaLmApiBuf.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmApiBuf.pas
+END
+JwaFaxExt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaFaxExt.pas
+END
+JwaWPSpiHlp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWPSpiHlp.pas
+END
+JwaIoEvent.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaIoEvent.pas
+END
+JwaWinPerf.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinPerf.pas
+END
+JwaPdh.pas
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaPdh.pas
+END
+JwaSfc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaSfc.pas
+END
+JwaWtsApi32.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWtsApi32.pas
+END
+JwaAtalkWsh.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaAtalkWsh.pas
+END
+JwaWinCrypt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinCrypt.pas
+END
+JwaSisBkUp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaSisBkUp.pas
+END
+JwaNetSh.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaNetSh.pas
+END
+JwaNtStatus.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaNtStatus.pas
+END
+JwaWmiStr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWmiStr.pas
+END
+JwaLmStats.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmStats.pas
+END
+JwaUserEnv.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaUserEnv.pas
+END
+JwaWPWizMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWPWizMsg.pas
+END
+JwaLmCons.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmCons.pas
+END
+JwaDskQuota.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaDskQuota.pas
+END
+JwaNtDdPar.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaNtDdPar.pas
+END
+JwaLoadPerf.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLoadPerf.pas
+END
+jedi.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/jedi.inc
+END
+JwaProtocol.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaProtocol.pas
+END
+JwaSensAPI.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaSensAPI.pas
+END
+JwaSvcGuid.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaSvcGuid.pas
+END
+JwaLmDFS.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmDFS.pas
+END
+JwaQosSp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaQosSp.pas
+END
+JwaNtSecApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaNtSecApi.pas
+END
+JwaNtQuery.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaNtQuery.pas
+END
+JwaWPFtpMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWPFtpMsg.pas
+END
+JwaWinError.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinError.pas
+END
+JwaBLBErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaBLBErr.pas
+END
+JwaWinSvc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinSvc.pas
+END
+JwaIAccess.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaIAccess.pas
+END
+JwaGPEdit.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaGPEdit.pas
+END
+JwaDSAdmin.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaDSAdmin.pas
+END
+JwaAdsErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaAdsErr.pas
+END
+jediapilib.inc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/jediapilib.inc
+END
+JwaNtDsBMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaNtDsBMsg.pas
+END
+JwaLmErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmErr.pas
+END
+JwaBluetoothAPIs.pas
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaBluetoothAPIs.pas
+END
+JwaExcpt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaExcpt.pas
+END
+JwaAF_Irda.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaAF_Irda.pas
+END
+JwaWowNT16.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWowNT16.pas
+END
+JwaWS2dnet.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWS2dnet.pas
+END
+JwaWinBer.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinBer.pas
+END
+JwaAclApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaAclApi.pas
+END
+JwaMsiDefs.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaMsiDefs.pas
+END
+JwaLmShare.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmShare.pas
+END
+JwaSecExt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaSecExt.pas
+END
+JwaWinCred.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinCred.pas
+END
+JwaLmSName.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmSName.pas
+END
+JwaFaxRoute.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaFaxRoute.pas
+END
+JwaTlHelp32.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaTlHelp32.pas
+END
+JwaWinCon.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinCon.pas
+END
+JwaRpcNsi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaRpcNsi.pas
+END
+JwaCdErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaCdErr.pas
+END
+JwaCplext.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaCplext.pas
+END
+JwaLmAlert.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmAlert.pas
+END
+JwaIpInfoId.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaIpInfoId.pas
+END
+JwaDsSec.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaDsSec.pas
+END
+JwaTmSchema.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaTmSchema.pas
+END
+JwaActiveDS.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaActiveDS.pas
+END
+JwaQos.pas
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaQos.pas
+END
+JwaWinternl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinternl.pas
+END
+JwaBthSdpDef.pas
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaBthSdpDef.pas
+END
+JwaActiveX.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaActiveX.pas
+END
+JwaIpHlpApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaIpHlpApi.pas
+END
+JwaSecurity.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaSecurity.pas
+END
+JwaIpIfCons.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaIpIfCons.pas
+END
+JwaWSipx.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWSipx.pas
+END
+JwaWinVer.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinVer.pas
+END
+JwaWSNwLink.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWSNwLink.pas
+END
+JwaFaxDev.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaFaxDev.pas
+END
+JwaWinSock.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinSock.pas
+END
+JwaTraffic.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaTraffic.pas
+END
+JwaLmMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmMsg.pas
+END
+JwaWSvns.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWSvns.pas
+END
+JwaWinAble.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinAble.pas
+END
+JwaDhcpCSdk.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaDhcpCSdk.pas
+END
+JwaLmUse.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmUse.pas
+END
+JwaImageHlp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaImageHlp.pas
+END
+JwaSddl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaSddl.pas
+END
+JwaReason.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaReason.pas
+END
+JwaWPApiMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWPApiMsg.pas
+END
+JwaWinIoctl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaWinIoctl.pas
+END
+JwaLmAccess.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/ACBrCapicom/JwaLmAccess.pas
+END

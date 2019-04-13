@@ -1,0 +1,81 @@
+package rppackdesignvcl_del2005;
+
+{$R *.res}
+{$R 'rpmdesignervcl.dcr'}
+{$R 'rprulervcl.dcr'}
+{$R 'rpwebmetaclient.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Report Manager Designer VCL Components'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  dsnap,
+  dbrtl,
+  vcl,
+  vcldb,
+  vcljpg,
+  vclx,
+  adortl,
+  dbexpress,
+  ibxpress,
+  bdertl,
+  tee,
+  indy,
+  rppack_del2005,
+  rppackvcl_del2005;
+
+contains
+  rpmdesignervcl in 'rpmdesignervcl.pas',
+  rpmregdesignvcl in 'rpmregdesignvcl.pas',
+  rpmdobjinspvcl in 'rpmdobjinspvcl.pas' {FRpObjInspVCL: TFrame},
+  rpmdfbarcodeintvcl in 'rpmdfbarcodeintvcl.pas',
+  rpmdfchartintvcl in 'rpmdfchartintvcl.pas',
+  rpmdfdinfovcl in 'rpmdfdinfovcl.pas' {FRpDatainfoconfigVCL},
+  rpmdfdatasetsvcl in 'rpmdfdatasetsvcl.pas' {FRpDatasetsVCL},
+  rpmdfdesignvcl in 'rpmdfdesignvcl.pas' {FRpDesignFrameVCL: TFrame},
+  rpmdfdrawintvcl in 'rpmdfdrawintvcl.pas',
+  rpmdfgridvcl in 'rpmdfgridvcl.pas' {FRpGridOptionsVCL},
+  rpmdflabelintvcl in 'rpmdflabelintvcl.pas',
+  rpmdfmainvcl in 'rpmdfmainvcl.pas' {FRpMainFVCL},
+  rpmdfsampledatavcl in 'rpmdfsampledatavcl.pas' {FRpShowSampledataVCL},
+  rpmdfsectionintvcl in 'rpmdfsectionintvcl.pas',
+  rpmdfstrucvcl in 'rpmdfstrucvcl.pas' {FRpStructureVCL: TFrame},
+  rpmdobinsintvcl in 'rpmdobinsintvcl.pas',
+  rpfparamsvcl in 'rpfparamsvcl.pas' {FRpParamsVCL},
+  rpmdfextsecvcl in 'rpmdfextsecvcl.pas' {FRpExtSectionVCL},
+  rpmdfconnectionvcl in 'rpmdfconnectionvcl.pas' {FRpConnectionVCL: TFrame},
+  rpmdfwizardvcl in 'rpmdfwizardvcl.pas' {FRpWizardVCL},
+  rpmdsysinfo in 'rpmdsysinfo.pas' {FRpSysInfo},
+  rpmdfdatatextvcl in 'rpmdfdatatextvcl.pas' {FRpDataTextVCL},
+  rpdbbrowservcl in 'rpdbbrowservcl.pas' {FRpBrowserVCL: TFrame},
+  rprulervcl in 'rprulervcl.pas',
+  rpeditconnvcl in 'rpeditconnvcl.pas' {FRpEditConVCL},
+  rpwebmetaclient in 'rpwebmetaclient.pas',
+  rpmdfopenlibvcl in 'rpmdfopenlibvcl.pas' {FRpOpenLibVCL},
+  rpmdftreevcl in 'rpmdftreevcl.pas' {FRpDBTreeVCL: TFrame},
+  rpdbxconfigvcl in 'rpdbxconfigvcl.pas' {FRpDBXConfigVCL},
+  rpmdfselectfields in 'rpmdfselectfields.pas',
+  rpcolumnar in 'rpcolumnar.pas';
+
+end.

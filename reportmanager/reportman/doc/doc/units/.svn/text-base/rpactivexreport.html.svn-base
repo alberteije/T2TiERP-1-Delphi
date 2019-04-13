@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Units documentation - rpactivexreport.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpactivexreport.pas</h3>
+<h4>Description</h4>
+<p>This unit implements the <b>palette installable TRpActiveXReport component, 
+  the base class for the ActiveX control</b></p>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpActiveXReport</td>
+    <td>TCustomControl</td>
+    <td>Base class for creating the TReportMan component, the ActiveX control 
+      for use in all development environment supporting this control types</td>
+  </tr>
+</table>
+</body>
+</html>

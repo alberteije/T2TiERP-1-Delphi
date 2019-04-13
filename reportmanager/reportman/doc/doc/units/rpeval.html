@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Units documentation - rpeval.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpeval.pas</h3>
+<h4>Description</h4>
+<p>This unit <b>implements the expression evaluator</b>. The component TRpEvaluator, 
+  with the help of a parser (rpparser.pas), evaluates expressions, and returns 
+  result value as a TRpValue type (Variant)</p>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpCustomEvaluator</td>
+    <td>TComponent</td>
+    <td>Base class, without published properties, but implementing all the functions</td>
+  </tr>
+  <tr> 
+    <td>TRpEvaluator</td>
+    <td>TRpCustomEvaluator</td>
+    <td>Publish properties, this component is installable in the component paletter, 
+      you can link a TRpAlias to allow the use of database fields in expressions</td>
+  </tr>
+</table>
+</body>
+</html>

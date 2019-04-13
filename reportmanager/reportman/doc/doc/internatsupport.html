@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>International suppolrt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Advanced Report Design</h2>
+<h3><b>International support</b></h3>
+<p><b>Multilanguage support</b></p>
+<p>Report Manager supports multiple languages. You can place several labels with 
+  the text written in one language, then go to page setup screen, change the language 
+  and modigy each label to the selected language. The report will store all the 
+  strings for the languages of the report.</p>
+<p><b>Unicode support</b></p>
+<p>Chinesse and other unicode languages</p>
+<p>Report Manager supports unicode languages in windows (using GDI), preview and 
+  print, linux is also supported via Qt libraries. Generation of PDF files is 
+  not implemented for WideString languages.</p>
+<p><b>Bidirectional text support (Hebrew and arabic languages)</b></p>
+<p>Bidirectional support is enabled with the Bidi Mode property for all text components, 
+  you can select:</p>
+<table width="100%" border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Value</b></td>
+    <td bgcolor="#FFFFCC"><b>Meaning</b></td>
+  </tr>
+  <tr> 
+    <td>No Bidi</td>
+    <td>No Bidirectional support</td>
+  </tr>
+  <tr> 
+    <td> Partial Bidi</td>
+    <td>Left to right drawing, horizontal alignment is not changed</td>
+  </tr>
+  <tr>
+    <td>Full Bidi</td>
+    <td>Left to right drawing, horizontal alignment is reversed</td>
+  </tr>
+</table>
+<p>For a more detail description see <a href="bidi_behavior.html">Bidi Behaviour</a>.</p>
+<p>The Bidi algorithm used is very simple in Linux and PDF output so text containing 
+  numbers may be drawn incorrectly, with the Windows GDI driver the drawing is 
+  done with Windows GDI and should be correct.</p>
+</body>
+</html>

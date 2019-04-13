@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012/08/09 14:46:57.955.pas,C:\Documents and Settings\Eije\Meus documentos\RAD Studio\Projects\Unit1.pas=C:\Componentes\ACBr\Exemplos\ACBrPonto\UPonto.pas</Transaction>
+    <Transaction>2012/08/09 14:46:57.955.dfm,C:\Documents and Settings\Eije\Meus documentos\RAD Studio\Projects\Unit1.dfm=C:\Componentes\ACBr\Exemplos\ACBrPonto\UPonto.dfm</Transaction>
+    <Transaction>2012/08/09 14:47:02.732.dproj,C:\Documents and Settings\Eije\Meus documentos\RAD Studio\Projects\Project1.dproj=C:\Componentes\ACBr\Exemplos\ACBrPonto\DemoPonto.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

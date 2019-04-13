@@ -1,0 +1,335 @@
+<html>
+<head>
+<title>Using report parameters</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Advanced report design</h2>
+<h3>Using report parameters</h3>
+<h4></h4>
+<h4>Parameter features</h4>
+<p>Report parameters is a powerful feature, here is a list of samples you can 
+  do with parameters</p>
+<ul>
+  <li> Allow the user to change words or sentences of the report.</li>
+  <li>Set initial values of group sums, etc, place the parameter name in any expression</li>
+  <li>Assign them to querys to alter the result set (parametrized or <a href="linkedquerys.html">linked 
+    querys</a>)</li>
+  <li>Replace some text in the query with a provided text (text substitution)</li>
+  <li>Print them, or alter them while executing the report, you can use the parameter 
+    in any <a href="exevaluator.html">expression</a></li>
+  <li>Assign parameters using <a href="serverclient.html">report client application</a></li>
+  <li>Assign parameters using the <a href="webserveroperations.html">web report 
+    server</a> and any html client</li>
+  <li>The parameters can contain expressions evaluated before or after opening 
+    report datasets.</li>
+  <li>A search dataset can be defined so the user can search for parameter values 
+    inside a dataset.</li>
+  <li>Set a validation rule for the parameter</li>
+  <li>Set an error message for the validation rule fail</li>
+  <li>Set diferent description, hints and error messages for each report language</li>
+</ul>
+<p>You can define the parameters, and also preview how the parameters will show 
+  to the user.</p>
+<h4>Parameter definition</h4>
+<p>Parameter definition window allows to add, modify and delete parameters, you 
+  can assign parameters to datasets (parametrized querys). The parameters can 
+  be visible or not visible to the user. You can assign a single parameter to 
+  multiple datasets.</p>
+<p>This is a sample of report parameters:</p>
+<p><img src="images/paramdef.jpg" width="471" height="386"></p>
+<p>The data definition properties for this sample, see that parameters are preceded 
+  by the : symbol.</p>
+<p><img src="images/paramdef2.jpg" width="547" height="497"></p>
+<p>The user parameters window is called in preview window when user click the 
+  parameters button:</p>
+<p><img src="images/paramdef3.jpg" width="591" height="163"></p>
+<p><b>Parameter types</b></p>
+<table width="100%" border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Type</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td>String, Integer, Float, Date, Time, DateTime</td>
+    <td>Basic types, they contain fixed values</td>
+  </tr>
+  <tr> 
+    <td>Boolean</td>
+    <td>False or True values</td>
+  </tr>
+  <tr> 
+    <td>Expres.Bef.Open</td>
+    <td>Contains a expression evaluated before any dataset is open, so the result 
+      can be assigned to a parametrized query for example</td>
+  </tr>
+  <tr> 
+    <td>Expres.Aft.Open</td>
+    <td>Contains a expression evaluated after opening all datasets, so it can 
+      contain dataset fields</td>
+  </tr>
+  <tr> 
+    <td>String Substi.</td>
+    <td>You use this parameter type assigning it to at least one dataset, you 
+      must provide a search string, the engine will search in the sql sentence 
+      for that string and will replace it with the value of the parameter. This 
+      can be used to pass the entire sql sentence as a parameter or only the WHERE 
+      clause for example.</td>
+  </tr>
+  <tr> 
+    <td>Value list</td>
+    <td><p>You provide two list, one for value captions, and other for real values, 
+        the engine will show to the user a combo box to select from the caption 
+        list, and will assign the corresponding value from list of values.</p>
+      <p>A dataset can be specified to fill the value list, when the parameter 
+        window is shown the list is filled with the dataset, first field of the 
+        dataset will be descriptions, and second field on the dataset will be 
+        real values.</p></td>
+  </tr>
+  <tr>
+    <td>Multi select</td>
+    <td><p>It's a merge of String Substi and Value List, the value to be replaced 
+        will be a combination of selected values separated by commas. Very useful 
+        to use with querys like:</p>
+      <p>WHERE ORDERTYPE IN (:ORDERTYPES)</p>
+      <p>The user will be able to select more than one value, a checklist box 
+        will be provided on parameters window.</p>
+      <p>The value list can also be loaded from a dataset, like Value List parameter 
+        type.</p>
+      <p>You can obtain information about a parameter, and multiple selection 
+        using Expression evaluator function: ParamInfo</p>    </td>
+  </tr>
+  <tr>
+    <td>String sustitution extended </td>
+    <td>Same as string sustitition but using multiple selection.</td>
+  </tr>
+  <tr>
+    <td>Initial value </td>
+    <td>The datatype is detected by evaluating an expression, the value of the parameter must be a valid expression, for example, to create a paremeter with initial value of today, you select the initial value and set the value to TODAY.</td>
+  </tr>
+</table>
+<p><strong>Special parameters</strong></p>
+<p>There are special parameters that can be used to interact with the engine itself, 
+  just define and assign values to them:</p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><strong>Name</strong></td>
+    <td bgcolor="#FFFFCC"><strong>Purpose</strong></td>
+  </tr>
+  <tr> 
+    <td>ADOCONNECTIONSTRING</td>
+    <td>Replaces the connection string with the provided in this parameter</td>
+  </tr>
+  <tr>
+    <td>ALIAS_ADOCONNECTIONSTRING</td>
+    <td>Replaces the connection string in &quot;ALIAS&quot; connection with the provided in this parameter</td>
+  </tr>
+  <tr> 
+    <td>DBXCONNECTIONS</td>
+    <td>Path to a user defined dbxconnections file, to alter password, database 
+      path at runtime</td>
+  </tr>
+  <tr> 
+    <td>DBXDRIVERS</td>
+    <td>Path to a user defined DBXDRIVERS file.</td>
+  </tr>
+  <tr> 
+    <td>MAIL_DESTINATION</td>
+    <td>Default destination, on preview window, send mail option</td>
+  </tr>
+  <tr> 
+    <td>MAIL_SUBJECT</td>
+    <td>Default subject, on preview window, send mail option</td>
+  </tr>
+  <tr> 
+    <td>MAIL_BODY</td>
+    <td>Default body, on preview window, send mail option</td>
+  </tr>
+  <tr>
+    <td>MAIL_FILE</td>
+    <td>Optional, force a filename for the attatched file, you should include 
+      file extension </td>
+  </tr>
+  <tr> 
+    <td>DBPARAM_PARAMNAME</td>
+    <td><p>Replaces database connection parameter PARAMNAME with the value in 
+        the parameter. Useful to provide user name, password, database path, before 
+        executing the report</p>
+      <p>For DBExpress also DriverName, VendorLib,LibraryName,GetDriverFunc</p>
+      <p>For InterbaseExpress also DatabaseName is allowed</p>
+      <p>For Mybase, Database param indicates the directory path</p></td>
+  </tr>
+  <tr>
+    <td>ALIAS_DBPARAM_PARAMNAME</td>
+    <td>Same as DBPARAM_PARAMNAME but applied only to Connection with alias: &quot;ALIAS&quot; </td>
+  </tr>
+  <tr>
+    <td>DATASETNAME_FILTER</td>
+    <td>Filter for Mybase driver in memory datasets, if a paramter named DATASETNAME_FILTER is found, it will be used to filter the dataset </td>
+  </tr>
+</table>
+<p><strong>Validation</strong></p>
+<p>You can set a validation expression for a parameter, the validation of parameters 
+  is done in the moment of showing the parameters to the user, if the validation 
+  is not valid, the error message is shown to the user, this is true also for 
+  integrated web server. Note the validation is not done before running the report, 
+  to do validations before running the report you can use the checkexpression 
+  evaluator function.</p>
+<p><strong>Lookup help for parameters</strong></p>
+<p>Sometines a parameter is specified as a code number (customer code, family 
+  code). You can specify a lookup search so the user can browse a dataset to find 
+  the code number.</p>
+<p>The simple case is to select a code number from a small dataset. Imagine you 
+  have a parameter FAMILY_CODE, and the user must enter the family code as a number. 
+  The final result will be a button beside the parameter input, when the user 
+  click the button all the available families are shown, the user select it by 
+  name and the family code is assigned to the parameter.</p>
+<p>Steps to create a lookup dataset to assist the user on parameters window:</p>
+<ol>
+  <li>Create the parameter FAMILY_CODE as integer. Description family code.</li>
+  <li>Create a new dataset FAMILY_LOOKUP with the sql sentence to show help information 
+    to the user, the first field must be the family code, that is the field that 
+    will be assigned to the parameter: SELECT CODE,DESCRIPTION FROM FAMILIES ORDER 
+    BY DESCRIPTION. Also uncheck the option Open at start, so the dataset will 
+    no be open on report start, but only when needed.</li>
+  <li>Go to parameter definition and select the new dataset, as the Search Dataset 
+    for the parameter FAMILY_CODE.</li>
+  <li>Test the feature going to user parameters window.</li>
+</ol>
+<p>Another case is to select a code from a large dataset where the user should 
+  search for, like a customers table.</p>
+<p>Steps to create a lookup dataset to assist the user on parameters window, with 
+  search feature, usually to loockup on large datasets:</p>
+<ol>
+  <li>Create the parameter CUSTOMER_CODE as integer. Description family code.</li>
+  <li>Create a new dataset CUSTOMER_LOOKUP with the sql sentence to show help 
+    information to the user, the first field must be the customercode, that is 
+    the field that will be assigned to the parameter, but it will also contain 
+    one parameter to search for only a subset of the dataset: SELECT CODE,DESCRIPTION 
+    FROM CUSTOMERS WHERE UPPER(DESCRIPTION) CONTAINING :CUST_DESCRIPTION ORDER 
+    BY DESCRIPTION. Also uncheck the option Open at start, so the dataset will 
+    no be open on report start, but only when needed.</li>
+  <li>You must create a paramerter called CUST_DESCRIPTION as string and assigned 
+    to CUSTOMER_LOOKUP dataset, you should set the visible property to false for 
+    this parameter.</li>
+  <li>Go to parameter definition and select the new dataset, as the Search Dataset 
+    for the parameter FAMILY_CODE, and assign the CUST_DESCRIPTION parameter as 
+    search parameter.</li>
+  <li>Test the feature going to user parameters window, now the user must write 
+    some text and the after a few seconds, the engine will execute the sql sentence 
+    assigning the parameter CUST_DESCRIPTION.</li>
+</ol>
+<ol>
+</ol>
+<p><strong>About parameters and database drivers</strong></p>
+<p>When you place a parameter inside a query:</p>
+<p>SELECT MYDATA FROM MYTABLE WHERE MYCODE=:CODE</p>
+<p>This is called a parametrized query, the query is send throught the database 
+  driver, and translated by the driver to a similar syntax, the parameters must 
+  be reconized by the database driver and the database engine (usually a sql server).Depending 
+  on the SQL server the query will translate by the database driver natively with 
+  different syntax:</p>
+<p>SELECT MYDATA FROM MYTABLE WHERE MYCODE=?<br>
+SELECT MYDATA FROM MYTABLE WHERE MYCODE=@CODE</p>
+<p>This query is &quot;compiled&quot; by the database engine, usually this process 
+  parse the query, translating to a native (and fast) format, selects a optimization 
+  method (query plan) including indexes used by the engine, the query can be compiled 
+  once (also called prepare procedure), and execute multiple times, the successive 
+  executions will be lot faster because the database engine can bypass the parse 
+  of the query and analizing index statistics to select the best path to execute 
+  the query.</p>
+<p>So passing parameters to a database involves the database driver and database 
+  server, some database drivers, does not support large parameters or does not 
+  implement some parameter types (date,time), others are a bit tricky about detecting 
+  them, for example:</p>
+<p>.. WHERE :CODE=MYCODE can generate a syntax error, but WHERE MYCODE=:CODE works 
+  ok, this is because database driver parse the query to translate it to database 
+  server intermediate format, and the database driver parser can be not accurately 
+  programmed.</p>
+<p>Also because the query is compiled by the database server and a optimization 
+  plan must be selected, the parameters can not be placed in any part of the SELECT 
+  sentence.</p>
+<p>SELECT .... ORDER BY :MYORDER1,:MYORDER2</p>
+<p>The above sentence is not valid because a parameter inside the order by clause 
+  is usually not valid, think that changing the order of a query can change the 
+  way the query is optimized by the database server, for example if the where 
+  clause and the order by clause references same field, only one index is needed, 
+  if they differ, a diferent query plan (index path) is needed to execute the 
+  query, so a recompilation of the query is needed.</p>
+<p>Some database drivers and servers allow parameters inside the select fields 
+  part but others not:</p>
+<p>SELECT :MYPARAM,MYFIELD FROM ....</p>
+<p>This is also applicable to linked querys, but linked querys takes the parameters 
+  from the master query fields by name.</p>
+<p>Note: When you missplace a parameter, the database driver can ignore not returning 
+  you any error.</p>
+<p><strong>Workarounds</strong></p>
+<p>Using query parameters is efficient and the prefered way, but when database 
+  drivers have some problem, or it's not possible to do it you must find alternative 
+  methods. For example, if the database driver does not accept Date parameter 
+  type, you can define the parameter as string, the syntax of the date will be 
+  defined, then by dabase server, for example '31-JAN-2004' or '01/31/2004'.</p>
+<p>So a query can not be compiled/prepared if the order by clause change between 
+  executions, or the where clause syntax changes, to allow the use of parameters 
+  in this querys, there is the String Substitution parameter type, it's not a 
+  real parametrized query, it's a query that will be changed before sending it 
+  to the database driver. The use of the :PARAM syntax is not needed.</p>
+<p>For example:</p>
+<p>SELECT .... ORDER BY 1,2,3</p>
+<p>You can create a string substitution parameter assigned to one or more datasets 
+  with properties:</p>
+<table border="1">
+  <tr>
+    <td bgcolor="#FFFFCC">Property</td>
+    <td bgcolor="#FFFFCC">Value</td>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>ORDERBYCLAUSE</td>
+  </tr>
+  <tr>
+    <td>Value</td>
+    <td>ORDER BY 1,2,3</td>
+  </tr>
+  <tr>
+    <td>Search For</td>
+    <td>ORDER BY 1,2,3</td>
+  </tr>
+  <tr>
+    <td>Description</td>
+    <td>Order by clause</td>
+  </tr>
+</table>
+<p>Changing the value of the parameter to:</p>
+<p>ORDER BY 2,1,3</p>
+<p>Will search for the string ORDER BY 1,2,3 inside the sql sentence, if found, 
+  it will be replaced by ORDER BY 2,1,3 then , the new generated sql sentence 
+  is executed.</p>
+<p>This is also usefull to change some part of the where clause (or the entire 
+  clause) or also to change the entire sql sentence at runtime.</p>
+<p></p>
+<p><b>How to modify parameter values at runtime</b></p>
+<p>Report parameters are added to the evaluator as variables when the report begin, 
+  so if you want to modify the values while the report is executing you must alter 
+  the variable value using a expression like:</p>
+<p>paramname:='NewStringValue'</p>
+<p>From Delphi/Kylix/Builder you can evaluate this expression:</p>
+<p>CLXReport1.Report.Evaluator.EvaluateText('paramname:=''NewStringValue''');. 
+</p>
+<p><b>Using parameters from Delphi/Builder/Kylix/ActiveX</b></p>
+<p>You can call parameter window from your application with <b>the method ShowParam</b>s:</p>
+<p>VCL/CLX Components:</p>
+<p><code>if CLXReport1.ShowParams then</code></p>
+<p><code> CLXReport1.Execute</code></p>
+<p>You can modify report parameters in runtime in your application.</p>
+<p>VCL/CLX Components:</p>
+<p><code>CLXReport1.Report.Params.ParamByName('CUSTOMERINI').Value:=2;</code></p>
+<p>ActiveX:</p>
+<p><code>ReportManX.ParamByName('CUSTOMERINI').Value=2</code></p>
+<p><code>ReportManX.Report.Params.Items[0].Value=2;</code></p>
+<p><code>ReportManX.Report.Params.Items.Count;</code></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

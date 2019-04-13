@@ -1,0 +1,266 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{C2F8BA8C-01DD-41B0-AD8B-56E6B3F6DDAD}</ProjectGuid>
+			<ProjectVersion>12.0</ProjectVersion>
+			<MainSource>PafEcf.dpr</MainSource>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_Optimize>false</DCC_Optimize>
+			<DCC_UsePackage>vcl;rtl;vclx;vclimg;vclactnband;dbrtl;vcldb;vcldbx;bdertl;vcltouch;xmlrtl;dsnap;dsnapcon;TeeUI;TeeDB;Tee;vclib;ibxpress;adortl;IndyCore;IndySystem;IndyProtocols;inet;intrawebdb_100_140;Intraweb_100_140;VclSmp;vclie;websnap;webdsnap;inetdb;inetdbbde;inetdbxpress;soaprtl;vclribbon;dbexpress;DbxCommonDriver;DataSnapIndy10ServerTransport;DataSnapProviderClient;DbxClientDriver;DataSnapServer;DBXInterBaseDriver;DBXMySQLDriver;dbxcds;DBXFirebirdDriver;DBXSybaseASEDriver;DBXSybaseASADriver;DBXOracleDriver;DBXMSSQLDriver;DBXInformixDriver;DBXDb2Driver;Jcl;JclVcl;JvCoreD14R;JvSystemD14R;JvStdCtrlsD14R;JvAppFrmD14R;JvBandsD14R;JvDBD14R;JvDlgsD14R;JvBDED14R;JvCmpD14R;JvCryptD14R;JvCtrlsD14R;JvCustomD14R;JvDockingD14R;JvDotNetCtrlsD14R;JvEDID14R;JvGlobusD14R;JvHMID14R;JvInterpreterD14R;JvJansD14R;JvManagedThreadsD14R;JvMMD14R;JvNetD14R;JvPageCompsD14R;JvPluginD14R;JvPrintPreviewD14R;JvRuntimeDesignD14R;JvTimeFrameworkD14R;JvValidatorsD14R;JvWizardD14R;JvXPCtrlsD14R</DCC_UsePackage>
+			<DCC_DependencyCheckOutputName>PafEcf.exe</DCC_DependencyCheckOutputName>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_Platform>x86</DCC_Platform>
+			<DCC_E>false</DCC_E>
+			<DCC_N>false</DCC_N>
+			<DCC_S>false</DCC_S>
+			<DCC_F>false</DCC_F>
+			<DCC_K>false</DCC_K>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="PafEcf.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="VO\VendaDetalheVO.pas"/>
+			<DCCReference Include="VO\BancoVO.pas"/>
+			<DCCReference Include="VO\CaixaVO.pas"/>
+			<DCCReference Include="VO\CFOPVO.pas"/>
+			<DCCReference Include="VO\ChequeClienteVO.pas"/>
+			<DCCReference Include="VO\ClienteVO.pas"/>
+			<DCCReference Include="VO\ConfiguracaoVO.pas"/>
+			<DCCReference Include="VO\ContatoEmailVO.pas"/>
+			<DCCReference Include="VO\ContatoTelefoneVO.pas"/>
+			<DCCReference Include="VO\ContatoVO.pas"/>
+			<DCCReference Include="VO\DAVDetalheVO.pas"/>
+			<DCCReference Include="VO\DAVVO.pas"/>
+			<DCCReference Include="VO\DocumentosEmitidosVO.pas"/>
+			<DCCReference Include="VO\EmpresaVO.pas"/>
+			<DCCReference Include="VO\EnderecoVO.pas"/>
+			<DCCReference Include="VO\FuncionarioVO.pas"/>
+			<DCCReference Include="VO\ImpressoraVO.pas"/>
+			<DCCReference Include="VO\MovimentoVO.pas"/>
+			<DCCReference Include="VO\NF2CabecalhoVO.pas"/>
+			<DCCReference Include="VO\NF2DetalheVO.pas"/>
+			<DCCReference Include="VO\OperadorVO.pas"/>
+			<DCCReference Include="VO\PreVendaDetalheVO.pas"/>
+			<DCCReference Include="VO\PreVendaVO.pas"/>
+			<DCCReference Include="VO\ProdutoVO.pas"/>
+			<DCCReference Include="VO\R02VO.pas"/>
+			<DCCReference Include="VO\R03VO.pas"/>
+			<DCCReference Include="VO\R06VO.pas"/>
+			<DCCReference Include="VO\R07VO.pas"/>
+			<DCCReference Include="VO\RecebimentoNaoFiscalVO.pas"/>
+			<DCCReference Include="VO\SangriaVO.pas"/>
+			<DCCReference Include="VO\SituacaoClienteVO.pas"/>
+			<DCCReference Include="VO\SuprimentoVO.pas"/>
+			<DCCReference Include="VO\TipoEmailVO.pas"/>
+			<DCCReference Include="VO\TipoPagamentoVO.pas"/>
+			<DCCReference Include="VO\TipoTelefoneVO.pas"/>
+			<DCCReference Include="VO\TotalTipoPagamentoVO.pas"/>
+			<DCCReference Include="VO\UnidadeVO.pas"/>
+			<DCCReference Include="VO\VendaCabecalhoVO.pas"/>
+			<DCCReference Include="Controller\MovimentoController.pas"/>
+			<DCCReference Include="Controller\ProdutoController.pas"/>
+			<DCCReference Include="Controller\CaixaController.pas"/>
+			<DCCReference Include="Controller\OperadorController.pas"/>
+			<DCCReference Include="Controller\VendaController.pas"/>
+			<DCCReference Include="Controller\TipoPagamentoController.pas"/>
+			<DCCReference Include="Controller\TotalTipoPagamentoController.pas"/>
+			<DCCReference Include="UArquivoMFD.pas">
+				<Form>FArquivoMfd</Form>
+			</DCCReference>
+			<DCCReference Include="UCaixa.pas">
+				<Form>FCaixa</Form>
+			</DCCReference>
+			<DCCReference Include="UDataModule.pas">
+				<Form>FDataModule</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="UDAVEmitidos.pas">
+				<Form>FDavEmitidos</Form>
+			</DCCReference>
+			<DCCReference Include="UDescontoAcrescimo.pas">
+				<Form>FDescontoAcrescimo</Form>
+			</DCCReference>
+			<DCCReference Include="UECF.pas"/>
+			<DCCReference Include="UEfetuaPagamento.pas">
+				<Form>FEfetuaPagamento</Form>
+			</DCCReference>
+			<DCCReference Include="UEncerraMovimento.pas">
+				<Form>FEncerraMovimento</Form>
+			</DCCReference>
+			<DCCReference Include="UEspelhoMFD.pas">
+				<Form>FEspelhoMfd</Form>
+			</DCCReference>
+			<DCCReference Include="UIdentificaCliente.pas">
+				<Form>FIdentificaCliente</Form>
+			</DCCReference>
+			<DCCReference Include="UImportaCliente.pas">
+				<Form>FImportaCliente</Form>
+			</DCCReference>
+			<DCCReference Include="UImportaNumero.pas">
+				<Form>FImportaNumero</Form>
+			</DCCReference>
+			<DCCReference Include="UIniciaMovimento.pas">
+				<Form>FIniciaMovimento</Form>
+			</DCCReference>
+			<DCCReference Include="ULMFC.pas">
+				<Form>FLmfc</Form>
+			</DCCReference>
+			<DCCReference Include="ULMFS.pas">
+				<Form>FLmfs</Form>
+			</DCCReference>
+			<DCCReference Include="UMeiosPagamento.pas">
+				<Form>FMeiosPagamento</Form>
+			</DCCReference>
+			<DCCReference Include="UMesclaDAV.pas">
+				<Form>FMesclaDAV</Form>
+			</DCCReference>
+			<DCCReference Include="UMovimentoAberto.pas">
+				<Form>FMovimentoAberto</Form>
+			</DCCReference>
+			<DCCReference Include="UPAF.pas"/>
+			<DCCReference Include="UValorReal.pas">
+				<Form>FValorReal</Form>
+			</DCCReference>
+			<DCCReference Include="UConfiguracao.pas">
+				<Form>FConfiguracao</Form>
+			</DCCReference>
+			<DCCReference Include="VO\PosicaoComponentesVO.pas"/>
+			<DCCReference Include="Controller\ConfiguracaoController.pas"/>
+			<DCCReference Include="VO\ContadorVO.pas"/>
+			<DCCReference Include="VO\ResolucaoVO.pas"/>
+			<DCCReference Include="VO\FichaTecnicaVO.pas"/>
+			<DCCReference Include="VO\ProdutoPromocaoVO.pas"/>
+			<DCCReference Include="VO\TurnoVO.pas"/>
+			<DCCReference Include="UImportaProduto.pas">
+				<Form>FImportaProduto</Form>
+			</DCCReference>
+			<DCCReference Include="Biblioteca.pas"/>
+			<DCCReference Include="Controller\VendedorController.pas"/>
+			<DCCReference Include="Controller\ClienteController.pas"/>
+			<DCCReference Include="Controller\PreVendaController.pas"/>
+			<DCCReference Include="Controller\DAVController.pas"/>
+			<DCCReference Include="Controller\EmpresaController.pas"/>
+			<DCCReference Include="Controller\ImpressoraController.pas"/>
+			<DCCReference Include="EAD_Class.pas"/>
+			<DCCReference Include="Controller\RegistroRController.pas"/>
+			<DCCReference Include="VO\R04VO.pas"/>
+			<DCCReference Include="VO\R05VO.pas"/>
+			<DCCReference Include="VO\MeiosPagamentoVO.pas"/>
+			<DCCReference Include="USintegra.pas"/>
+			<DCCReference Include="Controller\SintegraController.pas"/>
+			<DCCReference Include="VO\Sintegra60AVO.pas"/>
+			<DCCReference Include="VO\Sintegra60MVO.pas"/>
+			<DCCReference Include="VO\Sintegra60DVO.pas"/>
+			<DCCReference Include="USpedFiscal.pas"/>
+			<DCCReference Include="Controller\ContadorController.pas"/>
+			<DCCReference Include="Controller\UnidadeController.pas"/>
+			<DCCReference Include="Controller\NF2Controller.pas"/>
+			<DCCReference Include="UMesclaPreVenda.pas">
+				<Form>FMesclaPreVenda</Form>
+			</DCCReference>
+			<DCCReference Include="ULoginGerenteSupervisor.pas">
+				<Form>FLoginGerenteSupervisor</Form>
+			</DCCReference>
+			<DCCReference Include="UMovimentoECF.pas">
+				<Form>FMovimentoECF</Form>
+			</DCCReference>
+			<DCCReference Include="UVendasPeriodo.pas">
+				<Form>FVendasPeriodo</Form>
+			</DCCReference>
+			<DCCReference Include="VO\R01VO.pas"/>
+			<DCCReference Include="VO\Sintegra60RVO.pas"/>
+			<DCCReference Include="VO\Sintegra61RVO.pas"/>
+			<DCCReference Include="VO\SpedFiscalC390VO.pas"/>
+			<DCCReference Include="VO\SpedFiscalC321VO.pas"/>
+			<DCCReference Include="Controller\SpedFiscalController.pas"/>
+			<DCCReference Include="VO\SpedFiscalC425VO.pas"/>
+			<DCCReference Include="VO\SpedFiscalC490VO.pas"/>
+			<DCCReference Include="Constantes.pas"/>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">PafEcf.dpr</Source>
+					</Source>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1046</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">T2Ti.COM</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription">T2Ti PAF-ECF</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName">PAFECF</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\RaveReports\Lib\dclRave.bpl">File c:\arquivos de programas\embarcadero\rad studio\7.0\RaveReports\Lib\dclRave.bpl not found</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+				<ModelSupport>False</ModelSupport>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Units documentation - rppdfdriver.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rppdfdriver.pas</h3>
+<h4>Description</h4>
+<p>This unit implements the <b>Adobe PDF format print driver</b>. With the help 
+  of rppdffile, implements the interface IRpPrintDriver, it also contains some 
+  useful functions</p>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpPdfDriver</td>
+    <td>TInterfacedObject, IRpPrintDriver</td>
+    <td>Implementation of the pdf print driver</td>
+  </tr>
+</table>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>procedure SaveMetafileToPDF (metafile:TRpMetafileReport; filename:string; 
+      compressed:boolean); </td>
+    <td>Save the metafile to a Adobe PDF file format file</td>
+  </tr>
+  <tr> 
+    <td>procedure SaveMetafileToPDFStream (metafile:TRpMetafileReport; Stream:TStream; 
+      compressed:boolean); </td>
+    <td>Same but to any stream</td>
+  </tr>
+  <tr> 
+    <td>function PrintReportPDF (report:TRpReport;Caption:string;progress:boolean; 
+      allpages:boolean; frompage, topage, copies:integer; filename:string; compressed:boolean):Boolean; 
+    </td>
+    <td>This function operates with a TRpReport component</td>
+  </tr>
+  <tr>
+    <td>function PrintReportPDFStream (report:TRpReport; Caption:string; progress:boolean; 
+      allpages:boolean; frompage, topage, copies:integer; Stream:TStream; compressed:boolean):Boolean; 
+    </td>
+    <td>Same but to any stream</td>
+  </tr>
+</table>
+</body>
+</html>

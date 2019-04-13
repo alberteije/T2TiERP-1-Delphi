@@ -1,0 +1,186 @@
+<html>
+<head>
+<title>Common properties for TRpImage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Component Reference</h2>
+<h3>Properties for TRpImage</h3>
+<p><b>Sumary</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Internal Name</td>
+    <td bgcolor="#FFFFCC">Type</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>Draw Style</td>
+    <td>DrawStyle</td>
+    <td>TRpImageDrawStyle</td>
+    <td> <table border="1">
+        <tr> 
+          <td bgcolor="#FFFFCC">Value</td>
+          <td bgcolor="#FFFFCC">Meaning</td>
+        </tr>
+        <tr> 
+          <td>Crop</td>
+          <td>Draws the image using the Resolution property to determine size, 
+            then cut the part of the image outside the component size</td>
+        </tr>
+        <tr> 
+          <td>Stretch</td>
+          <td>Draws the image no using the Resolution property but adapting to 
+            the size of the component size</td>
+        </tr>
+        <tr> 
+          <td>Full</td>
+          <td>Draws the image using the Resolution property to determine size, 
+            then ignores component size, you can use this property with parent 
+            sectoin autoexpand property to draw different image sizes optimizing 
+            page space</td>
+        </tr>
+        <tr> 
+          <td>Tile</td>
+          <td>Draws the image repeating it until the component size is filled, 
+            this is used to obtain for example beatiful backgrounds from small 
+            sized bitmaps</td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td>Expression</td>
+    <td>Expression</td>
+    <td>WideString</td>
+    <td><p>The image can be embedded (Image propery) or obtained throught this 
+        expression property, the expression is evaluated, if the expression result 
+        is a binary database field will try to read the image from there, see 
+        below the image formats supported. If the field is a string field or the 
+        result of evaluation is a string the engine will try to load the image 
+        as a file reference.</p></td>
+  </tr>
+  <tr> 
+    <td>Image</td>
+    <td>Stream</td>
+    <td>TStream</td>
+    <td>Embedded image, stored with the report structure containing a image stream. 
+      When embedding large images you should set prefered save format in page 
+      setup to binary/gzip to enhace performance. </td>
+  </tr>
+  <tr> 
+    <td>Resolution (dpi)</td>
+    <td>dpires</td>
+    <td>Integer</td>
+    <td>Resolution of the image in pixels per inch unit, the size of the bitmap 
+      and the resolution will determine the final size depending on the Draw Style 
+      property </td>
+  </tr>
+</table>
+<p><strong>Aditional details about the implementation</strong></p>
+<p>Because Report Manager <a href="devdriver.html">driver architechture</a>, the 
+  image formats supported depends on the output driver used, the server applications 
+  use the PDF driver.</p>
+<p><strong>Supported Image file formats</strong></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#66FFFF" bordercolor="#000000"><b>Image type</b></td>
+    <td bgcolor="#66FFFF" bordercolor="#000000"><b>Windows QT</b></td>
+    <td bgcolor="#66FFFF" bordercolor="#000000"><b>Linux QT</b></td>
+    <td bgcolor="#66FFFF" bordercolor="#000000"><b>Windows GDI</b></td>
+    <td bgcolor="#66FFFF" bordercolor="#000000"><strong>HTML</strong></td>
+    <td bgcolor="#66FFFF" bordercolor="#000000"><b>PDF</b></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">&nbsp;</td>
+    <td bgcolor="#FFFFCC">TCLXReport</td>
+    <td bgcolor="#FFFFCC">TCLXReport</td>
+    <td bgcolor="#FFFFCC">TVCLReport</td>
+    <td bgcolor="#FFFFCC">&nbsp;</td>
+    <td bgcolor="#FFFFCC">TPDFReport</td>
+  </tr>
+  <tr> 
+    <td>Windows Bitmap, regular</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+  <tr> 
+    <td>Windows Bitmap, RLE</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
+  </tr>
+  <tr> 
+    <td>Windows Bitmap, Monochrome</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+  <tr> 
+    <td>JPeg Image (any method)</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+  <tr> 
+    <td>PNG Image</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+  </tr>
+  <tr> 
+    <td>XPM Images</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+  </tr>
+  <tr> 
+    <td>Gif Image</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+  </tr>
+</table>
+<p>Notes: </p>
+<ul>
+  <li>The image files supported by the Report Servers (TCP and Web) are the same 
+    as the TPDFReport.</li>
+  <li>The text ourput driver does not support any image or drawing</li>
+  <li>The TVCLReport and TCLXReport components can extend graphic file formats 
+    by calling from Delphi/Builder/Kylix source code the RegisterGraphicFileFormat 
+    function, this will allow loading of different file image formats like GIF 
+    or PNG</li>
+</ul>
+<p><b>Developer info</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Internal component name</td>
+    <td>TRpImage</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Parent class</td>
+    <td>TRpCommonPosComponent</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Unit name</td>
+    <td>rpdrawitem.pas</td>
+  </tr>
+</table>
+<p>See also <a href="refcommon.html">Report components common properties</a>.</p>
+</body>
+</html>

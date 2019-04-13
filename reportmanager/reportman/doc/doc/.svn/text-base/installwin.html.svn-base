@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Installation in Microsoft Windows</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Installation</h2>
+<h3>Microsoft Windows Installation</h3>
+<p>Installing Report Manager Designer is a easy process, you must have <b>application 
+  installation rights if you are using NT technology</b> (WNT,W2000,WXP), usually 
+  Administrator use or Advanced User can install it.</p>
+<p>See <a href="requirements.html">hardware and software requirements</a> before 
+  installing Report Manager designer.</p>
+<p>You must <b>download the latest Microsoft Windows version</b> from sourceforge:</p>
+<p><a href="http://sourceforge.net/projects/reportman" target="_blank">http://sourceforge.net/projects/reportman</a></p>
+<p>Then execute the setup application:</p>
+<p>The setup application will issue a warning, click 'Yes' button, and a welcome 
+  window will appear:</p>
+<p><img src="images/installwin1.jpg" width="501" height="383"></p>
+<p>Click next and read the license agreement and release notes for the latest 
+  version:</p>
+<p><img src="images/installwin2.jpg" width="501" height="383"></p>
+<p>You can then select the destination directory (usually Program Files)</p>
+<p><img src="images/installwin3.jpg" width="501" height="383"></p>
+<p>You can select also a Start Menu Folder for placing Report Manager Designer 
+  icons:</p>
+<p><img src="images/installwin4.jpg" width="501" height="383"> </p>
+<p>You can also create a Desktop icon or a a quick launch icon.</p>
+<p><img src="images/installwin5.jpg" width="501" height="383"></p>
+<p>Only a confirmation dialog left, click intall to proceed:</p>
+<p><img src="images/installwin6.jpg" width="501" height="383"></p>
+<p>After that you have the option of executing it or you can go to Start Menu 
+  or the generated desktop icon.</p>
+<p>Some installation utilities are included in the Start Menu group to install 
+  Report Server service and ActiveX control.</p>
+<p>To <b>uninstall Report Manager use the standard procedure</b>, that is go to 
+  <b>control panel and add/remove software</b>, clic Report Manager Designer and 
+  uninstall button.</p>
+<b>About database connections configuration files</b> 
+<p>If you have installed Borland Delphi6 /C++Builder 6 product before, Report 
+  Manager will use Borland database connection files (dbxdrivers.ini &amp; dbxconnections.ini) 
+  from Borland Shared directory (this path information is stored in the registry), 
+  else Report Manager Designer will use current directory files, so to modify 
+  that files (alter configuration) you must have rights to them.</p>
+<p>To use another directory for database configuration files you must create the 
+  registry entries containing the path including the file:</p>
+<p>Connection Registry File</p>
+<p>Driver Registry File</p>
+<p>in key</p>
+<p>HKEY_LOCAL_MACHINE\SOFTWARE\Borland\DBExpress</p>
+<p>or (if the above does not exist) HKEY_LOCAL_USER if the configuration is available 
+  only for the active user. </p>
+<p><b>Printer configuration file</b></p>
+<p>Report Manager Designer will use a Printer configuration file, only used in 
+  printer selection, this file will be searched as Documents &amp; Settings\Local 
+  Config\All Users\reporman.ini, if not found it will create or use Documents 
+  &amp; Settings\Local Config\YourUserName\reporman.ini</p>
+</body>
+</html>

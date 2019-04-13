@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Subreport header and summary</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Basic report design</h2>
+<h3><b>Subreport header and summary</b></h3>
+<p>The subreport header is a section that the engine prints only once at the beginning.</p>
+<p>The summary is printed after all the sections of the subreport, there you place 
+  information about totals etc...</p>
+<p><b>A group is a special section type that is printed at the begining and at 
+  the end of the subreport but also after an expression change</b>, if not change 
+  expression is assigned will be printed at the beginnning of subreport and footer 
+  will be printed at the end so we can use them as headers and summary.</p>
+<p>Add a group, <b>name this group as subreport1</b> for example, set height of 
+  header and footer to 1 cm, place some text there:</p>
+<p><img src="images/reportheader.jpg" width="568" height="441"></p>
+<p>Preview the report and see where this new sections are printed.</p>
+<p>We will count our customers and print the count in the summary, place an expression 
+  in the summary, and set expression property to 1, Aggregate to Group, Ag.Type 
+  to Sum.</p>
+<p><img src="images/reportheader2.jpg" width="568" height="441"></p>
+<p>Aggregate expressions calculate values based in the number of records of the 
+  datset, the aggregate operation selected will be processed for each record, 
+  in this case it will sum the expression (1) for each record, giving the count 
+  of customers, if you want to sum the lines of a order you must place in expression 
+  the line_total dataset field for example.</p>
+<p>If you preview the report and go to the last page you will see the count of 
+  customers:</p>
+<p><img src="images/reportheader3.jpg" width="553" height="334"> </p>
+</body>
+</html>

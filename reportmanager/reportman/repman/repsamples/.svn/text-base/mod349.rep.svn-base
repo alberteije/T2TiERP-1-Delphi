@@ -1,0 +1,68 @@
+object TRpReport
+  PageBackColor = 16777215
+  SubReports = <
+    item
+      SubReport = TRpSubReport0
+    end>
+  DataInfo = <
+    item
+      Alias = 'INTRACOM'
+      DatabaseAlias = 'IFACTUREMP'
+      SQL = 
+        'SELECT SUM(F.TOTAL),C.PAIS,C.NOMBRE,C.NIF FROM CFACTURA F'#13#10'LEFT ' +
+        'OUTER JOIN CLIENTES C'#13#10'ON C.CODIGO=F.COD_CLIENTE'#13#10'WHERE F.FECHA ' +
+        'BETWEEN '#39'01-JAN-2005'#39' AND '#39'31-DEC-2005'#39#13#10'AND F.INTRACOMUNITARIO=' +
+        '1'#13#10'GROUP BY C.PAIS,C.PAIS,C.NOMBRE,C.NIF'#13#10'ORDER BY 1 DESC'#13#10
+    end>
+  DatabaseInfo = <
+    item
+      Alias = 'IFACTUREMP'
+      LoadParams = True
+      LoadDriverParams = True
+      LoginPrompt = False
+      Driver = rpdatabde
+      ReportTable = 'REPMAN_REPORTS'
+      ReportSearchField = 'REPORT_NAME'
+      ReportField = 'REPORT'
+      ReportGroupsTable = 'REPMAN_GROUPS'
+      ADOConnectionString = ''
+    end>
+  Params = <>
+  StreamFormat = rpStreamText
+  ReportAction = []
+  Type1Font = poHelvetica
+  WFontName = 'Arial'
+  LFontName = 'Helvetica'
+  object TRpSubReport0: TRpSubReport
+    Sections = <
+      item
+        Section = TRpSection0
+      end>
+  end
+  object TRpSection0: TRpSection
+    Width = 10772
+    Height = 1701
+    SubReport = TRpSubReport0
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecdetail
+    Components = <>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+end

@@ -1,0 +1,40 @@
+Delphi 7
+
+Blank Project
+370Kbytes
+
+Add TCP client Indy component
+412Kbytes
+
+Add TeeChart
+536Kbytes
+
+Add a TClientDataset
+775Kbytes
+
+Add midaslib to uses clause
+987KBytes
+
+Add a DBExpress connection and a DBExpress query
+1060Kbytes
+
+Add the jpeg unit
+1142Kbytes
+
+Add a dbedit
+1197Kbytes
+
+Add a toolbar
+1230Kbytes
+
+Add a dbgrid
+1344Kbytes
+
+Add a TPDFReport
+1707Kbytes = 363Kbytes
+
+Add TVCLReport
+2126Kbytes = 419Kbytes
+
+Add TRpDesignerVCL
+2406Kbytes = 280Kbytes

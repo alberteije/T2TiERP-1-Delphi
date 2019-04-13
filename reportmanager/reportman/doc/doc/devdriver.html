@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>Driver architechture of Report Manager</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Developer</h2>
+<h3>Driver Architechture of Report Manager</h3>
+<p>Report Manager engine is a driver based print engine. That is: you can implement 
+  a driver and you get the desired output.</p>
+<p>The driver is defined as an interface in the unit rpmetafile.pas, so any object 
+  or component can implement it:</p>
+<p>IRpPrintDriver=interface</p>
+<p>The drivers availabe now are:</p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Class</b></td>
+    <td bgcolor="#FFFFCC"><b>Unit</b></td>
+    <td bgcolor="#FFFFCC"><b>Component</b></td>
+    <td bgcolor="#FFFFCC"><b>Platform</b></td>
+  </tr>
+  <tr> 
+    <td>TRpGDIDriver</td>
+    <td>rpgdidriver</td>
+    <td>TVCLReport</td>
+    <td>Windows</td>
+  </tr>
+  <tr> 
+    <td>TRpQtDriver</td>
+    <td>rpqtdriver</td>
+    <td>TCLXReport</td>
+    <td>Linux/Windows</td>
+  </tr>
+  <tr> 
+    <td>TRpPDFDriver</td>
+    <td>rppdffriver</td>
+    <td>TPDFReport</td>
+    <td>Linux/Windows</td>
+  </tr>
+  <tr> 
+    <td>--</td>
+    <td>rpexceldriver</td>
+    <td>--</td>
+    <td>Windows</td>
+  </tr>
+  <tr> 
+    <td>TRpTextDriver</td>
+    <td>rptextdriver</td>
+    <td>--</td>
+    <td>Linux/Windows</td>
+  </tr>
+  <tr>
+    <td>--</td>
+    <td>rphtmldriver</td>
+    <td>--</td>
+    <td>Linux/Windows</td>
+  </tr>
+</table>
+<p>The <b>Web Report server and TCP Report Server always work with TRpPDFDriver</b>, 
+  in Linux, it has no dependences on X Server, so it can run in console mode, as a service.</p>
+<p>The engine asks the driver texts sizes, and others while calculating the report, 
+  once calculated (metafile report), the engine use the driver for printing or 
+  previewing the report. This proces is done in a page by page basis when the 
+  report is not marked as a 'two pass report'.</p>
+<p>The excel and html driver calculate sizes with the pdfdriver, they can only 
+  process metafiles, not reports.</p>
+<p>Note that a report can be calculated using a driver, then print or preview 
+  using another driver, that is the case of generating metafiles using web report 
+  server, and print this metafiles using metaview in Linux (QtDriver) or metaviewxp 
+  in Windows (GDIDriver).</p>
+<p>So a report can be processed directly using one of the drivers above or you 
+  can also use any of the drivers to generate a <b>Report Metafile</b>, this is 
+  a file that contains all the info necessary to print or display the pages using 
+  also same drivers, is the same concept as a PDF File, but it includes additional 
+  information like destination printer name, custom paper sizes... A report metafile 
+  can be sent to the <a href="installwebreport.html">ActiveX control plugin</a> 
+  so it shows or prints it.</p>
+<p><br>
+  The engine calls driver functions, to know the size of a text or a graphic.</p>
+<p>procedure TextExtent(atext:TRpTextObject;var extent:TPoint);stdcall;<br>
+  procedure GraphicExtent(Stream:TMemoryStream;var extent:TPoint;dpi:integer);stdcall;</p>
+<p>When you work with variable sized sections and components, using properties 
+  like AutoExpand or AutoContract, the engine will calculate space for sections 
+  and components calling this driver functions.</p>
+<p>The internal implementation of TRpGDIDriver and TRpQtDriver have a special 
+  property: toprinter, if this property is set the functions about object size 
+  are asked to the printer driver (Printer.Canvas and QPrinter.Canvas), and the 
+  result may be different than the result using the screen canvas (Preview Window), 
+  so you can<br>
+  obtain different output results.</p>
+<p>That is because:</p>
+<ul>
+  <li>Printer resolution may be diferent than screen resolution.</li>
+  <li>Fonts on the screen may be drawn different than on the printer.</li>
+</ul>
+<p>The PDF driver knows exact size about Fonts and work at a fixed resolution 
+  (72 dpi), so the result should be the same in all PDF viewers.</p>
+<ul>
+  <li>One possible enhacement to the engine could be returning the size of the 
+    objects as if they print with current printer, it's not difficult but need 
+    testing and have this issues:</li>
+  <li> If the printer is not installed it should get the screen canvas.</li>
+  <li> If the printer is offline (in a network) Windows Systems does not allow 
+    opening it, but an error is raised, this situation must be controlled.</li>
+  <li> Texts on the screen may appear incorrectly.</li>
+  <li> Implementation requires a little more low level access to printer and forget 
+    to get it to work in Linux at least until Borland upgrades to Qt 3..</li>
+</ul>
+<p><strong>About font sizes and Truetype PDF Output.</strong></p>
+<p>Having a symple sentence covering near one line and a Truetype Font selected 
+  at point size 26.I see some differences between:<br>
+  1- Report Manager preview.<br>
+  2- Printing from Report Manager engine.<br>
+  3- Exporting to PDF Output from Report Manager and print out(current development 
+  implementation)<br>
+  4- Printing from Openoffice<br>
+  5- Exporting from OpenOffice to PDF and print out.</p>
+<p>- The 1 print (screen) have the larger width, with a diference of about 2 chars 
+  over the output numer 2 (printing from Report Manager engine).<br>
+  - The 4 option (Open Office) output have a larger result in print out than number 
+  2 but less than number 1 (just 1 char diference with number 2)<br>
+  - The 5 (exporting from OpenOffice to PDF) coincides exactly with option 2 and 
+  3, but shows printout in OpenOffice gives different result than Export to PDF 
+  then print out (not a acrobat reader problem)<br>
+  - The exactly same preview and print is given by acroread.</p>
+<p>That shows the sizing and previewing of TrueType fonts are not perfect for 
+  experienced programs and libraries, in Microsoft Windows something similar happens 
+  (but only preview differs).<br>
+  Anyway it's possible an exact implementation in Report Manager (preview same 
+  as printout), but this requires to replace the call to Qt libraries to draw 
+  a block of text to draw words or letters, giving more complexity to the engine 
+  (Microsoft Windows GDI call must be also replaced).</p>
+<p>So current implementation (this issue was present also before Truetype embedding) 
+  have the limitation of previewing multiple line texts not producing exactly 
+  same output at screen and in printout, take care that the printout well be more 
+  precise. You will see the issue occasionally when previewing a single text that 
+  fills lot of lines in the same page.</p>
+<p>I say you this to ensure you know this is a Windows Win32 API limitation and 
+  Qt library limitation (just like the full justify missing feature), and not 
+  easy to implement (replace that apis with correct ones).</p>
+<p>Thanks</p>
+</body>
+</html>

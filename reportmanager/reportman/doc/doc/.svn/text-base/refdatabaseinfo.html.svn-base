@@ -1,0 +1,203 @@
+<html>
+<head>
+<title>Database connections</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Component Reference</h2>
+<h3>Database connections</h3>
+<p><b>Description</b></p>
+<p>This is a collection that describes the properties of each database connection 
+  used in the report. The items of this collection are edited in the designer 
+  in the <b>data configuration dialog</b>. </p>
+<p><b>Description</b></p>
+<p>Each item describes a connection, based on a database connection driver.</p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Property name</b></td>
+    <td bgcolor="#FFFFCC"><b>Type</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td>Alias</td>
+    <td>String</td>
+    <td> <p>The connection name links to the connection name for each defined 
+        dataset, aditionally the name can be used to obtain data from configuration 
+        files like path to database, user name, password...</p>
+      <p>It depends on the selected driver:</p>
+      <table border="1">
+        <tr> 
+          <td bgcolor="#FFFFCC">Driver</td>
+          <td bgcolor="#FFFFCC">Meaning</td>
+        </tr>
+        <tr> 
+          <td>MyBase</td>
+          <td>The alias will allow reading of path for specified files, the database 
+            property of the dbxconnectoins file will contain this path</td>
+        </tr>
+        <tr> 
+          <td>BDE</td>
+          <td>The alias must coincide with an existent Borland Database Engine 
+            Alias, only the password property is read from the dbxconnections 
+            file </td>
+        </tr>
+        <tr> 
+          <td>DBExpress</td>
+          <td>The configuration is read from dbxconnections file, using Borland 
+            conventions</td>
+        </tr>
+        <tr> 
+          <td>IBX</td>
+          <td>The configuration is read from dbxconneciions file, then internally 
+            translated to IBX valid parameters, database, user, password and character 
+            set are read, you must configure the dbx connection as a Interbase 
+            DBExpress connection, but the engine will use IBX</td>
+        </tr>
+        <tr> 
+          <td>IBO</td>
+          <td>Same as IBX but for Interbase Objects by Jason Wharton</td>
+        </tr>
+        <tr> 
+          <td>ADO</td>
+          <td>Nothing is read from dbxconnections, you must place all the information 
+            to connect inside Connection string</td>
+        </tr>
+        <tr> 
+          <td>ZeosLib</td>
+          <td>The configuration is read from the DBExpress driver, a compatible 
+            configuration set is provided in dbxdrivers.ini file, so you can add 
+            ZeosLib connections, the connection parameters are read from dbxconnections, 
+            but used with natively with Zeos library (only the client database 
+            vendor libraries needed)</td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td>Driver</td>
+    <td>TRpDatabaseDriver</td>
+    <td><table border="1">
+        <tr> 
+          <td bgcolor="#FFFFCC">Driver</td>
+          <td bgcolor="#FFFFCC">Meaning</td>
+        </tr>
+        <tr> 
+          <td>MyBase</td>
+          <td>This database driver is natively implemented it allows reading from 
+            xml or binary Borland TClientDataset compatible files or also plain 
+            files, to read plain files you must provide a file defining the field 
+            sizes and types, you have a wizard in Report Manager Designer to generate 
+            the field definition file</td>
+        </tr>
+        <tr> 
+          <td>BDE</td>
+          <td>The Borland Database Engine must be installed in the client machine 
+            (not necessary in the server machine). The BDE allow connecting to 
+            DBase, FoxPro and Paradox files and any ODBC datasource, if the BDE 
+            also have SQL Links available it can connect to SQL Server, Oracle, 
+            DB2, Interbase, Firebird, Sybase and Informix.</td>
+        </tr>
+        <tr> 
+          <td>DBExpress</td>
+          <td>The dbexpress drivers are small but efficient database drivers, 
+            a few database drivers are provided with Report Manager, there are 
+            other commercial dbexpress drivers available</td>
+        </tr>
+        <tr> 
+          <td>IBX</td>
+          <td>Interbase Express is a Borland library, designed especially for 
+            Interbase database, but is also works for Firebird database, it's 
+            efficient and does not need additional libraries.</td>
+        </tr>
+        <tr> 
+          <td>IBO</td>
+          <td>IBO is similar in concept to IBX but differs on implementation (only 
+            works for Windows) and it's a commercial product from Jason Wharton, 
+            it's not compiled usually with Report Manager engine so if you want 
+            to compile IBO with the engine you must modify rpconf.inc file.</td>
+        </tr>
+        <tr> 
+          <td>ADO</td>
+          <td>ADO is a native Borland interface to Microsoft Database Objects, 
+            efficient for working with Microsoft provided drivers and databases, 
+            or also to connect using ODBC</td>
+        </tr>
+        <tr> 
+          <td>ZeosLib</td>
+          <td><a href="http://zeoslib.sourceforge.net">Zeos library</a> is a component 
+            set to access some database engines, it's compiled inside all Report 
+            Manager binaries, so you can use it normally, but if you use Report 
+            Manager components and want to add the support in compilation (Kylix/Builder/Delphi) 
+            modify the rpconf.inc file to enable the Zeos Library compiling and 
+            linking.</td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td>Load Parameters</td>
+    <td>Boolean</td>
+    <td>Check it and the database parameters will be loaded from dbxconnections.ini 
+      file </td>
+  </tr>
+  <tr>
+    <td>Login Prompt</td>
+    <td>Boolean</td>
+    <td>Check it and the engine will ask the user the user name and password instead 
+      of reading it from dbxconnections.ini file</td>
+  </tr>
+</table>
+<p><b>Developer info</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Internal component name</td>
+    <td>TRpDatabaseInfoList</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Parent class</td>
+    <td>TCollection</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Unit name</td>
+    <td>rpdatainfo.pas</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFCC">CLX/VCLReport property</td>
+    <td>Report.DatabaseInfo</td>
+  </tr>
+</table>
+<p>It has the same properties and methods of standard collections, for example 
+  the IndexOf method allow you to locate the index of a database connection by 
+  name.</p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Property name</b></td>
+    <td bgcolor="#FFFFCC"><b>Type</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td>Items[index]</td>
+    <td> <p>TRpDatabaseInfoItem</p></td>
+    <td>The properties of this collection items are described bellow</td>
+  </tr>
+</table>
+<p><b>Developer info</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Internal component name</td>
+    <td>TRpDatabaseInfoItem</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Parent class</td>
+    <td>TCollectionItem</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Unit name</td>
+    <td>rpdatainfo.pas</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">CLX/VCLReport property</td>
+    <td>Report.DatabaseInfo.Items[index]</td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html>
+<head>
+<title>Using and installing WebReportManX control</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Installation</h2>
+<h3>Using and installing WebReportManX control</h3>
+<h4>Description and use of WebReportManX ActiveX control</h4>
+<p>WebReportManX control is <b>a plugin for Windows Internet Explorer</b> (also 
+  available <a href="http://plugindoc.mozdev.org/en-AU/windows.html" target="_blank">for 
+  Mozilla</a>, maybe downloadable from <a href="http://www.iol.ie/%7Elocka/mozilla/plugin.htm" target="_blank">http://www.iol.ie/~locka/mozilla/plugin.htm</a>), 
+  it allows you to <b>preview or print server processed reports</b> or Report 
+  Manager <b>metafiles stored in web servers</b>. <a href="http://reportman.dnsalias.net/reportmanserver/reportman.htm"><b>Click 
+  here</b></a><b> to obtain the plugin and view a sample report embedded in your 
+  Internet Explorer</b>. It's about <strong>600Kbytes</strong> in size. For the first time you should enable installation of unsigned ActiveX controls option in Internet Explorer, to Ask Permission. Alternatively you can download the WebReportman.ocx file and register it using regsvr32 command line. </p>
+<p><img src="images/webactivex2.jpg" width="742" height="584"></p>
+<p>You can obtain a Report Metafile using save command in preview window, executing 
+  web report server with metafile=1 parameter, executing printreptopdf with -m 
+  command line option.</p>
+<p>For example you can execute a report using Report Manager web server in a Linux 
+  machine and preview it in an Internet explorer window. In the server you should 
+  place a html file with this content:</p>
+<p>&lt;html&gt;<br>
+  &lt;head&gt;<br>
+  &lt;title&gt;Report Manager ActiveX plugin test&lt;/title&gt;<br>
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-1&quot;&gt;<br>
+  &lt;/head&gt;</p>
+<p>&lt;body bgcolor=&quot;#FFFFFF&quot;&gt;<br>
+  &lt;table width=&quot;100%&quot; border=&quot;0&quot; height=&quot;100%&quot;&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;<br>
+  &lt;table width=&quot;100%&quot; border=&quot;0&quot; height=&quot;100%&quot;&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;Report Manager Web ActiveX Control Test Version 2.3&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td height=&quot;100%&quot;&gt;&lt;object<br>
+  classid=&quot;clsid:DF0F146D-1D4B-4216-93A8-B63BE78A3D7E&quot;<br>
+  codebase=&quot;http://80.32.237.17/WebReportManX.cab#version=2,3,0,0&quot;<br>
+  width=100%<br>
+  height=100%<br>
+  align=center<br>
+  hspace=0<br>
+  vspace=0<br>
+  &gt;<br>
+  &lt;param name=&quot;Preview&quot; value=&quot;1&quot;&gt;<br>
+  &lt;param name=&quot;Port&quot; value=&quot;80&quot;&gt;<br>
+  &lt;param name=&quot;ShowProgress&quot; value=&quot;1&quot;&gt;<br>
+  &lt;param name=&quot;Embedded&quot; value=&quot;1&quot;&gt;<br>
+  &lt;param name=&quot;Install&quot; value=&quot;0&quot;&gt;<br>
+  &lt;param name=&quot;PrinterConfig&quot; value=&quot;0&quot;&gt;<br>
+  &lt;param name=&quot;Caption&quot; value=&quot;Printing&quot;&gt;<br>
+  &lt;param name=&quot;MetaUrl&quot; value=&quot;http://80.32.237.17/sample6.rpmf&quot;&gt;<br>
+  &lt;/object&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;/table&gt;<br>
+  &lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;/table&gt;<br>
+  &lt;/body&gt;<br>
+  &lt;/html&gt;</p>
+<p>See the codebase property of Object control contains the path to the installable 
+  .cab file that contains the .ocx control, ask <b>version information for the 
+  .ocx file in windows explorer</b> if you are not sure about the version.</p>
+<p>When a Internet Explorer client reads this web page it reads the .cab file 
+  (you can also point to the .ocx file if available), looks for authenticode signature 
+  (<b>currently the control have a root test signature</b>) and then looks the 
+  security configuration, then <b>ask the user to install the .ocx/.cab file in 
+  the client computer</b>, take care that if you provide a not signed file, by 
+  default Internet explorer will not ask because <b>default configuration does 
+  not allow installation of not signed ActiveX controls</b>, so you must go to 
+  <b>configuration and allow Downloading of unsigned ActiveX (ask data)</b>, see 
+  <b>also if you have not Administrator rights it will not ask in some cases and 
+  wil not work</b>.</p>
+<p><img src="images/webactivex1.jpg" width="441" height="329"></p>
+<p>The procedure of Internet explorer client setup happens only once, so when 
+  it's installed, all the users are available to use the new Installed ActiveX 
+  control, but a <b>version change</b> in the ActiveX control <b>will require 
+  same procedure</b>.</p>
+<p><strong>Important note</strong>: In Winfows XP Service Pack #2, the installation 
+  of plugins have limited to certificates provided byreally few entities (expensive 
+  ones), the plugin is signed by a Spanish certifier emited certificate, and does 
+  Windows Xp SP2 does not allow software install for this entity, you can use 
+  a alternative installation program that you can obtain in download program and 
+  place a message like: If the report does not print please download and install 
+  following software. The software installs and register the plugin.</p>
+<h4>Installing the WebReportManX control in the web server</h4>
+<p>Download the WebReportanX Activex component from sourceforge and unpack it 
+  to a directory usually windows system directory. It's included also in the Designer 
+  installation package.</p>
+<p><a href="http://sourceforge.net/projects/reportman" target="_blank">http://sourceforge.net/projects/reportman</a></p>
+<p>Then place the .ocx or .cab (same but compressed and signed) in a web directory 
+  in the web server, for example in Windows IIS you should place it at c:\inetpub\wwwroot, 
+  in Linux in /usr/local/httpd/htdocs</p>
+<p><b>Parameters</b></p>
+<table width="100%" border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Parameter name</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+    <td bgcolor="#FFFFCC"><b>Default value</b></td>
+  </tr>
+  <tr> 
+    <td>Preview</td>
+    <td> <p>&quot;0&quot; To printer</p>
+      <p>&quot;1&quot; To screen</p></td>
+    <td>&quot;0&quot;</td>
+  </tr>
+  <tr> 
+    <td>Port</td>
+    <td>Port for obtaining the metafile</td>
+    <td>&quot;80&quot;</td>
+  </tr>
+  <tr> 
+    <td>ShowProgress</td>
+    <td> <p>Only valid when Preview=&quot;0&quot;</p>
+      <p>&quot;0&quot; Don't show a dialog with print progress</p>
+      <p>&quot;1&quot; Show a dialog with the progress</p></td>
+    <td>&quot;0&quot;</td>
+  </tr>
+  <tr> 
+    <td>Embedded</td>
+    <td> <p>Only valid when Preview=&quot;1&quot;</p>
+      <p>&quot;0&quot; The preview will launch a new window, with a menu</p>
+      <p>&quot;1&quot; The preview will be embedded inside the defined box</p></td>
+    <td>&quot;0&quot;</td>
+  </tr>
+  <tr> 
+    <td>PrinterConfig</td>
+    <td> <p>&quot;0&quot; No effect</p>
+      <p>&quot;1&quot; Instead of printing, shows the Report Manager printers 
+        configuration dialog</p></td>
+    <td>&quot;0&quot;</td>
+  </tr>
+  <tr> 
+    <td>Caption</td>
+    <td>String showed while obtaining the report from the server</td>
+    <td>&quot;&quot;</td>
+  </tr>
+  <tr> 
+    <td>Install</td>
+    <td> <p>&quot;0&quot; No effect</p>
+      <p>&quot;1&quot; Instead of printing, use the MetaUrl parameter to obtain 
+        reportmanres.* localization files and install them in the client computer 
+        (must have administrator rights)</p></td>
+    <td>&quot;0&quot;</td>
+  </tr>
+  <tr> 
+    <td>MetaUrl</td>
+    <td>The location of the Report Metafile file, this can be a http link to a 
+      .rpmf file, generated using any utility or directly executing a Report Manager 
+      web report server adding metafile=1 option</td>
+    <td>&quot;&quot;</td>
+  </tr>
+  <tr> 
+    <td>ShowPrintDialog</td>
+    <td> <p>Before begin printing it shows the standard print dialog to the end 
+        user</p>
+      <p>&quot;0&quot; Don't show the print dialog</p>
+      <p>&quot;1&quot; Show the print dialog</p></td>
+    <td>&quot;0&quot;</td>
+  </tr>
+  <tr>
+    <td>Copies</td>
+    <td>When output to printer you can specify the number of copies to print</td>
+    <td>&quot;1&quot;</td>
+  </tr>
+</table>
+<p><b>Limitations</b></p>
+<p>For now WebReportManX component can only use http protocol, but you can change 
+  the port (not the protocol). Implementation of https protocol (SSL) can be done 
+  but requires some aditional work.</p>
+<p>&nbsp;</p>
+</body>
+</html>
+
+

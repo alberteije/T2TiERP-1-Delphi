@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Testing the report</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<p>To test the report select Preview option in File Menu or click the Preview 
+  Button. The Engine will repeat the detail for each record in the dataset, remember 
+  that you selected the dataset by clicking the subreport section and altering 
+  the dataset property.</p>
+<p><img src="testing1.jpg" width="401" height="435"></p>
+<p>You can print the report or you can save it as a report metafile that can be 
+  viewed and printed by metaview.exe application.</p>
+<p>You can also Save it to <b>Adobe PDF</b> format, click save button and select 
+  the pdf format (compressed or not compresded).</p>
+<p>If you want to learn how to integrate the reporting engine in your delphi/kylix 
+  application go to the <a href="integrating.html">next section</a> in this tutorial.</p>
+</body>
+</html>

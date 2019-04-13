@@ -1,0 +1,1 @@
+copy carga.bck carga.txt

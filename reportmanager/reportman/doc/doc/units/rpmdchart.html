@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Units documentation - rpmdchart.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpmdchart.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>TRpChart</b>, a print component to draw charts.</p>
+<h4>Types</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpChartDriver</td>
+    <td> 
+      <p>Enumeration (rpchartdriverdefault,rpchartdriverengine,rpchartdriverteechart)</p>
+      <p>Driver to perform the print, the engine driver is very simple, the defaul 
+        driver depends in compilation options, gets always the best chart driver.</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>TRpChartType</td>
+    <td> 
+      <p>Enumeration (rpchartline,rpchartbar,rpchartpoint, rpcharthorzbar,rpchartarea,rpchartpie,rpchartarrow, 
+        rpchartbubble,rpchartgantt)</p>
+      <p>Chart type, not all chart drivers supports all chart types, most powerful 
+        driver is TeeChart.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>TRpMultiBar</td>
+    <td>
+      <p>Enumeration (rpMultiNone,rpMultiside,rpMultiStacked, rpMultiStacked100)</p>
+      <p>When the chart type is bar, the different series may be drawn, side, 
+        stacked... </p>
+    </td>
+  </tr>
+</table>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpSeriesItem</td>
+    <td>TCollectionItem</td>
+    <td>This is a item containing all the values (and labels for this values) 
+      for one serie</td>
+  </tr>
+  <tr>
+    <td>TRpSeries</td>
+    <td>TCollection</td>
+    <td>Collection of series, this contains all the values needed to draw the 
+      chart </td>
+  </tr>
+  <tr> 
+    <td>TRpChart</td>
+    <td>TRpCommonPosComponent</td>
+    <td>TRpChart implementation</td>
+  </tr>
+</table>
+</body>
+</html>

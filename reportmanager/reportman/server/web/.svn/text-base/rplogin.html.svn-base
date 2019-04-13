@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>RepManWebServer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<h3 align="center">ReportManagerLoginLabel</h3>
+<form method="get" action="./index">
+  <table width="90%" border="1">
+    <tr>
+      <td>UserNameLabel</td>
+      <td>
+        <input type="text" name="username">
+      </td>
+    </tr>
+    <tr>
+      <td>PasswordLabel</td>
+      <td>
+        <input type="password" name="password">
+      </td>
+    </tr>
+  </table>
+  <p>
+    <input type="submit" name="Submit" value="LoginLabel">
+  </p>
+</form>
+<p>&nbsp; </p>
+</body>
+</html>

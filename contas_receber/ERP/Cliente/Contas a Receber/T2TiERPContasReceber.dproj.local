@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/01/16 18:13:14.556.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Contas a Receber\Controller\TipoRecebimentoController.pas=</Transaction>
+    <Transaction>2013/01/16 18:15:16.666.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Contas a Receber\Controller\LancamentoReceberController.pas=</Transaction>
+    <Transaction>2013/01/16 18:15:27.191.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Contas a Receber\Controller\ParcelaRecebimentoController.pas=</Transaction>
+    <Transaction>2013/01/16 18:20:15.104.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Cadastros Base\Controller\EmitenteChequeController.pas=</Transaction>
+    <Transaction>2013/01/16 18:20:44.056.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\OrcamentoPedidoVendaDetVO.pas=</Transaction>
+    <Transaction>2013/01/16 18:20:44.076.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\OrcamentoPedidoVendaCabVO.pas=</Transaction>
+    <Transaction>2013/01/16 18:24:08.302.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Contas a Receber\Tela\UTipoRecebimento.pas=</Transaction>
+    <Transaction>2013/01/16 18:24:08.302.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Contas a Receber\Tela\UTipoRecebimento.dfm=</Transaction>
+    <Transaction>2013/01/16 18:27:20.877.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Contas a Receber\Tela\ULancamentoReceber.pas=</Transaction>
+    <Transaction>2013/01/16 18:27:20.877.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Contas a Receber\Tela\ULancamentoReceber.dfm=</Transaction>
+    <Transaction>2013/01/16 18:29:01.212.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Contas a Receber\Tela\UParcelaRecebimento.pas=</Transaction>
+    <Transaction>2013/01/16 18:29:01.212.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Contas a Receber\Tela\UParcelaRecebimento.dfm=</Transaction>
+    <Transaction>2013/01/16 19:11:04.914.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Vendas\Controller\VendedorController.pas=</Transaction>
+    <Transaction>2013/01/16 19:11:04.924.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\VendaDetalheVO.pas=</Transaction>
+    <Transaction>2013/01/16 19:11:04.935.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\VendaCabecalhoVO.pas=</Transaction>
+    <Transaction>2013/01/16 19:11:04.945.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Vendas\Controller\VendaCabecalhoController.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

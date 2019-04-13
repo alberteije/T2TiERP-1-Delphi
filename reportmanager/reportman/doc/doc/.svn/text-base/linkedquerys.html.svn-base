@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Linked querys</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Advanced report design</h2>
+<h3>Linked querys</h3>
+<p></p>
+<p>A subreport can have only a main dataset, but you can open as many datasets 
+  as you want, and you can link this datasets to the main dataset or to other 
+  dataset linked to the main dataset. You can also use the <a href="childsubreports.html">child 
+  subreport</a> property of a section to merge subreports.</p>
+<p>For example:</p>
+<ul>
+  <li> A main dataset with a query to obtain the order lines and order header</li>
+  <li>A customers dataset linked to the main datset (customer number) to obtain 
+    the data for the customer</li>
+  <li>A ship company dataset linked to the customer dataset by (ship company number)</li>
+</ul>
+<p></p>
+<p>To link a dataset with another dataset you must select the property Master 
+  Dataset. A linked dataset must have parameters, the name of the parameters must 
+  be the same as the field names of the linked dataset.</p>
+<p>Here is a sample:</p>
+<p><img src="images/datalink.jpg" width="547" height="497"></p>
+<p><img src="images/datalink2.jpg" width="547" height="497"></p>
+<p>When you assign a main dataset to a subreport, this subreport, prints the details 
+  once for each record. So while printing a subreport, if the main dataset has 
+  a linked query , it will be updated, for example if the custno field in the 
+  main dataset changes and the linked query is parametrized with this field, the 
+  linked query will change, and the new field values will be available to print. 
+</p>
+<p>Note: With the BDE driver you can link Tables by selecting the correct IndexFields 
+  and Master Fields properties like you do in Delphi or Builder.</p>
+</body>
+</html>

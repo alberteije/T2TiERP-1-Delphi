@@ -1,0 +1,175 @@
+package rppack_del2007;
+
+{$R *.res}
+{$R 'rpeval.dcr'}
+{$R 'rpalias.dcr'}
+{$R 'rplastsav.dcr'}
+{$R 'rppdfreport.dcr'}
+{$R 'rptranslator.dcr'}
+{$R 'rpmaskedit.dcr'}
+{$R 'rpvclreport.dcr'}
+{$R 'rpexpredlgvcl.dcr'}
+{$R 'rprulervcl.dcr'}
+{$R 'rpmdesignervcl.dcr'}
+{$R 'rpwebmetaclient.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Report Manager components'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  dbrtl,
+  dsnap,
+  dbexpress,
+  bdertl,
+  adortl,
+  ibxpress,
+  xmlrtl,
+  soaprtl,
+  IndyCore,
+  IndySystem,
+  IndyProtocols,
+  vcldb,
+  vcl,
+  vclx,
+  vcljpg,
+  tee;
+
+contains
+  rptypeval in 'rptypeval.pas',
+  rpmdconsts in 'rpmdconsts.pas',
+  rpeval in 'rpeval.pas',
+  rpevalfunc in 'rpevalfunc.pas',
+  rpparser in 'rpparser.pas',
+  rpalias in 'rpalias.pas',
+  rplastsav in 'rplastsav.pas',
+  rpdatainfo in 'rpdatainfo.pas',
+  rpparams in 'rpparams.pas',
+  rptypes in 'rptypes.pas',
+  rpsection in 'rpsection.pas',
+  rpreport in 'rpreport.pas',
+  rpsubreport in 'rpsubreport.pas',
+  rpmetafile in 'rpmetafile.pas',
+  rplabelitem in 'rplabelitem.pas',
+  rpdrawitem in 'rpdrawitem.pas',
+  rpprintitem in 'rpprintitem.pas',
+  rpmdchart in 'rpmdchart.pas',
+  rpmdbarcode in 'rpmdbarcode.pas',
+  rpmunits in 'rpmunits.pas',
+  rpsecutil in 'rpsecutil.pas',
+  rpmzlib in 'rpmzlib.pas',
+  rpzlibinfutil in 'rpzlibinfutil.pas',
+  rpzlibinfblock in 'rpzlibinfblock.pas',
+  rpzlibinfcodes in 'rpzlibinfcodes.pas',
+  rpzlibinffast in 'rpzlibinffast.pas',
+  rpzlibinftrees in 'rpzlibinftrees.pas',
+  rpzlibadler in 'rpzlibadler.pas',
+  rpzlibzutil in 'rpzlibzutil.pas',
+  rpzlibzdeflate in 'rpzlibzdeflate.pas',
+  rpzlibzinflate in 'rpzlibzinflate.pas',
+  rpzlibzlib in 'rpzlibzlib.pas',
+  rpzlibtrees in 'rpzlibtrees.pas',
+  rpwriter in 'rpwriter.pas',
+  rpdataset in 'rpdataset.pas',
+  rppdfdriver in 'rppdfdriver.pas',
+  rppdffile in 'rppdffile.pas',
+  rppdfreport in 'rppdfreport.pas',
+  rpcompobase in 'rpcompobase.pas',
+  rptranslator in 'rptranslator.pas',
+  rpmdshfolder in 'rpmdshfolder.pas',
+  rpmdrepclient in 'rpmdrepclient.pas',
+  rpmdprotocol in 'rpmdprotocol.pas',
+  rpdatatext in 'rpdatatext.pas',
+  rptextdriver in 'rptextdriver.pas',
+  rpcsvdriver in 'rpcsvdriver.pas',
+  rpsvgdriver in 'rpsvgdriver.pas',
+  rpbasereport in 'rpbasereport.pas',
+  rpcompilerep in 'rpcompilerep.pas',
+  rphtmldriver in 'rphtmldriver.pas',
+  rpmreg in 'rpmreg.pas',
+  rpmdcharttypes in 'rpmdcharttypes.pas',
+  rpinfoprovgdi in 'rpinfoprovgdi.pas',
+  rpinfoprovid in 'rpinfoprovid.pas',
+  rpxmlstream in 'rpxmlstream.pas',
+  rpbarcodecons in 'rpbarcodecons.pas',
+  rpclientdataset in 'rpclientdataset.pas',
+  rpregvcl in 'rpregvcl.pas',
+  rppreviewmeta in 'rppreviewmeta.pas',
+  rpmaskedit in 'rpmaskedit.pas',
+  rpgdidriver in 'rpgdidriver.pas',
+  rpvgraphutils in 'rpvgraphutils.pas',
+  rppreviewcontrol in 'rppreviewcontrol.pas',
+  rpdbdatetimepicker in 'rpdbdatetimepicker.pas',
+  rpgraphutilsvcl in 'rpgraphutilsvcl.pas',
+  rpgdifonts in 'rpgdifonts.pas',
+  rpexceldriver in 'rpexceldriver.pas',
+  rpmdfaboutvcl in 'rpmdfaboutvcl.pas',
+  rpmdprintconfigvcl in 'rpmdprintconfigvcl.pas',
+  rpvclreport in 'rpvclreport.pas',
+  rpexpredlgvcl in 'rpexpredlgvcl.pas',
+  rpdbgridvcl in 'rpdbgridvcl.pas',
+  rpfmetaviewvcl in 'rpfmetaviewvcl.pas',
+  rpvpreview in 'rpvpreview.pas',
+  rppagesetupvcl in 'rppagesetupvcl.pas',
+  rpmdfsearchvcl in 'rpmdfsearchvcl.pas',
+  rpmdclitreevcl in 'rpmdclitreevcl.pas',
+  rprfvparams in 'rprfvparams.pas',
+  rpfmainmetaviewvcl in 'rpfmainmetaviewvcl.pas',
+  rpmregdesignvcl in 'rpmregdesignvcl.pas',
+  rpmdfmainvcl in 'rpmdfmainvcl.pas',
+  rpmdfdesignvcl in 'rpmdfdesignvcl.pas',
+  rprulervcl in 'rprulervcl.pas',
+  rpmdfsectionintvcl in 'rpmdfsectionintvcl.pas',
+  rpmdfdrawintvcl in 'rpmdfdrawintvcl.pas',
+  rpmdflabelintvcl in 'rpmdflabelintvcl.pas',
+  rpzlib77 in 'rpzlib77.pas',
+  rpcolumnar in 'rpcolumnar.pas',
+  rpmdfwizardvcl in 'rpmdfwizardvcl.pas',
+  rpdbbrowservcl in 'rpdbbrowservcl.pas',
+  rpmdobinsintvcl in 'rpmdobinsintvcl.pas',
+  rpmdesignervcl in 'rpmdesignervcl.pas',
+  rpwebmetaclient in 'rpwebmetaclient.pas',
+  rpmdfdinfovcl in 'rpmdfdinfovcl.pas',
+  rpmdfextsecvcl in 'rpmdfextsecvcl.pas',
+  rpmdfbarcodeintvcl in 'rpmdfbarcodeintvcl.pas',
+  rpmdfchartintvcl in 'rpmdfchartintvcl.pas',
+  rpmdobjinspvcl in 'rpmdobjinspvcl.pas',
+  rpmdfstrucvcl in 'rpmdfstrucvcl.pas',
+  rpmdsysinfo in 'rpmdsysinfo.pas',
+  rpmdftreevcl in 'rpmdftreevcl.pas',
+  rpmdfopenlibvcl in 'rpmdfopenlibvcl.pas',
+  rpeditconnvcl in 'rpeditconnvcl.pas',
+  rpdbxconfigvcl in 'rpdbxconfigvcl.pas',
+  rpmdfconnectionvcl in 'rpmdfconnectionvcl.pas',
+  rpmdfsampledatavcl in 'rpmdfsampledatavcl.pas',
+  rpfparamsvcl in 'rpfparamsvcl.pas',
+  rpmdfdatatextvcl in 'rpmdfdatatextvcl.pas',
+  rpmdfdatasetsvcl in 'rpmdfdatasetsvcl.pas',
+  rpmdfselectfields in 'rpmdfselectfields.pas',
+  rpmdfgridvcl in 'rpmdfgridvcl.pas',
+  rpgraphiccompression in 'rpgraphiccompression.pas',
+  rpgraphicstrings in 'rpgraphicstrings.pas',
+  rpgraphiccolor in 'rpgraphiccolor.pas',
+  rpgraphicex in 'rpgraphicex.pas';
+
+end.

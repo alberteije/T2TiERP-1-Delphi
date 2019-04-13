@@ -1,0 +1,72 @@
+package rppackvcl_del2005;
+
+{$R *.res}
+{$R 'rpvclreport.dcr'}
+{$R 'rpactivexreport.dcr'}
+{$R 'rpexpredlgvcl.dcr'}
+{$R 'rpmaskedit.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Report Manager VCL components'}
+{$IMPLICITBUILD OFF}
+{%File 'rpconf.inc'}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  vcljpg,
+  dsnap,
+  vcldb,
+  ibxpress,
+  bdertl,
+  dbexpress,
+  adortl,
+  tee,
+  rppack_del2005,
+  vclx;
+
+contains
+  rpvclreport in 'rpvclreport.pas',
+  rpregvcl in 'rpregvcl.pas',
+  rpactivexreport in 'rpactivexreport.pas',
+  rpexpredlgvcl in 'rpexpredlgvcl.pas' {FrpExpredialogVCL},
+  rppagesetupvcl in 'rppagesetupvcl.pas' {FRpPageSetupVCL},
+  rprfvparams in 'rprfvparams.pas' {FRpRTParams},
+  rpvpreview in 'rpvpreview.pas' {FRpVPreview},
+  rpgdidriver in 'rpgdidriver.pas' {FRpVCLProgress},
+  rpgdifonts in 'rpgdifonts.pas',
+  rpmdprintconfigvcl in 'rpmdprintconfigvcl.pas' {FRpPrinterConfig},
+  rpfmainmetaviewvcl in 'rpfmainmetaviewvcl.pas' {FRpMainMetaVCL},
+  rpfmetaviewvcl in 'rpfmetaviewvcl.pas' {FRpMetaVCL: TFrame},
+  rpmdclitreevcl in 'rpmdclitreevcl.pas' {FRpCliTreeVCL: TFrame},
+  rpexceldriver in 'rpexceldriver.pas' {FRpExcelProgress},
+  rpmdfaboutvcl in 'rpmdfaboutvcl.pas' {FRpAboutBoxVCL},
+  rpvgraphutils in 'rpvgraphutils.pas',
+  rpmaskedit in 'rpmaskedit.pas',
+  rpgraphutilsvcl in 'rpgraphutilsvcl.pas' {FRpMessageDlgVCL},
+  rpdbgridvcl in 'rpdbgridvcl.pas',
+  rppreviewcontrol in 'rppreviewcontrol.pas',
+  rppreviewmeta in 'rppreviewmeta.pas',
+  rpmdfsearchvcl in 'rpmdfsearchvcl.pas';
+
+end.

@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Installing Report Manager Web Server</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Report Manager Web Server</h2>
+<h3>Installation</h3>
+<p><b>Installing Report Manager web server in Microsoft IIS 5</b></p>
+<p>Usually you copy the application (rpwebserver.dll) into a directory with privileges 
+  to execute binary files.</p>
+<p>Open the Internet Information Services administration tool, create a directory 
+  (cgi-bin) and alter properties to allow executing applications.</p>
+<p><img src="images/webserverinstall1.jpg" width="523" height="376"></p>
+<p><img src="images/webserverinstall2.jpg" width="461" height="465"></p>
+<p>You can test the installation by calling the application with /version command:</p>
+<p><a href="http://localhost/cgi-bin/repwebserver.dll/version">http://localhost/cgi-bin/repwebserver.dll/version</a></p>
+<p>This will give you info about the configuration file the report web server 
+  is using, including the location of the configuration file.</p>
+<p>For security reasons you can't add/remove users or aliases from the web. To 
+  configure users and aliases you can use repserverapp(xp) and repserverconfig(xp), 
+  execute repserverapp as a privileged user (root or Admin) so it opens the system 
+  wide configuration file and have write permissions over it, then execute repserverconfig(xp) 
+  and add aliases and users. You can see the generated file location in reportserverapp 
+  form, this configuration file will be used by the web report server.</p>
+<p><a href="http://localhost/cgi-bin/repwebserver.dll/login">http://localhost/cgi-bin/repwebserver.dll/login</a></p>
+<p>Some tricks will help you otsetup the web server:</p>
+<ul>
+  <li> Make sure the user executing Internet Information Services have read privileges 
+    for the directories containing reports</li>
+  <li>After changing some configuration make sure to restart Internet Information 
+    Services or else use repwebexe.exe instead of repwebserver.dll</li>
+  <li>If an error about dbxdrivers appear copy dbxdrivers.ini and dbxconnections.ini 
+    files to the path the error<br>
+    indicates. </li>
+  <li>Check the permissions of the above files for the user executing IIS.</li>
+  <li>If your machine is a multiprocessor machine or a hyperthreading technology 
+    machine may be rebwebexe.exe will give you the better performance (instead 
+    the ISAPI repwebserver.dll)</li>
+</ul>
+<p><b>Installing Report Manager web server in Linux Apache</b></p>
+<p>Usually you copy the application (rpwebexe.bin and repwebexe) into a directory 
+  with execution privileges, in Suse 7.3, is /usr/local/httpd/cgi-bin.</p>
+<p>You must place the configuration file of the server in /etc/reportmanserver 
+  file. You can generate it with the <a href="serverserver.html">tcp server application</a> 
+  and the <a href="serverconfig.html">tcp server configuration</a>. </p>
+<p>This file will contain user information (default user Admin with blank password) 
+  and the report directories. A simple file can be:</p>
+<p>[ALIASES]</p>
+<p>SAMPLE=/var/reports</p>
+<p>User running apache process must have read privileges of this directory.</p>
+<p>The database configuration files must be placed in directory /usr/local/etc, 
+  this files are:</p>
+<p>dbxconnections.conf, dbxdrivers.conf</p>
+<p>There information about database location, user names and passwords are stored, 
+  if you use the designer application (repmand) it usually reads and writes this 
+  configuration files to /home/username/.borland directory, you can copy the files 
+  from there to the correct directory.</p>
+<p>Finally the report server application must link to required libraries, you 
+  should place this libs (provided with the report designer) in /opt/kylixlibs 
+  directory, because repwebexe.bin application launcher add this directory to 
+  the path, otherwise you can add other directory to /etc/ld.so.conf file and 
+  run ldconfig command.</p>
+<p>To test the server you can write:</p>
+<p>http://localhost/cgi-bin/repwebexe.bin/version</p>
+<p>It will say you the version and the configuration file location, then you can 
+  test the configured reports:</p>
+<p>http://localhost/cgi-bin/repwebexe.bin/login</p>
+<h4>Thousand separator and other locales</h4>
+<p>Most linux distros use a diferent locale for apache, you can check environment 
+  variables with the /version command and see the resulting decimal separator, 
+  thousand separator etc, you can override it by placing for example a .htaccess 
+  file in cgi-bin directory where repwebexe is placed, with this content:</p>
+<p>SetEnv KYLIX_DEFINEDENVLOCALES yes<br>
+  SetEnv KYLIX_THOUSAND_SEPARATOR .<br>
+  SetEnv KYLIX_DECIMAL_SEPARATOR ,<br>
+  SetEnv KYLIX_DATE_SEPARATOR /<br>
+  SetEnv KYLIX_TIME_SEPARATOR :</p>
+<h4>Using a log file to track web report server activity</h4>
+<p>You can specify a log file to write information about executed reports. To 
+  enable the log file edit your configuration file and insert:</p>
+<p>[CONFIG]</p>
+<p>LOGFILE=/var/log/reportmanweb.txt</p>
+<p>Make sure the user executing repwebexe application inside Apache or IIS has 
+  write privileges over this file.</p>
+<h4>Serve customized html files</h4>
+<p></p>
+<p>To serve alternative html files, you must configure where the html files are 
+  and use the replacement strings contained in the models. You will find the html 
+  original files (models) in the cvs development tree. </p>
+<p>To configure place in the configuration file</p>
+<p>[CONFIG]</p>
+<p>PAGESDIR=c:\inetpub\wwwroot\reportserver</p>
+<p></p>
+<p><b>Configuring environment variables in Apache using Oracle</b></p>
+<p>You can pass environment varaibles to any cgi with apache, for example oracle 
+  needed ones. </p>
+<p>---------------------------------------------------------------------<br>
+  PassEnv directive<br>
+  Syntax: PassEnv env-variable [env-variable] ...<br>
+  Context: server config, virtual host, directory, .htaccess<br>
+  Override: FileInfo<br>
+  Status: Base<br>
+  Module: mod_env<br>
+  Compatibility: PassEnv is only available in Apache 1.1 and later. <br>
+  Directory and .htaccess context is available in Apache 1.3.7 and <br>
+  later. <br>
+  Specifies one or more environment variables to pass to CGI scripts <br>
+  and SSI pages from the environment of the shell which invoked the <br>
+  httpd process. Example:</p>
+<p> PassEnv LD_LIBRARY_PATH<br>
+  ---------------------------------------------------------------------<br>
+  In addition: You must set the Oracle environment <br>
+  (ORACLE_HOME,PATH,LD_LIBRARY_PATH) inside the init httpd script <br>
+  (/etc/init.d/httpd) plus add the following directives inside the <br>
+  configuration file /etc/httpd/conf/httpd.conf:<br>
+  PassEnv ORACLE_HOME<br>
+  PassEnv PATH<br>
+  PassEnv LD_LIBRARY_PATH</p>
+<p>To generate advanced graphics (charts) you must use the alternative repwebexex.<br>
+The apache server service must start in runlevel 5, and the Xserver must be running.<br>
+The environment variable DISPLAY must be defined to :0 in he apache runtime.<br>
+Some security settigs should be disabled, the fastest way is to disable the firewall and then execute the comand to enable access to the Xserver: xhost +<br>
+</body>
+</html>

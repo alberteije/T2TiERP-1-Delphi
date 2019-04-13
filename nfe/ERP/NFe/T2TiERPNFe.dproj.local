@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/04/11 14:26:23.109.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\NFe\Controller\EntradaNFController.pas=</Transaction>
+    <Transaction>2013/04/11 14:26:37.399.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\EstoqueContagemDetalheVO.pas=</Transaction>
+    <Transaction>2013/04/11 14:26:37.409.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\EstoqueContagemCabecalhoVO.pas=</Transaction>
+    <Transaction>2013/04/11 14:26:37.409.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\NFe\Controller\EstoqueContagemCabecalhoController.pas=</Transaction>
+    <Transaction>2013/04/11 14:27:12.755.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\NFe\Tela\UContagemEstoque.pas=</Transaction>
+    <Transaction>2013/04/11 14:27:12.755.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\NFe\Tela\UContagemEstoque.dfm=</Transaction>
+    <Transaction>2013/04/11 14:28:20.136.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\NFe\Tela\UHistoricoReajuste.pas=</Transaction>
+    <Transaction>2013/04/11 14:28:20.136.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\NFe\Tela\UHistoricoReajuste.dfm=</Transaction>
+    <Transaction>2013/04/11 14:28:30.952.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\EstoqueReajusteDetalheVO.pas=</Transaction>
+    <Transaction>2013/04/11 14:28:30.962.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\EstoqueReajusteCabecalhoVO.pas=</Transaction>
+    <Transaction>2013/04/11 14:28:30.972.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\NFe\Controller\EstoqueReajusteCabecalhoController.pas=</Transaction>
+    <Transaction>2013/04/11 14:29:36.554.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\NFe\Tela\UFormacaoPreco.pas=</Transaction>
+    <Transaction>2013/04/11 14:29:36.554.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\NFe\Tela\UFormacaoPreco.dfm=</Transaction>
+    <Transaction>2013/04/11 14:30:33.705.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\RequisicaoInternaDetalheVO.pas=</Transaction>
+    <Transaction>2013/04/11 14:30:33.715.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\NFe\Controller\RequisicaoInternaDetalheController.pas=</Transaction>
+    <Transaction>2013/04/11 14:30:33.725.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\RequisicaoInternaCabecalhoVO.pas=</Transaction>
+    <Transaction>2013/04/11 14:30:33.735.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\NFe\Controller\RequisicaoInternaCabecalhoController.pas=</Transaction>
+    <Transaction>2013/04/11 14:30:37.010.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\NFe\Tela\URequisicaoInterna.pas=</Transaction>
+    <Transaction>2013/04/11 14:30:37.010.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\NFe\Tela\URequisicaoInterna.dfm=</Transaction>
+    <Transaction>2013/04/11 18:38:02.231.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\NFe\Tela\UEntradaNF.pas=</Transaction>
+    <Transaction>2013/04/11 18:38:02.231.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\NFe\Tela\UEntradaNF.dfm=</Transaction>
+    <Transaction>2013/04/12 16:27:08.436.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Cadastros Base\Tela\UProduto.pas=</Transaction>
+    <Transaction>2013/04/12 16:27:08.436.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Cadastros Base\Tela\UProduto.dfm=</Transaction>
+    <Transaction>2013/04/16 11:36:35.643.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\TributIcmsCustomDetVO.pas=</Transaction>
+    <Transaction>2013/04/16 11:36:35.743.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\TributIcmsCustomCabVO.pas=</Transaction>
+    <Transaction>2013/04/16 11:36:35.763.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Cadastros Base\Controller\TributIcmsCustomCabController.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

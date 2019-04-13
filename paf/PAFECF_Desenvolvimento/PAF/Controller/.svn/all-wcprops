@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_delphi_pafecf/!svn/ver/384/branches/PAFECF_Desenvolvimento/PAF/Controller
+END
+ComponentesController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/ComponentesController.pas
+END
+ProdutoPromocaoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/ProdutoPromocaoController.pas
+END
+EmpresaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/EmpresaController.pas
+END
+VendaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/t2tierp_delphi_pafecf/!svn/ver/384/branches/PAFECF_Desenvolvimento/PAF/Controller/VendaController.pas
+END
+FichaTecnicaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/FichaTecnicaController.pas
+END
+AliquotasController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/t2tierp_delphi_pafecf/!svn/ver/372/branches/PAFECF_Desenvolvimento/PAF/Controller/AliquotasController.pas
+END
+PreVendaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/PreVendaController.pas
+END
+TipoPagamentoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/TipoPagamentoController.pas
+END
+ContadorController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/ContadorController.pas
+END
+FechamentoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/FechamentoController.pas
+END
+TotalTipoPagamentoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/TotalTipoPagamentoController.pas
+END
+SituacaoClienteController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/SituacaoClienteController.pas
+END
+SpedFiscalController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/SpedFiscalController.pas
+END
+MovimentoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/MovimentoController.pas
+END
+BancoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/BancoController.pas
+END
+NotaFiscalController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/NotaFiscalController.pas
+END
+ClienteController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/ClienteController.pas
+END
+CFOPController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/CFOPController.pas
+END
+ResolucaoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/ResolucaoController.pas
+END
+ProdutoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/t2tierp_delphi_pafecf/!svn/ver/371/branches/PAFECF_Desenvolvimento/PAF/Controller/ProdutoController.pas
+END
+ConfiguracaoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/ConfiguracaoController.pas
+END
+LogImportacaoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/LogImportacaoController.pas
+END
+VendedorController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/VendedorController.pas
+END
+TurnoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/TurnoController.pas
+END
+ParcelaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/ParcelaController.pas
+END
+NFeController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/NFeController.pas
+END
+UnidadeController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/UnidadeController.pas
+END
+ChequeController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/ChequeController.pas
+END
+DAVController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/DAVController.pas
+END
+OperadorController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/OperadorController.pas
+END
+SintegraController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/SintegraController.pas
+END
+RegistroRController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/RegistroRController.pas
+END
+ImpressoraController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/ImpressoraController.pas
+END
+CaixaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/PAF/Controller/CaixaController.pas
+END

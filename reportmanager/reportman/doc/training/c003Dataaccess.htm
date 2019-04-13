@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Accessing data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h1>Chapter 3- Accessing data</h1>
+<h2>3.1.Database connection</h2>
+<p>There are two basic data access elements on Report Manager, <strong>connections</strong> 
+  and <strong>datasets</strong>, connections are database access elements, you 
+  can define multiple database connections but usually a report have only a database 
+  connection.</p>
+<p>Database access is interfaced using <strong>database drivers</strong>, most 
+  used database connection in Microsoft Windows environments is Microsoft DAO 
+  (Microsoft Data Access Objects), this allow to connect databases using Ole DB 
+  and ODBC drivers. This drivers are available if you install the client software 
+  of your database, for example you should install Microsoft SQL Server client 
+  libraries, but in some operating systems the driver is already provided (and 
+  upgraded when necessary) so there is no need to install it.</p>
+<p>Report Manager supports some database drivers, and each driver may be able 
+  to connect to one or more database server (or database plain files). For example 
+  Microsoft DAO allow access to any ODBC interface compatible database.</p>
+<p>To access connections configuration you can create a new report with the designer, 
+  then select data configuration option at Report menu.</p>
+<p><img src="images/dataconn.jpg" width="565" height="422"></p>
+<p>In current example we will connect to a SQL Server database. Select Microsoft 
+  DAO driver and click the add icon, write a name for the connection. </p>
+<p><img src="images/dataconn2.jpg" width="565" height="422"></p>
+<p>Use the <em>Build</em> button to start the wizard that will help you to generate 
+  a Microsoft DAO connection string. </p>
+<p>Select Ole DB for SQL Server and click next.</p>
+<p><img src="images/ado1.jpg" width="362" height="426"></p>
+<p>Place correct connection parameters, this are machine name, database name, 
+  user name and password, ask database administrator if necessary.</p>
+<p><img src="images/ado2.jpg" width="363" height="424"></p>
+<p>For our first sample we will use the North Wind sample database provided in 
+  Microsoft SQL Server installations.</p>
+<p>Now you can test the connection by clicking the <em>Connect</em> button.</p>
+<p>Click <em>OK</em> button and save your report, this is a report with a database 
+  connection defined.</p>
+<h2>3.2.Datasets</h2>
+<p>A dataset is usually the result of a SQL sentence, that is named also as a 
+  record set, a dataset need a database connection, you can link more than one 
+  dataset to a single connection.</p>
+<p>Trick: Note that some database drivers need a database connection for each 
+  dataset.</p>
+<p>To access datasets configuration you can open previous report and select data 
+  configuration option at Report menu, if there is already a connection defined 
+  the datasets tab will be the default for this screen.</p>
+<p>Add a dataset named CUSTOMERS. There is a tree on the left to help you in knowing 
+  about database tables and fields.</p>
+<p><img src="images/dataconn3.jpg" width="565" height="437"></p>
+<p>Place this sql sentence:</p>
+<p>SELECT * FROM Customers ORDER BY CompanyName</p>
+<p>Click show data button, and browse data retrieved.</p>
+<p><img src="images/dataconn4.jpg" width="364" height="310"></p>
+<p>Leave data browse window, click OK button to save changes to data configuration. 
+  We have a report with a connection and a dataset using that connection to retrieve 
+  all Customers sorted by company name.</p>
+<h2>3.3.Linking data to the report</h2>
+<p>A report scheme can have any number of connections and datasets, the report 
+  is calculated processing report structure in a predefined way.</p>
+<p>The report structure can have any number of sub reports, sub reports are processed 
+  in natural order, in our sample we have only one sub report.</p>
+<p><img src="images/structu1.jpg" width="174" height="150"></p>
+<p>A sub report usually iterate a dataset, that is the detail section will print 
+  for each record on the dataset . If no dataset is assigned, the sub report will 
+  print the detail only once. Assign the new dataset to the sub report.</p>
+<p><img src="images/structu2.jpg" width="178" height="185"></p>
+<h2>3.4.Drag fields</h2>
+<p>Next step is to drag some dataset fields on the detail section, select Data 
+  Tab, expand the dataset and drop the fields on the detail section.</p>
+<p><img src="images/dropfields1.jpg" width="682" height="256"></p>
+<h2>3.5.Data report preview</h2>
+<p>Preview the report and see the detail is printed for each record in the dataset.</p>
+<p><img src="images/preview1.jpg" width="481" height="363"></p>
+<h2>3.A.Exercise. Enhance report look</h2>
+<p>Edit the sample report from this chapter adding labels, page numbering, page 
+  header, so it looks like this:</p>
+<p><img src="images/preview2.jpg" width="634" height="450"></p>
+<h2>3.B.Exercise. Data access report new design</h2>
+<p>Design a new report, the report must show the Employee data.</p>
+<p>&nbsp;</p>
+</body>
+</html>

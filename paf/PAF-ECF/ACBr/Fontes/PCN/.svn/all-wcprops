@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN
+END
+pcnProcNFe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnProcNFe.pas
+END
+pcnCancNFe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnCancNFe.pas
+END
+pcnConsStatServ.pas
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnConsStatServ.pas
+END
+pcnConversao.pas
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnConversao.pas
+END
+pcnCadEmiDFe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnCadEmiDFe.pas
+END
+pcnRetCancNFe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnRetCancNFe.pas
+END
+pcnNFe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnNFe.pas
+END
+pcnModeloNFe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnModeloNFe.pas
+END
+pcnConsCad.pas
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnConsCad.pas
+END
+pcnLayoutTXT.pas
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnLayoutTXT.pas
+END
+pcnRetConsCad.pas
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnRetConsCad.pas
+END
+pcnRetDPEC.pas
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnRetDPEC.pas
+END
+pcnRetConsSitNFe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnRetConsSitNFe.pas
+END
+pcnNFeRTXT.pas
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnNFeRTXT.pas
+END
+pcnNFeR.pas
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnNFeR.pas
+END
+pcnRetEnvNFe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnRetEnvNFe.pas
+END
+pcnLeitor.pas
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnLeitor.pas
+END
+pcnConsDPEC.pas
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnConsDPEC.pas
+END
+pcnConsReciNFe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnConsReciNFe.pas
+END
+pcnNFeW.pas
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnNFeW.pas
+END
+pcnCabecalho.pas
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnCabecalho.pas
+END
+pcnSignature.pas
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnSignature.pas
+END
+pcnValidador.pas
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnValidador.pas
+END
+pcnInutNFe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnInutNFe.pas
+END
+pcnRetConsStatServ.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnRetConsStatServ.pas
+END
+pcnRetConsReciNFe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnRetConsReciNFe.pas
+END
+pcnConsSitNFe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnConsSitNFe.pas
+END
+pcnAuxiliar.pas
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnAuxiliar.pas
+END
+ACBrHTMLtoXML.pas
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/ACBrHTMLtoXML.pas
+END
+pcnEnvNFe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnEnvNFe.pas
+END
+pcnRetInutNFe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnRetInutNFe.pas
+END
+pcnGerador.pas
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnGerador.pas
+END
+pcnEnvDPEC.pas
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnEnvDPEC.pas
+END
+pcnRetAtuCadEmiDFe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/ACBr/Fontes/PCN/pcnRetAtuCadEmiDFe.pas
+END

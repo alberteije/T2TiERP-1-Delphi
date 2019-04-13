@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2010/10/02 15:11:47.512.dproj,C:\Documents and Settings\Eije\Meus documentos\RAD Studio\Projects\Project1.dproj=C:\Documents and Settings\Eije\Desktop\T2Ti ERP - PAF-ECF Delphi 02\Fontes\Balcao\Balcao.dproj</Transaction>
+    <Transaction>2010/10/02 17:48:36.053.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP - PAF-ECF Delphi 02\Fontes\Controller\DAVController.pas=</Transaction>
+    <Transaction>2010/10/02 19:34:20.118.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP - PAF-ECF Delphi 02\Fontes\Balcao\Unit1.pas=C:\Documents and Settings\Eije\Desktop\T2Ti ERP - PAF-ECF Delphi 02\Fontes\Balcao\UNF2.pas</Transaction>
+    <Transaction>2010/10/02 19:34:20.118.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP - PAF-ECF Delphi 02\Fontes\Balcao\Unit1.dfm=C:\Documents and Settings\Eije\Desktop\T2Ti ERP - PAF-ECF Delphi 02\Fontes\Balcao\UNF2.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

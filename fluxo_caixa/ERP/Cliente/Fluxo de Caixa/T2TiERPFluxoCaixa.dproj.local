@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/01/31 11:12:28.497.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Fluxo de Caixa\Tela\UFinParcelaPagamento.pas=</Transaction>
+    <Transaction>2013/01/31 11:12:28.497.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Fluxo de Caixa\Tela\UFinParcelaPagamento.dfm=</Transaction>
+    <Transaction>2013/01/31 11:12:38.251.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Fluxo de Caixa\Tela\UFinResumoTesouraria.pas=</Transaction>
+    <Transaction>2013/01/31 11:12:38.251.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Fluxo de Caixa\Tela\UFinResumoTesouraria.dfm=</Transaction>
+    <Transaction>2013/01/31 11:20:36.225.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Fluxo de Caixa\Tela\USelecionaCheque.pas=</Transaction>
+    <Transaction>2013/01/31 11:20:36.225.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Fluxo de Caixa\Tela\USelecionaCheque.dfm=</Transaction>
+  </Transactions>
+</BorlandProject>

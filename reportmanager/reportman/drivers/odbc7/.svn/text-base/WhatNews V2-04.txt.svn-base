@@ -1,0 +1,55 @@
+Kylix / Delphi open source DbExpress driver for ODBC
+...
+
+Version 2.04, 2002-12-19 [ Vadim V.Lopushansky pult@ukr.net ]
+------------------------
++ Regular Expression Parser for Decode/Encode different DBMS object name format.
+  Usage of this capability is adjusted(regulated) in parameter: {$define _RegExprParser_}
+  It option can be turned off.
+
+  If for your DBMS the off-gauge format of the definition of a full name of the object of DBMS,
+  to you is necessary to describe the template of this format in the file "DbxObjectParser.pas".
+  For debugging your template you can take advantage of an example from "RegExprParser.zip".
+
++ The capability of mapping of text fields into memo field is added as it is made in BDE:
+  the fields with lengthy more than 256 characters are imaged on BlobMemo
+  (optional. Connection parameter: "Database"="...;MapCharAsBDE=1"
+    or "Custom String"="...;MapCharAsBDE=1")
+
+Version 2.041, 2003-01-15 [ Dmitry Arefiev <darefiev@da-soft.com> ]
+-------------------------
+
++  TSqlCursorOdbc.BindResultSet. It is returning up to fOdbcMaxColumnNameLen - 1 characters in column name.
+   Fix:
+       OdbcRetCode := SQLDescribeCol(
+         fhStmt, colno,
+         ColNameTemp, fOwnerDbxConnection.fOdbcMaxColumnNameLen + 1, fColNameSize,
+         fSqlType, fColSize, fColScale, fNullable);
++  TSqlCursorMetaDataIndexes.getString. It is raising AV for DSN's which does not supports catalogs and schemas.
+   Fix:
+   function TSqlCursorMetaDataIndexes.getString(ColumnNumber: Word;
+     Value: Pointer; var IsBlank: LongBool): SQLResult;
+   begin
+   try
+     case ColumnNumber of
+       1:;   // RECNO      fldINT32
+       2:  // CATALOG_NAME
+         begin
+         if not fSqlConnectionOdbc.fSupportsCatalog or (fCurrentIndexColumn.fMetaTable.fCat = nil) then
+           IsBlank := True
+         else
+           begin
+           StrCopy(Value, pChar(fCurrentIndexColumn.fMetaTable.fCat));
+           IsBlank := False;
+           end
+         end;
+       3:  // SCHEMA_NAME
+         begin
+         if (fSchemaLenMax = 0) or (fCurrentIndexColumn.fMetaTable.fSchema =  nil) then
+           IsBlank := True
+         else
+           begin
+           StrCopy(Value, pChar(fCurrentIndexColumn.fMetaTable.fSchema));
+           IsBlank := False;
+           end;
+         end;

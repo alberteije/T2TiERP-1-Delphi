@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Output to html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Advanced Report Design</h2>
+<h3>Output to html</h3>
+<p>Output to html feature converts a report to html files, or optionally to a single file, for example from preview window you have the option to save the report as html., the command line tool have also the options -html and -htmlsingle that processes the report and generates html output directly.</p>
+<p><strong>Implementation limitations</strong></p>
+<p>Because font sizes in preview (screen device driver) may differ with font sizes represented by Internet explorer, some lines may overwrite, especially if you have autoexpand properties in sections and you use multiline texts with wordwrap. If you want to minimze the effect you should follow the guidelines:</p>
+<p>- Set the page setup option <strong>Font option sizing ('Printer fonts options'</strong> in older versions) to &quot;<strong>Recalculate to device resolution</strong>&quot;, or &quot;Allways use printer fonts&quot;, this will cause the engine to rebuild the report using the Adobe pdf font sizings, that are more similar to Internet Explorer font rendering.</p>
+<p>- Select all texts in all your subreports and <strong>set the property PDF Font to TrueType link</strong> (or Truetype embedded), this option will cause the Adobe pdf driver to search the sizing in the trutype font files, so the font sizes are more similar to Internet Explorer font rendering. You can do it easily in the designer using the option in Edit Menu:Select all texts.</p>
+<p><strong>Single file output limitations</strong></p>
+<p>Report Manager usually works with space limited pages, but large report in a single virtual page (html output single file) is also possible. To do it you must use the single file html output from any interface (preview, activex...), and set the page setup option <strong>Font option sizing ('Printer fonts options'</strong> in older versions) to &quot;<strong>Recalculate to device resolution</strong>&quot;. This option will force the engine to work with a large page, the page size option in page setup will be ignored, the final page size will be the combination of: The wider section printed, and the latest section printed.</p>
+<p>You must take care when you want to use the feature, when you design the report you must:</p>
+<ul>
+  <li>Remove any page footer from the report, at design time, else the resulting html file will be too large (the footer will be placed on the bottom of the page)</li>
+  <li>Don't use the align bottom property in any of the sections of your report, this will cause a page break, and you will obtain multiple very large pages.</li>
+  <li>Don't use Begin Page expression, or Skip page property or special features like Skip To page.</li>
+  <li>Use group headers and footers instead (without align bottom), then the report will flow naturally in a single page.  </li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,22 @@
+FortesReport
+
+INSTALAÇÃO
+----------
+
+A instalação deverá ser feita manualmente através da cópia dos arquivos para
+a pasta (DELPHI)\Projects\Bpl. Se desejar instalar em outra pasta, esta
+deverá ser adicionada à lista de diretórios de busca do Delphi
+(Menu: Tools - Environment Options - Library - Library path)
+Em seguida, adicione o pacote .bpl ao Delphi
+(Menu: Component - Install Packages...)
+
+
+Fortes Informática Ltda
+R. Antonio Fortes, 330  Água Fria
+CEP 60813-630
+Fortaleza - CE - Brasil
+PABX: 55(85)278-1122
+
+Internet
+http://www.fortesinformatica.com.br
+fortesreport@grupofortes.com.br

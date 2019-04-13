@@ -1,0 +1,61 @@
+CREATE VIEW VIEW_DFC
+(
+    ID,
+    PERIODO,
+	CLASSIFICACAO,
+    DESCRICAO,
+    DFC,
+    VALOR
+	)
+AS
+select 
+	CAST( CONCAT(cccab.ID,ccdet.ID) as UNSIGNED) as ID, 
+	DATE_FORMAT(cccab.data_lancamento,'%m/%Y') as PERIODO,
+	cc.classificacao as CLASSIFICACAO,
+	cc.descricao as DESCRICAO, 
+	cc.dfc as DFC,
+	sum(ccdet.valor) as VALOR
+from
+	contabil_conta cc 
+	inner join contabil_lancamento_detalhe ccdet on (ccdet.id_contabil_conta = cc.id)
+	inner join contabil_lancamento_cabecalho cccab on (ccdet.id_contabil_lancamento_cab = cccab.id)
+where
+	cc.dfc='O'
+group by 
+	PERIODO, classificacao, descricao
+
+union
+
+select 
+	CAST( CONCAT(cccab.ID,ccdet.ID) as UNSIGNED) as ID, 
+	DATE_FORMAT(cccab.data_lancamento,'%m/%Y') as PERIODO,
+	cc.classificacao as CLASSIFICACAO,
+	cc.descricao as DESCRICAO, 
+	cc.dfc as DFC,
+	sum(ccdet.valor) as VALOR
+from
+	contabil_conta cc 
+	inner join contabil_lancamento_detalhe ccdet on (ccdet.id_contabil_conta = cc.id)
+	inner join contabil_lancamento_cabecalho cccab on (ccdet.id_contabil_lancamento_cab = cccab.id)
+where
+	cc.dfc='I'
+group by 
+	PERIODO, classificacao, descricao
+
+union
+
+select 
+	CAST( CONCAT(cccab.ID,ccdet.ID) as UNSIGNED) as ID, 
+	DATE_FORMAT(cccab.data_lancamento,'%m/%Y') as PERIODO,
+	cc.classificacao as CLASSIFICACAO,
+	cc.descricao as DESCRICAO, 
+	cc.dfc as DFC,
+	sum(ccdet.valor) as VALOR
+from
+	contabil_conta cc 
+	inner join contabil_lancamento_detalhe ccdet on (ccdet.id_contabil_conta = cc.id)
+	inner join contabil_lancamento_cabecalho cccab on (ccdet.id_contabil_lancamento_cab = cccab.id)
+where
+	cc.dfc='F'
+group by 
+	PERIODO, classificacao, descricao

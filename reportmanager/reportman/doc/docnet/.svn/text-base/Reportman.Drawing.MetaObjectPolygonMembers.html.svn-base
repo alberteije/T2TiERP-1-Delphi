@@ -1,0 +1,104 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>MetaObjectPolygon Members</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">Report Manager Documentation</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">MetaObjectPolygon Members
+					</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>
+        <a href="Reportman.Drawing.MetaObjectPolygon.html">MetaObjectPolygon overview</a>
+      </p>
+      <h4 class="dtH4">Public Instance Constructors</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr VALIGN="top">
+            <td width="50%">
+              <img src="pubmethod.gif" />
+              <a href="Reportman.Drawing.MetaObjectPolygonConstructor.html">MetaObjectPolygon Constructor</a>
+            </td>
+            <td width="50%">Initializes a new instance of the <a href="Reportman.Drawing.MetaObjectPolygon.html">MetaObjectPolygon</a> class.</td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="dtH4">Public Instance Fields</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaObject.Height.html">Height</a> (inherited from <b>MetaObject</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaObject.Left.html">Left</a> (inherited from <b>MetaObject</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaObject.MetaType.html">MetaType</a> (inherited from <b>MetaObject</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaObjectPolygon.PolyBrushColor.html">PolyBrushColor</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaObjectPolygon.PolyBrushStyle.html">PolyBrushStyle</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaObjectPolygon.PolyPenColor.html">PolyPenColor</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaObjectPolygon.PolyPenStyle.html">PolyPenStyle</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaObjectPolygon.PolyPenWidth.html">PolyPenWidth</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaObjectPolygon.PolyPointCount.html">PolyPointCount</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaObjectPolygon.PolyStreamPos.html">PolyStreamPos</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaObjectPolygon.PolyStreamSize.html">PolyStreamSize</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaObject.Top.html">Top</a> (inherited from <b>MetaObject</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaObject.Width.html">Width</a> (inherited from <b>MetaObject</b>)</td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">Public Instance Methods</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassEqualsTopic.htm">Equals</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaObjectPolygon.FillFromBuf.html">FillFromBuf</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassGetHashCodeTopic.htm">GetHashCode</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassGetTypeTopic.htm">GetType</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaObjectPolygon.SaveToStream.html">SaveToStream</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassToStringTopic.htm">ToString</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">Protected Instance Fields</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="Reportman.Drawing.MetaObject.emptybuf.html">emptybuf</a> (inherited from <b>MetaObject</b>)</td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">Protected Instance Methods</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassFinalizeTopic.htm">Finalize</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassMemberwiseCloneTopic.htm">MemberwiseClone</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="Reportman.Drawing.MetaObjectPolygon.html">MetaObjectPolygon Class</a> | <a href="Reportman.Drawing.html">Reportman.Drawing Namespace</a></p>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="MetaObjectPolygon class">
+        </param>
+        <param name="Keyword" value="Reportman.Drawing.MetaObjectPolygon class">
+        </param>
+        <param name="Keyword" value="MetaObjectPolygon class, all members">
+        </param>
+      </object>
+      <hr />
+      <div id="footer">
+        <p>
+          <a href="mailto:toni@pala.com?subject=Report%20Manager%20Documentation%20Documentation%20Feedback:%20MetaObjectPolygon%20Members&#xD;&#xA;						">Send comments on this topic.</a>
+        </p>
+        <p>
+          <a href="http://reportman.sourceforge.net">Copyright 2006 Toni Martir</a>
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

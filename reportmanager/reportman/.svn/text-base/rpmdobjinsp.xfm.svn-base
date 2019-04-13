@@ -1,0 +1,53 @@
+object FRpObjInsp: TFRpObjInsp
+  Left = 0
+  Top = 0
+  Width = 451
+  Height = 304
+  Align = alClient
+  ParentShowHint = False
+  ShowHint = True
+  TabOrder = 0
+  object ColorDialog1: TColorDialog
+    Left = 156
+    Top = 88
+  end
+  object FontDialog1: TFontDialog
+    Font.Color = clBlack
+    Font.Height = 11
+    Font.Name = 'MS Shell Dlg'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    Font.Weight = 40
+    Left = 228
+    Top = 60
+  end
+  object RpAlias1: TRpAlias
+    List = <>
+    Connections = <>
+    Left = 296
+    Top = 92
+  end
+  object OpenDialog1: TOpenDialog
+    DefaultExt = 'bmp'
+    FileName = '*.bmp;*.jpg;*.png;*.ddw;*.ico'
+    Filter = 'Bitmap images (*.*)'
+    FilterIndex = 0
+    Height = 0
+    Title = 'Open bitmap'
+    Width = 0
+    Left = 48
+    Top = 160
+  end
+  object PopUpSection: TPopupMenu
+    Left = 212
+    Top = 92
+    object MLoadExternal: TMenuItem
+      Caption = 'Load section'
+      OnClick = MLoadExternalClick
+    end
+    object MSaveExternal: TMenuItem
+      Caption = 'Save section'
+      OnClick = MLoadExternalClick
+    end
+  end
+end

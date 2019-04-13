@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Units documentation - rpmdconsts.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpmdconsts.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>resource string translation and other translation functions</b>.</p>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>function TranslateStr (index:integer; defvalue:Widestring):WideString; 
+    </td>
+    <td>Translate a string by id with the current user language local</td>
+  </tr>
+</table>
+</body>
+</html>

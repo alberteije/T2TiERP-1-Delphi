@@ -1,0 +1,84 @@
+object FNewUser: TFNewUser
+  Left = 313
+  Top = 278
+  Width = 364
+  Height = 158
+  VertScrollBar.Range = 141
+  HorzScrollBar.Range = 277
+  ActiveControl = BOK
+  AutoScroll = False
+  Caption = 'Add User'
+  Color = clButton
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object BOK: TButton
+    Left = 7
+    Top = 112
+    Width = 75
+    Height = 25
+    Caption = 'OK'
+    Default = True
+    TabOrder = 3
+    OnClick = BOKClick
+  end
+  object BCancel: TButton
+    Left = 107
+    Top = 112
+    Width = 75
+    Height = 25
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 4
+  end
+  object LUser: TLabel
+    Left = 12
+    Top = 16
+    Width = 51
+    Height = 13
+    Caption = 'User name'
+  end
+  object EUserName: TEdit
+    Left = 156
+    Top = 12
+    Width = 197
+    Height = 21
+    Anchors = [akLeft, akTop, akRight]
+    TabOrder = 0
+  end
+  object EPassword: TEdit
+    Left = 156
+    Top = 40
+    Width = 197
+    Height = 21
+    Anchors = [akLeft, akTop, akRight]
+    EchoMode = emPassword
+    TabOrder = 1
+  end
+  object LPassword: TLabel
+    Left = 12
+    Top = 44
+    Width = 46
+    Height = 13
+    Caption = 'Password'
+  end
+  object LConfirm: TLabel
+    Left = 12
+    Top = 72
+    Width = 83
+    Height = 13
+    Caption = 'Confirm password'
+  end
+  object EConfirmPassword: TEdit
+    Left = 156
+    Top = 68
+    Width = 197
+    Height = 21
+    Anchors = [akLeft, akTop, akRight]
+    EchoMode = emPassword
+    TabOrder = 2
+  end
+end

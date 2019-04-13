@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2008/10/14 10:06:19.562.cbproj,C:\prog\toni\cvsroot\reportman\reportman\rppack_builder2006.cbproj=C:\prog\toni\cvsroot\reportman\reportman\rppack_builder2007.cbproj</Transaction>
+    <Transaction>2008/10/14 10:18:18.234.bpi,C:\Archivos de programa\CodeGear\RAD Studio\5.0\lib\debug\DbxClientDriver.bpi=</Transaction>
+    <Transaction>2008/10/14 10:18:21.468.bpi,C:\Archivos de programa\CodeGear\RAD Studio\5.0\lib\debug\DbxCommonDriver.bpi=</Transaction>
+    <Transaction>2008/10/14 10:18:23.593.bpi,C:\Archivos de programa\CodeGear\RAD Studio\5.0\lib\debug\DbxDynalinkDriver.bpi=</Transaction>
+    <Transaction>2008/10/14 10:19:46.843.bpi,C:\Archivos de programa\CodeGear\RAD Studio\5.0\lib\debug\dbx.bpi=</Transaction>
+    <Transaction>2008/10/14 10:23:48.765.bpi,c:\archivos de programa\codegear\rad studio\5.0\lib\debug\dbxcommondriver.bpi=</Transaction>
+    <Transaction>2008/10/14 10:25:29.281.bpi,c:\archivos de programa\codegear\rad studio\5.0\lib\debug\dbx.bpi=</Transaction>
+    <Transaction>2008/10/14 10:38:57.781.bpi,c:\archivos de programa\codegear\rad studio\5.0\lib\debug\indy.bpi=</Transaction>
+    <Transaction>2008/10/14 12:15:24.687.dcr,C:\prog\toni\cvsroot\reportman\reportman\rpalias.dcr=</Transaction>
+    <Transaction>2008/10/14 12:16:07.843.pas,C:\prog\toni\cvsroot\reportman\reportman\rpalias.pas=</Transaction>
+    <Transaction>2008/10/14 12:20:23.406.dcr,C:\prog\toni\cvsroot\reportman\reportman\rpalias.dcr=</Transaction>
+    <Transaction>2008/10/14 12:20:25.687.pas,C:\prog\toni\cvsroot\reportman\reportman\rpalias.pas=</Transaction>
+    <Transaction>2008/10/14 12:20:38.984.dcr,C:\prog\toni\cvsroot\reportman\reportman\rpeval.dcr=</Transaction>
+    <Transaction>2008/10/14 12:20:40.890.pas,C:\prog\toni\cvsroot\reportman\reportman\rpeval.pas=</Transaction>
+    <Transaction>2008/10/14 12:21:17.140.dcr,c:\prog\toni\cvsroot\reportman\reportman\rpeval.dcr=</Transaction>
+    <Transaction>2008/10/14 12:21:20.906.pas,C:\prog\toni\cvsroot\reportman\reportman\rpeval.pas=</Transaction>
+    <Transaction>2008/10/14 12:56:16.687.dcr,C:\prog\toni\cvsroot\reportman\reportman\rpalias.dcr=</Transaction>
+    <Transaction>2008/10/14 12:56:19.421.pas,C:\prog\toni\cvsroot\reportman\reportman\rpalias.pas=</Transaction>
+    <Transaction>2008/10/14 13:07:24.656.pas,C:\prog\toni\cvsroot\reportman\reportman\rpalias.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

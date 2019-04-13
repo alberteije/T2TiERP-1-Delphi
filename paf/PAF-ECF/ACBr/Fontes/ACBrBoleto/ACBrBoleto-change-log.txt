@@ -1,0 +1,432 @@
+{******************************************************************************}
+{ Projeto: Componentes ACBr                                                    }
+{ Biblioteca multi plataforma de componentes Delphi para interação com equipa- }
+{ mentos de Automação Comercial utilizados no Brasil                           }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na página do Projeto ACBr     }
+{ Componentes localizado em      http://www.sourceforge.net/projects/acbr      }
+{                                                                              }
+{  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
+{ sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
+{ Free Software Foundation; tanto a versão 2.1 da Licença, ou (a seu critério) }
+{ qualquer versão posterior.                                                   }
+{                                                                              }
+{  Esta biblioteca é distribuída na expectativa de que seja útil, porém, SEM   }
+{ NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE OU      }
+{ ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral Menor}
+{ do GNU para mais detalhes. (Arquivo LICENÇA.TXT ou LICENSE.TXT)              }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral Menor do GNU junto}
+{ com esta biblioteca; se não, escreva para a Free Software Foundation, Inc.,  }
+{ no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.          }
+{ Você também pode obter uma copia da licença em:                              }
+{ http://www.opensource.org/licenses/lgpl-license.php                          }
+{                                                                              }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
+{******************************************************************************}
+Agradecimentos:
+
+* Administradores:
+- Daniel Simões de Almeida
+- André Ferreira de Moraes
+
+* Desenvolvedores:
+- Juliana Tamizou, Daniel Simões de Almeida - Doação do componente ao projeto ACBr
+
+{******************************************************************************
+|* ACBrBoleto
+|*
+|* PROPÓSITO: Registro de Alterações
+******************************************************************************}
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+Versao 0.0.1 do FastReport 05/08/11
+[-] Lançado a 1a versão para impressão dos boletos em FastReport.
+    (por: Isaque Pinheiro)
+
+Versao 0.0.9a do QuickReport 07/07/11
+[-] Corrigido problema ao imprimir apartir da tela do preview.
+    (Rick Nelson)
+
+Versao 0.1.1a do LazReport 02/08/11
+[+] Adicionado campos Outras Deduções e Outros Acréscimos ao boleto, conforme
+    solicitação da Caixa Econômica Federal(Juliana Tamizou)
+
+Versao 0.0.11a do FortesReport 02/08/11
+[+] Adicionado campos Outras Deduções e Outros Acréscimos ao boleto, conforme
+    solicitação da Caixa Econômica Federal(Giuliano Naspolini Ribeiro)
+
+[*] Alterado propriedade Scaled para True, para evitar problemas com  as 
+    imagens dos logos dos bancos.(Juliana Tamizou
+
+Versao 0.0.10a do FortesReport 06/07/11
+[-] Corrigido problema com componentes não encontrados no dfm do Fortes.
+    (Juliana Tamizou)
+
+Versao 0.0.31a 09/09/2011
+[*]	Adicionado a geração do arquivo remessa do Santander, a checagem da instrução
+    de protesto, caso seja informado a data de protesto e a intrução de protesto não 
+	tenha sido informada, a instrução 1 ficará com o código para protesto.
+	
+Versao 0.0.30a 02/08/2011
+[+] Adicionado opção para informar o diretório onde os boletos em PDF ou html 
+    serão gerados.(Juliana Tamizou) 
+
+[*] Alterado a propriedade TamNossoNumero  para poder ser informado o valor.
+    (Juliana Tamizou)
+
+Versao 0.0.29a 13/07/2011
+[-] Corrigido problema ao montar o código de barras do banco Bancoob.
+    (Douglas Tybel)
+
+[*] Setado a propriedade ftamanhocarteira para o banco Bancoob.
+    (Jeter Rabelo)
+
+[*] Alterado forma de setar qual classe de banco será utilizada.
+    Necessidade surgiu pois, a Caixa Econômica Federal, possui dois
+    manuais de geração de arquivos e também de impressão de boletos,
+    um para o convênio SICOB e outro para o SIGCB.
+    Conforme o Jeter Rabelo levantou diretamente com o suporte da
+    Caixa, não é possivel definir qual layout deve ser usado com base
+    no número do convênio e nem em qualquer outra informação, por isso,
+    foi necessário a utilização de duas classes para a Caixa, uma para
+    cada convênio.
+    Como o número do banco permanece o mesmo, não é mais possivel  
+    selecionar a classe a ser instanciada atraves desta propriedade,
+    então foram feitas as seguintes alterações:
+    1-) Criado o Tipo Enumerado TACBrTipoCobranca, para todos os bancos, 
+        nesta lista temos o tipo cobCaixaEcomica e cobCaixaSICOB.
+    2-) Criado a propriedade TipoCobranca para a classe banco, com esta
+        propriedade será definida qual classe deverá ser instanciada.
+    3-) Com as mudanças acima, foi alterada a propriedade número para 
+        ser Ready Only.
+
+
+
+Versao 0.0.28a 07/07/2011
+[-] Efetuado correções na unit do Sicred, configurados popriedades do
+    tamanho máximo da Agência, Carteira e Conta.(Marko Sistemas)
+
+
+Versao 0.0.27a 24/06/2011
+[+] Alterado classe do Itau para gerar o arquivo de remessa apenas para 
+    impressão dos boletos, sem registro no banco. (Jeter Rabelo)
+
+[+] Adicionado ao componengte de impressão dos boletos em QuickReport, a 
+    impressão de carnês. (Alessandro Del Ri)
+
+[*] Adicionado a leitura do arquivo retorno do Itau, a leitura da data de
+    baixa do boleto.(Thiago Gabotti)
+
+[*] Adicionado a impressão do logo da loja ao componente de impressão dos
+    boletos em Fortes. (Thiago Gabotti)
+
+[*] Efetuado ajustes na imppressão do carnê no Fortes Report. (Thiago Gabotti)
+
+[*] Alterado função MontarCampoNossoNúmero do Banco do Brasil e para imprimir
+    corretamente este campo Nosso Número para as carteiras 16 e 18 (Sem registro), 
+    com convenio de 6 posições. (Juliana Tamizou)    
+
+[*] Alterado unit do Santander para imprimir e gerar a remessa para a carteira 102.
+    (Virtual Sistemas)
+
+[*] Alterado função MontarCodigoBarras do Banco do Brasil para imprimir corretamente
+    quando na Carteira 16 com Convenio de 6 digitosl(Juliana Tamizou.)
+
+[*] Efetuado ajustes na classe da Caixa Econômica para gerar remessa e imprimir 
+    os boletos do convênio SIGCB. (Virtual Sistemas) 
+
+[-] Corrigido propriedade do componente de Codigo de Barras doFortes Report.
+    (Juliana Tamizou).
+
+
+[-] Corrigido rotina de leitura de arquivo retorno 240 colunas da Caixa 
+    Econômica.(Douglas Tybel)
+
+[-] Corrigido problema na classe do Banrisul, ao gerar a remessa o valor total
+    dos titulos estava sendo calculado errado.(Juliana Tamizou)
+
+[-] Corrigido rotina de geração do arquivo remessa 240 colunas para o Banco do
+    Brasil.(Argus)
+
+[-] Corrigido impressão das mensagens no boleto impresso em Carnê, para o Fortes.
+    (Dionatan)
+
+
+Versao 0.0.26a 14/05/2011
+
+[+] Implementado impressão dos boletos no padrão SICOB, para a Caixa Econômica,
+    caso o convênio seja menor que 7 digitos  o boleto será impresso de acordo
+    com o manual SIGCB, caso seja maior que isso será impresso como SICOB.
+    (Juliana Tamizou e Diego Campos)
+
+[-] Efetuado correções nas rotinas de remessa e retorno do Banrisul.
+    (Felipe Sortica)
+
+[-] Ajustado tamanhos dos campos Carteira,agência, conta e Nosso Número.
+    (Juliana Tamizou)
+
+[-] Adicionado ao package do Delphi a unit do Santander que estava faltando.
+    (Juliana Tamizou)
+
+   
+
+Versao 0.0.25a 28/03/2011
+
+[+] Adicionado funcao LerRetorno240 para o Banco do Brasil.(JPedrosoJunior)
+
+[+] Adicionado funcao LerRetorno240 para a Caixa Economica.()
+
+[*] Substituido o "strtoint" para "strtoint64" das funcoes FormataNossoNumero 
+    e CalcularDigitoVerificador, para evitar erros na unit da Caixa Economica.
+    (Jeter) 
+
+[*] Alterado funcao LerRetorno de todos os bancos, para adicionar as propriedades
+    do cedente os dados da conta e da agencia, caso a propriedade LeCedente estiver 
+    habilitada.(Juliana Tamizou)
+
+Versao 0.0.24a 03/03/2011
+[+] Adicionado leitura do arquivo retorno para o Bancoob.(Douglas Tybel)
+
+[-] Corrigido Montagem do Campo Nosso Numero e do Código de Barras para a 
+    Carteira 18 quando o Convênio tiver 6 digitos,para o BB.(Jeter Rabelo Ferreira)
+
+
+
+Versão 0.0.23a 19/02/2011
+
+[+] Adicionado verificação do tamanho dos campos Agencia, Conta e Carteira, para
+    todos bancos, para evitar que o campo seja informado fora do padrao do banco.
+    (Juliana Tamizou)
+
+[*] Adicionado a geração do CNABr400 Banco Brasil, a opção de gerar o arquivo
+    no padrão de convenios de ate 6 digitos e também com 7 digitos.(Juliana Tamizou)
+
+[*] Homologado boletos e arquivos remessa CNAB240 e CNAB400 junto ao Banco Brasil.
+    (Juliana Tamizou) 
+
+[-] Corrigida geração do arquivo CNAB240 Banco Brasil.(Juliana Tamizou)
+
+[-] Corrigida geração do arquivo de remessa CNAB400 do Itau.(RogiH)
+
+[-] Aumentado tamanho do código de barras  para o QuickReport.(Juliana Tamizou)
+
+
+Versão 0.0.22a 12/02/2011
+
+[+] Adicionado ao ACBrBoletoFCLazReport a opção de imprimir Carnês.
+    (Juliana Tamizou)
+
+[+] Adicionado classe para o banco Bancoob.(DOUGLAS TYBEL)
+
+[*] Adicionado formatação dos campos Instrução1 e Instrução2 na geração da 
+    remessa. Adicionado pad para garantir o tamanho do  campo.(Juliana Tamizou) 
+
+[*] Adicionado função para remover os caracteres de formatação do CPF\CNPJ 
+    para geração dos arquivos remessa e leitura do arquivo retorno.(Juliana Tamizou)
+
+[*] Corrigido impressão dos textos no ACBrBoletoFCFortes no Lazurus. 
+    (Juliana Tamizou)
+
+Versão 0.0.21a 29/01/2011
+[*] Alterado impressão da mensagem do desconto, para que caso seja informado a 
+    data limite seja impressa a mensagem "Conceder desconto de R$xx.xx até 
+    data limite ", caso não seja informado mantém o texto normal "Conceder 
+    desconto de R$XX.Xx até o vencimento". Modificação necessária devido ao 
+    Santander poder receber este campo das duas maneiras.(Juliana Tamizou)
+
+[+] Adicionado as propriedades NumeroArquivo,DataArquivo e DataCredLanc no
+    ACBrBoleto, todas referentes ao arquivo Retorno.(Carlos Fitl)
+
+[*] Concluida homologacao da impressao dos boletos e envio do arquivo remessa
+    CNAB400 para o Santander.(Juliana Tamizou) 
+
+[+] Adicionado a propriedade CodTranmissao ao ACBrBoleto, utilizada pelo banco
+    Santander. (Juliana Tamizou)
+
+[-] Corrigido bug ao utizar o lazReport para imprimir os boletos, onde mesmo 
+    com a propridade ComprovanteEntrega desabilitada, o comprovante estava 
+    sendo impresso.(Juliana Tamizou)
+
+[-] Corrigido montagem do campo livre do Banrisul, o valor da constante 040
+    foi corrigido e passou a ser 041 e o tamanho do campo agencia passou a
+    ter 3 caracteres.(Jair Carlos Muller)
+
+[-] Corrigido função FormataNossoNumero da unit do Banco do Brasil, caso a
+    carteira fosse diferente de 16,17 ou 18, o tamanho do nosso número ficava
+    errado.(Juliana Tamizou)
+
+[+] Implementando geração do arquivo de remessa CNAB240 para o banco 
+    Banrisul.(Filipe Sortica)
+ 
+
+
+Versão 0.0.20a 10/01/2010
+[-] Corrigo leitura do arquivo retorno na classe do Bradesco (Carlos Fitl)
+[+] Adicionado leitura do arquivo retorno na classe do banco Itaú (Carlos Fitl)
+[+] Adicionado classe para o banco Banrisul (Reginaldo Costa)
+
+Versão 0.0.19a 30/12/2010
+[-] Corrigido bug ao gerar a linha do cabealho do arquivo de remessa 240 colunas
+    do Banco do Brasil. (Reginaldo Costa)
+
+[+] Adicionado opção de imprimir o Comprovante de Entrega no boleto para o 
+    FortesReport(Carlos) e para o LazReport(Juliana Tamizou)
+
+Versão 0.0.18a 23/12/2010
+[-] Corrigido bug na impressão dos boletos no fortes e quickreport, estava sendo
+    ignorado o valor retornado pela função MontarCampoCodigoCedente.(Juliana Tamizou)
+
+
+Versão 0.017a  24/09/2010
+[+] Adicionado classe para a Caixa Economica (João Elson)
+[*] Adicionado verificação se O Total de Parcelas informado é menor que a
+    parcela informada.(Elson Junior)
+
+Versão 0.0.16a 27/07/2010
+[*] Finalizado rotina de Leitura do Arquivo de Retorno em 400 colunas para o
+    Brradesco.(Juliana Tamizou)
+[-] Corrigido problema ao adicionar as mensagens do cliente na propriedade(problema
+    estava ocorrendo apenas no Delphi). (Juliana Tamizou)
+[*] Alterado componente de impressão dos boletos para apenas imprimir as mensagens 
+    padrão (não são necessárias no arquivo Remessa). (JUliana Tamizou)
+
+
+Versão 0.0.15a 06/07/2010
+[+] Adicionado classe do Banco Mercantil.(Agnaldo Pedroni)
+
+[+] Adicionado função LerRetorno ao ACBrBoleto, esta função irá verificar chamar a função LerRetorno240
+    LerRetorno400 de cada banco.(Juliana Tamizou)
+[+] Adicionado a classe bancoClass as funções TipoOcorrenciaToDescricao, TipoOcorrenciaToCod,
+    CodOcorrenciaToTipo e CodMotivoRejeicaoToDescricao para auxiliar a leitura do arquivo retorno.(Juliana Tamizou)
+
+[+] Iniciado na classe do Bradesco a implementacao da leitura do arquivo retorno 400 colunas.(Juliana Tamizou)
+
+[*] Alterado nome do tipo enumerado TipoBoleto para ResponEmissao, pois esta
+    propriedade do ACBrBoleto indica quem fará a emissão dos boletos.(Juliana Tamizou)
+
+[*] Adicionado a classe Cendente as informações do Endereço,para serem impressas no boleto,
+    conforme a lei http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12039.htm.
+    (Juliana Tamizou)
+
+[*] Alterado relatorio no Fortes para imprimir o CNPJ e Endereço do cedente, conforme manda
+    a legislação.(Juliana Tamizou)
+
+[*] Alterado SETCPFCNPJ para formatar a propriedade CPFCNPJ caso sem um desses documentos.
+
+[*] Adicionado a função GerarTransacao400 da classe do Bradesco, para verificar a sigla da
+    Especie do Documento informada e gravar no arquivo o código.Ex. 'DM' grava '01'.(Juliana Tamizou)
+
+[*] Criado classe OcorrenciaOriginal, com as propriedades Descrição, Tipo e Codigo e os metodos
+    GetCodigoBanco e GetDescricao para leitura desses valores, alterado a propriedade 
+    OcorrenciaOriginal do Titulo para ser do tipo desta classe, removido então as 
+    propriedades TipoOcorrenciaOriginal e DescricaoOcorrenciaOriginal. Alterado todos os bancos
+    para utilizar essa propriedade.(Juliana Tamizou)
+     
+
+[-] Removido tipo enumerado TACBrTipoInscricao, pois já havia o tipo enumerado TACBrPessoa,
+    com a mesma finalidade, alterado todos os lugares que utilizam o TACBrTipoInscricao
+    para usar o TACBrTipoPessoa.(Juliana Tamizou)   
+
+[-] Alterado create do ACBrCedente para inicializar a propriedade TipoInscricao com 
+    Outras.(Juliana Tamizou)
+
+[-] Corrigido função SetCPFCNPJ que não estava gravando o fCNPJ se o tipo de Inscricao fosse
+    Outras.(Juliana Tamizou) 
+ 
+
+
+
+Versão 0.0.14a 30/06/2010
+[-] Corrigido função CalculaDigitoCodigoBarras quando o digito calculado é 0 ou
+    maior que 9.(Juliana Tamizou)
+[+] Adicionado funções VerificaOcorrenciaOriginal,VerificaTipoOcorrenciaOriginal
+    e VerificaMotivoRejeicao, para serem utilizadas na leitura do arquivo 
+    retorno.(Juliana Tamizou)
+[+] Iniciado implementação da leitura do arquivo Retorno na classe do 
+    Bradesco.(Juliana Tamizou)
+[+] Implementado geração do arquivo remessa 400 colunas para a classe do Banco
+    do Brasil.(Maicon da Silva Evangelista)
+[-] Corrigido o problema nas funções "FormataNossoNumero" e "MontarCodigoBarras"
+    alterado o padL por padR.(Maicon da Silva Evangelista) 
+|-] Corrigido a função MontarCampoNossoNumero, ela estava utilizando a função
+    CalcularDigitoCodigoBarras ao inves de CalcularDigitoVerificador.(Maicon da 
+    Silva Evangelista)
+
+
+
+
+Versão 0.0.13a 28/06/2010
+[+] Adicionado classe do Banco Sicredi.(Ronaldo Lazarin)
+
+
+Versão 0.0.12a 26/06/2010
+[+] Iniciado implementacao da funcao de leitura do Arquivo Retorno, criadas as propriedades
+    NomeArqRetorno e DirArqRetorno no componente ACBrBoleto.(Juliana Tamizou)
+[*] Alterado impressao do Digito do Banco no Boleto, caso o digito seja "10", será impresso "X",
+    alteração efetuada devido a alguns bancos utilizarem "X" para o digito.(Juliana Tamizou) 	
+[-] Corrigida função FormataNossoNumero da classe do Banco do Brasil, devido ao NossoNumero 
+    ser preenchido com zeros até o tamanho maximo
+    do nosso número.(Juliana Tamizou)
+[*] Adicionado tipo enumerado TACBrAceiteTitulo para o Aceite e alterado as classes de todos os bancos
+    para gerar a Remessa utilizando o tipo enumerado.(Maiconsi)
+    
+[*] Adicionado a classe ACBrTitulo as propriedades Parcela e TotalParcelas, que indicam o número da parcela
+    atual e o total de parcelas da fatura, respectivamente.
+[*] Alterado layout do carnê para imprimir essas informações e também o Codigo de Barras e o numero do banco.
+
+Versão 0.0.11a 05/06/2010
+[*] Efetuado correcoes para a classe do Banco Itaú.(por RodrigoSD)
+[+] Adicionado possibilidade de gerar os arquivos remessa noslayouts de 240 e 400 colunas.(por Juliana Tamizou) 
+[+] Adicionado impressao de carnes, para tanto basta informar a propriedade layout como layoutCarne 
+
+Versão 0.0.10a 05/06/2010
+[*] Corrigido montagem do Código de Barras da unit do Banco do Brasil, e por consequencia
+    corrigido também impressão da linha digitável.(por Edney Barros)
+
+Versão 0.0.9.a 29/05/2010
+[+] Adicionado classe para o Banco Itaú. (por SandroJoca)
+[*] Alterado rotina MontarLinhaDigitável para formatar com 3 digitos o número do banco,no caso do
+    Banco do Brasil, esse campo ficava com "1" ao invés de "001", fazendo com que a linha digitável
+    seja montada errada. (por Juliana Tamizou)  
+    
+[*] Concluida homologação do arquivo Remessa e impressão do boleto junto ao Bradesco.(Mesmo
+    assim é necessário efetuar a homologação para cada cliente que for ser implementando a impressão
+    do boleto pelo sistema próprio, conforme orientação do suporte Bradesco.)
+
+
+Versão 0.0.8.a 27/05/2010
+[*] Correção de vários Warnings e Hints de compilação  (por: DSA)
+[-] GerarPDF e GerarHTML não restauravam corretamente a propriedade "MostrarPreview" (por: DSA)
+
+Versão 0.0.7.a 25/05/2010
+[+] Adicionado classe para o Banco do Brasil. Edney Barros
+[+] Adicionado propriedade Tipo de Inscrição e CNPJ\CPF do Cedente, com validação do documento. Edney Barros\Juliana Tamizou
+[+] Adicionado função para Gerar boleto no formato PDF e HTML. Daniel Simões
+[-] Corrigido Cálculo do Nosso Numero e Montagem da Linha Digitavel para o Bradesco. Juliana Tamizou
+[-] Adicionado função para montar o campo nosso numero a ser impresso no boleto(varia para cada banco). Juliana Tamizou
+
+Versão 0.0.6a 04/05/10
+[-] Adicionado Logos dos bancos no formato '.BMP', corrigindo o problema 
+    ao imprimir o boleto, onde o logo não era encontrado, mesmo sendo informado
+    o diretório dos arquivos. EMBarbosa 
+[+] Adicionado verificação das propriedades obrigatórias do componente ACBrBoleto,
+    para evitar erros devido a falta de preenchimento destas propriedades. Juliana Tamizou
+
+Versão 0.0.5a   03/05/09
+---------------
+[+] Início do Projeto
+[+] Primeira Versao lançada baseado no componente fornecido por:
+    Daniel Simões de Almeida
+[+] Componente desenvolvido usando como base os projetos GBBoleto, RLBoleto,
+    FreeBoleto, OpenBoleto, JFMBoleto.
+
+
+

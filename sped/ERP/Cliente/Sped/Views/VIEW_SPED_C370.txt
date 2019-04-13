@@ -1,0 +1,19 @@
+	CREATE
+	VIEW t2tierp.VIEW_SPED_C370
+	AS
+	(
+	select 
+		nd.ID_NF_CABECALHO AS ID_NF_CABECALHO,
+		nc.DATA_EMISSAO AS DATA_EMISSAO,
+		nd.ID_PRODUTO AS ID_PRODUTO,
+		nd.ITEM AS ITEM,
+		p.ID_UNIDADE_PRODUTO AS ID_UNIDADE_PRODUTO,
+		nd.QUANTIDADE AS QUANTIDADE,
+		nd.VALOR_TOTAL AS VALOR_TOTAL,
+		nd.CST AS CST,
+		nd.DESCONTO AS DESCONTO
+	from 
+		((ecf_nota_fiscal_detalhe nd JOIN ecf_nota_fiscal_cabecalho nc) JOIN produto p)
+	where 
+		((nd.ID_NF_CABECALHO = nc.ID) AND (nd.ID_PRODUTO = p.ID))
+	)

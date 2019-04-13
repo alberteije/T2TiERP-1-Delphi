@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Units documentation - rpdataset.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpdataset.pas</h3>
+<h4>Description</h4>
+<p>This unit <b>implements a two record buffer dataset, </b>that is you assign 
+  the dataset property and a special commands perform advance in the assigned 
+  dataset (usually unidirectional with no buffering), remembering always two records. 
+  This feature is needed to generate report grouping on expression changes, the 
+  next record needs to examined to evaluate the change, then go back to print 
+  the group footers before really advance.</p>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpDataset</td>
+    <td>TClientDataset</td>
+    <td>Implementation of the two record buffer dataset</td>
+  </tr>
+</table>
+</body>
+</html>

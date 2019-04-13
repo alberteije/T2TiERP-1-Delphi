@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Form filling and printing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Advanced report design</h2>
+<h3><b>Form filling and printing</b></h3>
+<p>This is a small guide to perform preprinted form filling. Usually you have 
+  a form, in printed format, or pdf and you want to fill values in boxes provided 
+  by this form.</p>
+<h3>1. Obtaining the background image</h3>
+<p>The background image will be placed in one section of our report so we can 
+  place items, expressions, labels on top of it.</p>
+<p>If the form is <strong>already printed</strong>, you should <strong>use a image 
+  scanner</strong> to obtain the background image, check the dots per inch property 
+  of the scanner, you will place the same value in dpi property in the section 
+  you place the image.</p>
+<p>If the form is provided as pdf you should use a tool to convert it to a image 
+  file, each page must be a separate image file, you will get a good result using 
+  Adobe Acrobat 6 professional.</p>
+<p>Usually the best image format for the background image is a Windows Bitmap 
+  format, 8 bit color depth (indexed), if the report have the property prefered 
+  save format set to binary/zlib, the bitmap will be stored in compressed format, 
+  make sure to check this property before adding the background images.</p>
+<p>If the images are real life photos the best compression can be acchieved with 
+  jpeg format.</p>
+<h3>2. Place items</h3>
+<p>After setting the background image property, you can drag &amp; drop fields 
+  on top of the image, the background image can appear also in preview or also 
+  printed, checking the background style. You should set page margins to 0 if 
+  you scanned or exported the whole image.</p>
+<p>Here is a sample:</p>
+<p><img src="images/formfill1.jpg" width="891" height="551"></p>
+<h3>4. Final adjustments</h3>
+<p>By adjusting margins you can adjust output, if your want to print also the 
+  background you don't need adjustments.</p>
+<p>A sample result:</p>
+<p><img src="images/formfill2.jpg" width="459" height="551"></p>
+<p>This sample report is also configured to generate a <a href="customoutput.html">custom 
+  text output</a> to be used to pay to Agencia Tributaria (Spain) using Internet 
+  method (&quot;presentaci&oacute;n telem&aacute;tica&quot;). </p>
+</body>
+</html>

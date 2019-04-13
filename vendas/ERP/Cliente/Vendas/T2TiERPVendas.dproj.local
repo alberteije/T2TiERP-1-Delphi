@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/02/14 17:02:48.828.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ContratoVO.pas=</Transaction>
+    <Transaction>2013/02/14 17:02:48.838.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ContratoTipoServicoVO.pas=</Transaction>
+    <Transaction>2013/02/14 17:02:48.908.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ContratoSolicitacaoServicoVO.pas=</Transaction>
+    <Transaction>2013/02/14 17:02:48.928.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ContratoPrevFaturamentoVO.pas=</Transaction>
+    <Transaction>2013/02/14 17:02:48.928.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ContratoHistoricoReajusteVO.pas=</Transaction>
+    <Transaction>2013/02/14 17:02:48.938.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ContratoHistFaturamentoVO.pas=</Transaction>
+    <Transaction>2013/02/14 17:04:00.558.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\TipoContratoVO.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Child subreports</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Advanced report design</h2>
+<h3>Child subreports</h3>
+<p></p>
+<p>You usually assign a main dataset to a subreport, and the subreports are printed 
+  in order. But you can change this behaviour by assigning Child Subreport property 
+  to a section, usually you assign this property to a detail section, so the child 
+  subreport will be processed after printing the detail section.</p>
+<p>Think about a customers report, the main subreport can contain a detail with 
+  the company name:</p>
+<p><img src="images/childsubreports1.jpg" width="615" height="597"></p>
+<p>And another subreport will print the orders for that customers</p>
+<p><img src="images/childsubreports2.jpg" width="634" height="354"></p>
+<p>You must link the orders dataset to the customers dataset so when a customer 
+  is printed, the orders dataset is updated and the child subreport is processed 
+  with the new data.</p>
+<p><img src="images/childsubreports3.jpg" width="565" height="498"></p>
+<p>Child subreports are useful to link and print many to many datasets. See you 
+  can calculate subtotals for each subreport or child subreport.</p>
+<p><img src="images/childsubreports4.jpg" width="597" height="491"></p>
+<p>See also <a href="linkedquerys.html">linked querys</a></p>
+</body>
+</html>

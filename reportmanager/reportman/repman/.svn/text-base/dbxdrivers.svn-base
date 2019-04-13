@@ -1,0 +1,220 @@
+[Installed Drivers]
+Interbase=1
+MySQL=1
+MySQL23=1
+PostgreSQL=1
+DB2=1
+Oracle=1
+Informix=1
+OpenODBC=1
+ZeosLib=1
+
+[Interbase]
+GetDriverFunc=getSQLDriverINTERBASE
+LibraryName=libsqlib.so
+VendorLib=libgds.so
+Database=database.gdb
+RoleName=RoleName
+User_Name=sysdba
+Password=masterkey
+ServerCharSet=
+SQLDialect=1
+BlobSize=-1
+CommitRetain=False
+WaitOnLocks=True
+ErrorResourceFile=./DbxIbErr.msg
+LocaleCode=0000
+Interbase TransIsolation=ReadCommited
+
+[MySQL]
+GetDriverFunc=getSQLDriverMYSQL
+LibraryName=libsqlmy.so.1
+VendorLib=libmysqlclient.so
+HostName=ServerName
+Database=DBNAME
+User_Name=user
+Password=password
+BlobSize=-1
+ErrorResourceFile=./DbxMySqlErr.msg
+LocaleCode=0000
+
+[MySQL23]
+GetDriverFunc=getSQLDriverMYSQL
+LibraryName=libsqlmy23.so
+VendorLib=libmysqlclient.so
+HostName=ServerName
+Database=DBNAME
+User_Name=user
+Password=password
+BlobSize=-1
+ErrorResourceFile=./DbxMySqlErr.msg
+LocaleCode=0000
+
+[ZeosLib]
+GetDriverFunc=getSQLDriverZEOS
+Database Protocol=firebird-1.0
+LibraryName=none.dll
+VendorLib=vendor_variable.dll
+HostName=
+Database=database.gdb
+User_Name=sysdba
+Password=masterkey
+Port=0
+Zeos TransIsolation=None
+Property1=
+Property2=
+Property3=
+Property4=
+Property5=
+Property6=
+Property7=
+Property8=
+Property9=
+
+
+[PostgreSQL]
+GetDriverFunc=getSQLDriverPGSQL
+LibraryName=libsqlpg.so
+VendorLib=libpq.so
+HostName=ServerName
+Database=test
+User_Name=user
+Password=password
+BlobSize=-1
+ErrorResourceFile=./DbxPGSQLErr.msg
+LocaleCode=0000
+
+[DB2]
+GetDriverFunc=getSQLDriverDB2
+LibraryName=libsqldb2.so
+VendorLib=libdb2.so
+Database=DBNAME
+User_Name=user
+Password=password
+BlobSize=-1
+ErrorResourceFile=./DbxDb2Err.msg
+LocaleCode=0000
+DB2 TransIsolation=ReadCommited
+
+[Oracle]
+GetDriverFunc=getSQLDriverORACLE
+LibraryName=libsqlora.so
+VendorLib=libclntsh.so
+DataBase=Database Name
+User_Name=user
+Password=password
+BlobSize=-1
+ErrorResourceFile=./DbxOraErr.msg
+LocaleCode=0000
+Oracle TransIsolation=ReadCommited
+RowsetSize=20
+OS Authentication=False
+Multiple Transaction=False
+Trim Char=False
+
+[Informix]
+GetDriverFunc=getSQLDriverINFORMIX
+LibraryName=libsqlinf.so
+VendorLib=libinfclient.so.1.0.0
+HostName=ServerName
+Database=Database Name
+User_Name=user
+Password=password
+BlobSize=-1
+ErrorResourceFile=./DbxInfSqlErr.msg
+LocaleCode=0000
+Informix TransIsolation=ReadCommited
+
+
+[OpenODBC]
+GetDriverFunc=getSQLDriverODBC
+VendorLib=libodbc.so
+LibraryName=libdbxoodbc.so
+Database=ODBC DSN name, or ODBC connection string (DSN=SAMPLE;LANG=chineses..) or ? for Driver Prompt
+User_Name=user name (can be ommited)
+Password=password (can be ommited)
+
+[AutoCommit]
+False=0
+True=1
+
+[BlockingMode]
+False=0
+True=1
+
+[WaitOnLocks]
+False=1
+True=0
+
+[CommitRetain]
+False=0
+True=1
+
+[OS Authentication]
+False=0
+True=1
+
+[Multiple Transaction]
+False=0
+True=1
+
+[Trim Char]
+False=0
+True=1
+
+[DB2 TransIsolation]
+DirtyRead=0
+ReadCommited=1
+RepeatableRead=2
+
+[Database Protocol]
+oracle=0
+oracle-9i=1
+sqlite=2
+sqlite-2.8=2
+interbase-5=3
+interbase-6=4
+firebird-1.0=5
+firebird-1.5=6
+postgresql=7
+postgresql-6.5=8
+postgresql-7.2=9
+postgresql-7.3=10
+postgresql-7.4=11
+mysql=12
+mysql-3.20=13
+mysql-3.23=14
+mysql-4.0=15
+mysql-4.1=16
+sybase=17
+mssql=18
+ado=19
+db2=20
+
+[Zeos TransIsolation]
+None=0
+ReadCommited=1
+ReadUnCommited=2
+RepeatableRead=3
+Serializable=4
+
+
+[Interbase TransIsolation]
+ReadCommited=1
+RepeatableRead=2
+
+[Informix TransIsolation]
+DirtyRead=0
+ReadCommited=1
+RepeatableRead=2
+
+[Oracle TransIsolation]
+DirtyRead=0
+ReadCommited=1
+RepeatableRead=2
+
+[SQLDialect]
+1=0
+2=1
+3=2
+

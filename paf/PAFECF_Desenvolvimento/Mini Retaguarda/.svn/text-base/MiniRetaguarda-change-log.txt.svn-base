@@ -1,0 +1,299 @@
+{*******************************************************************************
+Title: T2Ti ERP
+Description: Tela principal do PAF-ECF - Caixa.
+
+The MIT License
+
+Copyright: Copyright (C) 2010 T2Ti.COM
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+       The author may be contacted at:
+           t2ti.com@gmail.com</p>
+
+@author Albert Eije (T2Ti.COM)
+@version 1.0
+*******************************************************************************}
+
+Agradecimentos:
+
+* Administradores:
+- Albert Eije
+
+* Desenvolvedores:
+- José Rodrigues
+
+{******************************************************************************
+|* PafEcf.exe
+|*
+|* PROPÓSITO: Registro de Alterações
+******************************************************************************}
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+
+
+MiniRetaguarda Versão 1.0.1.6 - Beta   09/11/2011
+-------------------------------------------------
+
+[*] Alterado Firebird_DBExpress_conn.txt par Firebird_Balcao_conn.txt; 
+    
+    Motivo:
+    Para que possa ser possivel colocar o mini-retaguarda na mesma pasta do Pafecf.exe e balcao.exe.
+
+[+] Criada a Unit ExportaTabelasController, foi retirada da Unit UPDVCarga.pas, para que possa ser chamada por outros Forms.
+
+[+] Criado os botoes exporta --> Total e Parcial, para que os produtos possam ser exportados direto do Cadastro de produtos.  
+
+
+[*] Alterado as units UImpostoIcms.pas, UImpostoIcms.dfm, ImpostoIcmsVO.pas, ImpostoIcmsController.pas e CfopController.pas
+   
+    Conforme postado no EAD por Jorge Antonio Ribeiro Ferreira.
+
+
+MiniRetaguarda Versão 1.0.1.5 - Beta   07/11/2011
+-------------------------------------------------
+
+
+[*] Alterado o Banco MINI.FDB
+
+[*] Alterado o Cadastro de Produtos
+
+ 
+
+MiniRetaguarda Versão 1.0.1.4 - Beta   02/11/2011
+-------------------------------------------------
+
+[*] Alterada a procedure TFPDVCarga.ExportaProduto para ficar compativel.
+
+[*] Alterada a function VerificaNULL(Texto:string;Tipo:integer):string;
+
+
+MiniRetaguarda Versão 1.0.1.3 - Beta   1/11/2011
+-------------------------------------------------
+
+
+[+] Adicionado Cadastro de Imposto ICMS   
+
+    conforme post de Sergio Toshio Kawahara 
+
+
+
+MiniRetaguarda Versão 1.0.1.2 - Beta   31/10/2011
+-------------------------------------------------
+
+
+[+] Adicionado Cadastro de NCM e populado a tabela de NCM  
+
+    conforme post de Sergio Toshio Kawahara 
+
+
+[*] Alterado o T2TiORM para utilizar o RETURNING
+
+    Obs: Funciona com a versão Firebird-2.5.1.26351_1_Win32
+      ConsultaSQL := ConsultaSQL + ' RETURNING ID ';
+
+
+
+
+
+
+MiniRetaguarda Versão 1.0.1.1 - Beta   29/10/2011
+-------------------------------------------------
+
+
+[*] Alterado Banco Mini.fdb de acordo com o Novo DER.
+
+[+] Adicionado função para mudar a cor dos edits, combos e etc, quando recebem foco
+
+[*] Varias alteraçoes no Cadastro de produtos.
+
+
+
+
+MiniRetaguarda Versão 1.0.0.9 - Beta   10/09/2011
+-------------------------------------------------
+
+[*] Alterado scripts firebird_semdados.sql e firebird_comdados.sq
+
+
+[*] Alterado Banco Mini.fdb de acordo com o Novo DER.
+
+
+
+
+MiniRetaguarda Versão 1.0.0.8 - Beta   09/09/2011
+-------------------------------------------------
+
+[*] Alterado scripts firebird_semdados.sql e firebird_comdados.sq
+
+
+[*] Alterado Banco Mini.fdb de acordo com o Novo DER.
+
+
+[*] Alterado ArquivoAuxiliar.ini para Conexao.ini
+
+
+    As alterações foram enviadas por Daniel Wanderley
+
+
+
+MiniRetaguarda Versão 1.0.0.7 - Beta   02/08/2011
+-------------------------------------------------
+
+[*] Alterado scripts firebird_semdados.sql e firebird_comdados.sq
+
+[*] Alterado ArquivoAuxiliar.ini
+
+[+] criado a pasta \branches\Paf-Ecf-Merge\Mini Retaguarda\IntegracaoPDV 
+
+    obs: O Integracao.exe devera ficar na mesma pasta  do \Mini Retaguarda\
+
+    pois vai utilizar o mesmo ArquivoAuxiliar.ini
+
+    neste arquivo ficam as informações para o fincionamento do mesmo
+
+    [IMPORTA]
+    REMOTEAPP=C:\T2TIPAFECF\
+     
+    remoteapp é o diretorio onde o aplicativo vai ler as informações de venda
+
+
+    [ECFS]
+    QUANTIDADE=1   // aqui vai a informação de quantos caixas tem na empresa
+    EMPRESA=1      // id da empresa
+
+
+
+
+MiniRetaguarda Versão 1.0.0.6 - Beta   26/07/2011
+-------------------------------------------------
+
+
+[*] alterado a procedure TFDataModule.DataModuleCreate(Sender: TObject);
+    var ini: TIniFile;
+    Banco: String;
+    begin
+      try
+        ini := TIniFile.Create(ExtractFilePath(Application.ExeName)+'ArquivoAuxiliar.ini');
+        Banco := UpperCase(ini.ReadString('SGBD','BD',''));
+
+        if Banco = 'MYSQL'then
+          TDBExpress.Conectar('MySQL')
+        else if Banco = 'FIREBIRD'then
+          TDBExpress.Conectar('Firebird');
+
+      finally
+       ini.Free;
+      end;
+
+
+
+
+
+
+MiniRetaguarda Versão 1.0.0.5 - Beta   24/07/2011
+-------------------------------------------------
+[*] alterado o DER
+
+[+] Adicionado \Banco\MINI.FDB
+
+[+] Adicionado \Scriptmini_firebird_semdados.sql
+
+
+
+
+MiniRetaguarda Versão 1.0.0.5 - Beta   16/07/2011
+-------------------------------------------------
+
+[*] Alterações diversas  enviadas pelo por email pelo Colega Clausqueller Mitome,
+    não vou descrever todas pois ficaria muito extenso (e Cansativo).
+
+
+MiniRetaguarda Versão 1.0.0.4 - Beta   13/07/2011
+-------------------------------------------------
+
+
+[*] alterado as units ImpostoIcmsController, ProdutosController, UnidadeProdutoController, Atributos,
+    Biblioteca, Ulookup, Umenu, Uproduto, ImpostoIcmsVO, MeiosPagamentoVO e ProdutoVO. 
+
+    Diversas Alterações enviadas pelo por email pelo Colega Clausqueller Mitome,
+    não vou descrever todas pois ficaria muito extenso (e Cansativo).
+
+
+
+
+MiniRetaguarda Versão 1.0.0.3 - Beta   12/07/2011
+-------------------------------------------------
+[+] Adicionado a unit UProduto.pas
+
+[+] Adicionado a unit ImpostoIcmsController.pas
+
+    Conforme postado por Zenilton Pinheiro da Silva, não esta totalmente funcional.
+
+    http://www.t2ti.com/ead/mod/forum/discuss.php?d=2705#p21355
+
+
+
+[+] Adicionado a unit UPDVCarga.pas
+
+    Está no menu movimento --> Importação e Exportação PDV
+
+    Objetivo: Realizar as importações e exportações do PDV
+
+    Ainda em desenvolvimento, estou disponibilizando para incentivar a colaboração dos colegas.
+
+    Jose Rodrigues de oliveira Junior 
+
+
+
+MiniRetaguarda Versão 1.0.0.2 - Beta   02/07/2011
+-------------------------------------------------
+
+[*] Alterado program MiniRetaguarda para só executar uma instancia por vez.
+
+[+] acrescentada na Unit Biblioteca a function VersaoExe(exe, param : string): String; 
+
+[+] modificada a Unit UMenu para chamar a function VersaoExe
+
+[+] Criada procedure TFMenu.FormCreate(Sender: TObject);
+    begin
+       Ribbon.Caption:= 'T2Ti Mini Retaguarda [T2Ti Tecnologia da Informação Ltda | Suporte: +55 61 3042.5277]    '+VersaoExe(Application.ExeName,'V');
+    end;
+
+    serve para mostrar no MiniRetaguarda a versão atual e servirá para a atualização de todos os executaveis da rede.
+
+
+
+MiniRetaguarda Versão 1.0.0.1 - Beta   01/07/2011 - primeira versão Apos liberação na pasta trunk
+------------------------------
+
+
+
+
+
+
+

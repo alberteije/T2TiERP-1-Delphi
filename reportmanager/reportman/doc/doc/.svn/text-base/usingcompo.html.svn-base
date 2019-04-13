@@ -1,0 +1,191 @@
+<html>
+<head>
+<title>Using report components  Delphi/Kylix/Builder</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Basic report design</h2>
+<h3><b>Using report components in Delphi/Kylix/Builder</b></h3>
+<p>This is a brief guide about using Report Manager components in Delphi/Kylix/Builder.</p>
+<p>You must install all the components before continuing, see Installation section 
+  to do so.</p>
+<p>When you install the packages you see this component palette components:</p>
+<p><img src="images/components.jpg" width="240" height="30"></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Component</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+    <td bgcolor="#FFFFCC"><b>D6D7/B6</b></td>
+    <td bgcolor="#FFFFCC"><b>K2/K3</b></td>
+    <td bgcolor="#FFFFCC"><b>D5/B4</b></td>
+  </tr>
+  <tr> 
+    <td>TRpEvaluator</td>
+    <td>To process expresions at runtime, you can assign a TRpAlias component 
+      to access database fields, dont' worry about it but can be useful for you 
+      in some cases</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+  <tr> 
+    <td>TRpAlias</td>
+    <td>Can be linked to a TRpEvaluator, and to a TXXXReport. Allow to pass application 
+      opened datasets to loaded report of those components (the alias of the dataset 
+      must be the same as the alias defines in the report design)</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+  <tr> 
+    <td>TRpLastUsedStrings</td>
+    <td>This component remembers a list of strings, ordering by use, useful component 
+      for storing information about last used files etc...</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+  <tr> 
+    <td>TRpExpreDialog</td>
+    <td>A help dialog to construct TRpEvaluator expressions</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+  </tr>
+  <tr> 
+    <td><b>TRpPDFReport</b></td>
+    <td>Report exporting to Adobe PDF Format</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+  <tr> 
+    <td><b>TCLXDriver</b></td>
+    <td>Report preview and printing for cross platform CLX applications</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+  </tr>
+  <tr> 
+    <td><b>TVCLReport</b></td>
+    <td>Report preview and printing using Windows GDI (Windows only)</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>Yes</td>
+  </tr>
+  <tr> 
+    <td><b>TRpDesigner</b></td>
+    <td>Component to call Report Manger Designer Interface allow to embed the 
+      report designer in your application</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+  </tr>
+</table>
+<p>TRpCLXDriver is the most common component, allow to preview/print reports using 
+  cross platform CLX library in Delphi 6/C++Builder 6 and Kylix 2.</p>
+<p><b>Published properties</b></p>
+<p><img src="images/clxreportprops.jpg" width="223" height="319"></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Property Name</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td>AliasList</td>
+    <td>Allow not pass opened dataset to the report using a TRpAliasReport</td>
+  </tr>
+  <tr> 
+    <td>Filename</td>
+    <td>The filename to load with a relative or absolute path. If you use absolute 
+      paths or subdiretories and want to develop cross plaform you must assign 
+      a correct plaform pats '\' directory separator in Windows and '/' in Linux</td>
+  </tr>
+  <tr> 
+    <td>Preview</td>
+    <td>If true, the execute method will show preview else will print the report</td>
+  </tr>
+  <tr> 
+    <td>ShowPrintDialog</td>
+    <td>When preview is false and execute method is called a dialog will show 
+      to the user asking page interval to print, copies etc</td>
+  </tr>
+  <tr> 
+    <td>ShowProgress</td>
+    <td>For impatient users, a dialog shows the progress and the report in progress 
+      can be canceled</td>
+  </tr>
+  <tr> 
+    <td>Tittle</td>
+    <td>Print document tittle that shows print queue</td>
+  </tr>
+  <tr> 
+    <td>UseSystemPrintDialog</td>
+    <td>If true, the system print dialog is show, else a custom reeport manager 
+      engine dialog is show</td>
+  </tr>
+</table>
+<p><b>Public properties</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Property Name</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td>Report</td>
+    <td>Allow accessing sections, subreports, database and dataset information 
+      once a report is loaded. See TRpReport component reference for a description</td>
+  </tr>
+</table>
+<p></p>
+<p><b>Public Methods</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Method Name</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td>Execute</td>
+    <td>Boolean function, executes the report, preview or print based on properties 
+      Preview, Filename...</td>
+  </tr>
+  <tr> 
+    <td>PrinterSetup</td>
+    <td>Executes printer setup dialog, does the same as Printer.ExecuteSetup</td>
+  </tr>
+  <tr> 
+    <td>CheckLoaded</td>
+    <td>Check if report is loaded and if not will try to load it, if it can load 
+      the report will raise an exception, when you access Report property it's 
+      called automatically so don't worry about this method</td>
+  </tr>
+  <tr> 
+    <td>ShowParams</td>
+    <td>Loads the report if not loaded and shows a dialog to the user with the 
+      report parameters, so the user can alter them, usually you perform a execute 
+      after show the parameters</td>
+  </tr>
+  <tr> 
+    <td>ShowProgress</td>
+    <td>For impatient users, a dialog shows the progress and the report in progress 
+      can be canceled</td>
+  </tr>
+  <tr>
+    <td>PrintRange</td>
+    <td>Function to print ranges of pages with copies and collate options </td>
+  </tr>
+</table>
+<p><b>General procedure to preview/print a report in your application</b></p>
+<ul>
+  <li>Place a TCLXReport component into the form</li>
+  <li>Set filename property, you can also assign it at runtime</li>
+  <li>Set preview property to true if you want to print directly</li>
+  <li>Set ShowPrindialog property if you don't want the user can change print 
+    range or copies</li>
+  <li>Call Execute Method</li>
+</ul>
+<p>TPDFReport and TVCLReport share most properties and methods.</p>
+<p>&nbsp;</p>
+</body>
+</html>

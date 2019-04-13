@@ -1,0 +1,97 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.02.5
+#------------------------------------------------------------------------------
+MAKE = make -$(MAKEFLAGS) -f$**
+DCC =dcc $<
+#------------------------------------------------------------------------------
+PROJECTS = repmand repmandxp metaprint metaprintxp metaview metaviewxp printrep \
+  printrepxp reptotxt txttorep printreptopdf reportserverapp reportserverappxp \
+  reportservercon repserverconfig repserverconfigxp repwebexe reportman \
+  rptranslate.exe compilerep.exe unixtodos.exe WebReportManX.ocx \
+  repserverservice.exe repserviceinstall.exe repwebserver.dll repmandxp.ESN
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+repmand: repmand.dpr
+  $(DCC)
+
+repmandxp: repmandxp.dpr
+  $(DCC)
+
+metaprint: utils\metaprint\metaprint.dpr
+  $(DCC)
+
+metaprintxp: utils\metaprint\metaprintxp.dpr
+  $(DCC)
+
+metaview: utils\metaview\metaview.dpr
+  $(DCC)
+
+metaviewxp: utils\metaview\metaviewxp.dpr
+  $(DCC)
+
+printrep: utils\printrep\printrep.dpr
+  $(DCC)
+
+printrepxp: utils\printrep\printrepxp.dpr
+  $(DCC)
+
+reptotxt: utils\reptotxt\reptotxt.dpr
+  $(DCC)
+
+txttorep: utils\txttorep\txttorep.dpr
+  $(DCC)
+
+printreptopdf: utils\printreptopdf\printreptopdf.dpr
+  $(DCC)
+
+reportserverapp: ..\server\app\reportserverapp.dpr
+  $(DCC)
+
+reportserverappxp: ..\server\app\reportserverappxp.dpr
+  $(DCC)
+
+reportservercon: ..\server\app\reportservercon.dpr
+  $(DCC)
+
+repserverconfig: ..\server\config\repserverconfig.dpr
+  $(DCC)
+
+repserverconfigxp: ..\server\config\repserverconfigxp.dpr
+  $(DCC)
+
+repwebexe: ..\server\web\repwebexe.dpr
+  $(DCC)
+
+repwebserver: ..\server\web\repwebserver.dpr
+	$(DCC)
+
+reportman: ..\activex\reportman.dpr
+  $(DCC)
+
+rptranslate.exe: utils\rptranslator\rptranslate.dpr
+  $(DCC)
+
+compilerep.exe: utils\compilerep\compilerep.dpr
+  $(DCC)
+
+unixtodos.exe: utils\unixtodos\unixtodos.dpr
+  $(DCC)
+
+WebReportManX.ocx: ..\webactivex\WebReportManX.dpr
+  $(DCC)
+
+repserverservice.exe: ..\server\service\repserverservice.dpr
+  $(DCC)
+
+repserviceinstall.exe: ..\server\service\repserviceinstall.dpr
+  $(DCC)
+
+repwebserver.dll: ..\server\web\repwebserver.dpr
+  $(DCC)
+
+repmandxp.ESN: ESN\repmandxp.dpr
+  $(DCC)
+
+

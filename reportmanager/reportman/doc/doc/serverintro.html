@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Report Manager Server</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Report Manager Server</h2>
+<h3>Introduction</h3>
+<p>Report Manager Server is a multithread service/application that works over 
+  TCP/IP protocol. It allows any number of client machines to execute reports 
+  obtaining ready to print report metafiles.</p>
+<p>You must start the server application (available also as a service) in the 
+  server machine, in the server machine you should have database connectivity 
+  software so the reports can execute on it.</p>
+<p>The database server can be any machine accesible by the report server machine, 
+  so you can distribute the work of generating reports, for example the report 
+  client can be a Internet enabled connection requesting a report to a far network 
+  (also connected to Internet) server, the server generates the report requesting 
+  process intensive querys to a high performance database server, after the calculation 
+  of the report is done, the server sends the result to the report client.</p>
+<p>The report client application can request information about parameters and 
+  also alter them before executing the report.</p>
+<p>The server and the client are optimized to use very little bandwith.</p>
+<p>You can install the report server in a linux machine and execute report client 
+  in MS Windows machines or vice-versa.</p>
+<p><b>Configuration</b></p>
+<p>Report Manager server runs using port 3060,you can run the server as an application 
+  and see the report configuration and log files. You can alter all settings using 
+  repserverconfig application except the port (you can alter it modifying the 
+  configuration file).</p>
+<p>By default there is only one user named Admin and without password. You can 
+  assign a password to Admin user, and add other users. The Admin user is the 
+  only one with privileges to add Report Server aliases.</p>
+<p>A report alias is a name and a path that points to a directory that can contain 
+  reports and directories containing reports so a report tree is generated using 
+  the directory structure, the reports are stored in the server and the report 
+  tree is send to the report client.</p>
+<p><b>Other considerations</b></p>
+<p>When you design reports for use with report server you must configure them 
+  to be thread safe, that is make sure your driver supports multithread (as far 
+  as I know all drivers supports this) and your database connection string is 
+  thread safe, for example to access Interbase/Firebird databases provide the 
+  always the hostname (or write localhost), so the access method to the database 
+  is thread safe (local access method is not thread safe).</p>
+<p>See also how to<a href="installserver.html"> install the server</a>.</p>
+</body>
+</html>

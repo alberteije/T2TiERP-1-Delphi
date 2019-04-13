@@ -1,0 +1,461 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/t2tierp_delphi_pafecf/!svn/ver/380/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela
+END
+UTela.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_delphi_pafecf/!svn/ver/359/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UTela.dfm
+END
+UAgencia.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UAgencia.dfm
+END
+UBase.pas
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UBase.pas
+END
+UPDVCarga.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/t2tierp_delphi_pafecf/!svn/ver/355/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UPDVCarga.dfm
+END
+UNcm.pas
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/t2tierp_delphi_pafecf/!svn/ver/359/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UNcm.pas
+END
+UCargo.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UCargo.dfm
+END
+ULancamentoPagar.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/ULancamentoPagar.dfm
+END
+UProduto.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_delphi_pafecf/!svn/ver/376/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UProduto.dfm
+END
+UConfigConexao.pas
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UConfigConexao.pas
+END
+UParcelaRecebimento.pas
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UParcelaRecebimento.pas
+END
+UUnidadeProduto.pas
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UUnidadeProduto.pas
+END
+UColaborador.pas
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UColaborador.pas
+END
+UImpostoIcms.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/t2tierp_delphi_pafecf/!svn/ver/377/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UImpostoIcms.dfm
+END
+UCep.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UCep.dfm
+END
+UPessoa.pas
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UPessoa.pas
+END
+USetor.pas
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/USetor.pas
+END
+UEmpresa.pas
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_delphi_pafecf/!svn/ver/369/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UEmpresa.pas
+END
+UBase.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UBase.dfm
+END
+UNcm.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/t2tierp_delphi_pafecf/!svn/ver/359/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UNcm.dfm
+END
+UParcelaPagamento.pas
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UParcelaPagamento.pas
+END
+UMenu.pas
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_delphi_pafecf/!svn/ver/370/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UMenu.pas
+END
+UConfigConexao.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UConfigConexao.dfm
+END
+UParcelaRecebimento.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UParcelaRecebimento.dfm
+END
+UUnidadeProduto.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UUnidadeProduto.dfm
+END
+UColaborador.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UColaborador.dfm
+END
+UContaCaixa.pas
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UContaCaixa.pas
+END
+UPessoa.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UPessoa.dfm
+END
+USetor.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/USetor.dfm
+END
+UEmpresa.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_delphi_pafecf/!svn/ver/369/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UEmpresa.dfm
+END
+UPlanoContas.pas
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UPlanoContas.pas
+END
+USituacaoPessoa.pas
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/USituacaoPessoa.pas
+END
+UTalonarioCheque.pas
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UTalonarioCheque.pas
+END
+UParcelaPagamento.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UParcelaPagamento.dfm
+END
+UCfop.pas
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UCfop.pas
+END
+UMenu.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_delphi_pafecf/!svn/ver/377/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UMenu.dfm
+END
+UTipoDocumento.pas
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UTipoDocumento.pas
+END
+UContaCaixa.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UContaCaixa.dfm
+END
+UPlanoContas.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UPlanoContas.dfm
+END
+UTalonarioCheque.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UTalonarioCheque.dfm
+END
+USituacaoPessoa.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/USituacaoPessoa.dfm
+END
+ULogin.pas
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/ULogin.pas
+END
+UMeiosPagamento.pas
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UMeiosPagamento.pas
+END
+UNFe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UNFe.pas
+END
+UContador.pas
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/t2tierp_delphi_pafecf/!svn/ver/369/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UContador.pas
+END
+UCfop.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UCfop.dfm
+END
+UTipoDocumento.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UTipoDocumento.dfm
+END
+UMovimentoCaixaBanco.pas
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UMovimentoCaixaBanco.pas
+END
+ULogin.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/ULogin.dfm
+END
+UMeiosPagamento.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UMeiosPagamento.dfm
+END
+UNFe.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UNFe.dfm
+END
+UContador.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/t2tierp_delphi_pafecf/!svn/ver/374/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UContador.dfm
+END
+UFiltro.pas
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UFiltro.pas
+END
+UImportaContaCaixa.pas
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UImportaContaCaixa.pas
+END
+UPedidoCompra.pas
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UPedidoCompra.pas
+END
+ULancamentoReceber.pas
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/ULancamentoReceber.pas
+END
+ULookup.pas
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/ULookup.pas
+END
+UMovimentoCaixaBanco.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UMovimentoCaixaBanco.dfm
+END
+UDataModule.pas
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/t2tierp_delphi_pafecf/!svn/ver/376/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UDataModule.pas
+END
+UTipoEndereco.pas
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UTipoEndereco.pas
+END
+UFiltro.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UFiltro.dfm
+END
+UBanco.pas
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UBanco.pas
+END
+UTela.pas
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UTela.pas
+END
+UAgencia.pas
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UAgencia.pas
+END
+UPDVCarga.pas
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/t2tierp_delphi_pafecf/!svn/ver/376/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UPDVCarga.pas
+END
+UPedidoCompra.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UPedidoCompra.dfm
+END
+UImportaContaCaixa.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UImportaContaCaixa.dfm
+END
+UCargo.pas
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UCargo.pas
+END
+UProduto.pas
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/t2tierp_delphi_pafecf/!svn/ver/376/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UProduto.pas
+END
+ULookup.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/ULookup.dfm
+END
+ULancamentoReceber.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/ULancamentoReceber.dfm
+END
+ULancamentoPagar.pas
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/ULancamentoPagar.pas
+END
+UDataModule.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/t2tierp_delphi_pafecf/!svn/ver/365/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UDataModule.dfm
+END
+UTipoEndereco.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UTipoEndereco.dfm
+END
+UBanco.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UBanco.dfm
+END
+UImpostoIcms.pas
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/t2tierp_delphi_pafecf/!svn/ver/377/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UImpostoIcms.pas
+END
+UCep.pas
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/t2tierp_delphi_pafecf/!svn/ver/349/branches/PAFECF_Desenvolvimento/Mini%20Retaguarda/Tela/UCep.pas
+END

@@ -1,0 +1,172 @@
+<html>
+<head>
+<title>Frequently Asked Questions of Report Manager</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h3><b>Report Manager Frequently Asked Questions</b></h3>
+<p><b>Q. Why does my report show only one record?</b></p>
+<p>You must assign main dataset property of your subreport to a dataset. Because 
+  you can open as many datasets as you want you must say the engine which is the 
+  dataset for the subreport printing procedure.</p>
+<p><strong>Q. I have some problem, where can I find a user group for this tool?</strong></p>
+<p>You should use the reportman group at yahoo groups, there, you will find other 
+  Report Manager users. Do not e-mail directly to the author unless you want to 
+  contract paid support.</p>
+<p><strong>Q. Can I contribute to Report Manager project?</strong></p>
+<p>Enhacements and new modules for the engine are welcome, you can also report 
+  bugs, bufixes ideas etc, use reportman group at yahoo groups for this tasks. 
+  You can also contract the author services and pay for new features.</p>
+<p><b>Q. Wich development environments supports the engine?</b> </p>
+<p>A.
+<p>a) <code>In <b>native mode</b> (linked inside the executable or as a Borland 
+  package):<br>
+  - Delphi 4,5 Enterprise. Delphi 6 Professional, Delphi 6 Enterprise. Delphi 
+  7 Desktop, Delphi 7 Enterprise, Delphi 7 Architech.<br>
+  - C++Builder 4,5 Enterprise. C++Builder 6 Professional, C++Builder6 Enterprise.<br>
+  - Kylix 1,2,3 Desktop and Enterprise. Kylix 1,2,3 Open Edition-FreeCLX.<br>
+  b) . In <b>ActiveX mode</b> (distribution of Reportman.ocx-Windows only needed):<br>
+  - Any Delphi/C++Builder version accepting ActiveX controls (Borland personal 
+  editions)<br>
+  - Any development environment accepting ActiveX controls, Visual C++, Visual 
+  Basic, Visual Foxpro...<br>
+  c) In <b>command line tools mode</b> (executing command line tools):<br>
+  - Any language capable of executing command line tools, PHP, bourne shell, python..., 
+  command line tools are available for Linux and Windows<br>
+  d) In <b>shared library mode</b>:<br>
+  - Any compiler or development enviroment capable of using standard C shared 
+  library functions, that is GCC compiler, FreePascal compiler..., distribution 
+  of reportmanapiqt.so/reportmanapi.so (Linux) and Reportman.ocx needed.</code> 
+<p><b>Q. How can I set report parameters at runtime?</b> </p>
+<p>A. <code>CLXReport1.Report.Params.ParamByName('CUSTOMERINI').Value:=2;</code></p>
+<p><b>Q. How can I show the parameters before executing?</b></p>
+<p>A. <code>if CLXReport1.ShowParams then CLXReport1.Execute</code>;</p>
+<p><b>Q. What about passing application opened datasets to the report?</b></p>
+<ul>
+  <li>Place a TRpAlias component beside the TCLXReport</li>
+  <li>Assign AliasList property or CLXReport to RPAlias compoenent.</li>
+  <li>In RpAlias, List property add items as alias and TDataset component to assign 
+    to the report. Note: In Delphi 5, in latest versions you can edit datasets 
+    with a visual property editor.</li>
+  <li>At runtime:</li>
+</ul>
+<code>var aitem:TRpAliasListIte</code><code>m;<br>
+begin<br>
+aitem:=RPAliasItem.List.Add;<br>
+aitem.alias:='AREPORTALIAS';<br>
+aitem.dataset:=adataset;<br>
+end</code>
+<p><b>Q. How can I alter the SQL sentence of a report dataset before executing 
+  it?</b></p>
+<p>A. CLXReport.Report.DataInfo.Items[0].SQL:='SELECT....'</p>
+<p><b>Q. How can I pass opened connections or path to databases to the report?</b></p>
+<p>A. Depend on the database driver used:</p>
+<ul>
+  <li>BDE should detect opened aliases</li>
+  <li>DBExpress: <code>CLXReport.Report.DabaseInfo.Items[0].SQLConnection:=..</code></li>
+  <li>ADO: <code>CLXReport.Report.DabaseInfo.Items[0].ConnectionString</code></li>
+  <li>Interbase Express: <code>CLXReport.Report.DabaseInfo.Items[0].IBConnection:=..</code></li>
+  <li><code>Zeos: CLXReport.Report.DatabaseInfo.Items[0].ZConnection:=..</code></li>
+  <li>Other still not implemented, but you can update dbxconnections.ini, because 
+    them read the configuration from this file</li>
+</ul>
+<p><b>Q. How can I set properties of components at runtime in already loaded report?</b> 
+</p>
+<code>A.You must find the component you want to modify, Report property in TCLXReport 
+  is the owner of all report items:<br>
+uses rplabelitem;</cbr>
+...<br>
+var acompo:TRpExpression;<br>
+acompo:=TRpExpression(CLXReport1.Report.FindComponent('TRpExpression5'));<br>
+if Assigned(compo) then<br>
+begin<br>
+acompo.DisplayFormat:='dd/mm/yyyy';<br>
+end<br>
+</code>
+Note: When assigning text or expression properties declare the variables 
+  you assign as WideString.<br>
+<p><b>Q. I'm designing a report that will be printed in any matrix printer or 
+  receipt printer, how can I use printer fonts to speed up the print process?</b></p>
+<p>A. In Windows platform, at page setup option of Report Manager Designer you 
+  can set use allways device fonts option. Allways install the correct driver 
+  for the printer or a driver that printer is emulating. For other methods see 
+  answer bellow.</p>
+
+<p><b>Q. Why Report Manager needs TClientDataset class?</b></p>
+<p> The engine must be capable of go back one record for the main dataset (Prior 
+  procedure) because grouping feature, but some datasets only support unidirectional 
+  datasets, I use a patched version of TClientDataset (TRpDataset), that no eats 
+  lots of memory like TClientDataset, it frees the records it does not need so 
+  the engine can print/proces millions of records without memory problems but 
+  a bit slower if you print only a few thousand records.</p>
+<p>Because this, Delphi 5 Professional or lower can not be used as native components 
+  but you can use the ActiveX control.</p>
+<p><b>Q. Is Report Manager Engine Thread Safe so it can be used in multithreaded 
+  applications (servers)?</b></p>
+<p>Report Manager is thread safe but there are some issues not only related to 
+  Report Manager:<br>
+  - BDE is not thread safe by default (a session must be open for each thread), 
+  you can assign a session to a database report or you can assign a TDatabase 
+  directly to the database report component in runtime.<br>
+  - Warning about local dabase access modes, some database engines like Interbase/Firebird 
+  allow to set a path to the database directly (c:\database.gdb) using local access 
+  to database, you must avoid this because it's not thread safe you must use net 
+  access mode allways (localhost:c:\database.gdb)<br>
+  - Not all VisualCLX components are thread safe so you need to modify this VisualCLX 
+  components in the main thread, so the designer package is (becasuse this issue) 
+  not thread safe.</p>
+<p><b>Q. Can Report Manager print in dot matrix printers in Linux as fast as in 
+  Windows?</b></p>
+<p>Windows provides drivers and those drivers provide printer specific fonts, 
+  so the Windows GDI can merge graphics and texts, the printer driver does the 
+  real hard work of printing, Report Manager only search for the best suited font 
+  (a printer font) in Windows font list, select it and call Windows specific API 
+  to draw the text (this is the behaviour for use device fonts option)</p>
+<p>For Linux, Report Manager uses the Kylix graphic engine that uses the Qt graphic 
+  engine, the Qt graphics engine writes output usually in postcript and then the 
+  printer filter transform it to a understandable language to the printer (usually 
+  this work is done by ghostcript).</p>
+<p>So you can use a printer filter to convert postcript to text or better is the 
+  use of dot matrix and pos device feature, see documentation, the engine can 
+  generate text output with printer escape codes in Windows and Linux. See documentation.</p>
+<p><b>Q. Why does my report using Group Headers give strange results?</b></p>
+<p>For reports including group headers to work correctly the order of the data
+within the report must match the grouping structure of the report. Therefore the
+SQL statement returning the data (for example SQL SELECT) must include code to
+order the data to match the report definition. </p>
+<p><b>Q. Why does my Active Server Page freeze when using the ActiveX control?</b></p>
+<p>Active Server Pages (ASP) must not produce any console output for correct
+operation. ASP can correctly invoke the ActiveX control to generate PDF output
+if the following rules are followed</p>
+<ul>
+<li>You must use version 1.3+ of the OCX</li>
+<li>All of the properties to suppress output and dialogs to the console must be
+suppressed </li>
+</ul>
+<p>Previewing the report will not work from within an ASP program. Printing the 
+  report may also fail based on the printing environment setup on the Web server 
+  running the ASP (privileges). </p>
+<p><b>Q. What is two pass report option? What is the use of this feature?</b></p>
+<p>The engine is capable of preview the first page before calculating all the 
+  pages (can be thousands), this is the default behaviour for speed and memory 
+  consumtion (when printing, pages printed are released from memory).</p>
+<p>The engine is also capable of printing the total pages in the first page,it's 
+  also capable of going back to the first page to process a new subreport (paralel 
+  subreports), so you can print in the first page as many subreports as you want.</p>
+<p>The printing of total pages (PAGECOUNT) requires the previous calculation of 
+  the report, then PAGECOUNT is replaced with the total number of pages, the page 
+  count special expression can't be used inside expressions..</p>
+<p>So two pass report must be used for both cases, PAGECOUNT and SkipToPage. I 
+  doubt other engines implement SkipToPage, and I doubt other engines allow using 
+  PAGECOUNT in expressions, (for example in print condition of a section because 
+  can produce a dead lock).</p>
+<p><b>Q. While using the report in my software this error occur: Property xxx 
+  does not exists, what is wrong?</b></p>
+<p>You are reading a report saved with a new version, and your components installation 
+  (Delphi/Builder/Kylix) or your ActiveX component is older, so it's not able 
+  to execute reports that have new (unknown) properties onm it. Just reinstall 
+  the components with the newest version (Delphi/Builder/Kylix) or ActiveX control.</p>
+</body>
+</html>
+

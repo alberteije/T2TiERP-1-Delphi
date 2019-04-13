@@ -1,0 +1,196 @@
+<html>
+<head>
+<title>Report reference</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Component Reference</h2>
+<h3>Report</h3>
+<p></p>
+<p><b>Sumary</b></p>
+<table border="1">
+  <tr> 
+    <td>Internal component name</td>
+    <td>TRpReport</td>
+  </tr>
+  <tr> 
+    <td>Parent class</td>
+    <td>TComponent</td>
+  </tr>
+  <tr> 
+    <td>CLX/VCLReport property</td>
+    <td>Report</td>
+  </tr>
+  <tr>
+    <td>ActiveX Report property</td>
+    <td>Not available</td>
+  </tr>
+  <tr> 
+    <td>Unit name</td>
+    <td>rpreport.pas</td>
+  </tr>
+</table>
+<p><b>Description</b></p>
+<p>The report is the top level object, that is coneptually when you open a file 
+  you are reading a report, you can access report properties with <b>page setup 
+  item file menu</b>, the <b>Grid item of Display menu</b>, <b>Dataaccess configuration 
+  </b>and<b> Parameter definition</b> in Report menu.</p>
+<p><b>Published properties</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b> Property Name</b></td>
+    <td bgcolor="#FFFFCC"><b>Type</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td>GridWith</td>
+    <td> 
+      <p>TRpTwips</p>
+    </td>
+    <td>Horizontal grid spacing</td>
+  </tr>
+  <tr> 
+    <td>GridHeight</td>
+    <td> 
+      <p>TRpTwips</p>
+    </td>
+    <td>Vertical grid spacing</td>
+  </tr>
+  <tr> 
+    <td>GridEnabled</td>
+    <td>Boolean</td>
+    <td>Enables or disables the grid</td>
+  </tr>
+  <tr> 
+    <td>GridVisible</td>
+    <td>Boolean</td>
+    <td>Shows or hides the grid</td>
+  </tr>
+  <tr> 
+    <td>GridLines</td>
+    <td>Boolean</td>
+    <td>Draw the grid as lines or points</td>
+  </tr>
+  <tr> 
+    <td>GridColor</td>
+    <td>Integer</td>
+    <td>Grid color</td>
+  </tr>
+  <tr> 
+    <td>PrinterSelect</td>
+    <td> 
+      <p>TRpPrinterSelect</p>
+    </td>
+    <td>Printer selection before printing, 'Default Printer' will 
+      not select a printer. You can define printers clicking configure, see also 
+      <a href="pagesetup.html">page setup</a>.</td>
+  </tr>
+  <tr> 
+    <td>Pagesize</td>
+    <td> 
+      <p>TRpPageSize</p>
+    </td>
+    <td>The Pagesize property can be Default (printer selected default page size), 
+      Custom (you can specify a standard page size) or User defined (you must 
+      enter page width and height), see also <a href="pagesetup.html">page setup</a> 
+      and <a href="knownissues.html">known issues</a>.</td>
+  </tr>
+  <tr> 
+    <td>PageSizeQt</td>
+    <td>Integer</td>
+    <td>This is the page size standard index in the Qt library sequence, 
+      it apply only when Custom page size is selected</td>
+  </tr>
+  <tr> 
+    <td>CustomPageWidth</td>
+    <td> 
+      <p>TRpTwips</p>
+      </td>
+    <td>Page width, in the designerWidth in logical units (cms or inchess), internally 
+      is in twips, only applicable with user defined page sizes, see <a href="knownissues.html">known 
+      issues</a>.</td>
+  </tr>
+  <tr> 
+    <td>CustomPageHeight</td>
+    <td> 
+      <p>TRpTwips</p>
+      </td>
+    <td>Page height, in the designerWidth in logical units (cms or inchess), internally 
+      is in twips, only applicable with user defined page sizes, see <a href="knownissues.html">known 
+      issues</a>.</td>
+  </tr>
+  <tr> 
+    <td>LeftMargin, TopMargin, RightMargin, BottomMargin</td>
+    <td> 
+      <p>TRpTwips</p>
+      </td>
+    <td>Physical margins</td>
+  </tr>
+  <tr> 
+    <td>Copies</td>
+    <td>Integer</td>
+    <td>Number of copies to print by default, you can modify this 
+      value in printer setup dialog</td>
+  </tr>
+  <tr> 
+    <td>CollateCopies</td>
+    <td>Boolean</td>
+    <td>If more than one copy, if selected it will print first all 
+      the pages of one copy and then all the pages of next copy</td>
+  </tr>
+  <tr> 
+    <td>PageBackColor</td>
+    <td>Integer</td>
+    <td>Background page color (only in preview) it will not print 
+      the physical page with this color</td>
+  </tr>
+  <tr> 
+    <td>PrintOnlyIfDataAvailable</td>
+    <td>Boolean</td>
+    <td>If there is no data to print, it will show a message (no data 
+      to print) and will print nothing.</td>
+  </tr>
+  <tr> 
+    <td>Twopass</td>
+    <td>Boolean</td>
+    <td>Some printing issues need the precalculation of the entire 
+      report before printing the first page, that is for example the use/print 
+      of TOTAL_PAGES variable</td>
+  </tr>
+  <tr> 
+    <td>PrinterFonts</td>
+    <td>TRpPrinterFontsOption</td>
+    <td>Here you can force the use of printer fonts (always use) or 
+      left the printers configuration do the selection (default)</td>
+  </tr>
+  <tr> 
+    <td>Language</td>
+    <td>Integer</td>
+    <td>Language index, you can select a language, then alter the 
+      text in labels for each language you want to define the report.</td>
+  </tr>
+  <tr> 
+    <td>DataInfo</td>
+    <td>TRpDataInfoList</td>
+    <td>Colletion of datasets definitions, see <a href="refdatainfo.html">Database 
+      configuration reference </a></td>
+  </tr>
+  <tr> 
+    <td>DatabaseInfo</td>
+    <td>TRpDatabaseInfoList</td>
+    <td>Collection of connection definitions, see <a href="refdatainfo.html">Database 
+      configuration reference</a></td>
+  </tr>
+  <tr>
+    <td>Params</td>
+    <td>TRpParamList</td>
+    <td>
+      <p>Collection of report parameters, see <a href="refparameters.html">Report 
+        Parameters reference</a></p>
+      </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

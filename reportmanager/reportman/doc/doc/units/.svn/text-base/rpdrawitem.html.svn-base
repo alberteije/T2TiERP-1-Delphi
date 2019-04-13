@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Units documentation - rpdrawitem.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpdrawitem.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>TRpShape and TRpImage</b>.</p>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpShape</td>
+    <td>TRpCommonComponent</td>
+    <td>Implementation for printing shapes, lines...</td>
+  </tr>
+  <tr> 
+    <td>TRpImage</td>
+    <td>TRpCommonComponent</td>
+    <td>Implementation for printing images, the image can be embedded in the file, 
+      loaded from an external file, a database binary field or a database field 
+      linking to a file</td>
+  </tr>
+</table>
+</body>
+</html>

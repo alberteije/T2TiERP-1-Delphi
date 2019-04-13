@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>How the engine works</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Introduction</h2>
+<h3>Engine overview, how it works?</h3>
+<p>This is a brief introduction of how Report Manager process a report so you 
+  can understand the result and design reports in a efficient way.</p>
+<p><b>Report Components</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC"><b>Name</b></td>
+    <td bgcolor="#FFFFCC"><b>Description</b></td>
+  </tr>
+  <tr> 
+    <td><b>Datasets</b></td>
+    <td>Datasets are <b>optional but a report usually prints data stored in datasets</b>, 
+      the datasets are opened at the beginning of the process, you can <b>open 
+      several datasets and establish relations between them</b></td>
+  </tr>
+  <tr> 
+    <td><b>Parameters</b></td>
+    <td>Parameters are variables that can be printed and can be entered by the 
+      end user, <b>you can assign parameters to datasets (parametrized querys)</b></td>
+  </tr>
+  <tr> 
+    <td><b>Subreport</b></td>
+    <td>A Report contains <b>at least one subreport</b>, if it has more than one 
+      the engine will process them in natural order. You can <b>assign a dataset 
+      to a subreport</b>, if you assign a dataset the engine will print all the 
+      <b>detail type sections once for each record</b> in the dataset, else it 
+      will print detail sections once</td>
+  </tr>
+  <tr> 
+    <td><b>Sections</b></td>
+    <td>A Subreport contains sections (<b>bands</b>), the most common section 
+      type is <b>detail</b>, but other are <b>page headers, page footers</b> and 
+      <b>group headers and footers</b>. The engine will print page headers and 
+      footers as necessary, it will check group changes, print group headers and 
+      footers and print the detail type sections for each record of the dataset 
+      assigned to the subreport. A section have useful properties like print condition, 
+      align bottom, horizontal displacement etc...</td>
+  </tr>
+  <tr> 
+    <td><b>Components</b></td>
+    <td>Each section can contain components, the components are the really printable 
+      items, they are <b>labels, expressions (dataset fields), images, drawings...</b>, 
+      this componets have properties like Font properties, color, print condition...</td>
+  </tr>
+</table>
+<p>The engine process subreports, using assigned datasets, printing sections (page 
+  headers, footers and details). To print a section means to print all the components 
+  contained in it and advance print position by the size of the printed section.</p>
+<p>Here is a snapshot of a dataset definition (tut1.rep):</p>
+<p><img src="images/howitworks2.jpg" width="548" height="488"></p>
+<p>And a subreport with sections and components:</p>
+<p><img src="images/howitworks.jpg" width="623" height="430"></p>
+<p>And the resulting print preview:</p>
+<p><img src="images/howitworks3.jpg" width="549" height="429"></p>
+</body>
+</html>

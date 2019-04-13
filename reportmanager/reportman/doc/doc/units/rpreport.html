@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Units documentation - rpreport.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpreport.pas</h3>
+<h4>Description</h4>
+<p>This unit implements the <b>basic print process throught the TRpReport class</b>, 
+  the TRpReport class stores database connection information (databaseinfo), datasets 
+  information (datainfo), and subreports (subreports), the TRpReport class need 
+  a driver (rpmetafile.pas) to perform a print process.</p>
+<h4>Types</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td> TRpProgressEvent=procedure (Sender:TRpReport;var docancel:boolean) of 
+      object; </td>
+    <td>Function definition to track progress of report processing</td>
+  </tr>
+</table>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpIdenReportVar</td>
+    <td>TIdenFunction</td>
+    <td>A evaluator function model that provides access to the report component</td>
+  </tr>
+  <tr> 
+    <td>TIdenEof</td>
+    <td>TIdenFunction</td>
+    <td>A evaluator function with access to the report component to check the 
+      eof condition of a dataset by alias</td>
+  </tr>
+  <tr> 
+    <td>TRpSubReportListItem</td>
+    <td>TCollectionItem</td>
+    <td>Item containing a reference to a subreport component</td>
+  </tr>
+  <tr> 
+    <td>TRpSubReportList</td>
+    <td>TCollection</td>
+    <td>Collection of subreport items, so the report is build of subreports, that 
+      can be printed in naturar order or in parent/child relations</td>
+  </tr>
+  <tr> 
+    <td>TRpReport</td>
+    <td>TComponent</td>
+    <td>The component doing the main process of printing using a driver, it also 
+      implements self streaming, so you can save any report definition to any 
+      stream </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>Units documentation - rpevalfunc.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpevalfunc.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b> evaluator functions, </b>see evaluator documentation 
+  for functional description<b>.</b></p>
+<h4>Types</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpNewValue</td>
+    <td>
+      <p>procedure (Y:Single;Cambio:Boolean;leyen,textleyen:string) of object;</p>
+      <p>Event used to trigger new values inside graph variables while executing 
+        the report</p>
+    </td>
+  </tr>
+</table>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TVariableGrap</td>
+    <td>TIdenVariable</td>
+    <td>A special variable used to fill graphs in the reporting engine</td>
+  </tr>
+  <tr> 
+    <td>TIdenUppercase</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenLowercase</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenHourMinSec</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenSinus</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenFloatToDateTime</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenRound</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenInt</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenVal</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenSTR</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenTrim</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenLEFT</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenPos</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenGraphicClear</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenModul</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenSQRT</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenToday</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenTime</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenNow</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenNULL</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenMonth</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenEvalText</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenMonthname</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenYear</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenDay</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenSubstr</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenFormatStr</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+  <tr> 
+    <td>TIdenNumToText</td>
+    <td>TIdenFunction</td>
+    <td>Evaluator function</td>
+  </tr>
+</table>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td> function Roundfloat(num:double;redondeo:double):double; </td>
+    <td>Rounds a double to a fractional value, for example in neares 0.05 multiplier</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h4>&nbsp;</h4>
+</body>
+</html>

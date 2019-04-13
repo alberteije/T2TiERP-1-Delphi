@@ -1,0 +1,208 @@
+# ---------------------------------------------------------------------------
+!if !$d(BCB)
+BCB = $(MAKEDIR)\..
+!endif
+
+# ---------------------------------------------------------------------------
+# IDE SECTION
+# ---------------------------------------------------------------------------
+# The following section of the project makefile is managed by the BCB IDE.
+# It is recommended to use the IDE to change any of the values in this
+# section.
+# ---------------------------------------------------------------------------
+
+VERSION = BCB.04.04
+# ---------------------------------------------------------------------------
+PROJECT = Project1.exe
+OBJFILES = Project1.obj Unit1.obj
+RESFILES = Project1.res
+RESDEPEN = $(RESFILES) Unit1.dfm
+LIBFILES =
+IDLGENFILES =
+IDLFILES =
+LIBRARIES = rppack_builder4.lib
+SPARELIBS = Vcl40.lib rppack_builder4.lib VCLMID40.lib VCLDB40.lib VCLX40.lib
+PACKAGES = Vcl40.bpi Vclx40.bpi vcljpg40.bpi Vclmid40.bpi Vcldb40.bpi vcldbx40.bpi \
+  dclocx40.bpi
+DEFFILE =
+# ---------------------------------------------------------------------------
+PATHCPP = .;
+PATHASM = .;
+PATHPAS = .;
+PATHRC = .;
+DEBUGLIBPATH = $(BCB)\lib\debug
+RELEASELIBPATH = $(BCB)\lib\release
+USERDEFINES =
+SYSDEFINES = _RTLDLL;NO_STRICT;USEPACKAGES
+# ---------------------------------------------------------------------------
+CFLAG1 = -I..\..;..\..\toni\cvsroot\reportman\reportman\tests\builder4;$(BCB)\include;$(BCB)\include\vcl \
+  -Od -Hc -H=$(BCB)\lib\vcl40.csm -w -Ve -r- -a8 -k -y -v -vi- -c -b- -w-par \
+  -w-inl -Vx -tW -tWM -D$(SYSDEFINES);$(USERDEFINES)
+IDLCFLAGS = -I..\.. -I..\..\toni\cvsroot\reportman\reportman\tests\builder4 \
+  -I$(BCB)\include -I$(BCB)\include\vcl -src_suffixcpp
+PFLAGS = -U$(BCB)\Projects\Lib;..\..;..\..\toni\cvsroot\reportman\reportman\tests\builder4;$(BCB)\lib\obj;$(BCB)\lib;$(RELEASELIBPATH) \
+  -I..\..;..\..\toni\cvsroot\reportman\reportman\tests\builder4;$(BCB)\include;$(BCB)\include\vcl \
+  -$YD -$W -$O- -v -JPHNE -M
+RFLAGS = -i..\..;..\..\toni\cvsroot\reportman\reportman\tests\builder4;$(BCB)\include;$(BCB)\include\vcl
+AFLAGS = /i..\..\toni\cvsroot\reportman\reportman\tests\builder4 /i$(BCB)\include \
+  /i$(BCB)\include\vcl /mx /w2 /zd
+LFLAGS = -L$(BCB)\Projects\Lib;..\..;..\..\toni\cvsroot\reportman\reportman\tests\builder4;$(BCB)\lib\obj;$(BCB)\lib;$(RELEASELIBPATH) \
+  -aa -Tpe -x -Gn -v
+# ---------------------------------------------------------------------------
+ALLOBJ = c0w32.obj Memmgr.Lib $(PACKAGES) sysinit.obj $(OBJFILES)
+ALLRES = $(RESFILES)
+ALLLIB = $(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib
+# ---------------------------------------------------------------------------
+!ifdef IDEOPTIONS
+
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=3082
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+C:\prog\salvador\CCMerloniCS\componentes\BPL\gestor_b.bpl=d:\prog\cbuilder4\Projects\Bpl\gestor_b
+C:\prog\salvador\CCMerloniCS\componentes\BPL\dt_pack.bpl=Componentes de fechas
+C:\prog\salvador\CCMerloniCS\componentes\BPL\FreewareC40.bpl=AHM Triton Tools 2000 - Freeware Components C++Builder 4.0 Full Version
+C:\prog\salvador\CCMerloniCS\componentes\BPL\TB97_cb4.bpl=Toolbar97 Components
+C:\prog\salvador\CCMerloniCS\componentes\BPL\TMSC4.bpl=TMS components
+C:\prog\salvador\CCMerloniCS\componentes\BPL\ziptvc4.bpl=C:\borland\ziptv\ziptvc4
+C:\prog\salvador\CCMerloniCS\componentes\BPL\AHMSystemC40.bpl=AHM Triton Tools 2000 - System Components C++Builder 4.0 Full Version
+C:\prog\salvador\CCMerloniCS\componentes\BPL\AHMDialogsC40.bpl=AHM Triton Tools 2000 - Dialog Components C++Builder 4.0 Full Version
+C:\prog\salvador\CCMerloniCS\componentes\BPL\AHMEMailC40.bpl=AHM Triton Tools 2000 - E-Mail Components C++Builder 4.0 Full Version
+C:\prog\salvador\CCMerloniCS\componentes\BPL\AHMEnhancedC40.bpl=AHM Triton Tools 2000 - Enhanced Components C++Builder 4.0 Full Version
+C:\prog\salvador\CCMerloniCS\componentes\BPL\AHMMenusC40.bpl=AHM Triton Tools 2000 - Menu Components C++Builder 4.0 Full Version
+C:\prog\salvador\CCMerloniCS\componentes\BPL\AHMStandardC40.bpl=AHM Triton Tools 2000 - Standard Components C++Builder 4.0 Full Version
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+InMemoryExe=0
+ShowInfoMsgs=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+!endif
+
+# ---------------------------------------------------------------------------
+# MAKE SECTION
+# ---------------------------------------------------------------------------
+# This section of the project file is not used by the BCB IDE.  It is for
+# the benefit of building from the command-line using the MAKE utility.
+# ---------------------------------------------------------------------------
+
+.autodepend
+# ---------------------------------------------------------------------------
+!if !$d(BCC32)
+BCC32 = bcc32
+!endif
+
+!if !$d(CPP32)
+CPP32 = cpp32
+!endif
+
+!if !$d(DCC32)
+DCC32 = dcc32
+!endif
+
+!if !$d(TASM32)
+TASM32 = tasm32
+!endif
+
+!if !$d(LINKER)
+LINKER = ilink32
+!endif
+
+!if !$d(BRCC32)
+BRCC32 = brcc32
+!endif
+
+!if !$d(IDL2CPP)
+IDL2CPP = idl2cpp
+!endif
+
+# ---------------------------------------------------------------------------
+!if $d(PATHCPP)
+.PATH.CPP = $(PATHCPP)
+.PATH.C   = $(PATHCPP)
+!endif
+
+!if $d(PATHPAS)
+.PATH.PAS = $(PATHPAS)
+!endif
+
+!if $d(PATHASM)
+.PATH.ASM = $(PATHASM)
+!endif
+
+!if $d(PATHRC)
+.PATH.RC  = $(PATHRC)
+!endif
+# ---------------------------------------------------------------------------
+$(PROJECT): $(IDLGENFILES) $(OBJFILES) $(RESDEPEN) $(DEFFILE)
+    $(BCB)\BIN\$(LINKER) @&&!
+    $(LFLAGS) +
+    $(ALLOBJ), +
+    $(PROJECT),, +
+    $(ALLLIB), +
+    $(DEFFILE), +
+    $(ALLRES)
+!
+# ---------------------------------------------------------------------------
+.pas.hpp:
+    $(BCB)\BIN\$(DCC32) $(PFLAGS) {$< }
+
+.pas.obj:
+    $(BCB)\BIN\$(DCC32) $(PFLAGS) {$< }
+
+.cpp.obj:
+    $(BCB)\BIN\$(BCC32) $(CFLAG1) -n$(@D) {$< }
+
+.c.obj:
+    $(BCB)\BIN\$(BCC32) $(CFLAG1) -n$(@D) {$< }
+
+.c.i:
+    $(BCB)\BIN\$(CPP32) $(CFLAG1) -n. {$< }
+
+.cpp.i:
+    $(BCB)\BIN\$(CPP32) $(CFLAG1) -n. {$< }
+
+.asm.obj:
+    $(BCB)\BIN\$(TASM32) $(AFLAGS) $<, $@
+
+.rc.res:
+    $(BCB)\BIN\$(BRCC32) $(RFLAGS) -fo$@ $<
+# ---------------------------------------------------------------------------

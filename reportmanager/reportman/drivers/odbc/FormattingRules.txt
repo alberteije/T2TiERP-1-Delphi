@@ -1,0 +1,27 @@
+DO NOT REFORMAT EXISTING CODE
+
+Here are the formatting rules for new code --
+
+As closely as possible, follow Borland formatting conventions.
+For this, run code though DelForExp (Delphi Formatting Expert),
+set with "Borland Style", but wrap lines at position 100.
+
+Variable naming and capitalization:
+Use lowercase for reserved words (as per Borland standard) [N.B. "string" is a reserved word!]
+Use "infix caps" (also known as "camel caps") for identifiers.
+In this convention, each word within variable starts with uppercase, example, MyVariableName.
+In the standard used in this project, acronyms are treated as single words,
+example - MySqlOdbcDbxVariableName (NOT MySQLODBCDBXVariableName)
+Common type names are treated as single words, not two words,
+example, Smallint, Timestamp (not SmallInt, TimeStamp)
+American English spellings are used, not British English, 
+examples, Color, License, Synchronize (not Colour, Licence (as a noun), Synchronise).
+
+Exceptions to "infix" caps:
+Our class member variables begin lowercase "f"
+(Because then the difference between a method and a field is more distinct)
+Our procedure local variables may begin lowercase or uppercase (eg i, aTempVar, or TempVar)
+
+Where names come from a pre-defined header, (eg, Interface method names in DBXpress.pas,
+or names in OdbcApi.pas), we always follow capitalization of the header file, even if it
+is inconsistent (eg ISQLCommand.close, ISQLCommand.getParameter, ISQLCommand.GetOption).

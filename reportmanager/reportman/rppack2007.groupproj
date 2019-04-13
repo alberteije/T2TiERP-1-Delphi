@@ -1,0 +1,54 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{bc536daf-4eed-4817-a882-37afc66c705c}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="rppackdesignvcl_del2007.dproj" />
+    <Projects Include="rppackvcl_del2007.dproj" />
+    <Projects Include="rppack_del2007.dproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="rppack_del2007">
+    <MSBuild Projects="rppack_del2007.dproj" Targets="" />
+  </Target>
+  <Target Name="rppack_del2007:Clean">
+    <MSBuild Projects="rppack_del2007.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="rppack_del2007:Make">
+    <MSBuild Projects="rppack_del2007.dproj" Targets="Make" />
+  </Target>
+  <Target Name="rppackvcl_del2007">
+    <MSBuild Projects="rppackvcl_del2007.dproj" Targets="" />
+  </Target>
+  <Target Name="rppackvcl_del2007:Clean">
+    <MSBuild Projects="rppackvcl_del2007.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="rppackvcl_del2007:Make">
+    <MSBuild Projects="rppackvcl_del2007.dproj" Targets="Make" />
+  </Target>
+  <Target Name="rppackdesignvcl_del2007">
+    <MSBuild Projects="rppackdesignvcl_del2007.dproj" Targets="" />
+  </Target>
+  <Target Name="rppackdesignvcl_del2007:Clean">
+    <MSBuild Projects="rppackdesignvcl_del2007.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="rppackdesignvcl_del2007:Make">
+    <MSBuild Projects="rppackdesignvcl_del2007.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="rppack_del2007;rppackvcl_del2007;rppackdesignvcl_del2007" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="rppack_del2007:Clean;rppackvcl_del2007:Clean;rppackdesignvcl_del2007:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="rppack_del2007:Make;rppackvcl_del2007:Make;rppackdesignvcl_del2007:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>

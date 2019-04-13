@@ -1,0 +1,15 @@
+EXPORTS
+rp_preview
+rp_print
+rp_lasterror
+rp_execute
+rp_close
+rp_open
+rp_executeremote
+rp_previewremote
+rp_printremote
+rp_setparamvalue
+rp_setparamvaluevar
+rp_getparamname
+rp_getparamcount
+rp_setadoconnectionstring

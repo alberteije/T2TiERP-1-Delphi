@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Printing labels (horizontal movement)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Advanced report design</h2>
+<h3>Printing labels (horz.desplacement/vert.despacement)</h3>
+<p></p>
+<p>To print labels you must first:</p>
+<ul>
+  <li>Measure the top-left label distance from physical page</li>
+  <li>Measure the label with and height including the space between labels</li>
+  <li>Examine printer limitations, that is printable area, if the printer limitations 
+    invades label space then you must consider not use the first row (or column) 
+    of labels to use all the space of the other labels or not use the this space 
+    (for each label)</li>
+</ul>
+<p>The design of a report that prints labels follows this steps:</p>
+<ul>
+  <li>Create a new report, and setup the main dataset, test it placing some labels 
+    and fields</li>
+  <li>Set page margins as the top-left label distance of the first label</li>
+  <li>Set the with and height of the detail as the with and height of the labels 
+    plus the label distance</li>
+  <li>Set detail Horz.Desp. property to true for left to right labels, or Vert.Desp 
+    to true for up to down labels.</li>
+  <li>You can test the adjustment by placing a shape of type rectangle and print 
+    it (in Windows, if the driver is correct, the preview of the printable area 
+    should be exact)</li>
+  <li>If the printer has printable area limitations you can omit the first row 
+    or column by adding this space to top-left page margins or not use this space</li>
+</ul>
+<p>Here is a snapshot of label1.rep report design, 6,5cm x 3 cm labels </p>
+<p><img src="images/label1.jpg"></p>
+<p>The page setup for that report</p>
+<p><img src="images/label1c.jpg"></p>
+<p>And preview using Windows GDI Driver</p>
+<p><img src="images/label1b.jpg"></p>
+<p>You can view in this sample diferent labels of diferent employees, usually 
+  you need to print several copies of the same label, to do that you must provide 
+  a dataset with X copies of the same record.</p>
+<p>If you want to begin printing labels after 10 labels then you must provide 
+  10 empty records, so the space of this labels will be skiped.</p>
+<p>The building of the dataset can be server side, if you use for example a SQL 
+  database engine you can write a stored procedure with a parameter like number 
+  of blank records, number of copies to print and return the built dataset.</p>
+<p>This is a sample using Interbase/Firebird database engine:</p>
+<code><p>CREATE PROCEDURE LABEL_ADRESSES <br>
+  (<br>
+  BLANKS INTEGER,<br>
+  QTY INTEGER,<br>
+  CLIENTEINI INTEGER,<br>
+  CLIENTEFIN INTEGER<br>
+  )<br>
+  RETURNS<br>
+  (<br>
+  ACODE INTEGER,<br>
+  ANAME VARCHAR(40) CHARACTER SET WIN1252,<br>
+  AADRESS VARCHAR(50) CHARACTER SET WIN1252,<br>
+  ACODE_POSTAL VARCHAR(15) CHARACTER SET WIN1252,<br>
+  ALOCATION VARCHAR(40) CHARACTER SET WIN1252,<br>
+  PROVINCE VARCHAR(30) CHARACTER SET WIN1252<br>
+  )<br>
+  AS<br>
+  DECLARE VARIABLE I INTEGER;<br>
+  BEGIN<br>
+  I=0;<br>
+  /*BLANKS*/<br>
+  ACODE=0;<br>
+  ANAME='';<br>
+  AADRESS='';<br>
+  ACODE_POSTAL='';<br>
+  ALOCATION='';<br>
+  PROVINCE='';<br>
+  WHILE (:I&lt;:BLANKS) DO<br>
+  BEGIN<br>
+  SUSPEND;<br>
+  I=I+1;<br>
+  END<br>
+  /*QTY*/<br>
+  I=0;<br>
+  FOR SELECT C.ACODE,C.ANAME,C.AADRESS,C.ACODE_POSTAL,C.ALOCATION,C.PROVINCE<br>
+  FROM CLIENTES C<br>
+  WHERE C.ACODE BETWEEN :CLIENTEINI AND :CLIENTEFIN<br>
+  INTO :ACODE,:ANAME,:AADRESS,:ACODE_POSTAL,:ALOCATION,:PROVINCE<br>
+  DO<br>
+  BEGIN<br>
+  I=0;<br>
+  WHILE (:I&lt;:QTY) DO<br>
+  BEGIN<br>
+  SUSPEND;<br>
+  I=I+1;<br>
+  END <br>
+  END <br>
+  END</p></code>
+<p>To prepare a dataset to be passed to the reporting engine with a number of 
+  records you can use TClientDataset and assign the dataset to the reporting engine:</p>
+<code><p>cdataset:TClientDataset;</p>
+<p>...</p>
+<p>cdataset.FieldDefs.Assign(itemsdataset.FieldDefs);</p>
+<p>cdataset.CreateDataset;</p>
+<p>// Repeat for each number of blank records</p>
+<p>cdataset.Append;</p>
+<p>cdataset.Post;</p>
+<p></p>
+<p></p>
+<p>// Repeat for each number of filled records</p>
+<p>cdataset.Append;</p>
+<p>for i:=0 to cdataset.FieldCount-1 do</p>
+<p>begin</p>
+<p> cdataset.Fields[i].AsVariant:=itemsdataset.Fields[i];</p>
+<p>end;</p>
+<p>cdataset.Post;</p>
+<p>// At design time you must assign the clientdataset to the report using a TRpAlias 
+  component</p>
+<p>CLXReport1.Execute; </p>
+</code>
+<p>&nbsp;</p>
+</body>
+</html>

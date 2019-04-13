@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc
+END
+ODBC32.LIB
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/ODBC32.LIB
+END
+OdbcApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/OdbcApi.pas
+END
+Install.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/Install.txt
+END
+DbxOpenOdbcTrace.pas
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/DbxOpenOdbcTrace.pas
+END
+ChangesLog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/ChangesLog.txt
+END
+DbxOpenOdbcInterface.pas
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/DbxOpenOdbcInterface.pas
+END
+dbxdrivers.ini
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/dbxdrivers.ini
+END
+dbxconnections.ini
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/dbxconnections.ini
+END
+RegExpr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/RegExpr.pas
+END
+DbxOpenOdbc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/DbxOpenOdbc.inc
+END
+License.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/License.txt
+END
+FormattingRules.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/FormattingRules.txt
+END
+DbxObjectParser.pas
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/DbxObjectParser.pas
+END
+Header.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/Header.txt
+END
+dbxoodbc.dpr
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/dbxoodbc.dpr
+END
+DbxOpenOdbc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/DbxOpenOdbc.pas
+END
+Readme.Txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/Readme.Txt
+END
+dbxoodbc.res
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/drivers/odbc/dbxoodbc.res
+END

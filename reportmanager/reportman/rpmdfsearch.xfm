@@ -1,0 +1,109 @@
+object FRpSearchParam: TFRpSearchParam
+  Left = 246
+  Top = 196
+  Width = 471
+  Height = 334
+  VertScrollBar.Range = 65
+  ActiveControl = ESearch
+  Caption = 'Search'
+  Color = clButton
+  Font.Color = clText
+  Font.Height = 11
+  Font.Name = 'MS Sans Serif'
+  Font.Pitch = fpVariable
+  Font.Style = []
+  Font.Weight = 40
+  ParentFont = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object PTop: TPanel
+    Left = 0
+    Top = 0
+    Width = 471
+    Height = 65
+    Align = alTop
+    TabOrder = 0
+    object LSearch: TLabel
+      Left = 8
+      Top = 12
+      Width = 34
+      Height = 13
+      Caption = 'Search'
+    end
+    object ESearch: TEdit
+      Left = 132
+      Top = 8
+      Width = 219
+      Height = 21
+      Anchors = [akLeft, akTop, akRight]
+      TabOrder = 0
+      OnChange = ESearchChange
+    end
+    object BSearch: TButton
+      Left = 366
+      Top = 32
+      Width = 89
+      Height = 25
+      Anchors = [akTop, akRight]
+      Caption = 'Search'
+      TabOrder = 1
+      OnClick = BSearchClick
+    end
+    object BOK: TButton
+      Left = 366
+      Top = 4
+      Width = 89
+      Height = 25
+      Anchors = [akTop, akRight]
+      Caption = 'Ok'
+      Enabled = False
+      TabOrder = 2
+      OnClick = BOKClick
+    end
+  end
+  object GridData: TDBGrid
+    Left = 0
+    Top = 65
+    Width = 471
+    Height = 269
+    Align = alClient
+    DataSource = DataSource1
+    ReadOnly = True
+    TabOrder = 1
+    TitleFont.Color = clText
+    TitleFont.Height = 11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Pitch = fpVariable
+    TitleFont.Style = []
+    TitleFont.Weight = 40
+    Visible = False
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 3000
+    OnTimer = Timer1Timer
+    Left = 164
+    Top = 40
+  end
+  object DataSource1: TDataSource
+    DataSet = DData
+    Left = 96
+    Top = 136
+  end
+  object DData: TClientDataSet
+    Aggregates = <>
+    FetchOnDemand = False
+    PacketRecords = 150
+    Params = <>
+    ProviderName = 'Dataprov'
+    AfterScroll = DDataAfterScroll
+    Left = 148
+    Top = 136
+  end
+  object Dataprov: TDataSetProvider
+    Left = 196
+    Top = 136
+  end
+end

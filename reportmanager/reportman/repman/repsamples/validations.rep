@@ -1,0 +1,261 @@
+object TRpReport
+  PageBackColor = 16777215
+  SubReports = <
+    item
+      SubReport = TRpSubReport0
+    end>
+  DataInfo = <>
+  DatabaseInfo = <>
+  Params = <
+    item
+      Name = 'INTERVALO_FECHAS'
+      AllowNulls = False
+      Value = 38509d
+      ParamType = rpParamDate
+      Description = 'Entre una fecha de 2005'
+      Hint = 'Si no entra una fecha de 2005 se producir'#225' un error'
+      Search = ''
+      ErrorMessage = 'La fecha debe ser del a'#241'o 2005'
+      Validation = 
+        '(M.INTERVALO_FECHAS<=M.FECHA_FINAL) AND (M.INTERVALO_FECHAS>=M.F' +
+        'ECHA_INICIAL)'
+    end
+    item
+      Name = 'FECHA_INICIAL'
+      Visible = False
+      AllowNulls = False
+      Value = 38353d
+      ParamType = rpParamDate
+      Description = ''
+      Hint = ''
+      Search = ''
+      ErrorMessage = ''
+      Validation = ''
+    end
+    item
+      Name = 'FECHA_FINAL'
+      Visible = False
+      AllowNulls = False
+      Value = 38717d
+      ParamType = rpParamDate
+      Description = ''
+      Hint = ''
+      Search = ''
+      ErrorMessage = ''
+      Validation = ''
+    end
+    item
+      Name = 'CADENA_BUSQUEDA'
+      AllowNulls = False
+      Value = 'BUSQUEDA'
+      Description = 'Entre la cadena de b'#250'squeda (m'#237'nimo 3 caracteres)'
+      Hint = ''
+      Search = ''
+      ErrorMessage = 
+        'Debe entrar una cadena de b'#250'squeda de longitud mayor o igual que' +
+        ' 3'
+      Validation = 'LENGTH(TRIM(M.CADENA_BUSQUEDA))>=3'
+    end
+    item
+      Name = 'INTERVALO_NUMERICO'
+      AllowNulls = False
+      Value = 2
+      ParamType = rpParamInteger
+      Description = 'Entre un valor positivo menor que 10'
+      Hint = ''
+      Search = ''
+      ErrorMessage = 'Intervalo num'#233'rico incorrecto'
+      Validation = 
+        '(M.INTERVALO_NUMERICO>=0) AND (M.INTERVALO_NUMERICO<=M.NUMERO_FI' +
+        'N)'
+    end
+    item
+      Name = 'NUMERO_FIN'
+      Visible = False
+      AllowNulls = False
+      Value = 10
+      ParamType = rpParamInteger
+      Description = ''
+      Hint = ''
+      Search = ''
+      ErrorMessage = ''
+      Validation = ''
+    end>
+  StreamFormat = rpStreamText
+  ReportAction = []
+  Type1Font = poHelvetica
+  WFontName = 'Arial'
+  LFontName = 'Helvetica'
+  object TRpSubReport0: TRpSubReport
+    Sections = <
+      item
+        Section = TRpSection0
+      end>
+  end
+  object TRpSection0: TRpSection
+    Width = 10772
+    Height = 2355
+    SubReport = TRpSubReport0
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecdetail
+    Components = <
+      item
+        Component = TRpLabel0
+      end
+      item
+        Component = TRpLabel1
+      end
+      item
+        Component = TRpExpression0
+      end
+      item
+        Component = TRpLabel2
+      end
+      item
+        Component = TRpExpression1
+      end
+      item
+        Component = TRpLabel3
+      end
+      item
+        Component = TRpExpression2
+      end>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpLabel0: TRpLabel
+    Width = 1605
+    Height = 345
+    PosX = 810
+    PosY = 570
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Validaciones ok'
+  end
+  object TRpExpression0: TRpExpression
+    Width = 1050
+    Height = 264
+    PosX = 2985
+    PosY = 1035
+    Type1Font = poHelvetica
+    DisplayFormat = 'dd/mm/yyyy'
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'M.INTERVALO_FECHAS'
+    DisplayFormat = 'dd/mm/yyyy'
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel1: TRpLabel
+    Width = 2070
+    Height = 345
+    PosX = 810
+    PosY = 1035
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Parametro entre fechas:'
+  end
+  object TRpLabel2: TRpLabel
+    Width = 2070
+    Height = 345
+    PosX = 810
+    PosY = 1500
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Cadena de b'#250'squeda'
+  end
+  object TRpExpression1: TRpExpression
+    Width = 1050
+    Height = 264
+    PosX = 2985
+    PosY = 1500
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'M.CADENA_BUSQUEDA'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel3: TRpLabel
+    Width = 2070
+    Height = 240
+    PosX = 810
+    PosY = 1950
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Numero menor que10'
+  end
+  object TRpExpression2: TRpExpression
+    Width = 1050
+    Height = 264
+    PosX = 2985
+    PosY = 1980
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'M.INTERVALO_NUMERICO'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+end

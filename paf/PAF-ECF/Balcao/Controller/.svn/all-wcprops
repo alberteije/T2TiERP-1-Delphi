@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Balcao/Controller
+END
+NfeConfiguracaoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Balcao/Controller/NfeConfiguracaoController.pas
+END
+DAVController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Balcao/Controller/DAVController.pas
+END
+OperadorController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Balcao/Controller/OperadorController.pas
+END
+EmpresaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Balcao/Controller/EmpresaController.pas
+END
+ProdutoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Balcao/Controller/ProdutoController.pas
+END
+ClienteController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Balcao/Controller/ClienteController.pas
+END
+PreVendaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Balcao/Controller/PreVendaController.pas
+END
+NFeController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/t2tierp_delphi_pafecf/!svn/ver/344/trunk/PAF-ECF/Balcao/Controller/NFeController.pas
+END

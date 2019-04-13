@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/sample
+END
+Unit1.nfm
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/sample/Unit1.nfm
+END
+Unit1.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/sample/Unit1.pas
+END
+Project1.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/sample/Project1.cfg
+END
+Project1.bdsproj
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/sample/Project1.bdsproj
+END
+Project1.dpr
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/sample/Project1.dpr
+END
+samplenet.rep
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_report_manager/!svn/ver/2/trunk/reportman/sample/samplenet.rep
+END

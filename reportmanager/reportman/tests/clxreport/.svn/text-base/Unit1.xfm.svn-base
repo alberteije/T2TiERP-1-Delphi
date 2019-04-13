@@ -1,0 +1,118 @@
+object Form1: TForm1
+  Left = 214
+  Top = 291
+  Width = 516
+  Height = 201
+  VertScrollBar.Range = 193
+  HorzScrollBar.Range = 505
+  ActiveControl = Button1
+  Caption = 'Form1'
+  Color = clBackground
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object Button1: TButton
+    Left = 8
+    Top = 64
+    Width = 105
+    Height = 33
+    Caption = 'Preview'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 328
+    Top = 64
+    Width = 137
+    Height = 33
+    Caption = 'Save to PDF'
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Label1: TLabel
+    Left = 328
+    Top = 8
+    Width = 66
+    Height = 13
+    Caption = 'PDF Filename'
+  end
+  object ETest: TEdit
+    Left = 328
+    Top = 28
+    Width = 177
+    Height = 21
+    TabOrder = 3
+    Text = 'test.pdf'
+  end
+  object BDesign: TButton
+    Left = 224
+    Top = 64
+    Width = 89
+    Height = 33
+    Caption = 'Design'
+    TabOrder = 4
+    OnClick = BDesignClick
+  end
+  object EReportName: TEdit
+    Left = 16
+    Top = 28
+    Width = 181
+    Height = 21
+    TabOrder = 5
+    Text = 'sample4.rep'
+  end
+  object Label2: TLabel
+    Left = 12
+    Top = 8
+    Width = 77
+    Height = 13
+    Caption = 'Report Filename'
+  end
+  object BPrint: TButton
+    Left = 120
+    Top = 64
+    Width = 97
+    Height = 33
+    Caption = 'Print'
+    TabOrder = 7
+    OnClick = BPrintClick
+  end
+  object Button3: TButton
+    Left = 12
+    Top = 164
+    Width = 169
+    Height = 29
+    Caption = 'Preview opened in design'
+    TabOrder = 8
+    OnClick = Button3Click
+  end
+  object CLXReport1: TCLXReport
+    Filename = 'sample4.rep'
+    Title = 'Untitled'
+    Left = 232
+    Top = 20
+  end
+  object RpDesigner1: TRpDesigner
+    Filename = 'sample4.rep'
+    Left = 264
+    Top = 20
+  end
+  object RpAlias1: TRpAlias
+    List = <
+      item
+        Alias = 'FISH'
+        Dataset = ClientDataSet1
+      end>
+    Left = 204
+    Top = 156
+  end
+  object ClientDataSet1: TClientDataSet
+    Aggregates = <>
+    IndexFieldNames = 'Category'
+    Params = <>
+    Left = 232
+    Top = 156
+  end
+end

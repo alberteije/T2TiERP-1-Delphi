@@ -1,0 +1,165 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{81BC52E3-014F-41B7-9B86-4D50F096F3B6}</ProjectGuid>
+			<MainSource>Balcao.dpr</MainSource>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<ProjectVersion>12.0</ProjectVersion>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_ExeOutput>..\PAF\</DCC_ExeOutput>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_DependencyCheckOutputName>..\PAF\Balcao.exe</DCC_DependencyCheckOutputName>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_Platform>x86</DCC_Platform>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="Balcao.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="UDataModule.pas">
+				<Form>FDataModule</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="ULogin.pas">
+				<Form>FLogin</Form>
+			</DCCReference>
+			<DCCReference Include="UMenu.pas">
+				<Form>FMenu</Form>
+			</DCCReference>
+			<DCCReference Include="UDAV.pas">
+				<Form>FDAV</Form>
+			</DCCReference>
+			<DCCReference Include="UImportaProduto.pas">
+				<Form>FImportaProduto</Form>
+			</DCCReference>
+			<DCCReference Include="UPreVenda.pas">
+				<Form>FPreVenda</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\PreVendaController.pas"/>
+			<DCCReference Include="Controller\ProdutoController.pas"/>
+			<DCCReference Include="Controller\ClienteController.pas"/>
+			<DCCReference Include="Controller\DAVController.pas"/>
+			<DCCReference Include="Controller\OperadorController.pas"/>
+			<DCCReference Include="UDescontoAcrescimo.pas">
+				<Form>FDescontoAcrescimo</Form>
+			</DCCReference>
+			<DCCReference Include="ULoginGerenteSupervisor.pas">
+				<Form>FLoginGerenteSupervisor</Form>
+			</DCCReference>
+			<DCCReference Include="UProcuraCliente.pas">
+				<Form>FProcuraCliente</Form>
+			</DCCReference>
+			<DCCReference Include="UConfigConexao.pas">
+				<Form>FConfigConexao</Form>
+			</DCCReference>
+			<DCCReference Include="Constantes.pas"/>
+			<DCCReference Include="Biblioteca.pas"/>
+			<DCCReference Include="UNFe.pas">
+				<Form>FNFe</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\NFeController.pas"/>
+			<DCCReference Include="Controller\EmpresaController.pas"/>
+			<DCCReference Include="UProduto.pas">
+				<Form>FProduto</Form>
+			</DCCReference>
+			<DCCReference Include="VO\DavCabecalhoVO.pas"/>
+			<DCCReference Include="VO\DavDetalheVO.pas"/>
+			<DCCReference Include="VO\EmpresaVO.pas"/>
+			<DCCReference Include="VO\NfeCabecalhoVO.pas"/>
+			<DCCReference Include="VO\NfeCupomFiscalVO.pas"/>
+			<DCCReference Include="VO\NfeDetalheVO.pas"/>
+			<DCCReference Include="VO\PessoaVO.pas"/>
+			<DCCReference Include="VO\PreVendaCabecalhoVO.pas"/>
+			<DCCReference Include="VO\PreVendaDetalheVO.pas"/>
+			<DCCReference Include="VO\ProdutoVO.pas"/>
+			<DCCReference Include="VO\UsuarioVO.pas"/>
+			<DCCReference Include="VO\PessoaEnderecoVO.pas"/>
+			<DCCReference Include="VO\UnidadeProdutoVO.pas"/>
+			<DCCReference Include="VO\NfeConfiguracaoVO.pas"/>
+			<DCCReference Include="Controller\NfeConfiguracaoController.pas"/>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">Balcao.dpr</Source>
+					</Source>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">3</VersionInfo>
+						<VersionInfo Name="Build">2</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1046</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">T2Ti</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.3.2</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright">Copyright (C) 2010 T2Ti.COM</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName">Balcao</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\dcloffice2k140.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\dclofficexp140.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+				<ModelSupport>False</ModelSupport>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

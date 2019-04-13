@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/05/10 17:37:27.341.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Controller\FiscalNotaFiscalCabController.pas=</Transaction>
+    <Transaction>2013/05/10 17:37:27.511.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\FiscalMunicipalRegimeVO.pas=</Transaction>
+    <Transaction>2013/05/14 16:06:26.495.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UFiscalSaidas.pas=</Transaction>
+    <Transaction>2013/05/14 16:06:26.495.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UFiscalSaidas.dfm=</Transaction>
+    <Transaction>2013/05/14 16:06:26.666.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UFiscalEntradas.pas=</Transaction>
+    <Transaction>2013/05/14 16:06:26.666.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UFiscalEntradas.dfm=</Transaction>
+    <Transaction>2013/05/15 16:51:11.295.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UContabilIndice.pas=</Transaction>
+    <Transaction>2013/05/15 16:51:11.305.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UContabilIndice.dfm=</Transaction>
+    <Transaction>2013/05/15 16:52:11.512.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ContabilIndiceVO.pas=</Transaction>
+    <Transaction>2013/05/15 16:52:11.522.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ContabilIndiceValorVO.pas=</Transaction>
+    <Transaction>2013/05/15 17:08:20.983.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UPlanoConta.pas=</Transaction>
+    <Transaction>2013/05/15 17:08:20.983.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UPlanoConta.dfm=</Transaction>
+    <Transaction>2013/05/15 17:08:28.675.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UPlanoContaRefSped.pas=</Transaction>
+    <Transaction>2013/05/15 17:08:28.675.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UPlanoContaRefSped.dfm=</Transaction>
+    <Transaction>2013/05/15 17:08:41.213.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UContabilConta.pas=</Transaction>
+    <Transaction>2013/05/15 17:08:41.213.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UContabilConta.dfm=</Transaction>
+    <Transaction>2013/05/15 17:09:57.342.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\PlanoContaVO.pas=</Transaction>
+    <Transaction>2013/05/15 17:09:57.352.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\PlanoContaRefSpedVO.pas=</Transaction>
+    <Transaction>2013/05/15 17:09:57.362.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Controller\PlanoContaRefSpedController.pas=</Transaction>
+    <Transaction>2013/05/15 17:09:57.372.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Controller\PlanoContaController.pas=</Transaction>
+    <Transaction>2013/05/15 17:10:02.659.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\ContabilContaVO.pas=</Transaction>
+    <Transaction>2013/05/15 17:10:02.739.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Controller\ContabilContaController.pas=</Transaction>
+    <Transaction>2013/05/15 17:20:02.775.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UFiscalLivrosFiscais.pas=</Transaction>
+    <Transaction>2013/05/15 17:20:02.775.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UFiscalLivrosFiscais.dfm=</Transaction>
+    <Transaction>2013/05/15 17:47:03.817.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UFiscalFechamento.pas=</Transaction>
+    <Transaction>2013/05/15 17:47:03.817.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UFiscalFechamento.dfm=</Transaction>
+    <Transaction>2013/05/15 17:47:10.086.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\VO\FiscalFechamentoVO.pas=</Transaction>
+    <Transaction>2013/05/15 17:47:10.096.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Controller\FiscalFechamentoController.pas=</Transaction>
+    <Transaction>2013/05/16 17:34:34.717.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UObservacaoLancamento.pas=</Transaction>
+    <Transaction>2013/05/16 17:34:34.717.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UObservacaoLancamento.dfm=</Transaction>
+    <Transaction>2013/05/16 18:49:04.644.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UFiscalInformacaoComplementar.pas=</Transaction>
+    <Transaction>2013/05/16 18:49:04.644.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UFiscalInformacaoComplementar.dfm=</Transaction>
+    <Transaction>2013/05/16 18:49:12.806.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UFiscalObservacaoLancamento.pas=</Transaction>
+    <Transaction>2013/05/16 18:49:12.806.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Escrita Fiscal\Tela\UFiscalObservacaoLancamento.dfm=</Transaction>
+    <Transaction>2013/05/24 18:43:31.100.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Cliente\Comum\Dominios.pas=</Transaction>
+    <Transaction>2013/05/27 11:02:15.992.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\ERP\Comum\Dominios.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

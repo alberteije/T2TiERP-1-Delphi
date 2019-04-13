@@ -1,0 +1,159 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>MetaFile Members</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">Report Manager Documentation</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">MetaFile Members
+					</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>
+        <a href="Reportman.Drawing.MetaFile.html">MetaFile overview</a>
+      </p>
+      <h4 class="dtH4">Public Static Fields</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><img src="static.gif" /><a href="Reportman.Drawing.MetaFile.AlignmentFlags_AlignBottom.html">AlignmentFlags_AlignBottom</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><img src="static.gif" /><a href="Reportman.Drawing.MetaFile.AlignmentFlags_AlignHCenter.html">AlignmentFlags_AlignHCenter</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><img src="static.gif" /><a href="Reportman.Drawing.MetaFile.AlignmentFlags_AlignHJustify.html">AlignmentFlags_AlignHJustify</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><img src="static.gif" /><a href="Reportman.Drawing.MetaFile.AlignmentFlags_AlignLeft.html">AlignmentFlags_AlignLeft</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><img src="static.gif" /><a href="Reportman.Drawing.MetaFile.AlignmentFlags_AlignRight.html">AlignmentFlags_AlignRight</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><img src="static.gif" /><a href="Reportman.Drawing.MetaFile.AlignmentFlags_AlignVCenter.html">AlignmentFlags_AlignVCenter</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><img src="static.gif" /><a href="Reportman.Drawing.MetaFile.AlignmentFlags_SingleLine.html">AlignmentFlags_SingleLine</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><img src="static.gif" /><a href="Reportman.Drawing.MetaFile.MAX_NUMBER_PAGES.html">MAX_NUMBER_PAGES</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><img src="static.gif" /><a href="Reportman.Drawing.MetaFile.PageSizeArray.html">PageSizeArray</a></td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">Public Static Methods</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><img src="static.gif" /><a href="Reportman.Drawing.MetaFile.CalcTextExtent.html">CalcTextExtent</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><img src="static.gif" /><a href="Reportman.Drawing.MetaFile.ReadBuf.html">ReadBuf</a></td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">Public Instance Constructors</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr VALIGN="top">
+            <td width="50%">
+              <img src="pubmethod.gif" />
+              <a href="Reportman.Drawing.MetaFileConstructor.html">MetaFile Constructor</a>
+            </td>
+            <td width="50%">Initializes a new instance of the <a href="Reportman.Drawing.MetaFile.html">MetaFile</a> class.</td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="dtH4">Public Instance Fields</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.AsyncReading.html">AsyncReading</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.BackColor.html">BackColor</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.CollateCopies.html">CollateCopies</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.Copies.html">Copies</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.CurrentPage.html">CurrentPage</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.CustomX.html">CustomX</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.CustomY.html">CustomY</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.Duplex.html">Duplex</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.ForwardOnly.html">ForwardOnly</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.LinesPerInch.html">LinesPerInch</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.OpenDrawerAfter.html">OpenDrawerAfter</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.OpenDrawerBefore.html">OpenDrawerBefore</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.Orientation.html">Orientation</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.Pages.html">Pages</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.PageSizeIndex.html">PageSizeIndex</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.PaperSource.html">PaperSource</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.PreviewAbout.html">PreviewAbout</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.PreviewMargins.html">PreviewMargins</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.PreviewStyle.html">PreviewStyle</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.PreviewWindow.html">PreviewWindow</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubfield.gif"></img><a href="Reportman.Drawing.MetaFile.PrinterSelect.html">PrinterSelect</a></td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">Public Instance Properties</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Reportman.Drawing.MetaFile.Finished.html">Finished</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Reportman.Drawing.MetaFile.Reading.html">Reading</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="Reportman.Drawing.MetaFile.SharedStream.html">SharedStream</a></td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">Public Instance Methods</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaFile.BeginPrint.html">BeginPrint</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaFile.Clear.html">Clear</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaFile.Dispose.html">Dispose</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassEqualsTopic.htm">Equals</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaFile.Finish.html">Finish</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassGetHashCodeTopic.htm">GetHashCode</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassGetTypeTopic.htm">GetType</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaFile.IntLoadFromStream.html">IntLoadFromStream</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaFile.IntSaveToStream.html">IntSaveToStream</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaFile.LoadFromFile.html">LoadFromFile</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaFile.LoadFromStream.html">LoadFromStream</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaFile.RequestPage.html">RequestPage</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaFile.SaveToFile.html">SaveToFile</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaFile.SaveToStream.html">SaveToStream</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaFile.StopWork.html">StopWork</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassToStringTopic.htm">ToString</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaFile.UpdateTotalPages.html">UpdateTotalPages</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaFile.UpdateTotalPagesPCount.html">UpdateTotalPagesPCount</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaFile.WorkAsyncError.html">WorkAsyncError</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Reportman.Drawing.MetaFile.WorkProgress.html">WorkProgress</a></td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">Public Instance Events</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubevent.gif"></img><a href="Reportman.Drawing.MetaFile.OnBeginPrint.html">OnBeginPrint</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubevent.gif"></img><a href="Reportman.Drawing.MetaFile.OnLoadError.html">OnLoadError</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubevent.gif"></img><a href="Reportman.Drawing.MetaFile.OnLoadProgress.html">OnLoadProgress</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubevent.gif"></img><a href="Reportman.Drawing.MetaFile.OnRequestPage.html">OnRequestPage</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubevent.gif"></img><a href="Reportman.Drawing.MetaFile.OnSaveWorkProgress.html">OnSaveWorkProgress</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubevent.gif"></img><a href="Reportman.Drawing.MetaFile.OnStopWork.html">OnStopWork</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubevent.gif"></img><a href="Reportman.Drawing.MetaFile.OnWorkAsyncError.html">OnWorkAsyncError</a></td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubevent.gif"></img><a href="Reportman.Drawing.MetaFile.OnWorkProgress.html">OnWorkProgress</a></td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">Protected Instance Methods</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassFinalizeTopic.htm">Finalize</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="ms-help://MS.NETFrameworkSDKv1.1/cpref/html/frlrfSystemObjectClassMemberwiseCloneTopic.htm">MemberwiseClone</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="Reportman.Drawing.MetaFile.html">MetaFile Class</a> | <a href="Reportman.Drawing.html">Reportman.Drawing Namespace</a></p>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="MetaFile class">
+        </param>
+        <param name="Keyword" value="Reportman.Drawing.MetaFile class">
+        </param>
+        <param name="Keyword" value="MetaFile class, all members">
+        </param>
+      </object>
+      <hr />
+      <div id="footer">
+        <p>
+          <a href="mailto:toni@pala.com?subject=Report%20Manager%20Documentation%20Documentation%20Feedback:%20MetaFile%20Members&#xD;&#xA;						">Send comments on this topic.</a>
+        </p>
+        <p>
+          <a href="http://reportman.sourceforge.net">Copyright 2006 Toni Martir</a>
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

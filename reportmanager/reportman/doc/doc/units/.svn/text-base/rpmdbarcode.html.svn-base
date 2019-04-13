@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Units documentation - rpmdbarcode.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpmdbarcode.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>TRpBarcode</b>, a barcode print component.</p>
+<h4>Types</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpBarcodeType</td>
+    <td> 
+      <p>Enumeration bcCode_2_5_interleaved, bcCode_2_5_industrial, bcCode_2_5_matrix, 
+        bcCode39, bcCode39Extended, bcCode128A, bcCode128B, bcCode128C, bcCode128, 
+        bcCode93, bcCode93Extended, bcCodeMSI, bcCodePostNet, bcCodeCodabar, bcCodeEAN8, 
+        bcCodeEAN13 )</p>
+      <p>Barcode type.</p>
+    </td>
+  </tr>
+</table>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpBarcode</td>
+    <td>TRpCommonPosComponent</td>
+    <td>TRpBarcode implementation</td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,50 @@
+package rppackvcl_del2007;
+
+{$R *.res}
+{$R 'rpvclreport.dcr'}
+{$R 'rpactivexreport.dcr'}
+{$R 'rpexpredlgvcl.dcr'}
+{$R 'rpmaskedit.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Report Manager VCL components'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  vcljpg,
+  dsnap,
+  vcldb,
+  ibxpress,
+  bdertl,
+  dbexpress,
+  adortl,
+  tee,
+  rppack_del2007,
+  vclx;
+
+contains
+  rpactivexreport in 'rpactivexreport.pas';
+
+end.

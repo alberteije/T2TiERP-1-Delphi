@@ -1,0 +1,85 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html>
+<head>
+<title>Using Report Manager .Net native controls</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Installation</h2>
+<h3><b>Using Report Manager .Net native components </b></h3>
+<p>Download the .Net package from sourceforge, then uncompress the package to 
+  a directory in your computer.</p>
+<p><a href="http://sourceforge.net/projects/reportman">http://sourceforge.net/projects/reportman</a></p>
+<p>You can choose to install the binary assemblies or add the project files directly to your project. </p>
+<p>To optimize the file sizes and separate technologies used (Windows Forms, ASP.Net mostly), Report Manager is separated in diverse assemblies, so they have different dependences. </p>
+<p>Name spaces are used for diferent components, they match with library name. </p>
+<p>&nbsp;</p>
+<table border="1">
+  <tr>
+    <td colspan="2" bgcolor="#00FFFF">&nbsp;</td>
+    <td colspan="4" bgcolor="#00FFFF"><div align="center"><strong>Dependences</strong></div></td>
+  </tr>
+  <tr>
+    <td bgcolor="#00FFFF"><strong>Library name </strong></td>
+    <td bgcolor="#00FFFF"><b>Description</b></td>
+    <td bgcolor="#00FFFF"><strong>System.Drawing</strong></td>
+    <td bgcolor="#00FFFF"><strong>Windows.Forms </strong></td>
+    <td bgcolor="#00FFFF"><strong>Web.Forms</strong></td>
+    <td bgcolor="#00FFFF"><strong>System.Data</strong></td>
+  </tr>
+  <tr>
+    <td>Reportman.Drawing.dll</td>
+    <td>Base classes, no database support, drawing structures and routines to preview and print already calculated reports </td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>Reportman.Reporting.dll</td>
+    <td>Classes no read, write, and execute report templates, converting them into metafiles</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Reportman.Drawing.Forms.dll</td>
+    <td>Define Window.Forms presentation of metafiles and other drawing utilities dependent on Windows.Forms</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>Reportman.Reporting.Forms.dll</td>
+    <td>Define Windows.Forms presentation for report options and another data enabled forms </td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>Reportman.Designer.dll</td>
+    <td>Define Windows.Forms presentation for the end user report designer where the user design report templates </td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>&nbsp;</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Reportman.Web</td>
+    <td>Define the utilities and Web.Forms provided to execute and present reports in a Web application </td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+</table>
+<p>Usually you add allways the base class Reportman.Drawing plus the technologies no need (Winforms, Data access, Web) </p>
+<p>&nbsp;</p>
+</body>
+</html>
+
+

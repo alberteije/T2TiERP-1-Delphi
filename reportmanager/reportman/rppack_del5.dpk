@@ -1,0 +1,170 @@
+package rppack_del5;
+
+{$R *.RES}
+{$R 'rpeval.dcr'}
+{$R 'rpalias.dcr'}
+{$R 'rplastsav.dcr'}
+{$R 'rpvclreport.dcr'}
+{$R 'rppdfreport.dcr'}
+{$R 'rptranslator.dcr'}
+{$R 'rprulervcl.dcr'}
+{$R 'rpexpredlgvcl.dcr'}
+{$R 'rpmdesignervcl.dcr'}
+{$R 'rpmaskedit.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Report Manager components'}
+{$IMPLICITBUILD OFF}
+
+requires
+  Vcl50,
+  Vclx50,
+  Vclmid50,
+  Vcldb50,
+  vclado50,
+  Vclbde50,
+  VCLIB50,
+  vcljpg50,
+  Indy50,
+  tee50;
+
+contains
+  rptypeval in 'rptypeval.pas',
+  rpmdconsts in 'rpmdconsts.pas',
+  rpeval in 'rpeval.pas',
+  rpevalfunc in 'rpevalfunc.pas',
+  rpparser in 'rpparser.pas',
+  rpalias in 'rpalias.pas',
+  rpmreg in 'rpmreg.pas',
+  rplastsav in 'rplastsav.pas',
+  rpdatainfo in 'rpdatainfo.pas',
+  rpparams in 'rpparams.pas',
+  rptypes in 'rptypes.pas',
+  rpsection in 'rpsection.pas',
+  rpreport in 'rpreport.pas',
+  rpsubreport in 'rpsubreport.pas',
+  rpmetafile in 'rpmetafile.pas',
+  rplabelitem in 'rplabelitem.pas',
+  rpdrawitem in 'rpdrawitem.pas',
+  rpprintitem in 'rpprintitem.pas',
+  rpmunits in 'rpmunits.pas',
+  rpsecutil in 'rpsecutil.pas',
+  rpmzlib in 'rpmzlib.pas',
+  rpzlibinfutil in 'rpzlibinfutil.pas',
+  rpzlibinfblock in 'rpzlibinfblock.pas',
+  rpzlibinfcodes in 'rpzlibinfcodes.pas',
+  rpzlibinffast in 'rpzlibinffast.pas',
+  rpzlibinftrees in 'rpzlibinftrees.pas',
+  rpzlibadler in 'rpzlibadler.pas',
+  rpzlibzutil in 'rpzlibzutil.pas',
+  rpzlibzdeflate in 'rpzlibzdeflate.pas',
+  rpzlibzinflate in 'rpzlibzinflate.pas',
+  rpzlibzlib in 'rpzlibzlib.pas',
+  rpzlibtrees in 'rpzlibtrees.pas',
+  rpwriter in 'rpwriter.pas',
+  rpdataset in 'rpdataset.pas',
+  rpvclreport in 'rpvclreport.pas',
+  rpvpreview in 'rpvpreview.pas' {FRpPreview},
+  rprfvparams in 'rprfvparams.pas' {FRpRunTimeParams},
+  rppdffile in 'rppdffile.pas',
+  rppdfdriver in 'rppdfdriver.pas',
+  rpgdidriver in 'rpgdidriver.pas' {FRpQtProgress},
+  rpvgraphutils in 'rpvgraphutils.pas',
+  rpgdifonts in 'rpgdifonts.pas',
+  rppdfreport in 'rppdfreport.pas',
+  rpcompobase in 'rpcompobase.pas',
+  rpmdbarcode in 'rpmdbarcode.pas',
+  rpmdchart in 'rpmdchart.pas',
+  rptranslator in 'rptranslator.pas',
+  rpmdshfolder in 'rpmdshfolder.pas',
+  rpmdobjinspvcl in 'rpmdobjinspvcl.pas' {FRpObjInspVCL: TFrame},
+  rprulervcl in 'rprulervcl.pas',
+  rpexpredlgvcl in 'rpexpredlgvcl.pas' {FRpExpredialogVCL},
+  rpfparamsvcl in 'rpfparamsvcl.pas' {FRpParamsVCL},
+  rpgraphutilsvcl in 'rpgraphutilsvcl.pas' {FRpMessageDlgVCL},
+  rpmdesignervcl in 'rpmdesignervcl.pas',
+  rpmdfaboutvcl in 'rpmdfaboutvcl.pas' {FRpAboutBoxVCL},
+  rpmdfbarcodeintvcl in 'rpmdfbarcodeintvcl.pas',
+  rpmdfchartintvcl in 'rpmdfchartintvcl.pas',
+  rpmdfconnectionvcl in 'rpmdfconnectionvcl.pas' {FRpConnectionVCL: TFrame},
+  rpmdfdesignvcl in 'rpmdfdesignvcl.pas' {FRpDesignFrameVCL: TFrame},
+  rpmdfdrawintvcl in 'rpmdfdrawintvcl.pas',
+  rpmdfextsecvcl in 'rpmdfextsecvcl.pas' {FRpExtSectionVCL},
+  rpmdflabelintvcl in 'rpmdflabelintvcl.pas',
+  rpmdfmainvcl in 'rpmdfmainvcl.pas' {FRpMainFVCL},
+  rpmdfsampledatavcl in 'rpmdfsampledatavcl.pas' {FRpShowSampledataVCL},
+  rpmdfsectionintvcl in 'rpmdfsectionintvcl.pas',
+  rpmdfstrucvcl in 'rpmdfstrucvcl.pas' {FRpStructureVCL: TFrame},
+  rpmdfwizardvcl in 'rpmdfwizardvcl.pas' {FRpWizardVCL},
+  rpmdobinsintvcl in 'rpmdobinsintvcl.pas',
+  rpmdprintconfigvcl in 'rpmdprintconfigvcl.pas' {FRpPrinterConfigVCL},
+  rpmregdesignvcl in 'rpmregdesignvcl.pas',
+  rpdbxconfigvcl in 'rpdbxconfigvcl.pas' {FRpDBXConfigVCL},
+  rppagesetupvcl in 'rppagesetupvcl.pas' {FRpPageSetupVCL},
+  rpmdfgridvcl in 'rpmdfgridvcl.pas' {FRpGridOptionsVCL},
+  rpeditalias in 'rpeditalias.pas' {FRpEditAlias},
+  rpmdfdatatextvcl in 'rpmdfdatatextvcl.pas' {FRpDataTextVCL},
+  rpfmainmetaviewvcl in 'rpfmainmetaviewvcl.pas' {FRpMainMetaVCL},
+  rpfmetaviewvcl in 'rpfmetaviewvcl.pas' {FRpMetaVCL: TFrame},
+  rpwebmetaclient in 'rpwebmetaclient.pas',
+  rpmdclitreevcl in 'rpmdclitreevcl.pas' {FRpCliTreeVCL: TFrame},
+  rpmdprotocol in 'rpmdprotocol.pas',
+  rpmdsysinfo in 'rpmdsysinfo.pas' {FRpSysInfo},
+  rpexceldriver in 'rpexceldriver.pas' {FRpExcelProgress},
+  rpmdfdinfovcl in 'rpmdfdinfovcl.pas' {FRpDInfoVCL},
+  rpmdfdatasetsvcl in 'rpmdfdatasetsvcl.pas' {FRpDatasetsVCL: TFrame},
+  rpdatatext in 'rpdatatext.pas',
+  rpeditconnvcl in 'rpeditconnvcl.pas' {FRpEditConVCL},
+  rpmdesigneditors in 'rpmdesigneditors.pas',
+  rpmdfopenlibvcl in 'rpmdfopenlibvcl.pas' {FRpOpenLibVCL},
+  rpmdftreevcl in 'rpmdftreevcl.pas' {FRpDBTreeVCL: TFrame},
+  rpdbbrowservcl in 'rpdbbrowservcl.pas' {FRpBrowserVCL: TFrame},
+  rptextdriver in 'rptextdriver.pas',
+  rpbasereport in 'rpbasereport.pas',
+  rpcompilerep in 'rpcompilerep.pas',
+  rpmregdesigntime in 'rpmregdesigntime.pas',
+  rpmdcharttypes in 'rpmdcharttypes.pas',
+  rphtmldriver in 'rphtmldriver.pas',
+  rpmdrepclient in 'rpmdrepclient.pas',
+  rpmaskedit in 'rpmaskedit.pas',
+  rpsvgdriver in 'rpsvgdriver.pas',
+  rpinfoprovgdi in 'rpinfoprovgdi.pas',
+  rpcsvdriver in 'rpcsvdriver.pas',
+  rpinfoprovid in 'rpinfoprovid.pas',
+  rpxmlstream in 'rpxmlstream.pas',
+  rpdbgridvcl in 'rpdbgridvcl.pas',
+  rpbarcodecons in 'rpbarcodecons.pas',
+  rpmdfsearchvcl in 'rpmdfsearchvcl.pas' {FRpSearchParamVCL},
+  rppreviewmeta in 'rppreviewmeta.pas',
+  rppreviewcontrol in 'rppreviewcontrol.pas',
+  rpcolumnar in 'rpcolumnar.pas',
+  rpclientdataset in 'rpclientdataset.pas',
+  rpmdfselectfields in 'rpmdfselectfields.pas' {FRpSelectFields: TFrame},
+  rptwaincomp in 'rptwaincomp.pas',
+  rpdeltwain in 'rpdeltwain.pas',
+  rpdeltwainfunc in 'rpdeltwainfunc.pas' {FTwainHelp},
+  rpdeltwainutils in 'rpdeltwainutils.pas',
+  rptwain in 'rptwain.pas',
+  rpdbdatetimepicker in 'rpdbdatetimepicker.pas',
+  rpGIFImage in 'rpgifimage.pas';
+
+end.

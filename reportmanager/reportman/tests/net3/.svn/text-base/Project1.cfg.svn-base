@@ -1,0 +1,39 @@
+-$A-
+-$B-
+-$C+
+-$D+
+-$E-
+-$F-
+-$G+
+-$H+
+-$I+
+-$J-
+-$K-
+-$L+
+-$M-
+-$N+
+-$O-
+-$P+
+-$Q+
+-$R+
+-$S-
+-$T-
+-$U-
+-$V+
+-$W-
+-$X+
+-$YD
+-$Z1
+-cg
+-vn
+-AWinTypes=Borland.Vcl.Windows;WinProcs=Borland.Vcl.Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+-H+
+-W+
+-M
+-$M4096,1048576
+-K$00400000
+-U"c:\windows\microsoft.net\framework\v1.1.4322;c:\prog\toni\cvsroot\reportman\reportman;c:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\2.0;c:\archivos de programa\borland\bds\2.0\bin"
+-O"c:\windows\microsoft.net\framework\v1.1.4322;c:\prog\toni\cvsroot\reportman\reportman;c:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\2.0;c:\archivos de programa\borland\bds\2.0\bin"
+-I"c:\windows\microsoft.net\framework\v1.1.4322;c:\prog\toni\cvsroot\reportman\reportman;c:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\2.0;c:\archivos de programa\borland\bds\2.0\bin"
+-R"c:\windows\microsoft.net\framework\v1.1.4322;c:\prog\toni\cvsroot\reportman\reportman;c:\archivos de programa\archivos comunes\borland shared\bds\shared assemblies\2.0;c:\archivos de programa\borland\bds\2.0\bin"
+-LU"IndyNetCore;Borland.Vcl;Borland.VclBdeRtl;Borland.VclDbExpress;Borland.VclIBXpress;Borland.VclDSnap;Borland.VclDbRtl;Borland.VclRtl;Borland.Delphi;ReportMan;c:\windows\microsoft.net\framework\v1.1.4322\System.XML.dll;c:\windows\microsoft.net\framework\v1.1.4322\System.Drawing.dll;c:\windows\microsoft.net\framework\v1.1.4322\System.Data.dll;c:\windows\microsoft.net\framework\v1.1.4322\System.dll"

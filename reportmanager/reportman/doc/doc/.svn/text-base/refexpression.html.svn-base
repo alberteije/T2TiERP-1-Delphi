@@ -1,0 +1,187 @@
+<html>
+<head>
+<title>Common properties for TRpExpression</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Component Reference</h2>
+<h3>Properties for TRpExpression</h3>
+<p><b>Sumary</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Internal Name</td>
+    <td bgcolor="#FFFFCC">Type</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>Expression</td>
+    <td>Expression</td>
+    <td>WideString</td>
+    <td>Expression, the result of evaluating the expression will be printed (except 
+      if it's an aggregate)</td>
+  </tr>
+  <tr> 
+    <td>Data Type</td>
+    <td>DataType</td>
+    <td>TRpParamType</td>
+    <td>Used for formatting output, if you specify a data type and the expression 
+      value is NULL it's replaced with the type equivalent for formating, this 
+      is specially usefull for numeric values</td>
+  </tr>
+  <tr> 
+    <td>Display Format</td>
+    <td>DisplayFormat</td>
+    <td>String</td>
+    <td><p>Formating mask, the value to print will be formated with this string, 
+        depending on the data type of the value the string have diferent meanings.</p>
+      <p>For example for a DateTime value you can use the format string: 'dd/mm/yyyy 
+        hh:nn:ss', for a number: '###,###0.00', where the , says the use of thousand 
+        separator, the 0 are required format positions and # are not required 
+        format positions.</p>
+      <p>The engine will use FormatStr function, see documentation, but if the 
+        first character is a *, the FormatNum function will be used (only for 
+        numbers), using the mask without the first char.</p></td>
+  </tr>
+  <tr> 
+    <td>Multi page</td>
+    <td>MultiPage</td>
+    <td>Boolean</td>
+    <td>If true, then the print value (usually a string) will print in diferent 
+      pages if needed, usually you set autoexpand and autocontract to true in 
+      the parent section and word wrap property to true</td>
+  </tr>
+  <tr> 
+    <td>Print Null</td>
+    <td>PrintNulls</td>
+    <td>Boolean</td>
+    <td>If true, the numbers with 0 value will not be printed</td>
+  </tr>
+  <tr> 
+    <td>Identifier</td>
+    <td>Identifier</td>
+    <td>String</td>
+    <td>If you assign a identifier string, you can get the effective value of 
+      this TRpExpression from any expression inside report, so the identifier 
+      is included in the expression evaluator namespace, this is useful when working 
+      with aggregate fields and, for example, sum two aggregate values at a group 
+      footer. </td>
+  </tr>
+  <tr> 
+    <td>Aggregate</td>
+    <td>Aggregate</td>
+    <td>TRpAggregate</td>
+    <td><table border="1">
+        <tr> 
+          <td bgcolor="#FFFFCC">Value</td>
+          <td bgcolor="#FFFFCC">Meaning</td>
+        </tr>
+        <tr> 
+          <td>None</td>
+          <td>Default behaviour</td>
+        </tr>
+        <tr> 
+          <td>Group</td>
+          <td>For each record the expression is evaluated and aggregated, the 
+            initialization is done in a group change</td>
+        </tr>
+        <tr> 
+          <td>Page</td>
+          <td>For each record the expression is evaluated and aggregated, the 
+            initialization is done in page change</td>
+        </tr>
+        <tr> 
+          <td>General</td>
+          <td>For each record the expression is evaluated and aggregated, the 
+            initialization is done in the begin of the report</td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td>Agg. Group</td>
+    <td>GroupName</td>
+    <td>String</td>
+    <td>For Aggregate=Group indicates wich is the group that initializes the aggregate 
+      value </td>
+  </tr>
+  <tr> 
+    <td>Agg.Type</td>
+    <td>AgType</td>
+    <td>TRpAggregateType</td>
+    <td><table border="1">
+        <tr> 
+          <td bgcolor="#FFFFCC">Value</td>
+          <td bgcolor="#FFFFCC">Meaning</td>
+        </tr>
+        <tr> 
+          <td>Sum</td>
+          <td>Sums the values</td>
+        </tr>
+        <tr> 
+          <td>Min</td>
+          <td>Get the minimum value</td>
+        </tr>
+        <tr> 
+          <td>Max</td>
+          <td>Get the maximum value</td>
+        </tr>
+        <tr> 
+          <td>Avg</td>
+          <td>Get the average of all values</td>
+        </tr>
+        <tr> 
+          <td>Std.Desv</td>
+          <td>Get the statistical standard desviation of all values</td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td>Ag.Ini.V.</td>
+    <td>AgIniValue</td>
+    <td>WideString</td>
+    <td> <p>Expression with the initial value if an aggregate have been selected, 
+        note the Sum aggregate type is available to sum strings so you must place 
+        a '' value to sum the strings</p></td>
+  </tr>
+  <tr> 
+    <td>P.Only One</td>
+    <td>PrintOnlyOne</td>
+    <td>Boolean</td>
+    <td>If the value is repeated and the section have not changed, will print 
+      only once, this is usually useful to group without adding group header/footers, 
+      that is ordering the dataset and print only when the field value changes</td>
+  </tr>
+  <tr> 
+    <td>Single line</td>
+    <td>SingleLine</td>
+    <td>Boolean</td>
+    <td>Will force printing of text in a single line even if it contains line 
+      feeds. </td>
+  </tr>
+  <tr> 
+    <td>F.Rotation</td>
+    <td>FontRotation</td>
+    <td>Angle</td>
+    <td>Rotation angle in degrees for the text. Rotation in reverse clock wise, 
+      internally stored as an integer in degrees*10 scale.</td>
+  </tr>
+</table>
+<p><b>Developer info</b></p>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Internal component name</td>
+    <td>TRpExpression</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Parent class</td>
+    <td>TRpGenTextComponent</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFCC">Unit name</td>
+    <td>rplabelitem.pas</td>
+  </tr>
+</table>
+<p>See also <a href="refcommontext.html">Report components common text properties</a>.</p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Units documentation - rpwriter.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpwriter.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>native stream format to text and viceversa functions, 
+  </b>you can save a report definition as text or convert a text to a report definition 
+  native format stream</p>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>procedure FileReportToPlainText (reportfile,plainfile:string); </td>
+    <td>Converts file to plain text</td>
+  </tr>
+  <tr>
+    <td>procedure PlainTextToFileReport (plainfile,reportfile:string); </td>
+    <td>Converts plain text to native format file</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

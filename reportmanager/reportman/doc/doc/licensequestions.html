@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>License questions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Developer</h2>
+<h3>License questions</h3>
+<p><strong> 1) Can I include and distribute Report Manager in my commercial product?<br>
+  </strong>This is not a problem, the MPL allow linking/using with comercial products.</p>
+<p> <strong>2) Where do you draw the line about what enhacements of the engine 
+  must be MPL and what are not required to be MPL?</strong></p>
+<p>The line is drawn by the license, you will see the concept &quot;larger work&quot;, 
+  I think it's impossible to define this line exactly, this are things where a 
+  judge is needed, by examinig the license and the use of it, if a conflict appear.<br>
+  Usually a conflict appear because the main autor gets angry because someone 
+  have used the engine in ways not permitted by the license. For example if you 
+  get the engine as it's now and sell it with a license fee model, omiting the 
+  license and the autor of the software.</p>
+<p>Next question will explain a few cases so you can understand the concept better.</p>
+<p> <strong>3) Some of the changes that I need to make involves 3rd party libraries</strong></p>
+<p>Report Manager allow the use of third party commercial librarys, no problem, 
+  consider three cases:<br>
+  1- A commercial DBExpress database driver.<br>
+  Obviously it's linked with Report Manager, but there are a lot of reasons that 
+  probes it's not a Report Manager enhacement:<br>
+  a) It also works with other software<br>
+  b) It's not designed exclusively to work with Report Manager<br>
+  c) Does not enhace the report engine itself but just a capability of handling 
+  another database technology.</p>
+<p>2- A export filter to csv output (no need because already done inside the engine)<br>
+  a) It's designed to work only with Report Manager.<br>
+  b) It enhaces the engine capabilities.<br>
+  c) It's not a program that works without Report Manager.</p>
+<p>3- Another export filter to pdf (not the one already implemented) using a super 
+  pdf component with lot of features available for Delphi X and installable on 
+  the Delphi component palete.<br>
+  a) It's designed to work with any software written in Delphi<br>
+  b) It enhaces the engine capabilities<br>
+  c) It's a component that works with Report Manager</p>
+<p>Case 1:<br>
+  - You don't need to provide the dbexpress driver as MPL.<br>
+  Case 2:<br>
+  - You should provide the output filter within the MPL license.<br>
+  Case 3:<br>
+  - You do not need to provide the PDF export component as MPL, but may be good 
+  and reasonable you provide the interface from Report Manager to the PDF component. 
+  So anyone that purchased that component can use it in Report Manager, that is 
+  because you enhaced the engine a bit by allowing the use of that component, 
+  but I think it's not clearly mandatory.</p>
+<p><br>
+  <strong>4) I need scripting capabilities (I will use XXXXScript)</strong></p>
+<p>Scripting is limited in Report Manager, but the best way is to program an enhacement 
+  or interface to allow Report Manager work with any scripting engine (Ruby,Python,Passcript). 
+  The interface should be MPL, while scripting libraries can have other license. 
+</p>
+<p><strong>5) I need to save report templates in XML or other format.</strong></p>
+<p>The export to XML should be MPL but it's not required because can be programmed 
+  as an idependent program called as reptoxml for example, so it's considered 
+  a external tool, but will benefit you to be inside Report Manager (new properties 
+  etc). </p>
+<p><br>
+  <strong>6) Do I need to make these enhancements available? Who decides?</strong></p>
+<p>You decide about this, but you must consider the MPL license, a small enhacement 
+  very dependent on Report Manager is clearly candidate as MPL license, larger 
+  works is a case by case.<br>
+  Anyway because you benefit from enhacements provided by MPL license by other 
+  developers you should provide enhacements in MPL unless:<br>
+  - The release of the feature will low your sales, or will produce you any loss. 
+  Usually the contrary because the feature is included in the engine forever and 
+  you don't worry about adding it in each update. Usually you will not loss sales 
+  unless you are selling an addon to the Reporting engine, so in this cases you 
+  should respect the MPL license and honestly decide.</p>
+<p><br>
+  <strong>7) Do I need to make all changes using {$IFDEF} ?</strong></p>
+<p> When you use products that other people not use, and you share same code base, 
+  the answer is yes, to not become a nightmare the IFDEFS are minimized, for example:</p>
+<p>uses<br>
+  {$IFDEF USEMYOWNCOMPONENT}<br>
+  mycomponentunit,<br>
+  {$ENDIF}</p>
+<p>{$IFDEF USEMYOWNCOMPONENT}<br>
+  CreateMyComponent;<br>
+  UseMyComponent;<br>
+  {$ENDIF}</p>
+<p>This allows you a single codebase for the shared code, note that you will benefit 
+  about this model also used by other developers adding his own features.</p>
+<p>Of course, if the feature is completely MPL and included in codebase no IFDEFS 
+  are needed.</p>
+<p> <strong>8) I don't want to make it public that I am using MPL Source when 
+  I distribute my application in binary format. Some customers may get the impression 
+  that I am selling them something which should be free.</strong></p>
+<p>The license don't force you to place any message about the author in your software. 
+  You can remove any about box annonying you, there is already an option to do 
+  it.</p>
+<p>I think it's ok to place at your license a message like:</p>
+<p>- The reporting engine is based on Report Manager (http://reportman.sourceforge.net)</p>
+<p>Don't know if omiting any reference violates de license but anyway is not very 
+  ethic, you have benefits using the software.<br>
+  Let's explain to your customers that a product containing a free product can 
+  be a non-free product. This is specially true when your product is a large work, 
+  or simply with a diferent purpose. For example a product working on top of Linux 
+  can be priced, but you should say if asked that Linux is free software and have 
+  no redistribution limitations.</p>
+<p><strong>9) Can I download the code and maintain my own Report Manager version?</strong></p>
+<p>You can get all the code and begin your own branch of the engine, but this 
+  will cause you a lot of work when you want to add features on your branch that 
+  are on mine and viceversa. In opensource world, the branches are created when 
+  there is no other way to go, beacuse they consume resources (time).</p>
+</body>
+</html>

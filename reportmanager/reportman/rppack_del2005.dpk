@@ -1,0 +1,103 @@
+package rppack_del2005;
+
+{$R *.res}
+{$R 'rpeval.dcr'}
+{$R 'rpalias.dcr'}
+{$R 'rplastsav.dcr'}
+{$R 'rppdfreport.dcr'}
+{$R 'rptranslator.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Report Manager components(non-visual)'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  dbrtl,
+  dsnap,
+  dbexpress,
+  bdertl,
+  adortl,
+  ibxpress,
+  indy,
+  xmlrtl,
+  soaprtl;
+
+contains
+  rptypeval in 'rptypeval.pas',
+  rpmdconsts in 'rpmdconsts.pas',
+  rpeval in 'rpeval.pas',
+  rpevalfunc in 'rpevalfunc.pas',
+  rpparser in 'rpparser.pas',
+  rpalias in 'rpalias.pas',
+  rplastsav in 'rplastsav.pas',
+  rpdatainfo in 'rpdatainfo.pas',
+  rpparams in 'rpparams.pas',
+  rptypes in 'rptypes.pas',
+  rpsection in 'rpsection.pas',
+  rpreport in 'rpreport.pas',
+  rpsubreport in 'rpsubreport.pas',
+  rpmetafile in 'rpmetafile.pas',
+  rplabelitem in 'rplabelitem.pas',
+  rpdrawitem in 'rpdrawitem.pas',
+  rpprintitem in 'rpprintitem.pas',
+  rpmdchart in 'rpmdchart.pas',
+  rpmdbarcode in 'rpmdbarcode.pas',
+  rpmunits in 'rpmunits.pas',
+  rpsecutil in 'rpsecutil.pas',
+  rpmzlib in 'rpmzlib.pas',
+  rpzlibinfutil in 'rpzlibinfutil.pas',
+  rpzlibinfblock in 'rpzlibinfblock.pas',
+  rpzlibinfcodes in 'rpzlibinfcodes.pas',
+  rpzlibinffast in 'rpzlibinffast.pas',
+  rpzlibinftrees in 'rpzlibinftrees.pas',
+  rpzlibadler in 'rpzlibadler.pas',
+  rpzlibzutil in 'rpzlibzutil.pas',
+  rpzlibzdeflate in 'rpzlibzdeflate.pas',
+  rpzlibzinflate in 'rpzlibzinflate.pas',
+  rpzlibzlib in 'rpzlibzlib.pas',
+  rpzlibtrees in 'rpzlibtrees.pas',
+  rpwriter in 'rpwriter.pas',
+  rpdataset in 'rpdataset.pas',
+  rppdfdriver in 'rppdfdriver.pas',
+  rppdffile in 'rppdffile.pas',
+  rppdfreport in 'rppdfreport.pas',
+  rpcompobase in 'rpcompobase.pas',
+  rptranslator in 'rptranslator.pas',
+  rpmdshfolder in 'rpmdshfolder.pas',
+  rpmdrepclient in 'rpmdrepclient.pas',
+  rpmdprotocol in 'rpmdprotocol.pas',
+  rpdatatext in 'rpdatatext.pas',
+  rptextdriver in 'rptextdriver.pas',
+  rpcsvdriver in 'rpcsvdriver.pas',
+  rpsvgdriver in 'rpsvgdriver.pas',
+  rpbasereport in 'rpbasereport.pas',
+  rpcompilerep in 'rpcompilerep.pas',
+  rphtmldriver in 'rphtmldriver.pas',
+  rpmreg in 'rpmreg.pas',
+  rpmdcharttypes in 'rpmdcharttypes.pas',
+  rpinfoprovgdi in 'rpinfoprovgdi.pas',
+  rpinfoprovid in 'rpinfoprovid.pas',
+  rpxmlstream in 'rpxmlstream.pas',
+  rpbarcodecons in 'rpbarcodecons.pas';
+
+end.

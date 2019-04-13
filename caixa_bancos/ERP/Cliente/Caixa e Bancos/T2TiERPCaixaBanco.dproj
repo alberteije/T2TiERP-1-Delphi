@@ -1,0 +1,224 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{460A5F41-7581-4898-B809-CA9FFB172E99}</ProjectGuid>
+			<MainSource>T2TiERPCaixaBanco.dpr</MainSource>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<ProjectVersion>12.0</ProjectVersion>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_DependencyCheckOutputName>T2TiERPCaixaBanco.exe</DCC_DependencyCheckOutputName>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_Platform>x86</DCC_Platform>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="T2TiERPCaixaBanco.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="..\Comum\Tipos.pas"/>
+			<DCCReference Include="..\Comum\Conversor.pas"/>
+			<DCCReference Include="..\Comum\NotificationService.pas"/>
+			<DCCReference Include="..\Comum\SessaoUsuario.pas"/>
+			<DCCReference Include="..\Comum\Controller\UsuarioController.pas"/>
+			<DCCReference Include="..\Comum\Controller\Controller.pas"/>
+			<DCCReference Include="..\Comum\Controller\FuncaoController.pas"/>
+			<DCCReference Include="..\Comum\Controller\PapelController.pas"/>
+			<DCCReference Include="..\Comum\Controller\PapelFuncaoController.pas"/>
+			<DCCReference Include="..\Comum\Tela\UTelaCadastro.pas">
+				<Form>FTelaCadastro</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\UTela.pas">
+				<Form>FTela</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\ULookup.pas">
+				<Form>FLookup</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\UBase.pas">
+				<Form>FBase</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\UDataModule.pas">
+				<Form>FDataModule</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\UFiltro.pas">
+				<Form>FFiltro</Form>
+			</DCCReference>
+			<DCCReference Include="..\Comum\Tela\ULogin.pas">
+				<Form>FLogin</Form>
+			</DCCReference>
+			<DCCReference Include="Tela\UMenu.pas">
+				<Form>FMenu</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Comum\Biblioteca.pas"/>
+			<DCCReference Include="..\..\Comum\Constantes.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FuncaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\JSonVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\UsuarioVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PapelVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PapelFuncaoVO.pas"/>
+			<DCCReference Include="Controller\NaturezaFinanceiraController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FinLancamentoPagarVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\NaturezaFinanceiraVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FinParcelaPagarVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FinTipoPagamentoVO.pas"/>
+			<DCCReference Include="Tela\UFinDocumentoOrigem.pas">
+				<Form>FFinDocumentoOrigem</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Comum\VO\FinDocumentoOrigemVO.pas"/>
+			<DCCReference Include="Controller\FinDocumentoOrigemController.pas"/>
+			<DCCReference Include="Controller\PlanoCentroResultadoController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PlanoCentroResultadoVO.pas"/>
+			<DCCReference Include="Tela\UPlanoCentroResultado.pas">
+				<Form>FPlanoCentroResultado</Form>
+			</DCCReference>
+			<DCCReference Include="Tela\UCentroResultado.pas">
+				<Form>FCentroResultado</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Comum\VO\CentroResultadoVO.pas"/>
+			<DCCReference Include="Controller\CentroResultadoController.pas"/>
+			<DCCReference Include="Controller\PlanoNaturezaFinanceiraController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PlanoNaturezaFinanceiraVO.pas"/>
+			<DCCReference Include="Tela\UPlanoNaturezaFinanceira.pas">
+				<Form>FPlanoNaturezaFinanceira</Form>
+			</DCCReference>
+			<DCCReference Include="Tela\UNaturezaFinanceira.pas">
+				<Form>FNaturezaFinanceira</Form>
+			</DCCReference>
+			<DCCReference Include="..\Cadastros Base\Controller\ContabilContaController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ContabilContaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FinStatusParcelaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PessoaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\EnderecoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ContatoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PessoaFisicaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PessoaJuridicaVO.pas"/>
+			<DCCReference Include="..\Cadastros Base\Controller\PessoaController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FinParcelaPagamentoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ColaboradorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\SetorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\CargoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\EmpresaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\UfVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PaisVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ContadorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FpasVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\SindicatoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\NivelFormacaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TipoColaboradorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\SituacaoColaboradorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TipoAdmissaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FinLctoPagarNtFinanceiraVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FornecedorPessoaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\EmpresaSessaoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\AdministrativoFormularioVO.pas"/>
+			<DCCReference Include="..\Comum\Controller\EmpresaController.pas"/>
+			<DCCReference Include="..\Comum\Controller\ViewSessaoEmpresaController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ViewSessaoEmpresaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ContaCaixaVO.pas"/>
+			<DCCReference Include="..\Cadastros Base\Controller\ContaCaixaController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\AgenciaBancoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\BancoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FornecedorVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\AtividadeForCliVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\SituacaoForCliVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FinChequeEmitidoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ChequeVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\TalonarioChequeVO.pas"/>
+			<DCCReference Include="Tela\UFinMovimentoCaixaBanco.pas">
+				<Form>FFinMovimentoCaixaBanco</Form>
+			</DCCReference>
+			<DCCReference Include="Controller\ViewFinMovimentoCaixaBancoController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ViewFinMovimentoCaixaBancoVO.pas"/>
+			<DCCReference Include="Controller\FinFechamentoCaixaBancoController.pas"/>
+			<DCCReference Include="..\..\Comum\Atributos.pas"/>
+			<DCCReference Include="..\..\Comum\VO\FinFechamentoCaixaBancoVO.pas"/>
+			<DCCReference Include="Controller\ViewFinChequeNaoCompensadoController.pas"/>
+			<DCCReference Include="..\..\Comum\VO\ViewFinChequeNaoCompensadoVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PlanoContaVO.pas"/>
+			<DCCReference Include="..\..\Comum\VO\PlanoContaRefSpedVO.pas"/>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">T2TiERPCaixaBanco.dpr</Source>
+					</Source>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1046</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\synapse.bpl">Synapse TCP/IP / Serial library (http://www.synapse.ararat.cz)</Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\PCN2.bpl">Projeto Cooperar (http://br.groups.yahoo.com/group/projeto_cooperar_nfe/)</Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\ACBrCapicom.bpl">ACBr Automação Comercial Brasil  ACBrComum   (http://acbr.sf.ne)</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller
+END
+ProdutoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/ProdutoController.pas
+END
+EmpresaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/EmpresaController.pas
+END
+VendaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/VendaController.pas
+END
+ConfiguracaoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/ConfiguracaoController.pas
+END
+PreVendaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/PreVendaController.pas
+END
+VendedorController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/VendedorController.pas
+END
+TipoPagamentoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/TipoPagamentoController.pas
+END
+ContadorController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/ContadorController.pas
+END
+UnidadeController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/UnidadeController.pas
+END
+DAVController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/DAVController.pas
+END
+OperadorController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/OperadorController.pas
+END
+TotalTipoPagamentoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/TotalTipoPagamentoController.pas
+END
+SintegraController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/SintegraController.pas
+END
+SpedFiscalController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/SpedFiscalController.pas
+END
+MovimentoController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/MovimentoController.pas
+END
+RegistroRController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/RegistroRController.pas
+END
+ClienteController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/ClienteController.pas
+END
+ImpressoraController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/ImpressoraController.pas
+END
+NF2Controller.pas
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/NF2Controller.pas
+END
+CaixaController.pas
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/t2tierp_delphi_pafecf/!svn/ver/40/branches/TEF%20Homologado/Controller/CaixaController.pas
+END

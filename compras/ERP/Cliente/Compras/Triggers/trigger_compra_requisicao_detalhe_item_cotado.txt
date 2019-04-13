@@ -1,0 +1,13 @@
+DELIMITER $$
+
+CREATE
+    TRIGGER t2tierp.compra_req_detalhe_item_cotado BEFORE UPDATE
+    ON t2tierp.compra_requisicao_detalhe
+    FOR EACH ROW 
+    BEGIN
+	IF NEW.QUANTIDADE = NEW.QUANTIDADE_COTADA THEN
+	    SET NEW.ITEM_COTADO = 'S';
+	END IF;
+    END$$
+
+DELIMITER ;

@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Units documentation - rptranslator.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rptranslator.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>the localization routines and components of the runtime 
+  environment</b>, the main component TRpTranslator supports reading and writting 
+  files that stores widestring, the engine usually try to open reportmanres.xx 
+  resource string files, where xx is the locale identifier (es for Spain for example)</p>
+<h4>Types</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpStringInfo</td>
+    <td>Record containing information about position and size of a string inside 
+      a another large string</td>
+  </tr>
+</table>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TRpTranslator</td>
+    <td>TComponent</td>
+    <td>Installable component to localize strings, it opens the resource file 
+      based on the selected user locale (adding the locale extension to filename)</td>
+  </tr>
+</table>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>function AddLocaleSufix(afilename:string):string; </td>
+    <td>Adds the user locale sufix to the filename provided</td>
+  </tr>
+</table>
+</body>
+</html>

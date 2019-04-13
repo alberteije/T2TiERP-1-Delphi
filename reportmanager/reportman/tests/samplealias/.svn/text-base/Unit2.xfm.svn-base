@@ -1,0 +1,43 @@
+object datamod: Tdatamod
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Left = 196
+  Top = 137
+  Height = 207
+  Width = 412
+  object ClientDataSet1: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 67
+    Top = 22
+    object ClientDataSet1CODE: TStringField
+      FieldName = 'CODE'
+      Size = 10
+    end
+    object ClientDataSet1NAME: TStringField
+      FieldName = 'NAME'
+      Size = 40
+    end
+    object ClientDataSet1PRICE: TCurrencyField
+      FieldName = 'PRICE'
+    end
+  end
+  object RpAlias1: TRpAlias
+    List = <
+      item
+        Alias = 'SAMPLE'
+        Dataset = ClientDataSet1
+      end>
+    Left = 163
+    Top = 22
+  end
+  object PDFReport1: TPDFReport
+    Title = 'Untitled'
+    ShowPrintDialog = False
+    AliasList = RpAlias1
+    ToPage = 1
+    Copies = 1
+    Left = 256
+    Top = 24
+  end
+end

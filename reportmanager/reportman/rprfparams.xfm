@@ -1,0 +1,89 @@
+object FRpRunTimeParams: TFRpRunTimeParams
+  Left = 21
+  Top = 50
+  ActiveControl = BOK
+  AutoScroll = False
+  Caption = 'Report parameters'
+  ClientHeight = 276
+  ClientWidth = 583
+  Color = clButton
+  Position = poScreenCenter
+  ShowHint = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object PModalButtons: TPanel
+    Left = 0
+    Top = 235
+    Width = 583
+    Height = 41
+    Align = alBottom
+    TabOrder = 0
+    object BOK: TButton
+      Left = 59
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = 'OK'
+      Default = True
+      TabOrder = 0
+      OnClick = BOKClick
+    end
+    object BCancel: TButton
+      Left = 203
+      Top = 8
+      Width = 75
+      Height = 25
+      Cancel = True
+      Caption = 'Cancel'
+      ModalResult = 2
+      TabOrder = 1
+    end
+  end
+  object MainScrollBox: TScrollBox
+    Left = 0
+    Top = 0
+    Width = 583
+    Height = 235
+    VertScrollBar.Range = 205
+    Align = alClient
+    BorderStyle = bsNone
+    TabOrder = 1
+    object PParent: TPanel
+      Left = 0
+      Top = 0
+      Width = 583
+      Height = 205
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 0
+      object Splitter1: TSplitter
+        Left = 260
+        Top = 0
+        Width = 8
+        Height = 205
+        Beveled = True
+      end
+      object PLeft: TPanel
+        Left = 0
+        Top = 0
+        Width = 260
+        Height = 205
+        Align = alLeft
+        BevelOuter = bvNone
+        TabOrder = 0
+      end
+      object PRight: TPanel
+        Left = 268
+        Top = 0
+        Width = 315
+        Height = 205
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 1
+      end
+    end
+  end
+end

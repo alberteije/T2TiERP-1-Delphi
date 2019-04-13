@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>Units documentation - rpgraphutils.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rpgraphutils.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>CLX graphic functions and standard message dialog</b>, 
+  the dialog buttons are automatically translated to user locale language.</p>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TFRpMessageDlg</td>
+    <td>TForm</td>
+    <td>Standard message dialog</td>
+  </tr>
+  <tr>
+    <td>TRpNodeInfo</td>
+    <td>TObject</td>
+    <td>Contains data about a report inside a treeview</td>
+  </tr>
+</table>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>function RpMessageBox (const Text: WideString; const Caption: WideString 
+      = ''; Buttons: TMessageButtons = [smbOK]; Style: TMessageStyle = smsInformation; 
+      Default: TMessageButton = smbOK; Escape: TMessageButton = smbCancel): TMessageButton; 
+    </td>
+    <td>Function replacing Application.MessageBox</td>
+  </tr>
+  <tr> 
+    <td>function RpInputBox (const ACaption, APrompt, ADefault:WideString ):WideString; 
+    </td>
+    <td>A replacement for Application.InputBox</td>
+  </tr>
+  <tr> 
+    <td>procedure FillTreeView (ATree:TTreeView;alist:TStringList); </td>
+    <td>Function to fill a treeview based on a string list</td>
+  </tr>
+  <tr> 
+    <td>function GetFullFileName (ANode:TTreeNode;dirseparator:char):String; </td>
+    <td>Gets the full filename based on a node with parents</td>
+  </tr>
+  <tr> 
+    <td>procedure DrawGrid (Canvas:TCanvas; XWidth, XHeight, PixelsWidth, PixelsHeight:integer; 
+      Color:TColor;lines:boolean; XOffset,YOffset:integer); </td>
+    <td>Draws a grid</td>
+  </tr>
+  <tr> 
+    <td>function twipstopixels (ATwips:integer):integer; </td>
+    <td>Conversion routines</td>
+  </tr>
+  <tr> 
+    <td>function pixelstotwips (apixels:integer):integer; </td>
+    <td>Conversion routines</td>
+  </tr>
+  <tr> 
+    <td>function FontStyleToInteger (fontstyle:TFontStyles):integer; </td>
+    <td>Conversion routines</td>
+  </tr>
+  <tr> 
+    <td>function IntegerToFontStyle (intfontstyle:integer):TFontStyles;</td>
+    <td>Conversion routines</td>
+  </tr>
+  <tr> 
+    <td>function IntegerFontStyleToString (intfontstyle:integer):String;</td>
+    <td>Conversion routines</td>
+  </tr>
+  <tr> 
+    <td>function AlignToGrid (Value:integer;scale:integer):integer;</td>
+    <td>Alignment</td>
+  </tr>
+  <tr> 
+    <td>function AlignToGridPixels (Value:integer;scaletwips:integer):integer; 
+    </td>
+    <td>Alignment</td>
+  </tr>
+  <tr>
+    <td>procedure LoadQtTranslator;</td>
+    <td>If you have the Qt .qm files for the user locale you can use this function 
+      to load qt library resource strings</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Report Manager Interoperability</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Introduction</h2>
+<h3>Interoperability and standards use</h3>
+<p>Natively supports (compiled inside the executable)<b>:</b></p>
+<ul>
+  <li><a href="delphicomp.html">Delphi</a> 4/5 Enterprise, Delphi 6/7 Prof. , 
+    Ent., Architech. </li>
+  <li>C++ Builder 4/5 Enterprise, C++Builder 6 Prof, Ent.</li>
+  <li>Kylix 1/2/3 Desktop, Pro or Enterprise</li>
+  <li>It's reported to work with <a href="http://www.geocities.com/rho_linux_br/k2oe-components-mini-howto/k2_pt_BR.html" target="_blank">Kylix 
+    Open Editions and FreeCLX</a>.</li>
+  <li><a href="delphinetcomp.html">Delphi 8 for .Net</a></li>
+  <li><a href="visualnetcomp.html">Visual Studio .Net</a></li>
+</ul>
+<p>With <a href="axtivexcomp.html">ActiveX</a></p>
+<ul>
+  <li>Delphi 4/5 Profesional and personal</li>
+  <li>C++Builder 4/5 Professional and personal</li>
+  <li>Delphi 6-7 Personal and upper</li>
+  <li>Delphi 8 for .Net</li>
+  <li>C++Builder 6 Personal</li>
+  <li>C# Builder</li>
+  <li>Visual Basic</li>
+  <li>Visual FoxPro</li>
+  <li>Python</li>
+  <li>Visual Studio (C#, Basic...)</li>
+  <li>Any language with ActiveX client feature</li>
+  <li>Early binding (VTables) and late binding (OleAuto) is supported</li>
+  <li>IIS ASP access</li>
+</ul>
+<p>With <a href="gnuc.html">shared libraries functions</a></p>
+<ul>
+  <li>Delphi, C++Builder, Kylix</li>
+  <li>GNU C (Windows and Linux), Visual C++</li>
+  <li>Visual Basic</li>
+  <li>Any development environment capable of calling shared library functions, 
+    library headers are currently in pascal, ANSI C and Visual Basic formats</li>
+</ul>
+<p>With <a href="commandline.html">command line tools</a></p>
+<ul>
+  <li>Any language capable of calling external programs, the external comand line 
+    tools can work with file input and outputs or also with <strong>standard input 
+    and standard output</strong>, allowing the use of pipes or files for interprocess 
+    comunication.</li>
+</ul>
+<p>With web server</p>
+<ul>
+  <li><a href="axtivexcomp.html">ASP</a></li>
+  <li><a href="php.html">PHP</a></li>
+  <li><a href="python.html">Python</a></li>
+  <li>Over Apache, Microsoft IIS or any web server capable of processing standard 
+    cgi applications</li>
+</ul>
+<p>For more information see installation documentation.</p>
+<p>A <b>report file (we refer as .rep extension files) can be openened in any 
+  platform</b>, they are compatible between platforms and development enviroments.</p>
+<p>To allow the use of the engine in other languages <b>command line tools and 
+  ActiveX are provided. You can also link to the <a href="gnuc.html">report library</a>.</b></p>
+<p>Database connections abstraction is done throught <b>dbxconnections.ini and 
+  dbxdrivers.ini</b> files provided by Report Manager Designer or Borland tools, 
+  the engine will search an alias and read the parameters to connect to a defined 
+  database or dataset. If you use Delphi/Builder/Kylix <b>you can assign opened 
+  connections or datasets to a ready loaded report</b>, you can also show the 
+  designer to the end user embedded in your application.</p>
+<p>The result of processing a report is a set of pages containing graphic elements, 
+  they can be stored with a native format (<b>Report Metafile</b> .rpmf) to open 
+  or print with other provided tools (metaprint, metaview). You can also save 
+  the result in <b>Adobe pdf format</b>. This formats are also portable between 
+  platforms.</p>
+</body>
+</html>

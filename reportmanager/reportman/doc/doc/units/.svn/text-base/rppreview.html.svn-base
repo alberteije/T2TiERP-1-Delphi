@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Units documentation - rppreview.pas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Units documentation</h2>
+<h3>rppreview.pas</h3>
+<h4>Description</h4>
+<p>This unit implements <b>CLX applications preview, </b>uses the TRpQtDriver 
+  component.</p>
+<h4>Components and classes</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Name</td>
+    <td bgcolor="#FFFFCC">Base class</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>TFRpPreview</td>
+    <td>TForm</td>
+    <td>Preview form</td>
+  </tr>
+</table>
+<h4>Functions</h4>
+<table border="1">
+  <tr> 
+    <td bgcolor="#FFFFCC">Declaration</td>
+    <td bgcolor="#FFFFCC">Description</td>
+  </tr>
+  <tr> 
+    <td>function ShowPreview (report:TRpReport; caption:string; systemprintdialog:boolean):boolean; 
+    </td>
+    <td>Shows the preview with the provided options</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>
