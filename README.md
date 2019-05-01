@@ -2,7 +2,7 @@
         		<div class="bloco">
         			<div class="titulo_bloco">
         				<h1>T2Ti ERP 1.0 - Delphi</h1>
-					Aqui é possível baixar o código fonte Projeto T2Ti ERP 1.0 em Delphi. Este treinamento formou milhares de desenvolvedores no Brasil e ajudou centenas deles a lançar seu próprio ERP no mercado.
+					Aqui é possível baixar o código fonte Projeto T2Ti ERP 1.0 em Delphi. Este treinamento formou milhares de desenvolvedores no Brasil e ajudou centenas deles a lançar seu próprio ERP no mercado. Mais informações sobre o treinamento podem ser encontradas no seguinte link: http://t2ti.com/erp/.
 					<hr />
         			</div>
         			<div class="conteudoTexto">
