@@ -137,8 +137,10 @@
         				<br />
         			</div>
         		</div>            
-    				<h3>Forma de Desenvolvimento Delphi</h3> 
+    				<h3>Forma de Desenvolvimento Delphi</h3>
+	<hr />
 					<img src="http://t2ti.com/images/erp/DataSnap.png" />
+	<hr />
     				O ERP foi desenvolvido em três camadas. O usuário baixa a camada de visão para sua máquina e se conecta ao servidor de aplicaçoes DataSnap, 
     				onde estarão armazenadas as classes de negócio. O banco de dados poderá residir na mesma máquina do servidor de aplicações ou em outro 
     				servidor específico para o banco de dados. 
