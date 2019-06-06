@@ -3,6 +3,10 @@
         			<div class="titulo_bloco">
         				<h1>T2Ti ERP 1.0 - Delphi</h1>
 					Aqui é possível baixar o código fonte Projeto T2Ti ERP 1.0 em Delphi. Este treinamento formou milhares de desenvolvedores no Brasil e ajudou centenas deles a lançar seu próprio ERP no mercado. Mais informações sobre o treinamento podem ser encontradas no seguinte link: http://t2ti.com/erp/.
+	<br /><br />
+  <i>
+  [Here it is possible to download the source code of the Project T2Ti ERP 1.0 in Delphi. This training was made by thousands of developers in Brazil and helped hundreds of them launch their own ERP in the market. More information about the training can be found at the following link: http://t2ti.com/erp/.]
+  </i>					
 					<hr />
         			</div>
         			<div class="conteudoTexto">
@@ -137,11 +141,15 @@
         				<br />
         			</div>
         		</div>            
-    				<h3>Forma de Desenvolvimento Delphi</h3>
+    				<h3>Forma de Desenvolvimento Delphi [Way we Developed using Delphi]</h3>
 	<hr />
 					<img src="http://t2ti.com/images/erp/DataSnap.png" />
 	<hr />
     				O ERP foi desenvolvido em três camadas. O usuário baixa a camada de visão para sua máquina e se conecta ao servidor de aplicaçoes DataSnap, 
     				onde estarão armazenadas as classes de negócio. O banco de dados poderá residir na mesma máquina do servidor de aplicações ou em outro 
     				servidor específico para o banco de dados. 
-         </html>
+	<br /><br />
+  <i>
+[Delphi ERP was developed in three layers. The user downloads the view layer to his machine and connects to the DataSnap application server where the business classes are stored. The database may reside on the same machine as the application server or on another server specific to the DBMS.]
+  </i>
+	         </html>
