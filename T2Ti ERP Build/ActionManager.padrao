@@ -1,0 +1,12 @@
+object ActionManager: TActionManager
+  ActionBars = <
+    item
+      ChangesAllowed = []
+    end
+	>
+  LargeImages = FMenu.Image32
+  Images = FMenu.Image16
+  Left = 616
+  Top = 324
+  StyleName = 'Ribbon - Silver'
+end

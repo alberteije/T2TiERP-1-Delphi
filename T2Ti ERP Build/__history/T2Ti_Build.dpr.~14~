@@ -1,0 +1,16 @@
+program T2Ti_Build;
+
+uses
+  Forms,
+  UPrincipal in 'UPrincipal.pas' {FPrincipal},
+  UBase in '..\Fontes\ERP\Cliente\Comum\Tela\UBase.pas' {FBase};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFPrincipal, FPrincipal);
+  Application.CreateForm(TFBase, FBase);
+  Application.Run;
+end.

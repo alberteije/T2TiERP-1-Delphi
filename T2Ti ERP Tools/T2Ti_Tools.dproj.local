@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012/09/28 14:42:04.375.pas,C:\Documents and Settings\Eije\Meus documentos\RAD Studio\Projects\Unit1.pas=C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\T2Ti Tools\UTools.pas</Transaction>
+    <Transaction>2012/09/28 14:42:04.375.dfm,C:\Documents and Settings\Eije\Meus documentos\RAD Studio\Projects\Unit1.dfm=C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\T2Ti Tools\UTools.dfm</Transaction>
+    <Transaction>2012/09/28 14:42:11.605.dproj,C:\Documents and Settings\Eije\Meus documentos\RAD Studio\Projects\Project1.dproj=C:\Documents and Settings\Eije\Desktop\T2Ti ERP\Fontes\T2Ti Tools\T2Ti_Tools.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

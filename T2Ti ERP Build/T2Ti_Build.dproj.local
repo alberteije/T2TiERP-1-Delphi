@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/08/14 16:13:07.640.pas,C:\Documents and Settings\Eije\Meus documentos\RAD Studio\Projects\Unit1.pas=C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\T2Ti ERP Build\UPrincipal.pas</Transaction>
+    <Transaction>2013/08/14 16:13:07.640.dfm,C:\Documents and Settings\Eije\Meus documentos\RAD Studio\Projects\Unit1.dfm=C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\T2Ti ERP Build\UPrincipal.dfm</Transaction>
+    <Transaction>2013/08/14 16:13:15.932.dproj,C:\Documents and Settings\Eije\Meus documentos\RAD Studio\Projects\Project1.dproj=C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\T2Ti ERP Build\T2Ti_Build.dproj</Transaction>
+    <Transaction>2013/08/14 16:49:34.924.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\T2Ti ERP Build\UMenu.pas=</Transaction>
+    <Transaction>2013/08/14 16:49:34.924.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\T2Ti ERP Build\UMenu.dfm=</Transaction>
+    <Transaction>2013/08/14 16:54:02.517.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Comum\Tela\UTelaCadastro.pas=</Transaction>
+    <Transaction>2013/08/14 16:54:02.517.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Comum\Tela\UTelaCadastro.dfm=</Transaction>
+    <Transaction>2013/08/14 17:09:22.805.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Comum\Tipos.pas=</Transaction>
+    <Transaction>2013/08/14 17:09:22.835.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Comum\SessaoUsuario.pas=</Transaction>
+    <Transaction>2013/08/14 17:09:22.865.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Comum\NotificationService.pas=</Transaction>
+    <Transaction>2013/08/14 17:09:22.895.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Comum\VO\JSonVO.pas=</Transaction>
+    <Transaction>2013/08/14 17:09:22.925.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Comum\VO\FuncaoVO.pas=</Transaction>
+    <Transaction>2013/08/14 17:09:22.955.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Comum\VO\EnderecoVO.pas=</Transaction>
+    <Transaction>2013/08/14 17:09:22.975.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Comum\VO\EmpresaSessaoVO.pas=</Transaction>
+    <Transaction>2013/08/14 17:09:23.005.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Comum\Conversor.pas=</Transaction>
+    <Transaction>2013/08/14 17:09:23.035.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Comum\Constantes.pas=</Transaction>
+    <Transaction>2013/08/14 17:09:23.055.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Comum\Biblioteca.pas=</Transaction>
+    <Transaction>2013/08/14 17:09:29.544.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Comum\Atributos.pas=</Transaction>
+    <Transaction>2013/08/14 17:10:13.824.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Comum\Tela\UTelaCadastro.pas=</Transaction>
+    <Transaction>2013/08/14 17:10:13.824.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Comum\Tela\UTelaCadastro.dfm=</Transaction>
+    <Transaction>2013/08/14 17:10:18.470.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Comum\Tela\UTela.pas=</Transaction>
+    <Transaction>2013/08/14 17:10:18.470.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Comum\Tela\UTela.dfm=</Transaction>
+    <Transaction>2013/08/14 17:10:44.226.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\T2Ti ERP Build\UMenu.pas=</Transaction>
+    <Transaction>2013/08/14 17:10:44.226.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\T2Ti ERP Build\UMenu.dfm=</Transaction>
+    <Transaction>2013/08/14 17:10:48.382.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Comum\Tela\UBase.pas=</Transaction>
+    <Transaction>2013/08/14 17:10:48.382.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Comum\Tela\UBase.dfm=</Transaction>
+    <Transaction>2013/08/14 17:48:49.529.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Comum\Tela\UDataModule.pas=</Transaction>
+    <Transaction>2013/08/14 17:48:49.529.dfm,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Cliente\Comum\Tela\UDataModule.dfm=</Transaction>
+    <Transaction>2013/08/18 23:09:56.179.pas,C:\Documents and Settings\Eije\Desktop\T2Ti ERP Delphi\Fontes\ERP\Comum\Biblioteca.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

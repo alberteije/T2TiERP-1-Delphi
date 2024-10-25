@@ -1,0 +1,23 @@
+program T2Ti_Build;
+
+uses
+  Forms,
+  UPrincipal in 'UPrincipal.pas' {FPrincipal},
+  UBase in '..\Fontes\ERP\Cliente\Comum\Tela\UBase.pas' {FBase},
+  UTela in '..\Fontes\ERP\Cliente\Comum\Tela\UTela.pas' {FTela},
+  UTelaCadastro in '..\Fontes\ERP\Cliente\Comum\Tela\UTelaCadastro.pas' {FTelaCadastro},
+  UMenu in 'UMenu.pas' {FMenu},
+  Atributos in '..\Fontes\ERP\Comum\Atributos.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFPrincipal, FPrincipal);
+  Application.CreateForm(TFBase, FBase);
+  Application.CreateForm(TFTela, FTela);
+  Application.CreateForm(TFTelaCadastro, FTelaCadastro);
+  Application.CreateForm(TFMenu, FMenu);
+  Application.Run;
+end.

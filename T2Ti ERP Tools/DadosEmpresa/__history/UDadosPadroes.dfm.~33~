@@ -1,0 +1,496 @@
+object FDadosPadroes: TFDadosPadroes
+  Left = 348
+  Top = 173
+  BorderStyle = bsSingle
+  Caption = 'Dados Padr'#245'es'
+  ClientHeight = 506
+  ClientWidth = 836
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 836
+    Height = 105
+    Align = alTop
+    TabOrder = 0
+    DesignSize = (
+      836
+      105)
+    object GroupBox1: TGroupBox
+      Left = 8
+      Top = 10
+      Width = 809
+      Height = 82
+      Anchors = [akLeft, akTop, akRight]
+      Caption = 'Conex'#227'o:'
+      TabOrder = 0
+      DesignSize = (
+        809
+        82)
+      object Label1: TLabel
+        Left = 223
+        Top = 24
+        Width = 26
+        Height = 13
+        Caption = 'Host:'
+      end
+      object Label3: TLabel
+        Left = 423
+        Top = 23
+        Width = 40
+        Height = 13
+        Caption = 'Usu'#225'rio:'
+      end
+      object Label4: TLabel
+        Left = 606
+        Top = 24
+        Width = 34
+        Height = 13
+        Caption = 'Senha:'
+      end
+      object Label5: TLabel
+        Left = 11
+        Top = 24
+        Width = 30
+        Height = 13
+        Caption = 'SGBD:'
+      end
+      object Label7: TLabel
+        Left = 11
+        Top = 52
+        Width = 81
+        Height = 13
+        Caption = 'Banco de Dados:'
+      end
+      object editHost: TEdit
+        Left = 253
+        Top = 20
+        Width = 164
+        Height = 21
+        TabOrder = 1
+        Text = 'localhost'
+      end
+      object editSenha: TEdit
+        Left = 643
+        Top = 20
+        Width = 151
+        Height = 21
+        Anchors = [akLeft, akTop, akRight]
+        PasswordChar = '*'
+        TabOrder = 3
+        Text = 'root'
+      end
+      object editUsuario: TEdit
+        Left = 469
+        Top = 20
+        Width = 131
+        Height = 21
+        TabOrder = 2
+        Text = 'root'
+      end
+      object comboConexao: TComboBox
+        Left = 44
+        Top = 20
+        Width = 173
+        Height = 21
+        ItemIndex = 0
+        TabOrder = 0
+        Text = 'MySQL'
+        Items.Strings = (
+          'MySQL'
+          'MSSQL'
+          'FIREBIRD'
+          'INTERBASE'
+          'Oracle')
+      end
+      object botaoConectar: TBitBtn
+        Left = 711
+        Top = 49
+        Width = 83
+        Height = 21
+        Anchors = [akTop, akRight]
+        Caption = 'Conectar'
+        DoubleBuffered = True
+        ParentDoubleBuffered = False
+        TabOrder = 4
+        OnClick = botaoConectarClick
+      end
+    end
+    object editBancoDados: TJvFilenameEdit
+      Left = 106
+      Top = 59
+      Width = 607
+      Height = 21
+      AddQuotes = False
+      Anchors = [akLeft, akTop, akRight]
+      TabOrder = 1
+      Text = 't2tierp'
+    end
+  end
+  object Panel2: TPanel
+    Left = 217
+    Top = 105
+    Width = 144
+    Height = 382
+    Align = alLeft
+    TabOrder = 1
+    ExplicitTop = 227
+    ExplicitHeight = 380
+    object botaoSair: TButton
+      Left = 9
+      Top = 480
+      Width = 100
+      Height = 23
+      Caption = 'Sair'
+      TabOrder = 0
+      OnClick = botaoSairClick
+    end
+    object botaoLimparMemo: TButton
+      Left = 9
+      Top = 472
+      Width = 100
+      Height = 23
+      Caption = 'Limpar Memo'
+      TabOrder = 1
+    end
+    object Button1: TButton
+      Left = 5
+      Top = 10
+      Width = 133
+      Height = 25
+      Caption = 'Adicionar Campo'
+      TabOrder = 2
+      OnClick = Button1Click
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Top = 105
+    Width = 217
+    Height = 382
+    Align = alLeft
+    TabOrder = 2
+    ExplicitTop = 216
+    ExplicitHeight = 391
+    object Splitter1: TSplitter
+      Left = 1
+      Top = 169
+      Width = 159
+      Height = 3
+      Align = alNone
+    end
+    object Splitter2: TSplitter
+      Left = 1
+      Top = 257
+      Width = 215
+      Height = 3
+      Cursor = crVSplit
+      Align = alTop
+      ExplicitTop = 172
+      ExplicitWidth = 156
+    end
+    object listaCampo: TListBox
+      Left = 1
+      Top = 260
+      Width = 215
+      Height = 121
+      Hint = 'Right Click Mouse'
+      Align = alClient
+      ItemHeight = 13
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+      ExplicitHeight = 130
+    end
+    object listaTabelas: TListBox
+      Left = 1
+      Top = 42
+      Width = 215
+      Height = 215
+      Align = alTop
+      ItemHeight = 13
+      TabOrder = 1
+      OnClick = listaTabelasClick
+    end
+    object Panel4: TPanel
+      Left = 1
+      Top = 1
+      Width = 215
+      Height = 41
+      Align = alTop
+      TabOrder = 2
+      object EditBusca: TLabeledEdit
+        Left = 4
+        Top = 16
+        Width = 206
+        Height = 21
+        EditLabel.Width = 45
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Localizar:'
+        TabOrder = 0
+        OnChange = EditBuscaChange
+      end
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 487
+    Width = 836
+    Height = 19
+    Panels = <>
+    ExplicitTop = 607
+  end
+  object GridDadosPadroes: TJvDBUltimGrid
+    Left = 361
+    Top = 105
+    Width = 475
+    Height = 382
+    Align = alClient
+    DataSource = DSDadosPadroes
+    TabOrder = 4
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    SelectColumnsDialogStrings.Caption = 'Select columns'
+    SelectColumnsDialogStrings.OK = '&OK'
+    SelectColumnsDialogStrings.NoSelectionWarning = 'At least one column must be visible!'
+    EditControls = <>
+    RowsHeight = 17
+    TitleRowHeight = 17
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'TABELA'
+        ReadOnly = True
+        Width = 180
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CAMPO'
+        ReadOnly = True
+        Width = 200
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'VALOR'
+        Width = 200
+        Visible = True
+      end>
+  end
+  object Entidade: TSQLDataSet
+    SchemaName = 'dbo'
+    CommandText = 'select * from "Sistema"'
+    DbxCommandType = 'Dbx.SQL'
+    MaxBlobSize = -1
+    Params = <>
+    Left = 752
+    Top = 248
+  end
+  object DataSetEntidade: TClientDataSet
+    Active = True
+    Aggregates = <>
+    Params = <>
+    Left = 752
+    Top = 216
+    Data = {
+      560000009619E0BD01000000180000000200000000000300000056000563616D
+      706F01004900000001000557494454480200020032000D696D706C616D656E74
+      6163616F01004900000001000557494454480200020064000000}
+    object DataSetEntidadecampo: TStringField
+      FieldName = 'campo'
+      Size = 50
+    end
+    object DataSetEntidadeimplamentacao: TStringField
+      FieldName = 'implamentacao'
+      Size = 100
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = DataSetEntidade
+    Left = 752
+    Top = 360
+  end
+  object INTERBASE: TSQLConnection
+    ConnectionName = 'IBCONNECTION'
+    DriverName = 'Firebird'
+    GetDriverFunc = 'getSQLDriverINTERBASE'
+    LibraryName = 'dbxfb.dll'
+    LoginPrompt = False
+    Params.Strings = (
+      
+        'DriverPackageLoader=TDBXDynalinkDriverLoader,DbxCommonDriver140.' +
+        'bpl'
+      'VendorLib=fbclient.DLL')
+    VendorLib = 'fbclient.dll'
+    Left = 320
+    Top = 248
+  end
+  object Oracle: TSQLConnection
+    ConnectionName = 'IBCONNECTION'
+    DriverName = 'Oracle'
+    GetDriverFunc = 'getSQLDriverORACLE'
+    LibraryName = 'dbxora30.dll'
+    LoginPrompt = False
+    Params.Strings = (
+      
+        'DriverPackageLoader=TDBXDynalinkDriverLoader,DBXCommonDriver140.' +
+        'bpl')
+    VendorLib = 'oci.dll'
+    Left = 322
+    Top = 408
+  end
+  object SQL: TSQLConnection
+    ConnectionName = 'MSSQLCONNECTION'
+    DriverName = 'MSSQL'
+    GetDriverFunc = 'getSQLDriverMSSQL'
+    LibraryName = 'dbxmss.dll'
+    LoginPrompt = False
+    Params.Strings = (
+      'schemaoverride=sa.dbo'
+      'drivername=MSSQL'
+      'HostName=note-dell\sqlexpress'
+      'Database=AXIAL_DB'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'blobsize=-1'
+      'localecode=0000'
+      'isolationlevel=ReadCommitted'
+      'os authentication=False'
+      'prepare sql=False'
+      'connecttimeout=60'
+      'mars_connection=False'
+      'ErrorResourceFile=')
+    VendorLib = 'sqlncli10.dll'
+    Left = 320
+    Top = 302
+  end
+  object CONN: TSQLConnection
+    ConnectionName = 'MSSQLCONNECTION'
+    DriverName = 'MSSQL'
+    GetDriverFunc = 'getSQLDriverMSSQL'
+    LibraryName = 'dbxmss.dll'
+    LoginPrompt = False
+    Params.Strings = (
+      'schemaoverride=sa.dbo'
+      'drivername=MSSQL'
+      'HostName=note-dell\sqlexpress'
+      'Database=AXIAL_DB'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'blobsize=-1'
+      'localecode=0000'
+      'isolationlevel=ReadCommitted'
+      'os authentication=False'
+      'prepare sql=False'
+      'connecttimeout=60'
+      'mars_connection=False'
+      'ErrorResourceFile=')
+    VendorLib = 'sqlncli10.dll'
+    Left = 320
+    Top = 356
+  end
+  object MySQL: TSQLConnection
+    ConnectionName = 'IBCONNECTION'
+    DriverName = 'MySQL'
+    GetDriverFunc = 'getSQLDriverMYSQL'
+    LibraryName = 'dbxmys.dll'
+    LoginPrompt = False
+    Params.Strings = (
+      'DriverUnit=DBXMySQL'
+      
+        'DriverPackageLoader=TDBXDynalinkDriverLoader,DbxCommonDriver140.' +
+        'bpl'
+      'VendorLib=LIBMYSQL.dll')
+    VendorLib = 'libmysql.dll'
+    Left = 320
+    Top = 464
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 752
+    Top = 416
+  end
+  object FindDialog1: TFindDialog
+    Left = 656
+    Top = 416
+  end
+  object JvEnterAsTab1: TJvEnterAsTab
+    Left = 448
+    Top = 240
+  end
+  object CDSDadosPadroes: TClientDataSet
+    Active = True
+    Aggregates = <>
+    FileName = 'TableDadosPadroes.xml'
+    FieldDefs = <
+      item
+        Name = 'ID'
+        DataType = ftAutoInc
+      end
+      item
+        Name = 'TABELA'
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'CAMPO'
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'VALOR'
+        DataType = ftString
+        Size = 100
+      end>
+    IndexDefs = <>
+    Params = <>
+    StoreDefs = True
+    Left = 560
+    Top = 136
+    Data = {
+      9F0000009619E0BD0100000018000000040000000000030000009F0002494404
+      0001000000010007535542545950450200490008004175746F696E6300065441
+      42454C4101004900000001000557494454480200020032000543414D504F0100
+      4900000001000557494454480200020032000556414C4F520100490000000100
+      05574944544802000200640001000C4155544F494E4356414C55450400010001
+      000000}
+    object CDSDadosPadroesID: TAutoIncField
+      DisplayLabel = 'Id'
+      FieldName = 'ID'
+    end
+    object CDSDadosPadroesTABELA: TStringField
+      DisplayLabel = 'Tabela'
+      FieldName = 'TABELA'
+      Size = 50
+    end
+    object CDSDadosPadroesCAMPO: TStringField
+      DisplayLabel = 'Campo'
+      FieldName = 'CAMPO'
+      Size = 50
+    end
+    object CDSDadosPadroesVALOR: TStringField
+      DisplayLabel = 'Valor'
+      FieldName = 'VALOR'
+      Size = 100
+    end
+  end
+  object DSDadosPadroes: TDataSource
+    DataSet = CDSDadosPadroes
+    Left = 672
+    Top = 136
+  end
+end
